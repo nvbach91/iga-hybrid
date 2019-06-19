@@ -2,6 +2,7 @@
 Repository for the internal grant project involving hybrid modeling of RDF knowledge bases
 
 ## LOV experimental queries to find hybrid knowledge representations
+Run these queries at https://lov.linkeddata.es/dataset/lov/sparql
 
 ### prefixes
 ```sparql
