@@ -98,7 +98,8 @@ FROM <https://w3id.org/seas/TimeOntology>
 FROM <http://www.data-knowledge.org/dk/>
 {
     ?p rdfs:isDefinedBy <http://www.data-knowledge.org/dk/> .
-    ?p a owl:ObjectProperty .
+  	VALUES ?pt { owl:ObjectProperty owl:DatatypeProperty } .
+    ?p a ?pt .
     OPTIONAL {
       ?p rdfs:domain ?s .
       OPTIONAL {
