@@ -20,6 +20,10 @@ PREFIX sport:<http://www.bbc.co.uk/ontologies/sport/>
 PREFIX phdd:<http://rdf-vocabulary.ddialliance.org/phdd#>
 PREFIX seas:<https://w3id.org/seas/>
 PREFIX dk:<http://www.data-knowledge.org/dk/>
+PREFIX org:<http://www.w3.org/ns/org#>
+PREFIX dbo:<http://dbpedia.org/ontology/>
+PREFIX time:<http://www.w3.org/2006/time#>
+PREFIX muninn:<http://rdf.muninn-project.org/ontologies/>
 ```
 
 ### get list of ontologies with number of classes
@@ -97,24 +101,24 @@ FROM <http://rdf-vocabulary.ddialliance.org/phdd>
 FROM <https://w3id.org/seas/TimeOntology>
 FROM <http://www.data-knowledge.org/dk/>
 {
-    ?p rdfs:isDefinedBy <http://www.data-knowledge.org/dk/> .
-  	VALUES ?pt { owl:ObjectProperty owl:DatatypeProperty } .
-    ?p a ?pt .
+  ?p rdfs:isDefinedBy <http://rdf.muninn-project.org/ontologies/military> .
+  VALUES ?pt { owl:ObjectProperty owl:DatatypeProperty } .
+  ?p a ?pt .
+  OPTIONAL {
+    ?p rdfs:domain ?s .
     OPTIONAL {
-      ?p rdfs:domain ?s .
-      OPTIONAL {
-        ?p rdfs:subPropertyOf ?op .
-          OPTIONAL { ?op rdfs:range ?od . }
-      }
+      ?p rdfs:subPropertyOf ?op .
+        OPTIONAL { ?op rdfs:range ?od . }
     }
-  
+  }
+
+  OPTIONAL {
+      ?p rdfs:range ?o .
     OPTIONAL {
-        ?p rdfs:range ?o .
-      OPTIONAL {
-        ?p rdfs:subPropertyOf ?sp .
-        OPTIONAL { ?sp rdfs:domain ?sd . }
-      }
+      ?p rdfs:subPropertyOf ?sp .
+      OPTIONAL { ?sp rdfs:domain ?sd . }
     }
+  }
 }
 ORDER BY ?s
 ```
