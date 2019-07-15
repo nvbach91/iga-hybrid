@@ -5,7 +5,8 @@ import { ThemeProvider } from '@material-ui/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Hidden from '@material-ui/core/Hidden';
 import Navigator from './Navigator';
-import Content from './Content';
+import AnalyzerPage from './AnalyzerPage';
+import PrefixesPage from './PrefixesPage';
 import Header from './Header';
 
 let theme = createMuiTheme({
@@ -119,7 +120,7 @@ theme = {
   },
 };
 
-const drawerWidth = 256;
+const drawerWidth = 192;
 
 const styles = {
   root: {
@@ -132,12 +133,12 @@ const styles = {
       flexShrink: 0,
     },
   },
-  appContent: {
+  appAnalyzerPage: {
     flex: 1,
     display: 'flex',
     flexDirection: 'column',
   },
-  mainContent: {
+  mainAnalyzerPage: {
     flex: 1,
     padding: '48px 36px 0',
     background: '#eaeff1',
@@ -147,15 +148,24 @@ const styles = {
 class Paperbase extends React.Component {
   state = {
     mobileOpen: false,
+    tabIndex: 0,
   };
 
   handleDrawerToggle = () => {
     this.setState(state => ({ mobileOpen: !state.mobileOpen }));
   };
-
+  handleTabSwitch = (tabIndex) => () => {
+    this.setState({ tabIndex });
+  }
+  renderAnalyzerPage = () => {
+    switch (this.state.tabIndex) {
+      case 0: return <AnalyzerPage />;
+      case 1: return <PrefixesPage />;
+      default: return <AnalyzerPage />;
+    }
+  }
   render() {
     const { classes } = this.props;
-
     return (
       <ThemeProvider theme={theme}>
         <div className={classes.root}>
@@ -173,10 +183,10 @@ class Paperbase extends React.Component {
               <Navigator PaperProps={{ style: { width: drawerWidth } }} />
             </Hidden>
           </nav>
-          <div className={classes.appContent}>
-            <Header onDrawerToggle={this.handleDrawerToggle} />
-            <main className={classes.mainContent}>
-              <Content />
+          <div className={classes.appAnalyzerPage}>
+            <Header onDrawerToggle={this.handleDrawerToggle} onTabSwitch={this.handleTabSwitch} tabIndex={this.state.tabIndex}/>
+            <main className={classes.mainAnalyzerPage}>
+              {this.renderAnalyzerPage()}
             </main>
           </div>
         </div>

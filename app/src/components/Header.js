@@ -40,7 +40,7 @@ const styles = theme => ({
 });
 
 function Header(props) {
-  const { classes, onDrawerToggle } = props;
+  const { classes, onDrawerToggle, onTabSwitch, tabIndex } = props;
 
   return (
     <React.Fragment>
@@ -105,8 +105,9 @@ function Header(props) {
         position="static"
         elevation={0}
       >
-        <Tabs value={0} textColor="inherit">
-          <Tab textColor="inherit" label="LOV Browser" />
+        <Tabs value={tabIndex} textColor="inherit">
+          <Tab textColor="inherit" label="LOV Analyzer" onClick={onTabSwitch(0)}/>
+          <Tab textColor="inherit" label="Prefixes" onClick={onTabSwitch(1)}/>
         </Tabs>
       </AppBar>
     </React.Fragment>

@@ -1,3 +1,6 @@
+import React from 'react';
+import Link from '@material-ui/core/Link';
+
 export const debounce = (fn, time) => {
   let timeout;
   return function () {
@@ -5,4 +8,25 @@ export const debounce = (fn, time) => {
     clearTimeout(timeout);
     timeout = setTimeout(functionCall, time);
   }
-}
+};
+
+export const shortenIri = (iri) => {
+  const prefixes = Object.keys(window.reversePrefixes);
+  for (let i = 0; i < prefixes.length; i++) {
+    let prefix = prefixes[i];
+    if (iri.startsWith(prefix)) {
+      if (iri.length === prefix.length) {
+        return window.reversePrefixes[prefix];
+      }
+      return `${window.reversePrefixes[prefix]}:${iri.slice(prefix.length)}`;
+    }
+  }
+  return iri;
+};
+
+export const createIriLink = (iri) => {
+  if (!/^https?:\/\//.test(iri)) {
+    return iri;
+  }
+  return <Link href={iri} target="_blank" rel="noopener noreferrer">{shortenIri(iri)}</Link>;
+};
