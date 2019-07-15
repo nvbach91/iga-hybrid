@@ -7,22 +7,27 @@ import TableRow from '@material-ui/core/TableRow';
 import Button from '@material-ui/core/Button';
 import CircularProgress from '@material-ui/core/CircularProgress';
 import Visibility from '@material-ui/icons/Visibility';
+import Typography from '@material-ui/core/Typography';
 import { createIriLink } from '../utils';
 import { withStyles } from '@material-ui/styles';
-
+const tableHeadStyle = {
+  backgroundColor: 'white',
+  position: 'sticky',
+  top: 0,
+  fontWeight: 'bold',
+};
 const styles = (theme) => ({
-  head: {
-    backgroundColor: 'white',
-    position: 'sticky',
-    top: 0,
-    fontWeight: 'bold',
+  head: tableHeadStyle,
+  headLast: {
+    ...tableHeadStyle,
+    width: 150,
   },
   fragmentButton: {
-    padding: '0 16px'
+    padding: '4px 16px'
   }
 });
 
-const FragmentsTable = ({ fragments, showInstances, showOnlyFullFragments, classes }) => {
+const FragmentsTable = ({ fragments, showInstances, showOnlyFullFragments, ontologySelected, classes }) => {
   return (
     <Table size="small">
       <TableHead>
@@ -30,7 +35,7 @@ const FragmentsTable = ({ fragments, showInstances, showOnlyFullFragments, class
           <TableCell className={classes.head} align="left">Subject</TableCell>
           <TableCell className={classes.head} align="left">Predicate</TableCell>
           <TableCell className={classes.head} align="left">Object</TableCell>
-          <TableCell className={classes.head} align="right" title="The number of instantiated triples">Instances</TableCell>
+          <TableCell className={classes.headLast} align="right" title="The number of instantiated triples">Instances</TableCell>
         </TableRow>
       </TableHead>
       <TableBody>
@@ -50,7 +55,7 @@ const FragmentsTable = ({ fragments, showInstances, showOnlyFullFragments, class
               <TableCell align="right">
                 {
                   i === null ?
-                    <CircularProgress size={20} /> :
+                    <CircularProgress size={26} /> :
                     <Button className={classes.fragmentButton} variant={i.length ? 'contained' : 'text'} onClick={showInstances(key)} color="primary" title={`Show ${i.length} instances` }>
                       {i.length}{i.length ? <span>&nbsp;</span> : ''}{i.length ? <Visibility /> : ''}
                     </Button>
@@ -59,6 +64,10 @@ const FragmentsTable = ({ fragments, showInstances, showOnlyFullFragments, class
             </TableRow>
           );
         })}
+        {ontologySelected && !Object.keys(fragments).length && 
+          <TableRow>
+            <TableCell align="left"><Typography variant="subtitle2">No class fragment found in this ontology</Typography></TableCell>
+          </TableRow>}
       </TableBody>
     </Table>
   );

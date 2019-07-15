@@ -10,6 +10,7 @@ import Button from '@material-ui/core/Button';
 import { withStyles } from '@material-ui/core/styles';
 import SearchIcon from '@material-ui/icons/Search';
 import Visibility from '@material-ui/icons/Visibility';
+import Refresh from '@material-ui/icons/Refresh';
 import axios from 'axios';
 import bluebird from 'bluebird';
 import uuidv4 from 'uuid/v4';
@@ -37,7 +38,11 @@ const styles = theme => ({
   },
   submitButton: {
     marginRight: theme.spacing(1),
-    minWidth: '100px'
+    minWidth: '100px',
+  },
+  submitButtonContent: {
+    display: 'flex',
+    alignItems: 'center',
   },
   formControl: {
     flexGrow: 1
@@ -166,7 +171,7 @@ class AnalyzerPage extends React.Component {
           </div>
         </div>
         <Typography align="left" variant="subtitle2">
-          This tool will help you identify class fragments in a selected ontology and fetch their instances
+          This tool will help you identify class fragments in a selected ontology and fetch their instances. Begin by selecting an ontology in the list below.
         </Typography>
         <Paper className={classes.paper}>
           <AppBar className={classes.searchBar} position="static" color="default" elevation={0}>
@@ -187,15 +192,20 @@ class AnalyzerPage extends React.Component {
                   />
                 </FormControl>
                 <Grid item>
-                  <Button variant="contained" className={classes.submitButton}>
-                    {this.state.loading ? <CircularProgress size={20} /> : 'Analyze'}
+                  <Button variant="contained" color="primary" className={classes.submitButton} onClick={this.fetchConnectedSchemas}>
+                    {this.state.loading ? <CircularProgress size={20} /> : <div className={classes.submitButtonContent}><Refresh style={{ fontSize: 24 }}/>&nbsp;Reload</div>}
                   </Button>
                 </Grid>
               </Grid>
             </Toolbar>
           </AppBar>
           <Paper className={classes.root}>
-            <FragmentsTable fragments={this.state.fragments} showInstances={this.showInstances} showOnlyFullFragments={this.state.showOnlyFullFragments}/>
+            <FragmentsTable 
+              fragments={this.state.fragments} 
+              showInstances={this.showInstances} 
+              showOnlyFullFragments={this.state.showOnlyFullFragments}
+              ontologySelected={this.state.selectedOption ? true : false}
+            />
           </Paper>
         </Paper>
         <div className={classes.filler}></div>

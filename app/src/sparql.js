@@ -20,6 +20,7 @@ export const prefixes = {
   dbo:      'http://dbpedia.org/ontology/',
   time:     'http://www.w3.org/2006/time#',
   muninn:   'http://rdf.muninn-project.org/ontologies/',
+  rdf:      'http://www.w3.org/1999/02/22-rdf-syntax-ns#',
 };
 
 export const reversePrefixes = {};
@@ -62,9 +63,10 @@ export const getQueryConnectedSchemas = (iri) => `
 SELECT 
 ?s ?sp ?sd ?p ?o ?op ?od
 ${FROMS}
+FROM <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 WHERE {
   ?p rdfs:isDefinedBy <${iri}> .
-  VALUES ?pt { owl:ObjectProperty owl:DatatypeProperty } .
+  VALUES ?pt { owl:ObjectProperty owl:DatatypeProperty rdf:Property } .
   ?p a ?pt .
   OPTIONAL {
     ?p rdfs:domain ?s .
