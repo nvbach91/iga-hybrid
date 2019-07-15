@@ -66,8 +66,8 @@ function Header(props) {
               <IconButton color="inherit" className={classes.iconButtonAvatar}>
                 <Avatar
                   className={classes.avatar}
-                  src="https://partners.gokasa.cz/img/quadstar.svg"
-                  alt="My Avatar"
+                  src="favicon.png"
+                  alt="avatar"
                 />
               </IconButton>
             </Grid>
