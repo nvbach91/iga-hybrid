@@ -24,6 +24,8 @@ import FragmentInstancesTable from './FragmentInstancesTable';
 import Typography from '@material-ui/core/Typography';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Switch from '@material-ui/core/Switch';
+import chunk from 'lodash/chunk';
+import Link from '@material-ui/core/Link';
 
 const styles = theme => ({
   paper: {
@@ -48,10 +50,11 @@ const styles = theme => ({
     flexGrow: 1
   },
   codeBlock: {
-    padding: 10
-  },
-  filler: {
-    height: 200,
+    padding: '10px',
+    width: 'calc(100% - 24px)',
+    margin: '10px auto',
+    fontWeight: 'bold',
+    backgroundColor: '#ccc',
   },
   controls: {
     display: 'flex',
@@ -70,8 +73,8 @@ const selectStyles = {
 class AnalyzerPage extends React.Component {
   state = {
     fragments: {},
-    iris: [],
     selectedOption: null,
+    selectOptions: [],
     loading: true,
     fragmentInstances: null,
     classFragment: null,
@@ -88,10 +91,15 @@ class AnalyzerPage extends React.Component {
           nInd: binding.nInd.value,
         }
       });
-      this.setState({ iris, loading: false });
+      this.setState({ 
+        loading: false, 
+        selectOptions: iris.map(({ iri, label, nClass, nInd }) => {
+          return { value: iri, label: `${iri}${label ? ` - ${label}` : ''}, classes: ${nClass}, instances: ${nInd}` };
+        }) 
+      });
     });
   }
-  handleIriSelectChange = (selectedOption) => {
+  handleSelectOptionChange = (selectedOption) => {
     this.setState({ selectedOption }, () => {
       this.fetchConnectedSchemas();
     });
@@ -125,24 +133,31 @@ class AnalyzerPage extends React.Component {
   }
   fetchFragmentInstances = () => {
     const { fragments } = this.state;
-    bluebird.map(Object.keys(fragments), (key) => {
+    const fragmentKeys = Object.keys(fragments).filter((key) => {
       const { s, p, o } = fragments[key];
-      if (s && p && o) {
-        const payload = `query=${PREFIXES}${getQueryFragmentInstances(s, p, o)}`;
-        return axios.post(SPARQL_ENDPOINT_URL, payload, axiosConfig).then((resp) => {
-          const newFragments = { ...fragments };
-          newFragments[key].i = resp.data.results.bindings;
-          this.setState({ fragments: newFragments });
-        });
+      if (this.state.showOnlyFullFragments) {
+        return s && p && o;
       }
-      return bluebird.delay(0);
+      return true;
+    });
+    const fragmentKeyGroups = chunk(fragmentKeys, 5);
+    bluebird.each(fragmentKeyGroups, (fkg) => {
+      return bluebird.delay(500).then(() => {
+        return bluebird.map(fkg, (key) => {
+          const { s, p, o } = fragments[key];
+          if (s && p && o) {
+            const payload = `query=${PREFIXES}${getQueryFragmentInstances(s, p, o)}`;
+            return axios.post(SPARQL_ENDPOINT_URL, payload, axiosConfig).then((resp) => {
+              const newFragments = { ...fragments };
+              newFragments[key].i = resp.data.results.bindings;
+              this.setState({ fragments: newFragments });
+            });
+          }
+          return bluebird.delay(0);
+        });
+      });
     });
   };
-  createIriOptions = () => {
-    return this.state.iris.map(({ iri, label, nClass, nInd }) => {
-      return { value: iri, label: `${iri}${label ? ` - ${label}` : ''}, classes: ${nClass}, instances: ${nInd}` };
-    })
-  }
   showSparqlPreview = () => {
     this.setState({ sparqlPreview: true });
   }
@@ -155,7 +170,6 @@ class AnalyzerPage extends React.Component {
   }
   render = () => {
     const { classes } = this.props;
-    const options = this.createIriOptions();
     return (
       <React.Fragment>
         <div className={classes.controls}>
@@ -181,14 +195,14 @@ class AnalyzerPage extends React.Component {
                   <SearchIcon className={classes.block} color="inherit" />
                 </Grid>
                 <FormControl className={classes.formControl}>
-                  <Select
+                  <Select 
                     classes={classes}
                     styles={selectStyles}
                     inputId="react-select-input"
                     TextFieldProps={{ label: 'Ontology IRI', placeholder: 'Type to search for ontology' }}
-                    options={options}
+                    options={this.state.selectOptions}
                     value={this.state.selectedOption}
-                    onChange={this.handleIriSelectChange}
+                    onChange={this.handleSelectOptionChange}
                   />
                 </FormControl>
                 <Grid item>
@@ -208,14 +222,16 @@ class AnalyzerPage extends React.Component {
             />
           </Paper>
         </Paper>
-        <div className={classes.filler}></div>
         <Dialog onClose={this.closeModal} open={this.state.fragmentInstances ? true : false} fullWidth={true} maxWidth="xl">
           <DialogTitle>Class fragment instances</DialogTitle>
           <FragmentInstancesTable fragmentInstances={this.state.fragmentInstances} classFragment={this.state.classFragment}/>
         </Dialog>
         <Dialog onClose={this.closeModal} open={this.state.sparqlPreview ? true : false} fullWidth={true} maxWidth="md">
-          <DialogTitle>SPARQL query</DialogTitle>
-          <pre className={classes.codeBlock}>{getQueryConnectedSchemas('__YOUR_SELECTED_VOCAB__').trim()}</pre>
+          <DialogTitle>
+            SPARQL query to get connected class fragments
+            <Typography variant="subtitle2">See also <Link href="https://github.com/nvbach91/iga-hybrid" target="_blank" rel="noopener noreferrer">https://github.com/nvbach91/iga-hybrid</Link></Typography>
+          </DialogTitle>
+          <pre className={classes.codeBlock}>{getQueryConnectedSchemas(this.state.selectedOption ? this.state.selectedOption.value : '__YOUR_SELECTED_VOCAB__').trim()}</pre>
         </Dialog>
       </React.Fragment>
     );

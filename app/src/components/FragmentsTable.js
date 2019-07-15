@@ -1,15 +1,18 @@
 import React from 'react';
-import Table from '@material-ui/core/Table';
-import TableBody from '@material-ui/core/TableBody';
-import TableCell from '@material-ui/core/TableCell';
-import TableHead from '@material-ui/core/TableHead';
-import TableRow from '@material-ui/core/TableRow';
+// import Table from '@material-ui/core/Table';
+// import TableBody from '@material-ui/core/TableBody';
+// import TableCell from '@material-ui/core/TableCell';
+// import TableHead from '@material-ui/core/TableHead';
+// import TableRow from '@material-ui/core/TableRow';
 import Button from '@material-ui/core/Button';
+import Paper from '@material-ui/core/Paper';
 import CircularProgress from '@material-ui/core/CircularProgress';
 import Visibility from '@material-ui/icons/Visibility';
 import Typography from '@material-ui/core/Typography';
 import { createIriLink } from '../utils';
 import { withStyles } from '@material-ui/styles';
+import VirtualizedTable from './VirtualizedTable'
+
 const tableHeadStyle = {
   backgroundColor: 'white',
   position: 'sticky',
@@ -28,8 +31,74 @@ const styles = (theme) => ({
 });
 
 const FragmentsTable = ({ fragments, showInstances, showOnlyFullFragments, ontologySelected, classes }) => {
+  const mRows = fragments ? Object.keys(fragments).filter((key) => {
+    if (showOnlyFullFragments) {
+      const { s, p, o } = fragments[key];
+      return s && p && o;
+    }
+    return true
+  }).map((key, index) => {
+    const { s, p, o, i } = fragments[key];
+    return { 
+      id: key, 
+      index: index + 1, 
+      s: createIriLink(s ? s.value : ''), 
+      p: createIriLink(p ? p.value : ''), 
+      o: createIriLink(o ? o.value : ''),
+      i: i === null ?
+        <CircularProgress size={26} /> :
+        <Button className={classes.fragmentButton} variant={i.length ? 'contained' : 'text'} onClick={showInstances(key)} color="primary" title={`Show ${i.length} instances` }>
+          {i.length}{i.length ? <span>&nbsp;</span> : ''}{i.length ? <Visibility /> : ''}
+        </Button>
+    };
+  }) : [];
   return (
-    <Table size="small">
+    
+    <Paper style={{ height: 640, width: '100%' }}>
+      <VirtualizedTable
+        rowCount={mRows.length}
+        rowGetter={({ index }) => mRows[index]}
+        columns={[
+          {
+            width: 100,
+            label: `(${mRows.length}) #`,
+            dataKey: 'index',
+            numeric: true,
+            align: 'right',
+          },
+          {
+            flexGrow: 1,
+            width: 0,
+            label: 'Subject',
+            dataKey: 's',
+          },
+          {
+            flexGrow: 1,
+            width: 0,
+            label: 'Predicate',
+            dataKey: 'p',
+          },
+          {
+            flexGrow: 1,
+            width: 0,
+            label: 'Object',
+            dataKey: 'o',
+          },
+          {
+            width: 150,
+            label: 'Instances',
+            dataKey: 'i',
+          },
+        ]}
+      />
+      {ontologySelected && !Object.keys(fragments).length && <Typography variant="subtitle2">No class fragment found in this ontology</Typography>}
+    </Paper>
+    
+  );
+}
+
+export default withStyles(styles)(FragmentsTable);
+/*<Table size="small">
       <TableHead>
         <TableRow>
           <TableCell className={classes.head} align="left">Subject</TableCell>
@@ -69,8 +138,4 @@ const FragmentsTable = ({ fragments, showInstances, showOnlyFullFragments, ontol
             <TableCell align="left"><Typography variant="subtitle2">No class fragment found in this ontology</Typography></TableCell>
           </TableRow>}
       </TableBody>
-    </Table>
-  );
-}
-
-export default withStyles(styles)(FragmentsTable);
+        </Table>*/

@@ -1,36 +1,31 @@
 export const SPARQL_ENDPOINT_URL = 'https://lov.linkeddata.es/dataset/lov/sparql';
 export const prefixes = {
-  timeont:  'https://w3id.org/seas/TimeOntology/',
-  foaf:     'http://xmlns.com/foaf/0.1/',
   vann:     'http://purl.org/vocab/vann/',
   voaf:     'http://purl.org/vocommons/voaf#',
-  dcterms:  'http://purl.org/dc/terms/',
   rdfs:     'http://www.w3.org/2000/01/rdf-schema#',
   owl:      'http://www.w3.org/2002/07/owl#',
-  xsd:      'http://www.w3.org/2001/XMLSchema#',
   skos:     'http://www.w3.org/2004/02/skos/core#',
-  military: 'http://rdf.muninn-project.org/ontologies/military#',
-  gr:       'http://purl.org/goodrelations/v1#',
-  ce:       'http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#',
-  sport:    'http://www.bbc.co.uk/ontologies/sport/',
-  phdd:     'http://rdf-vocabulary.ddialliance.org/phdd#',
-  seas:     'https://w3id.org/seas/',
-  dk:       'http://www.data-knowledge.org/dk/',
-  org:      'http://www.w3.org/ns/org#',
-  dbo:      'http://dbpedia.org/ontology/',
-  time:     'http://www.w3.org/2006/time#',
-  muninn:   'http://rdf.muninn-project.org/ontologies/',
   rdf:      'http://www.w3.org/1999/02/22-rdf-syntax-ns#',
 };
 
-export const reversePrefixes = {};
-Object.keys(prefixes).forEach((prefix) => {
-  reversePrefixes[prefixes[prefix]] = prefix;
-});
+// export const reversePrefixes = {};
+// Object.keys(prefixes).forEach((prefix) => {
+//   reversePrefixes[prefixes[prefix]] = prefix;
+// });
 
 export const PREFIXES = Object.keys(prefixes).map((prefix) => `PREFIX ${prefix}: <${prefixes[prefix]}>`).join('\n') + '\n';
 
-export const FROMS = Object.keys(reversePrefixes).map((rp) => `FROM <${rp.slice(0, -1)}>`).join('\n') + '\n';
+//export const FROMS = Object.keys(reversePrefixes).map((rp) => `FROM <${rp.slice(0, -1)}>\nFROM <${rp}>`).join('\n') + '\n';
+
+export const getQueryVocabs = () => `
+SELECT DISTINCT ?vocabPrefix ?vocabURI {
+ 	GRAPH <https://lov.linkeddata.es/dataset/lov> {
+ 	 	?vocabURI a voaf:Vocabulary.
+ 	 	?vocabURI vann:preferredNamespacePrefix ?vocabPrefix.
+  }
+}
+ORDER BY ?vocabPrefix
+`;
 
 export const getQueryIris = () => `
 SELECT DISTINCT ?vocabURI ?vocabLabel (COUNT (?class) AS ?nClass) (COUNT (?ind) AS ?nInd) {
@@ -50,7 +45,6 @@ SELECT DISTINCT ?vocabURI ?vocabLabel (COUNT (?class) AS ?nClass) (COUNT (?ind) 
 
 export const getQueryFragmentInstances = (s, p, o) => `
 SELECT DISTINCT ?s ?p ?o
-${/*FROMS*/''}
 WHERE {
   BIND(<${p.value}> AS ?p) .
   ?s a <${s.value}> .
@@ -62,8 +56,15 @@ WHERE {
 export const getQueryConnectedSchemas = (iri) => `
 SELECT 
 ?s ?sp ?sd ?p ?o ?op ?od
-${FROMS}
-FROM <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+FROM <http://purl.org/dc/terms/>
+FROM <http://purl.org/vocab/vann/>
+FROM <http://www.w3.org/2004/02/skos/core>
+FROM <http://purl.org/dc/elements/1.1/>
+FROM <http://creativecommons.org/ns>
+FROM <http://xmlns.com/foaf/0.1/>
+FROM <http://schema.org/>
+FROM <http://www.w3.org/ns/prov#>
+FROM <${iri}>
 WHERE {
   ?p rdfs:isDefinedBy <${iri}> .
   VALUES ?pt { owl:ObjectProperty owl:DatatypeProperty rdf:Property } .
