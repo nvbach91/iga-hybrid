@@ -35,26 +35,36 @@ SELECT DISTINCT ?vocabURI ?vocabLabel (COUNT (?class) AS ?nClass) (COUNT (?ind) 
     ?vocabURI rdfs:label ?vocabLabel .
     FILTER(LANGMATCHES(LANG(?vocabLabel), 'en') || LANGMATCHES(LANG(?vocabLabel), ''))
   }
-  ?class a owl:Class .
+  VALUES ?c { owl:Class rdf:Class } .
+  ?class a ?c .
   ?class rdfs:isDefinedBy ?vocabURI .
   OPTIONAL {
     ?ind a ?class .
   }
-} GROUP BY ?vocabURI ?vocabLabel ORDER BY DESC(?nClass)
+} GROUP BY ?vocabURI ?vocabLabel ORDER BY DESC(?nInd)
 `;
 
-export const getQueryFragmentInstances = (s, p, o) => `
-SELECT DISTINCT ?s ?p ?o
+export const getQueryFragmentInstancesCount = (fragment) => `
+SELECT (COUNT(DISTINCT *) AS ?n)
 WHERE {
-  BIND(<${p.value}> AS ?p) .
-  ?s a <${s.value}> .
-  ${o.value.startsWith('http://www.w3.org/2001/XMLSchema#') ? '' : `?o a <${o.value}> .`}
+  BIND(<${fragment.p.value}> AS ?p) .
+  ?s a <${fragment.s.value}> .
+  ${fragment.o.value.startsWith('http://www.w3.org/2001/XMLSchema#') ? '' : `?o a <${fragment.o.value}> .`}
   ?s ?p ?o .
 }
-#LIMIT 25
+`;
+
+export const getQueryFragmentInstances = (fragment) => `
+SELECT DISTINCT ?s ?p ?o
+WHERE {
+  BIND(<${fragment.p.value}> AS ?p) .
+  ?s a <${fragment.s.value}> .
+  ${fragment.o.value.startsWith('http://www.w3.org/2001/XMLSchema#') ? '' : `?o a <${fragment.o.value}> .`}
+  ?s ?p ?o .
+}
 `;
 export const getQueryConnectedSchemas = (iri) => `
-SELECT 
+SELECT DISTINCT
 ?s ?sp ?sd ?p ?o ?op ?od
 FROM <http://purl.org/dc/terms/>
 FROM <http://purl.org/vocab/vann/>
@@ -64,6 +74,7 @@ FROM <http://creativecommons.org/ns>
 FROM <http://xmlns.com/foaf/0.1/>
 FROM <http://schema.org/>
 FROM <http://www.w3.org/ns/prov#>
+
 FROM <${iri}>
 WHERE {
   ?p rdfs:isDefinedBy <${iri}> .

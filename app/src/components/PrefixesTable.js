@@ -1,13 +1,12 @@
 import React from 'react';
 import Paper from '@material-ui/core/Paper';
-import Link from '@material-ui/core/Link';
-import { createIriLink } from '../utils';
+import { createIriLink, createLink } from '../utils';
 import VirtualizedTable from './VirtualizedTable'
 
 export default function PrefixesTable({ rows }) {
   const mRows = rows.map((prefix) => {
     const iri = window.prefixes[prefix];
-    return { id: prefix, prefix: createIriLink(iri), iri: <Link href={iri} target="_blank" rel="noopener noreferrer">{iri}</Link> };
+    return { id: prefix, prefix: createIriLink(iri), iri: createLink(iri) };
   })
   return (
     <Paper style={{ height: 400, width: '100%' }}>

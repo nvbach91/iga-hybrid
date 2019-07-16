@@ -8,6 +8,7 @@ import Paper from '@material-ui/core/Paper';
 import { withStyles } from '@material-ui/core/styles';
 import { createIriLink } from '../utils';
 import VirtualizedTable from './VirtualizedTable'
+import { CircularProgress } from '@material-ui/core';
 
 const styles = (theme) => ({
   head1: {
@@ -23,44 +24,47 @@ const styles = (theme) => ({
     fontWeight: 'bold',
   }
 });
-const FragmentInstancesTable = ({ fragmentInstances, classFragment, classes }) => {
+const FragmentInstancesTable = ({ fragmentInstancesLoading, fragmentInstances, classFragment, classes }) => {
   const mRows = fragmentInstances ? fragmentInstances.map((fi, index) => {
     const { s, p, o } = fi;
     return { id: index, index: index + 1, s: createIriLink(s.value), p: createIriLink(p.value), o: createIriLink(o.value) };
   }) : [];
   return (
     <Paper style={{ height: 640, width: '100%' }}>
-      <VirtualizedTable
-        rowCount={mRows.length}
-        rowGetter={({ index }) => mRows[index]}
-        columns={[
-          {
-            width: 100,
-            label: `(${mRows.length}) #`,
-            dataKey: 'index',
-            numeric: true,
-            align: 'right',
-          },
-          {
-            flexGrow: 1,
-            width: 0,
-            label: <span>Subject class&nbsp;({createIriLink(classFragment ? classFragment.s.value : '')})</span>,
-            dataKey: 's',
-          },
-          {
-            flexGrow: 1,
-            width: 0,
-            label: <span>Predicate&nbsp;({createIriLink(classFragment ? classFragment.p.value : '')})</span>,
-            dataKey: 'p',
-          },
-          {
-            flexGrow: 1,
-            width: 0,
-            label: <span>Object class&nbsp;({createIriLink(classFragment ? classFragment.o.value : '')})</span>,
-            dataKey: 'o',
-          },
-        ]}
-      />
+      {fragmentInstancesLoading ?
+        <div style={{ display: 'flex', justifyContent: 'center' }}><CircularProgress size={40} /></div> :
+        <VirtualizedTable
+          rowCount={mRows.length}
+          rowGetter={({ index }) => mRows[index]}
+          columns={[
+            {
+              width: 100,
+              label: `(${mRows.length}) #`,
+              dataKey: 'index',
+              numeric: true,
+              align: 'right',
+            },
+            {
+              flexGrow: 1,
+              width: 0,
+              label: <span>Subject class&nbsp;({createIriLink(classFragment ? classFragment.s.value : '')})</span>,
+              dataKey: 's',
+            },
+            {
+              flexGrow: 1,
+              width: 0,
+              label: <span>Predicate&nbsp;({createIriLink(classFragment ? classFragment.p.value : '')})</span>,
+              dataKey: 'p',
+            },
+            {
+              flexGrow: 1,
+              width: 0,
+              label: <span>Object class&nbsp;({createIriLink(classFragment ? classFragment.o.value : '')})</span>,
+              dataKey: 'o',
+            },
+          ]}
+        />
+      }
     </Paper>
   );
   /*return (

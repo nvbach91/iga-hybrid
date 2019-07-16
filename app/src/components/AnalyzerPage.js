@@ -14,8 +14,9 @@ import Refresh from '@material-ui/icons/Refresh';
 import axios from 'axios';
 import bluebird from 'bluebird';
 import uuidv4 from 'uuid/v4';
-import { SPARQL_ENDPOINT_URL, PREFIXES, getQueryConnectedSchemas, getQueryFragmentInstances } from '../sparql';
+import { SPARQL_ENDPOINT_URL, PREFIXES, getQueryConnectedSchemas, getQueryFragmentInstancesCount, getQueryFragmentInstances } from '../sparql';
 import { axiosConfig, fetchIris } from '../network';
+import { createIriLink, createLink } from '../utils';
 import CircularProgress from '@material-ui/core/CircularProgress';
 import Dialog from '@material-ui/core/Dialog';
 import DialogTitle from '@material-ui/core/DialogTitle';
@@ -25,7 +26,7 @@ import Typography from '@material-ui/core/Typography';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Switch from '@material-ui/core/Switch';
 import chunk from 'lodash/chunk';
-import Link from '@material-ui/core/Link';
+import TextareaAutosize from 'react-autosize-textarea';
 
 const styles = theme => ({
   paper: {
@@ -40,7 +41,7 @@ const styles = theme => ({
   },
   submitButton: {
     marginRight: theme.spacing(1),
-    minWidth: '100px',
+    minWidth: 140,
   },
   submitButtonContent: {
     display: 'flex',
@@ -55,8 +56,14 @@ const styles = theme => ({
     margin: '10px auto',
     fontWeight: 'bold',
     backgroundColor: '#ccc',
+    height: 'auto',
+    border: 'none',
   },
   controls: {
+    display: 'flex',
+    justifyContent: 'space-between',
+  },
+  dialogTitle: {
     display: 'flex',
     justifyContent: 'space-between',
   }
@@ -91,11 +98,11 @@ class AnalyzerPage extends React.Component {
           nInd: binding.nInd.value,
         }
       });
-      this.setState({ 
-        loading: false, 
+      this.setState({
+        loading: false,
         selectOptions: iris.map(({ iri, label, nClass, nInd }) => {
           return { value: iri, label: `${iri}${label ? ` - ${label}` : ''}, classes: ${nClass}, instances: ${nInd}` };
-        }) 
+        })
       });
     });
   }
@@ -123,7 +130,7 @@ class AnalyzerPage extends React.Component {
           p,
           o: o ? o : o || od || null,
         };
-        fragment.i = fragment.s && fragment.o && fragment.p ? null : [];
+        fragment.i = fragment.s && fragment.o && fragment.p ? null : 0;
         fragments[uuid] = fragment;
       });
       this.setState({ fragments, loading: false }, () => {
@@ -140,33 +147,49 @@ class AnalyzerPage extends React.Component {
       }
       return true;
     });
-    const fragmentKeyGroups = chunk(fragmentKeys, 5);
+    const fragmentKeyGroups = chunk(fragmentKeys, 10);
     bluebird.each(fragmentKeyGroups, (fkg) => {
+      const counts = {};
       return bluebird.delay(500).then(() => {
         return bluebird.map(fkg, (key) => {
           const { s, p, o } = fragments[key];
           if (s && p && o) {
-            const payload = `query=${PREFIXES}${getQueryFragmentInstances(s, p, o)}`;
+            const payload = `query=${PREFIXES}${getQueryFragmentInstancesCount(fragments[key])}`;
             return axios.post(SPARQL_ENDPOINT_URL, payload, axiosConfig).then((resp) => {
-              const newFragments = { ...fragments };
-              newFragments[key].i = resp.data.results.bindings;
-              this.setState({ fragments: newFragments });
+              counts[key] = resp.data.results.bindings[0].n.value;
             });
           }
           return bluebird.delay(0);
         });
+      }).then(() => {
+        const newFragments = { ...fragments };
+        Object.keys(counts).forEach((countKey) => {
+          newFragments[countKey].i = counts[countKey];
+        });
+        this.setState({ fragments: newFragments });
       });
     });
   };
-  showSparqlPreview = () => {
-    this.setState({ sparqlPreview: true });
+  showSparqlPreview = (query) => () => {
+    this.setState({ sparqlPreview: query });
   }
   showInstances = (key) => () => {
-    const { i, s, p, o } = this.state.fragments[key];
-    this.setState({ fragmentInstances: i,  classFragment: { s, p, o } });
+    const { s, p, o } = this.state.fragments[key];
+    const payload = `query=${PREFIXES}${getQueryFragmentInstances(this.state.fragments[key])}`;
+    this.setState({ fragmentInstancesLoading: true });
+    return axios.post(SPARQL_ENDPOINT_URL, payload, axiosConfig).then((resp) => {
+      this.setState({
+        fragmentInstancesLoading: false,
+        fragmentInstances: resp.data.results.bindings,
+        classFragment: { s, p, o }
+      });
+    });
   }
-  closeModal = () => {
-    this.setState({ fragmentInstances: null, classFragment: null, sparqlPreview: false });
+  closeSparqlModal = () => {
+    this.setState({ sparqlPreview: false });
+  }
+  closeInstancesModal = () => {
+    this.setState({ fragmentInstances: null, classFragment: null });
   }
   render = () => {
     const { classes } = this.props;
@@ -174,14 +197,14 @@ class AnalyzerPage extends React.Component {
       <React.Fragment>
         <div className={classes.controls}>
           <Typography align="left" variant="h5">
-            Find class fragments 
+            Find class fragments
           </Typography>
           <div>
             <FormControlLabel
-              control={ <Switch checked={this.state.showOnlyFullFragments} onChange={this.handleInputChange('showOnlyFullFragments')} value="showOnlyFullFragments" color="primary" />}
+              control={<Switch checked={this.state.showOnlyFullFragments} onChange={this.handleInputChange('showOnlyFullFragments')} value="showOnlyFullFragments" color="primary" />}
               label="Show only full fragments"
             />
-            <Button color="primary" onClick={this.showSparqlPreview}>View SPARQL&nbsp;<Visibility /></Button>
+            <Button color="primary" onClick={this.showSparqlPreview(getQueryConnectedSchemas(this.state.selectedOption ? this.state.selectedOption.value : '__YOUR_SELECTED_VOCAB__').trim())}>View SPARQL&nbsp;<Visibility /></Button>
           </div>
         </div>
         <Typography align="left" variant="subtitle2">
@@ -195,7 +218,7 @@ class AnalyzerPage extends React.Component {
                   <SearchIcon className={classes.block} color="inherit" />
                 </Grid>
                 <FormControl className={classes.formControl}>
-                  <Select 
+                  <Select
                     classes={classes}
                     styles={selectStyles}
                     inputId="react-select-input"
@@ -206,32 +229,40 @@ class AnalyzerPage extends React.Component {
                   />
                 </FormControl>
                 <Grid item>
-                  <Button variant="contained" color="primary" className={classes.submitButton} onClick={this.fetchConnectedSchemas}>
-                    {this.state.loading ? <CircularProgress size={20} /> : <div className={classes.submitButtonContent}><Refresh style={{ fontSize: 24 }}/>&nbsp;Reload</div>}
-                  </Button>
+                  <div className={classes.submitButton}>
+                    {this.state.loading ? <CircularProgress size={20} /> :
+                      <Button variant="contained" color="primary" onClick={this.fetchConnectedSchemas}>
+                        <div className={classes.submitButtonContent}><Refresh style={{ fontSize: 24 }} />&nbsp;Reload</div>
+                      </Button>}
+                  </div>
                 </Grid>
               </Grid>
             </Toolbar>
           </AppBar>
           <Paper className={classes.root}>
-            <FragmentsTable 
-              fragments={this.state.fragments} 
-              showInstances={this.showInstances} 
+            <FragmentsTable
+              fragments={this.state.fragments}
+              showInstances={this.showInstances}
               showOnlyFullFragments={this.state.showOnlyFullFragments}
               ontologySelected={this.state.selectedOption ? true : false}
             />
           </Paper>
         </Paper>
-        <Dialog onClose={this.closeModal} open={this.state.fragmentInstances ? true : false} fullWidth={true} maxWidth="xl">
-          <DialogTitle>Class fragment instances</DialogTitle>
-          <FragmentInstancesTable fragmentInstances={this.state.fragmentInstances} classFragment={this.state.classFragment}/>
-        </Dialog>
-        <Dialog onClose={this.closeModal} open={this.state.sparqlPreview ? true : false} fullWidth={true} maxWidth="md">
+        <Dialog onClose={this.closeInstancesModal} open={this.state.fragmentInstances || this.state.fragmentInstancesLoading ? true : false} fullWidth={true} maxWidth="xl">
           <DialogTitle>
-            SPARQL query to get connected class fragments
-            <Typography variant="subtitle2">See also <Link href="https://github.com/nvbach91/iga-hybrid" target="_blank" rel="noopener noreferrer">https://github.com/nvbach91/iga-hybrid</Link></Typography>
+            <div className={classes.dialogTitle}>
+              <span>Class fragment instances in {this.state.selectedOption && createIriLink(this.state.selectedOption.value)}</span>
+              {this.state.classFragment && <span><Button color="primary" onClick={this.showSparqlPreview(getQueryFragmentInstances(this.state.classFragment).trim())}>View SPARQL&nbsp;<Visibility /></Button></span>}
+            </div>
           </DialogTitle>
-          <pre className={classes.codeBlock}>{getQueryConnectedSchemas(this.state.selectedOption ? this.state.selectedOption.value : '__YOUR_SELECTED_VOCAB__').trim()}</pre>
+          <FragmentInstancesTable fragmentInstancesLoading={this.state.fragmentInstancesLoading} fragmentInstances={this.state.fragmentInstances} classFragment={this.state.classFragment} />
+        </Dialog>
+        <Dialog onClose={this.closeSparqlModal} open={this.state.sparqlPreview ? true : false} fullWidth={true} maxWidth="md">
+          <DialogTitle>
+            SPARQL query
+            <Typography variant="body2">See also {createLink('https://github.com/nvbach91/iga-hybrid')}</Typography>
+          </DialogTitle>
+          <TextareaAutosize readOnly className={classes.codeBlock} defaultValue={this.state.sparqlPreview} />
         </Dialog>
       </React.Fragment>
     );

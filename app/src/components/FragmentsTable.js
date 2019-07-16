@@ -26,7 +26,9 @@ const styles = (theme) => ({
     width: 150,
   },
   fragmentButton: {
-    padding: '4px 16px'
+    padding: '4px 16px',
+    width: 32,
+    justifyContent: 'flex-end',
   }
 });
 
@@ -47,8 +49,8 @@ const FragmentsTable = ({ fragments, showInstances, showOnlyFullFragments, ontol
       o: createIriLink(o ? o.value : ''),
       i: i === null ?
         <CircularProgress size={26} /> :
-        <Button className={classes.fragmentButton} variant={i.length ? 'contained' : 'text'} onClick={showInstances(key)} color="primary" title={`Show ${i.length} instances` }>
-          {i.length}{i.length ? <span>&nbsp;</span> : ''}{i.length ? <Visibility /> : ''}
+        <Button className={classes.fragmentButton}  onClick={showInstances(key)} color="primary">
+          {i}{i ? <span>&nbsp;</span> : ''}{i ? <Visibility /> : ''}
         </Button>
     };
   }) : [];

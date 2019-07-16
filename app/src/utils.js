@@ -30,3 +30,7 @@ export const createIriLink = (iri) => {
   }
   return <Link href={iri} target="_blank" rel="noopener noreferrer">{shortenIri(iri)}</Link>;
 };
+
+export const createLink = (iri) => {
+  return <Link href={iri} target="_blank" rel="noopener noreferrer">{iri}</Link>;
+};

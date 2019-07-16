@@ -10,7 +10,7 @@ import SearchIcon from '@material-ui/icons/Search';
 import PrefixesTable from './PrefixesTable';
 import TextField from '@material-ui/core/TextField';
 import Typography from '@material-ui/core/Typography';
-import Link from '@material-ui/core/Link';
+import { createLink } from '../utils';
 
 const styles = theme => ({
   paper: {
@@ -48,7 +48,7 @@ class PrefixesPage extends React.Component {
         Search for prefixes
       </Typography>
       <Typography align="left" variant="subtitle2">
-        These prefixes come from <Link href="https://prefix.cc/context">prefix.cc</Link>
+        These prefixes come from {createLink('https://prefix.cc/context')}
       </Typography>
         <Paper className={classes.paper}>
           <AppBar className={classes.searchBar} position="static" color="default" elevation={0}>
