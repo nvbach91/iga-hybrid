@@ -58,15 +58,16 @@ SELECT DISTINCT ?vocabURI ?vocabLabel (COUNT (?class) AS ?nClass) (COUNT (?ind) 
 
 ### number of instances per class
 ```sparql
-SELECT ?class (COUNT(?ind) AS ?nInd) {
-  GRAPH <http://rdf.muninn-project.org/ontologies/military> {
-    ?class a owl:Class .
-    OPTIONAL {
-      ?ind a ?class
-    }
+SELECT ?class (COUNT(?ind) AS ?nInd) 
+FROM <http://rdf.muninn-project.org/ontologies/military> 
+WHERE {
+  ?class a owl:Class .
+  OPTIONAL {
+    ?ind a ?class
   }
 } 
 GROUP BY ?class
+#LIMIT 10
 ```
 
 ### class relationships
@@ -90,19 +91,21 @@ SELECT ?s ?p ?o {
 
 ### get connected schemas in an ontology
 ```sparql
-SELECT 
+SELECT DISTINCT
 ?s ?sp ?sd ?p ?o ?op ?od
-FROM <http://dbpedia.org/ontology/>
-FROM <http://rdf.muninn-project.org/ontologies/military>
-FROM <http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1>
+FROM <http://purl.org/dc/terms/>
+FROM <http://purl.org/vocab/vann/>
+FROM <http://www.w3.org/2004/02/skos/core>
+FROM <http://purl.org/dc/elements/1.1/>
+FROM <http://creativecommons.org/ns>
 FROM <http://xmlns.com/foaf/0.1/>
-FROM <http://www.bbc.co.uk/ontologies/sport>
-FROM <http://rdf-vocabulary.ddialliance.org/phdd>
-FROM <https://w3id.org/seas/TimeOntology>
-FROM <http://www.data-knowledge.org/dk/>
-{
+FROM <http://schema.org/>
+FROM <http://www.w3.org/ns/prov#>
+
+FROM <http://rdf.muninn-project.org/ontologies/military> #replace your vocab iri
+WHERE {
   ?p rdfs:isDefinedBy <http://rdf.muninn-project.org/ontologies/military> .
-  VALUES ?pt { owl:ObjectProperty owl:DatatypeProperty } .
+  VALUES ?pt { owl:ObjectProperty owl:DatatypeProperty rdf:Property } .
   ?p a ?pt .
   OPTIONAL {
     ?p rdfs:domain ?s .
@@ -111,9 +114,8 @@ FROM <http://www.data-knowledge.org/dk/>
         OPTIONAL { ?op rdfs:range ?od . }
     }
   }
-
   OPTIONAL {
-      ?p rdfs:range ?o .
+    ?p rdfs:range ?o .
     OPTIONAL {
       ?p rdfs:subPropertyOf ?sp .
       OPTIONAL { ?sp rdfs:domain ?sd . }

@@ -27,7 +27,7 @@ SELECT DISTINCT ?vocabPrefix ?vocabURI {
 ORDER BY ?vocabPrefix
 `;
 
-export const getQueryIris = () => `
+export const getQueryVocabStats = () => `
 SELECT DISTINCT ?vocabURI ?vocabLabel (COUNT (?class) AS ?nClass) (COUNT (?ind) AS ?nInd) {
   ?vocabURI a voaf:Vocabulary.
   ?vocabURI vann:preferredNamespacePrefix ?vocabPrefix.
@@ -63,7 +63,7 @@ WHERE {
   ?s ?p ?o .
 }
 `;
-export const getQueryConnectedSchemas = (iri) => `
+export const getQuerySchemaFragments = (iri) => `
 SELECT DISTINCT
 ?s ?sp ?sd ?p ?o ?op ?od
 FROM <http://purl.org/dc/terms/>

@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { SPARQL_ENDPOINT_URL, PREFIXES, getQueryIris } from './sparql'
+import { SPARQL_ENDPOINT_URL, PREFIXES, getQueryVocabStats } from './sparql'
 export const axiosConfig = {
   headers: { 
     "accept": "application/sparql-results+json,*/*;q=0.9", 
@@ -9,6 +9,6 @@ export const axiosConfig = {
 };
 
 export const fetchIris = () => {
-    const payload = `query=${PREFIXES}${getQueryIris()}`;
+    const payload = `query=${PREFIXES}${getQueryVocabStats()}`;
     return axios.post(SPARQL_ENDPOINT_URL, payload, axiosConfig)
 };

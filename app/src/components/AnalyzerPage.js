@@ -14,7 +14,7 @@ import Refresh from '@material-ui/icons/Refresh';
 import axios from 'axios';
 import bluebird from 'bluebird';
 import uuidv4 from 'uuid/v4';
-import { SPARQL_ENDPOINT_URL, PREFIXES, getQueryConnectedSchemas, getQueryFragmentInstancesCount, getQueryFragmentInstances } from '../sparql';
+import { SPARQL_ENDPOINT_URL, PREFIXES, getQuerySchemaFragments, getQueryFragmentInstancesCount, getQueryFragmentInstances } from '../sparql';
 import { axiosConfig, fetchIris } from '../network';
 import { createIriLink, createLink } from '../utils';
 import CircularProgress from '@material-ui/core/CircularProgress';
@@ -119,7 +119,7 @@ class AnalyzerPage extends React.Component {
   };
   fetchConnectedSchemas = () => {
     this.setState({ loading: true });
-    const payload = `query=${PREFIXES}${getQueryConnectedSchemas(this.state.selectedOption.value)}`;
+    const payload = `query=${PREFIXES}${getQuerySchemaFragments(this.state.selectedOption.value)}`;
     return axios.post(SPARQL_ENDPOINT_URL, payload, axiosConfig).then((resp) => {
       const fragments = {};
       resp.data.results.bindings.forEach((binding) => {
@@ -204,7 +204,7 @@ class AnalyzerPage extends React.Component {
               control={<Switch checked={this.state.showOnlyFullFragments} onChange={this.handleInputChange('showOnlyFullFragments')} value="showOnlyFullFragments" color="primary" />}
               label="Show only full fragments"
             />
-            <Button color="primary" onClick={this.showSparqlPreview(getQueryConnectedSchemas(this.state.selectedOption ? this.state.selectedOption.value : '__YOUR_SELECTED_VOCAB__').trim())}>View SPARQL&nbsp;<Visibility /></Button>
+            <Button color="primary" onClick={this.showSparqlPreview(getQuerySchemaFragments(this.state.selectedOption ? this.state.selectedOption.value : '__YOUR_SELECTED_VOCAB__').trim())}>View SPARQL&nbsp;<Visibility /></Button>
           </div>
         </div>
         <Typography align="left" variant="subtitle2">
