@@ -106,8 +106,9 @@ function Header(props) {
         elevation={0}
       >
         <Tabs value={tabIndex} textColor="inherit">
-          <Tab textColor="inherit" label="LOV Analyzer" onClick={onTabSwitch(0)}/>
-          <Tab textColor="inherit" label="Prefixes" onClick={onTabSwitch(1)}/>
+          <Tab textColor="inherit" label="Code lists" onClick={onTabSwitch(0)}/>
+          <Tab textColor="inherit" label="Class Fragments" onClick={onTabSwitch(1)}/>
+          <Tab textColor="inherit" label="Prefixes" onClick={onTabSwitch(2)}/>
         </Tabs>
       </AppBar>
     </React.Fragment>

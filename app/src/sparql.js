@@ -63,7 +63,7 @@ WHERE {
   ?s ?p ?o .
 }
 `;
-export const getQuerySchemaFragments = (iri) => `
+export const getQuerySchemaFragments = (vocabIri) => `
 SELECT DISTINCT
 ?s ?sp ?sd ?p ?o ?op ?od
 FROM <http://purl.org/dc/terms/>
@@ -75,9 +75,9 @@ FROM <http://xmlns.com/foaf/0.1/>
 FROM <http://schema.org/>
 FROM <http://www.w3.org/ns/prov#>
 
-FROM <${iri}>
+FROM <${vocabIri}>
 WHERE {
-  ?p rdfs:isDefinedBy <${iri}> .
+  ?p rdfs:isDefinedBy <${vocabIri}> .
   VALUES ?pt { owl:ObjectProperty owl:DatatypeProperty rdf:Property } .
   ?p a ?pt .
   OPTIONAL {
@@ -106,4 +106,34 @@ SELECT ?label ?ontology ?comment ?definition WHERE {
   OPTIONAL { ?entity rdfs:comment ?comment }
   OPTIONAL { ?entity skos:definition ?definition }
 }
+`;
+
+export const getQueryClassInstanceCounts = (vocabIri) => `
+SELECT DISTINCT ?d ?p ?c (COUNT(DISTINCT ?i) AS ?n)
+FROM <${vocabIri}> 
+WHERE {
+  ?c a owl:Class .
+  ?i a ?c .
+  OPTIONAL { 
+    ?p rdfs:range ?c . 
+    OPTIONAL {
+    	?p rdfs:domain ?d .
+    }
+  }
+}
+GROUP BY ?d ?p ?c
+ORDER BY ?c
+`;
+
+export const getQueryCodeListInstances = (codeListIri, vocabIri) => `
+SELECT DISTINCT ?i ?skosConcept
+FROM <${vocabIri}> 
+WHERE {
+  ?i a <${codeListIri}> .
+  OPTIONAL {
+    BIND(skos:Concept AS ?skosConcept) .
+    ?i a ?skosConcept .
+  }
+}
+ORDER BY ?i
 `;

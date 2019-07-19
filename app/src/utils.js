@@ -11,14 +11,14 @@ export const debounce = (fn, time) => {
 };
 
 export const shortenIri = (iri) => {
-  const prefixes = Object.keys(window.reversePrefixes);
+  const prefixes = Object.keys(window.cached.reversePrefixes);
   for (let i = 0; i < prefixes.length; i++) {
     let prefix = prefixes[i];
     if (iri.startsWith(prefix)) {
       if (iri.length === prefix.length) {
-        return window.reversePrefixes[prefix];
+        return window.cached.reversePrefixes[prefix];
       }
-      return `${window.reversePrefixes[prefix]}:${iri.slice(prefix.length)}`;
+      return `${window.cached.reversePrefixes[prefix]}:${iri.slice(prefix.length)}`;
     }
   }
   return iri;

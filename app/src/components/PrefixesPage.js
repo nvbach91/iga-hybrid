@@ -30,12 +30,12 @@ const styles = theme => ({
 class PrefixesPage extends React.Component {
   state = {
     searchValue: '',
-    rows: Object.keys(window.prefixes),
+    rows: Object.keys(window.cached.prefixes),
   }
   handleInputChange = (name) => (e) => {
     this.setState({ 
       [name]: e.target.value, 
-      rows: Object.keys(window.prefixes).filter((prefix) => {
+      rows: Object.keys(window.cached.prefixes).filter((prefix) => {
         return prefix.toLowerCase().includes(e.target.value.trim().toLowerCase());
       }) 
     });

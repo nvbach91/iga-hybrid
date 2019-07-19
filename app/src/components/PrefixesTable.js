@@ -5,7 +5,7 @@ import VirtualizedTable from './VirtualizedTable'
 
 export default function PrefixesTable({ rows }) {
   const mRows = rows.map((prefix) => {
-    const iri = window.prefixes[prefix];
+    const iri = window.cached.prefixes[prefix];
     return { id: prefix, prefix: createIriLink(iri), iri: createLink(iri) };
   })
   return (

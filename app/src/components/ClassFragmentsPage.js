@@ -1,23 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import AppBar from '@material-ui/core/AppBar';
-import FormControl from '@material-ui/core/FormControl';
-import Select from 'react-select';
-import Toolbar from '@material-ui/core/Toolbar';
 import Paper from '@material-ui/core/Paper';
-import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
 import { withStyles } from '@material-ui/core/styles';
-import SearchIcon from '@material-ui/icons/Search';
 import Visibility from '@material-ui/icons/Visibility';
-import Refresh from '@material-ui/icons/Refresh';
 import axios from 'axios';
 import bluebird from 'bluebird';
 import uuidv4 from 'uuid/v4';
 import { SPARQL_ENDPOINT_URL, PREFIXES, getQuerySchemaFragments, getQueryFragmentInstancesCount, getQueryFragmentInstances } from '../sparql';
-import { axiosConfig, fetchIris } from '../network';
+import { axiosConfig } from '../network';
 import { createIriLink, createLink } from '../utils';
-import CircularProgress from '@material-ui/core/CircularProgress';
 import Dialog from '@material-ui/core/Dialog';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import FragmentsTable from './FragmentsTable';
@@ -27,6 +19,7 @@ import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Switch from '@material-ui/core/Switch';
 import chunk from 'lodash/chunk';
 import TextareaAutosize from 'react-autosize-textarea';
+import VocabSelector from './VocabSelector';
 
 const styles = theme => ({
   paper: {
@@ -38,17 +31,6 @@ const styles = theme => ({
   },
   block: {
     display: 'block',
-  },
-  submitButton: {
-    marginRight: theme.spacing(1),
-    minWidth: 140,
-  },
-  submitButtonContent: {
-    display: 'flex',
-    alignItems: 'center',
-  },
-  formControl: {
-    flexGrow: 1
   },
   codeBlock: {
     padding: '10px',
@@ -68,47 +50,19 @@ const styles = theme => ({
     justifyContent: 'space-between',
   }
 });
-const selectStyles = {
-  option: (styles, { data, isDisabled, isFocused, isSelected }) => {
-    return {
-      ...styles,
-      textAlign: 'left',
-      padding: '10px'
-    };
-  },
-};
-class AnalyzerPage extends React.Component {
+class ClassFragmentsPage extends React.Component {
   state = {
     fragments: {},
-    selectedOption: null,
-    selectOptions: [],
-    loading: true,
+    selectedVocabOption: null,
+    loading: false,
     fragmentInstances: null,
     classFragment: null,
     sparqlPreview: false,
     showOnlyFullFragments: localStorage.getItem('preferences.showOnlyFullFragments') === 'true',
   }
-  componentDidMount = () => {
-    fetchIris().then((resp) => {
-      const iris = resp.data.results.bindings.map((binding) => {
-        return {
-          iri: binding.vocabURI.value,
-          label: binding.vocabLabel ? binding.vocabLabel.value : '',
-          nClass: binding.nClass.value,
-          nInd: binding.nInd.value,
-        }
-      });
-      this.setState({
-        loading: false,
-        selectOptions: iris.map(({ iri, label, nClass, nInd }) => {
-          return { value: iri, label: `${iri}${label ? ` - ${label}` : ''}, classes: ${nClass}, instances: ${nInd}` };
-        })
-      });
-    });
-  }
-  handleSelectOptionChange = (selectedOption) => {
-    this.setState({ selectedOption }, () => {
-      this.fetchConnectedSchemas();
+  onVocabSelected = (selectedVocabOption) => {
+    this.setState({ selectedVocabOption }, () => {
+      this.fetchClassFragments();
     });
   }
   handleInputChange = (name) => (e) => {
@@ -117,9 +71,9 @@ class AnalyzerPage extends React.Component {
       localStorage.setItem('preferences.showOnlyFullFragments', e.target.checked);
     }
   };
-  fetchConnectedSchemas = () => {
+  fetchClassFragments = () => {
     this.setState({ loading: true });
-    const payload = `query=${PREFIXES}${getQuerySchemaFragments(this.state.selectedOption.value)}`;
+    const payload = `query=${PREFIXES}${getQuerySchemaFragments(this.state.selectedVocabOption.value)}`;
     return axios.post(SPARQL_ENDPOINT_URL, payload, axiosConfig).then((resp) => {
       const fragments = {};
       resp.data.results.bindings.forEach((binding) => {
@@ -204,54 +158,27 @@ class AnalyzerPage extends React.Component {
               control={<Switch checked={this.state.showOnlyFullFragments} onChange={this.handleInputChange('showOnlyFullFragments')} value="showOnlyFullFragments" color="primary" />}
               label="Show only full fragments"
             />
-            <Button color="primary" onClick={this.showSparqlPreview(getQuerySchemaFragments(this.state.selectedOption ? this.state.selectedOption.value : '__YOUR_SELECTED_VOCAB__').trim())}>View SPARQL&nbsp;<Visibility /></Button>
+            <Button color="primary" onClick={this.showSparqlPreview(getQuerySchemaFragments(this.state.selectedVocabOption ? this.state.selectedVocabOption.value : '__YOUR_SELECTED_VOCAB__').trim())}>View SPARQL&nbsp;<Visibility /></Button>
           </div>
         </div>
         <Typography align="left" variant="subtitle2">
           This tool will help you identify class fragments in a selected ontology and fetch their instances. Begin by selecting an ontology in the list below.
         </Typography>
         <Paper className={classes.paper}>
-          <AppBar className={classes.searchBar} position="static" color="default" elevation={0}>
-            <Toolbar>
-              <Grid container spacing={2} alignItems="center">
-                <Grid item>
-                  <SearchIcon className={classes.block} color="inherit" />
-                </Grid>
-                <FormControl className={classes.formControl}>
-                  <Select
-                    classes={classes}
-                    styles={selectStyles}
-                    inputId="react-select-input"
-                    TextFieldProps={{ label: 'Ontology IRI', placeholder: 'Type to search for ontology' }}
-                    options={this.state.selectOptions}
-                    value={this.state.selectedOption}
-                    onChange={this.handleSelectOptionChange}
-                  />
-                </FormControl>
-                <Grid item>
-                  <div className={classes.submitButton}>
-                    {this.state.loading ? <CircularProgress size={20} /> :
-                      <Button variant="contained" color="primary" onClick={this.fetchConnectedSchemas}>
-                        <div className={classes.submitButtonContent}><Refresh style={{ fontSize: 24 }} />&nbsp;Reload</div>
-                      </Button>}
-                  </div>
-                </Grid>
-              </Grid>
-            </Toolbar>
-          </AppBar>
+          <VocabSelector onVocabSelected={this.onVocabSelected} onReloadClick={this.fetchClassFragments}/>
           <Paper className={classes.root}>
             <FragmentsTable
               fragments={this.state.fragments}
               showInstances={this.showInstances}
               showOnlyFullFragments={this.state.showOnlyFullFragments}
-              ontologySelected={this.state.selectedOption ? true : false}
+              vocabIsSelected={this.state.selectedVocabOption ? true : false}
             />
           </Paper>
         </Paper>
         <Dialog onClose={this.closeInstancesModal} open={this.state.fragmentInstances || this.state.fragmentInstancesLoading ? true : false} fullWidth={true} maxWidth="xl">
           <DialogTitle>
             <div className={classes.dialogTitle}>
-              <span>Class fragment instances in {this.state.selectedOption && createIriLink(this.state.selectedOption.value)}</span>
+              <span>Class fragment instances in {this.state.selectedVocabOption && createIriLink(this.state.selectedVocabOption.value)}</span>
               {this.state.classFragment && <span><Button color="primary" onClick={this.showSparqlPreview(getQueryFragmentInstances(this.state.classFragment).trim())}>View SPARQL&nbsp;<Visibility /></Button></span>}
             </div>
           </DialogTitle>
@@ -269,8 +196,8 @@ class AnalyzerPage extends React.Component {
   }
 }
 
-AnalyzerPage.propTypes = {
+ClassFragmentsPage.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(AnalyzerPage);
+export default withStyles(styles)(ClassFragmentsPage);

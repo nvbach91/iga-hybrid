@@ -32,7 +32,7 @@ const styles = (theme) => ({
   }
 });
 
-const FragmentsTable = ({ fragments, showInstances, showOnlyFullFragments, ontologySelected, classes }) => {
+const FragmentsTable = ({ fragments, showInstances, showOnlyFullFragments, vocabIsSelected, classes }) => {
   const mRows = fragments ? Object.keys(fragments).filter((key) => {
     if (showOnlyFullFragments) {
       const { s, p, o } = fragments[key];
@@ -93,7 +93,7 @@ const FragmentsTable = ({ fragments, showInstances, showOnlyFullFragments, ontol
           },
         ]}
       />
-      {ontologySelected && !Object.keys(fragments).length && <Typography variant="subtitle2">No class fragment found in this ontology</Typography>}
+      {vocabIsSelected && !Object.keys(fragments).length && <Typography variant="subtitle2">No class fragment found in this ontology</Typography>}
     </Paper>
     
   );
@@ -135,7 +135,7 @@ export default withStyles(styles)(FragmentsTable);
             </TableRow>
           );
         })}
-        {ontologySelected && !Object.keys(fragments).length && 
+        {vocabIsSelected && !Object.keys(fragments).length && 
           <TableRow>
             <TableCell align="left"><Typography variant="subtitle2">No class fragment found in this ontology</Typography></TableCell>
           </TableRow>}

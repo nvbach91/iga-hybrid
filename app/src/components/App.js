@@ -6,10 +6,10 @@ import axios from 'axios';
 class App extends React.Component {
   componentWillMount = () => {
     axios.get('https://prefix.cc/context').then((resp) => {
-      window.prefixes = resp.data['@context'];
-      window.reversePrefixes = {};
-      Object.keys(window.prefixes).forEach((prefix) => {
-        window.reversePrefixes[window.prefixes[prefix]] = prefix;
+      window.cached.prefixes = resp.data['@context'];
+      window.cached.reversePrefixes = {};
+      Object.keys(window.cached.prefixes).forEach((prefix) => {
+        window.cached.reversePrefixes[window.cached.prefixes[prefix]] = prefix;
       });
     });
   }

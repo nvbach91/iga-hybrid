@@ -5,7 +5,8 @@ import { ThemeProvider } from '@material-ui/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Hidden from '@material-ui/core/Hidden';
 import Navigator from './Navigator';
-import AnalyzerPage from './AnalyzerPage';
+import ClassFragmentsPage from './ClassFragmentsPage';
+import CodeListsPage from './CodeListsPage';
 import PrefixesPage from './PrefixesPage';
 import Header from './Header';
 
@@ -133,12 +134,12 @@ const styles = {
       flexShrink: 0,
     },
   },
-  appAnalyzerPage: {
+  appPage: {
     flex: 1,
     display: 'flex',
     flexDirection: 'column',
   },
-  mainAnalyzerPage: {
+  mainPage: {
     flex: 1,
     padding: '48px 36px 0',
     background: '#eaeff1',
@@ -157,11 +158,12 @@ class Paperbase extends React.Component {
   handleTabSwitch = (tabIndex) => () => {
     this.setState({ tabIndex });
   }
-  renderAnalyzerPage = () => {
+  renderPage = () => {
     switch (this.state.tabIndex) {
-      case 0: return <AnalyzerPage />;
-      case 1: return <PrefixesPage />;
-      default: return <AnalyzerPage />;
+      case 0: return <CodeListsPage />;
+      case 1: return <ClassFragmentsPage />;
+      case 2: return <PrefixesPage />;
+      default: return <ClassFragmentsPage />;
     }
   }
   render() {
@@ -183,10 +185,10 @@ class Paperbase extends React.Component {
               <Navigator PaperProps={{ style: { width: drawerWidth } }} />
             </Hidden>
           </nav>
-          <div className={classes.appAnalyzerPage}>
+          <div className={classes.appPage}>
             <Header onDrawerToggle={this.handleDrawerToggle} onTabSwitch={this.handleTabSwitch} tabIndex={this.state.tabIndex}/>
-            <main className={classes.mainAnalyzerPage}>
-              {this.renderAnalyzerPage()}
+            <main className={classes.mainPage}>
+              {this.renderPage()}
             </main>
           </div>
         </div>

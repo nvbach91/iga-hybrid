@@ -1,4 +1,5 @@
 import axios from 'axios';
+import bluebird from 'bluebird';
 import { SPARQL_ENDPOINT_URL, PREFIXES, getQueryVocabStats } from './sparql'
 export const axiosConfig = {
   headers: { 
@@ -8,7 +9,13 @@ export const axiosConfig = {
   }
 };
 
-export const fetchIris = () => {
-    const payload = `query=${PREFIXES}${getQueryVocabStats()}`;
-    return axios.post(SPARQL_ENDPOINT_URL, payload, axiosConfig)
+export const fetchVocabs = () => {
+  if (window.cached.vocabs) {
+    return bluebird.resolve(window.cached.vocabs);
+  }
+  const payload = `query=${PREFIXES}${getQueryVocabStats()}`;
+  return axios.post(SPARQL_ENDPOINT_URL, payload, axiosConfig).then((resp) => {
+    window.cached.vocabs = resp;
+    return resp;
+  });
 };
