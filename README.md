@@ -127,4 +127,99 @@ ORDER BY ?s
 
 
 
+# Code list analysis
+## Prefixes
+```
+PREFIX vann: <http://purl.org/vocab/vann/>
+PREFIX voaf: <http://purl.org/vocommons/voaf#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+```
 
+## Get the number of class instances in each ontology
+```sparql
+SELECT DISTINCT 
+?v (COUNT(?i) as ?n) 
+WHERE {
+  ?v a voaf:Vocabulary.
+  ?c a owl:Class .
+  ?i a ?c .
+  ?c rdfs:isDefinedBy ?v .
+  ?i rdfs:isDefinedBy ?v .
+} 
+GROUP BY ?v
+ORDER BY DESC(?n)
+```
+
+
+## Get the number of instances of each class in an ontology with their range properties and domain classes
+```sparql
+SELECT ?d ?p ?c (COUNT(DISTINCT ?i) AS ?n)
+FROM <http://rdf.muninn-project.org/ontologies/military> 
+WHERE {
+  ?c a owl:Class .
+  ?i a ?c .
+  OPTIONAL { 
+    ?p rdfs:range ?c . 
+    OPTIONAL {
+         ?p rdfs:domain ?d .
+    }
+  }
+}
+GROUP BY ?d ?p ?c
+```
+
+## Get all class instances with their class in an ontology, optionally find out if the instance is a skos:Concept
+```sparql
+SELECT DISTINCT ?c ?i
+FROM <http://rdf.muninn-project.org/ontologies/military> 
+WHERE {
+  ?c a owl:Class .
+  ?i a ?c .
+  OPTIONAL {
+    ?i a skos:Concept .
+  }
+}
+```
+
+## Get a list of code list members and whether it's a skos:Concept
+```sparql
+SELECT DISTINCT ?i ?skosConcept
+FROM <http://rdf.muninn-project.org/ontologies/military> 
+WHERE {
+  ?i a <http://rdf.muninn-project.org/ontologies/military#Soldier> .
+  OPTIONAL {
+    BIND(skos:Concept AS ?skosConcept) .
+    ?i a ?skosConcept .
+  }
+}
+```
+
+## Get list of properties that connect class instances
+```sparql
+SELECT DISTINCT ?p
+FROM <http://rdf.muninn-project.org/ontologies/military> 
+WHERE {
+  ?c1 a owl:Class .
+  ?c2 a owl:Class .
+  ?i1 a ?c1 .
+  ?i2 a ?c2 .
+  ?i1 ?p ?i2 .
+}
+```
+
+## Get code list structure
+```sparql
+SELECT DISTINCT ?c ?i1 ?p ?i2 
+FROM <http://rdf.muninn-project.org/ontologies/military> 
+WHERE {
+  BIND(<http://rdf.muninn-project.org/ontologies/military#MilitaryTrade> AS ?c) .
+  ?i1 a ?c .
+  OPTIONAL {
+    ?i2 a ?c .
+    ?i1 ?p ?i2 .
+  }
+}
+ORDER BY ?i1
+```

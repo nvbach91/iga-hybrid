@@ -6,7 +6,7 @@ import { withStyles } from '@material-ui/core/styles';
 import Visibility from '@material-ui/icons/Visibility';
 import axios from 'axios';
 import uuidv4 from 'uuid/v4';
-import { SPARQL_ENDPOINT_URL, PREFIXES, getQueryCodeListInstances, getQueryClassInstanceCounts } from '../sparql';
+import { SPARQL_ENDPOINT_URL, PREFIXES, getQueryCodeListInstances, getQueryClassInstanceCounts, getQueryCodeListStructure } from '../sparql';
 import { axiosConfig } from '../network';
 import { createIriLink, createLink } from '../utils';
 import Dialog from '@material-ui/core/Dialog';
@@ -16,6 +16,7 @@ import CodeListInstancesTable from './CodeListInstancesTable';
 import Typography from '@material-ui/core/Typography';
 import TextareaAutosize from 'react-autosize-textarea';
 import VocabSelector from './VocabSelector';
+import { drawGraph, parseToVOWLSpec } from './VOWL';
 
 const styles = theme => ({
   paper: {
@@ -54,6 +55,8 @@ class CodeListsPage extends React.Component {
     codeListInstances: null,
     codeList: null,
     sparqlPreview: false,
+    codeListInstanceGraphNodes: null,
+    codeListInstancesGraphLoading: false,
   }
   onVocabSelected = (selectedVocabOption) => {
     this.setState({ selectedVocabOption }, () => {
@@ -96,6 +99,20 @@ class CodeListsPage extends React.Component {
   closeInstancesModal = () => {
     this.setState({ codeListInstances: null, codeList: null });
   }
+  closeGraphModal = () => {
+    this.setState({ codeListInstanceGraphNodes: null });
+  }
+  handleLoadGraph = () => {
+    const payload = `query=${PREFIXES}${getQueryCodeListStructure(this.state.codeList.value, this.state.selectedVocabOption.value)}`;
+    return axios.post(SPARQL_ENDPOINT_URL, payload, axiosConfig).then((resp) => {
+      const data = parseToVOWLSpec(resp.data.results.bindings);
+      this.setState({ codeListInstancesGraphLoading: false, codeListInstanceGraphNodes: data }, () => {
+        setTimeout(() => {
+          drawGraph(data);
+        }, 1000)
+      });
+    });
+  };
   render = () => {
     const { classes } = this.props;
     return (
@@ -112,7 +129,7 @@ class CodeListsPage extends React.Component {
           This tool will help you identify code lists embedded in a vocabulary
         </Typography>
         <Paper className={classes.paper}>
-          <VocabSelector onVocabSelected={this.onVocabSelected} onReloadClick={this.fetchCodeLists}/>
+          <VocabSelector onVocabSelected={this.onVocabSelected} onReloadClick={this.fetchCodeLists} />
           <Paper className={classes.root}>
             <CodeListsTable
               codeLists={this.state.codeLists}
@@ -125,13 +142,30 @@ class CodeListsPage extends React.Component {
           <DialogTitle>
             <div className={classes.dialogTitle}>
               <span>Vocabulary: {this.state.selectedVocabOption && createIriLink(this.state.selectedVocabOption.value)}</span>
-              {this.state.codeList && <span><Button color="primary" onClick={this.showSparqlPreview(getQueryCodeListInstances(this.state.codeList.value,  this.state.selectedVocabOption.value).trim())}>View SPARQL&nbsp;<Visibility /></Button></span>}
+              {this.state.codeList && <span><Button color="primary" onClick={this.handleLoadGraph}>Visualize&nbsp;<Visibility /></Button></span>}
+              {this.state.codeList && <span><Button color="primary" onClick={this.showSparqlPreview(getQueryCodeListInstances(this.state.codeList.value, this.state.selectedVocabOption.value).trim())}>View SPARQL&nbsp;<Visibility /></Button></span>}
             </div>
             <div className={classes.dialogTitle}>
               <span>Code list: {this.state.codeList && createIriLink(this.state.codeList.value)}</span>
             </div>
           </DialogTitle>
           <CodeListInstancesTable loading={this.state.codeListInstancesLoading} codeListInstances={this.state.codeListInstances} codeList={this.state.codeList} />
+        </Dialog>
+        <Dialog onClose={this.closeGraphModal} open={this.state.codeListInstanceGraphNodes || this.state.codeListInstancesGraphLoading ? true : false} fullWidth={true} maxWidth="xl">
+          <DialogTitle>
+            <div className={classes.dialogTitle}><span></span>Code list view {this.state.codeList && createIriLink(this.state.codeList.value)}</div>
+          </DialogTitle>
+          <div className="ontology-graph">
+            <div id="example">
+              <div id="control">
+                <div>
+                  <div id="sliderOption" />
+                </div>
+                <div id="resetOption" />
+              </div>
+              <div id="graph" />
+            </div>
+          </div>
         </Dialog>
         <Dialog onClose={this.closeSparqlModal} open={this.state.sparqlPreview ? true : false} fullWidth={true} maxWidth="md">
           <DialogTitle>

@@ -1,0 +1,153 @@
+/*-----------------------------------------------------------------
+ VOWL graphical elements (part of spec) - mixed CSS and SVG styles
+-----------------------------------------------------------------*/
+.ontology-graph {
+  min-height: 640px;
+}
+/*#example, #graph, .svgGraph {
+  width: 100%;
+  max-height: 640px;
+}*/
+.ontology-graph text {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .ontology-graph .subtext {
+    font-size: 9px;
+  }
+  .ontology-graph .cardinality {
+    font-size: 10px;
+  }
+  .ontology-graph .text,
+  .ontology-graph .resulttext,
+  .ontology-graph .embedded {
+    pointer-events: none;
+  }
+  .ontology-graph .class,
+  .ontology-graph path {
+    stroke-width: 2;
+  }
+  .ontology-graph .fineline {
+    stroke-width: 1;
+  }
+  .ontology-graph .special {
+    stroke-dasharray: 8;
+  }
+  .ontology-graph .dotted {
+    stroke-dasharray: 3;
+  }
+  .ontology-graph rect.focused,
+  .ontology-graph circle.focused {
+    stroke-width: 4px;
+  }
+  .ontology-graph .nostroke {
+    stroke: none;
+  }
+  .ontology-graph .class,
+  .ontology-graph .object,
+  .ontology-graph .disjoint {
+    fill: #acf;
+  }
+  .ontology-graph .label .datatype {
+    fill: #9c6;
+  }
+  .ontology-graph .rdf {
+    fill: #c9c;
+  }
+  .ontology-graph .literal,
+  .ontology-graph .node .datatype {
+    fill: #fc3;
+  }
+  .ontology-graph .deprecated {
+    fill: #ccc;
+  }
+  .ontology-graph .external {
+    fill: #36c;
+  }
+  .ontology-graph .symbol {
+    fill: #69c;
+  }
+  .ontology-graph .arrowhead,
+  .ontology-graph marker path {
+    fill: #000;
+  }
+  .ontology-graph .class,
+  .ontology-graph path,
+  .ontology-graph .fineline {
+    stroke: #000;
+  }
+  .ontology-graph .white,
+  .ontology-graph .subclass,
+  .ontology-graph .dottedMarker path {
+    fill: #fff;
+  }
+  .ontology-graph path,
+  .ontology-graph .nofill {
+    fill: none;
+  }
+  .ontology-graph .classhover,
+  .ontology-graph .propertyhover,
+  .ontology-graph path.arrowhead.hovered,
+  .ontology-graph .cardinality.hovered,
+  .ontology-graph .normalMarker path.hovered,
+  .ontology-graph .cardinality.focused,
+  .ontology-graph .normalMarker path.focused {
+    fill: #f00;
+    cursor: pointer;
+  }
+  .ontology-graph .focused,
+  .ontology-graph path.hovered {
+    stroke: #f00;
+  }
+  .ontology-graph .label .indirectHighlighting {
+    fill: #f90;
+  }
+  .ontology-graph .resulttext {
+    fill: #696969;
+  }
+  .ontology-graph .svgGraph .text tspanonly-child,
+  .ontology-graph .svgGraph .textempty {
+  /* labels with one line and nodes */
+    dominant-baseline: central /* not supported by IE 11 */;
+  }
+  .ontology-graph marker path {
+  /* Safari and Chrome workaround for inheriting the style of its link.
+          Use any value that is larger than the length of the marker path. */
+    stroke-dasharray: 50;
+  }
+  .ontology-graph #control {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  .ontology-graph #control #sliderOption {
+    display: flex;
+  }
+  .ontology-graph #control #sliderOption #distanceSlider {
+    display: flex;
+  }
+  .ontology-graph #control #sliderOption #distanceSlider label {
+    margin: 0;
+    width: 100px;
+  }
+  .ontology-graph #control #reset {
+    border: none;
+    padding: 10px;
+    width: 120px;
+    outline: none;
+  }
+  .ontology-graph #control #reset:hover {
+    background-color: #bbb;
+  }
+  .ontology-graph #control #reset:active {
+    background-color: #aaa;
+  }
+  #width-test {
+    position: absolute;
+    float: left;
+    white-space: nowrap;
+    visibility: hidden;
+  }
+  

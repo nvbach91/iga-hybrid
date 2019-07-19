@@ -1,6 +1,7 @@
 import React from 'react';
 import Paperbase from './Paperbase';
 import '../css/App.css';
+import '../css/VOWL.css';
 import axios from 'axios';
 
 class App extends React.Component {
