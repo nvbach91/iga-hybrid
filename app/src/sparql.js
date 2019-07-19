@@ -149,15 +149,18 @@ ORDER BY ?i
 `;
 
 export const getQueryCodeListStructure = (codeListIri, vocabIri) => `
-SELECT DISTINCT ?c ?i1 ?p ?i2 
+SELECT DISTINCT ?c ?cn ?i1 ?i1n ?p ?i2 ?i2n
 ${FROMS}
 FROM <${vocabIri}> 
 WHERE {
   BIND(<${codeListIri}> AS ?c) .
   ?i1 a ?c .
+  OPTIONAL { ?c rdfs:label ?cn . FILTER(LANGMATCHES(LANG(?cn), 'en')) }
+  OPTIONAL { ?i1 rdfs:label ?i1n . FILTER(LANGMATCHES(LANG(?i1n), 'en'))}
   OPTIONAL {
   	?i2 a ?c .
     ?i1 ?p ?i2 .
+    OPTIONAL { ?i2 rdfs:label ?i2n . FILTER(LANGMATCHES(LANG(?i2n), 'en')) }
   }
 }
 ORDER BY ?i1

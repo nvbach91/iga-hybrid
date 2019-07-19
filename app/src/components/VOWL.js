@@ -18,20 +18,20 @@ export const parseToVOWLSpec = (bindings) => {
   // case 'literal':
   // case 'datatype':
   bindings.forEach((binding) => {
-    nodes[binding.c.value] = { type: 'class', name: shortenIri(binding.c.value) };
-    nodes[binding.i1.value] = { type: 'rdfsClass', name: shortenIri(binding.i1.value) };
-    links.push({ s: binding.i1.value, p: 'http://www.w3.org/1999/02/22-rdf-syntax-ns#type', o: binding.c.value, pl: 'rdf:type' });
+    nodes[binding.c.value] = { type: 'class', name: shortenIri(binding.c.value), label: binding.cn ? binding.cn.value : '' };
+    nodes[binding.i1.value] = { type: 'rdfsClass', name: shortenIri(binding.i1.value), label: binding.i1n ? binding.i1n.value : '' };
+    links.push({ s: binding.i1.value, p: 'http://www.w3.org/1999/02/22-rdf-syntax-ns#type', o: binding.c.value, label: 'rdf:type' });
     if (binding.i2) {
-      nodes[binding.i2.value] = { type: 'rdfsClass', name: shortenIri(binding.i2.value) };
+      nodes[binding.i2.value] = { type: 'rdfsClass', name: shortenIri(binding.i2.value), label: binding.i2n ? binding.i2n.value : ''};
       //nodes[binding.p.value] = shortenIri(binding.p.value);
-      links.push({ s: binding.i1.value, p: binding.p.value, o: binding.i2.value, pl: shortenIri(binding.p.value) });
+      links.push({ s: binding.i1.value, p: binding.p.value, o: binding.i2.value, label: shortenIri(binding.p.value) });
     }
   });
   const nodeIndexes = {};
   nodes = Object.keys(nodes).map((key, index) => {
     nodeIndexes[key] = index;
-    const { name, type } = nodes[key];
-    return { fullName: name, name, type, uri: key };
+    const { name, type, label } = nodes[key];
+    return { fullName: name, name: label, type, uri: key };
   });
   links = links.map((link) => {
     const source = link.s;
@@ -39,7 +39,7 @@ export const parseToVOWLSpec = (bindings) => {
     return {
       source: nodeIndexes[source],
       target: nodeIndexes[target],
-      valueTo: link.pl,
+      valueTo: link.label,
       //propertyTo: 'subclass',
       uriTo: link.p,
     };
