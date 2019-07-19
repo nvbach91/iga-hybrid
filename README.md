@@ -4,6 +4,10 @@ Repository for the internal grant project involving hybrid modeling of RDF knowl
 ## LOV experimental queries to find hybrid knowledge representations
 Run these queries at https://lov.linkeddata.es/dataset/lov/sparql
 
+## Or use this web client that will do it for you
+- PROD: https://fcp.vse.cz/iga-hybrid
+- DEV: https://nvbach91.github.io/iga-hybrid
+
 ### Prefixes
 ```sparql
 FROM <http://purl.org/dc/terms/>
