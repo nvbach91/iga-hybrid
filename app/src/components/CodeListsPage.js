@@ -132,7 +132,7 @@ class CodeListsPage extends React.Component {
           </div>
         </div>
         <Typography align="left" variant="subtitle2">
-          This tool will help you identify code lists embedded in a vocabulary
+          This tool will help you identify code lists embedded in a vocabulary. Please start by selecting an ontology below.
         </Typography>
         <Paper className={classes.paper}>
           <VocabSelector onVocabSelected={this.onVocabSelected} onReloadClick={this.fetchCodeLists} />
