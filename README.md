@@ -8,16 +8,14 @@ Run these queries at https://lov.linkeddata.es/dataset/lov/sparql
 - PROD: https://fcp.vse.cz/iga-hybrid
 - DEV: https://nvbach91.github.io/iga-hybrid
 
+
 ### Prefixes
 ```sparql
-FROM <http://purl.org/dc/terms/>
-FROM <http://purl.org/vocab/vann/>
-FROM <http://www.w3.org/2004/02/skos/core>
-FROM <http://purl.org/dc/elements/1.1/>
-FROM <http://creativecommons.org/ns>
-FROM <http://xmlns.com/foaf/0.1/>
-FROM <http://schema.org/>
-FROM <http://www.w3.org/ns/prov#>
+PREFIX vann: <http://purl.org/vocab/vann/>
+PREFIX voaf: <http://purl.org/vocommons/voaf#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 ```
 
 # General queries
@@ -124,15 +122,6 @@ ORDER BY ?s
 
 
 # Code list analysis
-### Prefixes
-```
-PREFIX vann: <http://purl.org/vocab/vann/>
-PREFIX voaf: <http://purl.org/vocommons/voaf#>
-PREFIX owl: <http://www.w3.org/2002/07/owl#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-```
-
 
 ### QX: Get the number of class instances in each ontology
 ```sparql
@@ -207,7 +196,7 @@ WHERE {
   OPTIONAL { ?c rdfs:label ?cn . FILTER(LANGMATCHES(LANG(?cn), 'en')) }
   OPTIONAL { ?i1 rdfs:label ?i1n . FILTER(LANGMATCHES(LANG(?i1n), 'en'))}
   OPTIONAL {
-  	?i2 a ?c .
+    ?i2 a ?c .
     ?i1 ?p ?i2 .
     OPTIONAL { ?i2 rdfs:label ?i2n . FILTER(LANGMATCHES(LANG(?i2n), 'en')) }
   }

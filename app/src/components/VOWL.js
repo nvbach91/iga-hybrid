@@ -2,7 +2,7 @@ import { shortenIri } from "../utils";
 
 /* ################ VARIABLES ################ */
 export const parseToVOWLSpec = (bindings) => {
-  console.log(bindings);
+  //console.log(bindings);
   let nodes = {};
   let links = [];
   // case 'deprecated':
@@ -28,12 +28,16 @@ export const parseToVOWLSpec = (bindings) => {
     }
   });
   const nodeIndexes = {};
-  nodes = Object.keys(nodes).map((key, index) => {
+  nodes = Object.keys(nodes).slice(0, 100).map((key, index) => {
     nodeIndexes[key] = index;
     const { name, type, label } = nodes[key];
     return { fullName: name, name: label, type, uri: key };
   });
-  links = links.map((link) => {
+  links = links.filter((link) => {
+    const source = link.s;
+    const target = link.o;
+    return nodeIndexes[source] >= 0 && nodeIndexes[target] >= 0;
+  }).map((link) => {
     const source = link.s;
     const target = link.o;
     return {
@@ -693,6 +697,12 @@ export const drawGraph = (data) => {
 
     refreshSlider();
   };
+  window.centerGraph = () => {
+    const interval = setInterval(changeDistance, 200);
+    setTimeout(() => {
+      clearInterval(interval);
+    }, 2000);
+  };
 
   var getCharge = function getChargeFunct() {
     var nodeCharge = (visibleLinkDistance / DEFAULT_VISIBLE_LINKDISTANCE) * CHARGE,
@@ -1322,6 +1332,7 @@ export const drawGraph = (data) => {
     addTextBlock(element);
     if (data !== undefined) {
       addTextline(element.select('text'), data.name.truncate(data.maxTextWidth));
+      element.append("title").text(data.fullName + ' -- ' + data.uri);
     } else {
       addTextline(element.select('text'), 'Class');
     }
@@ -1915,7 +1926,8 @@ export const drawGraph = (data) => {
 
   var graphTag = document.getElementById('graph');
   var height = 800;
-  var width = document.getElementById('example').offsetWidth;
+  var width = document.getElementById('example').offsetWidth - 18;
   json = data;
   draw(graphTag, width, height);
+  setTimeout(window.centerGraph, 2000);
 };

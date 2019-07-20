@@ -4,6 +4,7 @@ import Paper from '@material-ui/core/Paper';
 import Button from '@material-ui/core/Button';
 import { withStyles } from '@material-ui/core/styles';
 import Visibility from '@material-ui/icons/Visibility';
+import Palette from '@material-ui/icons/Palette';
 import axios from 'axios';
 import uuidv4 from 'uuid/v4';
 import { SPARQL_ENDPOINT_URL, PREFIXES, getQueryCodeListInstances, getQueryClassInstanceCounts, getQueryCodeListStructure } from '../sparql';
@@ -75,6 +76,11 @@ class CodeListsPage extends React.Component {
         codeList.i = 0;
         codeLists[uuid] = codeList;
       });
+      const uniqueCodeLists = {};
+      Object.keys(codeLists).forEach((key) => {
+        uniqueCodeLists[codeLists[key].c.value] = codeLists[key].n.value;
+      });
+      window.records[this.state.selectedVocabOption.value] = uniqueCodeLists;
       this.setState({ codeLists, loading: false });
     });
   }
@@ -142,8 +148,12 @@ class CodeListsPage extends React.Component {
           <DialogTitle>
             <div className={classes.dialogTitle}>
               <span>Vocabulary: {this.state.selectedVocabOption && createIriLink(this.state.selectedVocabOption.value)}</span>
-              {this.state.codeList && <span><Button color="primary" onClick={this.handleLoadGraph}>Visualize&nbsp;<Visibility /></Button></span>}
-              {this.state.codeList && <span><Button color="primary" onClick={this.showSparqlPreview(getQueryCodeListInstances(this.state.codeList.value, this.state.selectedVocabOption.value).trim())}>View SPARQL&nbsp;<Visibility /></Button></span>}
+              {this.state.codeList && (
+                <span>
+                  <Button color="primary" onClick={this.handleLoadGraph}>Visualize&nbsp;<Palette /></Button>
+                  <Button color="primary" onClick={this.showSparqlPreview(getQueryCodeListInstances(this.state.codeList.value, this.state.selectedVocabOption.value).trim())}>View SPARQL&nbsp;<Visibility /></Button>
+                </span>
+              )}
             </div>
             <div className={classes.dialogTitle}>
               <span>Code list: {this.state.codeList && createIriLink(this.state.codeList.value)}</span>
@@ -153,7 +163,10 @@ class CodeListsPage extends React.Component {
         </Dialog>
         <Dialog onClose={this.closeGraphModal} open={this.state.codeListInstanceGraphNodes || this.state.codeListInstancesGraphLoading ? true : false} fullWidth={true} maxWidth="xl">
           <DialogTitle>
-            <div className={classes.dialogTitle}><span></span>Code list view {this.state.codeList && createIriLink(this.state.codeList.value)}</div>
+            <div className={classes.dialogTitle}>
+              <span>Code list view (showing max 100 nodes)</span> 
+              {this.state.codeList && createIriLink(this.state.codeList.value)}
+            </div>
           </DialogTitle>
           <div className="ontology-graph">
             <div id="example">
