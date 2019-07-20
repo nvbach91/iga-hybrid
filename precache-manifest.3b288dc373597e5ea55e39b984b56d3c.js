@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2aaf8d847d0eab11409a0f452b85e200",
+    "revision": "fa5a8fe60a84ecc8a5250a1a2149008a",
     "url": "/iga-hybrid/index.html"
   },
   {
-    "revision": "a874c0e6dd2198cc001f",
+    "revision": "e374201765300a3e9af1",
     "url": "/iga-hybrid/static/css/main.591c30bf.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/iga-hybrid/static/js/2.208080ea.chunk.js"
   },
   {
-    "revision": "a874c0e6dd2198cc001f",
-    "url": "/iga-hybrid/static/js/main.fe1abc14.chunk.js"
+    "revision": "e374201765300a3e9af1",
+    "url": "/iga-hybrid/static/js/main.98ab75fe.chunk.js"
   },
   {
     "revision": "017c84058a9be0d0ac36",
