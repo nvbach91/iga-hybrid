@@ -4,6 +4,7 @@ import Paper from '@material-ui/core/Paper';
 import Button from '@material-ui/core/Button';
 import { withStyles } from '@material-ui/core/styles';
 import Visibility from '@material-ui/icons/Visibility';
+import Close from '@material-ui/icons/Close';
 import axios from 'axios';
 import bluebird from 'bluebird';
 import uuidv4 from 'uuid/v4';
@@ -158,14 +159,22 @@ class ClassFragmentsPage extends React.Component {
               control={<Switch checked={this.state.showOnlyFullFragments} onChange={this.handleInputChange('showOnlyFullFragments')} value="showOnlyFullFragments" color="primary" />}
               label="Show only full fragments"
             />
-            <Button color="primary" onClick={this.showSparqlPreview(getQuerySchemaFragments(this.state.selectedVocabOption ? this.state.selectedVocabOption.value : '__YOUR_SELECTED_VOCAB__').trim())}>View SPARQL&nbsp;<Visibility /></Button>
+            <Button color="primary" onClick={
+              this.showSparqlPreview(
+                getQuerySchemaFragments(
+                  this.state.selectedVocabOption ?
+                    this.state.selectedVocabOption.value :
+                    '__YOUR_SELECTED_VOCAB__'
+                ).trim()
+              )
+            }>View SPARQL&nbsp;<Visibility /></Button>
           </div>
         </div>
         <Typography align="left" variant="subtitle2">
           This tool will help you identify class fragments in a selected ontology and fetch their instances. Begin by selecting an ontology in the list below.
         </Typography>
         <Paper className={classes.paper}>
-          <VocabSelector onVocabSelected={this.onVocabSelected} onReloadClick={this.fetchClassFragments}/>
+          <VocabSelector onVocabSelected={this.onVocabSelected} onReloadClick={this.fetchClassFragments} />
           <Paper className={classes.root}>
             <FragmentsTable
               fragments={this.state.fragments}
@@ -179,14 +188,26 @@ class ClassFragmentsPage extends React.Component {
           <DialogTitle>
             <div className={classes.dialogTitle}>
               <span>Class fragment instances in {this.state.selectedVocabOption && createIriLink(this.state.selectedVocabOption.value)}</span>
-              {this.state.classFragment && <span><Button color="primary" onClick={this.showSparqlPreview(getQueryFragmentInstances(this.state.classFragment).trim())}>View SPARQL&nbsp;<Visibility /></Button></span>}
+              {this.state.classFragment && (
+                <span>
+                  <Button color="primary" onClick={
+                    this.showSparqlPreview(
+                      getQueryFragmentInstances(this.state.classFragment).trim()
+                    )
+                  }>View SPARQL&nbsp;<Visibility /></Button>
+                  <Button color="primary" onClick={this.closeInstancesModal}><Close /></Button>
+                </span>
+              )}
             </div>
           </DialogTitle>
           <FragmentInstancesTable fragmentInstancesLoading={this.state.fragmentInstancesLoading} fragmentInstances={this.state.fragmentInstances} classFragment={this.state.classFragment} />
         </Dialog>
         <Dialog onClose={this.closeSparqlModal} open={this.state.sparqlPreview ? true : false} fullWidth={true} maxWidth="md">
           <DialogTitle>
-            SPARQL query
+            <div className={classes.dialogTitle}>
+              <span>SPARQL query</span>
+              <Button color="primary" onClick={this.closeSparqlModal}><Close /></Button>
+            </div>
             <Typography variant="body2">See also {createLink('https://github.com/nvbach91/iga-hybrid')}</Typography>
           </DialogTitle>
           <TextareaAutosize readOnly className={classes.codeBlock} defaultValue={this.state.sparqlPreview} />

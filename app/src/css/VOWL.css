@@ -4,6 +4,9 @@
 .ontology-graph {
   min-height: 640px;
 }
+#control {
+  padding: 0 10px
+}
 /*#example, #graph, .svgGraph {
   width: 100%;
   max-height: 640px;
@@ -122,6 +125,12 @@
     align-items: center;
     margin-bottom: 5px;
   }
+  .slider-container {
+    display: flex;
+  }
+  .slider-container > label {
+    width: 60px;
+  }
   .ontology-graph #control #sliderOption {
     display: flex;
   }
@@ -130,13 +139,14 @@
   }
   .ontology-graph #control #sliderOption #distanceSlider label {
     margin: 0;
-    width: 100px;
+    width: 30px;
   }
   .ontology-graph #control #reset {
     border: none;
     padding: 10px;
     width: 120px;
     outline: none;
+    cursor: pointer;
   }
   .ontology-graph #control #reset:hover {
     background-color: #bbb;

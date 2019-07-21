@@ -4,6 +4,7 @@ import Paper from '@material-ui/core/Paper';
 import Button from '@material-ui/core/Button';
 import { withStyles } from '@material-ui/core/styles';
 import Visibility from '@material-ui/icons/Visibility';
+import Close from '@material-ui/icons/Close';
 import Palette from '@material-ui/icons/Palette';
 import axios from 'axios';
 import uuidv4 from 'uuid/v4';
@@ -20,6 +21,7 @@ import Typography from '@material-ui/core/Typography';
 import TextareaAutosize from 'react-autosize-textarea';
 import VocabSelector from './VocabSelector';
 import { drawGraph, parseToVOWLSpec } from './VOWL';
+import { CircularProgress } from '@material-ui/core';
 
 const styles = theme => ({
   paper: {
@@ -138,6 +140,7 @@ class CodeListsPage extends React.Component {
       prefixes = '';
       query = encodeURIComponent(getDBpediaQueryCodeListStructure(codeList.value));
     }
+    this.setState({ codeListInstancesGraphLoading: true });
     const payload = `query=${prefixes}${query}`;
     return axios.post(getEndpointUrl(selectedVocabOption.value), payload, axiosConfig).then((resp) => {
       const data = parseToVOWLSpec(resp.data.results.bindings);
@@ -187,7 +190,12 @@ class CodeListsPage extends React.Component {
               {codeList && (
                 <span>
                   <Button color="primary" onClick={this.handleLoadGraph}>Visualize&nbsp;<Palette /></Button>
-                  <Button color="primary" onClick={this.showSparqlPreview(getQueryCodeListInstances(codeList.value, selectedVocabOption.value).trim())}>View SPARQL&nbsp;<Visibility /></Button>
+                  <Button color="primary" onClick={
+                    this.showSparqlPreview(
+                      getQueryCodeListInstances(codeList.value, selectedVocabOption.value).trim()
+                    )
+                  }>View SPARQL&nbsp;<Visibility /></Button>
+                  <Button color="primary" onClick={this.closeInstancesModal}><Close /></Button>
                 </span>
               )}
             </div>
@@ -200,14 +208,21 @@ class CodeListsPage extends React.Component {
         <Dialog onClose={this.closeGraphModal} open={codeListInstanceGraphNodes || codeListInstancesGraphLoading ? true : false} fullWidth={true} maxWidth="xl">
           <DialogTitle>
             <div className={classes.dialogTitle}>
-              <span>Code list view (showing max 100 nodes)</span> 
-              {codeList && createIriLink(codeList.value)}
+              <div>Code list view (showing max 100 nodes)</div> 
+              {codeList && (
+                <div>
+                  {createIriLink(codeList.value)}
+                  <Button color="primary" onClick={this.closeGraphModal}><Close /></Button>
+                </div>
+              )}
             </div>
           </DialogTitle>
+          {codeListInstancesGraphLoading && <div style={{ display: 'flex', justifyContent: 'center' }}><CircularProgress size={40} /></div>}
           <div className="ontology-graph">
             <div id="example">
               <div id="control">
-                <div>
+                <div className="slider-container">
+                  {!codeListInstancesGraphLoading && <label>Distance</label>}
                   <div id="sliderOption" />
                 </div>
                 <div id="resetOption" />
@@ -218,7 +233,10 @@ class CodeListsPage extends React.Component {
         </Dialog>
         <Dialog onClose={this.closeSparqlModal} open={sparqlPreview ? true : false} fullWidth={true} maxWidth="md">
           <DialogTitle>
-            SPARQL query
+            <div className={classes.dialogTitle}>
+              <span>SPARQL query</span>
+              <Button color="primary" onClick={this.closeSparqlModal}><Close /></Button>
+            </div>
             <Typography variant="body2">See also {createLink('https://github.com/nvbach91/iga-hybrid')}</Typography>
             <Typography variant="body2">Endpoint {createLink(selectedVocabOption ? getEndpointUrl(selectedVocabOption.value) : '')}</Typography>
           </DialogTitle>

@@ -23,15 +23,15 @@ export const prefixes = {
 export const PREFIXES = Object.keys(prefixes).map((prefix) => `PREFIX ${prefix}: <${prefixes[prefix]}>`).join('\n') + '\n';
 
 export const FROMS = `
-FROM <http://purl.org/dc/terms/>
-FROM <http://purl.org/vocab/vann/>
-FROM <http://www.w3.org/2004/02/skos/core>
-FROM <http://purl.org/dc/elements/1.1/>
-FROM <http://creativecommons.org/ns>
-FROM <http://xmlns.com/foaf/0.1/>
-FROM <http://schema.org/>
-FROM <http://www.w3.org/ns/prov#>
-FROM <http://www.w3.org/2002/07/owl#>
+#FROM <http://purl.org/dc/terms/>
+#FROM <http://purl.org/vocab/vann/>
+#FROM <http://www.w3.org/2004/02/skos/core>
+#FROM <http://purl.org/dc/elements/1.1/>
+#FROM <http://creativecommons.org/ns>
+#FROM <http://xmlns.com/foaf/0.1/>
+#FROM <http://schema.org/>
+#FROM <http://www.w3.org/ns/prov#>
+#FROM <http://www.w3.org/2002/07/owl#>
 `;//Object.keys(reversePrefixes).map((rp) => `FROM <${rp.slice(0, -1)}>\nFROM <${rp}>`).join('\n') + '\n';
 
 export const getQueryVocabs = () => `
@@ -83,14 +83,7 @@ WHERE {
 export const getQuerySchemaFragments = (vocabIri) => `
 SELECT DISTINCT
 ?s ?sp ?sd ?p ?o ?op ?od
-FROM <http://purl.org/dc/terms/>
-FROM <http://purl.org/vocab/vann/>
-FROM <http://www.w3.org/2004/02/skos/core>
-FROM <http://purl.org/dc/elements/1.1/>
-FROM <http://creativecommons.org/ns>
-FROM <http://xmlns.com/foaf/0.1/>
-FROM <http://schema.org/>
-FROM <http://www.w3.org/ns/prov#>
+${FROMS}
 
 FROM <${vocabIri}>
 WHERE {
