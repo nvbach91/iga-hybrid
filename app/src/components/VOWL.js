@@ -1929,7 +1929,7 @@ export const drawGraph = (data) => {
   };
 
   var graphTag = document.getElementById('graph');
-  var height = 800;
+  var height = window.innerHeight - 220;
   var width = document.getElementById('example').offsetWidth;
   json = data;
   draw(graphTag, width, height);
