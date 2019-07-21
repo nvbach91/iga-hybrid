@@ -7,7 +7,7 @@ import Visibility from '@material-ui/icons/Visibility';
 import axios from 'axios';
 import bluebird from 'bluebird';
 import uuidv4 from 'uuid/v4';
-import { SPARQL_ENDPOINT_URL, PREFIXES, getQuerySchemaFragments, getQueryFragmentInstancesCount, getQueryFragmentInstances } from '../sparql';
+import { getEndpointUrl, PREFIXES, getQuerySchemaFragments, getQueryFragmentInstancesCount, getQueryFragmentInstances } from '../sparql';
 import { axiosConfig } from '../network';
 import { createIriLink, createLink } from '../utils';
 import Dialog from '@material-ui/core/Dialog';
@@ -74,7 +74,7 @@ class ClassFragmentsPage extends React.Component {
   fetchClassFragments = () => {
     this.setState({ loading: true });
     const payload = `query=${PREFIXES}${getQuerySchemaFragments(this.state.selectedVocabOption.value)}`;
-    return axios.post(SPARQL_ENDPOINT_URL, payload, axiosConfig).then((resp) => {
+    return axios.post(getEndpointUrl(), payload, axiosConfig).then((resp) => {
       const fragments = {};
       resp.data.results.bindings.forEach((binding) => {
         const { s, sd, p, o, od } = binding;
@@ -109,7 +109,7 @@ class ClassFragmentsPage extends React.Component {
           const { s, p, o } = fragments[key];
           if (s && p && o) {
             const payload = `query=${PREFIXES}${getQueryFragmentInstancesCount(fragments[key])}`;
-            return axios.post(SPARQL_ENDPOINT_URL, payload, axiosConfig).then((resp) => {
+            return axios.post(getEndpointUrl(), payload, axiosConfig).then((resp) => {
               counts[key] = resp.data.results.bindings[0].n.value;
             });
           }
@@ -131,7 +131,7 @@ class ClassFragmentsPage extends React.Component {
     const { s, p, o } = this.state.fragments[key];
     const payload = `query=${PREFIXES}${getQueryFragmentInstances(this.state.fragments[key])}`;
     this.setState({ fragmentInstancesLoading: true });
-    return axios.post(SPARQL_ENDPOINT_URL, payload, axiosConfig).then((resp) => {
+    return axios.post(getEndpointUrl(), payload, axiosConfig).then((resp) => {
       this.setState({
         fragmentInstancesLoading: false,
         fragmentInstances: resp.data.results.bindings,

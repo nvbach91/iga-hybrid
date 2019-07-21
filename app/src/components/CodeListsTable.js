@@ -26,7 +26,7 @@ const styles = (theme) => ({
   }
 });
 
-const CodeListsTable = ({ codeLists, showInstances, vocabIsSelected, classes }) => {
+const CodeListsTable = ({ codeLists, showInstances, vocabIsSelected, classes, loading }) => {
   const mRows = codeLists ? Object.keys(codeLists).map((key, index) => {
     const { d, p, c, n } = codeLists[key];
     return { 
@@ -84,7 +84,7 @@ const CodeListsTable = ({ codeLists, showInstances, vocabIsSelected, classes }) 
           },
         ]}
       />
-      {vocabIsSelected && !Object.keys(codeLists).length && <Typography variant="subtitle2">No code lists found in this ontology</Typography>}
+      {vocabIsSelected && !Object.keys(codeLists).length && !loading && <Typography variant="subtitle2">No code lists found in this ontology</Typography>}
     </Paper>
     
   );

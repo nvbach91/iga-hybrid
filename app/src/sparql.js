@@ -1,4 +1,10 @@
-export const SPARQL_ENDPOINT_URL = 'https://lov.linkeddata.es/dataset/lov/sparql';
+export const getEndpointUrl = (vocab) => {
+  switch (vocab) {
+    case 'http://dbpedia.org': return 'https://dbpedia.org/sparql';
+    default: return 'https://lov.linkeddata.es/dataset/lov/sparql';
+  }
+};
+
 export const prefixes = {
   vann:     'http://purl.org/vocab/vann/',
   voaf:     'http://purl.org/vocommons/voaf#',
@@ -6,6 +12,7 @@ export const prefixes = {
   owl:      'http://www.w3.org/2002/07/owl#',
   skos:     'http://www.w3.org/2004/02/skos/core#',
   rdf:      'http://www.w3.org/1999/02/22-rdf-syntax-ns#',
+  dc:       'http://purl.org/dc/terms/',
 };
 
 // export const reversePrefixes = {};
@@ -150,18 +157,69 @@ ORDER BY ?i
 
 export const getQueryCodeListStructure = (codeListIri, vocabIri) => `
 SELECT DISTINCT ?c ?cn ?i1 ?i1n ?p ?i2 ?i2n
-${FROMS}
-FROM <${vocabIri}> 
+${vocabIri ? FROMS : ''}
+${vocabIri ? `FROM <${vocabIri}>` : ''}
 WHERE {
+  VALUES ?lp { rdfs:label }
   BIND(<${codeListIri}> AS ?c) .
   ?i1 a ?c .
-  OPTIONAL { ?c rdfs:label ?cn . FILTER(LANGMATCHES(LANG(?cn), 'en')) }
-  OPTIONAL { ?i1 rdfs:label ?i1n . FILTER(LANGMATCHES(LANG(?i1n), 'en'))}
+  OPTIONAL { ?c ?lp ?cn . FILTER(LANGMATCHES(LANG(?cn), 'en')) }
+  OPTIONAL { ?i1 ?lp ?i1n . FILTER(LANGMATCHES(LANG(?i1n), 'en'))}
   OPTIONAL {
   	?i2 a ?c .
     ?i1 ?p ?i2 .
-    OPTIONAL { ?i2 rdfs:label ?i2n . FILTER(LANGMATCHES(LANG(?i2n), 'en')) }
+    OPTIONAL { ?i2 ?lp ?i2n . FILTER(LANGMATCHES(LANG(?i2n), 'en')) }
   }
 }
 ORDER BY ?i1
 `;
+
+export const getDBpediaQueryBroadestConcepts = () => `
+SELECT ?c (COUNT(DISTINCT ?i) AS ?n) {
+  ?c a skos:Concept .
+  FILTER NOT EXISTS {
+    ?b a skos:Concept .
+    ?c skos:broader ?b .
+  }
+  ?i skos:broader ?c .
+}
+GROUP BY ?c
+#HAVING (COUNT(DISTINCT ?i) < 20)
+ORDER BY DESC(?n)
+`;
+
+export const getDBpediaQueryCodeListMembers = (iri) => `
+SELECT DISTINCT ?i ?skosConcept
+WHERE {
+  ?i skos:broader <${iri}> .
+  ?i a ?skosConcept .
+}
+`;
+
+export const getDBpediaQueryCodeListStructure = (codeListIri) => `
+SELECT DISTINCT ?c ?cn ?i1 ?i1n ?p ?i2 ?i2n
+WHERE {
+  VALUES ?lp { rdfs:label }
+  BIND(<${codeListIri}> AS ?c) .
+  ?i1 skos:broader ?c .
+  OPTIONAL { ?c ?lp ?cn . FILTER(LANGMATCHES(LANG(?cn), 'en')) }
+  OPTIONAL { ?i1 ?lp ?i1n . FILTER(LANGMATCHES(LANG(?i1n), 'en'))}
+  OPTIONAL {
+  	?i2 skos:broader ?c .
+    ?i1 ?p ?i2 .
+    OPTIONAL { ?i2 ?lp ?i2n . FILTER(LANGMATCHES(LANG(?i2n), 'en')) }
+  }
+}
+ORDER BY ?i1
+`;
+
+/*
+SELECT DISTINCT ?i ?skosConcept
+WHERE {
+  ?i skos:broader <http://dbpedia.org/resource/Category:Norwegian_people_by_occupation> .
+  OPTIONAL {
+    BIND(skos:Concept AS ?skosConcept) .
+    ?i a ?skosConcept .
+  }
+}
+*/

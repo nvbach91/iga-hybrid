@@ -7,7 +7,9 @@ import Visibility from '@material-ui/icons/Visibility';
 import Palette from '@material-ui/icons/Palette';
 import axios from 'axios';
 import uuidv4 from 'uuid/v4';
-import { SPARQL_ENDPOINT_URL, PREFIXES, getQueryCodeListInstances, getQueryClassInstanceCounts, getQueryCodeListStructure } from '../sparql';
+import { getEndpointUrl, PREFIXES } from '../sparql';
+import { getQueryCodeListInstances, getQueryClassInstanceCounts, getQueryCodeListStructure } from '../sparql';
+import { getDBpediaQueryBroadestConcepts, getDBpediaQueryCodeListMembers, getDBpediaQueryCodeListStructure } from '../sparql';
 import { axiosConfig } from '../network';
 import { createIriLink, createLink } from '../utils';
 import Dialog from '@material-ui/core/Dialog';
@@ -65,9 +67,16 @@ class CodeListsPage extends React.Component {
     });
   }
   fetchCodeLists = () => {
+    const { selectedVocabOption } = this.state;
     this.setState({ loading: true });
-    const payload = `query=${PREFIXES}${getQueryClassInstanceCounts(this.state.selectedVocabOption.value)}`;
-    return axios.post(SPARQL_ENDPOINT_URL, payload, axiosConfig).then((resp) => {
+    let query = getQueryClassInstanceCounts(selectedVocabOption ? selectedVocabOption.value : '__YOUR_SELECTED_VOCAB__').trim();
+    let prefixes = PREFIXES;
+    if (selectedVocabOption.value === 'http://dbpedia.org') {
+      query = encodeURIComponent(getDBpediaQueryBroadestConcepts());
+      prefixes = '';
+    }
+    const payload = `query=${prefixes}${query}`;
+    return axios.post(getEndpointUrl(selectedVocabOption.value), payload, axiosConfig).then((resp) => {
       const codeLists = {};
       resp.data.results.bindings.filter((binding) => binding.n.value > 0).forEach((binding) => {
         const { d, p, c, n } = binding;
@@ -78,9 +87,13 @@ class CodeListsPage extends React.Component {
       });
       const uniqueCodeLists = {};
       Object.keys(codeLists).forEach((key) => {
-        uniqueCodeLists[codeLists[key].c.value] = codeLists[key].n.value;
+        if (uniqueCodeLists[codeLists[key].c.value] && codeLists[key].p) {
+          uniqueCodeLists[codeLists[key].c.value].properties++;
+        } else {
+          uniqueCodeLists[codeLists[key].c.value] = { instances: codeLists[key].n.value, properties: codeLists[key].p ? 1: 0 };
+        }
       });
-      window.records[this.state.selectedVocabOption.value] = uniqueCodeLists;
+      window.records[selectedVocabOption.value] = uniqueCodeLists;
       this.setState({ codeLists, loading: false });
     });
   }
@@ -88,10 +101,17 @@ class CodeListsPage extends React.Component {
     this.setState({ sparqlPreview: query });
   }
   showInstances = (key) => () => {
-    const { c } = this.state.codeLists[key];
-    const payload = `query=${PREFIXES}${getQueryCodeListInstances(c.value, this.state.selectedVocabOption.value)}`;
+    const { selectedVocabOption, codeLists } = this.state;
+    const { c } = codeLists[key];
+    let query = getQueryCodeListInstances(c.value, selectedVocabOption.value);
+    let prefixes = PREFIXES;
+    if (selectedVocabOption.value === 'http://dbpedia.org') {
+      prefixes = '';
+      query = encodeURIComponent(getDBpediaQueryCodeListMembers(c.value));
+    }
+    const payload = `query=${prefixes}${query}`;
     this.setState({ codeListInstancesLoading: true });
-    return axios.post(SPARQL_ENDPOINT_URL, payload, axiosConfig).then((resp) => {
+    return axios.post(getEndpointUrl(selectedVocabOption.value), payload, axiosConfig).then((resp) => {
       this.setState({
         codeListInstancesLoading: false,
         codeListInstances: resp.data.results.bindings,
@@ -109,8 +129,17 @@ class CodeListsPage extends React.Component {
     this.setState({ codeListInstanceGraphNodes: null });
   }
   handleLoadGraph = () => {
-    const payload = `query=${PREFIXES}${getQueryCodeListStructure(this.state.codeList.value, this.state.selectedVocabOption.value)}`;
-    return axios.post(SPARQL_ENDPOINT_URL, payload, axiosConfig).then((resp) => {
+    const { selectedVocabOption, codeList } = this.state;
+    let fromVocab = selectedVocabOption.value;
+    let query = getQueryCodeListStructure(codeList.value, fromVocab);
+    let prefixes = PREFIXES;
+    if (selectedVocabOption.value === 'http://dbpedia.org') {
+      fromVocab = '';
+      prefixes = '';
+      query = encodeURIComponent(getDBpediaQueryCodeListStructure(codeList.value));
+    }
+    const payload = `query=${prefixes}${query}`;
+    return axios.post(getEndpointUrl(selectedVocabOption.value), payload, axiosConfig).then((resp) => {
       const data = parseToVOWLSpec(resp.data.results.bindings);
       this.setState({ codeListInstancesGraphLoading: false, codeListInstanceGraphNodes: data }, () => {
         setTimeout(() => {
@@ -120,6 +149,7 @@ class CodeListsPage extends React.Component {
     });
   };
   render = () => {
+    const { selectedVocabOption, loading, codeLists, codeList, codeListInstances, codeListInstancesLoading, codeListInstancesGraphLoading, codeListInstanceGraphNodes, sparqlPreview } = this.state;
     const { classes } = this.props;
     return (
       <React.Fragment>
@@ -128,44 +158,50 @@ class CodeListsPage extends React.Component {
             Find code lists
           </Typography>
           <div>
-            <Button color="primary" onClick={this.showSparqlPreview(getQueryClassInstanceCounts(this.state.selectedVocabOption ? this.state.selectedVocabOption.value : '__YOUR_SELECTED_VOCAB__').trim())}>View SPARQL&nbsp;<Visibility /></Button>
+            <Button color="primary" onClick={this.showSparqlPreview(
+              selectedVocabOption ? 
+                (selectedVocabOption.value === 'http://dbpedia.org' ? 
+                  getDBpediaQueryBroadestConcepts().trim() :
+                  getQueryClassInstanceCounts(selectedVocabOption.value || '__YOUR_SELECTED_VOCAB__').trim()) : ''
+            )}>View SPARQL&nbsp;<Visibility /></Button>
           </div>
         </div>
         <Typography align="left" variant="subtitle2">
-          This tool will help you identify code lists embedded in a vocabulary. Please start by selecting an ontology below.
+          This tool will help you identify code lists embedded in a knowledge graph or vocabulary. Please start by selecting an item below.
         </Typography>
         <Paper className={classes.paper}>
-          <VocabSelector onVocabSelected={this.onVocabSelected} onReloadClick={this.fetchCodeLists} />
+          <VocabSelector onVocabSelected={this.onVocabSelected} onReloadClick={this.fetchCodeLists} loading={loading}/>
           <Paper className={classes.root}>
             <CodeListsTable
-              codeLists={this.state.codeLists}
+              loading={loading}
+              codeLists={codeLists}
               showInstances={this.showInstances}
-              vocabIsSelected={this.state.selectedVocabOption ? true : false}
+              vocabIsSelected={selectedVocabOption ? true : false}
             />
           </Paper>
         </Paper>
-        <Dialog onClose={this.closeInstancesModal} open={this.state.codeListInstances || this.state.codeListInstancesLoading ? true : false} fullWidth={true} maxWidth="xl">
+        <Dialog onClose={this.closeInstancesModal} open={codeListInstances || codeListInstancesLoading ? true : false} fullWidth={true} maxWidth="xl">
           <DialogTitle>
             <div className={classes.dialogTitle}>
-              <span>Vocabulary: {this.state.selectedVocabOption && createIriLink(this.state.selectedVocabOption.value)}</span>
-              {this.state.codeList && (
+              <span>Vocabulary: {selectedVocabOption && createIriLink(selectedVocabOption.value)}</span>
+              {codeList && (
                 <span>
                   <Button color="primary" onClick={this.handleLoadGraph}>Visualize&nbsp;<Palette /></Button>
-                  <Button color="primary" onClick={this.showSparqlPreview(getQueryCodeListInstances(this.state.codeList.value, this.state.selectedVocabOption.value).trim())}>View SPARQL&nbsp;<Visibility /></Button>
+                  <Button color="primary" onClick={this.showSparqlPreview(getQueryCodeListInstances(codeList.value, selectedVocabOption.value).trim())}>View SPARQL&nbsp;<Visibility /></Button>
                 </span>
               )}
             </div>
             <div className={classes.dialogTitle}>
-              <span>Code list: {this.state.codeList && createIriLink(this.state.codeList.value)}</span>
+              <span>Code list: {codeList && createIriLink(codeList.value)}</span>
             </div>
           </DialogTitle>
-          <CodeListInstancesTable loading={this.state.codeListInstancesLoading} codeListInstances={this.state.codeListInstances} codeList={this.state.codeList} />
+          <CodeListInstancesTable loading={codeListInstancesLoading} codeListInstances={codeListInstances} codeList={codeList} />
         </Dialog>
-        <Dialog onClose={this.closeGraphModal} open={this.state.codeListInstanceGraphNodes || this.state.codeListInstancesGraphLoading ? true : false} fullWidth={true} maxWidth="xl">
+        <Dialog onClose={this.closeGraphModal} open={codeListInstanceGraphNodes || codeListInstancesGraphLoading ? true : false} fullWidth={true} maxWidth="xl">
           <DialogTitle>
             <div className={classes.dialogTitle}>
               <span>Code list view (showing max 100 nodes)</span> 
-              {this.state.codeList && createIriLink(this.state.codeList.value)}
+              {codeList && createIriLink(codeList.value)}
             </div>
           </DialogTitle>
           <div className="ontology-graph">
@@ -180,12 +216,13 @@ class CodeListsPage extends React.Component {
             </div>
           </div>
         </Dialog>
-        <Dialog onClose={this.closeSparqlModal} open={this.state.sparqlPreview ? true : false} fullWidth={true} maxWidth="md">
+        <Dialog onClose={this.closeSparqlModal} open={sparqlPreview ? true : false} fullWidth={true} maxWidth="md">
           <DialogTitle>
             SPARQL query
             <Typography variant="body2">See also {createLink('https://github.com/nvbach91/iga-hybrid')}</Typography>
+            <Typography variant="body2">Endpoint {createLink(selectedVocabOption ? getEndpointUrl(selectedVocabOption.value) : '')}</Typography>
           </DialogTitle>
-          <TextareaAutosize readOnly className={classes.codeBlock} defaultValue={this.state.sparqlPreview} />
+          <TextareaAutosize readOnly className={classes.codeBlock} defaultValue={sparqlPreview} />
         </Dialog>
       </React.Fragment>
     );

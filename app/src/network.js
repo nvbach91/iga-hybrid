@@ -1,6 +1,6 @@
 import axios from 'axios';
 import bluebird from 'bluebird';
-import { SPARQL_ENDPOINT_URL, PREFIXES, getQueryVocabStats } from './sparql'
+import { getEndpointUrl, PREFIXES, getQueryVocabStats } from './sparql'
 export const axiosConfig = {
   headers: { 
     "accept": "application/sparql-results+json,*/*;q=0.9", 
@@ -14,7 +14,7 @@ export const fetchVocabs = () => {
     return bluebird.resolve(window.cached.vocabs);
   }
   const payload = `query=${PREFIXES}${getQueryVocabStats()}`;
-  return axios.post(SPARQL_ENDPOINT_URL, payload, axiosConfig).then((resp) => {
+  return axios.post(getEndpointUrl(), payload, axiosConfig).then((resp) => {
     window.cached.vocabs = resp;
     return resp;
   });

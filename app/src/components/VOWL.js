@@ -17,12 +17,16 @@ export const parseToVOWLSpec = (bindings) => {
   // case 'thing':
   // case 'literal':
   // case 'datatype':
+  let linkedEntities = {};
   bindings.forEach((binding) => {
-    nodes[binding.c.value] = { type: 'class', name: shortenIri(binding.c.value), label: binding.cn ? binding.cn.value : '' };
-    nodes[binding.i1.value] = { type: 'rdfsClass', name: shortenIri(binding.i1.value), label: binding.i1n ? binding.i1n.value : '' };
-    links.push({ s: binding.i1.value, p: 'http://www.w3.org/1999/02/22-rdf-syntax-ns#type', o: binding.c.value, label: 'rdf:type' });
+    nodes[binding.c.value] = { type: 'class', name: shortenIri(binding.c.value), label: binding.cn ? binding.cn.value : shortenIri(binding.c.value) };
+    nodes[binding.i1.value] = { type: 'rdfsClass', name: shortenIri(binding.i1.value), label: binding.i1n ? binding.i1n.value : shortenIri(binding.i1.value) };
+    if (!linkedEntities[`${binding.i1.value}|${binding.c.value}`]) {
+      links.push({ s: binding.i1.value, p: 'http://www.w3.org/1999/02/22-rdf-syntax-ns#type', o: binding.c.value, label: 'rdf:type' });
+      linkedEntities[`${binding.i1.value}|${binding.c.value}`] = true;
+    }
     if (binding.i2) {
-      nodes[binding.i2.value] = { type: 'rdfsClass', name: shortenIri(binding.i2.value), label: binding.i2n ? binding.i2n.value : ''};
+      nodes[binding.i2.value] = { type: 'rdfsClass', name: shortenIri(binding.i2.value), label: binding.i2n ? binding.i2n.value : shortenIri(binding.i2.value)};
       //nodes[binding.p.value] = shortenIri(binding.p.value);
       links.push({ s: binding.i1.value, p: binding.p.value, o: binding.i2.value, label: shortenIri(binding.p.value) });
     }
@@ -31,7 +35,7 @@ export const parseToVOWLSpec = (bindings) => {
   nodes = Object.keys(nodes).slice(0, 100).map((key, index) => {
     nodeIndexes[key] = index;
     const { name, type, label } = nodes[key];
-    return { fullName: name, name: label, type, uri: key };
+    return { fullName: name + (label ? (label === name ? '' : (' -- ' + label)) : ''), name: label, type, uri: key };
   });
   links = links.filter((link) => {
     const source = link.s;
@@ -1929,5 +1933,5 @@ export const drawGraph = (data) => {
   var width = document.getElementById('example').offsetWidth - 18;
   json = data;
   draw(graphTag, width, height);
-  setTimeout(window.centerGraph, 2000);
+  setTimeout(window.centerGraph, 1000);
 };

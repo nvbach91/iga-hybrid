@@ -49,6 +49,12 @@ class VocabSelector extends React.Component {
           nInd: binding.nInd.value,
         }
       });
+      iris.unshift({
+        iri: 'http://dbpedia.org',
+        label: 'DBpedia',
+        nClass: 760,
+        nInd: 18447062,
+      });
       this.setState({
         loading: false,
         selectOptions: iris.map(({ iri, label, nClass, nInd }) => {
@@ -81,7 +87,7 @@ class VocabSelector extends React.Component {
             </FormControl>
             <Grid item>
               <div className={classes.submitButton}>
-                {this.state.loading ? <CircularProgress size={20} /> :
+                {this.state.loading || this.props.loading ? <CircularProgress size={20} /> :
                   <Button variant="contained" color="primary" onClick={this.props.onReloadClick}>
                     <div className={classes.submitButtonContent}><Refresh style={{ fontSize: 24 }} />&nbsp;Reload</div>
                   </Button>}
