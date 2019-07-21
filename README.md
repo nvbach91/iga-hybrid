@@ -219,3 +219,45 @@ WHERE {
 GROUP BY ?p
 ```
 
+# DBpedia-specific queries
+
+### Get a list of broadest skos:Concept instances
+```sparql
+SELECT ?c (COUNT(DISTINCT ?i) AS ?n) {
+  ?c a skos:Concept .
+  FILTER NOT EXISTS {
+    ?b a skos:Concept .
+    ?c skos:broader ?b .
+  }
+  ?i skos:broader ?c .
+}
+GROUP BY ?c
+ORDER BY DESC(?n)
+```
+
+### Get code list members and their skos:Concept status
+```sparql
+SELECT DISTINCT ?i ?skosConcept
+WHERE {
+  ?i skos:broader <http://dbpedia.org/resource/Category:Research_vessels_of_the_United_States> .
+  ?i a ?skosConcept .
+}
+```
+
+### Get code list structure 
+```sparql
+SELECT DISTINCT ?c ?cn ?i1 ?i1n ?p ?i2 ?i2n
+WHERE {
+  VALUES ?lp { rdfs:label }
+  BIND(<http://dbpedia.org/resource/Category:Research_vessels_of_the_United_States> AS ?c) .
+  ?i1 skos:broader ?c .
+  OPTIONAL { ?c ?lp ?cn . FILTER(LANGMATCHES(LANG(?cn), 'en')) }
+  OPTIONAL { ?i1 ?lp ?i1n . FILTER(LANGMATCHES(LANG(?i1n), 'en'))}
+  OPTIONAL {
+  	?i2 skos:broader ?c .
+    ?i1 ?p ?i2 .
+    OPTIONAL { ?i2 ?lp ?i2n . FILTER(LANGMATCHES(LANG(?i2n), 'en')) }
+  }
+}
+ORDER BY ?i1
+```
