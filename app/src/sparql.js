@@ -1,3 +1,5 @@
+import { shortenIri } from './utils';
+
 export const getEndpointUrl = (vocab) => {
   switch (vocab) {
     case 'http://dbpedia.org': return 'https://dbpedia.org/sparql';
@@ -13,6 +15,7 @@ export const prefixes = {
   skos:     'http://www.w3.org/2004/02/skos/core#',
   rdf:      'http://www.w3.org/1999/02/22-rdf-syntax-ns#',
   dc:       'http://purl.org/dc/terms/',
+  dcmit:    'http://purl.org/dc/dcmitype/',
 };
 
 // export const reversePrefixes = {};
@@ -159,13 +162,70 @@ WHERE {
   OPTIONAL { ?c ?lp ?cn . FILTER(LANGMATCHES(LANG(?cn), 'en')) }
   OPTIONAL { ?i1 ?lp ?i1n . FILTER(LANGMATCHES(LANG(?i1n), 'en'))}
   OPTIONAL {
-  	?i2 a ?c .
+    ?i2 a ?c .
     ?i1 ?p ?i2 .
     OPTIONAL { ?i2 ?lp ?i2n . FILTER(LANGMATCHES(LANG(?i2n), 'en')) }
   }
 }
 ORDER BY ?i1
 `;
+
+export const getQueryCodeListConstruct = (codeListIri, vocabIri) => {
+  let vocabPrefixHash = '';
+  let vocabPrefixSlash = '';
+  if (!vocabIri.endsWith('#') && !vocabIri.endsWith('/')) {
+    vocabPrefixHash = `PREFIX ${shortenIri(`${vocabIri}#`)}: <${vocabIri}#>`;
+    vocabPrefixSlash = `PREFIX ${shortenIri(`${vocabIri}/`)}: <${vocabIri}/>`;
+  } else {
+    if (vocabIri.endsWith('#')) {
+      vocabPrefixHash = `PREFIX ${shortenIri(vocabIri)}: <${vocabIri}>`;
+    } else if (!vocabIri.endsWith('/')) {
+      vocabPrefixHash = `PREFIX ${shortenIri(`${vocabIri}#`)}: <${vocabIri}#>`;
+    }
+    if (vocabIri.endsWith('/')) {
+      vocabPrefixSlash = `PREFIX ${shortenIri(vocabIri)}: <${vocabIri}>`;
+    } else if (!vocabIri.endsWith('#')) {
+      vocabPrefixSlash = `PREFIX ${shortenIri(`${vocabIri}/`)}: <${vocabIri}/>`;
+    }
+  }
+  if (vocabPrefixHash.startsWith('PREFIX http')) {
+    vocabPrefixHash = '';
+  }
+  if (vocabPrefixSlash.startsWith('PREFIX http')) {
+    vocabPrefixSlash = '';
+  }
+  return (
+`
+${vocabPrefixHash}
+${vocabPrefixSlash}
+CONSTRUCT { 
+  ?c a owl:Class .
+  ?c rdfs:label ?cn .
+  ?i1 a ?c .
+  ?i1 a ?skosConcept .
+  ?i1 rdfs:label ?i1n .
+  ?i2 a ?c .
+  ?i2 rdfs:label ?i2n .
+  ?i1 ?p ?i2 .
+}
+${vocabIri ? FROMS : ''}
+${vocabIri ? `FROM <${vocabIri}>` : ''}
+WHERE {
+  VALUES ?lp { rdfs:label }
+  BIND(<${codeListIri}> AS ?c) .
+  ?i1 a ?c .
+  OPTIONAL { BIND(skos:Concept AS ?skosConcept) . ?i1 a ?skosConcept . }
+  OPTIONAL { ?c ?lp ?cn . FILTER(LANGMATCHES(LANG(?cn), 'en')) }
+  OPTIONAL { ?i1 ?lp ?i1n . FILTER(LANGMATCHES(LANG(?i1n), 'en'))}
+  OPTIONAL {
+    ?i2 a ?c .
+    ?i1 ?p ?i2 .
+    OPTIONAL { ?i2 ?lp ?i2n . FILTER(LANGMATCHES(LANG(?i2n), 'en')) }
+  }
+}
+ORDER BY ?i1
+`);
+};
 
 export const getDBpediaQueryBroadestConcepts = () => `
 SELECT ?c (COUNT(DISTINCT ?i) AS ?n) {
@@ -191,6 +251,31 @@ WHERE {
 
 export const getDBpediaQueryCodeListStructure = (codeListIri) => `
 SELECT DISTINCT ?c ?cn ?i1 ?i1n ?p ?i2 ?i2n
+WHERE {
+  VALUES ?lp { rdfs:label }
+  BIND(<${codeListIri}> AS ?c) .
+  ?i1 skos:broader ?c .
+  OPTIONAL { ?c ?lp ?cn . FILTER(LANGMATCHES(LANG(?cn), 'en')) }
+  OPTIONAL { ?i1 ?lp ?i1n . FILTER(LANGMATCHES(LANG(?i1n), 'en'))}
+  OPTIONAL {
+  	?i2 skos:broader ?c .
+    ?i1 ?p ?i2 .
+    OPTIONAL { ?i2 ?lp ?i2n . FILTER(LANGMATCHES(LANG(?i2n), 'en')) }
+  }
+}
+ORDER BY ?i1
+`;
+export const getDBpediaQueryCodeListConstruct = (codeListIri) => `
+CONSTRUCT {
+  ?c a owl:Class .
+  ?c rdfs:label ?cn .
+  ?i1 a ?c .
+  ?i1 a ?skosConcept .
+  ?i1 rdfs:label ?i1n .
+  ?i2 a ?c .
+  ?i2 rdfs:label ?i2n .
+  ?i1 ?p ?i2 .
+} 
 WHERE {
   VALUES ?lp { rdfs:label }
   BIND(<${codeListIri}> AS ?c) .

@@ -34,3 +34,13 @@ export const createIriLink = (iri) => {
 export const createLink = (iri) => {
   return <Link href={iri} target="_blank" rel="noopener noreferrer">{iri}</Link>;
 };
+
+export const downloadFile = (filename, text, type) => {
+  var element = document.createElement('a');
+  element.setAttribute('href', `data:text/${type || 'plain'};charset=utf-8,` + encodeURIComponent(text));
+  element.setAttribute('download', filename);
+  element.style.display = 'none';
+  document.body.appendChild(element);
+  element.click();
+  document.body.removeChild(element);
+};

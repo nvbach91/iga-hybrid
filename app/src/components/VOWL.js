@@ -474,6 +474,7 @@ export const drawGraph = (data) => {
   /* ################ FUNCTIONS ################ */
 
   /* Add String function to calculate the text field length */
+  // eslint-disable-next-line
   String.prototype.width = function(textStyle) {
     // Set a default value
     if (!textStyle) {
@@ -491,6 +492,7 @@ export const drawGraph = (data) => {
   };
 
   /* Function to truncate a string */
+  // eslint-disable-next-line
   String.prototype.truncate = function(maxLength, textStyle) {
     maxLength -= ADDITIONAL_TEXT_SPACE;
     if (isNaN(maxLength) || maxLength <= 0) {
@@ -573,6 +575,7 @@ export const drawGraph = (data) => {
           node.width = LITERAL_WIDTH;
           maxTextWidth = LITERAL_WIDTH;
           break;
+        default:
       }
       node.maxTextWidth = maxTextWidth;
       node.radius = radius;
@@ -761,6 +764,7 @@ export const drawGraph = (data) => {
       case 2:
         distance = 45 + oddConstant;
         break;
+      default:
     }
     return distance * (visibleLinkDistance / DEFAULT_VISIBLE_LINKDISTANCE);
   }
@@ -827,6 +831,7 @@ export const drawGraph = (data) => {
   }
 
   /* Methods to create hover effect for the specification */
+  // eslint-disable-next-line
   function labelMouseOver(tag) {
     d3.selectAll('marker#' + tag)
       .select('path')
@@ -836,6 +841,7 @@ export const drawGraph = (data) => {
       .selectAll('path, text')
       .classed('hovered', true);
   }
+  // eslint-disable-next-line
   function labelMouseOut(tag) {
     d3.selectAll('marker#' + tag)
       .select('path')
@@ -845,11 +851,13 @@ export const drawGraph = (data) => {
       .selectAll('path, text')
       .classed('hovered', false);
   }
+  // eslint-disable-next-line
   function indirectHighlightOn(tag) {
     d3.selectAll('.' + tag)
       .selectAll('rect')
       .classed('indirectHighlighting', true);
   }
+  // eslint-disable-next-line
   function indirectHighlightOff(tag) {
     d3.selectAll('.' + tag)
       .selectAll('rect')
@@ -1696,6 +1704,7 @@ export const drawGraph = (data) => {
   };
 
   var getNodeInfo = function getNodeInfoFunct() {
+    // eslint-disable-next-line
     var node = svg.selectAll('.node').on('click', function(d) {
       d3.select('#otherDetails').classed('hidden', false);
       d3.select('#class').classed('hidden', false);
@@ -1795,6 +1804,7 @@ export const drawGraph = (data) => {
         return 'Intersection Of';
       case 'complement':
         return 'Complement Of';
+      default:
     }
   };
 
@@ -1911,7 +1921,7 @@ export const drawGraph = (data) => {
   var hideInfoField = function hideNodeInfoFieldsFunct() {
     d3.select('#otherDetails').classed('hidden', true);
   };
-
+  // eslint-disable-next-line
   function refreshOntology(jsonFile) {
     clearCanvas();
     //jsonURI = jsonFile;

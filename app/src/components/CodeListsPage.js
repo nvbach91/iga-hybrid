@@ -6,13 +6,15 @@ import { withStyles } from '@material-ui/core/styles';
 import Visibility from '@material-ui/icons/Visibility';
 import Close from '@material-ui/icons/Close';
 import Palette from '@material-ui/icons/Palette';
+import CloudDownload from '@material-ui/icons/CloudDownload';
 import axios from 'axios';
 import uuidv4 from 'uuid/v4';
 import { getEndpointUrl, PREFIXES } from '../sparql';
 import { getQueryCodeListInstances, getQueryClassInstanceCounts, getQueryCodeListStructure } from '../sparql';
 import { getDBpediaQueryBroadestConcepts, getDBpediaQueryCodeListMembers, getDBpediaQueryCodeListStructure } from '../sparql';
+import { getQueryCodeListConstruct, getDBpediaQueryCodeListConstruct } from '../sparql';
 import { axiosConfig } from '../network';
-import { createIriLink, createLink } from '../utils';
+import { createIriLink, createLink, downloadFile, shortenIri } from '../utils';
 import Dialog from '@material-ui/core/Dialog';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import CodeListsTable from './CodeListsTable';
@@ -130,6 +132,31 @@ class CodeListsPage extends React.Component {
   closeGraphModal = () => {
     this.setState({ codeListInstanceGraphNodes: null });
   }
+  handleDownloadCodeList = () => {
+    this.setState({ downloading: true });
+    const { selectedVocabOption, codeList } = this.state;
+    let fromVocab = selectedVocabOption.value;
+    let query = getQueryCodeListConstruct(codeList.value, fromVocab);
+    let prefixes = PREFIXES;
+    let ac = JSON.parse(JSON.stringify(axiosConfig));
+    ac.headers.accept = 'application/x-turtle,*/*;q=0.9';
+    if (selectedVocabOption.value === 'http://dbpedia.org') {
+      fromVocab = '';
+      prefixes = '';
+      query = encodeURIComponent(getDBpediaQueryCodeListConstruct(codeList.value));
+    }
+    const payload = `query=${prefixes}${query}`;
+    axios.post(getEndpointUrl(selectedVocabOption.value), payload, ac).then((resp) => {
+      let fileName = shortenIri(codeList.value);
+      if (fileName.startsWith('http') && fileName.includes('/')) {
+        fileName = fileName.split('/').slice(-1);
+      } else {
+        fileName = fileName.replace(/[:/]/g, '-');
+      }
+      downloadFile(`${fileName}.ttl`, resp.data, 'turtle');
+      this.setState({ downloading: false });
+    });
+  }
   handleLoadGraph = () => {
     const { selectedVocabOption, codeList } = this.state;
     let fromVocab = selectedVocabOption.value;
@@ -188,7 +215,8 @@ class CodeListsPage extends React.Component {
             <div className={classes.dialogTitle}>
               <span>Vocabulary: {selectedVocabOption && createIriLink(selectedVocabOption.value)}</span>
               {codeList && (
-                <span>
+                <span style={{minWidth: 412}}>
+                  <Button color="primary" disabled={this.state.downloading} onClick={this.handleDownloadCodeList}>Download&nbsp;{this.state.downloading ? <CircularProgress size={20}/> : <CloudDownload />}</Button>
                   <Button color="primary" onClick={this.handleLoadGraph}>Visualize&nbsp;<Palette /></Button>
                   <Button color="primary" onClick={
                     this.showSparqlPreview(
