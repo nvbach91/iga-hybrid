@@ -287,7 +287,6 @@ class CodeListsPage extends React.Component {
               </div>
             );
           }) : <div />}
-          <div style={{marginBottom: 200}}></div>
         </Dialog>
       </React.Fragment>
     );
