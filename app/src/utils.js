@@ -12,12 +12,22 @@ export const debounce = (fn, time) => {
 
 export const shortenIri = (iri) => {
   const prefixes = Object.keys(window.cached.reversePrefixes);
+  const candidatePrefixes = [];
   for (let i = 0; i < prefixes.length; i++) {
     let prefix = prefixes[i];
     if (iri.startsWith(prefix)) {
-      if (iri.length === prefix.length) {
-        return window.cached.reversePrefixes[prefix];
-      }
+      candidatePrefixes.push(prefix);
+    }
+  }
+  for (let i = 0; i < candidatePrefixes.length; i++) {
+    let prefix = candidatePrefixes[i];
+    if (iri.length === prefix.length) {
+      return window.cached.reversePrefixes[prefix];
+    }
+  }
+  for (let i = 0; i < candidatePrefixes.length; i++) {
+    let prefix = candidatePrefixes[i];
+    if (iri.startsWith(prefix)) {
       return `${window.cached.reversePrefixes[prefix]}:${iri.slice(prefix.length)}`;
     }
   }

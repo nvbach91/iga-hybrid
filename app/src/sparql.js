@@ -201,6 +201,12 @@ ${vocabPrefixSlash}
 CONSTRUCT { 
   ?c a owl:Class .
   ?c rdfs:label ?cn .
+  ?cp a owl:ObjectProperty .
+  ?cp rdfs:range ?c .
+  ?cp rdfs:label ?cpn .
+  ?cp rdfs:domain ?cd .
+  ?cd a owl:Class .
+  ?cd rdfs:label ?cdn .
   ?i1 a ?c .
   ?i1 a ?skosConcept .
   ?i1 rdfs:label ?i1n .
@@ -214,6 +220,14 @@ WHERE {
   VALUES ?lp { rdfs:label }
   BIND(<${codeListIri}> AS ?c) .
   ?i1 a ?c .
+  OPTIONAL { 
+    ?cp rdfs:range ?c . 
+    OPTIONAL { 
+      ?cp rdfs:label ?cpn .
+      ?cp rdfs:domain ?cd .
+      OPTIONAL { ?cd rdfs:label ?cdn } 
+    }
+  }
   OPTIONAL { BIND(skos:Concept AS ?skosConcept) . ?i1 a ?skosConcept . }
   OPTIONAL { ?c ?lp ?cn . FILTER(LANGMATCHES(LANG(?cn), 'en')) }
   OPTIONAL { ?i1 ?lp ?i1n . FILTER(LANGMATCHES(LANG(?i1n), 'en'))}
