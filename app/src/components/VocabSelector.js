@@ -10,6 +10,7 @@ import Button from '@material-ui/core/Button';
 import SearchIcon from '@material-ui/icons/Search';
 import Refresh from '@material-ui/icons/Refresh';
 import AppBar from '@material-ui/core/AppBar';
+import { arrayMove } from '../utils';
 
 const styles = theme => ({
   formControl: {
@@ -41,13 +42,13 @@ class VocabSelector extends React.Component {
   }
   componentWillMount = () => {
     fetchVocabs().then((resp) => {
-      const iris = resp.data.results.bindings.map((binding) => {
-        return {
+      const iris = []; resp.data.results.bindings.forEach((binding) => {
+        iris.push({
           iri: binding.vocabURI.value,
           label: binding.vocabLabel ? binding.vocabLabel.value : '',
           nClass: binding.nClass.value,
           nInd: binding.nInd.value,
-        }
+        });
       });
       iris.unshift({
         iri: 'http://dbpedia.org',
@@ -55,6 +56,11 @@ class VocabSelector extends React.Component {
         nClass: 760,
         nInd: 18447062,
       });
+      // move vocabs that have code lists up the list
+      arrayMove(iris, 7, 0);
+      arrayMove(iris, 8, 1);
+      arrayMove(iris, 9, 2);
+      arrayMove(iris, 10, 3);
       this.setState({
         loading: false,
         selectOptions: iris.map(({ iri, label, nClass, nInd }) => {
@@ -87,10 +93,11 @@ class VocabSelector extends React.Component {
             </FormControl>
             <Grid item>
               <div className={classes.submitButton}>
-                {this.state.loading || this.props.loading ? <CircularProgress size={20} /> :
-                  <Button variant="contained" color="primary" onClick={this.props.onReloadClick}>
-                    <div className={classes.submitButtonContent}><Refresh style={{ fontSize: 24 }} />&nbsp;Reload</div>
-                  </Button>}
+                <Button color="primary" onClick={this.props.onReloadClick}>
+                  <div className={classes.submitButtonContent}>
+                    {this.state.loading || this.props.loading ? <CircularProgress size={20} /> : <Refresh style={{ fontSize: 24 }} />}&nbsp;Reload
+                  </div>
+                </Button>
               </div>
             </Grid>
           </Grid>

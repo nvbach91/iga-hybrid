@@ -2,7 +2,10 @@ import React from 'react';
 import Paperbase from './Paperbase';
 import '../css/App.css';
 import '../css/VOWL.css';
+import 'codemirror/lib/codemirror.css';
+//import 'codemirror/theme/material.css';
 import axios from 'axios';
+require('codemirror/mode/sparql/sparql');
 
 class App extends React.Component {
   componentWillMount = () => {

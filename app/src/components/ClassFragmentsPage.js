@@ -19,7 +19,7 @@ import Typography from '@material-ui/core/Typography';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Switch from '@material-ui/core/Switch';
 import chunk from 'lodash/chunk';
-import TextareaAutosize from 'react-autosize-textarea';
+import {UnControlled as CodeMirror} from 'react-codemirror2';
 import VocabSelector from './VocabSelector';
 
 const styles = theme => ({
@@ -205,12 +205,19 @@ class ClassFragmentsPage extends React.Component {
         <Dialog onClose={this.closeSparqlModal} open={this.state.sparqlPreview ? true : false} fullWidth={true} maxWidth="md">
           <DialogTitle>
             <div className={classes.dialogTitle}>
-              <span>SPARQL query</span>
+              <span>SPARQL query preview</span>
               <Button color="primary" onClick={this.closeSparqlModal}><Close /></Button>
             </div>
             <Typography variant="body2">See also {createLink('https://github.com/nvbach91/iga-hybrid')}</Typography>
           </DialogTitle>
-          <TextareaAutosize readOnly className={classes.codeBlock} defaultValue={this.state.sparqlPreview} />
+          <div className="code-mirror-container">
+            <CodeMirror value={this.state.sparqlPreview} options={{
+              mode: 'sparql',
+              //theme: 'material',
+              lineNumbers: true,
+              readOnly: true,
+            }}/>
+          </div>
         </Dialog>
       </React.Fragment>
     );

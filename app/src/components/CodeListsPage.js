@@ -20,10 +20,10 @@ import DialogTitle from '@material-ui/core/DialogTitle';
 import CodeListsTable from './CodeListsTable';
 import CodeListInstancesTable from './CodeListInstancesTable';
 import Typography from '@material-ui/core/Typography';
-import TextareaAutosize from 'react-autosize-textarea';
 import VocabSelector from './VocabSelector';
 import { drawGraph, parseToVOWLSpec } from './VOWL';
 import { CircularProgress } from '@material-ui/core';
+import {UnControlled as CodeMirror} from 'react-codemirror2';
 
 const styles = theme => ({
   paper: {
@@ -41,9 +41,10 @@ const styles = theme => ({
     width: 'calc(100% - 24px)',
     margin: '10px auto',
     fontWeight: 'bold',
-    backgroundColor: '#ccc',
+    backgroundColor: '#ddd',
     height: 'auto',
     border: 'none',
+    overflow: 'auto !important',
   },
   controls: {
     display: 'flex',
@@ -72,6 +73,7 @@ class CodeListsPage extends React.Component {
   }
   fetchCodeLists = () => {
     const { selectedVocabOption } = this.state;
+    if (!selectedVocabOption) { return false; }
     this.setState({ loading: true });
     let query = getQueryClassInstanceCounts(selectedVocabOption ? selectedVocabOption.value : '__YOUR_SELECTED_VOCAB__').trim();
     let prefixes = PREFIXES;
@@ -101,8 +103,8 @@ class CodeListsPage extends React.Component {
       this.setState({ codeLists, loading: false });
     });
   }
-  showSparqlPreview = (query) => () => {
-    this.setState({ sparqlPreview: query });
+  showSparqlPreview = (queries) => () => {
+    this.setState({ sparqlPreview: queries });
   }
   showInstances = (key) => () => {
     const { selectedVocabOption, codeLists } = this.state;
@@ -191,8 +193,8 @@ class CodeListsPage extends React.Component {
             <Button color="primary" onClick={this.showSparqlPreview(
               selectedVocabOption ? 
                 (selectedVocabOption.value === 'http://dbpedia.org' ? 
-                  getDBpediaQueryBroadestConcepts().trim() :
-                  getQueryClassInstanceCounts(selectedVocabOption.value || '__YOUR_SELECTED_VOCAB__').trim()) : ''
+                  [{ name: 'Query for listing code lists', query: getDBpediaQueryBroadestConcepts().trim()}] :
+                  [{ name: 'Query for listing code lists', query: getQueryClassInstanceCounts(selectedVocabOption.value || '__YOUR_SELECTED_VOCAB__').trim()}]) : ''
             )}>View SPARQL&nbsp;<Visibility /></Button>
           </div>
         </div>
@@ -216,12 +218,16 @@ class CodeListsPage extends React.Component {
               <span>Vocabulary: {selectedVocabOption && createIriLink(selectedVocabOption.value)}</span>
               {codeList && (
                 <span style={{minWidth: 412}}>
-                  <Button color="primary" disabled={this.state.downloading} onClick={this.handleDownloadCodeList}>Download&nbsp;{this.state.downloading ? <CircularProgress size={20}/> : <CloudDownload />}</Button>
+                  <Button color="primary" disabled={this.state.downloading} onClick={this.handleDownloadCodeList}>
+                    Download RDF&nbsp;{this.state.downloading ? <CircularProgress size={20}/> : <CloudDownload />}
+                  </Button>
                   <Button color="primary" onClick={this.handleLoadGraph}>Visualize&nbsp;<Palette /></Button>
                   <Button color="primary" onClick={
-                    this.showSparqlPreview(
-                      getQueryCodeListInstances(codeList.value, selectedVocabOption.value).trim()
-                    )
+                    this.showSparqlPreview([
+                      { name: 'Query for listing members', query: getQueryCodeListInstances(codeList.value, selectedVocabOption.value).trim() },
+                      { name: 'Query for visualization', query: getQueryCodeListStructure(codeList.value, selectedVocabOption.value).trim() },
+                      { name: 'Query for download', query: getQueryCodeListConstruct(codeList.value, selectedVocabOption.value).trim() }
+                    ])
                   }>View SPARQL&nbsp;<Visibility /></Button>
                   <Button color="primary" onClick={this.closeInstancesModal}><Close /></Button>
                 </span>
@@ -262,13 +268,26 @@ class CodeListsPage extends React.Component {
         <Dialog onClose={this.closeSparqlModal} open={sparqlPreview ? true : false} fullWidth={true} maxWidth="md">
           <DialogTitle>
             <div className={classes.dialogTitle}>
-              <span>SPARQL query</span>
+              <span>SPARQL query preview</span>
               <Button color="primary" onClick={this.closeSparqlModal}><Close /></Button>
             </div>
             <Typography variant="body2">See also {createLink('https://github.com/nvbach91/iga-hybrid')}</Typography>
             <Typography variant="body2">Endpoint {createLink(selectedVocabOption ? getEndpointUrl(selectedVocabOption.value) : '')}</Typography>
           </DialogTitle>
-          <TextareaAutosize readOnly className={classes.codeBlock} defaultValue={sparqlPreview} />
+          {sparqlPreview ? sparqlPreview.map((preview, index) => {
+            return (
+              <div className="code-mirror-container">
+                <Typography variant="subtitle2" style={{ textIndent: 34, marginTop: 20 }}>{preview.name}</Typography>
+                <CodeMirror key={index} value={preview.query} options={{
+                  mode: 'sparql',
+                  //theme: 'material',
+                  lineNumbers: true,
+                  readOnly: true,
+                }}/>
+              </div>
+            );
+          }) : <div />}
+          <div style={{marginBottom: 200}}></div>
         </Dialog>
       </React.Fragment>
     );

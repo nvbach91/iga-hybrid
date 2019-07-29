@@ -54,3 +54,13 @@ export const downloadFile = (filename, text, type) => {
   element.click();
   document.body.removeChild(element);
 };
+
+export const arrayMove = (arr, oldIndex, newIndex) => {
+  if (newIndex >= arr.length) {
+    var k = newIndex - arr.length + 1;
+    while (k--) {
+      arr.push(undefined);
+    }
+  }
+  arr.splice(newIndex, 0, arr.splice(oldIndex, 1)[0]);
+};
