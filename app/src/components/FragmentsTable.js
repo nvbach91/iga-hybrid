@@ -56,7 +56,7 @@ const FragmentsTable = ({ fragments, showInstances, showOnlyFullFragments, vocab
   }) : [];
   return (
     
-    <Paper style={{ height: 640, width: '100%' }}>
+    <Paper style={{ height: 620, width: '100%' }}>
       <VirtualizedTable
         rowCount={mRows.length}
         rowGetter={({ index }) => mRows[index]}

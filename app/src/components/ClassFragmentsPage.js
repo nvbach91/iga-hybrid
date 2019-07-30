@@ -149,7 +149,7 @@ class ClassFragmentsPage extends React.Component {
   render = () => {
     const { classes } = this.props;
     return (
-      <React.Fragment>
+      <>
         <div className={classes.controls}>
           <Typography align="left" variant="h5">
             Find class fragments
@@ -219,7 +219,7 @@ class ClassFragmentsPage extends React.Component {
             }}/>
           </div>
         </Dialog>
-      </React.Fragment>
+      </>
     );
   }
 }

@@ -9,7 +9,11 @@ require('codemirror/mode/sparql/sparql');
 
 class App extends React.Component {
   componentWillMount = () => {
-    window.records = {};
+    window.cached.renderedPrefixes = {};
+    window.cached.records = {};
+    window.cached.prefixes = {};
+    window.cached.reversePrefixes = {};
+
     axios.get('https://prefix.cc/context').then((resp) => {
       window.cached.prefixes = resp.data['@context'];
       // additional prefixes
@@ -26,7 +30,6 @@ class App extends React.Component {
       window.cached.prefixes['squdt'] = 'http://qudt.org/schema/qudt/';
       window.cached.prefixes['dkdk'] = 'http://www.data-knowledge.org/dk/';
       window.cached.prefixes['kanzaki'] = 'http://www.kanzaki.com/ns/music#';
-      window.cached.reversePrefixes = {};
       Object.keys(window.cached.prefixes).forEach((prefix) => {
         window.cached.reversePrefixes[window.cached.prefixes[prefix]] = prefix;
       });

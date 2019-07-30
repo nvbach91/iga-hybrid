@@ -25,7 +25,7 @@ const CodeListInstancesTable = ({ loading, codeListInstances, codeList, classes 
     return { id: index, index: index + 1, i: createIriLink(i.value), skosConcept: createIriLink(skosConcept ? skosConcept.value : 'Not a skos:Concept') };
   }) : [];
   return (
-    <Paper style={{ height: 640, width: '100%' }}>
+    <Paper style={{ height: 620, width: '100%' }}>
       {loading ?
         <div style={{ display: 'flex', justifyContent: 'center' }}><CircularProgress size={40} /></div> :
         <VirtualizedTable

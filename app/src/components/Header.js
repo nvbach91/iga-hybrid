@@ -43,7 +43,7 @@ function Header(props) {
   const { classes, onDrawerToggle, onTabSwitch, tabIndex } = props;
 
   return (
-    <React.Fragment>
+    <>
       <AppBar color="primary" position="sticky" elevation={0}>
         <Toolbar>
           <Grid container spacing={1} alignItems="center">
@@ -111,7 +111,7 @@ function Header(props) {
           <Tab textColor="inherit" label="Prefixes" onClick={onTabSwitch(2)}/>
         </Tabs>
       </AppBar>
-    </React.Fragment>
+    </>
   );
 }
 

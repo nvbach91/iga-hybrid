@@ -99,7 +99,7 @@ class CodeListsPage extends React.Component {
           uniqueCodeLists[codeLists[key].c.value] = { instances: codeLists[key].n.value, properties: codeLists[key].p ? 1: 0 };
         }
       });
-      window.records[selectedVocabOption.value] = uniqueCodeLists;
+      window.cached.records[selectedVocabOption.value] = uniqueCodeLists;
       this.setState({ codeLists, loading: false });
     });
   }
@@ -184,7 +184,7 @@ class CodeListsPage extends React.Component {
     const { selectedVocabOption, loading, codeLists, codeList, codeListInstances, codeListInstancesLoading, codeListInstancesGraphLoading, codeListInstanceGraphNodes, sparqlPreview } = this.state;
     const { classes } = this.props;
     return (
-      <React.Fragment>
+      <>
         <div className={classes.controls}>
           <Typography align="left" variant="h5">
             Find code lists
@@ -288,7 +288,7 @@ class CodeListsPage extends React.Component {
             );
           }) : <div />}
         </Dialog>
-      </React.Fragment>
+      </>
     );
   }
 }

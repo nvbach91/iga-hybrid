@@ -10,7 +10,7 @@ import SearchIcon from '@material-ui/icons/Search';
 import PrefixesTable from './PrefixesTable';
 import TextField from '@material-ui/core/TextField';
 import Typography from '@material-ui/core/Typography';
-import { createLink } from '../utils';
+import { createLink, debounce } from '../utils';
 
 const styles = theme => ({
   paper: {
@@ -32,23 +32,29 @@ class PrefixesPage extends React.Component {
     searchValue: '',
     rows: Object.keys(window.cached.prefixes),
   }
-  handleInputChange = (name) => (e) => {
-    this.setState({ 
-      [name]: e.target.value, 
+  updateList = debounce(() => {
+    this.setState({
       rows: Object.keys(window.cached.prefixes).filter((prefix) => {
-        return prefix.toLowerCase().includes(e.target.value.trim().toLowerCase());
-      }) 
-    });
+        const v = this.state.searchValue.trim().toLowerCase();
+        return (
+          prefix.toLowerCase().includes(v) ||
+          window.cached.prefixes[prefix].toLowerCase().includes(v)
+        );
+      })
+    })
+  }, 500)
+  handleInputChange = (e) => {
+    this.setState({ searchValue: e.target.value }, this.updateList);
   }
   render = () => {
     const { classes } = this.props;
     return (
-      <React.Fragment>
+      <>
       <Typography align="left" variant="h5">
         Search for prefixes
       </Typography>
       <Typography align="left" variant="subtitle2">
-        These prefixes come from {createLink('https://prefix.cc/context')}
+        All prefixes used in this application come from {createLink('https://prefix.cc/context')}
       </Typography>
         <Paper className={classes.paper}>
           <AppBar className={classes.searchBar} position="static" color="default" elevation={0}>
@@ -58,7 +64,7 @@ class PrefixesPage extends React.Component {
                   <SearchIcon className={classes.block} color="inherit" />
                 </Grid>
                 <FormControl className={classes.formControl}>
-                  <TextField value={this.state.searchValue} onChange={this.handleInputChange('searchValue')} />
+                  <TextField value={this.state.searchValue} onChange={this.handleInputChange} />
                 </FormControl>
               </Grid>
             </Toolbar>
@@ -67,7 +73,7 @@ class PrefixesPage extends React.Component {
             <PrefixesTable rows={this.state.rows}/>
           </Paper>
         </Paper>
-      </React.Fragment>
+      </>
     );
   }
 }

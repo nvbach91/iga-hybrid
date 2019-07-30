@@ -30,7 +30,7 @@ const FragmentInstancesTable = ({ fragmentInstancesLoading, fragmentInstances, c
     return { id: index, index: index + 1, s: createIriLink(s.value), p: createIriLink(p.value), o: createIriLink(o.value) };
   }) : [];
   return (
-    <Paper style={{ height: 640, width: '100%' }}>
+    <Paper style={{ height: 620, width: '100%' }}>
       {fragmentInstancesLoading ?
         <div style={{ display: 'flex', justifyContent: 'center' }}><CircularProgress size={40} /></div> :
         <VirtualizedTable
