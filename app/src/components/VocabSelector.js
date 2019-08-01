@@ -10,7 +10,13 @@ import Button from '@material-ui/core/Button';
 import SearchIcon from '@material-ui/icons/Search';
 import Refresh from '@material-ui/icons/Refresh';
 import AppBar from '@material-ui/core/AppBar';
-import { arrayMove } from '../utils';
+import Dialog from '@material-ui/core/Dialog';
+import DialogTitle from '@material-ui/core/DialogTitle';
+import DialogContent from '@material-ui/core/DialogContent';
+import DialogContentText from '@material-ui/core/DialogContentText';
+import DialogActions from '@material-ui/core/DialogActions';
+import { arrayMove, createLink } from '../utils';
+import { getEndpointUrl } from '../sparql';
 
 const styles = theme => ({
   formControl: {
@@ -36,6 +42,7 @@ const selectStyles = {
 };
 class VocabSelector extends React.Component {
   state = {
+    networkError: false,
     selectOptions: [],
     selectedOption: null,
     loading: true,
@@ -67,11 +74,19 @@ class VocabSelector extends React.Component {
           return { value: iri, label: `${iri}${label ? ` - ${label}` : ''}, classes: ${nClass}, instances: ${nInd}` };
         })
       });
+    }).catch((err) => {
+      this.handleNetworkError();
     });
+  }
+  handleNetworkError = () => {
+    this.setState({ networkError: true });
   }
   handleSelectChange = (selectedOption) => {
     this.setState({ selectedOption })
     this.props.onVocabSelected(selectedOption);
+  }
+  closeModal = () => {
+    this.setState({ networkError: false })
   }
   render = () => {
     const { classes } = this.props;
@@ -102,6 +117,19 @@ class VocabSelector extends React.Component {
             </Grid>
           </Grid>
         </Toolbar>
+        
+        <Dialog onClose={this.closeModal} open={this.state.networkError ? true : false}>
+          <DialogTitle>Info</DialogTitle>
+          <DialogContent>
+            <DialogContentText>
+              Oops! Looks like the SPARQL endpoint is not working. Please try again later.<br/>
+              {createLink(getEndpointUrl())}
+            </DialogContentText>
+          </DialogContent>
+          <DialogActions>
+            <Button onClick={this.closeModal} color="primary">Close</Button>
+          </DialogActions>
+        </Dialog>
       </AppBar>
     )
   }
