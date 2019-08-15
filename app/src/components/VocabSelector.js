@@ -43,7 +43,7 @@ const selectStyles = {
 class VocabSelector extends React.Component {
   state = {
     networkError: false,
-    selectOptions: [],
+    selectOptions: [{ value: '', label: 'Loading, ... please wait' }],
     selectedOption: null,
     loading: true,
   }

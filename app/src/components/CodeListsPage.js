@@ -277,7 +277,7 @@ class CodeListsPage extends React.Component {
           {sparqlPreview ? sparqlPreview.map((preview, index) => {
             return (
               <div className="code-mirror-container" key={index}>
-                <Typography variant="subtitle2" style={{ textIndent: 34, marginTop: 20 }}>{preview.name}</Typography>
+                <Typography variant="subtitle2" style={{ textIndent: 34, marginTop: 20, backgroundColor: '#ccc'}}>{preview.name}</Typography>
                 <CodeMirror value={preview.query} options={{
                   mode: 'sparql',
                   //theme: 'material',
