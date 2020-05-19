@@ -42,7 +42,7 @@ const CodeListsTable = ({ codeLists, showInstances, vocabIsSelected, classes, lo
   return (
     
     <Paper style={{ height: 620, width: '100%' }}>
-      <VirtualizedTable
+      {(!vocabIsSelected || Object.keys(codeLists).length || loading) &&<VirtualizedTable
         rowCount={mRows.length}
         rowGetter={({ index }) => mRows[index]}
         columns={[
@@ -83,8 +83,11 @@ const CodeListsTable = ({ codeLists, showInstances, vocabIsSelected, classes, lo
             dataKey: 'i',
           },
         ]}
-      />
-      {vocabIsSelected && !Object.keys(codeLists).length && !loading && <Typography variant="subtitle2">No code lists found in this ontology</Typography>}
+      />}
+      {vocabIsSelected && !Object.keys(codeLists).length && !loading && <Paper>
+        <Typography variant="subtitle2">No code lists found in this ontology</Typography>
+        <Typography variant="body2">Please select another ontology in the list</Typography>
+      </Paper>}
     </Paper>
     
   );

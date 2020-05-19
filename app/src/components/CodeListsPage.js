@@ -4,16 +4,17 @@ import Paper from '@material-ui/core/Paper';
 import Button from '@material-ui/core/Button';
 import { withStyles } from '@material-ui/core/styles';
 import Visibility from '@material-ui/icons/Visibility';
+import Refresh from '@material-ui/icons/Refresh';
 import Close from '@material-ui/icons/Close';
 import Palette from '@material-ui/icons/Palette';
 import CloudDownload from '@material-ui/icons/CloudDownload';
 import axios from 'axios';
 import uuidv4 from 'uuid/v4';
 import { getEndpointUrl, PREFIXES } from '../sparql';
-import { getQueryCodeListInstances, getQueryClassInstanceCounts, getQueryCodeListStructure } from '../sparql';
+import { getQueryCodeListInstances, getQueryClassInstanceCounts, getQueryCodeListStructure, getQueryVocabStats } from '../sparql';
 import { getDBpediaQueryBroadestConcepts, getDBpediaQueryCodeListMembers, getDBpediaQueryCodeListStructure } from '../sparql';
 import { getQueryCodeListConstruct, getDBpediaQueryCodeListConstruct } from '../sparql';
-import { axiosConfig } from '../network';
+import { axiosConfig, fetchVocabs } from '../network';
 import { createIriLink, createLink, downloadFile, shortenIri } from '../utils';
 import Dialog from '@material-ui/core/Dialog';
 import DialogTitle from '@material-ui/core/DialogTitle';
@@ -53,13 +54,27 @@ const styles = theme => ({
   dialogTitle: {
     display: 'flex',
     justifyContent: 'space-between',
-  }
+  },
+  submitButtonContentWide: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    width: 160
+  },
+  submitButtonContent: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    width: 120,
+  },
 });
 class CodeListsPage extends React.Component {
   state = {
+    vocabsReady: true,
     codeLists: {},
     selectedVocabOption: null,
-    loading: false,
+    ontologyListLoading: false,
+    codeListsLoading: false,
     codeListInstances: null,
     codeList: null,
     sparqlPreview: false,
@@ -74,7 +89,7 @@ class CodeListsPage extends React.Component {
   fetchCodeLists = () => {
     const { selectedVocabOption } = this.state;
     if (!selectedVocabOption) { return false; }
-    this.setState({ loading: true });
+    this.setState({ codeListsLoading: true });
     let query = getQueryClassInstanceCounts(selectedVocabOption ? selectedVocabOption.value : '__YOUR_SELECTED_VOCAB__').trim();
     let prefixes = PREFIXES;
     if (selectedVocabOption.value === 'http://dbpedia.org') {
@@ -100,7 +115,7 @@ class CodeListsPage extends React.Component {
         }
       });
       window.cached.records[selectedVocabOption.value] = uniqueCodeLists;
-      this.setState({ codeLists, loading: false });
+      this.setState({ codeLists, codeListsLoading: false });
     });
   }
   showSparqlPreview = (queries) => () => {
@@ -180,8 +195,24 @@ class CodeListsPage extends React.Component {
       });
     });
   };
+  showCodeListSparqlPreview = () => {
+    const { selectedVocabOption } = this.state
+    this.showSparqlPreview(
+      selectedVocabOption ? 
+        (selectedVocabOption.value === 'http://dbpedia.org' ? 
+          [{ name: 'Query for listing code lists', query: getDBpediaQueryBroadestConcepts().trim()}] :
+          [{ name: 'Query for listing code lists', query: getQueryClassInstanceCounts(selectedVocabOption.value || '__YOUR_SELECTED_VOCAB__').trim()}]) : ''
+    )();
+  };
+  remountVocabSelector = () => {
+    this.setState({ ontologyListLoading: true, vocabsReady: false });
+    fetchVocabs(true).then(() => {
+      this.setState({ ontologyListLoading: false, vocabsReady: true });
+    });
+  };
   render = () => {
-    const { selectedVocabOption, loading, codeLists, codeList, codeListInstances, codeListInstancesLoading, codeListInstancesGraphLoading, codeListInstanceGraphNodes, sparqlPreview } = this.state;
+    const { selectedVocabOption, codeListsLoading, ontologyListLoading, codeLists, codeList, codeListInstances, vocabsReady, downloading } = this.state
+    const { codeListInstancesLoading, codeListInstancesGraphLoading, codeListInstanceGraphNodes, sparqlPreview } = this.state;
     const { classes } = this.props;
     return (
       <>
@@ -191,21 +222,23 @@ class CodeListsPage extends React.Component {
           </Typography>
           <div>
             <Button color="primary" onClick={this.showSparqlPreview(
-              selectedVocabOption ? 
-                (selectedVocabOption.value === 'http://dbpedia.org' ? 
-                  [{ name: 'Query for listing code lists', query: getDBpediaQueryBroadestConcepts().trim()}] :
-                  [{ name: 'Query for listing code lists', query: getQueryClassInstanceCounts(selectedVocabOption.value || '__YOUR_SELECTED_VOCAB__').trim()}]) : ''
-            )}>View SPARQL&nbsp;<Visibility /></Button>
+              [{ name: 'Query to list ontologies with number of classes and number of class instances', query: getQueryVocabStats().trim() }]
+            )}><Visibility />&nbsp;View SPARQL</Button>
+            <Button color="primary" onClick={this.remountVocabSelector}>
+              <div className={classes.submitButtonContentWide}>
+                {ontologyListLoading ? <CircularProgress size={20} /> : <Refresh style={{ fontSize: 20 }} />}&nbsp;{ontologyListLoading ? 'Loading...' : 'Reload ontology list'}
+              </div>
+            </Button>
           </div>
         </div>
         <Typography align="left" variant="subtitle2">
           This tool will help you identify code lists embedded in a knowledge graph or vocabulary. Please start by selecting an item below.
         </Typography>
         <Paper className={classes.paper}>
-          <VocabSelector onVocabSelected={this.onVocabSelected} onReloadClick={this.fetchCodeLists} loading={loading}/>
+          { vocabsReady && <VocabSelector onVocabSelected={this.onVocabSelected} onReloadClick={this.fetchCodeLists} loading={codeListsLoading} onShowSparql={this.showCodeListSparqlPreview} /> }
           <Paper className={classes.root}>
             <CodeListsTable
-              loading={loading}
+              loading={codeListsLoading}
               codeLists={codeLists}
               showInstances={this.showInstances}
               vocabIsSelected={selectedVocabOption ? true : false}
@@ -218,8 +251,8 @@ class CodeListsPage extends React.Component {
               <span>Vocabulary: {selectedVocabOption && createIriLink(selectedVocabOption.value)}</span>
               {codeList && (
                 <span style={{minWidth: 412}}>
-                  <Button color="primary" disabled={this.state.downloading} onClick={this.handleDownloadCodeList}>
-                    Download RDF&nbsp;{this.state.downloading ? <CircularProgress size={20}/> : <CloudDownload />}
+                  <Button color="primary" disabled={downloading} onClick={this.handleDownloadCodeList}>
+                    Download RDF&nbsp;{downloading ? <CircularProgress size={20}/> : <CloudDownload />}
                   </Button>
                   <Button color="primary" onClick={this.handleLoadGraph}>Visualize&nbsp;<Palette /></Button>
                   <Button color="primary" onClick={
@@ -272,7 +305,12 @@ class CodeListsPage extends React.Component {
               <Button color="primary" onClick={this.closeSparqlModal}><Close /></Button>
             </div>
             <Typography variant="body2">See also {createLink('https://github.com/nvbach91/iga-hybrid')}</Typography>
-            <Typography variant="body2">Endpoint {createLink(selectedVocabOption ? getEndpointUrl(selectedVocabOption.value) : '')}</Typography>
+            <Typography variant="body2">
+              Endpoints {selectedVocabOption ? 
+                createLink(getEndpointUrl(selectedVocabOption.value)) : 
+                <>{createLink(getEndpointUrl())}, {createLink(getEndpointUrl('https://fcp.vse.cz/blazegraph/namespace/biomed'))}</>
+              }
+            </Typography>
           </DialogTitle>
           {sparqlPreview ? sparqlPreview.map((preview, index) => {
             return (

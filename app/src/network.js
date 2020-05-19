@@ -9,8 +9,8 @@ export const axiosConfig = {
   }
 };
 
-export const fetchVocabs = () => {
-  if (window.cached.vocabs) {
+export const fetchVocabs = (reload) => {
+  if (window.cached.vocabs && !reload) {
     return bluebird.resolve(window.cached.vocabs);
   }
   const payload = `query=${PREFIXES}${getQueryVocabStats()}`;

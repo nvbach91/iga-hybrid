@@ -8,6 +8,7 @@ import Grid from '@material-ui/core/Grid';
 import CircularProgress from '@material-ui/core/CircularProgress';
 import Button from '@material-ui/core/Button';
 import SearchIcon from '@material-ui/icons/Search';
+import Visibility from '@material-ui/icons/Visibility';
 import Refresh from '@material-ui/icons/Refresh';
 import AppBar from '@material-ui/core/AppBar';
 import Dialog from '@material-ui/core/Dialog';
@@ -29,6 +30,8 @@ const styles = theme => ({
   submitButtonContent: {
     display: 'flex',
     alignItems: 'center',
+    justifyContent: 'center',
+    width: 120,
   },
 });
 const selectStyles = {
@@ -45,7 +48,7 @@ class VocabSelector extends React.Component {
     networkError: false,
     selectOptions: [{ value: '', label: 'Loading, ... please wait' }],
     selectedOption: null,
-    loading: true,
+    loading: false,
   }
   componentWillMount = () => {
     fetchVocabs().then((res) => {
@@ -109,9 +112,13 @@ class VocabSelector extends React.Component {
             </FormControl>
             <Grid item>
               <div className={classes.submitButton}>
-                <Button color="primary" onClick={this.props.onReloadClick}>
+                <Button color="primary" onClick={this.props.onShowSparql} disabled={!this.state.selectedOption}>
+                  <div className={classes.submitButtonContent}><Visibility style={{ fontSize: 24 }} />&nbsp;View SPARQL</div>
+                </Button>
+                <Button color="primary" onClick={this.props.onReloadClick} disabled={!this.state.selectedOption}>
                   <div className={classes.submitButtonContent}>
-                    {this.state.loading || this.props.loading ? <CircularProgress size={20} /> : <Refresh style={{ fontSize: 24 }} />}&nbsp;Reload
+                    {this.state.loading || this.props.loading ? <CircularProgress size={20} /> : <Refresh style={{ fontSize: 20 }} />}&nbsp;
+                    {this.state.loading || this.props.loading ? 'Loading...' : 'Reload'}
                   </div>
                 </Button>
               </div>

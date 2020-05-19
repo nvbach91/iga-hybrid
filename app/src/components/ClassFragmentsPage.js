@@ -130,6 +130,9 @@ class ClassFragmentsPage extends React.Component {
   }
   showInstances = (key) => () => {
     const { s, p, o } = this.state.fragments[key];
+    if (!s || !p || !o) {
+      return false; 
+    }
     const payload = `query=${PREFIXES}${getQueryFragmentInstances(this.state.fragments[key])}`;
     this.setState({ fragmentInstancesLoading: true });
     return axios.post(getEndpointUrl(), payload, axiosConfig).then((resp) => {

@@ -70,8 +70,7 @@ ORDER BY ?vocabPrefix
 export const getQueryVocabStats = () => `
 SELECT DISTINCT ?vocabURI (STR(?vl) AS ?vocabLabel) (COUNT (?class) AS ?nClass) (COUNT (?ind) AS ?nInd) {
   VALUES ?vt { voaf:Vocabulary owl:Ontology }
-  ?vocabURI a ?vt.
-  # ?vocabURI vann:preferredNamespacePrefix ?vocabPrefix.
+  ?vocabURI a ?vt .
   OPTIONAL { 
     ?vocabURI rdfs:label|dc:title|dct:title ?vl .
     FILTER(LANGMATCHES(LANG(?vl), 'en') || LANGMATCHES(LANG(?vl), ''))
