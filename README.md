@@ -2,7 +2,10 @@
 Repository for the internal grant project involving hybrid modeling of RDF knowledge bases
 
 ## Queries to find hybrid knowledge representations
-Run these queries at https://lov.linkeddata.es/dataset/lov/sparql
+Run these queries at 
+- https://lov.linkeddata.es/dataset/lov/sparql
+- https://fcp.vse.cz/blazegraph/#query
+- http://dbpedia.org/sparql
 
 ## Or use this web client that will do it for you
 - PROD: https://fcp.vse.cz/iga-hybrid
@@ -24,8 +27,8 @@ PREFIX dcmit:    <http://purl.org/dc/dcmitype/>
 
 # Enhancement queries
 ### Q0: Add rdfs:isDefinedBy to classes based on owl:Ontology (make data in consistent for SPARQL queries)
-This query is used to enhance your own data that is not annotated in a similar way as data in LOV.
-Run this query if your dataset doesn't have rdfs:isDefinedBy in classes or they are not the same as the owl:Ontology instance
+This query is used to enhance custom own data that is not annotated in a similar way as data in LOV.
+Run this query if custom dataset doesn't have `rdfs:isDefinedBy` in classes or they are not the same as the `owl:Ontology` instance
 ```sparql
 INSERT {
   GRAPH ?g {
