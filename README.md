@@ -11,11 +11,35 @@ Run these queries at https://lov.linkeddata.es/dataset/lov/sparql
 
 ### Prefixes
 ```sparql
-PREFIX vann: <http://purl.org/vocab/vann/>
-PREFIX voaf: <http://purl.org/vocommons/voaf#>
-PREFIX owl: <http://www.w3.org/2002/07/owl#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX vann:     <http://purl.org/vocab/vann/>
+PREFIX voaf:     <http://purl.org/vocommons/voaf#>
+PREFIX rdfs:     <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl:      <http://www.w3.org/2002/07/owl#>
+PREFIX skos:     <http://www.w3.org/2004/02/skos/core#>
+PREFIX rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX dct:      <http://purl.org/dc/terms/>
+PREFIX dc:       <http://purl.org/dc/elements/1.1/>
+PREFIX dcmit:    <http://purl.org/dc/dcmitype/>
+```
+
+# Enhancement queries
+### Q0: Add rdfs:isDefinedBy to classes based on owl:Ontology (make data in consistent for SPARQL queries)
+This query is used to enhance your own data that is not annotated in a similar way as data in LOV.
+Run this query if your dataset doesn't have rdfs:isDefinedBy in classes or they are not the same as the owl:Ontology instance
+```sparql
+INSERT {
+  GRAPH ?g {
+    ?c rdfs:isDefinedBy ?g .
+  } 
+}
+WHERE {
+  # specify the ontology IRI here
+  BIND(<http://purl.obolibrary.org/obo/go.owl> AS ?g)
+  GRAPH ?g {
+    VALUES ?t { owl:Class rdf:Class }
+    ?c a owl:Class .
+  }
+}
 ```
 
 # General queries
@@ -160,13 +184,14 @@ ORDER BY ?c
 
 ### QX: Get all class instances with their class in an ontology, optionally find out if the instance is a skos:Concept
 ```sparql
-SELECT DISTINCT ?c ?i
+SELECT DISTINCT ?c ?i ?skosConcept
 FROM <http://rdf.muninn-project.org/ontologies/military> 
 WHERE {
   ?c a owl:Class .
   ?i a ?c .
   OPTIONAL {
-    ?i a skos:Concept .
+    BIND(skos:Concept AS ?skosConcept) .
+    ?i a ?skosConcept .
   }
 }
 ```

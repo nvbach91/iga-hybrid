@@ -19,10 +19,14 @@ export const parseToVOWLSpec = (bindings) => {
   // case 'datatype':
   let linkedEntities = {};
   bindings.forEach((binding) => {
-    nodes[binding.c.value] = { type: 'class', name: shortenIri(binding.c.value), label: binding.cn ? binding.cn.value : shortenIri(binding.c.value) };
-    nodes[binding.i1.value] = { type: 'rdfsClass', name: shortenIri(binding.i1.value), label: binding.i1n ? binding.i1n.value : shortenIri(binding.i1.value) };
+    if (!nodes[binding.c.value] || binding.cn) {
+      nodes[binding.c.value] = { type: 'class', name: shortenIri(binding.c.value), label: binding.cn ? binding.cn.value : shortenIri(binding.c.value) };
+    }
+    if (!nodes[binding.i1.value] || binding.i1n) {
+      nodes[binding.i1.value] = { type: 'rdfsClass', name: shortenIri(binding.i1.value), label: binding.i1n ? binding.i1n.value : shortenIri(binding.i1.value) };
+    }
     if (!linkedEntities[`${binding.i1.value}|${binding.c.value}`]) {
-      links.push({ s: binding.i1.value, p: 'http://www.w3.org/1999/02/22-rdf-syntax-ns#type', o: binding.c.value, label: 'rdf:type' });
+      links.push({ s: binding.i1.value, p: binding.cp.values, o: binding.c.value, label: shortenIri(binding.cp.value) });
       linkedEntities[`${binding.i1.value}|${binding.c.value}`] = true;
     }
     if (binding.i2) {
@@ -86,7 +90,7 @@ export const drawGraph = (data) => {
   var THING_RADIUS = 30;
   var SPECIAL_OPERATIONS_RADIUS = 40;
   var LABEL_HEIGHT = 28;
-  var LABEL_WIDTH = 80;
+  var LABEL_WIDTH = 120;
   var ADDITIONAL_TEXT_SPACE = 4;
   var CARDINALITY_HDISTANCE = 20;
   var CARDINALITY_VDISTANCE = 10;

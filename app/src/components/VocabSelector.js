@@ -48,8 +48,9 @@ class VocabSelector extends React.Component {
     loading: true,
   }
   componentWillMount = () => {
-    fetchVocabs().then((resp) => {
-      const iris = []; resp.data.results.bindings.forEach((binding) => {
+    fetchVocabs().then((res) => {
+      const iris = []; 
+      res.results.bindings.forEach((binding) => {
         iris.push({
           iri: binding.vocabURI.value,
           label: binding.vocabLabel ? binding.vocabLabel.value : '',

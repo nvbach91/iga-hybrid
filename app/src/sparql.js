@@ -1,6 +1,24 @@
 import { shortenIri } from './utils';
 
 export const getEndpointUrl = (vocab) => {
+  const customDataGraphIris = [
+    'http://semanticchemistry.github.io/semanticchemistry/ontology/cheminf.owl',
+    'http://purl.obolibrary.org/obo/iao.owl',
+    'http://purl.obolibrary.org/obo/obi.owl',
+    'http://purl.obolibrary.org/obo/chebi.owl',
+    'http://purl.obolibrary.org/obo/clo.owl',
+    'http://purl.obolibrary.org/obo/go.owl',
+    'http://www.bioassayontology.org/bao/bao_complete.owl',
+    'http://semanticscience.org/ontology/sio.owl',
+    'http://purl.obolibrary.org/obo/pr.owl',
+    'http://purl.bioontology.org/ontology/RXNORM/',
+    'http://purl.obolibrary.org/obo/ncit.owl',
+    'http://purl.bioontology.org/ontology/NCBITAXON/',
+    'https://fcp.vse.cz/blazegraph/namespace/biomed',
+  ];
+  if (customDataGraphIris.includes(vocab)) {
+    return 'https://fcp.vse.cz/blazegraph/namespace/biomed/sparql';
+  }
   switch (vocab) {
     case 'http://dbpedia.org': return 'https://dbpedia.org/sparql';
     default: return 'https://lov.linkeddata.es/dataset/lov/sparql';
@@ -14,7 +32,8 @@ export const prefixes = {
   owl:      'http://www.w3.org/2002/07/owl#',
   skos:     'http://www.w3.org/2004/02/skos/core#',
   rdf:      'http://www.w3.org/1999/02/22-rdf-syntax-ns#',
-  dc:       'http://purl.org/dc/terms/',
+  dct:      'http://purl.org/dc/terms/',
+  dc:       'http://purl.org/dc/elements/1.1/',
   dcmit:    'http://purl.org/dc/dcmitype/',
 };
 
@@ -49,12 +68,13 @@ ORDER BY ?vocabPrefix
 `;
 
 export const getQueryVocabStats = () => `
-SELECT DISTINCT ?vocabURI ?vocabLabel (COUNT (?class) AS ?nClass) (COUNT (?ind) AS ?nInd) {
-  ?vocabURI a voaf:Vocabulary.
-  ?vocabURI vann:preferredNamespacePrefix ?vocabPrefix.
+SELECT DISTINCT ?vocabURI (STR(?vl) AS ?vocabLabel) (COUNT (?class) AS ?nClass) (COUNT (?ind) AS ?nInd) {
+  VALUES ?vt { voaf:Vocabulary owl:Ontology }
+  ?vocabURI a ?vt.
+  # ?vocabURI vann:preferredNamespacePrefix ?vocabPrefix.
   OPTIONAL { 
-    ?vocabURI rdfs:label ?vocabLabel .
-    FILTER(LANGMATCHES(LANG(?vocabLabel), 'en') || LANGMATCHES(LANG(?vocabLabel), ''))
+    ?vocabURI rdfs:label|dc:title|dct:title ?vl .
+    FILTER(LANGMATCHES(LANG(?vl), 'en') || LANGMATCHES(LANG(?vl), ''))
   }
   VALUES ?c { owl:Class rdf:Class } .
   ?class a ?c .
@@ -62,7 +82,8 @@ SELECT DISTINCT ?vocabURI ?vocabLabel (COUNT (?class) AS ?nClass) (COUNT (?ind) 
   OPTIONAL {
     ?ind a ?class .
   }
-} GROUP BY ?vocabURI ?vocabLabel ORDER BY DESC(?nInd)
+} 
+GROUP BY ?vocabURI ?vl ORDER BY DESC(?nInd)
 `;
 
 export const getQueryFragmentInstancesCount = (fragment) => `
@@ -126,8 +147,9 @@ export const getQueryClassInstanceCounts = (vocabIri) => `
 SELECT DISTINCT ?d ?p ?c (COUNT(DISTINCT ?i) AS ?n)
 FROM <${vocabIri}> 
 WHERE {
-  ?c a owl:Class .
-  ?i a ?c .
+  VALUES ?t { owl:Class rdf:Class }
+  ?c a ?t .
+  ?i a|rdfs:subClassOf ?c .
   OPTIONAL { 
     ?p rdfs:range ?c . 
     OPTIONAL {
@@ -143,7 +165,7 @@ export const getQueryCodeListInstances = (codeListIri, vocabIri) => `
 SELECT DISTINCT ?i ?skosConcept
 FROM <${vocabIri}> 
 WHERE {
-  ?i a <${codeListIri}> .
+  ?i a|rdfs:subClassOf <${codeListIri}> .
   OPTIONAL {
     BIND(skos:Concept AS ?skosConcept) .
     ?i a ?skosConcept .
@@ -153,17 +175,18 @@ ORDER BY ?i
 `;
 
 export const getQueryCodeListStructure = (codeListIri, vocabIri) => `
-SELECT DISTINCT ?c ?cn ?i1 ?i1n ?p ?i2 ?i2n
+SELECT DISTINCT ?cp ?c ?cn ?i1 ?i1n ?p ?i2 ?i2n
 ${vocabIri ? FROMS : ''}
 ${vocabIri ? `FROM <${vocabIri}>` : ''}
 WHERE {
-  VALUES ?lp { rdfs:label }
+  VALUES ?lp { rdfs:label skos:prefLabel }
+  VALUES ?cp { rdf:type rdfs:subClassOf }
   BIND(<${codeListIri}> AS ?c) .
-  ?i1 a ?c .
+  ?i1 ?cp ?c .
   OPTIONAL { ?c ?lp ?cn . FILTER(LANGMATCHES(LANG(?cn), 'en')) }
   OPTIONAL { ?i1 ?lp ?i1n . FILTER(LANGMATCHES(LANG(?i1n), 'en'))}
   OPTIONAL {
-    ?i2 a ?c .
+    ?i2 ?cp ?c .
     ?i1 ?p ?i2 .
     OPTIONAL { ?i2 ?lp ?i2n . FILTER(LANGMATCHES(LANG(?i2n), 'en')) }
   }
@@ -208,19 +231,20 @@ CONSTRUCT {
   ?cp rdfs:domain ?cd .
   ?cd a owl:Class .
   ?cd rdfs:label ?cdn .
-  ?i1 a ?c .
+  ?i1 ?icr ?c . # WARNING, this predicate is twofold
   ?i1 a ?skosConcept .
   ?i1 rdfs:label ?i1n .
-  ?i2 a ?c .
+  ?i2 ?icr ?c .
   ?i2 rdfs:label ?i2n .
   ?i1 ?p ?i2 .
 }
 ${vocabIri ? FROMS : ''}
 ${vocabIri ? `FROM <${vocabIri}>` : ''}
 WHERE {
-  VALUES ?lp { rdfs:label }
+  VALUES ?icr { rdf:type rdfs:subClassOf }
+  VALUES ?lp { rdfs:label skos:prefLabel }
   BIND(<${codeListIri}> AS ?c) .
-  ?i1 a ?c .
+  ?i1 ?irc ?c .
   OPTIONAL { 
     ?cp rdfs:range ?c . 
     OPTIONAL { 
@@ -233,7 +257,7 @@ WHERE {
   OPTIONAL { ?c ?lp ?cn . FILTER(LANGMATCHES(LANG(?cn), 'en')) }
   OPTIONAL { ?i1 ?lp ?i1n . FILTER(LANGMATCHES(LANG(?i1n), 'en'))}
   OPTIONAL {
-    ?i2 a ?c .
+    ?i2 ?icr ?c .
     ?i1 ?p ?i2 .
     OPTIONAL { ?i2 ?lp ?i2n . FILTER(LANGMATCHES(LANG(?i2n), 'en')) }
   }
