@@ -24,7 +24,7 @@ import Typography from '@material-ui/core/Typography';
 import VocabSelector from './VocabSelector';
 import { drawGraph, parseToVOWLSpec } from './VOWL';
 import { CircularProgress } from '@material-ui/core';
-import {UnControlled as CodeMirror} from 'react-codemirror2';
+import { UnControlled as CodeMirror } from 'react-codemirror2';
 
 const styles = theme => ({
   paper: {
@@ -81,6 +81,11 @@ class CodeListsPage extends React.Component {
     codeListInstanceGraphNodes: null,
     codeListInstancesGraphLoading: false,
   }
+  componentWillMount = () => {
+    if (!window.cached.vocabs) {
+      this.setState({ ontologyListLoading: true });
+    }
+  }
   onVocabSelected = (selectedVocabOption) => {
     this.setState({ selectedVocabOption }, () => {
       this.fetchCodeLists();
@@ -111,7 +116,7 @@ class CodeListsPage extends React.Component {
         if (uniqueCodeLists[codeLists[key].c.value] && codeLists[key].p) {
           uniqueCodeLists[codeLists[key].c.value].properties++;
         } else {
-          uniqueCodeLists[codeLists[key].c.value] = { instances: codeLists[key].n.value, properties: codeLists[key].p ? 1: 0 };
+          uniqueCodeLists[codeLists[key].c.value] = { instances: codeLists[key].n.value, properties: codeLists[key].p ? 1 : 0 };
         }
       });
       window.cached.records[selectedVocabOption.value] = uniqueCodeLists;
@@ -198,10 +203,10 @@ class CodeListsPage extends React.Component {
   showCodeListSparqlPreview = () => {
     const { selectedVocabOption } = this.state
     this.showSparqlPreview(
-      selectedVocabOption ? 
-        (selectedVocabOption.value === 'http://dbpedia.org' ? 
-          [{ name: 'Query for listing code lists', query: getDBpediaQueryBroadestConcepts().trim()}] :
-          [{ name: 'Query for listing code lists', query: getQueryClassInstanceCounts(selectedVocabOption.value || '__YOUR_SELECTED_VOCAB__').trim()}]) : ''
+      selectedVocabOption ?
+        (selectedVocabOption.value === 'http://dbpedia.org' ?
+          [{ name: 'Query for listing code lists', query: getDBpediaQueryBroadestConcepts().trim() }] :
+          [{ name: 'Query for listing code lists', query: getQueryClassInstanceCounts(selectedVocabOption.value || '__YOUR_SELECTED_VOCAB__').trim() }]) : ''
     )();
   };
   remountVocabSelector = () => {
@@ -226,7 +231,7 @@ class CodeListsPage extends React.Component {
             )}><Visibility />&nbsp;View SPARQL</Button>
             <Button color="primary" onClick={this.remountVocabSelector}>
               <div className={classes.submitButtonContentWide}>
-                {ontologyListLoading ? <CircularProgress size={20} /> : <Refresh style={{ fontSize: 20 }} />}&nbsp;{ontologyListLoading ? 'Loading...' : 'Reload ontology list'}
+                {ontologyListLoading ? <CircularProgress size={20} /> : <Refresh style={{ fontSize: 20 }} />}&nbsp;{ontologyListLoading ? 'Loading list...' : 'Reload ontology list'}
               </div>
             </Button>
           </div>
@@ -235,7 +240,13 @@ class CodeListsPage extends React.Component {
           This tool will help you identify code lists embedded in a knowledge graph or vocabulary. Please start by selecting an item below.
         </Typography>
         <Paper className={classes.paper}>
-          { vocabsReady && <VocabSelector onVocabSelected={this.onVocabSelected} onReloadClick={this.fetchCodeLists} loading={codeListsLoading} onShowSparql={this.showCodeListSparqlPreview} /> }
+          {vocabsReady && <VocabSelector
+            onVocabSelected={this.onVocabSelected}
+            onReloadClick={this.fetchCodeLists}
+            loading={codeListsLoading}
+            onShowSparql={this.showCodeListSparqlPreview}
+            onLoad={() => this.setState({ ontologyListLoading: false, vocabsReady: true })}
+          />}
           <Paper className={classes.root}>
             <CodeListsTable
               loading={codeListsLoading}
@@ -250,9 +261,9 @@ class CodeListsPage extends React.Component {
             <div className={classes.dialogTitle}>
               <span>Vocabulary: {selectedVocabOption && createIriLink(selectedVocabOption.value)}</span>
               {codeList && (
-                <span style={{minWidth: 412}}>
+                <span style={{ minWidth: 412 }}>
                   <Button color="primary" disabled={downloading} onClick={this.handleDownloadCodeList}>
-                    Download RDF&nbsp;{downloading ? <CircularProgress size={20}/> : <CloudDownload />}
+                    Download RDF&nbsp;{downloading ? <CircularProgress size={20} /> : <CloudDownload />}
                   </Button>
                   <Button color="primary" onClick={this.handleLoadGraph}>Visualize&nbsp;<Palette /></Button>
                   <Button color="primary" onClick={
@@ -275,7 +286,7 @@ class CodeListsPage extends React.Component {
         <Dialog onClose={this.closeGraphModal} open={codeListInstanceGraphNodes || codeListInstancesGraphLoading ? true : false} fullWidth={true} maxWidth="xl">
           <DialogTitle>
             <div className={classes.dialogTitle}>
-              <div>Code list view (showing max 100 nodes)</div> 
+              <div>Code list view (showing max 100 nodes)</div>
               {codeList && (
                 <div>
                   {createIriLink(codeList.value)}
@@ -306,8 +317,8 @@ class CodeListsPage extends React.Component {
             </div>
             <Typography variant="body2">See also {createLink('https://github.com/nvbach91/iga-hybrid')}</Typography>
             <Typography variant="body2">
-              Endpoints {selectedVocabOption ? 
-                createLink(getEndpointUrl(selectedVocabOption.value)) : 
+              Endpoints {selectedVocabOption ?
+                createLink(getEndpointUrl(selectedVocabOption.value)) :
                 <>{createLink(getEndpointUrl())}, {createLink(getEndpointUrl('https://fcp.vse.cz/blazegraph/namespace/biomed'))}</>
               }
             </Typography>
@@ -315,13 +326,13 @@ class CodeListsPage extends React.Component {
           {sparqlPreview ? sparqlPreview.map((preview, index) => {
             return (
               <div className="code-mirror-container" key={index}>
-                <Typography variant="subtitle2" style={{ textIndent: 34, marginTop: 20, backgroundColor: '#ccc'}}>{preview.name}</Typography>
+                <Typography variant="subtitle2" style={{ textIndent: 34, marginTop: 20, backgroundColor: '#ccc' }}>{preview.name}</Typography>
                 <CodeMirror value={preview.query} options={{
                   mode: 'sparql',
                   //theme: 'material',
                   lineNumbers: true,
                   readOnly: true,
-                }}/>
+                }} />
               </div>
             );
           }) : <div />}

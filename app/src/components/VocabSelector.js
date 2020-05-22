@@ -77,7 +77,7 @@ class VocabSelector extends React.Component {
         selectOptions: iris.map(({ iri, label, nClass, nInd }) => {
           return { value: iri, label: `${iri}${label ? ` - ${label}` : ''}, classes: ${nClass}, instances: ${nInd}` };
         })
-      });
+      }, this.props.onLoad);
     }).catch((err) => {
       this.handleNetworkError();
     });
