@@ -1,0 +1,32 @@
+<rdf:RDF
+    xmlns:dct="http://purl.org/dc/terms/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#activeVoice">
+    <rdfs:label xml:lang="ru">активный залог</rdfs:label>
+    <rdfs:label>active voice</rdfs:label>
+    <rdfs:comment>Value that expresses the situation where the grammatical subject is also the semantic actor of the verb.</rdfs:comment>
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#Voice"/>
+    </skos:inScheme>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#passiveVoice">
+    <rdfs:label xml:lang="ru">пассивный залог</rdfs:label>
+    <rdfs:label>passive voice</rdfs:label>
+    <rdfs:comment>Term referring to a situation where the grammatical subject is typically the recipient or goal of the action denoted by the verb.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#Voice"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#middleVoice">
+    <rdfs:label xml:lang="ru">средний залог</rdfs:label>
+    <rdfs:label xml:lang="ru">медиальный залог</rdfs:label>
+    <rdfs:label>middle voice</rdfs:label>
+    <rdfs:comment>Value for middle voice that expresses that the subject is both the agent and object, or that the subject is separate from the agent or that the receiver is the agent him/herself.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#Voice"/>
+  </skos:Concept>
+</rdf:RDF>

@@ -1,0 +1,23 @@
+<rdf:RDF
+    xmlns:dct="http://purl.org/dc/terms/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <skos:Concept rdf:about="http://www.bbc.co.uk/ontologies/bbc/Mobile">
+    <rdfs:label xml:lang="en-gb">Mobile</rdfs:label>
+    <rdfs:comment xml:lang="en-gb">Represents the web documents designed for a smaller, mobile screen.</rdfs:comment>
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="http://www.bbc.co.uk/ontologies/bbc/Platform"/>
+    </skos:inScheme>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.bbc.co.uk/ontologies/bbc/HighWeb">
+    <rdfs:label xml:lang="en-gb">HighWeb</rdfs:label>
+    <rdfs:comment xml:lang="en-gb">Represents the  web documents designed for a large screen.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.bbc.co.uk/ontologies/bbc/Platform"/>
+  </skos:Concept>
+</rdf:RDF>

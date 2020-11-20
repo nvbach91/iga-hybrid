@@ -1,0 +1,58 @@
+<rdf:RDF
+    xmlns:dct="http://purl.org/dc/terms/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <skos:Concept rdf:about="http://purl.org/goodrelations/v1#Buy">
+    <rdfs:label xml:lang="en">Buy (business function, DEPRECATED)</rdfs:label>
+    <rdfs:comment xml:lang="en">This gr:BusinessFunction indicates that the gr:BusinessEntity is in general interested in purchasing the specified gr:ProductOrService.
+DEPRECATED. Use gr:seeks instead.</rdfs:comment>
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="http://purl.org/goodrelations/v1#BusinessFunction"/>
+    </skos:inScheme>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/goodrelations/v1#Maintain">
+    <rdfs:label xml:lang="en">Maintain (business function)</rdfs:label>
+    <rdfs:comment xml:lang="en">This gr:BusinessFunction indicates that the gr:BusinessEntity offers (or seeks) typical maintenance tasks for the specified gr:ProductOrService. Maintenance tasks are actions that undo or compensate for wear or other deterioriation caused by regular usage, in order to restore the originally intended function of the product, or to prevent outage or malfunction.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/goodrelations/v1#BusinessFunction"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/goodrelations/v1#ProvideService">
+    <rdfs:label xml:lang="en">Provide service (business function)</rdfs:label>
+    <rdfs:comment xml:lang="en">This gr:BusinessFunction indicates that the gr:BusinessEntity offers (or seeks) the respective type of service.
+
+Note: Maintain and Repair are also types of Services. However, products and services ontologies often provide classes for tangible products as well as for types of services. The business function gr:ProvideService is to be used with such goods that are services, while gr:Maintain and gr:Repair can be used with goods for which only the class of product exists in the ontology, but not the respective type of service.
+
+Example: Car maintenance could be expressed both as "provide the service car maintenance" or "maintain cars".</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/goodrelations/v1#BusinessFunction"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/goodrelations/v1#Dispose">
+    <rdfs:label xml:lang="en">Dispose (business function)</rdfs:label>
+    <rdfs:comment xml:lang="en">This gr:BusinessFunction indicates that the gr:BusinessEntity offers (or seeks) the acceptance of the specified gr:ProductOrService for proper disposal, recycling, or any other kind of allowed usages, freeing the current owner from all rights and obligations of ownership.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/goodrelations/v1#BusinessFunction"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/goodrelations/v1#LeaseOut">
+    <rdfs:label xml:lang="en">Lease Out (business function)</rdfs:label>
+    <rdfs:comment xml:lang="en">This gr:BusinessFunction indicates that the gr:BusinessEntity offers (or seeks) the temporary right to use the specified gr:ProductOrService.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/goodrelations/v1#BusinessFunction"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/goodrelations/v1#ConstructionInstallation">
+    <rdfs:label xml:lang="en">Construction / installation (business function)</rdfs:label>
+    <rdfs:comment xml:lang="en">This gr:BusinessFunction indicates that the gr:BusinessEntity offers (or seeks) the construction and/or installation of the specified gr:ProductOrService at the customer's location.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/goodrelations/v1#BusinessFunction"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/goodrelations/v1#Repair">
+    <rdfs:label xml:lang="en">Repair (business function)</rdfs:label>
+    <rdfs:comment xml:lang="en">This gr:BusinessFunction indicates that the gr:BusinessEntity offers (or seeks) the evaluation of the chances for repairing, and, if positive, repair of the specified gr:ProductOrService. Repairing means actions that restore the originally intended function of a product that suffers from outage or malfunction.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/goodrelations/v1#BusinessFunction"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/goodrelations/v1#Sell">
+    <rdfs:label xml:lang="en">Sell (business function)</rdfs:label>
+    <rdfs:comment xml:lang="en">This gr:BusinessFunction indicates that the gr:BusinessEntity offers to permanently transfer all property rights on the specified gr:ProductOrService.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/goodrelations/v1#BusinessFunction"/>
+  </skos:Concept>
+</rdf:RDF>

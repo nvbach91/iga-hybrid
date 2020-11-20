@@ -1,0 +1,33 @@
+<rdf:RDF
+    xmlns:dct="http://purl.org/dc/terms/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#adverb">
+    <rdfs:label>adverb</rdfs:label>
+    <rdfs:comment>Part of speech to refer to an heterogeneous group of words whose most frequent function is to specify the mode of action of the verb.</rdfs:comment>
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#AdverbPOS"/>
+    </skos:inScheme>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#pronominalAdverb">
+    <rdfs:label>pronominal adverb</rdfs:label>
+    <rdfs:comment>adverb formed in replacement of a preposition and a pronoun</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#AdverbPOS"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#prepositionalAdverb">
+    <rdfs:label>prepositional adverb</rdfs:label>
+    <rdfs:comment>adverb which is very similar in its form to a preposition</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#AdverbPOS"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#generalAdverb">
+    <rdfs:label>general adverb</rdfs:label>
+    <rdfs:comment>Adverb belonging to the general class of adverbs</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#AdverbPOS"/>
+  </skos:Concept>
+</rdf:RDF>
