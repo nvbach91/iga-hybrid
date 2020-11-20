@@ -32,7 +32,7 @@ export const prefixes = {
   owl:      'http://www.w3.org/2002/07/owl#',
   skos:     'http://www.w3.org/2004/02/skos/core#',
   rdf:      'http://www.w3.org/1999/02/22-rdf-syntax-ns#',
-  dct:      'http://purl.org/dc/terms/',
+  dcterms:  'http://purl.org/dc/terms/',
   dc:       'http://purl.org/dc/elements/1.1/',
   dcmit:    'http://purl.org/dc/dcmitype/',
 };
@@ -72,7 +72,7 @@ SELECT DISTINCT ?vocabURI (STR(?vl) AS ?vocabLabel) (COUNT (?class) AS ?nClass) 
   VALUES ?vt { voaf:Vocabulary owl:Ontology }
   ?vocabURI a ?vt .
   OPTIONAL { 
-    ?vocabURI rdfs:label|dc:title|dct:title ?vl .
+    ?vocabURI rdfs:label|dc:title|dcterms:title ?vl .
     FILTER(LANGMATCHES(LANG(?vl), 'en') || LANGMATCHES(LANG(?vl), ''))
   }
   VALUES ?c { owl:Class rdf:Class } .
