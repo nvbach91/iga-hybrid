@@ -15,7 +15,7 @@ const categories = [
   {
     id: 'Develop',
     children: [
-      { id: 'LOV Analyzer', icon: <SettingsInputComponentIcon />, active: true },
+      { id: 'Code List Analyzer', icon: <SettingsInputComponentIcon />, active: true },
     ],
   }
 ];
