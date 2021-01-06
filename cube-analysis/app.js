@@ -28,11 +28,12 @@ const skosConceptIri = 'http://www.w3.org/2004/02/skos/core#Concept';
 */
 
 const start = async () => {
-  // const results = [];
+  const results = {};
   for (let i = 0; i < ontologies.length; i++) {
     const { o, ns } = ontologies[i];
     const resultsFilePath = `./results/${o.replace(/:/g, ';').replace(/\//g, '-').replace(/#/g, '_')}.csv`;
     fs.writeFileSync(resultsFilePath, ['instance', 'class', 'skos', 'ontology', 'ontology vann:namespace'].join('\t'));
+    results[o] = 0;
     try {
       console.log('querying instances in ontology', o);
       const resp1 = await axios.post(url, `query=${encodeURIComponent(PREFIXES)}${encodeURIComponent(QUERY_INSTANCES_IN_ONTOLOGY(o))}`, axiosConfig);
@@ -48,7 +49,7 @@ const start = async () => {
               isSkosConcept = true;
             } else {
               const result = [instance, c, isSkosConcept ? 1 : 0, o, ns];
-              // results.push(result);
+              results[o]++;
               fs.appendFileSync(resultsFilePath, `\n${result.join('\t')}`);
             }
           });
@@ -63,6 +64,7 @@ const start = async () => {
       i--;
     }
   }
+  fs.writeFileSync('./results/_results.json', JSON.stringify(results, null, 2));
 };
 
 start();
