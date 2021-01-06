@@ -46,16 +46,25 @@ const start = async () => {
           console.log('|   querying classes of instance', instance, o);
           const resp2 = await axios.post(url, `query=${encodeURIComponent(PREFIXES)}${encodeURIComponent(QUERY_CLASSES_OF_INSTANCE(o, instance))}`, axiosConfig);
           let isSkosConcept = false;
+          const classes = [];
           resp2.data.results.bindings.map((b) => b.c.value).forEach((c) => {
             if (c === skosConceptIri) {
               isSkosConcept = true;
             } else {
-              const instanceNamespace = instance.slice(0, (instance.includes('#') ? instance.lastIndexOf('#') : instance.lastIndexOf('/')) + 1);
-              const result = [instance, c, isSkosConcept ? 1 : 0, o, ns, instanceNamespace];
-              results[o]++;
-              fs.appendFileSync(resultsFilePath, `${result.join('\t')}\n`);
+              classes.push(c);
             }
           });
+          classes.forEach((c) => {
+            const instanceNamespace = instance.slice(0, (instance.includes('#') ? instance.lastIndexOf('#') : instance.lastIndexOf('/')) + 1);
+            const result = [instance, c, isSkosConcept, o, ns, instanceNamespace];
+            results[o]++;
+            fs.appendFileSync(resultsFilePath, `${result.join('\t')}\n`);
+          });
+          if (!classes.length) {
+            const result = [instance, '', isSkosConcept, o, ns, instanceNamespace];
+            results[o]++;
+            fs.appendFileSync(resultsFilePath, `${result.join('\t')}\n`);
+          }
         } catch (e) {
           console.error('|   error querying classes of instance', instance, o, '... retrying');
           j--;
