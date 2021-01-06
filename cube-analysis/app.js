@@ -54,8 +54,8 @@ const start = async () => {
               classes.push(c);
             }
           });
+          const instanceNamespace = instance.slice(0, (instance.includes('#') ? instance.lastIndexOf('#') : instance.lastIndexOf('/')) + 1);
           classes.forEach((c) => {
-            const instanceNamespace = instance.slice(0, (instance.includes('#') ? instance.lastIndexOf('#') : instance.lastIndexOf('/')) + 1);
             const result = [instance, c, isSkosConcept, o, ns, instanceNamespace];
             results[o]++;
             fs.appendFileSync(resultsFilePath, `${result.join('\t')}\n`);
