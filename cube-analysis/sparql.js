@@ -68,7 +68,7 @@ SELECT DISTINCT ?c
 FROM <${ontology}>
 WHERE {
   <${instance}> a ?c .
-  FILTER(?c NOT IN (owl:Class, rdfs:Class, owl:ObjectProperty))
+  FILTER(?c NOT IN (owl:Class, rdfs:Class, owl:ObjectProperty, owl:NamedIndividual, owl:Ontology, voaf:Vocabulary, owl:Thing))
 }
 `;
 
