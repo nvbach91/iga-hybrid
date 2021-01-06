@@ -26,13 +26,15 @@ const skosConceptIri = 'http://www.w3.org/2004/02/skos/core#Concept';
 {
 }
 */
+const resultsDirectory = './results';
+const headers = ['instance', 'class', 'skos', 'ontology', 'ontology vann:namespace', 'instance namespace'];
 
 const start = async () => {
   const results = {};
-  for (let i = 0; i < ontologies.length; i++) {
+  for (let i = 0; i < 5; i++) {
     const { o, ns } = ontologies[i];
-    const resultsFilePath = `./results/${o.replace(/:/g, ';').replace(/\//g, '-').replace(/#/g, '_')}.csv`;
-    fs.writeFileSync(resultsFilePath, ['instance', 'class', 'skos', 'ontology', 'ontology vann:namespace', 'instance namespace'].join('\t') + '\n');
+    const resultsFilePath = `${resultsDirectory}/${o.replace(/:/g, ';').replace(/\//g, '-').replace(/#/g, '_')}.csv`;
+    fs.writeFileSync(resultsFilePath, `${headers.join('\t')}\n`);
     results[o] = 0;
     try {
       console.log('querying instances in ontology', o);
@@ -65,7 +67,13 @@ const start = async () => {
       i--;
     }
   }
-  fs.writeFileSync('./results/_results.json', JSON.stringify(results, null, 2));
+  fs.writeFileSync(`${resultsDirectory}/_stats.json`, JSON.stringify(results, null, 2));
+
+  const allData = headers.join('\t') + '\n' + 
+    fs.readdirSync(`${resultsDirectory}`).filter((fileName) => fileName.endsWith('.csv')).map((fileName) => {
+      return fs.readFileSync(`${resultsDirectory}/${fileName}`, { encoding: 'utf8', flag: 'r' }).replace(`${headers.join('\t')}\n`, '').trim();
+    }).filter((content) => !!content).join('\n') + '\n';
+  fs.writeFileSync(`${resultsDirectory}/_all.csv`, allData);
 };
 
 start();
