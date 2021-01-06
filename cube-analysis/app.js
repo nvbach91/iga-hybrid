@@ -32,7 +32,7 @@ const start = async () => {
   for (let i = 0; i < ontologies.length; i++) {
     const { o, ns } = ontologies[i];
     const resultsFilePath = `./results/${o.replace(/:/g, ';').replace(/\//g, '-').replace(/#/g, '_')}.csv`;
-    fs.writeFileSync(resultsFilePath, ['instance', 'class', 'skos', 'ontology', 'ontology vann:namespace'].join('\t'));
+    fs.writeFileSync(resultsFilePath, ['instance', 'class', 'skos', 'ontology', 'ontology vann:namespace'].join('\t') + '\n');
     results[o] = 0;
     try {
       console.log('querying instances in ontology', o);
@@ -50,7 +50,7 @@ const start = async () => {
             } else {
               const result = [instance, c, isSkosConcept ? 1 : 0, o, ns];
               results[o]++;
-              fs.appendFileSync(resultsFilePath, `\n${result.join('\t')}`);
+              fs.appendFileSync(resultsFilePath, `${result.join('\t')}\n`);
             }
           });
         } catch (e) {
