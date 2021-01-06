@@ -48,7 +48,7 @@ WHERE {
 # General queries
 ### Q1: Get a list of ontologies with number of classes and number of class instances
 ```sparql
-SELECT DISTINCT ?vocabURI ?vocabLabel (COUNT (?class) AS ?nClass) (COUNT (?ind) AS ?nInd) {
+SELECT DISTINCT ?vocabURI ?vocabPrefix ?vocabLabel (COUNT (?class) AS ?nClass) (COUNT (?ind) AS ?nInd) {
     ?vocabURI a voaf:Vocabulary.
     ?vocabURI vann:preferredNamespacePrefix ?vocabPrefix.
     OPTIONAL { 
@@ -60,7 +60,7 @@ SELECT DISTINCT ?vocabURI ?vocabLabel (COUNT (?class) AS ?nClass) (COUNT (?ind) 
     OPTIONAL {
         ?ind a ?class .
     }
-} GROUP BY ?vocabURI ?vocabLabel ORDER BY ?vocabURI
+} GROUP BY ?vocabURI ?vocabPrefix ?vocabLabel ORDER BY ?vocabURI
 ```
 
 
