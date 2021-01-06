@@ -31,7 +31,7 @@ const headers = ['instance', 'class', 'skos', 'ontology', 'ontology vann:namespa
 
 const start = async () => {
   const results = {};
-  for (let i = 0; i < 5; i++) {
+  for (let i = 0; i < ontologies.length; i++) {
     const { o, ns } = ontologies[i];
     const resultsFilePath = `${resultsDirectory}/${o.replace(/:/g, ';').replace(/\//g, '-').replace(/#/g, '_')}.csv`;
     fs.writeFileSync(resultsFilePath, `${headers.join('\t')}\n`);
