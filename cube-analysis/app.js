@@ -11,7 +11,8 @@ const axiosConfig = {
     'accept-language': 'en-US,en;q=0.9',
     'content-type': 'application/x-www-form-urlencoded; charset=UTF-8',
     'Authorization': `Basic ${Buffer.from(`${username}:${password}`).toString('base64')}`,
-  }
+  },
+  timeout: 2000,
 };
 const url = `${host}${path}/namespace/${namespace}/sparql`;
 
@@ -25,13 +26,13 @@ const skosConceptIri = 'http://www.w3.org/2004/02/skos/core#Concept';
 {
 }
 */
-const resultsFilePath = './results.csv';
 
 const start = async () => {
-  fs.writeFileSync(resultsFilePath, ['instance', 'class', 'skos', 'ontology', 'ontology vann:namespace'].join('\t'));
   // const results = [];
   for (let i = 0; i < ontologies.length; i++) {
     const { o, ns } = ontologies[i];
+    const resultsFilePath = `./results/${o.replace(/:/g, ';').replace(/\//g, '-').replace(/#/g, '_')}.csv`;
+    fs.writeFileSync(resultsFilePath, ['instance', 'class', 'skos', 'ontology', 'ontology vann:namespace'].join('\t'));
     try {
       console.log('querying instances in ontology', o);
       const resp1 = await axios.post(url, `query=${PREFIXES}${QUERY_INSTANCES_IN_ONTOLOGY(o)}`, axiosConfig);
