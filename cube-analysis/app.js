@@ -35,13 +35,13 @@ const start = async () => {
     fs.writeFileSync(resultsFilePath, ['instance', 'class', 'skos', 'ontology', 'ontology vann:namespace'].join('\t'));
     try {
       console.log('querying instances in ontology', o);
-      const resp1 = await axios.post(url, `query=${PREFIXES}${QUERY_INSTANCES_IN_ONTOLOGY(o)}`, axiosConfig);
+      const resp1 = await axios.post(url, `query=${encodeURIComponent(PREFIXES)}${encodeURIComponent(QUERY_INSTANCES_IN_ONTOLOGY(o))}`, axiosConfig);
       const instances = resp1.data.results.bindings.map((b) => b.i.value);
       for (let j = 0; j < instances.length; j++) {
         const instance = instances[j];
         try {
           console.log('|   querying classes of instance', instance, o);
-          const resp2 = await axios.post(url, `query=${PREFIXES}${QUERY_CLASSES_OF_INSTANCE(o, instance)}`, axiosConfig);
+          const resp2 = await axios.post(url, `query=${encodeURIComponent(PREFIXES)}${encodeURIComponent(QUERY_CLASSES_OF_INSTANCE(o, instance))}`, axiosConfig);
           let isSkosConcept = false;
           resp2.data.results.bindings.map((b) => b.c.value).forEach((c) => {
             if (c === skosConceptIri) {
