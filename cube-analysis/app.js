@@ -44,8 +44,8 @@ const start = async () => {
         try {
           console.log('|   querying classes of instance', instance, o);
           const resp2 = await axios.post(url, `query=${encodeURIComponent(QUERY_CLASSES_OF_INSTANCE(o, instance))}`, axiosConfig);
-          let skosConcept = '';
-          let skosScheme = '';
+          let skosConcept = '-';
+          let skosScheme = '-';
           const classes = [];
           resp2.data.results.bindings.forEach((b) => {
             if (b.c) {
@@ -66,7 +66,7 @@ const start = async () => {
             fs.appendFileSync(resultsFilePath, `${result.join('\t')}\n`);
           });
           if (!classes.length) {
-            const result = [instance, '', skosConcept, skosScheme, o, ns, instanceNamespace];
+            const result = [instance, '-', skosConcept, skosScheme, o, ns, instanceNamespace];
             results[o]++;
             fs.appendFileSync(resultsFilePath, `${result.join('\t')}\n`);
           }
