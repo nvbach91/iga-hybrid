@@ -1,8 +1,7 @@
 const fs = require('fs');
 const axios = require('axios');
 const { username, password, host, path, namespace } = require('./config.json');
-const { PREFIXES, QUERY_INSTANCES_IN_ONTOLOGY, QUERY_CLASSES_OF_INSTANCE } = require('./sparql');
-const Bluebird = require('bluebird');
+const { QUERY_INSTANCES_IN_ONTOLOGY, QUERY_CLASSES_OF_INSTANCE } = require('./sparql');
 
 const axiosConfig = {
   headers: {
@@ -27,7 +26,7 @@ const skosConceptIri = 'http://www.w3.org/2004/02/skos/core#Concept';
 }
 */
 const resultsDirectory = './results';
-const headers = ['instance', 'class', 'skos', 'ontology', 'ontology vann:namespace', 'instance namespace'];
+const headers = ['instance', 'class', 'skosConcept', 'skosConceptScheme', 'ontology', 'ontology vann:namespace', 'instance namespace'];
 
 const start = async () => {
   const results = {};
@@ -38,30 +37,36 @@ const start = async () => {
     results[o] = 0;
     try {
       console.log('querying instances in ontology', o);
-      const resp1 = await axios.post(url, `query=${encodeURIComponent(PREFIXES)}${encodeURIComponent(QUERY_INSTANCES_IN_ONTOLOGY(o))}`, axiosConfig);
+      const resp1 = await axios.post(url, `query=${encodeURIComponent(QUERY_INSTANCES_IN_ONTOLOGY(o))}`, axiosConfig);
       const instances = resp1.data.results.bindings.map((b) => b.i.value);
       for (let j = 0; j < instances.length; j++) {
         const instance = instances[j];
         try {
           console.log('|   querying classes of instance', instance, o);
-          const resp2 = await axios.post(url, `query=${encodeURIComponent(PREFIXES)}${encodeURIComponent(QUERY_CLASSES_OF_INSTANCE(o, instance))}`, axiosConfig);
-          let isSkosConcept = false;
+          const resp2 = await axios.post(url, `query=${encodeURIComponent(QUERY_CLASSES_OF_INSTANCE(o, instance))}`, axiosConfig);
+          let skosConcept = '';
+          let skosScheme = '';
           const classes = [];
-          resp2.data.results.bindings.map((b) => b.c.value).forEach((c) => {
-            if (c === skosConceptIri) {
-              isSkosConcept = true;
-            } else {
-              classes.push(c);
+          resp2.data.results.bindings.forEach((b) => {
+            if (b.c) {
+              if (b.c.value === skosConceptIri) {
+                skosConcept = b.c.value;
+              } else {
+                classes.push(b.c.value);
+              }
+            }
+            if (b.s && b.s.value) {
+              skosScheme = b.s.value;
             }
           });
           const instanceNamespace = instance.slice(0, (instance.includes('#') ? instance.lastIndexOf('#') : instance.lastIndexOf('/')) + 1);
           classes.forEach((c) => {
-            const result = [instance, c, isSkosConcept, o, ns, instanceNamespace];
+            const result = [instance, c, skosConcept, skosScheme, o, ns, instanceNamespace];
             results[o]++;
             fs.appendFileSync(resultsFilePath, `${result.join('\t')}\n`);
           });
           if (!classes.length) {
-            const result = [instance, '', isSkosConcept, o, ns, instanceNamespace];
+            const result = [instance, '', skosConcept, skosScheme, o, ns, instanceNamespace];
             results[o]++;
             fs.appendFileSync(resultsFilePath, `${result.join('\t')}\n`);
           }

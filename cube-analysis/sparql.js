@@ -12,7 +12,7 @@ const prefixes = {
 
 const PREFIXES = `${Object.keys(prefixes).map((prefix) => `PREFIX ${prefix}: <${prefixes[prefix]}>`).join('\n')}\n`;
 
-const QUERY_CODELISTS_IN_ONTOLOGY = (ontology) => `
+const QUERY_CODELISTS_IN_ONTOLOGY = (ontology) => `${PREFIXES}
 SELECT ?d ?p ?c (COUNT(DISTINCT ?i) AS ?n)
 FROM <${ontology}>
 WHERE {
@@ -29,7 +29,7 @@ GROUP BY ?d ?p ?c
 ORDER BY ?c
 `;
 
-const QUERY_INSTANCES_IN_ONTOLOGY_WITH_CLASS = (ontology) => `
+const QUERY_INSTANCES_IN_ONTOLOGY_WITH_CLASS = (ontology) => `${PREFIXES}
 SELECT DISTINCT ?i ?c ?skosConcept
 FROM <${ontology}>
 WHERE {
@@ -45,7 +45,7 @@ ORDER BY ?c
 `;
 
 
-const QUERY_INSTANCES_IN_CODELIST_OF_ONTOLOGY = (ontology, codeList) => `
+const QUERY_INSTANCES_IN_CODELIST_OF_ONTOLOGY = (ontology, codeList) => `${PREFIXES}
 SELECT DISTINCT ?i
 FROM <${ontology}>
 WHERE {
@@ -53,27 +53,45 @@ WHERE {
 }
 `;
 
-const QUERY_INSTANCES_IN_ONTOLOGY = (ontology) => `
+const QUERY_INSTANCES_IN_ONTOLOGY = (ontology) => `${PREFIXES}
 SELECT DISTINCT ?i
 FROM <${ontology}>
 WHERE {
-  VALUES ?class { owl:Class rdfs:Class }
-  ?c a ?class .
-  ?i a ?c .
+  {
+    VALUES ?class { owl:Class rdfs:Class }
+    ?c a ?class .
+    ?i a ?c .
+  }
+  UNION
+  {
+    ?i skos:inScheme ?s .
+  }
 }
 `;
 
-const QUERY_CLASSES_OF_INSTANCE = (ontology, instance) => `
+const ignoredRdfClasses = [
+  'owl:Class', 'rdfs:Class', 'owl:ObjectProperty', 'owl:NamedIndividual', 
+  'owl:Ontology', 'voaf:Vocabulary', 'owl:Thing', 'owl:DatatypeProperty', 
+  'rdf:Property', 'skos:ConceptScheme', 'owl:DeprecatedClass', 'rdfs:Resource',
+  'owl:AnnotationProperty', 'owl:OntologyProperty',
+];
+
+const QUERY_CLASSES_OF_INSTANCE = (ontology, instance) => `${PREFIXES}
 SELECT DISTINCT ?c
 FROM <${ontology}>
 WHERE {
-  <${instance}> a ?c .
-  FILTER(?c NOT IN (owl:Class, rdfs:Class, owl:ObjectProperty, owl:NamedIndividual, owl:Ontology, voaf:Vocabulary, owl:Thing))
+  {
+    <${instance}> a ?c .
+    FILTER(?c NOT IN (${ignoredRdfClasses.join(', ')}))
+  }
+  UNION
+  {
+    <${instance}> skos:inScheme ?c .
+  }
 }
 `;
 
 module.exports = {
-  PREFIXES,
   QUERY_CODELISTS_IN_ONTOLOGY,
   QUERY_INSTANCES_IN_ONTOLOGY_WITH_CLASS,
   QUERY_INSTANCES_IN_CODELIST_OF_ONTOLOGY,
