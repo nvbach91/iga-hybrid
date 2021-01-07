@@ -77,7 +77,7 @@ const ignoredRdfClasses = [
 ];
 
 const QUERY_CLASSES_OF_INSTANCE = (ontology, instance) => `${PREFIXES}
-SELECT DISTINCT ?c
+SELECT DISTINCT ?c ?s
 FROM <${ontology}>
 WHERE {
   {
@@ -86,7 +86,7 @@ WHERE {
   }
   UNION
   {
-    <${instance}> skos:inScheme ?c .
+    <${instance}> skos:inScheme ?s .
   }
 }
 `;
