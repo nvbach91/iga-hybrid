@@ -12,6 +12,15 @@ const prefixes = {
 
 const PREFIXES = `${Object.keys(prefixes).map((prefix) => `PREFIX ${prefix}: <${prefixes[prefix]}>`).join('\n')}\n`;
 
+const QUERY_ONTOLOGIES_AND_NAMESPACES = () => `${PREFIXES}
+SELECT * WHERE {
+  ?o a owl:Ontology .
+  OPTIONAL {
+    ?o vann:preferredNamespaceUri ?ns .
+  }
+}
+`;
+
 const QUERY_CODELISTS_IN_ONTOLOGY = (ontology) => `${PREFIXES}
 SELECT ?d ?p ?c (COUNT(DISTINCT ?i) AS ?n)
 FROM <${ontology}>
@@ -92,6 +101,7 @@ WHERE {
 `;
 
 module.exports = {
+  QUERY_ONTOLOGIES_AND_NAMESPACES,
   QUERY_CODELISTS_IN_ONTOLOGY,
   QUERY_INSTANCES_IN_ONTOLOGY_WITH_CLASS,
   QUERY_INSTANCES_IN_CODELIST_OF_ONTOLOGY,
