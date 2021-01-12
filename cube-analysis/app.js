@@ -22,10 +22,16 @@ const axiosConfig = {
 
 const skosConceptIri = 'http://www.w3.org/2004/02/skos/core#Concept';
 
-const resultsDirectory = './results';
-if (!fs.existsSync(resultsDirectory)) {
-  fs.mkdirSync(resultsDirectory);
-}
+const resultsDirectory = './results/data';
+
+let dir = '.';
+resultsDirectory.split('/').slice(1).forEach((step) => {
+  dir = `${dir}/${step}`;
+  if (!fs.existsSync(dir)) {
+    fs.mkdirSync(dir);
+  }
+});
+
 const headers = [
   'instance', 'class', 'skosConcept', 'skosConceptScheme', 
   'ontology', 'ontology vann:namespace', 'instance namespace',
