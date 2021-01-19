@@ -69,13 +69,13 @@ ORDER BY ?vocabPrefix
 
 export const getQueryVocabStats = () => `
 SELECT DISTINCT ?vocabURI (STR(?vl) AS ?vocabLabel) (COUNT (DISTINCT ?class) AS ?nClass) (COUNT (DISTINCT ?ind) AS ?nInd) {
-  VALUES ?vt { voaf:Vocabulary owl:Ontology }
+  VALUES ?vt { voaf:Vocabulary } #owl:Ontology
   ?vocabURI a ?vt .
   OPTIONAL { 
     ?vocabURI rdfs:label|dc:title|dcterms:title ?vl .
     FILTER(LANGMATCHES(LANG(?vl), 'en') || LANGMATCHES(LANG(?vl), ''))
   }
-  VALUES ?c { owl:Class rdf:Class } .
+  VALUES ?c { owl:Class rdfs:Class } .
   ?class a ?c .
   ?class rdfs:isDefinedBy ?vocabURI .
   OPTIONAL {
