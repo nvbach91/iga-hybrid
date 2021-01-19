@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0e0da59d468a290f09526552ab6d61d2",
+    "revision": "f37120a01b3e1e96cc71b8a75124852e",
     "url": "/iga-hybrid/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/iga-hybrid/static/css/2.0ede6d05.chunk.css"
   },
   {
-    "revision": "89a5ca57a0aa00250822",
+    "revision": "7f1be3843402998c3eff",
     "url": "/iga-hybrid/static/css/main.fc9caab5.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/iga-hybrid/static/js/2.bbd5d428.chunk.js"
   },
   {
-    "revision": "89a5ca57a0aa00250822",
-    "url": "/iga-hybrid/static/js/main.2ab169ee.chunk.js"
+    "revision": "7f1be3843402998c3eff",
+    "url": "/iga-hybrid/static/js/main.79c73ff8.chunk.js"
   },
   {
     "revision": "017c84058a9be0d0ac36",
