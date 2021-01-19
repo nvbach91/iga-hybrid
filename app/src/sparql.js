@@ -68,7 +68,7 @@ ORDER BY ?vocabPrefix
 `;
 
 export const getQueryVocabStats = () => `
-SELECT DISTINCT ?vocabURI (STR(?vl) AS ?vocabLabel) (COUNT (?class) AS ?nClass) (COUNT (?ind) AS ?nInd) {
+SELECT DISTINCT ?vocabURI (STR(?vl) AS ?vocabLabel) (COUNT (DISTINCT ?class) AS ?nClass) (COUNT (DISTINCT ?ind) AS ?nInd) {
   VALUES ?vt { voaf:Vocabulary owl:Ontology }
   ?vocabURI a ?vt .
   OPTIONAL { 
@@ -80,6 +80,7 @@ SELECT DISTINCT ?vocabURI (STR(?vl) AS ?vocabLabel) (COUNT (?class) AS ?nClass) 
   ?class rdfs:isDefinedBy ?vocabURI .
   OPTIONAL {
     ?ind a ?class .
+    ?ind rdfs:isDefinedBy ?vocabURI .
   }
 } 
 GROUP BY ?vocabURI ?vl ORDER BY DESC(?nInd)
