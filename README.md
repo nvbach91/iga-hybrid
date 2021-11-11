@@ -7,7 +7,7 @@ Run these queries at
 - https://fcp.vse.cz/blazegraph/#query
 - http://dbpedia.org/sparql
 
-## Or use this web client that will do it for you
+Or use this web client that will do it for you
 - PROD: https://fcp.vse.cz/iga-hybrid
 - DEV: https://nvbach91.github.io/iga-hybrid
 
