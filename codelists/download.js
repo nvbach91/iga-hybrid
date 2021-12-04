@@ -4,7 +4,8 @@ const fs = require('fs');
 
 const codeLists = require('../results/2019-07-20_lov-analyzer-results-flat.json');
 const codeListIris = Object.keys(codeLists);
-const sparqlEndpoint = 'https://lov.linkeddata.es/dataset/lov/sparql';
+const { username, password, endpoint } = require('../config.json');
+const downloadFolder = './results';
 
 const prefixes = {
     'vann': 'http://purl.org/vocab/vann/',
@@ -24,6 +25,7 @@ const axiosConfig = {
         "accept": "application/rdf+xml,*/*;q=0.9",
         "accept-language": "en-US,en;q=0.9",
         "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
+        'Authorization': `Basic ${Buffer.from(`${username}:${password}`).toString('base64')}`,
     }
 };
 const createCodeListQuery = (codeListIri, vocabIri) => `
@@ -57,9 +59,9 @@ const download = async (iris) => {
         const query = createCodeListQuery(codeListIri, codeLists[codeListIri].vocab);
         // console.log(query);
         try {
-            const resp = await axios.post(sparqlEndpoint, `query=${query}`, axiosConfig);
+            const resp = await axios.post(endpoint, `query=${query}`, axiosConfig);
             console.log(`DONE: ${codeListIri}`);
-            const fileName = `${codeListIri.replace(/\//g, '-').replace(/#/g, '_').replace(/:/g, ';')}.rdf`;
+            const fileName = `${downloadFolder}/${codeListIri.replace(/\//g, '-').replace(/#/g, '_').replace(/:/g, ';')}.rdf`;
             // console.log(fileName);
             fs.writeFileSync(fileName, resp.data);
         } catch (e) {

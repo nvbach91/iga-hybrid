@@ -7,7 +7,7 @@ Run these queries at
 - https://fcp.vse.cz/blazegraph/#query
 - http://dbpedia.org/sparql
 
-Or use this web client that will do it for you
+## Or use this web client that will do it for you
 - PROD: https://fcp.vse.cz/iga-hybrid
 - DEV: https://nvbach91.github.io/iga-hybrid
 
@@ -39,8 +39,8 @@ WHERE {
   # specify the ontology IRI here
   BIND(<http://purl.obolibrary.org/obo/go.owl> AS ?g)
   GRAPH ?g {
-    VALUES ?t { owl:Class rdf:Class }
-    ?c a owl:Class .
+    VALUES ?t { owl:Class rdfs:Class }
+    ?c a ?t .
   }
 }
 ```
@@ -289,3 +289,11 @@ WHERE {
 }
 ORDER BY ?i1
 ```
+
+
+## Steps to reproduce
+- Download LOV data + vocabs https://lov.linkeddata.es/lov.nq.gz
+- Upload to blazegraph (or other triple stores)
+- Run query 
+- Run enhancement query Q0 using results from `SELECT DISTINCT { ?u a voaf:Vocabulary. }` as input
+- Run query Q1
