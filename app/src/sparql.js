@@ -21,7 +21,8 @@ export const getEndpointUrl = (vocab) => {
   }
   switch (vocab) {
     case 'http://dbpedia.org': return 'https://dbpedia.org/sparql';
-    default: return 'https://lov.linkeddata.es/dataset/lov/sparql';
+    // default: return 'https://lov.linkeddata.es/dataset/lov/sparql';
+    default: return ' https://fcp.vse.cz/blazegraph/namespace/lov20221023/sparql';
   }
 };
 
