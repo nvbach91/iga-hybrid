@@ -1,0 +1,123 @@
+<rdf:RDF
+    xmlns:dct="http://purl.org/dc/terms/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:ObjectProperty rdf:about="http://lod.nl.go.kr/ontology/typeOfResource">
+    <rdfs:label xml:lang="en">type of resource</rdfs:label>
+    <rdfs:domain rdf:resource="http://lod.nl.go.kr/ontology/OnlineMaterial"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://lod.nl.go.kr/ontology/OnlineMaterialType"/>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://lod.nl.go.kr/resource/electronicJournal">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >electronic journal</rdfs:label>
+    <skos:inScheme rdf:resource="http://lod.nl.go.kr/ontology/OnlineMaterialType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://lod.nl.go.kr/resource/workingPaper">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >working paper</rdfs:label>
+    <skos:inScheme rdf:resource="http://lod.nl.go.kr/ontology/OnlineMaterialType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://lod.nl.go.kr/resource/newspaper">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >newspaper</rdfs:label>
+    <skos:inScheme rdf:resource="http://lod.nl.go.kr/ontology/OnlineMaterialType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://lod.nl.go.kr/resource/disabledAlternativeMaterial">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >disabled alternative material</rdfs:label>
+    <skos:inScheme rdf:resource="http://lod.nl.go.kr/ontology/OnlineMaterialType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://lod.nl.go.kr/resource/tradeJournal">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >trade journal</rdfs:label>
+    <skos:inScheme rdf:resource="http://lod.nl.go.kr/ontology/OnlineMaterialType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://lod.nl.go.kr/resource/standards">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >standards</rdfs:label>
+    <skos:inScheme rdf:resource="http://lod.nl.go.kr/ontology/OnlineMaterialType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://lod.nl.go.kr/resource/companyReport">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >company report</rdfs:label>
+    <skos:inScheme rdf:resource="http://lod.nl.go.kr/ontology/OnlineMaterialType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://lod.nl.go.kr/resource/text">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >text</rdfs:label>
+    <skos:inScheme rdf:resource="http://lod.nl.go.kr/ontology/OnlineMaterialType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://lod.nl.go.kr/resource/software">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >software</rdfs:label>
+    <skos:inScheme rdf:resource="http://lod.nl.go.kr/ontology/OnlineMaterialType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://lod.nl.go.kr/resource/transcript">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >transcript</rdfs:label>
+    <skos:inScheme rdf:resource="http://lod.nl.go.kr/ontology/OnlineMaterialType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://lod.nl.go.kr/resource/marketResearchReport">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >market research report</rdfs:label>
+    <skos:inScheme rdf:resource="http://lod.nl.go.kr/ontology/OnlineMaterialType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://lod.nl.go.kr/resource/scholarlyJournal">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >scholarly journal</rdfs:label>
+    <skos:inScheme rdf:resource="http://lod.nl.go.kr/ontology/OnlineMaterialType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://lod.nl.go.kr/resource/webSite">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >web site</rdfs:label>
+    <skos:inScheme rdf:resource="http://lod.nl.go.kr/ontology/OnlineMaterialType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://lod.nl.go.kr/resource/video">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >video</rdfs:label>
+    <skos:inScheme rdf:resource="http://lod.nl.go.kr/ontology/OnlineMaterialType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://lod.nl.go.kr/resource/book">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >book</rdfs:label>
+    <skos:inScheme rdf:resource="http://lod.nl.go.kr/ontology/OnlineMaterialType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://lod.nl.go.kr/resource/otherResource">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >other resource</rdfs:label>
+    <skos:inScheme rdf:resource="http://lod.nl.go.kr/ontology/OnlineMaterialType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://lod.nl.go.kr/resource/sound">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >sound</rdfs:label>
+    <skos:inScheme rdf:resource="http://lod.nl.go.kr/ontology/OnlineMaterialType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://lod.nl.go.kr/resource/magazine">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >magazine</rdfs:label>
+    <skos:inScheme rdf:resource="http://lod.nl.go.kr/ontology/OnlineMaterialType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://lod.nl.go.kr/resource/reports">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >reports</rdfs:label>
+    <skos:inScheme rdf:resource="http://lod.nl.go.kr/ontology/OnlineMaterialType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://lod.nl.go.kr/resource/conferenceProceeding">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >conference proceeding</rdfs:label>
+    <skos:inScheme rdf:resource="http://lod.nl.go.kr/ontology/OnlineMaterialType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://lod.nl.go.kr/resource/image">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >image</rdfs:label>
+    <skos:inScheme rdf:resource="http://lod.nl.go.kr/ontology/OnlineMaterialType"/>
+  </skos:Concept>
+</rdf:RDF>

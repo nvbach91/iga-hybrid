@@ -1,0 +1,50 @@
+<rdf:RDF
+    xmlns:dct="http://purl.org/dc/terms/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:ObjectProperty rdf:about="http://purl.org/uco/ns#usage">
+    <rdfs:domain rdf:resource="http://purl.org/uco/ns#OwnershipInfo"/>
+    <rdfs:comment xml:lang="en">The type(s) of usage during the period of ownership (if attached to uco:OwnershipInfo) or in general (if attached to the vso:Vehicle directly)</rdfs:comment>
+    <rdfs:label xml:lang="en">usage (0..*)</rdfs:label>
+    <rdfs:domain rdf:resource="http://purl.org/vso/ns#Vehicle"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://purl.org/uco/ns#UsageType"/>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://purl.org/uco/ns#Private">
+    <rdfs:label xml:lang="en">Private (uco:UsageType)</rdfs:label>
+    <rdfs:comment xml:lang="en">The usage of a vehicle soleley for private purposes</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/uco/ns#UsageType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/uco/ns#Business">
+    <rdfs:label xml:lang="en">Business (uco:UsageType)</rdfs:label>
+    <rdfs:comment xml:lang="en">The usage of a vehicle for general business purposes, i.e. excluding usages like as a taxi, rental car, or driving instructions.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/uco/ns#UsageType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/uco/ns#DrivingSchool">
+    <rdfs:label xml:lang="en">Driving School (uco:UsageType)</rdfs:label>
+    <rdfs:comment xml:lang="en">The usage of a vehicle for commercial driver's education</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/uco/ns#UsageType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/uco/ns#Rental">
+    <rdfs:label xml:lang="en">Rental (uco:UsageType)</rdfs:label>
+    <rdfs:comment xml:lang="en">The usage of a vehicle as a rental car</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/uco/ns#UsageType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/uco/ns#CarSharing">
+    <rdfs:label xml:lang="en">Car Sharing (uco:UsageType)</rdfs:label>
+    <rdfs:comment xml:lang="en">The usage of a vehicle for car sharing networks</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/uco/ns#UsageType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/uco/ns#Taxi">
+    <rdfs:label xml:lang="en">Taxi (uco:UsageType)</rdfs:label>
+    <rdfs:comment xml:lang="en">The usage of a vehicle as a taxi</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/uco/ns#UsageType"/>
+  </skos:Concept>
+</rdf:RDF>

@@ -1,0 +1,45 @@
+<rdf:RDF
+    xmlns:dct="http://purl.org/dc/terms/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:ObjectProperty rdf:about="http://qudt.org/schema/qudt/isUnitOfSystem">
+    <rdfs:comment rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML"
+    >This property relates a unit of measure with a system of units that either a) defines the unit or b) allows the unit to be used within the system.</rdfs:comment>
+    <rdfs:label>is unit of system</rdfs:label>
+    <rdfs:domain rdf:resource="http://qudt.org/schema/qudt/Unit"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://qudt.org/schema/qudt/SystemOfUnits"/>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://qudt.org/schema/qudt/SOU_NATURAL_UNITS">
+    <rdfs:label>System of Natural Units</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML"
+    >&lt;p&gt;In physics, natural units are physical units of measurement based only on universal physical constants. For example the elementary charge e is a natural unit of electric charge, or the speed of light c is a natural unit of speed.&lt;/p&gt;&#xD;
+&lt;p&gt;A purely natural system of units is defined in such a way that some set of selected universal physical constants are normalized to unity; that is, their numerical values in terms of these units become exactly 1.&lt;/p&gt;&#xD;
+&lt;p&gt;Examples are Planck Units and Atomic Units. Atomic units (au or a.u.) form a system of natural units which is especially convenient for atomic physics calculations. There are two different kinds of atomic units, which one might name Hartree atomic units and Rydberg atomic units, which differ in the choice of the unit of mass and charge.&lt;/p&gt;&#xD;
+&lt;p&gt;Planck units are unique among systems of natural units, because they are not defined in terms of properties of any prototype, physical object, or even elementary particle.&lt;/p&gt;</rdfs:comment>
+    <skos:inScheme rdf:resource="http://qudt.org/schema/qudt/SystemOfUnits"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://qudt.org/schema/qudt/SOU_USCS">
+    <rdfs:label>US Customary System of Units</rdfs:label>
+    <skos:inScheme rdf:resource="http://qudt.org/schema/qudt/SystemOfUnits"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://qudt.org/schema/qudt/SOU_CGS">
+    <rdfs:label>CGS System of Units</rdfs:label>
+    <skos:inScheme rdf:resource="http://qudt.org/schema/qudt/SystemOfUnits"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://qudt.org/schema/qudt/SOU_SI">
+    <rdfs:label>SI International System of Units</rdfs:label>
+    <skos:inScheme rdf:resource="http://qudt.org/schema/qudt/SystemOfUnits"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://qudt.org/schema/qudt/SOU_IMPERIAL">
+    <rdfs:label>Imperial System of Units</rdfs:label>
+    <skos:inScheme rdf:resource="http://qudt.org/schema/qudt/SystemOfUnits"/>
+  </skos:Concept>
+</rdf:RDF>

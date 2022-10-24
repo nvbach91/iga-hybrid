@@ -1,0 +1,35 @@
+<rdf:RDF
+    xmlns:dct="http://purl.org/dc/terms/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:ObjectProperty rdf:about="http://purl.org/ontology/mo/release_status">
+    <rdfs:comment>
+                Relates a musical manifestation to its release status (bootleg, ...)
+        </rdfs:comment>
+    <rdfs:domain rdf:resource="http://purl.org/ontology/mo/MusicalManifestation"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://purl.org/ontology/mo/ReleaseStatus"/>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://purl.org/ontology/mo/official">
+    <rdfs:label>official</rdfs:label>
+    <rdfs:comment>Any musical work or the expression of a musical work officially sanctioned by the artist and/or their corporate body.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/ontology/mo/ReleaseStatus"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/ontology/mo/bootleg">
+    <rdfs:label>bootleg</rdfs:label>
+    <rdfs:comment>An unofficial/underground musical work or the expression of a musical work that was not sanctioned by the artist and/or the corporate body. </rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/ontology/mo/ReleaseStatus"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/ontology/mo/promotion">
+    <rdfs:label>promotion</rdfs:label>
+    <rdfs:comment>A giveaway musical work or the expression of a musical work intended to promote an upcoming official musical work or the expression of a musical work.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/ontology/mo/ReleaseStatus"/>
+  </skos:Concept>
+</rdf:RDF>

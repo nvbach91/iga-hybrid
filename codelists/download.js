@@ -105,7 +105,7 @@ const download = async (iris) => {
         try {
             const resp = await axios.post(endpoint, `query=${query}`, axiosConfig);
             console.log(`DONE: ${codeListIri}`);
-            const fileName = `${downloadFolder}/${codeListIri.replace(/\//g, '[slash]').replace(/#/g, '[hash]').replace(/:/g, '[colon]')}.rdf`;
+            const fileName = `${downloadFolder}/${codeListIri.replace(/\//g, '[s]').replace(/#/g, '[h]').replace(/:/g, '[c]')}.rdf`;
             // console.log(fileName);
             fs.writeFileSync(fileName, typeof resp.data === 'string' ? resp.data : JSON.stringify(resp.data, null, 2));
         } catch (e) {

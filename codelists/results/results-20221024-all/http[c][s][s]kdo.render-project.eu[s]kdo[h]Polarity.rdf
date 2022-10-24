@@ -1,0 +1,35 @@
+<rdf:RDF
+    xmlns:dct="http://purl.org/dc/terms/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:ObjectProperty rdf:about="http://kdo.render-project.eu/kdo#hasPolarity">
+    <rdfs:comment xml:lang="en">The kdo:hasPolarity is used to specify the polarity of a kdo:Sentiment. It has three individuals: kdo:positivePolarity representing the positive orientation, kdo:negativePolarity representing the negative orientation, kdo:neutralPolarity representing the neutral.
+</rdfs:comment>
+    <rdfs:label xml:lang="en">has polarity</rdfs:label>
+    <rdfs:domain rdf:resource="http://kdo.render-project.eu/kdo#Sentiment"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://kdo.render-project.eu/kdo#Polarity"/>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://kdo.render-project.eu/kdo#neutralPolarity">
+    <rdfs:label xml:lang="en">Neutral polarity</rdfs:label>
+    <rdfs:comment xml:lang="en">This individual is used to mark a neutral polarity.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://kdo.render-project.eu/kdo#Polarity"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://kdo.render-project.eu/kdo#negativePolarity">
+    <rdfs:label xml:lang="en">Negative polarity</rdfs:label>
+    <rdfs:comment xml:lang="en">This individual is used to mark a negative polarity.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://kdo.render-project.eu/kdo#Polarity"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://kdo.render-project.eu/kdo#positivePolarity">
+    <rdfs:label xml:lang="en">Positive polarity</rdfs:label>
+    <rdfs:comment xml:lang="en">This individual is used to mark a postitive polarity.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://kdo.render-project.eu/kdo#Polarity"/>
+  </skos:Concept>
+</rdf:RDF>

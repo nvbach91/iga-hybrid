@@ -1,0 +1,72 @@
+<rdf:RDF
+    xmlns:dct="http://purl.org/dc/terms/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:ObjectProperty rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#hasStorageMedia">
+    <rdfs:comment xml:lang="en">Defines the type of storage media the object uses to store data.</rdfs:comment>
+    <rdfs:label xml:lang="en">storage media</rdfs:label>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#StorageMedia"/>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#SDHC">
+    <rdfs:label xml:lang="en">SDHC</rdfs:label>
+    <rdfs:comment xml:lang="en">SDHC (Secure Digital High Capacity, SD 2.0) is an extension of the SD standard that appeared in June 2006.
+
+(This description is partly based on or reuses content from the Wikipedia article "Secure Digital card" (http://en.wikipedia.org/wiki/Secure_Digital_card) and is licensed under the GNU Free Documentation License (http://www.gnu.org/copyleft/fdl.html).)</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#StorageMedia"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#CompactFlash">
+    <rdfs:label xml:lang="en">CompactFlash</rdfs:label>
+    <rdfs:comment xml:lang="en">CompactFlash (CF) is a mass storage device format used in portable electronic devices. For storage, CompactFlash typically uses flash memory in a standardized enclosure.
+
+(This description is partly based on or reuses content from the Wikipedia article "CompactFlash" (http://en.wikipedia.org/wiki/CompactFlash) and is licensed under the GNU Free Documentation License (http://www.gnu.org/copyleft/fdl.html).)</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#StorageMedia"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#SD">
+    <rdfs:label xml:lang="en">SD</rdfs:label>
+    <rdfs:comment xml:lang="en">A flash memory card format used in portable device.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#StorageMedia"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#MemoryStick">
+    <rdfs:label xml:lang="en">MemoryStick</rdfs:label>
+    <rdfs:comment xml:lang="en">Memory Stick is a removable flash memory card format.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#StorageMedia"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#MicroDrive">
+    <rdfs:label xml:lang="en">MicroDrive</rdfs:label>
+    <rdfs:comment xml:lang="en">A miniature, 1-inch hard disk designed to fit in a CompactFlash (CF) Type II slot.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#StorageMedia"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#InternalHDD">
+    <rdfs:label xml:lang="en">Internal HDD</rdfs:label>
+    <rdfs:comment xml:lang="en">Hard disk drive, a computer device which stores digitally encoded data.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#StorageMedia"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#SmartMediaCard">
+    <rdfs:label xml:lang="en">SmartMediaCard</rdfs:label>
+    <rdfs:comment xml:lang="en">SmartMedia is a flash memory card standard.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#StorageMedia"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#XDPictureCard">
+    <rdfs:label xml:lang="en">XDPictureCard</rdfs:label>
+    <rdfs:comment xml:lang="en">The xD-Picture Card is a type of flash memory card.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#StorageMedia"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#InternalFlashMemory">
+    <rdfs:label xml:lang="en">Internal flash memory</rdfs:label>
+    <rdfs:comment xml:lang="en">Flash memory is non-volatile computer memory that can be electrically erased and reprogrammed.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#StorageMedia"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#MMC">
+    <rdfs:label xml:lang="en">MMC</rdfs:label>
+    <rdfs:comment xml:lang="en">A solid state disk or flash memory data storage device.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#StorageMedia"/>
+  </skos:Concept>
+</rdf:RDF>

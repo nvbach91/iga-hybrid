@@ -1,0 +1,178 @@
+<rdf:RDF
+    xmlns:dct="http://purl.org/dc/terms/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:ObjectProperty rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#case">
+    <rdfs:comment>In a given sentence, the way in which the form of a word changes in order to express a relationship with one or several words of the sentence. The morphological modification may apply to nouns, pronouns noun phrase constituents, such as adjectives or numerals.</rdfs:comment>
+    <rdfs:label>case</rdfs:label>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#Case"/>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#delativeCase">
+    <rdfs:label>delative case</rdfs:label>
+    <rdfs:comment>Case which expresses motion downward from the referent of the noun it marks.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#Case"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#allativeCase">
+    <rdfs:label>allative case</rdfs:label>
+    <rdfs:comment>Case which expresses the meaning of motion 'to' or 'towards' the referent it marks.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#Case"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#absolutiveCase">
+    <rdfs:label>absolutive case</rdfs:label>
+    <rdfs:comment>Case for nouns in ergative-absolute languages that would generally be the subjects of intransitive verbs or the objects of transitive verbs in the translational equivalents of nominative-accusative languages such as English.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#Case"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#ablativeCase">
+    <rdfs:label>ablative case</rdfs:label>
+    <rdfs:comment>Case used to typically indicate locative or instrumental function.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#Case"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#ergativeCase">
+    <rdfs:label>ergative case</rdfs:label>
+    <rdfs:comment>Case assigned to the subject of a transitive verb as opposed to absolutive case.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#Case"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#sublativeCase">
+    <rdfs:label>sublative case</rdfs:label>
+    <rdfs:comment>Case for a move of something to the surface of another object.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#Case"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#dativeCase">
+    <rdfs:label>dative case</rdfs:label>
+    <rdfs:comment>Case that expresses an indirect object relationship or a range of meaning similar to that covered by 'to' or 'for' in English; but there is a great deal of variation between languages in the way this case is used.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#Case"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#benefactiveCase">
+    <rdfs:label>benefactive case</rdfs:label>
+    <rdfs:comment>Case that expresses that the referent of the noun it marks receives the benefit of the situation expressed by the clause.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#Case"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#nominativeCase">
+    <rdfs:label>nominative case</rdfs:label>
+    <rdfs:comment>Case used to indicate the subject of a verb.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#Case"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#abessiveCase">
+    <rdfs:label>abessive case</rdfs:label>
+    <rdfs:comment>Case that expresses the lack or absence of the referent of the noun it marks.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#Case"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#prolativeCase">
+    <rdfs:label>prolative case</rdfs:label>
+    <rdfs:comment>Case for a noun or a pronoun that expresses motion within a place or a period of time needed for an event.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#Case"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#accusativeCase">
+    <rdfs:label>accusative case</rdfs:label>
+    <rdfs:comment>Case used to indicate direct object.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#Case"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#instrumentalCase">
+    <rdfs:label>instrumental case</rdfs:label>
+    <rdfs:comment>Case indicating that the referent of the noun it marks is the means of the accomplishment of the action expressed by the clause.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#Case"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#sociativeCase">
+    <rdfs:label>sociative case</rdfs:label>
+    <rdfs:comment>Case related to the person in whose company the action is carried out, or to any belongings of people which take part in the action.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#Case"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#equativeCase">
+    <rdfs:label>equative case</rdfs:label>
+    <rdfs:comment>Case that expresses likeness or identity to the referent of the noun it marks. It can have meaning, such as: 'as', 'like', or 'in the capacity of'.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#Case"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#genitiveCase">
+    <rdfs:label>genitive case</rdfs:label>
+    <rdfs:comment>Case which expresses a possessive relationship (e.g. the boy's book) or some other similarly close connection (e.g. a summer's day).</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#Case"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#aditiveCase">
+    <rdfs:label>aditive case</rdfs:label>
+    <rdfs:comment>Case expressing &amp;quot;to&amp;quot; in Basque studies.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#Case"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#vocativeCase">
+    <rdfs:label>vocative  case</rdfs:label>
+    <rdfs:comment>Case used to indicate direct address.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#Case"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#superessiveCase">
+    <rdfs:label>superessive case</rdfs:label>
+    <rdfs:comment>Case indicating location on top of something or on the surface of something.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#Case"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#lativeCase">
+    <rdfs:label>lative case</rdfs:label>
+    <rdfs:comment>Case which expresses motion to a location.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#Case"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#obliqueCase">
+    <rdfs:label>oblique case</rdfs:label>
+    <rdfs:comment>Case that is used when a noun is the object of a verb or a proposition, except for nominative and vocative case.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#Case"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#adessiveCase">
+    <rdfs:label>adessive case</rdfs:label>
+    <rdfs:comment>Case which expresses the meaning of presence 'at' or 'near' a place.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#Case"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#essiveCase">
+    <rdfs:label>essive case</rdfs:label>
+    <rdfs:comment>Case which expresses a state of being.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#Case"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#illativeCase">
+    <rdfs:label>illative case</rdfs:label>
+    <rdfs:comment>Case which expresses the meaning of 'motion into' or 'direction towards' the referent of the noun it marks.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#Case"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#partitiveCase">
+    <rdfs:label>partitive case</rdfs:label>
+    <rdfs:comment>Case that expresses the partial nature of the referent of the noun it marks, as opposed to expressing the whole unit or class of which the referent is a part.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#Case"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#inessiveCase">
+    <rdfs:label>inessive case</rdfs:label>
+    <rdfs:comment>Case which expresses the meaning of location or position within a place.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#Case"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#locativeCase">
+    <rdfs:label>locative case</rdfs:label>
+    <rdfs:comment>Case that indicates a final location of action or a time of the action.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#Case"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#translativeCase">
+    <rdfs:label>translative case</rdfs:label>
+    <rdfs:comment>Case indicating that the referent of the noun, or the quality of the adjective, that it marks is the result of a process of change.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#Case"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#comitativeCase">
+    <rdfs:label>comitative case</rdfs:label>
+    <rdfs:comment>Case which expresses a meaning similar to 'along with' or 'accompagnied by'.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#Case"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#terminativeCase">
+    <rdfs:label>terminative case</rdfs:label>
+    <rdfs:comment>Case that indicates to what or where something ends.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#Case"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#causativeCase">
+    <rdfs:label>causative case</rdfs:label>
+    <rdfs:comment>Case which expresses that the referent of the noun it marks is the cause of the situation expressed by the clause.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#Case"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#elativeCase">
+    <rdfs:label>elative case</rdfs:label>
+    <rdfs:comment>Case which expresses the meaning of motion 'away from' from the referent of the noun it marks.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#Case"/>
+  </skos:Concept>
+</rdf:RDF>
