@@ -1,11 +1,14 @@
 # Extracting code lists from LOV dataset SPARQL endpoint
 - prerequisites: node.js 16.18.0
+- config: `./config.json` - specify one of the endpoint urls below in the `./config.json` file
 - usage: `$> node extract-codelists.js`
-- config: `./config.json`
-  - Specify one of the endpoint urls in the `./config.json` file
+- result: a bunch of files representing the extracted code lists, the files are renamed in a way so they can be stored on the disk
+  - `[c]` means colon `:`
+  - `[s]` means slash `/`
+  - `[h]` means hash `#`
 
 ### Endpoint 1 (prefered): https://lov.linkeddata.es/dataset/lov/sparql
-Result example:
+Result sample:
 ```xml
 <rdf:RDF
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -22,7 +25,7 @@ Result example:
 
 
 ### Endpoint 2: https://fcp.vse.cz/blazegraphpublic/namespace/lov20221023/sparql
-Result example:
+Result sample:
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF
