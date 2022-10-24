@@ -1,14 +1,11 @@
-# Download code lists from SPARQL endpoint
-
+# Download code lists from LOV SPARQL endpoint
 - prerequisites: node.js 16.18.0
 - usage: `$> node download.js`
 - config: `./config.json`
+  - Specify one of the endpoint urls in the `./config.json` file
 
-## endpoints to download from
-specify the endpoint url in the `./config.json` file
-
-### Endpoint 1: https://lov.linkeddata.es/dataset/lov/sparql
-example results:
+### Endpoint 1 (prefered): https://lov.linkeddata.es/dataset/lov/sparql
+Result example:
 ```xml
 <rdf:RDF
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -25,7 +22,7 @@ example results:
 
 
 ### Endpoint 2: https://fcp.vse.cz/blazegraphpublic/namespace/lov20221023/sparql
-example results:
+Result example:
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF
@@ -44,4 +41,48 @@ example results:
 </rdf:Description>
 
 </rdf:RDF>
+```
+
+### Upload these files to your triplestore
+-  e.g. to Blazegraph using [nvbach91/blazegraph-upload](https://github.com/nvbach91/blazegraph-upload)
+
+### Code lists SPARQL endpoint
+- workbench: https://fcp.vse.cz/blazegraphpublic/#namespaces
+- endpoint: https://fcp.vse.cz/blazegraphpublic/namespace/codelists/sparql
+
+### Queries to try on this SPARQL endpoint:
+- Get a list of code lists and their assignment properties
+```sparql
+# https://fcp.vse.cz/blazegraphpublic/#query
+# namespace: codelists
+
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?domainTerm ?assignmentProperty ?codeList ?ontology (COUNT(?code) AS ?nCodes) WHERE  {
+  ?codeList a skos:ConceptScheme .
+  ?codeList rdfs:isDefinedBy ?ontology .
+  OPTIONAL {
+    ?assignmentProperty rdfs:range ?codeList.
+    OPTIONAL {
+      ?assignmentProperty rdfs:domain ?domainTerm .
+    }
+  }
+  OPTIONAL {
+    ?code skos:inScheme ?codeList .
+  }
+}
+GROUP BY ?domainTerm ?assignmentProperty ?codeList ?ontology
+ORDER BY DESC(?nCodes)
+```
+- get all code lists and their codes
+```sparql
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT DISTINCT ?ontology ?codeList ?code WHERE  {
+  ?codeList a skos:ConceptScheme .
+  ?code skos:inScheme ?codeList .
+  ?code rdfs:isDefinedBy ?ontology .
+}
 ```

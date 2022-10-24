@@ -9,7 +9,7 @@ You can run these queries at
 
 ## Or use this web client that will do it for you
 - PROD: https://fcp.vse.cz/iga-hybrid
-- DEV: https://nvbach91.github.io/iga-hybrid
+<!-- - DEV: https://nvbach91.github.io/iga-hybrid -->
 
 
 ### Prefixes
@@ -291,9 +291,6 @@ ORDER BY ?i1
 ```
 
 
-## Steps to reproduce
-- Download LOV data + vocabs https://lov.linkeddata.es/lov.nq.gz
-- Upload to triplestore
-- Run query 
-- Run enhancement query Q0 using results from `SELECT DISTINCT { ?u a voaf:Vocabulary. }` as input
-- Run query Q1
+## Extracting code lists
+- Go to folder `codelists`, read the `README`, and then run `node download.js`
+- Upload to your triplestore, e.g. to Blazegraph using [nvbach91/blazegraph-upload](https://github.com/nvbach91/blazegraph-upload)
