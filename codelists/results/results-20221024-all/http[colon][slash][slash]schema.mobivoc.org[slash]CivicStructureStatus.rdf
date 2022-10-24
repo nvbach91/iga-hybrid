@@ -1,0 +1,94 @@
+<rdf:RDF
+    xmlns:dct="http://purl.org/dc/terms/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <skos:Concept rdf:about="http://schema.mobivoc.org/StatusUnknown">
+    <rdfs:label xml:lang="en">Status unknown</rdfs:label>
+    <rdfs:comment>The status of the parking facility is unknown.</rdfs:comment>
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="http://schema.mobivoc.org/CivicStructureStatus"/>
+    </skos:inScheme>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://schema.mobivoc.org/AllParkingFacilitiesFull">
+    <rdfs:label xml:lang="en">All parking facilities full</rdfs:label>
+    <rdfs:comment xml:lang="en">All parking facilities within a specified area are completely occupied.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://schema.mobivoc.org/CivicStructureStatus"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://schema.mobivoc.org/Operational">
+    <rdfs:label xml:lang="en">Status operational</rdfs:label>
+    <rdfs:comment>The facility is operational.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://schema.mobivoc.org/CivicStructureStatus"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://schema.mobivoc.org/Closed">
+    <rdfs:label xml:lang="en">Closed</rdfs:label>
+    <rdfs:comment>The parking facility is closed.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://schema.mobivoc.org/CivicStructureStatus"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://schema.mobivoc.org/EnoughParkingSpacesAvailable">
+    <rdfs:label xml:lang="en">Enough parking spaces available</rdfs:label>
+    <rdfs:comment>The parking facility has parking spaces available.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://schema.mobivoc.org/CivicStructureStatus"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://schema.mobivoc.org/ParkAndRideServiceNotOperating">
+    <rdfs:label xml:lang="en">Park and ride service not operating</rdfs:label>
+    <rdfs:comment>Park and ride services are not operating until the specified time.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://schema.mobivoc.org/CivicStructureStatus"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://schema.mobivoc.org/Faulty">
+    <rdfs:label xml:lang="en">Faulty</rdfs:label>
+    <rdfs:comment>The parking facility is not operating normally.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://schema.mobivoc.org/CivicStructureStatus"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://schema.mobivoc.org/OnlyAFewParkingSpacesAvailable">
+    <rdfs:label xml:lang="en">Only a few parking spaces available</rdfs:label>
+    <rdfs:comment>The parking facility has 95% or greater occupancy.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://schema.mobivoc.org/CivicStructureStatus"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://schema.mobivoc.org/NoParkingInformationAvailable">
+    <rdfs:label xml:lang="en">No parking information available</rdfs:label>
+    <rdfs:comment>Parking information is not available until a specified time.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://schema.mobivoc.org/CivicStructureStatus"/>
+  </skos:Concept>
+  <rdf:Description rdf:about="http://schema.mobivoc.org/civicStructureStatus">
+    <rdfs:comment>Indicates the current status of the civil structure.</rdfs:comment>
+    <rdfs:label xml:lang="en">civic structure status</rdfs:label>
+    <rdfs:domain rdf:resource="http://schema.org/CivicStructure"/>
+    <rdfs:range rdf:resource="http://schema.mobivoc.org/CivicStructureStatus"/>
+  </rdf:Description>
+  <skos:Concept rdf:about="http://schema.mobivoc.org/NormalParkingRestrictionsLifted">
+    <rdfs:label xml:lang="en">Normal parking restrictions lifted</rdfs:label>
+    <rdfs:comment>The parking restrictions that normally apply in the specified location have been temporarily lifted.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://schema.mobivoc.org/CivicStructureStatus"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://schema.mobivoc.org/SpecialParkingRestrictionsInForce">
+    <rdfs:label xml:lang="en">Special parking restrictions in force</rdfs:label>
+    <rdfs:comment>Parking restrictions, other than those that normally apply, are in force in a specified area.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://schema.mobivoc.org/CivicStructureStatus"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://schema.mobivoc.org/NoParkingAllowed">
+    <rdfs:label xml:lang="en">No parking allowed</rdfs:label>
+    <rdfs:comment>No parking allowed until the specified time.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://schema.mobivoc.org/CivicStructureStatus"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://schema.mobivoc.org/ParkAndRideServiceOperating">
+    <rdfs:label xml:lang="en">Park and ride service operating</rdfs:label>
+    <rdfs:comment>Park and ride services are operating until the specified time.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://schema.mobivoc.org/CivicStructureStatus"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://schema.mobivoc.org/NoParkAndRideInformation">
+    <rdfs:label xml:lang="en">No park and ride information</rdfs:label>
+    <rdfs:comment>No park and ride information will be available until the specified time.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://schema.mobivoc.org/CivicStructureStatus"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://schema.mobivoc.org/Full">
+    <rdfs:label xml:lang="en">Full</rdfs:label>
+    <rdfs:comment>The parking facility is completely occupied.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://schema.mobivoc.org/CivicStructureStatus"/>
+  </skos:Concept>
+</rdf:RDF>

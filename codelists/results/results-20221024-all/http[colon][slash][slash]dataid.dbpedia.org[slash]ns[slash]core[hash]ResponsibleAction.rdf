@@ -1,0 +1,38 @@
+<rdf:RDF
+    xmlns:dct="http://purl.org/dc/terms/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <skos:Concept rdf:about="http://dataid.dbpedia.org/ns/core#ResponseToContact">
+    <rdfs:label xml:lang="en">response to contact attempt</rdfs:label>
+    <rdfs:comment xml:lang="en">The responsibility to respond to contact attempts by external agents. A contact point for the entity.</rdfs:comment>
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="http://dataid.dbpedia.org/ns/core#ResponsibleAction"/>
+    </skos:inScheme>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://dataid.dbpedia.org/ns/core#ResponseToLifeCycleEvent">
+    <rdfs:label xml:lang="en">response to life-cycle event</rdfs:label>
+    <rdfs:comment xml:lang="en">The responsibility to manage changes and react to bugs and issues that are reported</rdfs:comment>
+    <skos:inScheme rdf:resource="http://dataid.dbpedia.org/ns/core#ResponsibleAction"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://dataid.dbpedia.org/ns/core#PublishingDecision">
+    <rdfs:label xml:lang="en">publishing decision</rdfs:label>
+    <rdfs:comment xml:lang="en">The responsibility decide if the entity should be published</rdfs:comment>
+    <skos:inScheme rdf:resource="http://dataid.dbpedia.org/ns/core#ResponsibleAction"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://dataid.dbpedia.org/ns/core#AgentSupervision">
+    <rdfs:label xml:lang="en">agent supervision</rdfs:label>
+    <rdfs:comment xml:lang="en">The responsibility to supervise other agents.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://dataid.dbpedia.org/ns/core#ResponsibleAction"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://dataid.dbpedia.org/ns/core#UpdateDataId">
+    <rdfs:label xml:lang="en">update DataId</rdfs:label>
+    <rdfs:comment xml:lang="en">The responsibility to update dataset metadata.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://dataid.dbpedia.org/ns/core#ResponsibleAction"/>
+  </skos:Concept>
+</rdf:RDF>

@@ -1,0 +1,19 @@
+<rdf:RDF
+    xmlns:dct="http://purl.org/dc/terms/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:FunctionalProperty rdf:about="https://www.gleif.org/ontology/Base/hasEntityStatus">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>has entity status</rdfs:label>
+    <rdfs:domain rdf:resource="https://www.gleif.org/ontology/Base/Entity"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="https://www.gleif.org/ontology/Base/EntityStatus"/>
+    </rdfs:range>
+  </owl:FunctionalProperty>
+</rdf:RDF>

@@ -1,0 +1,29 @@
+<rdf:RDF
+    xmlns:dct="http://purl.org/dc/terms/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <skos:Concept rdf:about="http://purl.org/vso/ns#Left">
+    <rdfs:label xml:lang="en">Left Hand Drive (vso:SteeringPositionValue)</rdfs:label>
+    <rdfs:comment xml:lang="en">The steering position is on the left side of the vehicle (viewed from the main direction of driving). For cars this means that you drive on the right side of the road.</rdfs:comment>
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="http://purl.org/vso/ns#SteeringPositionValue"/>
+    </skos:inScheme>
+  </skos:Concept>
+  <rdf:Description rdf:about="http://purl.org/vso/ns#steeringPosition">
+    <rdfs:comment xml:lang="en">The position of the steering wheel or similar device (mostly for cars)</rdfs:comment>
+    <rdfs:label xml:lang="en">steeringPosition (0..1)</rdfs:label>
+    <rdfs:domain rdf:resource="http://purl.org/vso/ns#MotorizedRoadVehicle"/>
+    <rdfs:range rdf:resource="http://purl.org/vso/ns#SteeringPositionValue"/>
+  </rdf:Description>
+  <skos:Concept rdf:about="http://purl.org/vso/ns#Right">
+    <rdfs:label xml:lang="en">Right Hand Drive (vso:SteeringPositionValue)</rdfs:label>
+    <rdfs:comment xml:lang="en">The steering position is on the right side of the vehicle (viewed from the main direction of driving). For cars this means that you drive on the left side of the road.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/vso/ns#SteeringPositionValue"/>
+  </skos:Concept>
+</rdf:RDF>

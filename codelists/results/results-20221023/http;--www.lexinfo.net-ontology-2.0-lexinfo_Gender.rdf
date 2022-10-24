@@ -1,0 +1,41 @@
+<rdf:RDF
+    xmlns:dct="http://purl.org/dc/terms/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#neuter">
+    <rdfs:label xml:lang="ru">средний</rdfs:label>
+    <rdfs:label>neuter</rdfs:label>
+    <rdfs:comment>Of, relating to, or constituting the gender that ordinarily includes most words or grammatical forms referring to objects that are not characterized as male or female.</rdfs:comment>
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#Gender"/>
+    </skos:inScheme>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#otherGender">
+    <rdfs:label>otherGender</rdfs:label>
+    <rdfs:comment>A grammatical category that indicates grammatical relationships between words in sentences.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#Gender"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#feminine">
+    <rdfs:label xml:lang="ru">женский</rdfs:label>
+    <rdfs:label>feminine</rdfs:label>
+    <rdfs:comment>Of, relating to, or constituting the gender that ordinarily includes most words or grammatical forms referring to females.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#Gender"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#masculine">
+    <rdfs:label xml:lang="ru">мужской</rdfs:label>
+    <rdfs:label>masculine</rdfs:label>
+    <rdfs:comment>Of, relating to, or constituting the gender that ordinarily includes most words or grammatical forms referring to males.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#Gender"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#commonGender">
+    <rdfs:label>common gender</rdfs:label>
+    <rdfs:comment>Indistinguished gender for epicenes.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#Gender"/>
+  </skos:Concept>
+</rdf:RDF>

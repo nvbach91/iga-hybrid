@@ -1,0 +1,28 @@
+<rdf:RDF
+    xmlns:dct="http://purl.org/dc/terms/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <skos:Concept rdf:about="http://purl.org/vvo/ns#GearboxManual">
+    <rdfs:label xml:lang="en">Manual (vvo:GearboxTypeValue)</rdfs:label>
+    <rdfs:comment xml:lang="en">Manual gearbox, VW ID: 1</rdfs:comment>
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="http://purl.org/vvo/ns#GearboxTypeValue"/>
+    </skos:inScheme>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/vvo/ns#GearboxDSG">
+    <rdfs:label xml:lang="en">DSG (vvo:GearboxTypeValue)</rdfs:label>
+    <rdfs:comment xml:lang="en">DSG gearbox, VW ID: 3</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/vvo/ns#GearboxTypeValue"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/vvo/ns#GearboxAutomatic">
+    <rdfs:label xml:lang="en">Automatic (vvo:GearboxTypeValue)</rdfs:label>
+    <rdfs:comment xml:lang="en">Automatic gearbox, VW ID: 2</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/vvo/ns#GearboxTypeValue"/>
+  </skos:Concept>
+</rdf:RDF>

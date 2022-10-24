@@ -1,0 +1,59 @@
+<rdf:RDF
+    xmlns:dct="http://purl.org/dc/terms/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <skos:Concept rdf:about="http://purl.org/goodrelations/v1#GoogleCheckout">
+    <rdfs:label xml:lang="en">Google Checkout (payment method)</rdfs:label>
+    <rdfs:comment xml:lang="en">Payment via the Google Checkout payment service.</rdfs:comment>
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="http://purl.org/goodrelations/v1#PaymentMethod"/>
+    </skos:inScheme>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/goodrelations/v1#COD">
+    <rdfs:label xml:lang="en">COD (payment method)</rdfs:label>
+    <rdfs:comment xml:lang="en">Collect on delivery / Cash on delivery - A payment method where the recipient of goods pays at the time of delivery. Usually, the amount of money is collected by the transportation company handling the goods.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/goodrelations/v1#PaymentMethod"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/goodrelations/v1#DirectDebit">
+    <rdfs:label xml:lang="en">Direct debit (payment method)</rdfs:label>
+    <rdfs:comment xml:lang="en">Payment by direct debit, i.e., the buying party will inform the offering gr:BusinessEntity about its bank account details and authorizes the gr:BusinessEntity to collect the agreed amount directly from that account.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/goodrelations/v1#PaymentMethod"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/goodrelations/v1#PaySwarm">
+    <rdfs:label xml:lang="en">PaySwarm (payment method)</rdfs:label>
+    <rdfs:comment xml:lang="en">Payment via the PaySwarm distributed micropayment service.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/goodrelations/v1#PaymentMethod"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/goodrelations/v1#ByInvoice">
+    <rdfs:label xml:lang="en">By invoice (payment method)</rdfs:label>
+    <rdfs:comment xml:lang="en">Payment by bank transfer after delivery, i.e., the offering gr:BusinessEntity will deliver first, inform the buying party about the due amount and their bank account details, and expect payment shortly after delivery.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/goodrelations/v1#PaymentMethod"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/goodrelations/v1#Cash">
+    <rdfs:label xml:lang="en">Cash (payment method)</rdfs:label>
+    <rdfs:comment xml:lang="en">Payment by cash upon delivery or pickup.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/goodrelations/v1#PaymentMethod"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/goodrelations/v1#PayPal">
+    <rdfs:label xml:lang="en">PayPal (payment method)</rdfs:label>
+    <rdfs:comment xml:lang="en">Payment via the PayPal payment service.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/goodrelations/v1#PaymentMethod"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/goodrelations/v1#ByBankTransferInAdvance">
+    <rdfs:label xml:lang="en">By bank transfer in advance (payment method)</rdfs:label>
+    <rdfs:comment xml:lang="en">Payment by bank transfer in advance, i.e., the offering gr:BusinessEntity will inform the buying party about their bank account details and will deliver the goods upon receipt of the due amount.
+This is equivalent to payment by wire transfer.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/goodrelations/v1#PaymentMethod"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/goodrelations/v1#CheckInAdvance">
+    <rdfs:label xml:lang="en">Check in advance (payment method)</rdfs:label>
+    <rdfs:comment xml:lang="en">Payment by sending a check in advance, i.e., the offering gr:BusinessEntity will deliver the goods upon receipt of a check over the due amount. There are variations in handling payment by check - sometimes, shipment will be upon receipt of the check as a document, sometimes the shipment will take place only upon successful crediting of the check.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/goodrelations/v1#PaymentMethod"/>
+  </skos:Concept>
+</rdf:RDF>

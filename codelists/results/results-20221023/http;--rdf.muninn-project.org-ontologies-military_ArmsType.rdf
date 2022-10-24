@@ -1,0 +1,55 @@
+<rdf:RDF
+    xmlns:dct="http://purl.org/dc/terms/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <skos:Concept rdf:about="http://rdf.muninn-project.org/ontologies/military#Armor">
+    <rdfs:label xml:lang="en">Armor</rdfs:label>
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="http://rdf.muninn-project.org/ontologies/military#ArmsType"/>
+    </skos:inScheme>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://rdf.muninn-project.org/ontologies/military#Cavalry">
+    <rdfs:label xml:lang="de">Kavallerie</rdfs:label>
+    <rdfs:label xml:lang="fr">Cavalerie</rdfs:label>
+    <rdfs:label xml:lang="en">Cavalry</rdfs:label>
+    <rdfs:label xml:lang="la">Equitata</rdfs:label>
+    <skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/military#ArmsType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://rdf.muninn-project.org/ontologies/military#LightInfantry">
+    <owl:subClassOf>
+      <skos:Concept rdf:about="http://rdf.muninn-project.org/ontologies/military#Infantry">
+        <rdfs:label xml:lang="en">Infantry</rdfs:label>
+        <skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/military#ArmsType"/>
+      </skos:Concept>
+    </owl:subClassOf>
+    <skos:broader rdf:resource="http://rdf.muninn-project.org/ontologies/military#Infantry"/>
+    <rdfs:label xml:lang="en">Infantry</rdfs:label>
+    <skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/military#ArmsType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://rdf.muninn-project.org/ontologies/military#ProtoAirForce">
+    <rdfs:label xml:lang="en">Proto Air Force</rdfs:label>
+    <owl:disjointWith>
+      <skos:Concept rdf:about="http://rdf.muninn-project.org/ontologies/military#AirForceServiceBranch">
+        <rdfs:label xml:lang="de">Luftstreitkräfte (Service)</rdfs:label>
+        <rdfs:label xml:lang="fr">Force aérienne (Service Militare)</rdfs:label>
+        <rdfs:label xml:lang="en">Air Force (Service Branch)</rdfs:label>
+        <skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/military#ArmsType"/>
+      </skos:Concept>
+    </owl:disjointWith>
+    <rdfs:label xml:lang="en">Proto_air_force</rdfs:label>
+    <skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/military#ArmsType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://rdf.muninn-project.org/ontologies/military#Artillery">
+    <rdfs:label xml:lang="en">Artillery</rdfs:label>
+    <skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/military#ArmsType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://rdf.muninn-project.org/ontologies/military#NavyServiceBranch">
+    <skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/military#ArmsType"/>
+  </skos:Concept>
+</rdf:RDF>

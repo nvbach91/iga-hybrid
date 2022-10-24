@@ -1,0 +1,43 @@
+<rdf:RDF
+    xmlns:dct="http://purl.org/dc/terms/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#commonNoun">
+    <rdfs:comment>A noun or adjective denoting a class of objects.</rdfs:comment>
+    <rdfs:label>common noun</rdfs:label>
+    <rdfs:label>commonNoun</rdfs:label>
+    <rdfs:comment>Noun that signifies a non-specific member of a group.</rdfs:comment>
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#NounPOS"/>
+    </skos:inScheme>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#diminutiveNoun">
+    <rdfs:label>diminutive noun</rdfs:label>
+    <rdfs:comment>diminutive noun</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#NounPOS"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#relationNoun">
+    <rdfs:label>relation noun</rdfs:label>
+    <rdfs:comment>relation noun</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#NounPOS"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#properNoun">
+    <rdfs:comment>A noun or adjective denoting a single object.</rdfs:comment>
+    <rdfs:label>properNoun</rdfs:label>
+    <rdfs:label>proper noun</rdfs:label>
+    <rdfs:comment>Noun that is the name of a specific individual, place, or object.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#NounPOS"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#noun">
+    <rdfs:label xml:lang="ru">имя существительное</rdfs:label>
+    <rdfs:label>noun</rdfs:label>
+    <rdfs:comment>Part of speech used to express the name of a person, place, action or thing.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#NounPOS"/>
+  </skos:Concept>
+</rdf:RDF>

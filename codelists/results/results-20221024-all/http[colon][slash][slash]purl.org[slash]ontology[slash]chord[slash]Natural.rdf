@@ -1,0 +1,47 @@
+<rdf:RDF
+    xmlns:dct="http://purl.org/dc/terms/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <skos:Concept rdf:about="http://purl.org/ontology/chord/note/G">
+    <rdfs:label>G</rdfs:label>
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="http://purl.org/ontology/chord/Natural"/>
+    </skos:inScheme>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/ontology/chord/note/F">
+    <rdfs:label>F</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/ontology/chord/Natural"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/ontology/chord/note/E">
+    <rdfs:label>E</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/ontology/chord/Natural"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/ontology/chord/note/D">
+    <rdfs:label>D</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/ontology/chord/Natural"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/ontology/chord/note/C">
+    <rdfs:label>C</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/ontology/chord/Natural"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/ontology/chord/note/B">
+    <rdfs:label>B</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/ontology/chord/Natural"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/ontology/chord/note/A">
+    <rdfs:label>A</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/ontology/chord/Natural"/>
+  </skos:Concept>
+  <rdf:Description rdf:about="http://purl.org/ontology/chord/natural">
+    <rdfs:comment>The natural from which this note is derived.</rdfs:comment>
+    <rdfs:label>natural</rdfs:label>
+    <rdfs:domain rdf:resource="http://purl.org/ontology/chord/Note"/>
+    <rdfs:range rdf:resource="http://purl.org/ontology/chord/Natural"/>
+  </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,23 @@
+<rdf:RDF
+    xmlns:dct="http://purl.org/dc/terms/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <skos:Concept rdf:about="http://www.data-knowledge.org/dk/KnowledgeLifecycle">
+    <rdfs:label xml:lang="en">Knowledge Lifecycle</rdfs:label>
+    <rdfs:comment xml:lang="en">Defines the life cycle of a data knowledge entity, i.e. the instances from the classes of this model. This type of life cycles thus represents a metadata life cycle. A life cycle is defined by a set of possible life cycle states (lifecycle:State). The life cycle definition may also specify constraints on the transitions between the life cycle states (lifecycle:possibleTransition).</rdfs:comment>
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="http://purl.org/vocab/lifecycle/schema#Lifecycle"/>
+    </skos:inScheme>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.data-knowledge.org/dk/ApplicationLifecycle">
+    <rdfs:label xml:lang="en">Application Lifecycle</rdfs:label>
+    <rdfs:comment xml:lang="en">Defines the life cycle of Applications. A life cycle is defined by a set of possible life cycle states (lifecycle:State). The life cycle definition may also specify constraints on the transitions between the life cycle states (lifecycle:possibleTransition).</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/vocab/lifecycle/schema#Lifecycle"/>
+  </skos:Concept>
+</rdf:RDF>

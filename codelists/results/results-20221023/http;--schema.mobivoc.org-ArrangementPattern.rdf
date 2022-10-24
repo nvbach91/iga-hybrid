@@ -1,0 +1,34 @@
+<rdf:RDF
+    xmlns:dct="http://purl.org/dc/terms/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <skos:Concept rdf:about="http://schema.mobivoc.org/AngleParking">
+    <rdfs:comment xml:lang="de">Bei der Schrägaufstellung wird das Fahrzeug mit einem Aufstellwinkel zwischen 50 und 90 gon (45° und ca. 81°) geparkt. Das Fahrzeug kann vorwärts in den Parkstand einfahren, muss zum Ausparken jedoch wieder rückwärts herausfahren. Diese Aufstellung wird oft bei Parkplätzen verwendet, da sie schmalere Fahrwege als die Senkrechtaufstellung und bessere Platzausnutzung als Parallelaufstellung ermöglicht.</rdfs:comment>
+    <rdfs:label xml:lang="en">Angle parking</rdfs:label>
+    <rdfs:label xml:lang="de">Schrägaufstellung</rdfs:label>
+    <rdfs:comment xml:lang="en">Parking where the parking spaces are arranged at an acute angle to the direction of approach, allowing the driver to enter a space easily and later reverse back out.</rdfs:comment>
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="http://schema.mobivoc.org/ArrangementPattern"/>
+    </skos:inScheme>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://schema.mobivoc.org/PerpendicularParking">
+    <rdfs:comment xml:lang="en">With perpendicular parking, vehicles are parked side to side, perpendicular to an aisle, curb, or wall. This type of parking is commonly used in parking lots and parking facilities.</rdfs:comment>
+    <rdfs:label xml:lang="de">Senkrechtaufstellung</rdfs:label>
+    <rdfs:label xml:lang="en">Perpendicular parking</rdfs:label>
+    <rdfs:comment xml:lang="de">Bei der Senkrechtaufstellung wird das Fahrzeug mit einem Aufstellwinkel von von 100 gon (90°) geparkt.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://schema.mobivoc.org/ArrangementPattern"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://schema.mobivoc.org/ParallelParking">
+    <rdfs:comment xml:lang="en">With parallel parking, vehicles are arranged in a line, with the front of one vehicle facing the back of an adjacent one. This is done parallel to a curb, when one is provided. Parallel parking is the most common mode of roadside parking for vehicles.</rdfs:comment>
+    <rdfs:label xml:lang="de">Längsaufstellung</rdfs:label>
+    <rdfs:label xml:lang="en">Parallel parking</rdfs:label>
+    <rdfs:comment xml:lang="de">Bei der Längsaufstellung wird das Fahrzeug (gemäß § 12 StVO) parallel zur Fahrbahn geparkt. Diese Fahrzeugaufstellung ist die gängigste Aufstellungsart an Straßen.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://schema.mobivoc.org/ArrangementPattern"/>
+  </skos:Concept>
+</rdf:RDF>

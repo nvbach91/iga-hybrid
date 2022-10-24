@@ -1,0 +1,28 @@
+<rdf:RDF
+    xmlns:dct="http://purl.org/dc/terms/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <skos:Concept rdf:about="http://purl.org/uco/ns#Garage">
+    <rdfs:label xml:lang="en">Garage (uco:ParkingType)</rdfs:label>
+    <rdfs:comment xml:lang="en">The parking of a vehicle in a closed garage</rdfs:comment>
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="http://purl.org/uco/ns#ParkingType"/>
+    </skos:inScheme>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/uco/ns#Carport">
+    <rdfs:label xml:lang="en">Carport (uco:ParkingType)</rdfs:label>
+    <rdfs:comment xml:lang="en">The parking of a vehicle under a protective roof, e.g. in a carport</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/uco/ns#ParkingType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/uco/ns#Street">
+    <rdfs:label xml:lang="en">Street (uco:ParkingType)</rdfs:label>
+    <rdfs:comment xml:lang="en">The parking of a vehicle on a public or private street</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/uco/ns#ParkingType"/>
+  </skos:Concept>
+</rdf:RDF>
