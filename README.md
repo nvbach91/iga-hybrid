@@ -2,9 +2,9 @@
 Repository for the internal grant project involving hybrid modeling of RDF knowledge bases
 
 ## Queries to find hybrid knowledge representations
-Run these queries at 
+You can run these queries at 
+- https://fcp.vse.cz/blazegraphpublic/#query (select the `lov` namespace in the `namespaces` tab)
 - https://lov.linkeddata.es/dataset/lov/sparql
-- https://fcp.vse.cz/blazegraph/#query
 - http://dbpedia.org/sparql
 
 ## Or use this web client that will do it for you
@@ -293,7 +293,7 @@ ORDER BY ?i1
 
 ## Steps to reproduce
 - Download LOV data + vocabs https://lov.linkeddata.es/lov.nq.gz
-- Upload to blazegraph (or other triple stores)
+- Upload to triplestore
 - Run query 
 - Run enhancement query Q0 using results from `SELECT DISTINCT { ?u a voaf:Vocabulary. }` as input
 - Run query Q1

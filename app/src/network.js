@@ -22,7 +22,7 @@ export const fetchVocabs = (reload) => {
     // remove duplicates
     res.results.bindings = res.results.bindings.filter((v, i, a) => a.findIndex(t => (t.vocabURI.value === v.vocabURI.value)) === i);
     // console.log(res.results.bindings.length);
-    // return axios.post(getEndpointUrl('https://fcp.vse.cz/blazegraph/namespace/biomed'), payload, axiosConfig);
+    // return axios.post(getEndpointUrl('https://fcp.vse.cz/blazegraphpublic/namespace/biomed'), payload, axiosConfig);
   // }).then((resp) => {
   //   res.results.bindings = resp.data.results.bindings.filter((v, i, a) => a.findIndex(t => (t.vocabURI.value === v.vocabURI.value)) === i).concat(res.results.bindings);
     window.cached.vocabs = res;

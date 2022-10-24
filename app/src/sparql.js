@@ -14,15 +14,16 @@ export const getEndpointUrl = (vocab) => {
     'http://purl.bioontology.org/ontology/RXNORM/',
     'http://purl.obolibrary.org/obo/ncit.owl',
     'http://purl.bioontology.org/ontology/NCBITAXON/',
-    'https://fcp.vse.cz/blazegraph/namespace/biomed',
+    'https://fcp.vse.cz/blazegraphpublic/namespace/biomed',
   ];
   if (customDataGraphIris.includes(vocab)) {
-    return 'https://fcp.vse.cz/blazegraph/namespace/biomed/sparql';
+    return 'https://fcp.vse.cz/blazegraphpublic/namespace/biomed/sparql';
   }
   switch (vocab) {
     case 'http://dbpedia.org': return 'https://dbpedia.org/sparql';
     // default: return 'https://lov.linkeddata.es/dataset/lov/sparql';
-    default: return ' https://fcp.vse.cz/blazegraph/namespace/lov20221023/sparql';
+    // we have our own endpoint so we don't add traffic to LOV
+    default: return 'https://fcp.vse.cz/blazegraphpublic/namespace/lov20221023/sparql';
   }
 };
 

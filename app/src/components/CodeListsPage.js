@@ -319,7 +319,7 @@ class CodeListsPage extends React.Component {
             <Typography variant="body2">
               Endpoints {selectedVocabOption ?
                 createLink(getEndpointUrl(selectedVocabOption.value)) :
-                <>{createLink(getEndpointUrl())}, {createLink(getEndpointUrl('https://fcp.vse.cz/blazegraph/namespace/biomed'))}</>
+                <>{createLink(getEndpointUrl())}, {createLink(getEndpointUrl('https://fcp.vse.cz/blazegraphpublic/namespace/biomed'))}</>
               }
             </Typography>
           </DialogTitle>
