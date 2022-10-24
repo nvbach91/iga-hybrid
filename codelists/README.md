@@ -89,3 +89,7 @@ SELECT DISTINCT ?ontology ?codeList ?code WHERE  {
 
 ### Code lists overview data table
 - https://github.com/nvbach91/iga-hybrid/tree/master/codelists/results
+
+
+### Code lists graph schema
+![image](https://user-images.githubusercontent.com/20724910/197642400-1e802e68-138c-4d0d-98fc-d946b3926086.png)
