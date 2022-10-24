@@ -53,9 +53,6 @@ Result example:
 ### Queries to try on this SPARQL endpoint:
 - Get a list of code lists and their assignment properties
 ```sparql
-# https://fcp.vse.cz/blazegraphpublic/#query
-# namespace: codelists
-
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
