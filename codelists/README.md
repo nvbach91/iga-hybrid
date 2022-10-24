@@ -92,4 +92,7 @@ SELECT DISTINCT ?ontology ?codeList ?code WHERE  {
 
 
 ### Code lists graph schema
-![image](https://user-images.githubusercontent.com/20724910/197642400-1e802e68-138c-4d0d-98fc-d946b3926086.png)
+- https://drive.google.com/file/d/1VtlSmfxKMfY1XMMb05Zj6zgTyTWN7pbL/view?usp=sharing
+
+![image](https://user-images.githubusercontent.com/20724910/197643078-8a2d1329-627b-4cc3-a48a-f250f1360ea0.png)
+
