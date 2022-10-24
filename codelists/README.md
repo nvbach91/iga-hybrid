@@ -75,7 +75,7 @@ SELECT ?domainTerm ?assignmentProperty ?codeList ?ontology (COUNT(?code) AS ?nCo
 GROUP BY ?domainTerm ?assignmentProperty ?codeList ?ontology
 ORDER BY DESC(?nCodes)
 ```
-- get all code lists and their codes
+- Get all code lists and their codes
 ```sparql
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
@@ -86,3 +86,6 @@ SELECT DISTINCT ?ontology ?codeList ?code WHERE  {
   ?code rdfs:isDefinedBy ?ontology .
 }
 ```
+
+### Code lists overview data table
+- https://github.com/nvbach91/iga-hybrid/tree/master/codelists/results
