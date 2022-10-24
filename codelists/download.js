@@ -2,7 +2,7 @@ const axios = require('axios');
 const moment = require('moment');
 const fs = require('fs');
 
-const codeLists = require('../results/2019-07-20_lov-analyzer-results-flat.json');
+const codeLists = require('../aggregate-data/2019-07-20_lov-analyzer-results-flat.json');
 const codeListIris = Object.keys(codeLists);
 const { username, password, endpoint } = require('./config.json');
 const downloadFolder = `./results/results-${moment().format('YYYYMMDD')}`;

@@ -1,5 +1,5 @@
 const fs = require('fs');
-const data = require('../results/2019-07-20_lov-analyzer-results.json');
+const data = require('../aggregate-data/2019-07-20_lov-analyzer-results.json');
 const vocabs = Object.keys(data).map((vocabIri) => {
     const vocab = data[vocabIri];
     let nCodes = 0;
