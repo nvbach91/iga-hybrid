@@ -24,7 +24,7 @@ example results:
 ```
 
 
-### Endpoint 2: http://localhost/boss-blazegraph-s/v1/namespace/lov20221023/sparql
+### Endpoint 2: https://fcp.vse.cz/blazegraphpublic/namespace/lov20221023/sparql
 example results:
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
