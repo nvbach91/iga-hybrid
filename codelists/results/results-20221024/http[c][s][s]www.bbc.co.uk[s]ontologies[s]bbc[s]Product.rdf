@@ -1,0 +1,75 @@
+<rdf:RDF
+    xmlns:dct="http://purl.org/dc/terms/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://www.bbc.co.uk/ontologies/bbc"/>
+  <owl:ObjectProperty rdf:about="http://www.bbc.co.uk/ontologies/bbc/product">
+    <rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/bbc"/>
+    <rdfs:comment xml:lang="en-gb">Associates the WebDocument with the particular BBC Product it belongs to. This reflects the editorial branding of the product.</rdfs:comment>
+    <rdfs:label xml:lang="en-gb">product</rdfs:label>
+    <rdfs:domain>
+      <rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/bbc/WebDocument">
+        <rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/bbc"/>
+      </rdf:Description>
+    </rdfs:domain>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://www.bbc.co.uk/ontologies/bbc/Product">
+        <rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/bbc"/>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://www.bbc.co.uk/ontologies/bbc/OfficialHomepage">
+    <rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/bbc"/>
+    <rdfs:label xml:lang="en-gb">OfficialHomepage</rdfs:label>
+    <rdfs:comment xml:lang="en-gb">Represents the official home pages of the things the BBC creates content about e.g., the Manchester council homepage http://www.manchester.gov.uk.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.bbc.co.uk/ontologies/bbc/Product"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.bbc.co.uk/ontologies/bbc/Twitter">
+    <rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/bbc"/>
+    <rdfs:label xml:lang="en-gb">Twitter</rdfs:label>
+    <rdfs:comment xml:lang="en-gb">Represents the official twitter pages of the things the BBC creates content about e.g., the Manchester council twitter account http://twitter.com/ManCityCouncil.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.bbc.co.uk/ontologies/bbc/Product"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.bbc.co.uk/ontologies/bbc/Facebook">
+    <rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/bbc"/>
+    <rdfs:label xml:lang="en-gb">Facebook</rdfs:label>
+    <rdfs:comment xml:lang="en-gb">Represents the official Facebook pages of the things the BBC creates content about e.g., the Manchester council Facebook account http://www.facebook.com/mancitycouncil.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.bbc.co.uk/ontologies/bbc/Product"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.bbc.co.uk/ontologies/bbc/Blogs">
+    <rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/bbc"/>
+    <rdfs:label xml:lang="en-gb">Blogs</rdfs:label>
+    <rdfs:comment xml:lang="en-gb">This instance of bbc:Product is needed to associate WebDocuments from the BBC blogs.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.bbc.co.uk/ontologies/bbc/Product"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.bbc.co.uk/ontologies/bbc/Education">
+    <rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/bbc"/>
+    <rdfs:label xml:lang="en-gb">Education</rdfs:label>
+    <rdfs:comment xml:lang="en-gb">This instance of bbc:Product is needed to associate WebDocuments from BBC Education.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.bbc.co.uk/ontologies/bbc/Product"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.bbc.co.uk/ontologies/bbc/Sport">
+    <rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/bbc"/>
+    <rdfs:label xml:lang="en-gb">Sport</rdfs:label>
+    <rdfs:comment xml:lang="en-gb">This instance of bbc:Product is needed to associate WebDocuments from BBC Sport.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.bbc.co.uk/ontologies/bbc/Product"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.bbc.co.uk/ontologies/bbc/News">
+    <rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/bbc"/>
+    <rdfs:label xml:lang="en-gb">News</rdfs:label>
+    <rdfs:comment xml:lang="en-gb">This instance of bbc:Product is needed to associate WebDocuments from BBC News.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.bbc.co.uk/ontologies/bbc/Product"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.bbc.co.uk/ontologies/bbc/Music">
+    <rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/bbc"/>
+    <rdfs:label xml:lang="en-gb">Music</rdfs:label>
+    <rdfs:comment xml:lang="en-gb">This instance of bbc:Product is needed to associate WebDocuments from BBC Music.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.bbc.co.uk/ontologies/bbc/Product"/>
+  </skos:Concept>
+</rdf:RDF>

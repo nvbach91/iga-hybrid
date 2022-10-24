@@ -1,0 +1,478 @@
+<rdf:RDF
+    xmlns:dct="http://purl.org/dc/terms/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:j.0="http://www.w3.org/ns/odrl/2/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://www.w3.org/ns/odrl/2/"/>
+  <skos:Concept rdf:about="http://www.w3.org/ns/odrl/2/anonymize">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+    <j.0:includedIn>
+      <skos:Concept rdf:about="http://www.w3.org/ns/odrl/2/use">
+        <rdfs:label xml:lang="en">Use</rdfs:label>
+        <skos:inScheme>
+          <skos:ConceptScheme rdf:about="http://www.w3.org/ns/odrl/2/Action">
+            <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+          </skos:ConceptScheme>
+        </skos:inScheme>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+      </skos:Concept>
+    </j.0:includedIn>
+    <rdfs:label xml:lang="en">Anonymize</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/ns/odrl/2/writeTo">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+    <skos:exactMatch>
+      <skos:Concept rdf:about="http://www.w3.org/ns/odrl/2/modify">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+        <j.0:includedIn rdf:resource="http://www.w3.org/ns/odrl/2/use"/>
+        <rdfs:label xml:lang="en">Modify</rdfs:label>
+        <skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
+      </skos:Concept>
+    </skos:exactMatch>
+    <rdfs:label xml:lang="en">Write to</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/ns/odrl/2/extractWord">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+    <rdfs:label xml:lang="en">Extract word</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/ns/odrl/2/move">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+    <j.0:includedIn rdf:resource="http://www.w3.org/ns/odrl/2/use"/>
+    <rdfs:label xml:lang="en">Move</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/ns/odrl/2/attachPolicy">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+    <skos:exactMatch>
+      <skos:Concept rdf:about="http://creativecommons.org/ns#Notice">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+        <j.0:includedIn rdf:resource="http://www.w3.org/ns/odrl/2/use"/>
+        <rdfs:label xml:lang="en">Notice</rdfs:label>
+        <skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
+      </skos:Concept>
+    </skos:exactMatch>
+    <rdfs:label xml:lang="en">Attach policy</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/ns/odrl/2/translate">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+    <j.0:includedIn rdf:resource="http://www.w3.org/ns/odrl/2/use"/>
+    <rdfs:label xml:lang="en">Translate</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/ns/odrl/2/preview">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+    <rdfs:label xml:lang="en">Preview</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/ns/odrl/2/extractPage">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+    <rdfs:label xml:lang="en">Extract page</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://creativecommons.org/ns#Reproduction">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+    <j.0:includedIn rdf:resource="http://www.w3.org/ns/odrl/2/use"/>
+    <rdfs:label xml:lang="en">Reproduction</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/ns/odrl/2/copy">
+    <skos:exactMatch>
+      <skos:Concept rdf:about="http://www.w3.org/ns/odrl/2/reproduce">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+        <j.0:includedIn rdf:resource="http://www.w3.org/ns/odrl/2/use"/>
+        <rdfs:label xml:lang="en">Reproduce</rdfs:label>
+        <skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
+      </skos:Concept>
+    </skos:exactMatch>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/ns/odrl/2/reproduce"/>
+    <rdfs:label xml:lang="en">Copy</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/ns/odrl/2/display">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+    <j.0:includedIn>
+      <skos:Concept rdf:about="http://www.w3.org/ns/odrl/2/play">
+        <j.0:includedIn rdf:resource="http://www.w3.org/ns/odrl/2/use"/>
+        <rdfs:label xml:lang="en">Play</rdfs:label>
+        <skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+      </skos:Concept>
+    </j.0:includedIn>
+    <rdfs:label xml:lang="en">Display</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/ns/odrl/2/obtainConsent">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+    <j.0:includedIn rdf:resource="http://www.w3.org/ns/odrl/2/use"/>
+    <rdfs:label xml:lang="en">Obtain Consent</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/ns/odrl/2/aggregate">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+    <j.0:includedIn rdf:resource="http://www.w3.org/ns/odrl/2/use"/>
+    <rdfs:label xml:lang="en">Aggregate</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/ns/odrl/2/digitize">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+    <j.0:includedIn rdf:resource="http://www.w3.org/ns/odrl/2/use"/>
+    <rdfs:label xml:lang="en">Digitize</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/ns/odrl/2/concurrentUse">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+    <j.0:includedIn rdf:resource="http://www.w3.org/ns/odrl/2/use"/>
+    <rdfs:label xml:lang="en">Concurrent Use</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/ns/odrl/2/nextPolicy">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+    <j.0:includedIn rdf:resource="http://www.w3.org/ns/odrl/2/use"/>
+    <rdfs:label xml:lang="en">Next Policy</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/ns/odrl/2/extract">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+    <j.0:includedIn rdf:resource="http://www.w3.org/ns/odrl/2/reproduce"/>
+    <rdfs:label xml:lang="en">Extract</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/ns/odrl/2/watermark">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+    <j.0:includedIn rdf:resource="http://www.w3.org/ns/odrl/2/use"/>
+    <rdfs:label xml:lang="en">Watermark</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/ns/odrl/2/textToSpeech">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+    <j.0:includedIn rdf:resource="http://www.w3.org/ns/odrl/2/use"/>
+    <rdfs:label xml:lang="en">Text-to-speech</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/ns/odrl/2/append">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+    <skos:exactMatch rdf:resource="http://www.w3.org/ns/odrl/2/modify"/>
+    <rdfs:label xml:lang="en">Append</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/ns/odrl/2/reviewPolicy">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+    <j.0:includedIn rdf:resource="http://www.w3.org/ns/odrl/2/use"/>
+    <rdfs:label xml:lang="en">Review Policy</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/ns/odrl/2/extractChar">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+    <rdfs:label xml:lang="en">Extract character</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/ns/odrl/2/share">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+    <skos:exactMatch>
+      <skos:Concept rdf:about="http://creativecommons.org/ns#Sharing">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+        <j.0:includedIn rdf:resource="http://www.w3.org/ns/odrl/2/use"/>
+        <rdfs:label xml:lang="en">Sharing</rdfs:label>
+        <skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
+      </skos:Concept>
+    </skos:exactMatch>
+    <rdfs:label xml:lang="en">Share</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/ns/odrl/2/read">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+    <j.0:includedIn rdf:resource="http://www.w3.org/ns/odrl/2/use"/>
+    <rdfs:label xml:lang="en">Read</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/ns/odrl/2/stream">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+    <j.0:includedIn rdf:resource="http://www.w3.org/ns/odrl/2/use"/>
+    <rdfs:label xml:lang="en">Stream</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/ns/odrl/2/implies">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">Implies</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
+    <rdfs:range rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://creativecommons.org/ns#Attribution">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+    <j.0:includedIn rdf:resource="http://www.w3.org/ns/odrl/2/use"/>
+    <rdfs:label xml:lang="en">Attribution</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/ns/odrl/2/annotate">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+    <j.0:includedIn rdf:resource="http://www.w3.org/ns/odrl/2/use"/>
+    <rdfs:label xml:lang="en">Annotate</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/ns/odrl/2/export">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+    <skos:exactMatch>
+      <skos:Concept rdf:about="http://www.w3.org/ns/odrl/2/transform">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+        <j.0:includedIn rdf:resource="http://www.w3.org/ns/odrl/2/use"/>
+        <rdfs:label xml:lang="en">Transform</rdfs:label>
+        <skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
+      </skos:Concept>
+    </skos:exactMatch>
+    <rdfs:label xml:lang="en">Export</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/ns/odrl/2/install">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+    <j.0:includedIn rdf:resource="http://www.w3.org/ns/odrl/2/use"/>
+    <rdfs:label xml:lang="en">Install</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/ns/odrl/2/acceptTracking">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+    <j.0:includedIn rdf:resource="http://www.w3.org/ns/odrl/2/use"/>
+    <rdfs:label xml:lang="en">Accept Tracking</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/ns/odrl/2/synchronize">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+    <j.0:includedIn rdf:resource="http://www.w3.org/ns/odrl/2/use"/>
+    <rdfs:label xml:lang="en">Synchronize</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/ns/odrl/2/write">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+    <skos:exactMatch rdf:resource="http://www.w3.org/ns/odrl/2/modify"/>
+    <rdfs:label xml:lang="en">Write</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/ns/odrl/2/action">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">Has Action</rdfs:label>
+    <rdfs:domain rdf:parseType="Resource">
+      <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+    </rdfs:domain>
+    <rdfs:range rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/ns/odrl/2/delete">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+    <j.0:includedIn rdf:resource="http://www.w3.org/ns/odrl/2/use"/>
+    <rdfs:label xml:lang="en">Delete</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/ns/odrl/2/shareAlike">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+    <skos:exactMatch>
+      <skos:Concept rdf:about="http://creativecommons.org/ns#ShareAlike">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+        <j.0:includedIn rdf:resource="http://www.w3.org/ns/odrl/2/use"/>
+        <rdfs:label xml:lang="en">Share Alike</rdfs:label>
+        <skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
+      </skos:Concept>
+    </skos:exactMatch>
+    <rdfs:label xml:lang="en">Share-alike</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/ns/odrl/2/pay">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+    <skos:exactMatch>
+      <skos:Concept rdf:about="http://www.w3.org/ns/odrl/2/compensate">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+        <j.0:includedIn rdf:resource="http://www.w3.org/ns/odrl/2/use"/>
+        <rdfs:label xml:lang="en">Compensate</rdfs:label>
+        <skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
+      </skos:Concept>
+    </skos:exactMatch>
+    <rdfs:label xml:lang="en">Pay</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/ns/odrl/2/inform">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+    <j.0:includedIn rdf:resource="http://www.w3.org/ns/odrl/2/use"/>
+    <rdfs:label xml:lang="en">Inform</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/ns/odrl/2/archive">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+    <j.0:includedIn rdf:resource="http://www.w3.org/ns/odrl/2/use"/>
+    <rdfs:label xml:lang="en">Archive</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/ns/odrl/2/uninstall">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+    <j.0:includedIn rdf:resource="http://www.w3.org/ns/odrl/2/use"/>
+    <rdfs:label xml:lang="en">Uninstall</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/ns/odrl/2/includedIn">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">Included In</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
+    <rdfs:range rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/ns/odrl/2/execute">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+    <j.0:includedIn rdf:resource="http://www.w3.org/ns/odrl/2/use"/>
+    <rdfs:label xml:lang="en">Execute</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/ns/odrl/2/lend">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+    <rdfs:label xml:lang="en">Lend</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/ns/odrl/2/adHocShare">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+    <rdfs:label xml:lang="en">Ad-hoc sharing</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/ns/odrl/2/secondaryUse">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+    <rdfs:label xml:lang="en">Secondary Use</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/ns/odrl/2/license">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+    <skos:exactMatch>
+      <skos:Concept rdf:about="http://www.w3.org/ns/odrl/2/grantUse">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+        <j.0:includedIn rdf:resource="http://www.w3.org/ns/odrl/2/use"/>
+        <rdfs:label xml:lang="en">Grant Use</rdfs:label>
+        <skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
+      </skos:Concept>
+    </skos:exactMatch>
+    <rdfs:label xml:lang="en">License</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/ns/odrl/2/distribute">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+    <j.0:includedIn rdf:resource="http://www.w3.org/ns/odrl/2/use"/>
+    <rdfs:label xml:lang="en">Distribute</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/ns/odrl/2/index">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+    <j.0:includedIn rdf:resource="http://www.w3.org/ns/odrl/2/use"/>
+    <rdfs:label xml:lang="en">Index</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/ns/odrl/2/appendTo">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+    <skos:exactMatch rdf:resource="http://www.w3.org/ns/odrl/2/modify"/>
+    <rdfs:label xml:lang="en">Append To</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/ns/odrl/2/include">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+    <j.0:includedIn rdf:resource="http://www.w3.org/ns/odrl/2/use"/>
+    <rdfs:label xml:lang="en">Include</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/ns/odrl/2/attribute">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+    <j.0:includedIn rdf:resource="http://www.w3.org/ns/odrl/2/use"/>
+    <rdfs:label xml:lang="en">Attribute</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/ns/odrl/2/lease">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+    <rdfs:label xml:lang="en">Lease</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://creativecommons.org/ns#CommericalUse">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+    <j.0:includedIn rdf:resource="http://www.w3.org/ns/odrl/2/use"/>
+    <rdfs:label xml:lang="en">Commercial Use</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://creativecommons.org/ns#DerivativeWorks">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+    <j.0:includedIn rdf:resource="http://www.w3.org/ns/odrl/2/use"/>
+    <rdfs:label xml:lang="en">Derivative Works</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/ns/odrl/2/print">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+    <j.0:includedIn rdf:resource="http://www.w3.org/ns/odrl/2/use"/>
+    <rdfs:label xml:lang="en">Print</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/ns/odrl/2/ensureExclusivity">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+    <j.0:includedIn rdf:resource="http://www.w3.org/ns/odrl/2/use"/>
+    <rdfs:label xml:lang="en">Ensure Exclusivity</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/ns/odrl/2/present">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+    <j.0:includedIn rdf:resource="http://www.w3.org/ns/odrl/2/use"/>
+    <rdfs:label xml:lang="en">Present</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/ns/odrl/2/commercialize">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+    <rdfs:label xml:lang="en">Commercialize</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/ns/odrl/2/derive">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+    <j.0:includedIn rdf:resource="http://www.w3.org/ns/odrl/2/use"/>
+    <rdfs:label xml:lang="en">Derive</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://creativecommons.org/ns#Distribution">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+    <j.0:includedIn rdf:resource="http://www.w3.org/ns/odrl/2/use"/>
+    <rdfs:label xml:lang="en">Distribution</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/ns/odrl/2/attachSource">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+    <skos:exactMatch>
+      <skos:Concept rdf:about="http://creativecommons.org/ns#SourceCode">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+        <j.0:includedIn rdf:resource="http://www.w3.org/ns/odrl/2/use"/>
+        <rdfs:label xml:lang="en">Source Code</rdfs:label>
+        <skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
+      </skos:Concept>
+    </skos:exactMatch>
+    <rdfs:label xml:lang="en">Attach source</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/ns/odrl/2/give">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+    <j.0:includedIn>
+      <skos:Concept rdf:about="http://www.w3.org/ns/odrl/2/transfer">
+        <rdfs:label xml:lang="en">Transfer Ownership</rdfs:label>
+        <skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+      </skos:Concept>
+    </j.0:includedIn>
+    <rdfs:label xml:lang="en">Give</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/ns/odrl/2/sell">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+    <j.0:includedIn rdf:resource="http://www.w3.org/ns/odrl/2/transfer"/>
+    <rdfs:label xml:lang="en">Sell</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
+  </skos:Concept>
+</rdf:RDF>

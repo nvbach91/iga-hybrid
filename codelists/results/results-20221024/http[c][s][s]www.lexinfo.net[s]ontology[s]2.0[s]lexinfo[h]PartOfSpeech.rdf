@@ -1,0 +1,706 @@
+<rdf:RDF
+    xmlns:dct="http://purl.org/dc/terms/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+  <owl:ObjectProperty rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#partOfSpeech">
+    <rdfs:comment>Term used to describe how a particular word is used in a sentence.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:comment>A category assigned to a word based on its grammatical and semantic properties.</rdfs:comment>
+    <rdfs:label>part of speech</rdfs:label>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech">
+        <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#existentialPronoun">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>existential pronoun</rdfs:label>
+    <rdfs:comment>pronoun that indicates the existence of something or someone</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#exclamativePoint">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>exclamative point</rdfs:label>
+    <rdfs:comment>Special sign (!) usually used in writing to mark exclamation.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#negativePronoun">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>negative pronoun</rdfs:label>
+    <rdfs:comment>Pronoun used in a context of a negation or for expressing a negation.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#strongPersonalPronoun">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>strong personal pronoun</rdfs:label>
+    <rdfs:comment>Personal pronoun that can occupy the position after a preposition and/or reinforce a weak personal pronoun.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#relativePronoun">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>relative pronoun</rdfs:label>
+    <rdfs:comment>Pronoun which introduces a relative clause and refers to something that has been said before.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#adjective">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>adjective</rdfs:label>
+    <rdfs:comment>Part of speech related to attributes of noun.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#indefiniteArticle">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>indefinite article</rdfs:label>
+    <rdfs:comment>Article not capable of expressing identification.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#distinctiveParticle">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>distinctive particle</rdfs:label>
+    <rdfs:comment>distinctive particle</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#compoundPreposition">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>compound preposition</rdfs:label>
+    <rdfs:comment>Preposition that is a aggregation of words</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#interrogativeDeterminer">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>interrogative determiner</rdfs:label>
+    <rdfs:comment>Determiner used to express a question.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#conditionalPronoun">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>conditional pronoun</rdfs:label>
+    <rdfs:comment>conditional pronoun</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#indefinitePronoun">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>indefinite pronoun</rdfs:label>
+    <rdfs:comment>Pronoun that does not allow reference.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#cardinalNumeral">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>cardinal numeral</rdfs:label>
+    <rdfs:comment>A word denoting a number.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#adverbialPronoun">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>adverbial pronoun</rdfs:label>
+    <rdfs:comment>()</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#interrogativePronoun">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>interrogative pronoun</rdfs:label>
+    <rdfs:comment>Pronoun used to express a question.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#copula">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>copula</rdfs:label>
+    <rdfs:comment>Special word that combines the subject of a sentence and its description.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#generalAdverb">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>general adverb</rdfs:label>
+    <rdfs:comment>Adverb belonging to the general class of adverbs</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#multiplicativeNumeral">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>multiplicative numeral</rdfs:label>
+    <rdfs:comment>A word that expresses the number of times something happened.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#reflexivePossessivePronoun">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>reflexive possessive pronoun</rdfs:label>
+    <rdfs:comment>A possessive pronoun that refers to the subject as the possessor.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#numeralFraction">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>numeral fraction</rdfs:label>
+    <rdfs:comment>Word used to denote the denominator of a fraction.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#partitiveArticle">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>partitive article</rdfs:label>
+    <rdfs:comment>Article expressing a part or quantity.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#closeParenthesis">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>close parenthesis</rdfs:label>
+    <rdfs:comment>End of a parenthesis pair.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#fusedPronounAuxiliary">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>fused pronoun auxiliary</rdfs:label>
+    <rdfs:comment>word resulting from the aggregation of a pronoun and an auxiliary</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#possessiveRelativePronoun">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>possessive relative pronoun</rdfs:label>
+    <rdfs:comment>A relative pronoun whose antecedent is the possessor of the subject or object in the relative clause.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#conjunction">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>conjunction</rdfs:label>
+    <rdfs:comment>Word that syntactically links words or constituents, and expresses a semantic relationship between them.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#demonstrativeDeterminer">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>demonstrative determiner</rdfs:label>
+    <rdfs:comment>Determiner used to point to an entity in the situation or elsewhere in a sentence.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#conditionalParticle">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>conditional particule</rdfs:label>
+    <rdfs:comment>conditional particule</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#relativeParticle">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>relative particle</rdfs:label>
+    <rdfs:comment>relative particle</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#fusedPrepositionPronoun">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>fused preposition pronoun</rdfs:label>
+    <rdfs:comment>word resulting from the aggregation of a preposition and a pronoun</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#modal">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>modal</rdfs:label>
+    <rdfs:comment>Verb form that is usually used with another verb to express ideas such as possibilities, permission, or intention.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#lightVerb">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>light verb</rdfs:label>
+    <rdfs:comment>verb participating in a complex predication that has little semantic content of its own.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#particle">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>particle</rdfs:label>
+    <rdfs:comment>Word that does not belong to one of the main classes of words, is invariable in form, and typically has grammatical or pragmatic meaning.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#mainVerb">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>main verb</rdfs:label>
+    <rdfs:comment>Main verb in contrast to a modal or an auxiliary.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#possessiveParticle">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>possessive particle</rdfs:label>
+    <rdfs:comment>Particle expressing ownship.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#interrogativeRelativePronoun">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>interrogative relative pronoun</rdfs:label>
+    <rdfs:comment>pronoun which may act as a relative pronoun or an interrogative one</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#superlativeParticle">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>superlative particle</rdfs:label>
+    <rdfs:comment>Particle expressing superlative degree. Superlative is the comparison between more than two entities and contrasts with comparative where only two entities are involved and positive where no comparison is implied.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#possessiveDeterminer">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>possessive determiner</rdfs:label>
+    <rdfs:comment>Determiner that expresses ownership.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#coordinatingConjunction">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>coordinating conjunction</rdfs:label>
+    <rdfs:comment>Conjunction that links constituents.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#suspensionPoints">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>suspension points</rdfs:label>
+    <rdfs:comment>Sequence of three dots having the same meaning as &amp;quot;et cetera&amp;quot; (full form) or &amp;quot;etc&amp;quot; (abbreviated form).</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#comma">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>comma</rdfs:label>
+    <rdfs:comment>Mark (,) used in writing to show a short pause or to separate items in a list.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#preposition">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>preposition</rdfs:label>
+    <rdfs:comment>Adposition placed at the beginning of a noun phrase.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#subordinatingConjunction">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>subordinating conjunction</rdfs:label>
+    <rdfs:comment>Conjunction that links constructions by making one of them a constituent of another. The subordinating conjunction typically marks the incorporated constituent.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#interrogativeCardinalNumeral">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>interrogative cardinal numeral</rdfs:label>
+    <rdfs:comment>An interrogative/relative word used to ask about quantity.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#demonstrativePronoun">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>demonstrative pronoun</rdfs:label>
+    <rdfs:comment>Pronoun used to point to an entity in the situation or elsewhere in a sentence.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#pastParticipleAdjective">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>past participle adjective</rdfs:label>
+    <rdfs:comment>Adjective based on a past participle.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#exclamativeDeterminer">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>exclamative determiner</rdfs:label>
+    <rdfs:comment>Determiner expressing an emotional utterance and marked with a strong intonation.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#semiColon">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>semi-colon</rdfs:label>
+    <rdfs:comment>Sign (;) usually used to separate phrases.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#reflexiveDeterminer">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>reflexive adjective</rdfs:label>
+    <rdfs:comment>Determiner that refers to the same entity.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#plainVerb">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>plain verb</rdfs:label>
+    <rdfs:comment>verb which has its own semantics</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#exclamativePronoun">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>exclamative pronoun</rdfs:label>
+    <rdfs:comment>Pronoun marked with an emotional utterance and/or a strong intonation.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#futureParticle">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>future particle</rdfs:label>
+    <rdfs:comment>Particle used in order to express future.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#pronominalAdverb">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>pronominal adverb</rdfs:label>
+    <rdfs:comment>adverb formed in replacement of a preposition and a pronoun</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#questionMark">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>question mark</rdfs:label>
+    <rdfs:comment>Sign used to express a question.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#participleAdjective">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>participle adjective</rdfs:label>
+    <rdfs:comment>Adjective based on a verb.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#comparativeParticle">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>comparative particle</rdfs:label>
+    <rdfs:comment>Particle used to compare.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#definiteArticle">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>definite article</rdfs:label>
+    <rdfs:comment>Article that allows the reference to a specific, identifiable entity (or class of entities).</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#negativeParticle">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>negative particle</rdfs:label>
+    <rdfs:comment>Particle used to express negation.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#fusedPreposition">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>fused preposition</rdfs:label>
+    <rdfs:comment>Preposition that is the result of a morphological merge from at least two words.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#adverb">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>adverb</rdfs:label>
+    <rdfs:comment>Part of speech to refer to an heterogeneous group of words whose most frequent function is to specify the mode of action of the verb.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#emphaticPronoun">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>emphatic pronoun</rdfs:label>
+    <rdfs:comment>An emphatic pronoun is a personal pronoun that is used to emphasize its referent.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#interrogativeMultiplicativeNumeral">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>interrogative multiplicative numeral</rdfs:label>
+    <rdfs:comment>An interrogative/relative word used to ask about the number of times something happened.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#openParenthesis">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>open parenthesis</rdfs:label>
+    <rdfs:comment>Beginning of a pair of parenthesis.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#generalizationWord">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>generalization word</rdfs:label>
+    <rdfs:comment>A word that does not carry its own meaning but generalizes the meaning of a neighboring word, adding the &amp;quot;etc.&amp;quot; sense.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#article">
+    <rdfs:comment>Term used in the grammatical classification of words referring to a subclass of determiners which displays a primary role in differentiating the uses of nouns.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>article</rdfs:label>
+    <rdfs:comment>...</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#deficientVerb">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>deficient verb</rdfs:label>
+    <rdfs:comment>verb lacking certain morphosyntactic properties</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#indefiniteDeterminer">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>indefinite determiner</rdfs:label>
+    <rdfs:comment>Determiner not capable of identification.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#verb">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>verb</rdfs:label>
+    <rdfs:comment>Element which, singly or in combination with other verbs is used as the minimal predicate of a sentence, co-occurring with a subject. If the predicate contains other elements (e.g. object, complement), then it is the verb which more than any other is the unit which influences the choice and extent of these elements.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#affirmativeParticle">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>affirmative particule</rdfs:label>
+    <rdfs:comment>Particle used to express affirmation.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#prepositionalAdverb">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>prepositional adverb</rdfs:label>
+    <rdfs:comment>adverb which is very similar in its form to a preposition</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#possessivePronoun">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>possessive pronoun</rdfs:label>
+    <rdfs:comment>Pronoun that expresses ownership and relationships like ownership, such as kinship, and other forms of association.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#interjection">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>interjection</rdfs:label>
+    <rdfs:comment>Word or sound that expresses an emotion.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#possessiveAdjective">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>possessive adjective</rdfs:label>
+    <rdfs:comment>An adjective derived from a noun and denoting possession by the object described by the noun.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#determiner">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>determiner</rdfs:label>
+    <rdfs:comment>Word or affix that belongs to a class of noun modifiers that expresses the reference, including quantity, of a noun.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#diminutiveNoun">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>diminutive noun</rdfs:label>
+    <rdfs:comment>diminutive noun</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#pronoun">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>pronoun</rdfs:label>
+    <rdfs:comment>Word used in place of a noun or a noun phrase.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#properNoun">
+    <rdfs:label>properNoun</rdfs:label>
+    <rdfs:comment>A noun or adjective denoting a single object.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>proper noun</rdfs:label>
+    <rdfs:comment>Noun that is the name of a specific individual, place, or object.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#reciprocalPronoun">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>reciprocal pronoun</rdfs:label>
+    <rdfs:comment>Pronoun expressing mutual relationship.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#impersonalPronoun">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>impersonal pronoun</rdfs:label>
+    <rdfs:comment>Pronoun lacking person referent.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#genericNumeral">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>generic numeral</rdfs:label>
+    <rdfs:comment>A numeral used to indicate the number of sets/kinds of objects.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#point">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>point</rdfs:label>
+    <rdfs:comment>Sign (.) used to expresses the end of a sentence or an abbreviation.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#ordinalAdjective">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>ordinal adjective</rdfs:label>
+    <rdfs:comment>Adjective/numeral/number expressing a numeric ranking.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#presentativePronoun">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>presentative pronoun</rdfs:label>
+    <rdfs:comment>pronoun that identify the current locative or temporal situation</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#numeral">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>numeral</rdfs:label>
+    <rdfs:comment>Part of speech that expresses a number or the relation to a number.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#indefiniteCardinalNumeral">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>indefinite cardinal numeral</rdfs:label>
+    <rdfs:comment>A word used to express imprecise quantity.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#unclassifiedParticle">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>unclassified particle</rdfs:label>
+    <rdfs:comment>Particle that is not covered by other sorts of particle definitions.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#circumposition">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>circumposition</rdfs:label>
+    <rdfs:comment>Adposition which consists of two parts which are positioned ahead and after the adpositional foci.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#interrogativeOrdinalNumeral">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>interrogative ordinal numeral</rdfs:label>
+    <rdfs:comment>An interrogative/relative word used to ask about numeric ranking.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#affixedPersonalPronoun">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>affixed personal pronoun</rdfs:label>
+    <rdfs:comment>Personnal pronoun that is affixed, i.e. added as an affix to another word.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#adposition">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>adposition</rdfs:label>
+    <rdfs:comment>Part of speech that occurs before/inside/after a complement composed of a noun phrase, noun, pronoun or clause that functions as a noun phrase and form a single structure with the complement to express its grammatical and semantic relation to another unit.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#indefiniteOrdinalNumeral">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>indefinite ordinal numeral</rdfs:label>
+    <rdfs:comment>A word used to indicate imprecise rank of an object in a sequence.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#irreflexivePersonalPronoun">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>irreflexive personal pronoun</rdfs:label>
+    <rdfs:comment>personal pronoun which is not reflexive</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#colon">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>colon</rdfs:label>
+    <rdfs:comment>Sign with two vertical points that is used in writing and printing to introduce an explanation, example or quotation.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#slash">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>slash</rdfs:label>
+    <rdfs:comment>The punctuation sign /</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#postposition">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>postposition</rdfs:label>
+    <rdfs:comment>Adposition that appears at the end of the noun phrase.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#interrogativeParticle">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>interrogative particle</rdfs:label>
+    <rdfs:comment>Particle used to express a question.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#reflexivePersonalPronoun">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>reflexive personal pronoun</rdfs:label>
+    <rdfs:comment>personal pronoun which is reflexive</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#noun">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>noun</rdfs:label>
+    <rdfs:comment>Part of speech used to express the name of a person, place, action or thing.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#bullet">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>bullet</rdfs:label>
+    <rdfs:comment>Sign used to mark an item in a list.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#presentParticipleAdjective">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>present participle adjective</rdfs:label>
+    <rdfs:comment>Adjective based on a present participle.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#fusedPrepositionDeterminer">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>fused preposition determiner</rdfs:label>
+    <rdfs:comment>word resulting from the aggregation of a proposition and a determiner</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#relationNoun">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>relation noun</rdfs:label>
+    <rdfs:comment>relation noun</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#collectivePronoun">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>collective pronoun</rdfs:label>
+    <rdfs:comment>A pronoun that refers to all elements of a set.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#allusivePronoun">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>allusive pronoun</rdfs:label>
+    <rdfs:comment>Pronoun that refers to something characterized by allusions.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#weakPersonalPronoun">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>weak personal pronoun</rdfs:label>
+    <rdfs:comment>Personal pronoun that cannot occupy the position after a preposition and/or reinforce a strong personal pronoun.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#personalPronoun">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>personal pronoun</rdfs:label>
+    <rdfs:comment>Pronoun referring a person.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#commonNoun">
+    <rdfs:label>common noun</rdfs:label>
+    <rdfs:comment>A noun or adjective denoting a class of objects.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>commonNoun</rdfs:label>
+    <rdfs:comment>Noun that signifies a non-specific member of a group.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#invertedComma">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>inverted comma</rdfs:label>
+    <rdfs:comment>Inverted comma.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#indefiniteMultiplicativeNumeral">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>indefinite multiplicative numeral</rdfs:label>
+    <rdfs:comment>A word indicating imprecise number of times something happened.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#qualifierAdjective">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>qualifier adjective</rdfs:label>
+    <rdfs:comment>Adjective used to qualify.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#punctuation">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>punctuation</rdfs:label>
+    <rdfs:comment>Graphical mark used either at word level to indicate an abbreviation or at a text level to separate phrases or sentences.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#infinitiveParticle">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>infinitive particle</rdfs:label>
+    <rdfs:comment>Particle used to express infinitive.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#coordinationParticle">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>coordination particle</rdfs:label>
+    <rdfs:comment>particle for coordination</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#relativeDeterminer">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>relative determiner</rdfs:label>
+    <rdfs:comment>Determiner related to a referent.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </skos:Concept>
+</rdf:RDF>

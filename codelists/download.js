@@ -74,11 +74,18 @@ const createCodeListQuery = (codeListIri, vocabIri) => `
         ?ap rdfs:label ?apLabel .
         ?ap rdfs:comment ?apComment .
         ?ap a ?apType .
+        <${vocabIri}> a owl:Ontology .
+        ?cl rdfs:isDefinedBy <${vocabIri}> .
+        ?c1 rdfs:isDefinedBy <${vocabIri}> .
+        ?c2 rdfs:isDefinedBy <${vocabIri}> .
+        ?ap rdfs:isDefinedBy <${vocabIri}> .
+        ?dt rdfs:isDefinedBy <${vocabIri}> .
     }
     FROM <${vocabIri}>
     WHERE {
         BIND(<${codeListIri}> AS ?cl)
         ?c1 a ?cl .
+        FILTER NOT EXISTS { ?c1 a owl:Ontology }
         OPTIONAL { ?c1 rdfs:label|dc:title|dct:title ?c1Label . FILTER(LANGMATCHES(LANG(?c1Label), "en") || LANGMATCHES(LANG(?c1Label), "")) }
         OPTIONAL { ?c1 rdfs:comment|dc:description|dct:description ?c1Comment . FILTER(LANGMATCHES(LANG(?c1Comment), "en") || LANGMATCHES(LANG(?c1Comment), "")) }
         OPTIONAL {

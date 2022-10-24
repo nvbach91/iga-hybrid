@@ -1,0 +1,52 @@
+<rdf:RDF
+    xmlns:dct="http://purl.org/dc/terms/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+  <owl:ObjectProperty rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#aspect">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:comment>Category associated to verbs and referring to the way the grammar marks the duration or type of temporal activity.</rdfs:comment>
+    <rdfs:label>aspect</rdfs:label>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#Aspect">
+        <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#perfective">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>perfective</rdfs:label>
+    <rdfs:comment>Perfective aspect is an aspect that expresses a temporal view of an event or state as a simple whole, apart from the consideration of the internal structure of the time in which it occurs.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#Aspect"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#inchoative">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>inchoative</rdfs:label>
+    <rdfs:comment>Aspect that expresses the beginning of an event or state.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#Aspect"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#imperfective">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>imperfective</rdfs:label>
+    <rdfs:comment>Imperfective aspect is an aspect that expresses an event or state, with respect to its internal structure, instead of expressing it as a simple whole.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#Aspect"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#unaccomplished">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>unaccomplished</rdfs:label>
+    <rdfs:comment>aspect that expresses an event or state that is not finished.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#Aspect"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#cessative">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>cessative</rdfs:label>
+    <rdfs:comment>Aspect that expresses the cessation of an event or state.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#Aspect"/>
+  </skos:Concept>
+</rdf:RDF>

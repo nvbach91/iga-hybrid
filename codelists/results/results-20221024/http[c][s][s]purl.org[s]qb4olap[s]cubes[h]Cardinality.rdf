@@ -1,0 +1,61 @@
+<rdf:RDF
+    xmlns:dct="http://purl.org/dc/terms/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://purl.org/qb4olap/cubes"/>
+  <rdf:Property rdf:about="http://purl.org/qb4olap/cubes#cardinality">
+    <rdfs:label xml:lang="en">cardinality constraint</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/qb4olap/cubes"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment xml:lang="en">An alternative to qb:componentProperty which allows to specify a cardinality constraint in fact-level relationship</rdfs:comment>
+    <rdfs:label xml:lang="en">cardinality</rdfs:label>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://purl.org/qb4olap/cubes#Cardinality">
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/qb4olap/cubes"/>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://purl.org/qb4olap/cubes#pcCardinality">
+    <rdfs:label xml:lang="en">cardinality constraint</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/qb4olap/cubes"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment xml:lang="en">A property which allows to specify a cardinality constraint in a parent-child relationship</rdfs:comment>
+    <rdfs:label xml:lang="en">cardinality</rdfs:label>
+    <rdfs:domain>
+      <rdf:Description rdf:about="http://purl.org/qb4olap/cubes#HierarchyStep">
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/qb4olap/cubes"/>
+      </rdf:Description>
+    </rdfs:domain>
+    <rdfs:range rdf:resource="http://purl.org/qb4olap/cubes#Cardinality"/>
+  </rdf:Property>
+  <skos:Concept rdf:about="http://purl.org/qb4olap/cubes#ManyToMany">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/qb4olap/cubes"/>
+    <rdfs:label xml:lang="en">N-M cardinality</rdfs:label>
+    <rdfs:comment xml:lang="en">Represents N-M cardinality constraint</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/qb4olap/cubes#Cardinality"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/qb4olap/cubes#ManyToOne">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/qb4olap/cubes"/>
+    <rdfs:label xml:lang="en">N-1 cardinality</rdfs:label>
+    <rdfs:comment xml:lang="en">Represents N-1 cardinality constraint</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/qb4olap/cubes#Cardinality"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/qb4olap/cubes#OneToOne">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/qb4olap/cubes"/>
+    <rdfs:label xml:lang="en">1_1 cardinality</rdfs:label>
+    <rdfs:comment xml:lang="en">Represents 1-1 cardinality constraint</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/qb4olap/cubes#Cardinality"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/qb4olap/cubes#OneToMany">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/qb4olap/cubes"/>
+    <rdfs:label xml:lang="en">1-N cardinality</rdfs:label>
+    <rdfs:comment xml:lang="en">Represents 1-N cardinality constraint</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/qb4olap/cubes#Cardinality"/>
+  </skos:Concept>
+</rdf:RDF>

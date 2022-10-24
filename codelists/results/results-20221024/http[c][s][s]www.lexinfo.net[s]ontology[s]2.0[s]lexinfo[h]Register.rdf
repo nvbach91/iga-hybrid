@@ -1,0 +1,81 @@
+<rdf:RDF
+    xmlns:dct="http://purl.org/dc/terms/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+  <owl:ObjectProperty rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#register">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:comment>Classification indicating the relative level of language individually assigned to a lexeme or term or to a text type.</rdfs:comment>
+    <rdfs:label>register</rdfs:label>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#Register">
+        <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#vulgarRegister">
+    <rdfs:comment>Register of a term or text type that can be characterized as profane or socially unacceptable.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>vulgar register</rdfs:label>
+    <rdfs:comment>The register of a term or text type that can be characterized as profane or socially unacceptable.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#Register"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#benchLevelRegister">
+    <rdfs:comment>The register of terms used in applications-oriented as opposed to theoretical or academic levels of language.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>bench-level register</rdfs:label>
+    <rdfs:comment>Register of terms used in applications-oriented as opposed to theoretical or academic levels of language.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#Register"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#formalRegister">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#Register"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#inHouseRegister">
+    <rdfs:comment>Register of terms that are company-specific and not readily recognized outside this environment.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>in house register</rdfs:label>
+    <rdfs:comment>The register of terms that are company-specific and not readily recognized outside this environment.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#Register"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#dialectRegister">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#Register"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#neutralRegister">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>neutral register</rdfs:label>
+    <rdfs:comment>The register appropriate to general texts or discourse.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#Register"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#facetiousRegister">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#Register"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#slangRegister">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>slang register</rdfs:label>
+    <rdfs:comment>An extremely informal register of a word, term, or text that is used in spoken and everyday language and less commonly in documents.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#Register"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#tabooRegister">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#Register"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#technicalRegister">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <rdfs:label>technical register</rdfs:label>
+    <rdfs:comment>The register appropriate to scientific texts or special languages.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#Register"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#ironicRegister">
+    <rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+    <skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#Register"/>
+  </skos:Concept>
+</rdf:RDF>

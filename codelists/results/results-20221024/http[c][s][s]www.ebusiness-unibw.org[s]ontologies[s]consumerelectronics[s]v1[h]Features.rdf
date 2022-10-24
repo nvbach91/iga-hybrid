@@ -1,0 +1,178 @@
+<rdf:RDF
+    xmlns:dct="http://purl.org/dc/terms/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
+  <owl:ObjectProperty rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#hasFeature">
+    <rdfs:isDefinedBy rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
+    <rdfs:comment xml:lang="en">Defines the type of special functions the object is capable of.</rdfs:comment>
+    <rdfs:label xml:lang="en">feature</rdfs:label>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#Features">
+        <rdfs:isDefinedBy rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#TextViewing">
+    <rdfs:isDefinedBy rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
+    <rdfs:label xml:lang="en">Text viewing</rdfs:label>
+    <rdfs:comment xml:lang="en">Ability to display text.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#Features"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#Clock">
+    <rdfs:isDefinedBy rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
+    <rdfs:label xml:lang="en">Clock</rdfs:label>
+    <rdfs:comment xml:lang="en">Can display the current time.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#Features"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#Flash">
+    <rdfs:isDefinedBy rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
+    <rdfs:label xml:lang="en">Flash</rdfs:label>
+    <rdfs:comment xml:lang="en">Is a device used in photography that produces an instantaneous flash of artificial light.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#Features"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#SelfTimer">
+    <rdfs:isDefinedBy rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
+    <rdfs:label xml:lang="en">Self-timer</rdfs:label>
+    <rdfs:comment xml:lang="en">Ability to give a delay between the pressing of the shutter release and the shutter firing.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#Features"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#Radio">
+    <rdfs:isDefinedBy rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
+    <rdfs:label xml:lang="en">Radio</rdfs:label>
+    <rdfs:comment xml:lang="en">Ability to recieve radiosignal.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#Features"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#BacklightMode">
+    <rdfs:isDefinedBy rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
+    <rdfs:label xml:lang="en">Backlight mode</rdfs:label>
+    <rdfs:comment xml:lang="en">Ability to photograph against a light source.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#Features"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#DocumentViewing">
+    <rdfs:isDefinedBy rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
+    <rdfs:label xml:lang="en">Document viewing</rdfs:label>
+    <rdfs:comment xml:lang="en">Ability to display documents.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#Features"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#EconomicalMode">
+    <rdfs:isDefinedBy rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
+    <rdfs:label xml:lang="en">Economical mode</rdfs:label>
+    <rdfs:comment xml:lang="en">Equipment that allows economical printing.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#Features"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#RedEyeReduction">
+    <rdfs:isDefinedBy rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
+    <rdfs:label xml:lang="en">Red eye reduction</rdfs:label>
+    <rdfs:comment xml:lang="en">Defines the ability to precede the flash with a series of short, low-power flashes, or a continuous piercing bright light triggering the iris to contract.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#Features"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#AudioInput">
+    <rdfs:isDefinedBy rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
+    <rdfs:label xml:lang="en">Audio input</rdfs:label>
+    <rdfs:comment xml:lang="en">Defines the support of a computer soundcard driver protocol for digital audio specified by Steinberg, providing a low-latency and high fidelity interface between a software application and a computer's sound card.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#Features"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#Alert">
+    <rdfs:isDefinedBy rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
+    <rdfs:label xml:lang="en">Alert</rdfs:label>
+    <rdfs:comment xml:lang="en">Has wakeup-function.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#Features"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#LightExposureControl">
+    <rdfs:isDefinedBy rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
+    <rdfs:label xml:lang="en">Light exposure control</rdfs:label>
+    <rdfs:comment xml:lang="en">Is the total amount of light allowed to fall on the photographic medium during the process of taking a photograph.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#Features"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#Snapshot">
+    <rdfs:isDefinedBy rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
+    <rdfs:label xml:lang="en">Snapshot</rdfs:label>
+    <rdfs:comment xml:lang="en">Is a shot that is aimed and fired very quickly at a target that appears suddenly and for a very short period of time.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#Features"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#VoiceRecording">
+    <rdfs:isDefinedBy rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
+    <rdfs:label xml:lang="en">Voicerecorder</rdfs:label>
+    <rdfs:comment xml:lang="en">Ability to record sounds with a micro.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#Features"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#ColorPrint">
+    <rdfs:isDefinedBy rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
+    <rdfs:label xml:lang="en">Color print</rdfs:label>
+    <rdfs:comment xml:lang="en">The reproduction of an image or text in color on a paper.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#Features"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#FaceIdendification">
+    <rdfs:isDefinedBy rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
+    <rdfs:label xml:lang="en">Face identification</rdfs:label>
+    <rdfs:comment xml:lang="en">Ability to identify the face and to justify the picture to it.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#Features"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#Microphon">
+    <rdfs:isDefinedBy rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
+    <rdfs:label xml:lang="en">Microphon</rdfs:label>
+    <rdfs:comment xml:lang="en">Ability to record voices and sounds.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#Features"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#LineInRecorder">
+    <rdfs:isDefinedBy rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
+    <rdfs:label xml:lang="en">Line in recorder</rdfs:label>
+    <rdfs:comment xml:lang="en">Ability to record sounds via cable connection.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#Features"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#PictureViewing">
+    <rdfs:isDefinedBy rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
+    <rdfs:label xml:lang="en">Picture viewing</rdfs:label>
+    <rdfs:comment xml:lang="en">Ability to display digital pictures.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#Features"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#VideoPlayBack">
+    <rdfs:isDefinedBy rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
+    <rdfs:label xml:lang="en">Video play back</rdfs:label>
+    <rdfs:comment xml:lang="en">Ability to display video files.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#Features"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#DuplexPrint">
+    <rdfs:isDefinedBy rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
+    <rdfs:label xml:lang="en">Duplex print</rdfs:label>
+    <rdfs:comment xml:lang="en">A feature of computer printers and MFPs that allows the automatic printing of a sheet of paper on both sides.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#Features"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#Shuffle">
+    <rdfs:isDefinedBy rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
+    <rdfs:label xml:lang="en">Shuffle</rdfs:label>
+    <rdfs:comment xml:lang="en">Ability to play files in random order.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#Features"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#Playlist">
+    <rdfs:isDefinedBy rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
+    <rdfs:label xml:lang="en">Playlist</rdfs:label>
+    <rdfs:comment xml:lang="en">Ability to put audiofiles in a playlist.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#Features"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#VideoRecording">
+    <rdfs:isDefinedBy rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
+    <rdfs:label xml:lang="en">Video recording</rdfs:label>
+    <rdfs:comment xml:lang="en">Ability to record videos.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#Features"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#WindFilter">
+    <rdfs:isDefinedBy rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
+    <rdfs:label xml:lang="en">Wind filter</rdfs:label>
+    <rdfs:comment xml:lang="en">Ability to filter out wind noises.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#Features"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#AutomaticPictureStabilizer">
+    <rdfs:isDefinedBy rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
+    <rdfs:label xml:lang="en">Automatic picture stabilizer</rdfs:label>
+    <rdfs:comment xml:lang="en">A device used to stabilize a picture in order to keep it in a steady position.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#Features"/>
+  </skos:Concept>
+</rdf:RDF>

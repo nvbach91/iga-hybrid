@@ -1,0 +1,595 @@
+<rdf:RDF
+    xmlns:dct="http://purl.org/dc/terms/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://data.ign.fr/def/topo"/>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Pecherie">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader>
+      <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/PAIHydrographie">
+        <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+        <skos:inScheme>
+          <skos:ConceptScheme rdf:about="http://data.ign.fr/def/topo#TypeDeZAI">
+            <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+          </skos:ConceptScheme>
+        </skos:inScheme>
+      </skos:Concept>
+    </skos:broader>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/InfrastructureRoutiere">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader>
+      <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/PAITransport">
+        <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+        <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+      </skos:Concept>
+    </skos:broader>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/ParcDeLoisirs">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader>
+      <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/PAICultureLoisirs">
+        <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+        <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+      </skos:Concept>
+    </skos:broader>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Quartier">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader>
+      <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/PAIZoneHabitation">
+        <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+        <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+      </skos:Concept>
+    </skos:broader>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/AireDeRepos">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAITransport"/>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Musee">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAICultureLoisirs"/>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Embouchure">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIHydrographie"/>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/UsineDeTraitementDesEaux">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader>
+      <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/PAIGestionEaux">
+        <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+        <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+      </skos:Concept>
+    </skos:broader>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Mine">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader>
+      <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/PAIIndustrielCommercial">
+        <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+        <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+      </skos:Concept>
+    </skos:broader>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/BarriereDePeage">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAITransport"/>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedebatiment/BatimentIndustriel">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIIndustrielCommercial"/>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/PointDeVue">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader>
+      <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/PAIEspaceNaturel">
+        <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+        <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+      </skos:Concept>
+    </skos:broader>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Glacier">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIHydrographie"/>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Chemin">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAITransport"/>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Hippodrome">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader>
+      <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/PAISport">
+        <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+        <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+      </skos:Concept>
+    </skos:broader>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Golf">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAISport"/>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/PareFeu">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIEspaceNaturel"/>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Banc">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIHydrographie"/>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Construction">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAICultureLoisirs"/>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Amer">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIHydrographie"/>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/EtablissementThermal">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader>
+      <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/PAISante">
+        <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+        <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+      </skos:Concept>
+    </skos:broader>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/LieuDitHabite">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIZoneHabitation"/>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/CulteProtestant">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader>
+      <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/PAIReligieux">
+        <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+        <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+      </skos:Concept>
+    </skos:broader>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Dolmen">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAICultureLoisirs"/>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Refuge">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAICultureLoisirs"/>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/VillageDeVacances">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAICultureLoisirs"/>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Carrefour">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAITransport"/>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/EnseignementPrimaire">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader>
+      <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/PAIScienceEnseignement">
+        <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+        <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+      </skos:Concept>
+    </skos:broader>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/StationDeMetro">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAITransport"/>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/EtablissementPenitenciaire">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader>
+      <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/PAIAdministratifOuMilitaire">
+        <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+        <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+      </skos:Concept>
+    </skos:broader>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Hopital">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAISante"/>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedepointdeau/StationDePompage">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIGestionEaux"/>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/CulteCatholiqueOuOrthodoxe">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIReligieux"/>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Camping">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAICultureLoisirs"/>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/VoieFerree">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAITransport"/>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedebatiment/BatimentCommercial">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIIndustrielCommercial"/>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Gendarmerie">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIAdministratifOuMilitaire"/>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/PAIOrographie">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/GareVoyageursEtFret">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAITransport"/>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/EspaceMaritime">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIHydrographie"/>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Canal">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIHydrographie"/>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/AeroportInternational">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAITransport"/>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Menhir">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAICultureLoisirs"/>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/CulteIslamique">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIReligieux"/>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Port">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAITransport"/>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/OuvrageMilitaire">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIAdministratifOuMilitaire"/>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/PointDEau">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIHydrographie"/>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/LieuDitNonHabite">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIEspaceNaturel"/>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/EtablissementHospitalier">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAISante"/>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Borne">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIAdministratifOuMilitaire"/>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/EnceinteMilitaire">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIAdministratifOuMilitaire"/>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedetransportcable/Telepherique">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAITransport"/>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/MaisonForestiere">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIAdministratifOuMilitaire"/>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Vestiges">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAICultureLoisirs"/>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Perte">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIHydrographie"/>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Parking">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAITransport"/>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/HarasNational">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIIndustrielCommercial"/>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/GareRoutiere">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAITransport"/>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Echangeur">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAITransport"/>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/PosteDePolice">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIAdministratifOuMilitaire"/>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/EspacePublic">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAICultureLoisirs"/>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/HabitationTroglodytique">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAICultureLoisirs"/>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Usine">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIIndustrielCommercial"/>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/CulteIsraelite">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIReligieux"/>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/CentraleElectrique">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIIndustrielCommercial"/>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Riviere">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIHydrographie"/>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Baie">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIHydrographie"/>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/ParcZoologique">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAICultureLoisirs"/>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Grange">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIZoneHabitation"/>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedebatiment/Chateau">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIZoneHabitation"/>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/CaserneDePompiers">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIAdministratifOuMilitaire"/>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/GareFretUniquement">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAITransport"/>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Marche">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIIndustrielCommercial"/>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Science">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIScienceEnseignement"/>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/EnseignementSecondaire">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIScienceEnseignement"/>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Moulin">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIZoneHabitation"/>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedefranchissement/Cascade">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIHydrographie"/>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/EnseignementSuperieur">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIScienceEnseignement"/>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Tombeau">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIReligieux"/>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/RondPoint">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAITransport"/>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/AireDeService">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAITransport"/>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/AeroportQuelconque">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAITransport"/>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/MaisonDuParc">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAICultureLoisirs"/>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Arbre">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIEspaceNaturel"/>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Parc">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIEspaceNaturel"/>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Aerodrome">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAITransport"/>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/GareVoyageursUniquement">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAITransport"/>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/ParcDesExpositions">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAICultureLoisirs"/>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/PrefectureDeRegion">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIAdministratifOuMilitaire"/>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/ZoneIndustrielle">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIIndustrielCommercial"/>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/HotelDeDepartement">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIAdministratifOuMilitaire"/>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/PalaisDeJustice">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIAdministratifOuMilitaire"/>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Barrage">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAITransport"/>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Croix">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIReligieux"/>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Lac">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIHydrographie"/>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/MaraisSalants">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIIndustrielCommercial"/>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Aquaculture">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIIndustrielCommercial"/>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/BureauDePoste">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIAdministratifOuMilitaire"/>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Digue">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAICultureLoisirs"/>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Piscine">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAISport"/>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Marais">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIHydrographie"/>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/CulteDivers">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIReligieux"/>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Stade">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAISport"/>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedezai/HotelDeRegion">
+    <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIAdministratifOuMilitaire"/>
+    <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+  </skos:Concept>
+</rdf:RDF>

@@ -1,0 +1,41 @@
+<rdf:RDF
+    xmlns:dct="http://purl.org/dc/terms/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://purl.org/vocab/frbr/core"/>
+  <skos:Concept rdf:about="http://vocab.org/frbr/core.rdf">
+    <dct:hasFormat>
+      <skos:Concept rdf:about="http://vocab.org/frbr/core.turtle">
+        <rdfs:label>Turtle</rdfs:label>
+        <skos:inScheme>
+          <skos:ConceptScheme rdf:about="http://purl.org/dc/dcmitype/Text">
+            <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core"/>
+          </skos:ConceptScheme>
+        </skos:inScheme>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core"/>
+      </skos:Concept>
+    </dct:hasFormat>
+    <dct:hasFormat>
+      <skos:Concept rdf:about="http://vocab.org/frbr/core.json">
+        <rdfs:label>JSON</rdfs:label>
+        <skos:inScheme rdf:resource="http://purl.org/dc/dcmitype/Text"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core"/>
+      </skos:Concept>
+    </dct:hasFormat>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core"/>
+    <dct:hasFormat>
+      <skos:Concept rdf:about="http://vocab.org/frbr/core.html">
+        <rdfs:label>HTML</rdfs:label>
+        <skos:inScheme rdf:resource="http://purl.org/dc/dcmitype/Text"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core"/>
+      </skos:Concept>
+    </dct:hasFormat>
+    <skos:inScheme rdf:resource="http://purl.org/dc/dcmitype/Text"/>
+  </skos:Concept>
+</rdf:RDF>

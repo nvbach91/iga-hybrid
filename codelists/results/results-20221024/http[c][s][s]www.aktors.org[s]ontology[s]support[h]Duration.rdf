@@ -1,0 +1,61 @@
+<rdf:RDF
+    xmlns:dct="http://purl.org/dc/terms/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://www.aktors.org/ontology/support"/>
+  <owl:ObjectProperty rdf:about="http://www.aktors.org/ontology/support#has-duration">
+    <rdfs:isDefinedBy rdf:resource="http://www.aktors.org/ontology/support"/>
+    <rdfs:label>has duration</rdfs:label>
+    <rdfs:domain>
+      <rdf:Description rdf:about="http://www.aktors.org/ontology/support#Time-Interval">
+        <rdfs:isDefinedBy rdf:resource="http://www.aktors.org/ontology/support"/>
+      </rdf:Description>
+    </rdfs:domain>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://www.aktors.org/ontology/support#Duration">
+        <rdfs:isDefinedBy rdf:resource="http://www.aktors.org/ontology/support"/>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://www.aktors.org/ontology/support#twentynine-day-duration">
+    <rdfs:isDefinedBy rdf:resource="http://www.aktors.org/ontology/support"/>
+    <rdfs:label>29 day duration</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.aktors.org/ontology/support#Duration"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.aktors.org/ontology/support#thirty-day-duration">
+    <rdfs:isDefinedBy rdf:resource="http://www.aktors.org/ontology/support"/>
+    <rdfs:label>30 day duration</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.aktors.org/ontology/support#Duration"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.aktors.org/ontology/support#twelve-month-duration">
+    <rdfs:isDefinedBy rdf:resource="http://www.aktors.org/ontology/support"/>
+    <rdfs:label>12 month duration</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.aktors.org/ontology/support#Duration"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.aktors.org/ontology/support#thirtyone-day-duration">
+    <rdfs:isDefinedBy rdf:resource="http://www.aktors.org/ontology/support"/>
+    <rdfs:label>31 day duration</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.aktors.org/ontology/support#Duration"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.aktors.org/ontology/support#twentyeight-day-duration">
+    <rdfs:isDefinedBy rdf:resource="http://www.aktors.org/ontology/support"/>
+    <rdfs:label>28 day duration</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.aktors.org/ontology/support#Duration"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.aktors.org/ontology/support#twentyfour-hour-duration">
+    <rdfs:isDefinedBy rdf:resource="http://www.aktors.org/ontology/support"/>
+    <rdfs:label>24 hour duration</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.aktors.org/ontology/support#Duration"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.aktors.org/ontology/support#seven-day-duration">
+    <rdfs:isDefinedBy rdf:resource="http://www.aktors.org/ontology/support"/>
+    <rdfs:label>7 day duration</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.aktors.org/ontology/support#Duration"/>
+  </skos:Concept>
+</rdf:RDF>

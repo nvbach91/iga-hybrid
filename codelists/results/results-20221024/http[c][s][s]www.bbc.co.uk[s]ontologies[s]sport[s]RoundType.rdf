@@ -1,0 +1,91 @@
+<rdf:RDF
+    xmlns:dct="http://purl.org/dc/terms/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://www.bbc.co.uk/ontologies/sport"/>
+  <owl:ObjectProperty rdf:about="http://www.bbc.co.uk/ontologies/sport/roundType">
+    <rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/sport"/>
+    <rdfs:comment xml:lang="en-gb">Relates a round to an enumerated round type.</rdfs:comment>
+    <rdfs:label xml:lang="en-gb">roundType</rdfs:label>
+    <rdfs:domain>
+      <rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/sport/Round">
+        <rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/sport"/>
+      </rdf:Description>
+    </rdfs:domain>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://www.bbc.co.uk/ontologies/sport/RoundType">
+        <rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/sport"/>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://www.bbc.co.uk/things/round-types/play-off">
+    <rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/sport"/>
+    <skos:inScheme rdf:resource="http://www.bbc.co.uk/ontologies/sport/RoundType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.bbc.co.uk/things/round-types/race">
+    <rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/sport"/>
+    <skos:inScheme rdf:resource="http://www.bbc.co.uk/ontologies/sport/RoundType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.bbc.co.uk/things/round-types/single-elimination">
+    <rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/sport"/>
+    <skos:inScheme rdf:resource="http://www.bbc.co.uk/ontologies/sport/RoundType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.bbc.co.uk/things/round-types/quarter-final">
+    <rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/sport"/>
+    <skos:inScheme rdf:resource="http://www.bbc.co.uk/ontologies/sport/RoundType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.bbc.co.uk/things/round-types/hosted">
+    <rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/sport"/>
+    <skos:inScheme rdf:resource="http://www.bbc.co.uk/ontologies/sport/RoundType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.bbc.co.uk/things/round-types/round-of-16">
+    <rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/sport"/>
+    <skos:inScheme rdf:resource="http://www.bbc.co.uk/ontologies/sport/RoundType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.bbc.co.uk/things/round-types/semi-final">
+    <rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/sport"/>
+    <skos:inScheme rdf:resource="http://www.bbc.co.uk/ontologies/sport/RoundType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.bbc.co.uk/things/round-types/practice">
+    <rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/sport"/>
+    <skos:inScheme rdf:resource="http://www.bbc.co.uk/ontologies/sport/RoundType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.bbc.co.uk/things/round-types/group">
+    <rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/sport"/>
+    <skos:inScheme rdf:resource="http://www.bbc.co.uk/ontologies/sport/RoundType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.bbc.co.uk/things/round-types/single-group">
+    <rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/sport"/>
+    <skos:inScheme rdf:resource="http://www.bbc.co.uk/ontologies/sport/RoundType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.bbc.co.uk/things/round-types/round-of-32">
+    <rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/sport"/>
+    <skos:inScheme rdf:resource="http://www.bbc.co.uk/ontologies/sport/RoundType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.bbc.co.uk/things/round-types/home-and-home">
+    <rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/sport"/>
+    <skos:inScheme rdf:resource="http://www.bbc.co.uk/ontologies/sport/RoundType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.bbc.co.uk/things/round-types/final-qualifying">
+    <rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/sport"/>
+    <skos:inScheme rdf:resource="http://www.bbc.co.uk/ontologies/sport/RoundType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.bbc.co.uk/things/round-types/qualifying">
+    <rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/sport"/>
+    <skos:inScheme rdf:resource="http://www.bbc.co.uk/ontologies/sport/RoundType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.bbc.co.uk/things/round-types/single">
+    <rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/sport"/>
+    <skos:inScheme rdf:resource="http://www.bbc.co.uk/ontologies/sport/RoundType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.bbc.co.uk/things/round-types/final">
+    <rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/sport"/>
+    <skos:inScheme rdf:resource="http://www.bbc.co.uk/ontologies/sport/RoundType"/>
+  </skos:Concept>
+</rdf:RDF>

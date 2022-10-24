@@ -1,0 +1,166 @@
+<rdf:RDF
+    xmlns:dct="http://purl.org/dc/terms/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
+  <owl:ObjectProperty rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#hasMaxMediaFormat">
+    <rdfs:isDefinedBy rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
+    <rdfs:comment xml:lang="en">Defines the maximum size of the printed media format.</rdfs:comment>
+    <rdfs:label xml:lang="en">max media format</rdfs:label>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#MediaFormat">
+        <rdfs:isDefinedBy rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#hasPaperFormat">
+    <rdfs:isDefinedBy rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
+    <rdfs:comment xml:lang="en">Defines the supported paper formats.</rdfs:comment>
+    <rdfs:label xml:lang="en">paper format</rdfs:label>
+    <rdfs:range rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#MediaFormat"/>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#A6">
+    <rdfs:isDefinedBy rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
+    <rdfs:label xml:lang="en">A6</rdfs:label>
+    <rdfs:comment xml:lang="en">Format of the german institute for standardization: 105 x 148 mm.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#MediaFormat"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#B6">
+    <rdfs:isDefinedBy rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
+    <rdfs:label xml:lang="en">B6</rdfs:label>
+    <rdfs:comment xml:lang="en">Format of the german institute for standardization: 125 x 176 mm.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#MediaFormat"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#A8">
+    <rdfs:isDefinedBy rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
+    <rdfs:label xml:lang="en">A8</rdfs:label>
+    <rdfs:comment xml:lang="en">Format of the german institute for standardization: 52 x 74 mm.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#MediaFormat"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#B8">
+    <rdfs:isDefinedBy rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
+    <rdfs:label xml:lang="en">B8</rdfs:label>
+    <rdfs:comment xml:lang="en">Format of the german institute for standardization: 62 x 88 mm.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#MediaFormat"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#A0">
+    <rdfs:isDefinedBy rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
+    <rdfs:label xml:lang="en">A0</rdfs:label>
+    <rdfs:comment xml:lang="en">Format of the german institute for standardization: 841 x 1189 mm.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#MediaFormat"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#MediaFormatEnvelope">
+    <rdfs:isDefinedBy rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
+    <rdfs:label xml:lang="en">Media format Envelope</rdfs:label>
+    <rdfs:comment xml:lang="en">Media format that is able to assume different shapes.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#MediaFormat"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#B0">
+    <rdfs:isDefinedBy rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
+    <rdfs:label xml:lang="en">B0</rdfs:label>
+    <rdfs:comment xml:lang="en">Format of the german institute for standardization: 1000 x 1414 mm.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#MediaFormat"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#A2">
+    <rdfs:isDefinedBy rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
+    <rdfs:label xml:lang="en">A2</rdfs:label>
+    <rdfs:comment xml:lang="en">Format of the german institute for standardization: 420 x 594 mm.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#MediaFormat"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#B2">
+    <rdfs:isDefinedBy rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
+    <rdfs:label xml:lang="en">B2</rdfs:label>
+    <rdfs:comment xml:lang="en">Format of the german institute for standardization: 500 x 707 mm.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#MediaFormat"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#A4">
+    <rdfs:isDefinedBy rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
+    <rdfs:label xml:lang="en">A4</rdfs:label>
+    <rdfs:comment xml:lang="en">Format of the german institute for standardization: 210 x 297 mm.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#MediaFormat"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#B4">
+    <rdfs:isDefinedBy rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
+    <rdfs:label xml:lang="en">B4</rdfs:label>
+    <rdfs:comment xml:lang="en">Format of the german institute for standardization: 250 x 353 mm.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#MediaFormat"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#MediaFormaPostcard">
+    <rdfs:isDefinedBy rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
+    <rdfs:label xml:lang="en">Media format postcard</rdfs:label>
+    <rdfs:comment xml:lang="en">Media format that is able to assume different shapes.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#MediaFormat"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#B7">
+    <rdfs:isDefinedBy rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
+    <rdfs:label xml:lang="en">B7</rdfs:label>
+    <rdfs:comment xml:lang="en">Format of the german institute for standardization: 88 x 125 mm.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#MediaFormat"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#A5">
+    <rdfs:isDefinedBy rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
+    <rdfs:label xml:lang="en">A5</rdfs:label>
+    <rdfs:comment xml:lang="en">Format of the german institute for standardization: 148 x 210 mm.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#MediaFormat"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#B9">
+    <rdfs:isDefinedBy rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
+    <rdfs:label xml:lang="en">B9</rdfs:label>
+    <rdfs:comment xml:lang="en">Format of the german institute for standardization: 44 x 62 mm.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#MediaFormat"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#A7">
+    <rdfs:isDefinedBy rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
+    <rdfs:label xml:lang="en">A7</rdfs:label>
+    <rdfs:comment xml:lang="en">Format of the german institute for standardization: 74 x 105 mm.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#MediaFormat"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#A9">
+    <rdfs:isDefinedBy rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
+    <rdfs:label xml:lang="en">A9</rdfs:label>
+    <rdfs:comment xml:lang="en">Format of the german institute for standardization: 37 x 52 mm.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#MediaFormat"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#B1">
+    <rdfs:isDefinedBy rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
+    <rdfs:label xml:lang="en">B1</rdfs:label>
+    <rdfs:comment xml:lang="en">Format of the german institute for standardization: 707 x 1000 mm.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#MediaFormat"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#B3">
+    <rdfs:isDefinedBy rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
+    <rdfs:label xml:lang="en">B3</rdfs:label>
+    <rdfs:comment xml:lang="en">Format of the german institute for standardization: 353 x 500 mm.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#MediaFormat"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#A1">
+    <rdfs:isDefinedBy rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
+    <rdfs:label xml:lang="en">A1</rdfs:label>
+    <rdfs:comment xml:lang="en">Format of the german institute for standardization: 594 x 841 mm.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#MediaFormat"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#B5">
+    <rdfs:isDefinedBy rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
+    <rdfs:label xml:lang="en">B5</rdfs:label>
+    <rdfs:comment xml:lang="en">Format of the german institute for standardization: 176 x 250 mm.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#MediaFormat"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#A3">
+    <rdfs:isDefinedBy rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
+    <rdfs:label xml:lang="en">A3</rdfs:label>
+    <rdfs:comment xml:lang="en">Format of the german institute for standardization: 297 x 420 mm.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#MediaFormat"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#DL">
+    <rdfs:isDefinedBy rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
+    <rdfs:label xml:lang="en">DL</rdfs:label>
+    <rdfs:comment xml:lang="en">Format of the german institute for standardization: 110 x 220 mm.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#MediaFormat"/>
+  </skos:Concept>
+</rdf:RDF>

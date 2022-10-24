@@ -1,0 +1,37 @@
+<rdf:RDF
+    xmlns:dct="http://purl.org/dc/terms/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="https://www.gleif.org/ontology/Base/"/>
+  <owl:FunctionalProperty rdf:about="https://www.gleif.org/ontology/Base/hasEntityStatus">
+    <rdfs:isDefinedBy rdf:resource="https://www.gleif.org/ontology/Base/"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>has entity status</rdfs:label>
+    <rdfs:domain>
+      <rdf:Description rdf:about="https://www.gleif.org/ontology/Base/Entity">
+        <rdfs:isDefinedBy rdf:resource="https://www.gleif.org/ontology/Base/"/>
+      </rdf:Description>
+    </rdfs:domain>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="https://www.gleif.org/ontology/Base/EntityStatus">
+        <rdfs:isDefinedBy rdf:resource="https://www.gleif.org/ontology/Base/"/>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:FunctionalProperty>
+  <skos:Concept rdf:about="https://www.gleif.org/ontology/Base/EntityStatusInactive">
+    <rdfs:isDefinedBy rdf:resource="https://www.gleif.org/ontology/Base/"/>
+    <rdfs:label>inactive</rdfs:label>
+    <skos:inScheme rdf:resource="https://www.gleif.org/ontology/Base/EntityStatus"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://www.gleif.org/ontology/Base/EntityStatusActive">
+    <rdfs:isDefinedBy rdf:resource="https://www.gleif.org/ontology/Base/"/>
+    <rdfs:label>active</rdfs:label>
+    <skos:inScheme rdf:resource="https://www.gleif.org/ontology/Base/EntityStatus"/>
+  </skos:Concept>
+</rdf:RDF>
