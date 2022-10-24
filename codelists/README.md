@@ -1,6 +1,6 @@
-# Download code lists from LOV SPARQL endpoint
+# Extracting code lists from LOV dataset SPARQL endpoint
 - prerequisites: node.js 16.18.0
-- usage: `$> node download.js`
+- usage: `$> node extract.js`
 - config: `./config.json`
   - Specify one of the endpoint urls in the `./config.json` file
 
