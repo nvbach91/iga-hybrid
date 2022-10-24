@@ -49,7 +49,7 @@ Result sample:
 ### Upload these files to your triplestore
 -  e.g. to Blazegraph using [nvbach91/blazegraph-upload](https://github.com/nvbach91/blazegraph-upload)
 
-### Code lists SPARQL endpoint
+### A working code lists SPARQL endpoint prepared for you
 - workbench: https://fcp.vse.cz/blazegraphpublic/#namespaces
 - endpoint: https://fcp.vse.cz/blazegraphpublic/namespace/codelists/sparql
 

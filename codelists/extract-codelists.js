@@ -53,6 +53,10 @@ const axiosConfig = {
             ?c1 ?p ?c2 .
         }
     } */
+const labelProps = 'rdfs:label|dc:title|dct:title';
+const commentProps = 'rdfs:comment|dc:description|dct:description';
+const filterLangs = (v) => `FILTER(LANGMATCHES(LANG(${v}), "en") || LANGMATCHES(LANG(${v}), ""))`;
+
 const createCodeListQuery = (codeListIri, vocabIri) => `
     ${Object.keys(prefixes).map((prefix) => `PREFIX ${prefix}: <${prefixes[prefix]}>`).join('\n')}
     # ?cl = code list
@@ -66,6 +70,8 @@ const createCodeListQuery = (codeListIri, vocabIri) => `
         ?cl a skos:ConceptScheme .
         ?c1 a skos:Concept .
         ?c1 skos:inScheme ?cl .
+        ?cl rdfs:comment ?clComment .
+        ?cl rdfs:label ?clComment .
         ?c1 rdfs:comment ?c1Comment .
         ?c1 rdfs:label ?c1Label .
         ?c1 ?p ?c2 .
@@ -86,8 +92,10 @@ const createCodeListQuery = (codeListIri, vocabIri) => `
         BIND(<${codeListIri}> AS ?cl)
         ?c1 a ?cl .
         FILTER NOT EXISTS { ?c1 a owl:Ontology }
-        OPTIONAL { ?c1 rdfs:label|dc:title|dct:title ?c1Label . FILTER(LANGMATCHES(LANG(?c1Label), "en") || LANGMATCHES(LANG(?c1Label), "")) }
-        OPTIONAL { ?c1 rdfs:comment|dc:description|dct:description ?c1Comment . FILTER(LANGMATCHES(LANG(?c1Comment), "en") || LANGMATCHES(LANG(?c1Comment), "")) }
+        OPTIONAL { ?cl ${labelProps} ?clLabel . ${filterLangs('?clLabel')} }
+        OPTIONAL { ?cl ${commentProps} ?clComment . ${filterLangs('?clComment')} }
+        OPTIONAL { ?c1 ${labelProps} ?c1Label . ${filterLangs('?c1Label')} }
+        OPTIONAL { ?c1 ${commentProps} ?c1Comment . ${filterLangs('?c1Comment')} }
         OPTIONAL {
             ?c2 a ?cl .
             ?c1 ?p ?c2 .
@@ -95,8 +103,8 @@ const createCodeListQuery = (codeListIri, vocabIri) => `
         OPTIONAL {
             ?ap rdfs:range ?cl . 
             OPTIONAL { ?ap a ?apType . }
-            OPTIONAL { ?ap rdfs:label|dc:title|dct:title ?apLabel . FILTER(LANGMATCHES(LANG(?apLabel), "en") || LANGMATCHES(LANG(?apLabel), "")) }
-            OPTIONAL { ?ap rdfs:comment|dc:description|dct:description ?apComment . FILTER(LANGMATCHES(LANG(?apComment), "en") || LANGMATCHES(LANG(?apComment), "")) }
+            OPTIONAL { ?ap ${labelProps} ?apLabel . ${filterLangs('?apLabel')} }
+            OPTIONAL { ?ap ${commentProps} ?apComment . ${filterLangs('?apComment')} }
             OPTIONAL { ?ap rdfs:domain ?dt . }
         }
     }
