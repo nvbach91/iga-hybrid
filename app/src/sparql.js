@@ -70,11 +70,14 @@ ORDER BY ?vocabPrefix
 `;
 
 export const getQueryVocabStats = () => `
-SELECT DISTINCT ?vocabURI (STR(?vl) AS ?vocabLabel) (COUNT (DISTINCT ?class) AS ?nClass) (COUNT (DISTINCT ?ind) AS ?nInd) {
+SELECT DISTINCT ?vocabURI (STR(?vl) AS ?vocabLabel) 
+                          (COUNT (DISTINCT ?class) AS ?nClass) 
+                          (COUNT (DISTINCT ?ind) AS ?nInd) 
+                          {
   VALUES ?vt { voaf:Vocabulary } #owl:Ontology
   ?vocabURI a ?vt .
   OPTIONAL { 
-    ?vocabURI rdfs:label|dc:title|dcterms:title ?vl .
+    ?vocabURI rdfs:label|dc:title|dcterms:title|skos:prefLabel ?vl .
     FILTER(LANGMATCHES(LANG(?vl), 'en') || LANGMATCHES(LANG(?vl), ''))
   }
   VALUES ?c { owl:Class rdfs:Class } .
@@ -82,10 +85,12 @@ SELECT DISTINCT ?vocabURI (STR(?vl) AS ?vocabLabel) (COUNT (DISTINCT ?class) AS 
   ?class rdfs:isDefinedBy ?vocabURI .
   OPTIONAL {
     ?ind a ?class .
-    ?ind rdfs:isDefinedBy ?vocabURI .
+    #?ind rdfs:isDefinedBy ?vocabURI .
+    FILTER EXISTS { ?ind rdfs:isDefinedBy ?vocabURI . }
   }
 } 
-GROUP BY ?vocabURI ?vl ORDER BY DESC(?nInd)
+GROUP BY ?vocabURI ?vl
+ORDER BY DESC(?nInd)
 `;
 
 export const getQueryFragmentInstancesCount = (fragment) => `
