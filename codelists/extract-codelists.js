@@ -1,11 +1,27 @@
 const axios = require('axios');
-const moment = require('moment');
-const fs = require('fs');
+const argv = require('yargs').argv;
+const date = argv.date;
 
-const codeLists = require('../aggregate-data/2019-07-20_lov-analyzer-results-flat.json');
+if (!date) {
+    console.error('You must specify a folder name that contains the result file like so: --date=2022-10-23');
+    return process.exit();
+}
+const fs = require('fs');
+if (!fs.existsSync(`../aggregate/results/${date}`)) {
+    console.error('The specified folder does not exist.');
+    return process.exit();
+}
+const filePath = `../aggregate/results/${date}/${date}_lov-analyzer-results.json`;
+if (!fs.existsSync(filePath)) {
+    console.error(`The data file ${filePath} does not exist.`);
+    return process.exit();
+}
+
+const moment = require('moment');
+const codeLists = require(`../aggregate/results/${date}/${date}_lov-analyzer-results-flat.json`);
 const codeListIris = Object.keys(codeLists);
 const { username, password, endpoint } = require('./config.json');
-const downloadFolder = `./results/results-${moment().format('YYYYMMDD')}`;
+const downloadFolder = `./results/${moment().format('YYYY-MM-DD')}`;
 let dir = '.';
 downloadFolder.split('/').slice(1).forEach((step) => {
   dir = `${dir}/${step}`;
@@ -20,7 +36,7 @@ const prefixes = {
     'owl': 'http://www.w3.org/2002/07/owl#',
     'skos': 'http://www.w3.org/2004/02/skos/core#',
     'rdf': 'http://www.w3.org/1999/02/22-rdf-syntax-ns#',
-    'dct': 'http://purl.org/dc/terms/',
+    'dcterms': 'http://purl.org/dc/terms/',
     'dc': 'http://purl.org/dc/elements/1.1/',
     'dcmit': 'http://purl.org/dc/dcmitype/',
 };
@@ -47,14 +63,14 @@ const axiosConfig = {
         BIND(<${codeListIri}> AS ?cl)
         ?c1 a ?cl .
         OPTIONAL { ?c1 rdfs:comment ?c1Comment . }
-        OPTIONAL { ?c1 rdfs:label|dc:title|dct:title ?c1Label . }
+        OPTIONAL { ?c1 rdfs:label|dc:title|dcterms:title ?c1Label . }
         OPTIONAL {
             ?c2 a ?cl .
             ?c1 ?p ?c2 .
         }
     } */
-const labelProps = 'rdfs:label|dc:title|dct:title';
-const commentProps = 'rdfs:comment|dc:description|dct:description';
+const labelProps = 'rdfs:label|dc:title|dcterms:title';
+const commentProps = 'rdfs:comment|dc:description|dcterms:description';
 const filterLangs = (v) => `FILTER(LANGMATCHES(LANG(${v}), "en") || LANGMATCHES(LANG(${v}), ""))`;
 
 const createCodeListQuery = (codeListIri, vocabIri) => `

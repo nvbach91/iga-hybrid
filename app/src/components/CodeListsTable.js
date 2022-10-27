@@ -28,21 +28,21 @@ const styles = (theme) => ({
 
 const CodeListsTable = ({ codeLists, showInstances, vocabIsSelected, classes, loading }) => {
   const mRows = codeLists ? Object.keys(codeLists).map((key, index) => {
-    const { d, p, c, n } = codeLists[key];
+    const { d, p, c, ni } = codeLists[key];
     return { 
       id: key, 
       index: index + 1, 
       d: createIriLink(d ? d.value : ''), 
       p: createIriLink(p ? p.value : ''), 
       c: createIriLink(c ? c.value : ''), 
-      n: n ? n.value : '', 
-      i: n ? <Button className={classes.fragmentButton}  onClick={showInstances(key)} color="primary">{n.value}&nbsp;<Visibility /></Button> : 0
+      ni: ni ? ni.value : '', 
+      i: ni ? <Button className={classes.fragmentButton}  onClick={showInstances(key)} color="primary">{ni.value}&nbsp;<Visibility /></Button> : 0
     };
   }) : [];
   return (
     
     <Paper style={{ height: 620, width: '100%' }}>
-      {(!vocabIsSelected || Object.keys(codeLists).length || loading) &&<VirtualizedTable
+      {(!vocabIsSelected || Object.keys(codeLists).length || loading) && <VirtualizedTable
         rowCount={mRows.length}
         rowGetter={({ index }) => mRows[index]}
         columns={[
@@ -51,7 +51,6 @@ const CodeListsTable = ({ codeLists, showInstances, vocabIsSelected, classes, lo
             label: `(${mRows.length}) #`,
             dataKey: 'index',
             numeric: true,
-            align: 'right',
           },
           {
             flexGrow: 1,
@@ -75,7 +74,7 @@ const CodeListsTable = ({ codeLists, showInstances, vocabIsSelected, classes, lo
             flexGrow: 1,
             width: 0,
             label: 'Members',
-            dataKey: 'n',
+            dataKey: 'ni',
           },
           {
             width: 150,

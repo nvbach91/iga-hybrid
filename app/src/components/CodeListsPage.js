@@ -104,10 +104,10 @@ class CodeListsPage extends React.Component {
     const payload = `query=${prefixes}${query}`;
     return axios.post(getEndpointUrl(selectedVocabOption.value), payload, axiosConfig).then((resp) => {
       const codeLists = {};
-      resp.data.results.bindings.filter((binding) => binding.n.value > 0).forEach((binding) => {
-        const { d, p, c, n } = binding;
+      resp.data.results.bindings.filter((binding) => binding.ni.value > 0).forEach((binding) => {
+        const { d, p, c, ni } = binding;
         const uuid = uuidv4();
-        const codeList = { d, p, c, n };
+        const codeList = { d, p, c, ni };
         codeList.i = 0;
         codeLists[uuid] = codeList;
       });
@@ -116,7 +116,7 @@ class CodeListsPage extends React.Component {
         if (uniqueCodeLists[codeLists[key].c.value] && codeLists[key].p) {
           uniqueCodeLists[codeLists[key].c.value].properties++;
         } else {
-          uniqueCodeLists[codeLists[key].c.value] = { instances: codeLists[key].n.value, properties: codeLists[key].p ? 1 : 0 };
+          uniqueCodeLists[codeLists[key].c.value] = { instances: parseFloat(codeLists[key].ni.value) || 0, properties: codeLists[key].p ? 1 : 0 };
         }
       });
       window.cached.records[selectedVocabOption.value] = uniqueCodeLists;
@@ -223,7 +223,7 @@ class CodeListsPage extends React.Component {
       <>
         <div className={classes.controls}>
           <Typography align="left" variant="h5">
-            Find code lists
+            Browse code lists
           </Typography>
           <div>
             <Button color="primary" onClick={this.showSparqlPreview(
@@ -317,9 +317,9 @@ class CodeListsPage extends React.Component {
             </div>
             <Typography variant="body2">See also {createLink('https://github.com/nvbach91/iga-hybrid')}</Typography>
             <Typography variant="body2">
-              Endpoints {selectedVocabOption ?
+              Endpoint {selectedVocabOption ?
                 createLink(getEndpointUrl(selectedVocabOption.value)) :
-                <>{createLink(getEndpointUrl())}, {createLink(getEndpointUrl('https://fcp.vse.cz/blazegraphpublic/namespace/biomed'))}</>
+                <>{createLink(getEndpointUrl())} {/*createLink(getEndpointUrl('https://fcp.vse.cz/blazegraphpublic/namespace/biomed'))*/}</>
               }
             </Typography>
           </DialogTitle>

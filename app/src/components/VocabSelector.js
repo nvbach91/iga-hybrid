@@ -55,27 +55,27 @@ class VocabSelector extends React.Component {
       const iris = []; 
       res.results.bindings.forEach((binding) => {
         iris.push({
-          iri: binding.vocabURI.value,
-          label: binding.vocabLabel ? binding.vocabLabel.value : '',
+          iri: binding.vocab.value,
+          label: binding.vocabLabels ? binding.vocabLabels.value : '[Unknown vocab label]',
           nClass: binding.nClass.value,
-          nInd: binding.nInd.value,
+          nIns: binding.nIns.value,
         });
       });
-      iris.unshift({
-        iri: 'http://dbpedia.org',
-        label: 'DBpedia',
-        nClass: 760,
-        nInd: 18447062,
-      });
+      // iris.unshift({
+      //   iri: 'http://dbpedia.org',
+      //   label: 'DBpedia',
+      //   nClass: 760,
+      //   nIns: 18447062,
+      // });
       // move vocabs that have code lists up the list
-      arrayMove(iris, 7, 0);
-      arrayMove(iris, 8, 1);
-      arrayMove(iris, 9, 2);
-      arrayMove(iris, 10, 3);
+      arrayMove(iris, 6, 0);
+      arrayMove(iris, 7, 1);
+      arrayMove(iris, 8, 2);
+      arrayMove(iris, 9, 3);
       this.setState({
         loading: false,
-        selectOptions: iris.map(({ iri, label, nClass, nInd }) => {
-          return { value: iri, label: `${iri}${label ? ` - ${label}` : ''}, classes: ${nClass}, instances: ${nInd}` };
+        selectOptions: iris.map(({ iri, label, nClass, nIns }, index) => {
+          return { value: iri, label: `[${index + 1}] - ${iri}${label ? ` - ${label}` : ''}, classes: ${nClass}, instances: ${nIns}` };
         })
       }, this.props.onLoad);
     }).catch((err) => {
@@ -130,7 +130,7 @@ class VocabSelector extends React.Component {
           <DialogTitle>Info</DialogTitle>
           <DialogContent>
             <DialogContentText>
-              Oops! Looks like the SPARQL endpoint is not working. Please try again later.<br/>
+              Oops! Looks like the SPARQL endpoint is not working. Please try again later or try clicking on the button "Reload ontology list".<br/>
               {createLink(getEndpointUrl())}
             </DialogContentText>
           </DialogContent>

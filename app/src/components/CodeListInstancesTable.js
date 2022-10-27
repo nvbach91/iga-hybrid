@@ -21,8 +21,14 @@ const styles = (theme) => ({
 });
 const CodeListInstancesTable = ({ loading, codeListInstances, codeList, classes }) => {
   const mRows = codeListInstances ? codeListInstances.map((cli, index) => {
-    const { i, skosConcept } = cli;
-    return { id: index, index: index + 1, i: createIriLink(i.value), skosConcept: createIriLink(skosConcept ? skosConcept.value : 'Not a skos:Concept') };
+    const { i, sc, scs } = cli;
+    return {
+      id: index,
+      index: index + 1,
+      i: createIriLink(i.value),
+      skosConcept: createIriLink(sc ? sc.value : 'Not a skos:Concept'),
+      skosConceptScheme: createIriLink(scs ? scs.value : 'None')
+    };
   }) : [];
   return (
     <Paper style={{ height: 620, width: '100%' }}>
@@ -40,7 +46,7 @@ const CodeListInstancesTable = ({ loading, codeListInstances, codeList, classes 
               align: 'right',
             },
             {
-              flexGrow: 1,
+              flexGrow: 2,
               width: 0,
               label: 'Instance',
               dataKey: 'i',
@@ -50,6 +56,12 @@ const CodeListInstancesTable = ({ loading, codeListInstances, codeList, classes 
               width: 0,
               label: 'skos:Concept',
               dataKey: 'skosConcept',
+            },
+            {
+              flexGrow: 2,
+              width: 0,
+              label: 'skos:inScheme',
+              dataKey: 'skosConceptScheme',
             },
           ]}
         />

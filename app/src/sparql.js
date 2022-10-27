@@ -60,37 +60,43 @@ export const FROMS = ''; /*`
 //Object.keys(reversePrefixes).map((rp) => `FROM <${rp.slice(0, -1)}>\nFROM <${rp}>`).join('\n') + '\n';
 
 export const getQueryVocabs = () => `
-SELECT DISTINCT ?vocabPrefix ?vocabURI {
+SELECT DISTINCT ?vocabPrefix ?vocab {
  	GRAPH <https://lov.linkeddata.es/dataset/lov> {
- 	 	?vocabURI a voaf:Vocabulary.
- 	 	?vocabURI vann:preferredNamespacePrefix ?vocabPrefix.
+ 	 	?vocab a voaf:Vocabulary.
+ 	 	?vocab vann:preferredNamespacePrefix ?vocabPrefix.
   }
 }
 ORDER BY ?vocabPrefix
 `;
 
 export const getQueryVocabStats = () => `
-SELECT DISTINCT ?vocabURI (STR(?vl) AS ?vocabLabel) 
-                          (COUNT (DISTINCT ?class) AS ?nClass) 
-                          (COUNT (DISTINCT ?ind) AS ?nInd) 
-                          {
-  VALUES ?vt { voaf:Vocabulary } #owl:Ontology
-  ?vocabURI a ?vt .
-  OPTIONAL { 
-    ?vocabURI rdfs:label|dc:title|dcterms:title|skos:prefLabel ?vl .
+SELECT DISTINCT ?vocab
+                (GROUP_CONCAT(DISTINCT ?vp;separator=" || ") AS ?vocabPrefixes)
+                (GROUP_CONCAT(DISTINCT ?vl;separator=" || ") AS ?vocabLabels)
+                (COUNT (DISTINCT ?c)  AS ?nClass)
+                #(COUNT (DISTINCT ?sc) AS ?nSubClass)
+                (COUNT (DISTINCT ?i)  AS ?nIns)
+WHERE {
+  ?vocab a voaf:Vocabulary .
+  OPTIONAL { ?vocab vann:preferredNamespacePrefix ?vp }
+  OPTIONAL {
+    VALUES ?vocabLabelProp {
+      rdfs:label dc:title dcterms:title skos:prefLabel
+    }
+    ?vocab ?vocabLabelProp ?vl .
     FILTER(LANGMATCHES(LANG(?vl), 'en') || LANGMATCHES(LANG(?vl), ''))
   }
-  VALUES ?c { owl:Class rdfs:Class } .
-  ?class a ?c .
-  ?class rdfs:isDefinedBy ?vocabURI .
   OPTIONAL {
-    ?ind a ?class .
-    #?ind rdfs:isDefinedBy ?vocabURI .
-    FILTER EXISTS { ?ind rdfs:isDefinedBy ?vocabURI . }
+    GRAPH ?vocab {
+      VALUES ?class { owl:Class rdfs:Class } .
+      ?c a ?class .
+      OPTIONAL { ?i a ?c }
+      #OPTIONAL { ?sc rdfs:subClassOf ?c }
+    }
   }
 } 
-GROUP BY ?vocabURI ?vl
-ORDER BY DESC(?nInd)
+GROUP BY ?vocab
+ORDER BY DESC(?nIns)
 `;
 
 export const getQueryFragmentInstancesCount = (fragment) => `
@@ -151,31 +157,37 @@ SELECT ?label ?ontology ?comment ?definition WHERE {
 `;
 
 export const getQueryClassInstanceCounts = (vocabIri) => `
-SELECT DISTINCT ?d ?p ?c (COUNT(DISTINCT ?i) AS ?n)
+SELECT DISTINCT ?d ?p ?c (COUNT(DISTINCT ?i) AS ?ni)
 FROM <${vocabIri}> 
 WHERE {
-  VALUES ?t { owl:Class rdf:Class }
-  ?c a ?t .
-  ?i a|rdfs:subClassOf ?c .
+  VALUES ?class { owl:Class rdf:Class }
+  ?c a ?class .
+  #?i a|rdfs:subClassOf ?c .
+  ?i a ?c .
   OPTIONAL { 
     ?p rdfs:range ?c . 
-    OPTIONAL {
-    	?p rdfs:domain ?d .
-    }
+    OPTIONAL { ?p rdfs:domain ?d }
   }
-}
-GROUP BY ?d ?p ?c
-ORDER BY ?c
+} GROUP BY ?d ?p ?c ORDER BY DESC(?ni)
 `;
 
 export const getQueryCodeListInstances = (codeListIri, vocabIri) => `
-SELECT DISTINCT ?i ?skosConcept
+SELECT DISTINCT ?i ?sc ?scs #?l
 FROM <${vocabIri}> 
 WHERE {
-  ?i a|rdfs:subClassOf <${codeListIri}> .
+  #OPTIONAL {
+  #  VALUES ?lp { rdfs:label dc:title dcterms:title skos:prefLabel }
+  #  ?i ?lp ?l . 
+  #}
+  #?i a|rdfs:subClassOf <${codeListIri}> .
+  ?i a <${codeListIri}> .
   OPTIONAL {
-    BIND(skos:Concept AS ?skosConcept) .
-    ?i a ?skosConcept .
+    BIND(skos:Concept AS ?sc) .
+    ?i a ?sc .
+  }
+  OPTIONAL {
+    ?i skos:inScheme ?scs .
+    ?scs a skos:ConceptScheme
   }
 }
 ORDER BY ?i
@@ -186,10 +198,10 @@ SELECT DISTINCT ?cp ?c ?cn ?i1 ?i1n ?p ?i2 ?i2n
 ${vocabIri ? FROMS : ''}
 ${vocabIri ? `FROM <${vocabIri}>` : ''}
 WHERE {
-  VALUES ?lp { rdfs:label skos:prefLabel }
-  VALUES ?cp { rdf:type rdfs:subClassOf }
+  VALUES ?cp { rdf:type }# rdfs:subClassOf
   BIND(<${codeListIri}> AS ?c) .
   ?i1 ?cp ?c .
+  VALUES ?lp { rdfs:label dc:title dcterms:title skos:prefLabel }
   OPTIONAL { ?c ?lp ?cn . FILTER(LANGMATCHES(LANG(?cn), 'en')) }
   OPTIONAL { ?i1 ?lp ?i1n . FILTER(LANGMATCHES(LANG(?i1n), 'en'))}
   OPTIONAL {

@@ -20,11 +20,11 @@ export const fetchVocabs = (reload) => {
     res = resp.data;
     // console.log(res.results.bindings.length);
     // remove duplicates
-    res.results.bindings = res.results.bindings.filter((v, i, a) => a.findIndex(t => (t.vocabURI.value === v.vocabURI.value)) === i);
+    res.results.bindings = res.results.bindings.filter((v, i, a) => a.findIndex((t) => (t.vocab.value === v.vocab.value)) === i);
     // console.log(res.results.bindings.length);
     // return axios.post(getEndpointUrl('https://fcp.vse.cz/blazegraphpublic/namespace/biomed'), payload, axiosConfig);
   // }).then((resp) => {
-  //   res.results.bindings = resp.data.results.bindings.filter((v, i, a) => a.findIndex(t => (t.vocabURI.value === v.vocabURI.value)) === i).concat(res.results.bindings);
+  //   res.results.bindings = resp.data.results.bindings.filter((v, i, a) => a.findIndex(t => (t.vocab.value === v.vocab.value)) === i).concat(res.results.bindings);
     window.cached.vocabs = res;
     localStorage.setItem('cached.vocabs', JSON.stringify(res));
     localStorage.setItem('cached.vocabs.date', new Date().toISOString());

@@ -1,11 +1,11 @@
 # Extracting code lists from LOV dataset SPARQL endpoint
 - prerequisites: node.js 16.18.0
-- config: `./config.json` - specify one of the endpoint urls below in the `./config.json` file
 - usage: `$> node extract-codelists.js`
 - result: a bunch of files representing the extracted code lists, the files are renamed in a way so they can be stored on the disk
-  - `[c]` means colon `:`
-  - `[s]` means slash `/`
-  - `[h]` means hash `#`
+  - `[c]` replaces colon `:`
+  - `[s]` replaces slash `/`
+  - `[h]` replaces hash `#`
+- you can change the endpoint URL in the `./config.json` file
 
 ### Endpoint 1 (prefered): https://lov.linkeddata.es/dataset/lov/sparql
 Result sample:
@@ -50,7 +50,7 @@ Result sample:
 -  e.g. to Blazegraph using [nvbach91/blazegraph-upload](https://github.com/nvbach91/blazegraph-upload)
 
 ### A working code lists SPARQL endpoint prepared for you
-- workbench: https://fcp.vse.cz/blazegraphpublic/#namespaces
+- workbench: https://fcp.vse.cz/blazegraphpublic/#namespaces (choose the endpoint named `codelists`)
 - endpoint: https://fcp.vse.cz/blazegraphpublic/namespace/codelists/sparql
 
 ### Queries to try on this SPARQL endpoint:
@@ -58,7 +58,6 @@ Result sample:
 ```sparql
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-
 SELECT ?domainTerm ?assignmentProperty ?codeList ?ontology (COUNT(?code) AS ?nCodes) WHERE  {
   ?codeList a skos:ConceptScheme .
   ?codeList rdfs:isDefinedBy ?ontology .
@@ -79,7 +78,6 @@ ORDER BY DESC(?nCodes)
 ```sparql
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-
 SELECT DISTINCT ?ontology ?codeList ?code WHERE  {
   ?codeList a skos:ConceptScheme .
   ?code skos:inScheme ?codeList .
@@ -89,7 +87,6 @@ SELECT DISTINCT ?ontology ?codeList ?code WHERE  {
 
 ### Code lists overview data table
 - https://github.com/nvbach91/iga-hybrid/tree/master/codelists/results
-
 
 ### Code lists graph schema
 - https://drive.google.com/file/d/1VtlSmfxKMfY1XMMb05Zj6zgTyTWN7pbL

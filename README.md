@@ -3,12 +3,13 @@ Repository for the internal grant project involving hybrid modeling of RDF knowl
 
 ## Queries to find hybrid knowledge representations
 You can run these queries at 
-- https://fcp.vse.cz/blazegraphpublic/#query (select the `lov` namespace in the `namespaces` tab)
-- https://lov.linkeddata.es/dataset/lov/sparql
-- http://dbpedia.org/sparql
+- https://fcp.vse.cz/blazegraphpublic/#query (select the `lovxxxxxxxx` namespace in the `namespaces` tab, `xxxxxxxx` is the date of the dataset)
+- https://lov.linkeddata.es/dataset/lov/sparql (current version)
+- you can also use http://dbpedia.org/sparql experimentally
+- in the list of queries below, Q1, Q2, Q3, Q4 and Q5 are the main queries. Q0 and QX are secondary queries.
 
 ## Or use this web client that will do it for you
-- PROD: https://fcp.vse.cz/iga-hybrid
+- PROD: https://fcp.vse.cz/iga-hybrid (now using the first endpoint from the list above)
 <!-- - DEV: https://nvbach91.github.io/iga-hybrid -->
 
 
@@ -46,21 +47,35 @@ WHERE {
 ```
 
 # General queries
-### Q1: Get a list of ontologies with number of classes and number of class instances
+### Q1: Query to get a list of vocabularies with class count and class instance count
 ```sparql
-SELECT DISTINCT ?vocabURI ?vocabPrefix ?vocabLabel (COUNT (?class) AS ?nClass) (COUNT (?ind) AS ?nInd) {
-    ?vocabURI a voaf:Vocabulary.
-    ?vocabURI vann:preferredNamespacePrefix ?vocabPrefix.
-    OPTIONAL { 
-        ?vocabURI rdfs:label|dc:title|dcterms:title ?vocabLabel .
-        FILTER(LANGMATCHES(LANG(?vocabLabel), 'en') || LANGMATCHES(LANG(?vocabLabel), ''))
+SELECT DISTINCT ?vocab
+                (GROUP_CONCAT(DISTINCT ?vp;separator=" || ") AS ?vocabPrefixes)
+                (GROUP_CONCAT(DISTINCT ?vl;separator=" || ") AS ?vocabLabels)
+                (COUNT (DISTINCT ?c)  AS ?nClass)
+                #(COUNT (DISTINCT ?sc) AS ?nSubClass)
+                (COUNT (DISTINCT ?i)  AS ?nIns)
+{
+  ?vocab a voaf:Vocabulary .
+  OPTIONAL { ?vocab vann:preferredNamespacePrefix ?vp }
+  OPTIONAL {
+    VALUES ?vocabLabelProp {
+      rdfs:label dc:title dcterms:title skos:prefLabel
     }
-    ?class a owl:Class .
-    ?class rdfs:isDefinedBy ?vocabURI .
-    OPTIONAL {
-        ?ind a ?class .
+    ?vocab ?vocabLabelProp ?vl .
+    FILTER(LANGMATCHES(LANG(?vl), 'en') || LANGMATCHES(LANG(?vl), ''))
+  }
+  OPTIONAL {
+    GRAPH ?vocab {
+      VALUES ?class { owl:Class rdfs:Class } .
+      ?c a ?class .
+      OPTIONAL { ?i a ?c }
+      #OPTIONAL { ?sc rdfs:subClassOf ?c }
     }
-} GROUP BY ?vocabURI ?vocabPrefix ?vocabLabel ORDER BY ?vocabURI
+  }
+} 
+GROUP BY ?vocab
+ORDER BY DESC(?nIns)
 ```
 
 
@@ -166,22 +181,20 @@ ORDER BY DESC(?n)
 ```
 
 
-### Q2: Get the number of instances of each class in an ontology with their range properties and domain classes
+### Q2: Query to get the number of instances of each class in an ontology with their range properties and domain classes
 ```sparql
-SELECT ?d ?p ?c (COUNT(DISTINCT ?i) AS ?n)
+SELECT DISTINCT ?d ?p ?c (COUNT(DISTINCT ?i) AS ?ni)
 FROM <http://rdf.muninn-project.org/ontologies/military> 
 WHERE {
-  ?c a owl:Class .
+  VALUES ?class { owl:Class rdf:Class }
+  ?c a ?class .
+  #?i a|rdfs:subClassOf ?c .
   ?i a ?c .
   OPTIONAL { 
     ?p rdfs:range ?c . 
-    OPTIONAL {
-         ?p rdfs:domain ?d .
-    }
+    OPTIONAL { ?p rdfs:domain ?d }
   }
-}
-GROUP BY ?d ?p ?c
-ORDER BY ?c
+} GROUP BY ?d ?p ?c ORDER BY DESC(?ni)
 ```
 
 
@@ -200,41 +213,52 @@ WHERE {
 ```
 
 
-### Q3: Get a list of code list members and whether it's a skos:Concept
+### Q3: Query to get a list of candidate code list members and whether they are tagged with skos:Concept and skos:inScheme
 ```sparql
-SELECT DISTINCT ?i ?skosConcept
+SELECT DISTINCT ?i ?sc ?scs #?l
 FROM <http://rdf.muninn-project.org/ontologies/military> 
 WHERE {
-  ?i a <http://rdf.muninn-project.org/ontologies/military#Soldier> .
+  #OPTIONAL {
+  #  VALUES ?lp { rdfs:label dc:title dcterms:title skos:prefLabel }
+  #  ?i ?lp ?l . 
+  #}
+  #?i a|rdfs:subClassOf <http://rdf.muninn-project.org/ontologies/military#Rank> .
+  ?i a <http://rdf.muninn-project.org/ontologies/military#Rank> .
   OPTIONAL {
-    BIND(skos:Concept AS ?skosConcept) .
-    ?i a ?skosConcept .
+    BIND(skos:Concept AS ?sc) .
+    ?i a ?sc .
+  }
+  OPTIONAL {
+    ?i skos:inScheme ?scs .
+    ?scs a skos:ConceptScheme
   }
 }
+ORDER BY ?i
 ```
 
 
-### Q4: Get code list structure
+### Q4: Query to get candidate code list structure
 ```sparql
-SELECT DISTINCT ?c ?i1 ?p ?i2 
-FROM <http://rdf.muninn-project.org/ontologies/military> 
+SELECT DISTINCT ?cp ?c ?cn ?i1 ?i1n ?p ?i2 ?i2n
+FROM <http://rdf.muninn-project.org/ontologies/military>
 WHERE {
-  BIND(<http://rdf.muninn-project.org/ontologies/military#MilitaryAppointment> AS ?c) .
-  ?i1 a ?c .
-  OPTIONAL { ?c rdfs:label ?cn . FILTER(LANGMATCHES(LANG(?cn), 'en')) }
-  OPTIONAL { ?i1 rdfs:label ?i1n . FILTER(LANGMATCHES(LANG(?i1n), 'en'))}
+  VALUES ?cp { rdf:type }# rdfs:subClassOf
+  BIND(<http://rdf.muninn-project.org/ontologies/military#Rank> AS ?c) .
+  ?i1 ?cp ?c .
+  VALUES ?lp { rdfs:label dc:title dcterms:title skos:prefLabel }
+  OPTIONAL { ?c ?lp ?cn . FILTER(LANGMATCHES(LANG(?cn), 'en')) }
+  OPTIONAL { ?i1 ?lp ?i1n . FILTER(LANGMATCHES(LANG(?i1n), 'en'))}
   OPTIONAL {
-    ?i2 a ?c .
+    ?i2 ?cp ?c .
     ?i1 ?p ?i2 .
-    OPTIONAL { ?i2 rdfs:label ?i2n . FILTER(LANGMATCHES(LANG(?i2n), 'en')) }
+    OPTIONAL { ?i2 ?lp ?i2n . FILTER(LANGMATCHES(LANG(?i2n), 'en')) }
   }
 }
 ORDER BY ?i1
 ```
 
 
-### Q5: Get list of properties that connect class instances and the number of instances on both sides
-```sparql
+### Q5: Query to get a list of properties that connect class instances and the number of instances on both sides
 SELECT (COUNT(DISTINCT ?i1) AS ?ni1) ?p (COUNT(DISTINCT ?i2) AS ?ni2)
 FROM <http://rdf.muninn-project.org/ontologies/military> 
 WHERE {
