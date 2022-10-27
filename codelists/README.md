@@ -78,7 +78,7 @@ ORDER BY DESC(?nCodes)
 ```sparql
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-SELECT DISTINCT ?ontology ?codeList ?code WHERE  {
+SELECT DISTINCT ?ontology ?codeList ?code WHERE {
   ?codeList a skos:ConceptScheme .
   ?code skos:inScheme ?codeList .
   ?code rdfs:isDefinedBy ?ontology .

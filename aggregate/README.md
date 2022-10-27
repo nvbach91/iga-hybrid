@@ -77,5 +77,6 @@ Total candidate code lists with at least one assignment property 782
 Total candidate code lists with at least one assignment property 908
 ```
 
-You will also get a CSV file to examine the aggregate data
-![image](https://user-images.githubusercontent.com/20724910/198343682-6601fdaf-8585-4331-b62c-7e02d4ce8730.png)
+You will also get a CSV file to examine the aggregate data (top-vocabs-data)
+![image](https://user-images.githubusercontent.com/20724910/198406183-e94a8364-dffb-43b3-a6a4-a4ddc22c2d96.png)
+
