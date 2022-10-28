@@ -1,6 +1,13 @@
 # Aggregate data
 In this folder, you can find aggregate data results
 
+### Installation
+- Node.js 18.12.0
+```
+$> npm install -g yarn
+$> yarn
+```
+
 ### Fetch aggregate data
 - Run `$> node fetch-results.js` to fetch aggregated query result data. This will create a result folder for the current date.
 - you can change the endpoint URL in the `./config.json` file

@@ -1,7 +1,15 @@
 # Extracting code lists from LOV dataset SPARQL endpoint
-- prerequisites: node.js 16.18.0
-- usage: `$> node extract-codelists.js`
-- result: a bunch of files representing the extracted code lists, the files are renamed in a way so they can be stored on the disk
+
+### Installation
+- Node.js 18.12.0
+```
+$> npm install -g yarn
+$> yarn
+```
+
+### Extract code lists
+- Run `$> node extract-codelists.js` to get the results
+- Result is a bunch of files representing the extracted code lists, the files are renamed in a way so they can be stored on the disk
   - `[c]` replaces colon `:`
   - `[s]` replaces slash `/`
   - `[h]` replaces hash `#`
