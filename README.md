@@ -64,7 +64,7 @@ SELECT DISTINCT ?vocab
                 (COUNT (DISTINCT ?c)  AS ?nClass)
                 #(COUNT (DISTINCT ?sc) AS ?nSubClass)
                 (COUNT (DISTINCT ?i)  AS ?nIns)
-{
+WHERE {
   ?vocab a voaf:Vocabulary .
   OPTIONAL { ?vocab vann:preferredNamespacePrefix ?vp }
   OPTIONAL {
