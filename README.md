@@ -268,6 +268,7 @@ ORDER BY ?i1
 
 
 ### Q5: Query to get a list of properties that connect class instances and the number of instances on both sides
+```sparql
 SELECT (COUNT(DISTINCT ?i1) AS ?ni1) ?p (COUNT(DISTINCT ?i2) AS ?ni2)
 FROM <http://rdf.muninn-project.org/ontologies/military> 
 WHERE {
