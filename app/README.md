@@ -11,12 +11,13 @@ $> yarn
 - local development `$> yarn start`
 
 ## Deployment
-- https://nvbach91.github.io/iga-hybrid/ (https://github.com/nvbach91/iga-hybrid/tree/gh-pages)
+DEV: https://nvbach91.github.io/iga-hybrid/ (https://github.com/nvbach91/iga-hybrid/tree/gh-pages)
 ```
 $> yarn deploy
 ```
 
-- https://fcp.vse.cz/iga-hybrid
+PROD: https://fcp.vse.cz/iga-hybrid
+```
 $> npm run build
 $> sudo bash
 $> rm -rf /var/www/fcp.vse.cz/iga-hybrid/*
