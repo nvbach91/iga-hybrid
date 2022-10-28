@@ -1,19 +1,27 @@
 # IGA-HYBRID
-Repository for the internal grant project involving hybrid modeling of RDF knowledge bases
 
-## Queries to find hybrid knowledge representations
-You can run these queries at 
-- https://fcp.vse.cz/blazegraphpublic/#query (select the `lovxxxxxxxx` namespace in the `namespaces` tab, `xxxxxxxx` is the date of the dataset)
-- https://lov.linkeddata.es/dataset/lov/sparql (current version)
-- you can also use http://dbpedia.org/sparql experimentally
-- in the list of queries below, Q1, Q2, Q3, Q4 and Q5 are the main queries. Q0 and QX are secondary queries.
+## Pattern-based Detection, Extraction and Analysis of Code Lists in Ontologies and Vocabularies
+This repository contains
+- [./app](./app) - the implementation of a web application that assists in browsing, analyzing and extracting code lists from RDF ontologies and vocabularies using SPAQRL queries
+- [./aggregate](./aggregate), [./cube-analysis](./cube-analysis) - the analysis results and the code to reproduce them
+- [./codelists](./codelists) - the extracted code list data and the code to reproduce it
 
-## Or use this web client that will do it for you
-- PROD: https://fcp.vse.cz/iga-hybrid (now using the first endpoint from the list above)
+## Implemented SPARQL queries
+The SPARQL queries below can be run manually at: 
+- https://fcp.vse.cz/blazegraphpublic/#query (duplicate LOV dataset)
+  - select the `lovXXXXXXXX` namespace in the `namespaces` tab, XXXXXXXX is the date of the LOV dataset download
+  - SPARQL endpoint: `https://fcp.vse.cz/blazegraphpublic/namespace/lovXXXXXXXX/sparql`
+- https://lov.linkeddata.es/dataset/lov/sparql (current LOV dataset)
+  - SPARQL endpoint: `https://lov.linkeddata.es/dataset/lov/sparql` (current version)
+- EXPERIMENTAL SPARQL endpoint: `http://dbpedia.org/sparql`
+
+Or use the web application that provides an interface for the workflow
+- https://fcp.vse.cz/iga-hybrid (now using the `https://fcp.vse.cz/blazegraphpublic/namespace/lovXXXXXXXX/sparql` endpoint)
 <!-- - DEV: https://nvbach91.github.io/iga-hybrid -->
 
+In the list of queries below, Q1, Q2, Q3, Q4 and Q5 are the main queries. Q0 and QX are secondary queries.
 
-### Prefixes
+### Prefixes used in the queries
 ```sparql
 PREFIX vann:     <http://purl.org/vocab/vann/>
 PREFIX voaf:     <http://purl.org/vocommons/voaf#>
@@ -26,10 +34,10 @@ PREFIX dc:       <http://purl.org/dc/elements/1.1/>
 PREFIX dcmit:    <http://purl.org/dc/dcmitype/>
 ```
 
-# Enhancement queries
-### Q0: Add rdfs:isDefinedBy to classes based on owl:Ontology (make data in consistent for SPARQL queries)
-This query is used to enhance custom own data that is not annotated in a similar way as data in LOV.
-Run this query if custom dataset doesn't have `rdfs:isDefinedBy` in classes or they are not the same as the `owl:Ontology` instance
+## Enhancement query
+
+### Q0: Add rdfs:isDefinedBy to classes based on the owl:Ontology IRI (make data in consistent for the SPARQL queries)
+This query is used to enhance vocabularies that are missing the `rdfs:isDefinedBy` property in their classes or when the `rdfs:isDefinedBy` values are not the same as the `owl:Ontology` IRI
 ```sparql
 INSERT {
   GRAPH ?g {
@@ -37,16 +45,17 @@ INSERT {
   } 
 }
 WHERE {
-  # specify the ontology IRI here
+  # specify the vovabulary IRI here
   BIND(<http://purl.obolibrary.org/obo/go.owl> AS ?g)
   GRAPH ?g {
-    VALUES ?t { owl:Class rdfs:Class }
-    ?c a ?t .
+    VALUES ?class { owl:Class rdfs:Class }
+    ?c a ?class .
   }
 }
 ```
 
-# General queries
+## General queries
+
 ### Q1: Query to get a list of vocabularies with class count and class instance count
 ```sparql
 SELECT DISTINCT ?vocab
@@ -163,7 +172,7 @@ ORDER BY ?s
 ```
 
 
-# Code list analysis
+## Code list analysis queries
 
 ### QX: Get the number of class instances in each ontology
 ```sparql
@@ -271,7 +280,7 @@ WHERE {
 GROUP BY ?p
 ```
 
-# DBpedia-specific queries
+## DBpedia-specific queries
 
 ### Get a list of broadest skos:Concept instances
 ```sparql
@@ -316,5 +325,5 @@ ORDER BY ?i1
 
 
 ## Extracting code lists
-- Go to folder `codelists`, read the `README`, and then run `node download.js`
+- Go to folder `codelists`, read the `README`
 - Upload to your triplestore, e.g. to Blazegraph using [nvbach91/blazegraph-upload](https://github.com/nvbach91/blazegraph-upload)
