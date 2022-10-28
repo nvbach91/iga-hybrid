@@ -12,7 +12,7 @@ const axiosConfig = {
     'content-type': 'application/x-www-form-urlencoded; charset=UTF-8',
     'Authorization': `Basic ${Buffer.from(`${username}:${password}`).toString('base64')}`,
   },
-  timeout: 5000,
+  timeout: 20000,
 };
 
 
