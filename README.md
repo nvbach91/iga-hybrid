@@ -12,11 +12,11 @@ Use the web application that provides an interface for the workflow
 
 The SPARQL queries below can be run also manually at: 
 1. https://fcp.vse.cz/blazegraphpublic/#query (this is the LOV dataset downloaded from https://lov.linkeddata.es)
-    - select the `lovXXXXXXXX` namespace in the `namespaces` tab, XXXXXXXX is the date of the LOV dataset download
+    - select the `lovXXXXXXXX` namespace in the `namespaces` tab, XXXXXXXX is the date when the LOV dataset was downloaded (there may be multiple LOV datasets with different dates)
     - SPARQL endpoint: `https://fcp.vse.cz/blazegraphpublic/namespace/lovXXXXXXXX/sparql`
 2. https://lov.linkeddata.es/dataset/lov/sparql (current LOV dataset)
     - SPARQL endpoint: `https://lov.linkeddata.es/dataset/lov/sparql`
-3. EXPERIMENTAL SPARQL endpoint: `http://dbpedia.org/sparql`
+3. EXPERIMENTAL: `http://dbpedia.org/sparql` (see DBPedia specific queries)
 4. any of your custom SPARQL endpoints
 
 <!-- - DEV: https://nvbach91.github.io/iga-hybrid -->
