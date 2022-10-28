@@ -9,6 +9,7 @@ This repository contains
 ## Implemented SPARQL queries
 Use the web application that provides an interface for the workflow
 - https://fcp.vse.cz/iga-hybrid
+<!-- - DEV: https://nvbach91.github.io/iga-hybrid -->
 
 The SPARQL queries below can be run also manually at: 
 1. https://fcp.vse.cz/blazegraphpublic/#query (this is the LOV dataset downloaded from https://lov.linkeddata.es)
@@ -18,8 +19,6 @@ The SPARQL queries below can be run also manually at:
     - SPARQL endpoint: `https://lov.linkeddata.es/dataset/lov/sparql`
 3. EXPERIMENTAL: `http://dbpedia.org/sparql` (see DBPedia specific queries)
 4. any of your custom SPARQL endpoints
-
-<!-- - DEV: https://nvbach91.github.io/iga-hybrid -->
 
 
 ## Common prefixes used in the SPARQL queries
