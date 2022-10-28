@@ -12,7 +12,7 @@ const axiosConfig = {
     'content-type': 'application/x-www-form-urlencoded; charset=UTF-8',
     'Authorization': `Basic ${Buffer.from(`${username}:${password}`).toString('base64')}`,
   },
-  timeout: 2000,
+  timeout: 5000,
 };
 
 
@@ -87,6 +87,7 @@ const start = async () => {
             fs.appendFileSync(resultsFilePath, `${result.join('\t')}\n`);
           }
         } catch (e) {
+          // console.log(e);
           console.error('|   error querying classes of instance', instance, o, '... retrying');
           j--;
           // console.error(QUERY_CLASSES_OF_INSTANCE(o, i));
