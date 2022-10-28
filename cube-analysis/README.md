@@ -19,5 +19,5 @@ $> yarn
 ```
 - You can setup and run a local server with the LOV data dump to avoid unecessary traffic on the official LOV server. Download LOV + Vocab Data here: https://lov.linkeddata.es/lov.nq.gz
 - Or you can use this SPARQL endpoint `https://fcp.vse.cz/blazegraphpublic/namespace/lov20221023/sparql` which has the LOV data from the date 2022 October 23rd
-- Run `node app.js`
+- Run `node app.js`, the script take some time to complete...
 - The results will be in the folder `./results`

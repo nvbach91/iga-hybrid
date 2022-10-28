@@ -1,5 +1,6 @@
 const fs = require('fs');
 const axios = require('axios');
+const moment = require('moment');
 const { username, password, endpoint } = require('./config.json');
 const { QUERY_INSTANCES_IN_ONTOLOGY, QUERY_CLASSES_OF_INSTANCE, QUERY_ONTOLOGIES_AND_NAMESPACES } = require('./sparql');
 
@@ -22,7 +23,7 @@ const axiosConfig = {
 
 const skosConceptIri = 'http://www.w3.org/2004/02/skos/core#Concept';
 
-const resultsDirectory = './results/data';
+const resultsDirectory = `./results/${moment().format('YYYY-MM-DD')}/data`;
 
 let dir = '.';
 resultsDirectory.split('/').slice(1).forEach((step) => {
@@ -47,7 +48,7 @@ const start = async () => {
   const results = {};
   for (let i = 0; i < ontologies.length; i++) {
     const { o, ns } = ontologies[i];
-    const resultsFilePath = `${resultsDirectory}/${o.replace(/:/g, ';').replace(/\//g, '-').replace(/#/g, '_')}.csv`;
+    const resultsFilePath = `${resultsDirectory}/${o.replace(/:/g, '[c]').replace(/\//g, '[s]').replace(/#/g, '[h]')}.csv`;
     fs.writeFileSync(resultsFilePath, `${headers.join('\t')}\n`);
     results[o] = 0;
     try {
