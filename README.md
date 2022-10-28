@@ -8,20 +8,21 @@ This repository contains
 
 ## Implemented SPARQL queries
 The SPARQL queries below can be run manually at: 
-- https://fcp.vse.cz/blazegraphpublic/#query (duplicate LOV dataset)
+1. https://fcp.vse.cz/blazegraphpublic/#query
   - select the `lovXXXXXXXX` namespace in the `namespaces` tab, XXXXXXXX is the date of the LOV dataset download
+  - this is the LOV dataset downloaded from https://lov.linkeddata.es
   - SPARQL endpoint: `https://fcp.vse.cz/blazegraphpublic/namespace/lovXXXXXXXX/sparql`
-- https://lov.linkeddata.es/dataset/lov/sparql (current LOV dataset)
+2. https://lov.linkeddata.es/dataset/lov/sparql (current LOV dataset)
   - SPARQL endpoint: `https://lov.linkeddata.es/dataset/lov/sparql` (current version)
-- EXPERIMENTAL SPARQL endpoint: `http://dbpedia.org/sparql`
+3. EXPERIMENTAL SPARQL endpoint: `http://dbpedia.org/sparql`
+4. any of your custom SPARQL endpoints
 
 Or use the web application that provides an interface for the workflow
 - https://fcp.vse.cz/iga-hybrid (now using the `https://fcp.vse.cz/blazegraphpublic/namespace/lovXXXXXXXX/sparql` endpoint)
 <!-- - DEV: https://nvbach91.github.io/iga-hybrid -->
 
-In the list of queries below, Q1, Q2, Q3, Q4 and Q5 are the main queries. Q0 and QX are secondary queries.
 
-### Prefixes used in the queries
+## Common prefixes used in the SPARQL queries
 ```sparql
 PREFIX vann:     <http://purl.org/vocab/vann/>
 PREFIX voaf:     <http://purl.org/vocommons/voaf#>
@@ -34,7 +35,7 @@ PREFIX dc:       <http://purl.org/dc/elements/1.1/>
 PREFIX dcmit:    <http://purl.org/dc/dcmitype/>
 ```
 
-## Enhancement query
+## Enhancement queries
 
 ### Q0: Add rdfs:isDefinedBy to classes based on the owl:Ontology IRI (make data in consistent for the SPARQL queries)
 This query is used to enhance vocabularies that are missing the `rdfs:isDefinedBy` property in their classes or when the `rdfs:isDefinedBy` values are not the same as the `owl:Ontology` IRI
@@ -87,6 +88,128 @@ GROUP BY ?vocab
 ORDER BY DESC(?nIns)
 ```
 
+
+## Code list analysis queries
+
+### Q2: Query to get the number of instances of each class in an ontology with their range properties and domain classes
+```sparql
+SELECT DISTINCT ?d ?p ?c (COUNT(DISTINCT ?i) AS ?ni)
+FROM <http://rdf.muninn-project.org/ontologies/military> 
+WHERE {
+  VALUES ?class { owl:Class rdf:Class }
+  ?c a ?class .
+  #?i a|rdfs:subClassOf ?c .
+  ?i a ?c .
+  OPTIONAL { 
+    ?p rdfs:range ?c . 
+    OPTIONAL { ?p rdfs:domain ?d }
+  }
+} GROUP BY ?d ?p ?c ORDER BY DESC(?ni)
+```
+
+### Q3: Query to get a list of candidate code list members and whether they are tagged with skos:Concept and skos:inScheme
+```sparql
+SELECT DISTINCT ?i ?sc ?scs #?l
+FROM <http://rdf.muninn-project.org/ontologies/military> 
+WHERE {
+  #OPTIONAL {
+  #  VALUES ?lp { rdfs:label dc:title dcterms:title skos:prefLabel }
+  #  ?i ?lp ?l . 
+  #}
+  #?i a|rdfs:subClassOf <http://rdf.muninn-project.org/ontologies/military#Rank> .
+  ?i a <http://rdf.muninn-project.org/ontologies/military#Rank> .
+  OPTIONAL {
+    BIND(skos:Concept AS ?sc) .
+    ?i a ?sc .
+  }
+  OPTIONAL {
+    ?i skos:inScheme ?scs .
+    ?scs a skos:ConceptScheme
+  }
+}
+ORDER BY ?i
+```
+
+### Q4: Query to get candidate code list structure
+```sparql
+SELECT DISTINCT ?cp ?c ?cn ?i1 ?i1n ?p ?i2 ?i2n
+FROM <http://rdf.muninn-project.org/ontologies/military>
+WHERE {
+  VALUES ?cp { rdf:type }# rdfs:subClassOf
+  BIND(<http://rdf.muninn-project.org/ontologies/military#Rank> AS ?c) .
+  ?i1 ?cp ?c .
+  VALUES ?lp { rdfs:label dc:title dcterms:title skos:prefLabel }
+  OPTIONAL { ?c ?lp ?cn . FILTER(LANGMATCHES(LANG(?cn), 'en')) }
+  OPTIONAL { ?i1 ?lp ?i1n . FILTER(LANGMATCHES(LANG(?i1n), 'en'))}
+  OPTIONAL {
+    ?i2 ?cp ?c .
+    ?i1 ?p ?i2 .
+    OPTIONAL { ?i2 ?lp ?i2n . FILTER(LANGMATCHES(LANG(?i2n), 'en')) }
+  }
+}
+ORDER BY ?i1
+```
+
+### Q5: Query to get a list of properties that connect class instances and the number of instances on both sides
+```sparql
+SELECT (COUNT(DISTINCT ?i1) AS ?ni1) ?p (COUNT(DISTINCT ?i2) AS ?ni2)
+FROM <http://rdf.muninn-project.org/ontologies/military> 
+WHERE {
+  ?c1 a owl:Class .
+  ?c2 a owl:Class .
+  ?i1 a ?c1 .
+  ?i2 a ?c2 .
+  ?i1 ?p ?i2 .
+}
+GROUP BY ?p
+```
+
+<!-- 
+## DBpedia-specific queries
+
+### Get a list of broadest skos:Concept instances
+```sparql
+SELECT ?c (COUNT(DISTINCT ?i) AS ?n) {
+  ?c a skos:Concept .
+  FILTER NOT EXISTS {
+    ?b a skos:Concept .
+    ?c skos:broader ?b .
+  }
+  ?i skos:broader ?c .
+}
+GROUP BY ?c
+ORDER BY DESC(?n)
+```
+
+### Get code list members and their skos:Concept status
+```sparql
+SELECT DISTINCT ?i ?skosConcept
+WHERE {
+  ?i skos:broader <http://dbpedia.org/resource/Category:Research_vessels_of_the_United_States> .
+  ?i a ?skosConcept .
+}
+```
+
+### Get code list structure 
+```sparql
+SELECT DISTINCT ?c ?cn ?i1 ?i1n ?p ?i2 ?i2n
+WHERE {
+  VALUES ?lp { rdfs:label }
+  BIND(<http://dbpedia.org/resource/Category:Research_vessels_of_the_United_States> AS ?c) .
+  ?i1 skos:broader ?c .
+  OPTIONAL { ?c ?lp ?cn . FILTER(LANGMATCHES(LANG(?cn), 'en')) }
+  OPTIONAL { ?i1 ?lp ?i1n . FILTER(LANGMATCHES(LANG(?i1n), 'en'))}
+  OPTIONAL {
+  	?i2 skos:broader ?c .
+    ?i1 ?p ?i2 .
+    OPTIONAL { ?i2 ?lp ?i2n . FILTER(LANGMATCHES(LANG(?i2n), 'en')) }
+  }
+}
+ORDER BY ?i1
+```
+-->
+
+## Experimental queries
 
 ### QX: Get list of ontologies with number of classes
 ```sparql
@@ -171,9 +294,6 @@ WHERE {
 ORDER BY ?s
 ```
 
-
-## Code list analysis queries
-
 ### QX: Get the number of class instances in each ontology
 ```sparql
 SELECT DISTINCT 
@@ -187,23 +307,6 @@ WHERE {
 } 
 GROUP BY ?v
 ORDER BY DESC(?n)
-```
-
-
-### Q2: Query to get the number of instances of each class in an ontology with their range properties and domain classes
-```sparql
-SELECT DISTINCT ?d ?p ?c (COUNT(DISTINCT ?i) AS ?ni)
-FROM <http://rdf.muninn-project.org/ontologies/military> 
-WHERE {
-  VALUES ?class { owl:Class rdf:Class }
-  ?c a ?class .
-  #?i a|rdfs:subClassOf ?c .
-  ?i a ?c .
-  OPTIONAL { 
-    ?p rdfs:range ?c . 
-    OPTIONAL { ?p rdfs:domain ?d }
-  }
-} GROUP BY ?d ?p ?c ORDER BY DESC(?ni)
 ```
 
 
@@ -222,109 +325,3 @@ WHERE {
 ```
 
 
-### Q3: Query to get a list of candidate code list members and whether they are tagged with skos:Concept and skos:inScheme
-```sparql
-SELECT DISTINCT ?i ?sc ?scs #?l
-FROM <http://rdf.muninn-project.org/ontologies/military> 
-WHERE {
-  #OPTIONAL {
-  #  VALUES ?lp { rdfs:label dc:title dcterms:title skos:prefLabel }
-  #  ?i ?lp ?l . 
-  #}
-  #?i a|rdfs:subClassOf <http://rdf.muninn-project.org/ontologies/military#Rank> .
-  ?i a <http://rdf.muninn-project.org/ontologies/military#Rank> .
-  OPTIONAL {
-    BIND(skos:Concept AS ?sc) .
-    ?i a ?sc .
-  }
-  OPTIONAL {
-    ?i skos:inScheme ?scs .
-    ?scs a skos:ConceptScheme
-  }
-}
-ORDER BY ?i
-```
-
-
-### Q4: Query to get candidate code list structure
-```sparql
-SELECT DISTINCT ?cp ?c ?cn ?i1 ?i1n ?p ?i2 ?i2n
-FROM <http://rdf.muninn-project.org/ontologies/military>
-WHERE {
-  VALUES ?cp { rdf:type }# rdfs:subClassOf
-  BIND(<http://rdf.muninn-project.org/ontologies/military#Rank> AS ?c) .
-  ?i1 ?cp ?c .
-  VALUES ?lp { rdfs:label dc:title dcterms:title skos:prefLabel }
-  OPTIONAL { ?c ?lp ?cn . FILTER(LANGMATCHES(LANG(?cn), 'en')) }
-  OPTIONAL { ?i1 ?lp ?i1n . FILTER(LANGMATCHES(LANG(?i1n), 'en'))}
-  OPTIONAL {
-    ?i2 ?cp ?c .
-    ?i1 ?p ?i2 .
-    OPTIONAL { ?i2 ?lp ?i2n . FILTER(LANGMATCHES(LANG(?i2n), 'en')) }
-  }
-}
-ORDER BY ?i1
-```
-
-
-### Q5: Query to get a list of properties that connect class instances and the number of instances on both sides
-```sparql
-SELECT (COUNT(DISTINCT ?i1) AS ?ni1) ?p (COUNT(DISTINCT ?i2) AS ?ni2)
-FROM <http://rdf.muninn-project.org/ontologies/military> 
-WHERE {
-  ?c1 a owl:Class .
-  ?c2 a owl:Class .
-  ?i1 a ?c1 .
-  ?i2 a ?c2 .
-  ?i1 ?p ?i2 .
-}
-GROUP BY ?p
-```
-
-## DBpedia-specific queries
-
-### Get a list of broadest skos:Concept instances
-```sparql
-SELECT ?c (COUNT(DISTINCT ?i) AS ?n) {
-  ?c a skos:Concept .
-  FILTER NOT EXISTS {
-    ?b a skos:Concept .
-    ?c skos:broader ?b .
-  }
-  ?i skos:broader ?c .
-}
-GROUP BY ?c
-ORDER BY DESC(?n)
-```
-
-### Get code list members and their skos:Concept status
-```sparql
-SELECT DISTINCT ?i ?skosConcept
-WHERE {
-  ?i skos:broader <http://dbpedia.org/resource/Category:Research_vessels_of_the_United_States> .
-  ?i a ?skosConcept .
-}
-```
-
-### Get code list structure 
-```sparql
-SELECT DISTINCT ?c ?cn ?i1 ?i1n ?p ?i2 ?i2n
-WHERE {
-  VALUES ?lp { rdfs:label }
-  BIND(<http://dbpedia.org/resource/Category:Research_vessels_of_the_United_States> AS ?c) .
-  ?i1 skos:broader ?c .
-  OPTIONAL { ?c ?lp ?cn . FILTER(LANGMATCHES(LANG(?cn), 'en')) }
-  OPTIONAL { ?i1 ?lp ?i1n . FILTER(LANGMATCHES(LANG(?i1n), 'en'))}
-  OPTIONAL {
-  	?i2 skos:broader ?c .
-    ?i1 ?p ?i2 .
-    OPTIONAL { ?i2 ?lp ?i2n . FILTER(LANGMATCHES(LANG(?i2n), 'en')) }
-  }
-}
-ORDER BY ?i1
-```
-
-
-## Extracting code lists
-- Go to folder `codelists`, read the `README`
-- Upload to your triplestore, e.g. to Blazegraph using [nvbach91/blazegraph-upload](https://github.com/nvbach91/blazegraph-upload)
