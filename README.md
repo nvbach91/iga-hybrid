@@ -7,18 +7,19 @@ This repository contains
 - [./codelists](./codelists) - the extracted code list data and the code to reproduce it
 
 ## Implemented SPARQL queries
-The SPARQL queries below can be run manually at: 
+Use the web application that provides an interface for the workflow
+- https://fcp.vse.cz/iga-hybrid
+
+The SPARQL queries below can be run also manually at: 
 1. https://fcp.vse.cz/blazegraphpublic/#query
-  - select the `lovXXXXXXXX` namespace in the `namespaces` tab, XXXXXXXX is the date of the LOV dataset download
-  - this is the LOV dataset downloaded from https://lov.linkeddata.es
-  - SPARQL endpoint: `https://fcp.vse.cz/blazegraphpublic/namespace/lovXXXXXXXX/sparql`
+    - select the `lovXXXXXXXX` namespace in the `namespaces` tab, XXXXXXXX is the date of the LOV dataset download
+    - this is the LOV dataset downloaded from https://lov.linkeddata.es
+    - SPARQL endpoint: `https://fcp.vse.cz/blazegraphpublic/namespace/lovXXXXXXXX/sparql`
 2. https://lov.linkeddata.es/dataset/lov/sparql (current LOV dataset)
-  - SPARQL endpoint: `https://lov.linkeddata.es/dataset/lov/sparql` (current version)
+    - SPARQL endpoint: `https://lov.linkeddata.es/dataset/lov/sparql` (current version)
 3. EXPERIMENTAL SPARQL endpoint: `http://dbpedia.org/sparql`
 4. any of your custom SPARQL endpoints
 
-Or use the web application that provides an interface for the workflow
-- https://fcp.vse.cz/iga-hybrid (now using the `https://fcp.vse.cz/blazegraphpublic/namespace/lovXXXXXXXX/sparql` endpoint)
 <!-- - DEV: https://nvbach91.github.io/iga-hybrid -->
 
 
