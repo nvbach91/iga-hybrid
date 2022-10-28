@@ -1,14 +1,14 @@
 const argv = require('yargs').argv;
-
+const moment = require('moment');
 const date = argv.date;
 
 if (!date) {
-    console.error('You must specify a folder name that contains the result file like so: --date=2022-10-23');
+    console.error(`You must specify a folder name that contains the result file like so: --date=${moment().format('YYYY-MM-DD')}`);
     return process.exit();
 }
 const fs = require('fs');
 if (!fs.existsSync(`./results/${date}`)) {
-    console.error('The specified folder does not exist.');
+    console.error('The specified folder does not exist in the ./results folder.');
     return process.exit();
 }
 const filePath = `./results/${date}/${date}_lov-analyzer-results.json`;

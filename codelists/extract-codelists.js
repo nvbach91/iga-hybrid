@@ -1,14 +1,15 @@
 const axios = require('axios');
 const argv = require('yargs').argv;
 const date = argv.date;
+const moment = require('moment');
 
 if (!date) {
-    console.error('You must specify a folder name that contains the result file like so: --date=2022-10-23');
+    console.error(`You must specify a folder name that contains the result file like so: --date=${moment().format('YYYY-MM-DD')}`);
     return process.exit();
 }
 const fs = require('fs');
 if (!fs.existsSync(`../aggregate/results/${date}`)) {
-    console.error('The specified folder does not exist.');
+    console.error('The specified folder does not exist in the ../aggregate/results folder');
     return process.exit();
 }
 const filePath = `../aggregate/results/${date}/${date}_lov-analyzer-results.json`;
@@ -17,7 +18,6 @@ if (!fs.existsSync(filePath)) {
     return process.exit();
 }
 
-const moment = require('moment');
 const codeLists = require(`../aggregate/results/${date}/${date}_lov-analyzer-results-flat.json`);
 const codeListIris = Object.keys(codeLists);
 const { username, password, endpoint } = require('./config.json');
