@@ -34,17 +34,7 @@ const getQueryClassInstanceCounts = (vocabIri) => `
   } GROUP BY ?d ?p ?c ?sc ORDER BY DESC(?ni)
 `;
 
-const prefixes = {
-  vann: 'http://purl.org/vocab/vann/',
-  voaf: 'http://purl.org/vocommons/voaf#',
-  rdfs: 'http://www.w3.org/2000/01/rdf-schema#',
-  owl: 'http://www.w3.org/2002/07/owl#',
-  skos: 'http://www.w3.org/2004/02/skos/core#',
-  rdf: 'http://www.w3.org/1999/02/22-rdf-syntax-ns#',
-  dcterms: 'http://purl.org/dc/terms/',
-  dc: 'http://purl.org/dc/elements/1.1/',
-  dcmit: 'http://purl.org/dc/dcmitype/',
-};
+const prefixes = require('../common/prefixes.json');
 
 const PREFIXES = Object.keys(prefixes).map((prefix) => `PREFIX ${prefix}: <${prefixes[prefix]}>`).join('\n') + '\n';
 
