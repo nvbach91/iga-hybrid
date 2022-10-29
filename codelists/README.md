@@ -59,7 +59,7 @@ Result sample:
 
 ### A working code lists SPARQL endpoint prepared for you
 - workbench: https://fcp.vse.cz/blazegraphpublic/#namespaces (choose the endpoint named `codelists`)
-- endpoint: https://fcp.vse.cz/blazegraphpublic/namespace/codelists/sparql
+- SPARQL endpoint: `https://fcp.vse.cz/blazegraphpublic/namespace/codelists/sparql`
 
 ### Queries to try on this SPARQL endpoint:
 - Get a list of code lists and their assignment properties
@@ -82,7 +82,7 @@ SELECT ?domainTerm ?assignmentProperty ?codeList ?ontology (COUNT(?code) AS ?nCo
 GROUP BY ?domainTerm ?assignmentProperty ?codeList ?ontology
 ORDER BY DESC(?nCodes)
 ```
-- Get all code lists and their codes
+- Get all code lists and their members
 ```sparql
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
