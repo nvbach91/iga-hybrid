@@ -1,0 +1,40 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="https://w3id.org/arco/ontology/denotative-description"/>
+  <owl:FunctionalProperty rdf:about="https://w3id.org/arco/ontology/denotative-description/hasIconographicOrDecorativeApparatusType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment xml:lang="en">This property relates a iconographic or decorative apparatus to its type.</rdfs:comment>
+    <rdfs:label xml:lang="en">has iconographic or decorative apparatus type</rdfs:label>
+    <rdfs:domain rdf:resource="https://w3id.org/arco/ontology/denotative-description/IconographicOrDecorativeApparatus"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="https://w3id.org/arco/ontology/denotative-description/IconographicOrDecorativeApparatusType">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/denotative-description"/>
+        <rdfs:label xml:lang="en">Iconographic Or Decorative Apparatus Type</rdfs:label>
+        <rdfs:comment xml:lang="en">This class represents the iconographic or decorative apparatus' type (iconographic, decorative, iconographic-decorative) of a cultual property.</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:FunctionalProperty>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/denotative-description/IconographicApparatus">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/denotative-description"/>
+    <rdfs:label xml:lang="en">Iconographic apparatus</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/denotative-description/IconographicOrDecorativeApparatusType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/denotative-description/IconographicAndDecorativeApparatus">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/denotative-description"/>
+    <rdfs:label xml:lang="en">Iconographic and Decorative apparatus</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/denotative-description/IconographicOrDecorativeApparatusType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/denotative-description/DecorativeApparatus">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/denotative-description"/>
+    <rdfs:label xml:lang="en">Decorative apparatus</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/denotative-description/IconographicOrDecorativeApparatusType"/>
+  </skos:Concept>
+</rdf:RDF>

@@ -1,6 +1,6 @@
 <rdf:RDF
-    xmlns:dct="http://purl.org/dc/terms/"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
     xmlns:dc="http://purl.org/dc/elements/1.1/"
     xmlns:owl="http://www.w3.org/2002/07/owl#"
     xmlns:dcmit="http://purl.org/dc/dcmitype/"
@@ -10,25 +10,19 @@
     xmlns:vann="http://purl.org/vocab/vann/">
   <owl:Ontology rdf:about="http://vocab.org/transit/terms/"/>
   <rdf:Property rdf:about="http://vocab.org/transit/terms/pickup">
-    <rdfs:isDefinedBy rdf:resource="http://vocab.org/transit/terms/"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdfs:comment xml:lang="en">The arrangement required for passengers to be picked up at this service stop.</rdfs:comment>
     <rdfs:label xml:lang="en">Pick Up</rdfs:label>
-    <rdfs:domain>
-      <rdf:Description rdf:about="http://vocab.org/transit/terms/ServiceStop">
-        <rdfs:isDefinedBy rdf:resource="http://vocab.org/transit/terms/"/>
-      </rdf:Description>
-    </rdfs:domain>
+    <rdfs:domain rdf:resource="http://vocab.org/transit/terms/ServiceStop"/>
     <rdfs:range>
       <skos:ConceptScheme rdf:about="http://vocab.org/transit/terms/AccessArrangement">
         <rdfs:isDefinedBy rdf:resource="http://vocab.org/transit/terms/"/>
-        <rdfs:label xml:lang="en">A type of arrangement for picking up or dropping off passengers from a service stop.</rdfs:label>
+        <rdfs:label xml:lang="en">Access Arrangement</rdfs:label>
         <rdfs:comment xml:lang="en">A type of arrangement for picking up or dropping off passengers from a service stop.</rdfs:comment>
       </skos:ConceptScheme>
     </rdfs:range>
   </rdf:Property>
   <rdf:Property rdf:about="http://vocab.org/transit/terms/dropoff">
-    <rdfs:isDefinedBy rdf:resource="http://vocab.org/transit/terms/"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdfs:comment xml:lang="en">The arrangement required for passengers to be dropped off at this service stop.</rdfs:comment>
     <rdfs:label xml:lang="en">Drop Off</rdfs:label>

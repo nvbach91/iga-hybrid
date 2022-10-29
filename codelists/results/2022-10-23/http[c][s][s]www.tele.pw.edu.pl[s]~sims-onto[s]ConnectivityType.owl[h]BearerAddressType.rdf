@@ -1,0 +1,42 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl"/>
+  <owl:ObjectProperty rdf:about="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl#referesToAddress">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Defines network address type used by network bearer type.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl#NetworkBearerService"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl#BearerAddressType">
+        <rdfs:isDefinedBy rdf:resource="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Defines type of address supported in network and associated with bearer. Specific addresses are modelled as instances e.g. GSM_MSISDN describe type of address used in GSM network.</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl#IPv6">
+    <rdfs:isDefinedBy rdf:resource="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >IP address (Internet Protocol address) is a unique address that certain electronic devices use in order to identify and communicate with each other on a computer network utilizing the Internet Protocol standard (IP). IPv6 uses 128-bit addresses.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl#BearerAddressType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl#GSM_MSISDN">
+    <rdfs:isDefinedBy rdf:resource="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >MSISDN (Mobile Subscriber ISDN Number) refers to the telephone number of a mobile subscriber. MSISDN by ITU-T is at most 15 digits long and consists of: * CC - Country Code ( 1-3 digits e.g."48" for Poland), * NDC - National Destination Code (e.g. 3 digits in Poland), * SN - Subscriber Number (e.g. 6 remaining digits (123456)).</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl#BearerAddressType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl#IPv4">
+    <rdfs:isDefinedBy rdf:resource="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >IP address (Internet Protocol address) is a unique address that certain electronic devices use in order to identify and communicate with each other on a computer network utilizing the Internet Protocol standard (IP). IPv4 uses 32-bit (4 byte) addresses.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl#BearerAddressType"/>
+  </skos:Concept>
+</rdf:RDF>

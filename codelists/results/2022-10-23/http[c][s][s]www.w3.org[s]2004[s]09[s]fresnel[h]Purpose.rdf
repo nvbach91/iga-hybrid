@@ -1,6 +1,6 @@
 <rdf:RDF
-    xmlns:dct="http://purl.org/dc/terms/"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
     xmlns:dc="http://purl.org/dc/elements/1.1/"
     xmlns:owl="http://www.w3.org/2002/07/owl#"
     xmlns:dcmit="http://purl.org/dc/dcmitype/"
@@ -10,19 +10,17 @@
     xmlns:vann="http://purl.org/vocab/vann/">
   <owl:Ontology rdf:about="http://www.w3.org/2004/09/fresnel"/>
   <owl:ObjectProperty rdf:about="http://www.w3.org/2004/09/fresnel#purpose">
-    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/09/fresnel"/>
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Specifies a purpose for which a lens or format might be appropriate.</rdfs:comment>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >purpose</rdfs:label>
     <rdfs:domain rdf:parseType="Resource">
-      <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/09/fresnel"/>
     </rdfs:domain>
     <rdfs:range>
       <skos:ConceptScheme rdf:about="http://www.w3.org/2004/09/fresnel#Purpose">
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/09/fresnel"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >Propose in which a specific lens might be appropriate.</rdfs:label>
+        >Purpose</rdfs:label>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
         >Propose in which a specific lens might be appropriate.</rdfs:comment>
       </skos:ConceptScheme>

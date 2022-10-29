@@ -1,0 +1,72 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://purl.org/olia/ubyCat.owl"/>
+  <owl:ObjectProperty rdf:about="http://purl.org/olia/ubyCat.owl#hasDerivationType">
+    <rdfs:comment>In UBY-LMF, relType is an attribute of the RelatedForm class which encodes links to derivationally related lexical entries or senses.</rdfs:comment>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://purl.org/olia/ubyCat.owl#DerivationType">
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+        <rdfs:label>relType</rdfs:label>
+        <rdfs:comment>In UBY-LMF, relType is an attribute of the RelatedForm class which encodes links to derivationally related lexical entries or senses.</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://purl.org/olia/ubyCat.owl#derivationBaseAdj">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+    <rdfs:label>derivationBaseAdj</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/olia/ubyCat.owl#DerivationType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/olia/ubyCat.owl#supports">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+    <rdfs:label>supports</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/olia/ubyCat.owl#DerivationType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/olia/ubyCat.owl#derivative">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+    <rdfs:label>derivative</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/olia/ubyCat.owl#DerivationType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/olia/ubyCat.owl#derivationBase">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+    <rdfs:label>derivationBase</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/olia/ubyCat.owl#DerivationType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/olia/ubyCat.owl#derivationBaseNoun">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+    <rdfs:label>derivationBaseNoun</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/olia/ubyCat.owl#DerivationType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/olia/ubyCat.owl#compound">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+    <rdfs:label>compound</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/olia/ubyCat.owl#DerivationType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/olia/ubyCat.owl#derivationBaseVerb">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+    <rdfs:label>derivationBaseVerb</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/olia/ubyCat.owl#DerivationType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/olia/ubyCat.owl#loanWord">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+    <rdfs:label>loanWord</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/olia/ubyCat.owl#DerivationType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/olia/ubyCat.owl#compoundRoot">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+    <rdfs:label>compoundRoot</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/olia/ubyCat.owl#DerivationType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/olia/ubyCat.owl#etymology">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+    <rdfs:label>etymology</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/olia/ubyCat.owl#DerivationType"/>
+  </skos:Concept>
+</rdf:RDF>

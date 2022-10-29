@@ -1,0 +1,38 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="https://w3id.org/ifc/IFC4_ADD1"/>
+  <owl:FunctionalProperty rdf:about="https://w3id.org/ifc/IFC4_ADD1#projectedOrTrue_IfcStructuralSurfaceAction">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>ProjectedOrTrue</rdfs:label>
+    <rdfs:domain rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcStructuralSurfaceAction"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="https://w3id.org/ifc/IFC4_ADD1#IfcProjectedOrTrueLengthEnum">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="https://w3id.org/ifc/IFC4_ADD1#projectedOrTrue_IfcStructuralCurveAction">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>ProjectedOrTrue</rdfs:label>
+    <rdfs:domain rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcStructuralCurveAction"/>
+    <rdfs:range rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcProjectedOrTrueLengthEnum"/>
+  </owl:FunctionalProperty>
+  <skos:Concept rdf:about="https://w3id.org/ifc/IFC4_ADD1#PROJECTED_LENGTH">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+    <rdfs:label>PROJECTED_LENGTH</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcProjectedOrTrueLengthEnum"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ifc/IFC4_ADD1#TRUE_LENGTH">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+    <rdfs:label>TRUE_LENGTH</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcProjectedOrTrueLengthEnum"/>
+  </skos:Concept>
+</rdf:RDF>

@@ -1,6 +1,6 @@
 <rdf:RDF
-    xmlns:dct="http://purl.org/dc/terms/"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
     xmlns:dc="http://purl.org/dc/elements/1.1/"
     xmlns:owl="http://www.w3.org/2002/07/owl#"
     xmlns:dcmit="http://purl.org/dc/dcmitype/"
@@ -10,16 +10,12 @@
     xmlns:vann="http://purl.org/vocab/vann/">
   <owl:Ontology rdf:about="https://www.gleif.org/ontology/L2/"/>
   <owl:ObjectProperty rdf:about="https://www.gleif.org/ontology/L2/hasValidationDocuments">
-    <rdfs:isDefinedBy rdf:resource="https://www.gleif.org/ontology/L2/"/>
     <rdfs:label>has validation documents</rdfs:label>
-    <rdfs:domain>
-      <rdf:Description rdf:about="https://www.gleif.org/ontology/L2/LegalEntityRelationshipRecord">
-        <rdfs:isDefinedBy rdf:resource="https://www.gleif.org/ontology/L2/"/>
-      </rdf:Description>
-    </rdfs:domain>
+    <rdfs:domain rdf:resource="https://www.gleif.org/ontology/L2/LegalEntityRelationshipRecord"/>
     <rdfs:range>
       <skos:ConceptScheme rdf:about="https://www.gleif.org/ontology/L2/RelationshipValidationDocumentsKind">
         <rdfs:isDefinedBy rdf:resource="https://www.gleif.org/ontology/L2/"/>
+        <rdfs:label>relationship validation documents kind</rdfs:label>
       </skos:ConceptScheme>
     </rdfs:range>
   </owl:ObjectProperty>

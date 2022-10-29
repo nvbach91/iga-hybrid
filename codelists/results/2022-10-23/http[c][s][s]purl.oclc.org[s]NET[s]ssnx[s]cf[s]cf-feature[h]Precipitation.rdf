@@ -1,0 +1,24 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-feature#snowfall">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-feature#Precipitation">
+        <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+      </skos:ConceptScheme>
+    </skos:inScheme>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-feature#rainfall">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-feature#Precipitation"/>
+  </skos:Concept>
+</rdf:RDF>

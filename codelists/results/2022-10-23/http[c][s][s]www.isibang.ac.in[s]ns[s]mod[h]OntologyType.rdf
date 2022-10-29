@@ -1,0 +1,55 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://www.isibang.ac.in/ns/mod"/>
+  <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/type">
+    <rdfs:comment>The nature or genre of the resource.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.isibang.ac.in/ns/mod#Ontology"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://www.isibang.ac.in/ns/mod#OntologyType">
+        <rdfs:isDefinedBy rdf:resource="http://www.isibang.ac.in/ns/mod"/>
+        <rdfs:label>Ontology Type</rdfs:label>
+        <rdfs:comment xml:lang="en">The kind of an ontology. Example includes Upper ontology, Domain Ontology, Application Ontology and Task ontology. </rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://www.isibang.ac.in/ns/mod#DomainOntology">
+    <rdfs:isDefinedBy rdf:resource="http://www.isibang.ac.in/ns/mod"/>
+    <rdfs:label xml:lang="en">Domain Ontology </rdfs:label>
+    <skos:inScheme rdf:resource="http://www.isibang.ac.in/ns/mod#OntologyType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.isibang.ac.in/ns/mod#TaskOntology">
+    <rdfs:isDefinedBy rdf:resource="http://www.isibang.ac.in/ns/mod"/>
+    <skos:inScheme rdf:resource="http://www.isibang.ac.in/ns/mod#OntologyType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.isibang.ac.in/ns/mod#ServiceOntology">
+    <rdfs:isDefinedBy rdf:resource="http://www.isibang.ac.in/ns/mod"/>
+    <skos:inScheme rdf:resource="http://www.isibang.ac.in/ns/mod#OntologyType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.isibang.ac.in/ns/mod#ApplicationOntology">
+    <rdfs:isDefinedBy rdf:resource="http://www.isibang.ac.in/ns/mod"/>
+    <skos:inScheme rdf:resource="http://www.isibang.ac.in/ns/mod#OntologyType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.isibang.ac.in/ns/mod#ProcessOntology">
+    <rdfs:isDefinedBy rdf:resource="http://www.isibang.ac.in/ns/mod"/>
+    <skos:inScheme rdf:resource="http://www.isibang.ac.in/ns/mod#OntologyType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.isibang.ac.in/ns/mod#CoreReferenceOntology">
+    <rdfs:isDefinedBy rdf:resource="http://www.isibang.ac.in/ns/mod"/>
+    <skos:inScheme rdf:resource="http://www.isibang.ac.in/ns/mod#OntologyType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.isibang.ac.in/ns/mod#GeneralOntology">
+    <rdfs:label xml:lang="en">Upper Level Ontology</rdfs:label>
+    <rdfs:label xml:lang="en">Top-Level Ontology</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://www.isibang.ac.in/ns/mod"/>
+    <rdfs:label xml:lang="en">General Ontology</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.isibang.ac.in/ns/mod#OntologyType"/>
+  </skos:Concept>
+</rdf:RDF>

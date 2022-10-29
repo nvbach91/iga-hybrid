@@ -1,0 +1,54 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://purl.org/spar/scoro/"/>
+  <skos:Concept rdf:about="http://purl.org/spar/scoro/workpackage-leader">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+    <rdfs:label xml:lang="en">workpackage leader</rdfs:label>
+    <rdfs:comment xml:lang="en">The role a person or institution has of being leader for a workpackage within a project such as a research project.</rdfs:comment>
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="http://purl.org/spar/scoro/ProjectRole">
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+        <rdfs:label xml:lang="en">project role</rdfs:label>
+        <rdfs:comment xml:lang="en">A role that an agent might hold with respect to a project.  Individual members of this class are used to specify particular roles.</rdfs:comment>
+      </skos:ConceptScheme>
+    </skos:inScheme>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/scoro/project-manager">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+    <rdfs:label xml:lang="en">project manager</rdfs:label>
+    <rdfs:comment xml:lang="en">The role a person has of being project manager for a project such as a research project.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/scoro/ProjectRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/scoro/project-leader">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+    <rdfs:label xml:lang="en">project leader</rdfs:label>
+    <rdfs:comment xml:lang="en">The role a person or an institution has of being project leader for a project such as a research project.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/scoro/ProjectRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/scoro/project-member">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+    <rdfs:label xml:lang="en">project member</rdfs:label>
+    <rdfs:comment xml:lang="en">The role a person has of being a member of a project such as a research project.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/scoro/ProjectRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/scoro/lead-applicant">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+    <rdfs:label xml:lang="en">lead applicant</rdfs:label>
+    <rdfs:comment xml:lang="en">The role a person has of being the lead applicant on the grant application to obtain funding to fund an endeavour such as a research project.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/scoro/ProjectRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/scoro/co-applicant">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+    <rdfs:label xml:lang="en">co-applicant</rdfs:label>
+    <rdfs:comment xml:lang="en">The role a person has of being a co-applicant on the grant application to obtain funding to fund an endeavour such as a research project.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/scoro/ProjectRole"/>
+  </skos:Concept>
+</rdf:RDF>

@@ -1,0 +1,63 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://rdf.geospecies.org/ont/geospecies"/>
+  <owl:ObjectProperty rdf:about="http://rdf.geospecies.org/ont/geospecies#hasBBC_Ecozone">
+    <rdfs:label>hasBBC_Ecozone</rdfs:label>
+    <rdfs:domain rdf:resource="http://rdf.geospecies.org/ont/geospecies#Location"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://rdf.geospecies.org/ont/geospecies#BBC_Ecozone">
+        <rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+        <rdfs:label>BBC_Ecozone</rdfs:label>
+        <rdfs:comment>From BBC Nature Project: "Ecozones are a method of dividing up the Earth's surface. Each ecozone is a large area that contains a number of habitats, which are linked by the evolutionary history of the animals and plants within them. For instance one ecozone is Australasia, because its marsupials evolved in isolation to mammals in the rest of the world."</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://rdf.geospecies.org/ont/geospecies#BBC_Ecozone_Palaearctic">
+    <rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+    <rdfs:label>Palaearctic</rdfs:label>
+    <skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#BBC_Ecozone"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://rdf.geospecies.org/ont/geospecies#BBC_Ecozone_Afrotropics">
+    <rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+    <rdfs:label>Afrotropics</rdfs:label>
+    <skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#BBC_Ecozone"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://rdf.geospecies.org/ont/geospecies#BBC_Ecozone_Neotropical">
+    <rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+    <rdfs:label>Neotropical</rdfs:label>
+    <skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#BBC_Ecozone"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://rdf.geospecies.org/ont/geospecies#BBC_Ecozone_Australasia">
+    <rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+    <rdfs:label>Australasia</rdfs:label>
+    <skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#BBC_Ecozone"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://rdf.geospecies.org/ont/geospecies#BBC_Ecozone_Antarctica">
+    <rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+    <rdfs:label>Antarctica</rdfs:label>
+    <skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#BBC_Ecozone"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://rdf.geospecies.org/ont/geospecies#BBC_Ecozone_Oceania">
+    <rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+    <rdfs:label>Oceania</rdfs:label>
+    <skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#BBC_Ecozone"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://rdf.geospecies.org/ont/geospecies#BBC_Ecozone_Indo-Malay">
+    <rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+    <rdfs:label>Indo-Malay</rdfs:label>
+    <skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#BBC_Ecozone"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://rdf.geospecies.org/ont/geospecies#BBC_Ecozone_Nearctic">
+    <rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+    <rdfs:label>Nearctic</rdfs:label>
+    <skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#BBC_Ecozone"/>
+  </skos:Concept>
+</rdf:RDF>

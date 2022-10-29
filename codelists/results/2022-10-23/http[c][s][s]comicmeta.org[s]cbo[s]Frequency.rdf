@@ -1,0 +1,52 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://comicmeta.org/cbo/"/>
+  <owl:ObjectProperty rdf:about="http://comicmeta.org/cbo/publicationFrequency">
+    <rdfs:comment xml:lang="en">The publication frequency of a comic.</rdfs:comment>
+    <rdfs:label xml:lang="en">publication frequency</rdfs:label>
+    <rdfs:domain rdf:resource="http://comicmeta.org/cbo/Volume"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://comicmeta.org/cbo/Frequency">
+        <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+        <rdfs:label xml:lang="en">Frequency</rdfs:label>
+        <rdfs:comment xml:lang="en">A frequency with which a comic is published.</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/Monthly">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Frequency"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/Weekly">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Frequency"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/BiMonthly">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Frequency"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/SemiMonthly">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Frequency"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/Annual">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Frequency"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/OneShot">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Frequency"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/BiWeekly">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Frequency"/>
+  </skos:Concept>
+</rdf:RDF>

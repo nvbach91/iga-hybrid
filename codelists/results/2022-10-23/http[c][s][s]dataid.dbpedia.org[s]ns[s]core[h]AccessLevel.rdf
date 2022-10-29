@@ -1,6 +1,6 @@
 <rdf:RDF
-    xmlns:dct="http://purl.org/dc/terms/"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
     xmlns:dc="http://purl.org/dc/elements/1.1/"
     xmlns:owl="http://www.w3.org/2002/07/owl#"
     xmlns:dcmit="http://purl.org/dc/dcmitype/"
@@ -10,32 +10,22 @@
     xmlns:vann="http://purl.org/vocab/vann/">
   <owl:Ontology rdf:about="http://dataid.dbpedia.org/ns/core#"/>
   <owl:ObjectProperty rdf:about="http://dataid.dbpedia.org/ns/core#validForAccessLevel">
-    <rdfs:isDefinedBy rdf:resource="http://dataid.dbpedia.org/ns/core#"/>
     <rdfs:comment xml:lang="en">Limits rights and actions an Agent is allwed to take depending on the AccessLevel chosen for this AuthorityEntityContext.</rdfs:comment>
     <rdfs:label xml:lang="en">valid for access level</rdfs:label>
-    <rdfs:domain>
-      <rdf:Description rdf:about="http://dataid.dbpedia.org/ns/core#AuthorityEntityContext">
-        <rdfs:isDefinedBy rdf:resource="http://dataid.dbpedia.org/ns/core#"/>
-      </rdf:Description>
-    </rdfs:domain>
+    <rdfs:domain rdf:resource="http://dataid.dbpedia.org/ns/core#AuthorityEntityContext"/>
     <rdfs:range>
       <skos:ConceptScheme rdf:about="http://dataid.dbpedia.org/ns/core#AccessLevel">
         <rdfs:isDefinedBy rdf:resource="http://dataid.dbpedia.org/ns/core#"/>
-        <rdfs:label xml:lang="en">The level of openness of access to particular groups of agents</rdfs:label>
+        <rdfs:label xml:lang="en">Access level</rdfs:label>
         <rdfs:comment xml:lang="en">The level of openness of access to particular groups of agents</rdfs:comment>
       </skos:ConceptScheme>
     </rdfs:range>
   </owl:ObjectProperty>
   <owl:FunctionalProperty rdf:about="http://dataid.dbpedia.org/ns/core#hasAccessLevel">
-    <rdfs:isDefinedBy rdf:resource="http://dataid.dbpedia.org/ns/core#"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdfs:comment xml:lang="en">defines the access rights for DataId related entities</rdfs:comment>
     <rdfs:label xml:lang="en">access level</rdfs:label>
-    <rdfs:domain>
-      <rdf:Description rdf:about="http://www.w3.org/ns/prov#Entity">
-        <rdfs:isDefinedBy rdf:resource="http://dataid.dbpedia.org/ns/core#"/>
-      </rdf:Description>
-    </rdfs:domain>
+    <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Entity"/>
     <rdfs:range rdf:resource="http://dataid.dbpedia.org/ns/core#AccessLevel"/>
   </owl:FunctionalProperty>
   <skos:Concept rdf:about="http://dataid.dbpedia.org/ns/core#SemiPrivateAccess">

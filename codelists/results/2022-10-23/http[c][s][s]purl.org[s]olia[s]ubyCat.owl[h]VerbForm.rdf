@@ -1,0 +1,42 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://purl.org/olia/ubyCat.owl"/>
+  <owl:ObjectProperty rdf:about="http://purl.org/olia/ubyCat.owl#hasVerbForm">
+    <rdfs:label>verbForm</rdfs:label>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://purl.org/olia/ubyCat.owl#VerbForm">
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+        <rdfs:label>verbForm</rdfs:label>
+        <rdfs:comment>Specifies the verb form to be used in a verb phrase complement.</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://purl.org/olia/ubyCat.owl#bareInfinitive">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+    <rdfs:label>bareInfinitive</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/olia/ubyCat.owl#VerbForm"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/olia/ubyCat.owl#toInfinitive">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+    <rdfs:label>toInfinitive</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/olia/ubyCat.owl#VerbForm"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/olia/ubyCat.owl#ingForm">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+    <rdfs:label>ingForm</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/olia/ubyCat.owl#VerbForm"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/olia/ubyCat.owl#participle">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+    <rdfs:label>participle</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/olia/ubyCat.owl#VerbForm"/>
+  </skos:Concept>
+</rdf:RDF>

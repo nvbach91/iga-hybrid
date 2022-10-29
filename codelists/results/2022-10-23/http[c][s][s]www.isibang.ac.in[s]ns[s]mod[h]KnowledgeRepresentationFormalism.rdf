@@ -1,0 +1,43 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://www.isibang.ac.in/ns/mod"/>
+  <owl:ObjectProperty rdf:about="http://www.isibang.ac.in/ns/mod#knowledgeRepresentationFormalism">
+    <rdfs:comment xml:lang="en">A knowledge representation formalism (e.g., description logics, first order logic) followed to create an ontology. </rdfs:comment>
+    <rdfs:label xml:lang="en">knowledge representation formalism</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.isibang.ac.in/ns/mod#Ontology"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://www.isibang.ac.in/ns/mod#KnowledgeRepresentationFormalism">
+        <rdfs:isDefinedBy rdf:resource="http://www.isibang.ac.in/ns/mod"/>
+        <rdfs:label>Knowledge Representation Formalism</rdfs:label>
+        <rdfs:comment xml:lang="en">A representation formalism that is followed to describe knowledge in an ontology. Example includes description logics, first order logic, etc. </rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://www.isibang.ac.in/ns/mod#PropositionalLogics">
+    <rdfs:isDefinedBy rdf:resource="http://www.isibang.ac.in/ns/mod"/>
+    <rdfs:label xml:lang="en">Propositional Logic </rdfs:label>
+    <skos:inScheme rdf:resource="http://www.isibang.ac.in/ns/mod#KnowledgeRepresentationFormalism"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.isibang.ac.in/ns/mod#DescriptionLogics">
+    <rdfs:isDefinedBy rdf:resource="http://www.isibang.ac.in/ns/mod"/>
+    <rdfs:label xml:lang="en">Description Logics</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.isibang.ac.in/ns/mod#KnowledgeRepresentationFormalism"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.isibang.ac.in/ns/mod#FirstOrderLogic">
+    <rdfs:isDefinedBy rdf:resource="http://www.isibang.ac.in/ns/mod"/>
+    <rdfs:label xml:lang="en">First Order Logic </rdfs:label>
+    <skos:inScheme rdf:resource="http://www.isibang.ac.in/ns/mod#KnowledgeRepresentationFormalism"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.isibang.ac.in/ns/mod#Frame">
+    <rdfs:isDefinedBy rdf:resource="http://www.isibang.ac.in/ns/mod"/>
+    <skos:inScheme rdf:resource="http://www.isibang.ac.in/ns/mod#KnowledgeRepresentationFormalism"/>
+  </skos:Concept>
+</rdf:RDF>

@@ -1,0 +1,126 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="https://bmake.th-brandenburg.de/spv"/>
+  <owl:ObjectProperty rdf:about="https://bmake.th-brandenburg.de/spv#researchActionType">
+    <rdfs:comment xml:lang="en">Is used in combination with research action type to indicate a research objective of a scientific paper.</rdfs:comment>
+    <rdfs:label xml:lang="en">research action type</rdfs:label>
+    <rdfs:domain rdf:resource="https://bmake.th-brandenburg.de/spv#ResearchObjective"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="https://bmake.th-brandenburg.de/spv#ResearchActionType">
+        <rdfs:isDefinedBy rdf:resource="https://bmake.th-brandenburg.de/spv"/>
+        <rdfs:label xml:lang="en">Research Action Type</rdfs:label>
+        <rdfs:comment xml:lang="en">The activity aspect of an elecited research objective taken from the list of types of research &amp; development actions applied in Information Systems.</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="https://bmake.th-brandenburg.de/spv#ResActTypeProve">
+    <rdfs:isDefinedBy rdf:resource="https://bmake.th-brandenburg.de/spv"/>
+    <rdfs:label xml:lang="en">prove</rdfs:label>
+    <rdfs:comment xml:lang="en">investigate how an object meets certain requirements; whether a statement (about an object) is true</rdfs:comment>
+    <skos:inScheme rdf:resource="https://bmake.th-brandenburg.de/spv#ResearchActionType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://bmake.th-brandenburg.de/spv#ResActTypeIntegrate">
+    <rdfs:isDefinedBy rdf:resource="https://bmake.th-brandenburg.de/spv"/>
+    <rdfs:label xml:lang="en">integrate</rdfs:label>
+    <rdfs:comment xml:lang="en">merge several objects into a single unit</rdfs:comment>
+    <skos:inScheme rdf:resource="https://bmake.th-brandenburg.de/spv#ResearchActionType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://bmake.th-brandenburg.de/spv#ResActTypeElicit">
+    <rdfs:isDefinedBy rdf:resource="https://bmake.th-brandenburg.de/spv"/>
+    <rdfs:label xml:lang="en">elicit</rdfs:label>
+    <rdfs:comment xml:lang="en">capture characteristics of objects under examination (eg by measurement)</rdfs:comment>
+    <skos:inScheme rdf:resource="https://bmake.th-brandenburg.de/spv#ResearchActionType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://bmake.th-brandenburg.de/spv#ResActTypeDesign">
+    <rdfs:isDefinedBy rdf:resource="https://bmake.th-brandenburg.de/spv"/>
+    <rdfs:label xml:lang="en">design</rdfs:label>
+    <rdfs:comment xml:lang="en">basically design an object, mostly according to appropriate design principles</rdfs:comment>
+    <skos:inScheme rdf:resource="https://bmake.th-brandenburg.de/spv#ResearchActionType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://bmake.th-brandenburg.de/spv#ResActTypeConstruct">
+    <rdfs:isDefinedBy rdf:resource="https://bmake.th-brandenburg.de/spv"/>
+    <rdfs:label xml:lang="en">construct</rdfs:label>
+    <rdfs:comment xml:lang="en">create something according to certain design or architectural principles</rdfs:comment>
+    <skos:inScheme rdf:resource="https://bmake.th-brandenburg.de/spv#ResearchActionType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://bmake.th-brandenburg.de/spv#ResActTypeEnhance">
+    <rdfs:isDefinedBy rdf:resource="https://bmake.th-brandenburg.de/spv"/>
+    <rdfs:label xml:lang="en">enhance</rdfs:label>
+    <rdfs:comment xml:lang="en">improve an object in certain features or aspects</rdfs:comment>
+    <skos:inScheme rdf:resource="https://bmake.th-brandenburg.de/spv#ResearchActionType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://bmake.th-brandenburg.de/spv#ResActTypeExtend">
+    <rdfs:isDefinedBy rdf:resource="https://bmake.th-brandenburg.de/spv"/>
+    <rdfs:label xml:lang="en">extend</rdfs:label>
+    <rdfs:comment xml:lang="en">extend an object by properties or in its scope of functions or services</rdfs:comment>
+    <skos:inScheme rdf:resource="https://bmake.th-brandenburg.de/spv#ResearchActionType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://bmake.th-brandenburg.de/spv#ResActTypeStructure">
+    <rdfs:isDefinedBy rdf:resource="https://bmake.th-brandenburg.de/spv"/>
+    <rdfs:label xml:lang="en">structure</rdfs:label>
+    <rdfs:comment xml:lang="en">systematically organize parts, aspects or the like of a complex object</rdfs:comment>
+    <skos:inScheme rdf:resource="https://bmake.th-brandenburg.de/spv#ResearchActionType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://bmake.th-brandenburg.de/spv#ResActTypeCollect">
+    <rdfs:isDefinedBy rdf:resource="https://bmake.th-brandenburg.de/spv"/>
+    <rdfs:label xml:lang="en">collect</rdfs:label>
+    <rdfs:comment xml:lang="en">collect all parts or aspects of a complex object</rdfs:comment>
+    <skos:inScheme rdf:resource="https://bmake.th-brandenburg.de/spv#ResearchActionType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://bmake.th-brandenburg.de/spv#ResActTypeAnalyze">
+    <rdfs:isDefinedBy rdf:resource="https://bmake.th-brandenburg.de/spv"/>
+    <rdfs:label xml:lang="en">analyze</rdfs:label>
+    <rdfs:comment xml:lang="en">examine something systematically and in detail</rdfs:comment>
+    <skos:inScheme rdf:resource="https://bmake.th-brandenburg.de/spv#ResearchActionType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://bmake.th-brandenburg.de/spv#ResActTypeDefine">
+    <rdfs:isDefinedBy rdf:resource="https://bmake.th-brandenburg.de/spv"/>
+    <rdfs:label xml:lang="en">define</rdfs:label>
+    <rdfs:comment xml:lang="en">unambiguously describe or explain a concept</rdfs:comment>
+    <skos:inScheme rdf:resource="https://bmake.th-brandenburg.de/spv#ResearchActionType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://bmake.th-brandenburg.de/spv#ResActTypeDevelop">
+    <rdfs:isDefinedBy rdf:resource="https://bmake.th-brandenburg.de/spv"/>
+    <rdfs:label xml:lang="en">develop</rdfs:label>
+    <rdfs:comment xml:lang="en">create something new, mostly using specialist methods and tools</rdfs:comment>
+    <skos:inScheme rdf:resource="https://bmake.th-brandenburg.de/spv#ResearchActionType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://bmake.th-brandenburg.de/spv#ResActTypeProvide">
+    <rdfs:isDefinedBy rdf:resource="https://bmake.th-brandenburg.de/spv"/>
+    <rdfs:label xml:lang="en">provide</rdfs:label>
+    <rdfs:comment xml:lang="en">provide an object in a suitable manner for use</rdfs:comment>
+    <skos:inScheme rdf:resource="https://bmake.th-brandenburg.de/spv#ResearchActionType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://bmake.th-brandenburg.de/spv#ResActTypeImplement">
+    <rdfs:isDefinedBy rdf:resource="https://bmake.th-brandenburg.de/spv"/>
+    <rdfs:label xml:lang="en">implement</rdfs:label>
+    <rdfs:comment xml:lang="en">implement a designed object technically</rdfs:comment>
+    <skos:inScheme rdf:resource="https://bmake.th-brandenburg.de/spv#ResearchActionType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://bmake.th-brandenburg.de/spv#ResActTypeEvaluate">
+    <rdfs:isDefinedBy rdf:resource="https://bmake.th-brandenburg.de/spv"/>
+    <rdfs:label xml:lang="en">evaluate</rdfs:label>
+    <rdfs:comment xml:lang="en">assess a quantitative or qualitative property of an object</rdfs:comment>
+    <skos:inScheme rdf:resource="https://bmake.th-brandenburg.de/spv#ResearchActionType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://bmake.th-brandenburg.de/spv#ResActTypeExtract">
+    <rdfs:isDefinedBy rdf:resource="https://bmake.th-brandenburg.de/spv"/>
+    <rdfs:label xml:lang="en">extract</rdfs:label>
+    <rdfs:comment xml:lang="en">separate defined parts of a complex object and provide them in a suitable form</rdfs:comment>
+    <skos:inScheme rdf:resource="https://bmake.th-brandenburg.de/spv#ResearchActionType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://bmake.th-brandenburg.de/spv#ResActTypeConceptualize">
+    <rdfs:isDefinedBy rdf:resource="https://bmake.th-brandenburg.de/spv"/>
+    <rdfs:label xml:lang="en">conceptualize</rdfs:label>
+    <rdfs:comment xml:lang="en">define the essential terms (concepts) and relations of a domain</rdfs:comment>
+    <skos:inScheme rdf:resource="https://bmake.th-brandenburg.de/spv#ResearchActionType"/>
+  </skos:Concept>
+</rdf:RDF>

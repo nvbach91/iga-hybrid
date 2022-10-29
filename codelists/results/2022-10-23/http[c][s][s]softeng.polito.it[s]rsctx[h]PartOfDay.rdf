@@ -1,0 +1,49 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://softeng.polito.it/rsctx"/>
+  <owl:FunctionalProperty rdf:about="http://softeng.polito.it/rsctx#partOfDay">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment xml:lang="en">This property indicates part of the day in which a Time is included in.</rdfs:comment>
+    <rdfs:label xml:lang="en">part of day</rdfs:label>
+    <rdfs:domain rdf:resource="http://softeng.polito.it/rsctx#Time"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://softeng.polito.it/rsctx#PartOfDay">
+        <rdfs:isDefinedBy rdf:resource="http://softeng.polito.it/rsctx"/>
+        <rdfs:label xml:lang="en">Part of Day</rdfs:label>
+        <rdfs:comment xml:lang="en">This class represents the time intervals in which a day can be divided in.</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:FunctionalProperty>
+  <skos:Concept rdf:about="http://softeng.polito.it/rsctx#Afternoon">
+    <rdfs:isDefinedBy rdf:resource="http://softeng.polito.it/rsctx"/>
+    <rdfs:label xml:lang="en">Afternoon</rdfs:label>
+    <rdfs:comment xml:lang="en">The time of the day between noon and evening. The mapping with respect the hours is possible but not defined because it may vary with the location and the habits.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://softeng.polito.it/rsctx#PartOfDay"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://softeng.polito.it/rsctx#Night">
+    <rdfs:isDefinedBy rdf:resource="http://softeng.polito.it/rsctx"/>
+    <rdfs:label xml:lang="en">Night</rdfs:label>
+    <rdfs:comment xml:lang="en">The period of time between the sunset and the sunrise when the Sun is below the horizon.The mapping with respect the hours is possible but not defined becaus it may vary with the location and the habits.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://softeng.polito.it/rsctx#PartOfDay"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://softeng.polito.it/rsctx#Evening">
+    <rdfs:isDefinedBy rdf:resource="http://softeng.polito.it/rsctx"/>
+    <rdfs:label xml:lang="en">Evening</rdfs:label>
+    <rdfs:comment xml:lang="en">The period of time near the end of the day, from the end of afternoon (usually from 6 PM) to nighttime. The mapping with respect the hours is possible but not defined becaus it may vary with the location and the habits.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://softeng.polito.it/rsctx#PartOfDay"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://softeng.polito.it/rsctx#Morning">
+    <rdfs:isDefinedBy rdf:resource="http://softeng.polito.it/rsctx"/>
+    <rdfs:label xml:lang="en">Morning</rdfs:label>
+    <rdfs:comment xml:lang="en">The period of time between midnight and noon or, more commonly, the interval between sunrise and noon.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://softeng.polito.it/rsctx#PartOfDay"/>
+  </skos:Concept>
+</rdf:RDF>

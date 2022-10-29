@@ -1,0 +1,71 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://w3id.org/vcb/fel#"/>
+  <skos:Concept rdf:about="http://w3id.org/vcb/fel#FullProperForm">
+    <rdfs:isDefinedBy rdf:resource="http://w3id.org/vcb/fel#"/>
+    <rdfs:subClassOf>
+      <skos:Concept rdf:about="http://w3id.org/vcb/fel#ProperForm">
+        <rdfs:label xml:lang="en">Proper Form</rdfs:label>
+        <rdfs:comment xml:lang="en">This class gathers all mentions based on names (proper nouns), e.g., 'Michael Jackson', 'USA', 'King of the Pop', 'B. Obama', etc. Such mentions do not have to be nouns if they are based on proper nouns, as in the case of 'French, 'Orwellian', etc. Such mentions may use abbreviated or extended forms of names; we add a new level in the class hierarchy to separate them: Full, Extended, Short or Alias.</rdfs:comment>
+        <skos:inScheme>
+          <skos:ConceptScheme rdf:about="http://w3id.org/vcb/fel#BaseFormClass">
+            <rdfs:isDefinedBy rdf:resource="http://w3id.org/vcb/fel#"/>
+            <rdfs:label xml:lang="en">Base Form Class</rdfs:label>
+            <rdfs:comment xml:lang="en">This meta-class gathers classes that divide annotations by the base-form of their mention, recognizing not only proper nouns as entities, but also other more flexible definitions, such as those that allow pronouns, numbers, temporal expressions, etc. Current instances of this meta-class include: ProperForm, NumericTemporalForm, CommonForm, and ProForm.</rdfs:comment>
+          </skos:ConceptScheme>
+        </skos:inScheme>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/vcb/fel#"/>
+      </skos:Concept>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">Full Proper Form</rdfs:label>
+    <rdfs:comment xml:lang="en">This class gathers all proper-form mentions that (almost) exactly match with the label of the knowledgebase entity. For example, the mention 'Michael Jackson' targeting wiki:Michael_Jackson is considered Full. This class also includes mentions that are syntactically close to the knowlegebase entity (specifically, the lemmas should be the same and in the same order), for instance 'German' pointing to wiki:Germany is also considered a FullProperForm.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://w3id.org/vcb/fel#BaseFormClass"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://w3id.org/vcb/fel#ProForm">
+    <rdfs:isDefinedBy rdf:resource="http://w3id.org/vcb/fel#"/>
+    <rdfs:label xml:lang="en">Pro-Form</rdfs:label>
+    <rdfs:comment xml:lang="en">This class gathers all mentions based on pronouns, pro-adjective, etc. For example, the mentions 'he', 'theirs', etc., are considered ProForm (assuming they link to a knowledgebase entity).</rdfs:comment>
+    <skos:inScheme rdf:resource="http://w3id.org/vcb/fel#BaseFormClass"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://w3id.org/vcb/fel#CommonForm">
+    <rdfs:isDefinedBy rdf:resource="http://w3id.org/vcb/fel#"/>
+    <rdfs:label xml:lang="en">Common Form</rdfs:label>
+    <rdfs:comment xml:lang="en">This class gathers all the mentions with a corresponding entity in the knowledgebase, but that does not correspond to a Proper Form, Pro-Form or Numeric/Temporal Form. For instance, the mention 'bfelt' referring to wiki:Bfelt_(clothing) is considered CommonForm.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://w3id.org/vcb/fel#BaseFormClass"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://w3id.org/vcb/fel#NumericTemporalForm">
+    <rdfs:isDefinedBy rdf:resource="http://w3id.org/vcb/fel#"/>
+    <rdfs:label xml:lang="en">Numeric and Temporal Form</rdfs:label>
+    <rdfs:comment xml:lang="en">This class gathers all mentions based on numeric and temporal expressions, such as: '1', 'one', '12/23/2019', etc. (as were included in MUC-6).</rdfs:comment>
+    <skos:inScheme rdf:resource="http://w3id.org/vcb/fel#BaseFormClass"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://w3id.org/vcb/fel#AliasProperForm">
+    <rdfs:isDefinedBy rdf:resource="http://w3id.org/vcb/fel#"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/vcb/fel#ProperForm"/>
+    <rdfs:label xml:lang="en">Alias Proper Form</rdfs:label>
+    <rdfs:comment xml:lang="en">This class is concerned with all the proper-noun mentions with a different morpheme than the primary label of the knowledge base entity to which if refers (though it may be a known alias). For instance, the mention 'King of Pop' targeting wiki:Michael_Jackson is considered an AliasProperForm.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://w3id.org/vcb/fel#BaseFormClass"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://w3id.org/vcb/fel#ShortProperForm">
+    <rdfs:isDefinedBy rdf:resource="http://w3id.org/vcb/fel#"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/vcb/fel#ProperForm"/>
+    <rdfs:label xml:lang="en">Short Proper Form</rdfs:label>
+    <rdfs:comment xml:lang="en">This class is concerned with all the proper-name mentions that are shorter than the label of the knowledgebase entity while still being based on the label. For instance, the mentions 'Jackson' or 'M. Jackson' targeting wiki:Michael_Jackson are considered ShortProperForm.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://w3id.org/vcb/fel#BaseFormClass"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://w3id.org/vcb/fel#ExtendedProperForm">
+    <rdfs:isDefinedBy rdf:resource="http://w3id.org/vcb/fel#"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/vcb/fel#ProperForm"/>
+    <rdfs:label xml:lang="en">Extended Proper Form</rdfs:label>
+    <rdfs:comment xml:lang="en">This class gathers all proper-name mentions longer than the label of the knowledgebase entity but containing the label. For example, the mention 'Michael Joseph Jackson' targeting wiki:Michael_Jackson is considered an ExtendedProperForm.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://w3id.org/vcb/fel#BaseFormClass"/>
+  </skos:Concept>
+</rdf:RDF>

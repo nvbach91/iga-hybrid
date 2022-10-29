@@ -1,0 +1,36 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="https://w3id.org/arco/ontology/context-description"/>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/context-description/ComparativeBibliography">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/context-description"/>
+    <rdfs:label xml:lang="en">Comparative bibliography</rdfs:label>
+    <rdfs:comment xml:lang="en">This individual represents the definition relative to the kind of bibliography used for comparisons.</rdfs:comment>
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="https://w3id.org/arco/ontology/context-description/BibliographyCategory">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/context-description"/>
+        <rdfs:label xml:lang="en">Bibliography category</rdfs:label>
+        <rdfs:comment xml:lang="en">This class represents the category associated to a bibliography (e.g. accompanying bibliography, comparative bibliography, specific bibliography).</rdfs:comment>
+      </skos:ConceptScheme>
+    </skos:inScheme>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/context-description/SpecificBibliography">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/context-description"/>
+    <rdfs:label xml:lang="en">Specific bibliography</rdfs:label>
+    <rdfs:comment xml:lang="en">This individual represents the definition related to the kind of bibliography that specifically concerns the subject under examination.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/context-description/BibliographyCategory"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/context-description/AccompanyingBibliography">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/context-description"/>
+    <rdfs:label xml:lang="en">Accompanying bibliography</rdfs:label>
+    <rdfs:comment xml:lang="en">This individual represents the definition relative to the genre of bibliography.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/context-description/BibliographyCategory"/>
+  </skos:Concept>
+</rdf:RDF>

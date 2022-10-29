@@ -1,0 +1,55 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://data.europa.eu/eli/ontology"/>
+  <owl:FunctionalProperty rdf:about="http://data.europa.eu/eli/ontology#legal_value">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment xml:lang="en">The legal value associated with a specific format of a resource. A set of values is defined by ELI in the corresponding concept scheme. These values are :
+  - unofficial : no particular or special standing;
+  - official : published by an organisation with the public task of making the information available (e.g. a consolidated version of a EU directive) ;
+  - authoritative : the publisher gives some special status to the publication (e.g. "the Queens Printer" version of an Act of Parliament, or the OJ version of a EU Directive);
+  - definitive : the text is conclusively what the law says, (e.g. the digitally signed version of an OJ).</rdfs:comment>
+    <rdfs:label xml:lang="en">legal value</rdfs:label>
+    <rdfs:domain rdf:resource="http://data.europa.eu/eli/ontology#Format"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://data.europa.eu/eli/ontology#LegalValue">
+        <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/eli/ontology"/>
+        <rdfs:label xml:lang="en">Legal value</rdfs:label>
+        <rdfs:comment xml:lang="en">Formally defined as the set of skos:Concept in concept scheme eli:LegalValueTable</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:FunctionalProperty>
+  <skos:Concept rdf:about="http://data.europa.eu/eli/ontology#LegalValue-unofficial">
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/eli/ontology"/>
+    <rdfs:label xml:lang="en">unofficial</rdfs:label>
+    <skos:inScheme rdf:resource="http://data.europa.eu/eli/ontology#LegalValue"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.europa.eu/eli/ontology#LegalValue-authoritative">
+    <skos:narrower>
+      <skos:Concept rdf:about="http://data.europa.eu/eli/ontology#LegalValue-definitive">
+        <skos:broader rdf:resource="http://data.europa.eu/eli/ontology#LegalValue-authoritative"/>
+        <rdfs:label xml:lang="en">definitive</rdfs:label>
+        <skos:inScheme rdf:resource="http://data.europa.eu/eli/ontology#LegalValue"/>
+        <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/eli/ontology"/>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:broader>
+      <skos:Concept rdf:about="http://data.europa.eu/eli/ontology#LegalValue-official">
+        <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/eli/ontology"/>
+        <skos:narrower rdf:resource="http://data.europa.eu/eli/ontology#LegalValue-authoritative"/>
+        <rdfs:label xml:lang="en">official</rdfs:label>
+        <skos:inScheme rdf:resource="http://data.europa.eu/eli/ontology#LegalValue"/>
+      </skos:Concept>
+    </skos:broader>
+    <rdfs:label xml:lang="en">authoritative</rdfs:label>
+    <skos:inScheme rdf:resource="http://data.europa.eu/eli/ontology#LegalValue"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/eli/ontology"/>
+  </skos:Concept>
+</rdf:RDF>

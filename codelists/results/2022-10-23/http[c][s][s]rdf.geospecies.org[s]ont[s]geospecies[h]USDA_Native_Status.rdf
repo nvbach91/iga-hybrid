@@ -1,0 +1,88 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://rdf.geospecies.org/ont/geospecies"/>
+  <owl:ObjectProperty rdf:about="http://rdf.geospecies.org/ont/geospecies#has_USDA_Native_Status">
+    <rdfs:label>has_USDA_Native_Status</rdfs:label>
+    <rdfs:domain rdf:resource="http://rdf.geospecies.org/ont/geospecies#SpeciesConcept"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://rdf.geospecies.org/ont/geospecies#USDA_Native_Status">
+        <rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+        <rdfs:label>USDA_Native_Status</rdfs:label>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://rdf.geospecies.org/ont/geospecies#USDA_Native_Status_Native_Probably_Native">
+    <rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+    <rdfs:label>USDA_Native_Status_Native_Probably_Native</rdfs:label>
+    <rdfs:comment>Probably Native</rdfs:comment>
+    <skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#USDA_Native_Status"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://rdf.geospecies.org/ont/geospecies#USDA_Native_Status_Introduced_Probably_Garden_persistent">
+    <rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+    <rdfs:label>USDA_Native_Status_Introduced_Probably_Garden_persistent</rdfs:label>
+    <rdfs:comment>Probably Garden persistent - persists around gardens and old habitations, not naturalized</rdfs:comment>
+    <skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#USDA_Native_Status"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://rdf.geospecies.org/ont/geospecies#USDA_Native_Status_Introduced_Waif">
+    <rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+    <rdfs:label>USDA_Native_Status_Introduced_Waif</rdfs:label>
+    <rdfs:comment>Waif - an ephemeral introduction, not persistently naturalized</rdfs:comment>
+    <skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#USDA_Native_Status"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://rdf.geospecies.org/ont/geospecies#USDA_Native_Status_Introduced_Probably_a_Waif">
+    <rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+    <rdfs:label>USDA_Native_Status_Introduced_Probably_a_Waif</rdfs:label>
+    <rdfs:comment>Probably a Waif - an ephemeral introduction, not persistently naturalized</rdfs:comment>
+    <skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#USDA_Native_Status"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://rdf.geospecies.org/ont/geospecies#USDA_Native_Status_Introduced_Probably_Native_and_Introduced">
+    <rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+    <rdfs:label>USDA_Native_Status_Introduced_Probably_Native_and_Introduced</rdfs:label>
+    <rdfs:comment>Probably Native and Introduced - some infra-taxa are probably native and others are introduced</rdfs:comment>
+    <skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#USDA_Native_Status"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://rdf.geospecies.org/ont/geospecies#USDA_Native_Status_Introduced_Introduced">
+    <rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+    <rdfs:label>USDA_Native_Status_Introduced_Introduced</rdfs:label>
+    <rdfs:comment>ntroduced</rdfs:comment>
+    <skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#USDA_Native_Status"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://rdf.geospecies.org/ont/geospecies#USDA_Native_Status_Native_Native">
+    <rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+    <rdfs:label>USDA_Native_Status_Native_Native</rdfs:label>
+    <rdfs:comment>Native</rdfs:comment>
+    <skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#USDA_Native_Status"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://rdf.geospecies.org/ont/geospecies#USDA_Native_Status_Introduced_Garden_persistent">
+    <rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+    <rdfs:label>USDA_Native_Status_Introduced_Garden_persistent</rdfs:label>
+    <rdfs:comment>Garden persistent - persists around gardens and old habitations, not naturalized</rdfs:comment>
+    <skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#USDA_Native_Status"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://rdf.geospecies.org/ont/geospecies#USDA_Native_Status_Introduced_Probably_Introduced">
+    <rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+    <rdfs:label>USDA_Native_Status_Introduced_Probably_Introduced</rdfs:label>
+    <rdfs:comment>Probably Introduced</rdfs:comment>
+    <skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#USDA_Native_Status"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://rdf.geospecies.org/ont/geospecies#USDA_Native_Status_Native_Native_and_Introduced">
+    <rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+    <rdfs:label>USDA_Native_Status_Native_Native_and_Introduced</rdfs:label>
+    <rdfs:comment>Native and Introduced - some infra-taxa are native and others are introduced</rdfs:comment>
+    <skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#USDA_Native_Status"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://rdf.geospecies.org/ont/geospecies#USDA_Native_Status_Native_Native_and_Probably_Introduced">
+    <rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+    <rdfs:label>USDA_Native_Status_Native_Native_and_Probably_Introduced</rdfs:label>
+    <rdfs:comment>Native and Probably Introduced - some infra-taxa are native and others are probably introduced</rdfs:comment>
+    <skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#USDA_Native_Status"/>
+  </skos:Concept>
+</rdf:RDF>

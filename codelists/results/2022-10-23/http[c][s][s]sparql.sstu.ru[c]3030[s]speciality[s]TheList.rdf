@@ -1,0 +1,39 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://sparql.sstu.ru:3030/speciality/"/>
+  <owl:ObjectProperty rdf:about="http://sparql.sstu.ru:3030/speciality/isPartOfList">
+    <rdfs:comment xml:lang="en">Property indicating that a certain UGSN (UGSN) included in a certain list (TheList)</rdfs:comment>
+    <rdfs:comment>свойство, показывающее, что определенная УГСН входит в определенный перечень</rdfs:comment>
+    <rdfs:domain rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://sparql.sstu.ru:3030/speciality/TheList">
+        <rdfs:comment xml:lang="en">List - named set of specialties (Speciality) and UGSN (UGSN), containing these specialty. The list has the name, the date of administration, and how the document was approved.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+        <rdfs:comment>Перечень – именованная совокупность специальностей и УГСН, содержащие эти специальности. Перечень имеет название, дату введения и каким утвержден документом.</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://sparql.sstu.ru:3030/speciality/lists/3">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+    <rdfs:label>Перечень 1061</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/TheList"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.sstu.ru:3030/speciality/lists/1">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+    <rdfs:label>ОКСО</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/TheList"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.sstu.ru:3030/speciality/lists/2">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+    <rdfs:label>Перечни 1136, 337</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/TheList"/>
+  </skos:Concept>
+</rdf:RDF>

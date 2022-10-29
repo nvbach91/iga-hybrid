@@ -1,0 +1,37 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="https://w3id.org/usability"/>
+  <owl:ObjectProperty rdf:about="https://w3id.org/usability#wasUsedIn">
+    <rdfs:comment xml:lang="en">The property that associates a device with the sessions which were run on that device</rdfs:comment>
+    <rdfs:label xml:lang="en">wasUsedIn</rdfs:label>
+    <rdfs:domain rdf:resource="https://w3id.org/usability#Device"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="https://w3id.org/usability#Session">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/usability"/>
+        <rdfs:label xml:lang="en">Session</rdfs:label>
+        <rdfs:comment xml:lang="en">A period of time when a user interacts with the software</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://w3id.org/usability#performed">
+    <rdfs:label xml:lang="en">performed</rdfs:label>
+    <rdfs:domain rdf:resource="https://w3id.org/usability#User"/>
+    <rdfs:range rdf:resource="https://w3id.org/usability#Session"/>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="https://w3id.org/usability#Session1">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/usability"/>
+    <skos:inScheme rdf:resource="https://w3id.org/usability#Session"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/usability#Session2">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/usability"/>
+    <skos:inScheme rdf:resource="https://w3id.org/usability#Session"/>
+  </skos:Concept>
+</rdf:RDF>

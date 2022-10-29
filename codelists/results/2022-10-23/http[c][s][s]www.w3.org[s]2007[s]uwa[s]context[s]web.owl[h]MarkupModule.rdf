@@ -1,0 +1,212 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+  <owl:ObjectProperty rdf:about="http://www.w3.org/2007/uwa/context/web.owl#markupModules">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The modules used by a markup language</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Markup Modules</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.w3.org/2007/uwa/context/web.owl#PageMarkup"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://www.w3.org/2007/uwa/context/web.owl#MarkupModule">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Markup Module</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >This class represents a module of a markup language</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://www.w3.org/2007/uwa/context/web.owl#Xhtml11Module_Object">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >XHTML 1 Object Module</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/web.owl#MarkupModule"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2007/uwa/context/web.owl#Xhtml1Module_Legacy">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >XHTML 1 Legacy Module</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/web.owl#MarkupModule"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2007/uwa/context/web.owl#Xhtml11Module_Base">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >XHTML 1 Base Module</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/web.owl#MarkupModule"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2007/uwa/context/web.owl#Xhtml11Module_List">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >XHTML 1 List Module</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >As its name suggests, the List Module provides list-oriented elements</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/web.owl#MarkupModule"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2007/uwa/context/web.owl#Xhtml1Module_Target">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >XHTML 1 Target Module</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/web.owl#MarkupModule"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2007/uwa/context/web.owl#MarkupModule_1">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+    <skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/web.owl#MarkupModule"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2007/uwa/context/web.owl#Partial_OMA_XHTML_MP_Legacy">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+    <skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/web.owl#MarkupModule"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2007/uwa/context/web.owl#Xhtml11Module_Structure">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >XHTML 1 Structure Module</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The Structure Module defines the major structural elements for XHTML. These elements effectively act as the basis for the content model of many XHTML family document types.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/web.owl#MarkupModule"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2007/uwa/context/web.owl#Xhtml11Module_Edit">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >XHTML 1 Edit Module</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/web.owl#MarkupModule"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2007/uwa/context/web.owl#Xhtml11Module_Image">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >XHTML 1 Image Module</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/web.owl#MarkupModule"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2007/uwa/context/web.owl#Xhtml11Module_BasicTables">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >XHTML 1 Basic Tables Module</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/web.owl#MarkupModule"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2007/uwa/context/web.owl#Xhtml11Module_Bidirectional">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >XHTML 1 Bidirectional Module</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/web.owl#MarkupModule"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2007/uwa/context/web.owl#Xhtml11Module_Hypertext">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >XHTML 1 Hypertext Module</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The Hypertext Module provides the element that is used to define hypertext links to other resources.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/web.owl#MarkupModule"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2007/uwa/context/web.owl#Xhtml11Module_ServerSideImageMap">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >XHTML 1 Server Side Image Map Module</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/web.owl#MarkupModule"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2007/uwa/context/web.owl#Xhtml11Module_Presentation">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >XHTML 1 Presentation Module</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/web.owl#MarkupModule"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2007/uwa/context/web.owl#Xhtml11Module_BasicForms">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >XHTML 1 Basic Forms Module</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/web.owl#MarkupModule"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2007/uwa/context/web.owl#Xhtml11Module_Forms">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >XHTML 1  Forms Module</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/web.owl#MarkupModule"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2007/uwa/context/web.owl#Xhtml11Module_Stylesheet">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >XHTML 1Stylesheet Module</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/web.owl#MarkupModule"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2007/uwa/context/web.owl#Xhtml11Module_ClientSideImageMap">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >XHTML 1 Client Side Image Map Module</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/web.owl#MarkupModule"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2007/uwa/context/web.owl#Xhtml11Module_Metainformation">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >XHTML 1 Metainformation Module</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/web.owl#MarkupModule"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2007/uwa/context/web.owl#XForms_OMA_TextInputModes">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+    <skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/web.owl#MarkupModule"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2007/uwa/context/web.owl#Xhtml11Module_Text">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >XHTML 1 Text Module</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >This module defines all of the basic text container elements, attributes, and their content model</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/web.owl#MarkupModule"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2007/uwa/context/web.owl#Partial_OMA_XHTML_MP_IntrinsicEvents">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+    <skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/web.owl#MarkupModule"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2007/uwa/context/web.owl#Partial_OMA_XHTML-MP_Presentation">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Partial support of the Xhtml1 presentation module</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/web.owl#MarkupModule"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2007/uwa/context/web.owl#Xhtml11Module_Link">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >XHTML 1 Link Module</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/web.owl#MarkupModule"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2007/uwa/context/web.owl#Partial_OMA_XHTML_MP_Forms">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+    <skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/web.owl#MarkupModule"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2007/uwa/context/web.owl#Xhtml11Module_Scripting">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >XHTML 1 Scripting Module</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/web.owl#MarkupModule"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2007/uwa/context/web.owl#Xhtml11Module_IntrinsicEvents">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >XHTML 1 Intrinsic Events Module</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/web.owl#MarkupModule"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2007/uwa/context/web.owl#Xhtml11Module_Table">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >XHTML 1 Table Module</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/web.owl#MarkupModule"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2007/uwa/context/web.owl#Xhtml1Module_Iframe">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >XHTML 1 iFrame Module</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/web.owl#MarkupModule"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2007/uwa/context/web.owl#Xhtml1Module_StyleAttribute">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >XHTML 1 Style Attribute Module</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/web.owl#MarkupModule"/>
+  </skos:Concept>
+</rdf:RDF>

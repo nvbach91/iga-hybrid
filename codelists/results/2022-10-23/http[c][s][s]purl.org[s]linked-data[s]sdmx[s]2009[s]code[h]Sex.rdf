@@ -1,0 +1,43 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://purl.org/linked-data/sdmx/2009/code"/>
+  <skos:Concept rdf:about="http://purl.org/linked-data/sdmx/2009/code#sex-T">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/linked-data/sdmx/2009/code"/>
+    <rdfs:label xml:lang="en">Total</rdfs:label>
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="http://purl.org/linked-data/sdmx/2009/code#Sex">
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/linked-data/sdmx/2009/code"/>
+        <rdfs:label xml:lang="en">Code list for Sex (SEX) - codelist class</rdfs:label>
+        <rdfs:comment xml:lang="en">This  code list provides the gender.</rdfs:comment>
+      </skos:ConceptScheme>
+    </skos:inScheme>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/linked-data/sdmx/2009/code#sex-U">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/linked-data/sdmx/2009/code"/>
+    <rdfs:label xml:lang="en">Not specified or unknown</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/linked-data/sdmx/2009/code#Sex"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/linked-data/sdmx/2009/code#sex-F">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/linked-data/sdmx/2009/code"/>
+    <rdfs:label xml:lang="en">Female</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/linked-data/sdmx/2009/code#Sex"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/linked-data/sdmx/2009/code#sex-M">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/linked-data/sdmx/2009/code"/>
+    <rdfs:label xml:lang="en">Male</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/linked-data/sdmx/2009/code#Sex"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/linked-data/sdmx/2009/code#sex-N">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/linked-data/sdmx/2009/code"/>
+    <rdfs:label xml:lang="en">Not applicable</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/linked-data/sdmx/2009/code#Sex"/>
+  </skos:Concept>
+</rdf:RDF>

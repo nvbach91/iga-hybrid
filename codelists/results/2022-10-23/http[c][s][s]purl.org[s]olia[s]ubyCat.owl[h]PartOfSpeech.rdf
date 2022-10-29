@@ -1,0 +1,268 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://purl.org/olia/ubyCat.owl"/>
+  <skos:Concept rdf:about="http://purl.org/olia/ubyCat.owl#nounProper">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+    <rdfs:label>nounProper</rdfs:label>
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="http://purl.org/olia/ubyCat.owl#PartOfSpeech">
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+        <rdfs:label>partOfSpeech</rdfs:label>
+        <rdfs:comment>As a convention, the relation is called has_partOfSpeech, partOfSpeech is the top-level *class* of parts of speech</rdfs:comment>
+      </skos:ConceptScheme>
+    </skos:inScheme>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/olia/ubyCat.owl#determiner">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+    <rdfs:label>determiner</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/olia/ubyCat.owl#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/olia/ubyCat.owl#pronounPersonalIrreflexive">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+    <rdfs:label>pronounPersonalIrreflexive</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/olia/ubyCat.owl#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/olia/ubyCat.owl#numeral">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+    <rdfs:label>numeral</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/olia/ubyCat.owl#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/olia/ubyCat.owl#pronounPersonalReflexive">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+    <rdfs:label>pronounPersonalReflexive</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/olia/ubyCat.owl#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/olia/ubyCat.owl#pronounPersonal">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+    <rdfs:label>pronounPersonal</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/olia/ubyCat.owl#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/olia/ubyCat.owl#particleNegative">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+    <rdfs:label>particleNegative</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/olia/ubyCat.owl#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/olia/ubyCat.owl#conjunctionSubordinating">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+    <rdfs:label>conjunctionSubordinating</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/olia/ubyCat.owl#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/olia/ubyCat.owl#symbol">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+    <rdfs:label>symbol</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/olia/ubyCat.owl#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/olia/ubyCat.owl#interjection">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+    <rdfs:label>interjection</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/olia/ubyCat.owl#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/olia/ubyCat.owl#adposition">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+    <rdfs:label>adposition</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/olia/ubyCat.owl#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/olia/ubyCat.owl#nounProperGivenName">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+    <rdfs:label>nounProperFirstName</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/olia/ubyCat.owl#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/olia/ubyCat.owl#affixSuffix">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+    <rdfs:label>affixSuffix</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/olia/ubyCat.owl#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/olia/ubyCat.owl#affixPrefix">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+    <rdfs:label>affixPrefix</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/olia/ubyCat.owl#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/olia/ubyCat.owl#pronounDemonstrative">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+    <rdfs:label>pronounDemonstrative</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/olia/ubyCat.owl#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/olia/ubyCat.owl#pronoun">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+    <rdfs:label>pronoun</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/olia/ubyCat.owl#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/olia/ubyCat.owl#pronounRelative">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+    <rdfs:label>pronounRelative</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/olia/ubyCat.owl#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/olia/ubyCat.owl#particleInfinitive">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+    <rdfs:label>particleInfinitive</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/olia/ubyCat.owl#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/olia/ubyCat.owl#adpositionPostposition">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+    <rdfs:label>adpositionPostposition</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/olia/ubyCat.owl#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/olia/ubyCat.owl#abbreviationAcronym">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+    <rdfs:label>abbreviationAcronym</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/olia/ubyCat.owl#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/olia/ubyCat.owl#verbAuxiliary">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+    <rdfs:label>verbAuxiliary</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/olia/ubyCat.owl#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/olia/ubyCat.owl#particle">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+    <rdfs:label>particle</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/olia/ubyCat.owl#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/olia/ubyCat.owl#adpositionPreposition">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+    <rdfs:label>adpositionPreposition</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/olia/ubyCat.owl#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/olia/ubyCat.owl#adverb">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+    <rdfs:label>adverb</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/olia/ubyCat.owl#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/olia/ubyCat.owl#pronounInterrogative">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+    <rdfs:label>pronounInterrogative</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/olia/ubyCat.owl#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/olia/ubyCat.owl#particleAnswer">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+    <rdfs:label>particleAnswer</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/olia/ubyCat.owl#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/olia/ubyCat.owl#determinerDefinite">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+    <rdfs:label>determinerDefinite</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/olia/ubyCat.owl#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/olia/ubyCat.owl#phraseme">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+    <rdfs:label>phraseme</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/olia/ubyCat.owl#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/olia/ubyCat.owl#abbreviationInitialism">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+    <rdfs:label>abbreviationInitialism</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/olia/ubyCat.owl#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/olia/ubyCat.owl#particleComparative">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+    <rdfs:label>particleComparative</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/olia/ubyCat.owl#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/olia/ubyCat.owl#adpositionCircumposition">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+    <rdfs:label>adpositionCircumposition</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/olia/ubyCat.owl#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/olia/ubyCat.owl#nounCommon">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+    <rdfs:label>nounCommon</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/olia/ubyCat.owl#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/olia/ubyCat.owl#adjective">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+    <rdfs:label>adjective</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/olia/ubyCat.owl#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/olia/ubyCat.owl#nounProperFamilyName">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+    <rdfs:label>nounProperLastName</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/olia/ubyCat.owl#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/olia/ubyCat.owl#verbModal">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+    <rdfs:label>verbModal</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/olia/ubyCat.owl#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/olia/ubyCat.owl#determinerIndefinite">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+    <rdfs:label>determinerIndefinite</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/olia/ubyCat.owl#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/olia/ubyCat.owl#abbreviation">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+    <rdfs:label>abbreviation</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/olia/ubyCat.owl#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/olia/ubyCat.owl#determinerDemonstrative">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+    <rdfs:label>determinerDemonstrative</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/olia/ubyCat.owl#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/olia/ubyCat.owl#pronounIndefinite">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+    <rdfs:label>pronounIndefinite</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/olia/ubyCat.owl#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/olia/ubyCat.owl#adverbPronominal">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+    <rdfs:label>adverbPronominal</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/olia/ubyCat.owl#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/olia/ubyCat.owl#conjunction">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+    <rdfs:label>conjunction</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/olia/ubyCat.owl#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/olia/ubyCat.owl#verbMain">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+    <rdfs:label>verbMain</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/olia/ubyCat.owl#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/olia/ubyCat.owl#conjunctionCoordinating">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+    <rdfs:label>conjunctionCoordinating</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/olia/ubyCat.owl#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/olia/ubyCat.owl#pronounPossessive">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+    <rdfs:label>pronounPossessive</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/olia/ubyCat.owl#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/olia/ubyCat.owl#contraction">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+    <rdfs:label>contraction</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/olia/ubyCat.owl#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/olia/ubyCat.owl#determinerInterrogative">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+    <rdfs:label>determinerInterrogative</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/olia/ubyCat.owl#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/olia/ubyCat.owl#affix">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+    <rdfs:label>affix</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/olia/ubyCat.owl#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/olia/ubyCat.owl#noun">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+    <rdfs:label>noun</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/olia/ubyCat.owl#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/olia/ubyCat.owl#determinerPossessive">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+    <rdfs:label>determinerPossessive</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/olia/ubyCat.owl#PartOfSpeech"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/olia/ubyCat.owl#verb">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+    <rdfs:label>verb</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/olia/ubyCat.owl#PartOfSpeech"/>
+  </skos:Concept>
+</rdf:RDF>

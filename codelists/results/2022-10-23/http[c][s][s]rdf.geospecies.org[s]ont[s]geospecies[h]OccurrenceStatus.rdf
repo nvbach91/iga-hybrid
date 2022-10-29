@@ -1,0 +1,52 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://rdf.geospecies.org/ont/geospecies"/>
+  <owl:ObjectProperty rdf:about="http://rdf.geospecies.org/ont/geospecies#hasOccurrenceStatus">
+    <rdfs:label>hasOccurrenceStatus</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://rdf.geospecies.org/ont/geospecies#OccurrenceStatus">
+        <rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+        <rdfs:label>OccurrenceStatus</rdfs:label>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://rdf.geospecies.org/ont/geospecies#OccurrenceStatus_absent">
+    <rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+    <rdfs:label>OccurrenceStatus_absent</rdfs:label>
+    <skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#OccurrenceStatus"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://rdf.geospecies.org/ont/geospecies#OccurrenceStatus_present">
+    <rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+    <rdfs:label>OccurrenceStatus_present</rdfs:label>
+    <skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#OccurrenceStatus"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://rdf.geospecies.org/ont/geospecies#OccurrenceStatus_common">
+    <rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+    <rdfs:label>OccurrenceStatus_common</rdfs:label>
+    <skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#OccurrenceStatus"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://rdf.geospecies.org/ont/geospecies#OccurrenceStatus_irregular">
+    <rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+    <rdfs:label>OccurrenceStatus_irregular</rdfs:label>
+    <skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#OccurrenceStatus"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://rdf.geospecies.org/ont/geospecies#OccurrenceStatus_doubtful">
+    <rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+    <rdfs:label>OccurrenceStatus_doubtful</rdfs:label>
+    <skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#OccurrenceStatus"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://rdf.geospecies.org/ont/geospecies#OccurrenceStatus_rare">
+    <rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+    <rdfs:label>OccurrenceStatus_rare</rdfs:label>
+    <skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#OccurrenceStatus"/>
+  </skos:Concept>
+</rdf:RDF>

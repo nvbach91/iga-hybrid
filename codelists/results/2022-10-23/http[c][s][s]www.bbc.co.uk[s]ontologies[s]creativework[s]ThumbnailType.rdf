@@ -1,6 +1,6 @@
 <rdf:RDF
-    xmlns:dct="http://purl.org/dc/terms/"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
     xmlns:dc="http://purl.org/dc/elements/1.1/"
     xmlns:owl="http://www.w3.org/2002/07/owl#"
     xmlns:dcmit="http://purl.org/dc/dcmitype/"
@@ -10,18 +10,13 @@
     xmlns:vann="http://purl.org/vocab/vann/">
   <owl:Ontology rdf:about="http://www.bbc.co.uk/ontologies/creativework"/>
   <owl:ObjectProperty rdf:about="http://www.bbc.co.uk/ontologies/creativework/thumbnailType">
-    <rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/creativework"/>
     <rdfs:comment xml:lang="en-gb">Associates the Thumbnail instance with a Thumbnail type</rdfs:comment>
     <rdfs:label xml:lang="en-gb">thumbnailType</rdfs:label>
-    <rdfs:domain>
-      <rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/creativework/Thumbnail">
-        <rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/creativework"/>
-      </rdf:Description>
-    </rdfs:domain>
+    <rdfs:domain rdf:resource="http://www.bbc.co.uk/ontologies/creativework/Thumbnail"/>
     <rdfs:range>
       <skos:ConceptScheme rdf:about="http://www.bbc.co.uk/ontologies/creativework/ThumbnailType">
         <rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/creativework"/>
-        <rdfs:label xml:lang="en-gb">Enumerated class of the allowed thumbnail types</rdfs:label>
+        <rdfs:label xml:lang="en-gb">ThumbnailType</rdfs:label>
         <rdfs:comment xml:lang="en-gb">Enumerated class of the allowed thumbnail types</rdfs:comment>
       </skos:ConceptScheme>
     </rdfs:range>

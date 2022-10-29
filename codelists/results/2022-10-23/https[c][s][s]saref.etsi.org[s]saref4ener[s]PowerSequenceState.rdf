@@ -1,0 +1,66 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="https://saref.etsi.org/saref4ener/"/>
+  <skos:Concept rdf:about="https://saref.etsi.org/saref4ener/Running">
+    <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4ener/"/>
+    <rdfs:label xml:lang="en">Running</rdfs:label>
+    <rdfs:comment xml:lang="en">Power sequence state with value 'running'</rdfs:comment>
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="https://saref.etsi.org/saref4ener/PowerSequenceState">
+        <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4ener/"/>
+        <rdfs:label xml:lang="en">Power sequence state</rdfs:label>
+        <rdfs:comment xml:lang="en">The current state of the power sequence. It can assume one of the values 'running', 'paused', 'scheduled', 'scheduled paused', 'pending', 'inactive', 'completed',  or 'invalid'.</rdfs:comment>
+      </skos:ConceptScheme>
+    </skos:inScheme>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://saref.etsi.org/saref4ener/Scheduled">
+    <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4ener/"/>
+    <rdfs:label xml:lang="en">Scheduled</rdfs:label>
+    <rdfs:comment xml:lang="en">Power sequence state with value 'scheduled'</rdfs:comment>
+    <skos:inScheme rdf:resource="https://saref.etsi.org/saref4ener/PowerSequenceState"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://saref.etsi.org/saref4ener/Completed">
+    <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4ener/"/>
+    <rdfs:label xml:lang="en">Completed</rdfs:label>
+    <rdfs:comment xml:lang="en">Power sequence state with value 'completed'</rdfs:comment>
+    <skos:inScheme rdf:resource="https://saref.etsi.org/saref4ener/PowerSequenceState"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://saref.etsi.org/saref4ener/Inactive">
+    <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4ener/"/>
+    <rdfs:label xml:lang="en">Inactive</rdfs:label>
+    <rdfs:comment xml:lang="en">Power sequence state with value 'inactive'</rdfs:comment>
+    <skos:inScheme rdf:resource="https://saref.etsi.org/saref4ener/PowerSequenceState"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://saref.etsi.org/saref4ener/Paused">
+    <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4ener/"/>
+    <rdfs:label xml:lang="en">Paused</rdfs:label>
+    <rdfs:comment xml:lang="en">Power sequence state or sensor state with value 'paused'</rdfs:comment>
+    <skos:inScheme rdf:resource="https://saref.etsi.org/saref4ener/PowerSequenceState"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://saref.etsi.org/saref4ener/Pending">
+    <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4ener/"/>
+    <rdfs:label xml:lang="en">Pending</rdfs:label>
+    <rdfs:comment xml:lang="en">Power sequence state with value 'pending'</rdfs:comment>
+    <skos:inScheme rdf:resource="https://saref.etsi.org/saref4ener/PowerSequenceState"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://saref.etsi.org/saref4ener/Invalid">
+    <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4ener/"/>
+    <rdfs:label xml:lang="en">Invalid</rdfs:label>
+    <rdfs:comment xml:lang="en">Power sequence state with value 'invalid'</rdfs:comment>
+    <skos:inScheme rdf:resource="https://saref.etsi.org/saref4ener/PowerSequenceState"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://saref.etsi.org/saref4ener/ScheduledPaused">
+    <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4ener/"/>
+    <rdfs:label xml:lang="en">Scheduled paused</rdfs:label>
+    <rdfs:comment xml:lang="en">Power sequence state with value 'scheduled paused'</rdfs:comment>
+    <skos:inScheme rdf:resource="https://saref.etsi.org/saref4ener/PowerSequenceState"/>
+  </skos:Concept>
+</rdf:RDF>

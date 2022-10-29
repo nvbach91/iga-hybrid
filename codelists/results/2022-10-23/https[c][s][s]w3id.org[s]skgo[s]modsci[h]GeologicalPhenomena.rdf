@@ -1,0 +1,30 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="https://w3id.org/skgo/modsci#"/>
+  <skos:Concept rdf:about="https://w3id.org/skgo/modsci#Erosion">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/skgo/modsci#"/>
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="https://w3id.org/skgo/modsci#GeologicalPhenomena">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/skgo/modsci#"/>
+        <rdfs:label>Geological Phenomena</rdfs:label>
+        <rdfs:comment>A geological phenomenon is a phenomenon which is explained by or sheds light on the science of geology.</rdfs:comment>
+      </skos:ConceptScheme>
+    </skos:inScheme>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/skgo/modsci#Volcano">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/skgo/modsci#"/>
+    <skos:inScheme rdf:resource="https://w3id.org/skgo/modsci#GeologicalPhenomena"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/skgo/modsci#Earthquake">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/skgo/modsci#"/>
+    <skos:inScheme rdf:resource="https://w3id.org/skgo/modsci#GeologicalPhenomena"/>
+  </skos:Concept>
+</rdf:RDF>

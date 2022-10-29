@@ -1,0 +1,70 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="https://w3id.org/arco/ontology/context-description"/>
+  <owl:ObjectProperty rdf:about="https://w3id.org/arco/ontology/context-description/hasTitleType">
+    <rdfs:comment xml:lang="en">This property relates a cultural entity's title to its title type.</rdfs:comment>
+    <rdfs:label xml:lang="en">has title type</rdfs:label>
+    <rdfs:domain rdf:resource="https://w3id.org/arco/ontology/context-description/Title"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="https://w3id.org/arco/ontology/context-description/TitleType">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/context-description"/>
+        <rdfs:label xml:lang="en">Title Type</rdfs:label>
+        <rdfs:comment xml:lang="en">This class represents the type of an object title (e.g. original, alternative)</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/context-description/SecondaryTitle">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/context-description"/>
+    <rdfs:label xml:lang="en">Secondary title</rdfs:label>
+    <rdfs:comment xml:lang="en">This individual represents publication's secondary title.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/context-description/TitleType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/context-description/AlternativeTitle">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/context-description"/>
+    <rdfs:label xml:lang="en">Alternative title</rdfs:label>
+    <rdfs:comment xml:lang="en">Represents subject's alternative title.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/context-description/TitleType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/context-description/HistoricizedTitle">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/context-description"/>
+    <rdfs:label xml:lang="en">Historicized title</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/context-description/TitleType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/context-description/MainTitle">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/context-description"/>
+    <rdfs:label xml:lang="en">Main title</rdfs:label>
+    <rdfs:comment xml:lang="en">This individual represents publication main title.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/context-description/TitleType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/context-description/ParallelTitle">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/context-description"/>
+    <rdfs:label xml:lang="en">Parallel title</rdfs:label>
+    <rdfs:comment xml:lang="en">I represents a parallel title, that is main title translated into other languages and presented as equivalent.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/context-description/TitleType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/context-description/AttributedTitle">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/context-description"/>
+    <rdfs:label xml:lang="en">Attributed title</rdfs:label>
+    <rdfs:comment xml:lang="en">Represents an attributed title of a photograph, that is a title taken from archival, bibliographic, oral or iconographic sources, or created based on picture contents.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/context-description/TitleType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/context-description/ProperTitle">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/context-description"/>
+    <rdfs:label xml:lang="en">Proper title</rdfs:label>
+    <rdfs:comment xml:lang="en">It represents the title proper to subject of a print, an engraved matrix or a photograph.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/context-description/TitleType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/context-description/OriginalTitle">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/context-description"/>
+    <rdfs:label xml:lang="en">Original title</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/context-description/TitleType"/>
+  </skos:Concept>
+</rdf:RDF>

@@ -1,0 +1,157 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="https://w3id.org/ifc/IFC4_ADD1"/>
+  <owl:FunctionalProperty rdf:about="https://w3id.org/ifc/IFC4_ADD1#actionSource_IfcStructuralLoadGroup">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>ActionSource</rdfs:label>
+    <rdfs:domain rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcStructuralLoadGroup"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="https://w3id.org/ifc/IFC4_ADD1#IfcActionSourceTypeEnum">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:FunctionalProperty>
+  <skos:Concept rdf:about="https://w3id.org/ifc/IFC4_ADD1#ERECTION">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+    <rdfs:label>ERECTION</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcActionSourceTypeEnum"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ifc/IFC4_ADD1#IMPULSE">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+    <rdfs:label>IMPULSE</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcActionSourceTypeEnum"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ifc/IFC4_ADD1#PRESTRESSING_P">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+    <rdfs:label>PRESTRESSING_P</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcActionSourceTypeEnum"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ifc/IFC4_ADD1#WIND_W">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+    <rdfs:label>WIND_W</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcActionSourceTypeEnum"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ifc/IFC4_ADD1#IMPACT">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+    <rdfs:label>IMPACT</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcActionSourceTypeEnum"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ifc/IFC4_ADD1#WAVE">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+    <rdfs:label>WAVE</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcActionSourceTypeEnum"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ifc/IFC4_ADD1#SETTLEMENT_U">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+    <rdfs:label>SETTLEMENT_U</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcActionSourceTypeEnum"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ifc/IFC4_ADD1#USERDEFINED">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+    <rdfs:label>USERDEFINED</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcActionSourceTypeEnum"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ifc/IFC4_ADD1#TEMPERATURE_T">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+    <rdfs:label>TEMPERATURE_T</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcActionSourceTypeEnum"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ifc/IFC4_ADD1#SHRINKAGE">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+    <rdfs:label>SHRINKAGE</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcActionSourceTypeEnum"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ifc/IFC4_ADD1#SNOW_S">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+    <rdfs:label>SNOW_S</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcActionSourceTypeEnum"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ifc/IFC4_ADD1#EARTHQUAKE_E">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+    <rdfs:label>EARTHQUAKE_E</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcActionSourceTypeEnum"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ifc/IFC4_ADD1#DEAD_LOAD_G">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+    <rdfs:label>DEAD_LOAD_G</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcActionSourceTypeEnum"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ifc/IFC4_ADD1#ICE">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+    <rdfs:label>ICE</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcActionSourceTypeEnum"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ifc/IFC4_ADD1#TRANSPORT">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+    <rdfs:label>TRANSPORT</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcActionSourceTypeEnum"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ifc/IFC4_ADD1#SYSTEM_IMPERFECTION">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+    <rdfs:label>SYSTEM_IMPERFECTION</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcActionSourceTypeEnum"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ifc/IFC4_ADD1#PROPPING">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+    <rdfs:label>PROPPING</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcActionSourceTypeEnum"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ifc/IFC4_ADD1#CREEP">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+    <rdfs:label>CREEP</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcActionSourceTypeEnum"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ifc/IFC4_ADD1#RAIN">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+    <rdfs:label>RAIN</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcActionSourceTypeEnum"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ifc/IFC4_ADD1#NOTDEFINED">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+    <rdfs:label>NOTDEFINED</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcActionSourceTypeEnum"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ifc/IFC4_ADD1#BRAKES">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+    <rdfs:label>BRAKES</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcActionSourceTypeEnum"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ifc/IFC4_ADD1#BUOYANCY">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+    <rdfs:label>BUOYANCY</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcActionSourceTypeEnum"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ifc/IFC4_ADD1#LIVE_LOAD_Q">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+    <rdfs:label>LIVE_LOAD_Q</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcActionSourceTypeEnum"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ifc/IFC4_ADD1#FIRE">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+    <rdfs:label>FIRE</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcActionSourceTypeEnum"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ifc/IFC4_ADD1#LACK_OF_FIT">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+    <rdfs:label>LACK_OF_FIT</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcActionSourceTypeEnum"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ifc/IFC4_ADD1#CURRENT">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+    <rdfs:label>CURRENT</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcActionSourceTypeEnum"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ifc/IFC4_ADD1#COMPLETION_G1">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+    <rdfs:label>COMPLETION_G1</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcActionSourceTypeEnum"/>
+  </skos:Concept>
+</rdf:RDF>

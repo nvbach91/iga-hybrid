@@ -1,0 +1,404 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+  <owl:ObjectProperty rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/hasDimension">
+    <rdfs:label xml:lang="en">has dimension</rdfs:label>
+    <rdfs:domain rdf:parseType="Resource">
+    </rdfs:domain>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/Dimension">
+        <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+        <rdfs:label xml:lang="en">dimension</rdfs:label>
+        <rdfs:comment xml:lang="en">Dimensions are abstract properties of units and quantities neglecting their vectorial or tensorial character and all numerical factors including their sign.</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/exposure-Dimension">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">exposure dimension</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Dimension"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/luminance-Dimension">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">luminance dimension</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Dimension"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/energyDensity-Dimension">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">energy density dimension</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Dimension"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/columnNumberDensity-Dimension">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">column number density dimension</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Dimension"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/inductanceOrPermeance-Electromagnetic-Dimension">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">inductance or permeance (electromagnetic) dimension</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Dimension"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/mass-Dimension">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">mass dimension</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Dimension"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/power-Dimension">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">power dimension</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Dimension"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/dynamicViscosity-Dimension">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">dynamic viscosity dimension</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Dimension"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/magneticFluxDensity-Dimension">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">magnetic flux density dimension</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Dimension"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/catalyticActivityConcentration-Dimension">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">catalytic activity concentration dimension</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Dimension"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/magneticFlux-Dimension">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">magnetic flux dimension</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Dimension"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/electricCharge-Dimension">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">electric charge dimension</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Dimension"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/permeabilityOfFreeSpace-Dimension">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">permeability of free space dimension</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Dimension"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/luminousEfficacy-Dimension">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">luminous efficacy dimension</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Dimension"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/dimensionOne">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">dimensionOne</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Dimension"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/fluidity-Dimension">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">fluidity dimension</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Dimension"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/electricDipoleMoment-Dimension">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">electric dipole moment dimension</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Dimension"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/electricPotential-Dimension">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">electric potential dimension</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Dimension"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/numberDensity-Dimension">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">number density dimension</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Dimension"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/volumetricHeatCapacity-Dimension">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">volumetric heat capacity dimension</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Dimension"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/length-Dimension">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">length dimension</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Dimension"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/luminousFlux-Dimension">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">luminous flux dimension</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Dimension"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/electricFluxDensity-Dimension">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">electric flux density dimension</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Dimension"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/thermodynamicTemperature-Dimension">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">thermodynamic temperature dimension</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Dimension"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/specificCatalyticActivity-Dimension">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">specific catalytic activity dimension</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Dimension"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/molarEntropyOrMolarHeatCapacityOrGasConstant-Dimension">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">molar entropy, molar heat capacity, or gas constant dimension</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Dimension"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/reluctance-Dimension">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">reluctance dimension</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Dimension"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/electricalResistance-Dimension">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">electrical resistance dimension</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Dimension"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/thermalInsulance-Dimension">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">thermal insulance dimension</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Dimension"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/electricField-Dimension">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">electric field dimension</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Dimension"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/energy-Dimension">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">energy dimension</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Dimension"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/electricalConductance-Dimension">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">electrical conductance dimension</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Dimension"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/specificVolume-Dimension">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">specific volume dimension</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Dimension"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/currentDensity-Dimension">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">current density dimension</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Dimension"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/electricChargeDensity-Dimension">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">electric charge density dimension</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Dimension"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/radiance-Dimension">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">radiance dimension</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Dimension"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/molarEnergy-Dimension">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">molar energy dimension</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Dimension"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/permittivity-Dimension">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">permittivity dimension</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Dimension"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/illuminance-Dimension">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">illuminance dimension</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Dimension"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/speed-Dimension">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">speed dimension</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Dimension"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/angularAcceleration-Dmension">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">angular acceleration dimension</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Dimension"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/wavenumber-Dimension">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">wavenumber dimension</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Dimension"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/volumetricFlowRate-Dimension">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">volumetric flow rate dimension</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Dimension"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/amountOfSubstance-Dimension">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">amount of substance dimension</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Dimension"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/luminousIntensity-Dimension">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">luminous intensity dimension</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Dimension"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/density-Dimension">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">density dimension</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Dimension"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/amountOfSubstanceConcentration-Dimension">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">amount of substance concentration dimension</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Dimension"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/catalyticActivity-Dimension">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">catalytic activity dimension</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Dimension"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/permeance-MaterialsScience-Dimension">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">permeance (materials science) dimension</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Dimension"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/entropyOrHeatCapacity-Dimension">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">entropy or heat capacity dimension</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Dimension"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/surfaceTension-Dimension">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">surface tension dimension</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Dimension"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/kinematicViscosityOrThermalDiffusivity-Dimension">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">kinematic viscosity dimension</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Dimension"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/time-Dimension">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">time dimension</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Dimension"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/angularSpeed-Dimension">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">angular speed dimension</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Dimension"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/specificEnergyOrAbsorbedDoseOrDoseEquivalent-Dimension">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">specific energy, absorbed dose, or dose equivalent dimension</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Dimension"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/pressure-Dimension">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">pressure dimension</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Dimension"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/absorbedDoseRate-Dimension">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">absorbed dose rate dimension</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Dimension"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/frequency-Dimension">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">frequency dimension</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Dimension"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/powerDensity-Dimension">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">power density dimension</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Dimension"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/electricCurrent-Dimension">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">electric current dimension</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Dimension"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/electricalResistivity-Dimension">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">electrical resistivity dimension</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Dimension"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/thermalResistance-Dimension">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">thermal resistance dimension</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Dimension"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/volume-Dimension">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">volume dimension</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Dimension"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/electricalConductivity-Dimension">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">electrical conductivity dimension</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Dimension"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/exposureToXAndGammaRays-Dimension">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">exposure to x and γ rays dimension</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Dimension"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/capacitance-Dimension">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">capacitance dimension</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Dimension"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/actionOrAngularMomentum-Dimension">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">action or angular momentum dimension</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Dimension"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/area-Dimension">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">area dimension</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Dimension"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/acceleration-Dmension">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">acceleration dimension</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Dimension"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/specificEntropyOrSpecificHeatCapacity-Dimension">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">specific entropy or specific heat capacity dimension</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Dimension"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/luminousEnergy-Dimension">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">luminous energy dimension</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Dimension"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/force-Dimension">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">force dimension</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Dimension"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/heatTransferCoefficient-Dimension">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">heat transfer coefficient dimension</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Dimension"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/thermalConductivity-Dimension">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">thermal conductivity dimension</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Dimension"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/MagneticField-Dimension">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">magnetic field dimension</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Dimension"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/massFlow-Dimension">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">mass flow dimension</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Dimension"/>
+  </skos:Concept>
+</rdf:RDF>

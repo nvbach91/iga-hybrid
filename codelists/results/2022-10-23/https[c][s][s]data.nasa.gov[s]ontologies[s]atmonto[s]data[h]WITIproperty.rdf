@@ -1,0 +1,68 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="https://data.nasa.gov/ontologies/atmonto/data#"/>
+  <skos:Concept rdf:about="https://data.nasa.gov/ontologies/atmonto/data#lowCeilingWITIdaily">
+    <rdfs:isDefinedBy rdf:resource="https://data.nasa.gov/ontologies/atmonto/data#"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >low ceiling WITI daily</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The low ceiling weather impacted traffic index (WITI) computed for the airport during the specified timeframe (daily). WITI is an estimate of the number of flights potentially impacted due to inclement weather based on the scheduled traffic demand for a defined geographic region of the air traffic system (in this case, an airport). If the ceiling at the airport is below a set threshold, then the low ceiling WITI is set to the number of scheduled arrivals for that timeframe.</rdfs:comment>
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="https://data.nasa.gov/ontologies/atmonto/data#WITIproperty">
+        <rdfs:isDefinedBy rdf:resource="https://data.nasa.gov/ontologies/atmonto/data#"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >WITIproperty</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >A class of different properties relating to WITI (Weather-Impacted Traffic Index)</rdfs:comment>
+      </skos:ConceptScheme>
+    </skos:inScheme>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://data.nasa.gov/ontologies/atmonto/data#lowCeilingWITIhourly">
+    <rdfs:isDefinedBy rdf:resource="https://data.nasa.gov/ontologies/atmonto/data#"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >low ceiling WITI hourly</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The low ceiling weather impacted traffic index (WITI) computed for the airport during the specified timeframe (hourly). WITI is an estimate of the number of flights potentially impacted due to inclement weather based on the scheduled traffic demand for a defined geographic region of the air traffic system (in this case, an airport). If the ceiling at the airport is below a set threshold, then the low ceiling WITI is set to the number of scheduled arrivals for that timeframe.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://data.nasa.gov/ontologies/atmonto/data#WITIproperty"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://data.nasa.gov/ontologies/atmonto/data#lowVisibilityWITIdaily">
+    <rdfs:isDefinedBy rdf:resource="https://data.nasa.gov/ontologies/atmonto/data#"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >low visibility WITI daily</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The low visibility weather impacted traffic index (WITI) computed for the airport during the specified timeframe (daily). WITI is an estimate of the number of flights potentially impacted due to inclement weather based on the scheduled traffic demand for a defined geographic region of the air traffic system (in this case, an airport). If the visibility at the airport is below a set threshold, then the low visibility WITI is set to the number of scheduled arrivals for that timeframe.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://data.nasa.gov/ontologies/atmonto/data#WITIproperty"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://data.nasa.gov/ontologies/atmonto/data#highWindWITIhourly">
+    <rdfs:isDefinedBy rdf:resource="https://data.nasa.gov/ontologies/atmonto/data#"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >high wind WITI hourly</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The high wind weather impacted traffic index (WITI) computed for the airport during the specified timeframe (hourly). WITI is an estimate of the number of flights potentially impacted due to inclement weather based on the scheduled traffic demand for a defined geographic region of the air traffic system (in this case, an airport). If the winds at the airport are above a set threshold, then the high wind WITI is set to the number of scheduled arrivals for that timeframe.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://data.nasa.gov/ontologies/atmonto/data#WITIproperty"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://data.nasa.gov/ontologies/atmonto/data#lowVisibilityWITIhourly">
+    <rdfs:isDefinedBy rdf:resource="https://data.nasa.gov/ontologies/atmonto/data#"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >low visibility WITI hourly</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The low visibility weather impacted traffic index (WITI) computed for the airport during the specified timeframe (hourly). WITI is an estimate of the number of flights potentially impacted due to inclement weather based on the scheduled traffic demand for a defined geographic region of the air traffic system (in this case, an airport). If the visibility at the airport is below a set threshold, then the low visibility WITI is set to the number of scheduled arrivals for that timeframe.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://data.nasa.gov/ontologies/atmonto/data#WITIproperty"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://data.nasa.gov/ontologies/atmonto/data#highWindWITIdaily">
+    <rdfs:isDefinedBy rdf:resource="https://data.nasa.gov/ontologies/atmonto/data#"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >high wind WITI daily</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The high wind weather impacted traffic index (WITI) computed for the airport during the specified timeframe (daily). WITI is an estimate of the number of flights potentially impacted due to inclement weather based on the scheduled traffic demand for a defined geographic region of the air traffic system (in this case, an airport). If the winds at the airport are above a set threshold, then the high wind WITI is set to the number of scheduled arrivals for that timeframe.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://data.nasa.gov/ontologies/atmonto/data#WITIproperty"/>
+  </skos:Concept>
+</rdf:RDF>

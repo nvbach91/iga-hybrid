@@ -1,0 +1,50 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://purl.uniprot.org/core/"/>
+  <skos:Concept rdf:about="http://purl.uniprot.org/core/Evidence_at_Transcript_Level_Existence">
+    <rdfs:isDefinedBy rdf:resource="http://purl.uniprot.org/core/"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Evidence at transcript level</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Indicates that the existence of a protein has not been strictly proven but that expression data (such as existence of cDNA(s), RT-PCR or Northern blots) indicate the existence of a transcript.</rdfs:comment>
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="http://purl.uniprot.org/core/Protein_Existence">
+        <rdfs:isDefinedBy rdf:resource="http://purl.uniprot.org/core/"/>
+      </skos:ConceptScheme>
+    </skos:inScheme>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.uniprot.org/core/Predicted_Existence">
+    <rdfs:isDefinedBy rdf:resource="http://purl.uniprot.org/core/"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Predicted</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >This is used for proteins without evidence at protein, transcript, or homology levels.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.uniprot.org/core/Protein_Existence"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.uniprot.org/core/Uncertain_Existence">
+    <rdfs:isDefinedBy rdf:resource="http://purl.uniprot.org/core/"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Uncertain</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.uniprot.org/core/Protein_Existence"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.uniprot.org/core/Evidence_at_Protein_Level_Existence">
+    <rdfs:isDefinedBy rdf:resource="http://purl.uniprot.org/core/"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Evidence at protein level</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.uniprot.org/core/Protein_Existence"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.uniprot.org/core/Inferred_from_Homology_Existence">
+    <rdfs:isDefinedBy rdf:resource="http://purl.uniprot.org/core/"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Inferred from homology</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.uniprot.org/core/Protein_Existence"/>
+  </skos:Concept>
+</rdf:RDF>

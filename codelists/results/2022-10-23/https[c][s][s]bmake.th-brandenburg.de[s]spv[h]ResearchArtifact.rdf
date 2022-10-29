@@ -1,0 +1,132 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="https://bmake.th-brandenburg.de/spv"/>
+  <owl:ObjectProperty rdf:about="https://bmake.th-brandenburg.de/spv#researchArtifact">
+    <rdfs:comment xml:lang="en">Is used in combination with research action type to indicate a research objective of a scientific paper.</rdfs:comment>
+    <rdfs:label xml:lang="en">research artifact</rdfs:label>
+    <rdfs:domain rdf:resource="https://bmake.th-brandenburg.de/spv#ResearchObjective"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="https://bmake.th-brandenburg.de/spv#ResearchArtifact">
+        <rdfs:isDefinedBy rdf:resource="https://bmake.th-brandenburg.de/spv"/>
+        <rdfs:label xml:lang="en">Rresearch Artifact</rdfs:label>
+        <rdfs:comment xml:lang="en">The artifact aspect of an elicited research objective taken from the list of all types of research &amp; development artifacts characteristic for Information Systems.</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="https://bmake.th-brandenburg.de/spv#ResArtifactModelingLanguage">
+    <rdfs:isDefinedBy rdf:resource="https://bmake.th-brandenburg.de/spv"/>
+    <rdfs:label xml:lang="en">Modeling Language</rdfs:label>
+    <rdfs:comment xml:lang="en">collection of syntactic rules (grammar) and semantic specifications for representing objects of a particular domain</rdfs:comment>
+    <skos:inScheme rdf:resource="https://bmake.th-brandenburg.de/spv#ResearchArtifact"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://bmake.th-brandenburg.de/spv#ResArtifactLinkedData">
+    <rdfs:isDefinedBy rdf:resource="https://bmake.th-brandenburg.de/spv"/>
+    <rdfs:label xml:lang="en">Linked Data</rdfs:label>
+    <rdfs:comment xml:lang="en">standard-based, structured data, mostly based on the Semantic Web stack</rdfs:comment>
+    <skos:inScheme rdf:resource="https://bmake.th-brandenburg.de/spv#ResearchArtifact"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://bmake.th-brandenburg.de/spv#ResArtifactRequirements">
+    <rdfs:isDefinedBy rdf:resource="https://bmake.th-brandenburg.de/spv"/>
+    <rdfs:label xml:lang="en">Requirements</rdfs:label>
+    <rdfs:comment xml:lang="en">characteristics or features of an object required by potential users</rdfs:comment>
+    <skos:inScheme rdf:resource="https://bmake.th-brandenburg.de/spv#ResearchArtifact"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://bmake.th-brandenburg.de/spv#ResArtifactITSystem">
+    <rdfs:isDefinedBy rdf:resource="https://bmake.th-brandenburg.de/spv"/>
+    <rdfs:label xml:lang="en">IT System</rdfs:label>
+    <rdfs:comment xml:lang="en">complex object of information technology whose parts interact and form a desing-related and functional whole</rdfs:comment>
+    <skos:inScheme rdf:resource="https://bmake.th-brandenburg.de/spv#ResearchArtifact"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://bmake.th-brandenburg.de/spv#ResArtifactDocumentation">
+    <rdfs:isDefinedBy rdf:resource="https://bmake.th-brandenburg.de/spv"/>
+    <rdfs:label xml:lang="en">Documentation</rdfs:label>
+    <rdfs:comment xml:lang="en">technical, formal or semi-formal description of an object and the circumstances of its development or function</rdfs:comment>
+    <skos:inScheme rdf:resource="https://bmake.th-brandenburg.de/spv#ResearchArtifact"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://bmake.th-brandenburg.de/spv#ResArtifactBusinessProcess">
+    <rdfs:isDefinedBy rdf:resource="https://bmake.th-brandenburg.de/spv"/>
+    <rdfs:label xml:lang="en">Business Process</rdfs:label>
+    <rdfs:comment xml:lang="en">set of interacting and interdependent activities that converts input to output</rdfs:comment>
+    <skos:inScheme rdf:resource="https://bmake.th-brandenburg.de/spv#ResearchArtifact"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://bmake.th-brandenburg.de/spv#ResArtifactApplication">
+    <rdfs:isDefinedBy rdf:resource="https://bmake.th-brandenburg.de/spv"/>
+    <rdfs:label xml:lang="en">Application</rdfs:label>
+    <rdfs:comment xml:lang="en">software artifact with a certain range of functions</rdfs:comment>
+    <skos:inScheme rdf:resource="https://bmake.th-brandenburg.de/spv#ResearchArtifact"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://bmake.th-brandenburg.de/spv#ResArtifactWorkflow">
+    <rdfs:isDefinedBy rdf:resource="https://bmake.th-brandenburg.de/spv"/>
+    <rdfs:label xml:lang="en">Workflow</rdfs:label>
+    <rdfs:comment xml:lang="en">clearly specified sequence of activities to achieve a desired target state</rdfs:comment>
+    <skos:inScheme rdf:resource="https://bmake.th-brandenburg.de/spv#ResearchArtifact"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://bmake.th-brandenburg.de/spv#ResArtifactBlueprint">
+    <rdfs:isDefinedBy rdf:resource="https://bmake.th-brandenburg.de/spv"/>
+    <rdfs:label xml:lang="en">Blueprint</rdfs:label>
+    <rdfs:comment xml:lang="en">model or technical design of an object</rdfs:comment>
+    <skos:inScheme rdf:resource="https://bmake.th-brandenburg.de/spv#ResearchArtifact"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://bmake.th-brandenburg.de/spv#ResArtifactStandard">
+    <rdfs:isDefinedBy rdf:resource="https://bmake.th-brandenburg.de/spv"/>
+    <rdfs:label xml:lang="en">Standard, Guideline</rdfs:label>
+    <rdfs:comment xml:lang="en">specific reference or prescription for actions in a particular field of action</rdfs:comment>
+    <skos:inScheme rdf:resource="https://bmake.th-brandenburg.de/spv#ResearchArtifact"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://bmake.th-brandenburg.de/spv#ResArtifactMethod">
+    <rdfs:isDefinedBy rdf:resource="https://bmake.th-brandenburg.de/spv"/>
+    <rdfs:label xml:lang="en">Method</rdfs:label>
+    <rdfs:comment xml:lang="en">prescription of procedures or activities which is aimed at a specific result under appropriate conditions</rdfs:comment>
+    <skos:inScheme rdf:resource="https://bmake.th-brandenburg.de/spv#ResearchArtifact"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://bmake.th-brandenburg.de/spv#ResArtifactTermDefinition">
+    <rdfs:isDefinedBy rdf:resource="https://bmake.th-brandenburg.de/spv"/>
+    <rdfs:label xml:lang="en">Term Definition</rdfs:label>
+    <rdfs:comment xml:lang="en">Unambiguously described or explained technical or business term</rdfs:comment>
+    <skos:inScheme rdf:resource="https://bmake.th-brandenburg.de/spv#ResearchArtifact"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://bmake.th-brandenburg.de/spv#ResArtifactInfrastructure">
+    <rdfs:isDefinedBy rdf:resource="https://bmake.th-brandenburg.de/spv"/>
+    <rdfs:label xml:lang="en">IT Infrastructure</rdfs:label>
+    <rdfs:comment xml:lang="en">a combined set of hardware, software, networks, facilities, etc. (including all of the information technology), in order to develop, test, deliver, monitor, control or support IT services</rdfs:comment>
+    <skos:inScheme rdf:resource="https://bmake.th-brandenburg.de/spv#ResearchArtifact"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://bmake.th-brandenburg.de/spv#ResArtifactOntology">
+    <rdfs:isDefinedBy rdf:resource="https://bmake.th-brandenburg.de/spv"/>
+    <rdfs:label xml:lang="en">Ontology</rdfs:label>
+    <rdfs:comment xml:lang="en">semantic network of different configuration stages; up to formally specified conceptualizations of a domain</rdfs:comment>
+    <skos:inScheme rdf:resource="https://bmake.th-brandenburg.de/spv#ResearchArtifact"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://bmake.th-brandenburg.de/spv#ResArtifactNLPArtifact">
+    <rdfs:isDefinedBy rdf:resource="https://bmake.th-brandenburg.de/spv"/>
+    <rdfs:label xml:lang="en">NLP Artifact</rdfs:label>
+    <rdfs:comment xml:lang="en">result of a process of manipulation of natural language objects</rdfs:comment>
+    <skos:inScheme rdf:resource="https://bmake.th-brandenburg.de/spv#ResearchArtifact"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://bmake.th-brandenburg.de/spv#ResArtifactPolicy">
+    <rdfs:isDefinedBy rdf:resource="https://bmake.th-brandenburg.de/spv"/>
+    <rdfs:label xml:lang="en">Policy</rdfs:label>
+    <rdfs:comment xml:lang="en">basic precepts in a particular field of action</rdfs:comment>
+    <skos:inScheme rdf:resource="https://bmake.th-brandenburg.de/spv#ResearchArtifact"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://bmake.th-brandenburg.de/spv#ResArtifactSystem">
+    <rdfs:isDefinedBy rdf:resource="https://bmake.th-brandenburg.de/spv"/>
+    <rdfs:label xml:lang="en">System</rdfs:label>
+    <rdfs:comment xml:lang="en">complex object whose parts interact and form a desing-related and functional whole</rdfs:comment>
+    <skos:inScheme rdf:resource="https://bmake.th-brandenburg.de/spv#ResearchArtifact"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://bmake.th-brandenburg.de/spv#ResArtifactDevFramework">
+    <rdfs:isDefinedBy rdf:resource="https://bmake.th-brandenburg.de/spv"/>
+    <rdfs:label xml:lang="en">Development Framework</rdfs:label>
+    <rdfs:comment xml:lang="en">complex (technical) environment for the development of applications and IT systems</rdfs:comment>
+    <skos:inScheme rdf:resource="https://bmake.th-brandenburg.de/spv#ResearchArtifact"/>
+  </skos:Concept>
+</rdf:RDF>

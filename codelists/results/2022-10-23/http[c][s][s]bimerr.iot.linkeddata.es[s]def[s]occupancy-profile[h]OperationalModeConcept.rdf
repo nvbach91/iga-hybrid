@@ -1,0 +1,48 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://bimerr.iot.linkeddata.es/def/occupancy-profile#"/>
+  <owl:ObjectProperty rdf:about="http://bimerr.iot.linkeddata.es/def/occupancy-profile#hasOperationalMode">
+    <rdfs:comment xml:lang="en">Relationship to indicate the type of control mode of a system, such as fixed or operable modes for a window.</rdfs:comment>
+    <rdfs:label xml:lang="en">has operational mode</rdfs:label>
+    <rdfs:domain rdf:resource="https://w3id.org/def/saref4building#PhysicalObject"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://bimerr.iot.linkeddata.es/def/occupancy-profile#OperationalModeConcept">
+        <rdfs:isDefinedBy rdf:resource="http://bimerr.iot.linkeddata.es/def/occupancy-profile#"/>
+        <rdfs:label xml:lang="en">Operational mode concept</rdfs:label>
+        <rdfs:comment xml:lang="en">Types of operational modes for space systems.</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://bimerr.iot.linkeddata.es/def/occupancy-profile#Operable">
+    <rdfs:isDefinedBy rdf:resource="http://bimerr.iot.linkeddata.es/def/occupancy-profile#"/>
+    <skos:inScheme rdf:resource="http://bimerr.iot.linkeddata.es/def/occupancy-profile#OperationalModeConcept"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://bimerr.iot.linkeddata.es/def/occupancy-profile#ContinuousControl">
+    <rdfs:isDefinedBy rdf:resource="http://bimerr.iot.linkeddata.es/def/occupancy-profile#"/>
+    <skos:inScheme rdf:resource="http://bimerr.iot.linkeddata.es/def/occupancy-profile#OperationalModeConcept"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://bimerr.iot.linkeddata.es/def/occupancy-profile#Fixed">
+    <rdfs:isDefinedBy rdf:resource="http://bimerr.iot.linkeddata.es/def/occupancy-profile#"/>
+    <skos:inScheme rdf:resource="http://bimerr.iot.linkeddata.es/def/occupancy-profile#OperationalModeConcept"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://bimerr.iot.linkeddata.es/def/occupancy-profile#ZoneOnOff">
+    <rdfs:isDefinedBy rdf:resource="http://bimerr.iot.linkeddata.es/def/occupancy-profile#"/>
+    <skos:inScheme rdf:resource="http://bimerr.iot.linkeddata.es/def/occupancy-profile#OperationalModeConcept"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://bimerr.iot.linkeddata.es/def/occupancy-profile#OnOff">
+    <rdfs:isDefinedBy rdf:resource="http://bimerr.iot.linkeddata.es/def/occupancy-profile#"/>
+    <skos:inScheme rdf:resource="http://bimerr.iot.linkeddata.es/def/occupancy-profile#OperationalModeConcept"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://bimerr.iot.linkeddata.es/def/occupancy-profile#Adjustable">
+    <rdfs:isDefinedBy rdf:resource="http://bimerr.iot.linkeddata.es/def/occupancy-profile#"/>
+    <skos:inScheme rdf:resource="http://bimerr.iot.linkeddata.es/def/occupancy-profile#OperationalModeConcept"/>
+  </skos:Concept>
+</rdf:RDF>

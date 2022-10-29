@@ -1,0 +1,36 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://purl.org/eem"/>
+  <owl:ObjectProperty rdf:about="http://purl.org/eem#action">
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://purl.org/eem#Action">
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/eem"/>
+        <rdfs:comment>The Action type says how an event relates to the lifecycle of the entity being described.</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://purl.org/eem#OBSERVE">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/eem"/>
+    <rdfs:comment>The entity in question has not been changed: it has neither been created, added to, destroyed, or removed from.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/eem#Action"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/eem#ADD">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/eem"/>
+    <rdfs:comment>The entity in question has been created or added to</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/eem#Action"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/eem#DELETE">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/eem"/>
+    <rdfs:comment>The entity in question has been removed from or destroyed
+altogether. </rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/eem#Action"/>
+  </skos:Concept>
+</rdf:RDF>

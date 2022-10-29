@@ -1,0 +1,39 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://ontology.ethereal.cz/irao"/>
+  <owl:ObjectProperty rdf:about="http://ontology.ethereal.cz/irao/hasDevelopmentStatus">
+    <rdfs:comment xml:lang="en">This property specifies the development status of a research artifact</rdfs:comment>
+    <rdfs:label xml:lang="en">has development status</rdfs:label>
+    <rdfs:domain rdf:resource="http://ontology.ethereal.cz/irao/ResearchArtifact"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://ontology.ethereal.cz/irao/DevelopmentStatus">
+        <rdfs:isDefinedBy rdf:resource="http://ontology.ethereal.cz/irao"/>
+        <rdfs:label xml:lang="en">Development status</rdfs:label>
+        <rdfs:comment xml:lang="en">The development status of a research artifact, informing about its maturity</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://ontology.ethereal.cz/irao/developmentstatus#release">
+    <rdfs:isDefinedBy rdf:resource="http://ontology.ethereal.cz/irao"/>
+    <rdfs:label xml:lang="en">Release</rdfs:label>
+    <skos:inScheme rdf:resource="http://ontology.ethereal.cz/irao/DevelopmentStatus"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://ontology.ethereal.cz/irao/developmentstatus#beta">
+    <rdfs:isDefinedBy rdf:resource="http://ontology.ethereal.cz/irao"/>
+    <rdfs:label xml:lang="en">Beta</rdfs:label>
+    <skos:inScheme rdf:resource="http://ontology.ethereal.cz/irao/DevelopmentStatus"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://ontology.ethereal.cz/irao/developmentstatus#alpha">
+    <rdfs:isDefinedBy rdf:resource="http://ontology.ethereal.cz/irao"/>
+    <rdfs:label xml:lang="en">Alpha</rdfs:label>
+    <skos:inScheme rdf:resource="http://ontology.ethereal.cz/irao/DevelopmentStatus"/>
+  </skos:Concept>
+</rdf:RDF>

@@ -1,0 +1,70 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+  <owl:ObjectProperty rdf:about="http://www.w3.org/2007/uwa/context/software.owl#applicationProtocols">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >This property represents the  application protocols by a program</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Supported Application Protocols</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.w3.org/2007/uwa/context/software.owl#Program"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://www.w3.org/2007/uwa/context/common.owl#ApplicationProtocol">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Application Protocol</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >This class represents application-level protocols</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://www.w3.org/2007/uwa/context/common.owl#ApplicationProtocol_24">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >HTTP</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/common.owl#ApplicationProtocol"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2007/uwa/context/common.owl#ApplicationProtocol_26">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >WSP Connection Oriented</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/common.owl#ApplicationProtocol"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2007/uwa/context/common.owl#ApplicationProtocol_27">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >WSP Connection-Less</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/common.owl#ApplicationProtocol"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2007/uwa/context/common.owl#ApplicationProtocol_21">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >W-HTTP</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/common.owl#ApplicationProtocol"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2007/uwa/context/common.owl#ApplicationProtocol_22">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >HTTPS</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/common.owl#ApplicationProtocol"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2007/uwa/context/common.owl#ApplicationProtocol_23">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >FTP</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/common.owl#ApplicationProtocol"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2007/uwa/context/common.owl#ApplicationProtocol_28">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >WTLS</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/common.owl#ApplicationProtocol"/>
+  </skos:Concept>
+</rdf:RDF>

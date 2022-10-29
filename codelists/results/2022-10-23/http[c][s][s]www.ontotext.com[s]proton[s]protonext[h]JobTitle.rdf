@@ -1,0 +1,138 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://www.ontotext.com/proton/protonext"/>
+  <owl:ObjectProperty rdf:about="http://www.ontotext.com/proton/protonext#hasTitle">
+    <rdfs:comment xml:lang="en">Relates a job position to its title.</rdfs:comment>
+    <rdfs:label xml:lang="en">has Title</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.ontotext.com/proton/protontop#JobPosition"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://www.ontotext.com/proton/protonext#JobTitle">
+        <rdfs:isDefinedBy rdf:resource="http://www.ontotext.com/proton/protonext"/>
+        <rdfs:label xml:lang="en">Job Title</rdfs:label>
+        <rdfs:comment xml:lang="en">The name of a position a person holds within an organization.</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://www.ontotext.com/proton/protonext#VicePrimeMinister">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontotext.com/proton/protonext"/>
+    <rdfs:label xml:lang="en">Vice Prime Minister</rdfs:label>
+    <rdfs:comment xml:lang="en">Any Vice Prime Minister, the title of a vice prime minister in a country.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontotext.com/proton/protonext#JobTitle"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontotext.com/proton/protonext#Manager">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontotext.com/proton/protonext"/>
+    <rdfs:label xml:lang="en">Manager</rdfs:label>
+    <rdfs:comment xml:lang="en">Any manager, the title of a management position in an organization.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontotext.com/proton/protonext#JobTitle"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontotext.com/proton/protonext#President">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontotext.com/proton/protonext"/>
+    <rdfs:label xml:lang="en">President</rdfs:label>
+    <rdfs:comment xml:lang="en">Any president, a title of a president of a country or an organization.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontotext.com/proton/protonext#JobTitle"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontotext.com/proton/protonext#PrimeMinister">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontotext.com/proton/protonext"/>
+    <rdfs:label xml:lang="en">Prime Minister</rdfs:label>
+    <rdfs:comment xml:lang="en">Any prime minister, a title Prime minister of a country.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontotext.com/proton/protonext#JobTitle"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontotext.com/proton/protonext#Chancellor">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontotext.com/proton/protonext"/>
+    <rdfs:label xml:lang="en">Chancellor</rdfs:label>
+    <rdfs:comment xml:lang="en">Any Chancellor, a title of various official positions in the governments of many nations. (Wikipedia)</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontotext.com/proton/protonext#JobTitle"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontotext.com/proton/protonext#VicePresident">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontotext.com/proton/protonext"/>
+    <rdfs:label xml:lang="en">Vice President</rdfs:label>
+    <rdfs:comment xml:lang="en">Any Vice President, the title of a vice president in a country or in an organization.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontotext.com/proton/protonext#JobTitle"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontotext.com/proton/protonext#MemberOfParliament">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontotext.com/proton/protonext"/>
+    <rdfs:label xml:lang="en">Member of Parliament</rdfs:label>
+    <rdfs:comment xml:lang="en">Any member of parliament, a title of a member of parliament.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontotext.com/proton/protonext#JobTitle"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontotext.com/proton/protonext#Commander">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontotext.com/proton/protonext"/>
+    <rdfs:label xml:lang="en">Commander</rdfs:label>
+    <rdfs:comment xml:lang="en">Any commander, title of being commander or having a leading role in a military unit or other organization.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontotext.com/proton/protonext#JobTitle"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontotext.com/proton/protonext#Senator">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontotext.com/proton/protonext"/>
+    <rdfs:label xml:lang="en">Senator</rdfs:label>
+    <rdfs:comment xml:lang="en">Any Senator, a title of the member of the senat.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontotext.com/proton/protonext#JobTitle"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontotext.com/proton/protonext#Governor">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontotext.com/proton/protonext"/>
+    <rdfs:label xml:lang="en">Governor</rdfs:label>
+    <rdfs:comment xml:lang="en">Any Governor, a title of Governor of a district.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontotext.com/proton/protonext#JobTitle"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontotext.com/proton/protonext#SoccerManager">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontotext.com/proton/protonext"/>
+    <rdfs:label xml:lang="en">Soccer Manager</rdfs:label>
+    <rdfs:comment xml:lang="en">Any soccer manager, the title of a manager of a soccer team.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontotext.com/proton/protonext#JobTitle"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontotext.com/proton/protonext#PlayboyPlaymate">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontotext.com/proton/protonext"/>
+    <rdfs:label xml:lang="en">Playboy playmate</rdfs:label>
+    <rdfs:comment xml:lang="en">The occupation of playboy playmate</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontotext.com/proton/protonext#JobTitle"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontotext.com/proton/protonext#Ambassador">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontotext.com/proton/protonext"/>
+    <rdfs:label xml:lang="en">Ambassador</rdfs:label>
+    <rdfs:comment xml:lang="en">Any ambassador, a title of a position of representing a country abroad</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontotext.com/proton/protonext#JobTitle"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontotext.com/proton/protonext#Lieutenant">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontotext.com/proton/protonext"/>
+    <rdfs:label xml:lang="en">Lieutenant</rdfs:label>
+    <rdfs:comment xml:lang="en">Any lieutenant, title in a military unit.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontotext.com/proton/protonext#JobTitle"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontotext.com/proton/protonext#BoardMember">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontotext.com/proton/protonext"/>
+    <rdfs:label xml:lang="en">Board Member</rdfs:label>
+    <rdfs:comment xml:lang="en">Any board member, a title of the member of the board of any board</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontotext.com/proton/protonext#JobTitle"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontotext.com/proton/protonext#CEO">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontotext.com/proton/protonext"/>
+    <rdfs:label xml:lang="en">CEO</rdfs:label>
+    <rdfs:comment xml:lang="en">Any CEO, a title of a chief executive officer of an organization.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontotext.com/proton/protonext#JobTitle"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontotext.com/proton/protonext#Deputy">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontotext.com/proton/protonext"/>
+    <rdfs:label xml:lang="en">Deputy</rdfs:label>
+    <rdfs:comment xml:lang="en">The occupation of deputy</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontotext.com/proton/protonext#JobTitle"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontotext.com/proton/protonext#Mayor">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontotext.com/proton/protonext"/>
+    <rdfs:label xml:lang="en">Mayor</rdfs:label>
+    <rdfs:comment xml:lang="en">Any Mayor, a title of the head of a municipality.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontotext.com/proton/protonext#JobTitle"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontotext.com/proton/protonext#Congressman">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontotext.com/proton/protonext"/>
+    <rdfs:label xml:lang="en">Congressman</rdfs:label>
+    <rdfs:comment xml:lang="en">Any Congressman, a title of a position in congress.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontotext.com/proton/protonext#JobTitle"/>
+  </skos:Concept>
+</rdf:RDF>

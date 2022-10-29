@@ -1,6 +1,6 @@
 <rdf:RDF
-    xmlns:dct="http://purl.org/dc/terms/"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
     xmlns:dc="http://purl.org/dc/elements/1.1/"
     xmlns:owl="http://www.w3.org/2002/07/owl#"
     xmlns:dcmit="http://purl.org/dc/dcmitype/"
@@ -10,18 +10,13 @@
     xmlns:vann="http://purl.org/vocab/vann/">
   <owl:Ontology rdf:about="http://www.kanzaki.com/ns/music"/>
   <owl:ObjectProperty rdf:about="http://www.kanzaki.com/ns/music#key">
-    <rdfs:isDefinedBy rdf:resource="http://www.kanzaki.com/ns/music"/>
     <rdfs:comment>The subject musical work or its movement has a key, such as C major, d minor, etc.</rdfs:comment>
     <rdfs:label>Key</rdfs:label>
-    <rdfs:domain>
-      <rdf:Description rdf:about="http://www.kanzaki.com/ns/music#Musical_Work">
-        <rdfs:isDefinedBy rdf:resource="http://www.kanzaki.com/ns/music"/>
-      </rdf:Description>
-    </rdfs:domain>
+    <rdfs:domain rdf:resource="http://www.kanzaki.com/ns/music#Musical_Work"/>
     <rdfs:range>
       <skos:ConceptScheme rdf:about="http://www.kanzaki.com/ns/music#Key">
         <rdfs:isDefinedBy rdf:resource="http://www.kanzaki.com/ns/music"/>
-        <rdfs:label>A key of a musical work (e.g. C-dur, b-moll)</rdfs:label>
+        <rdfs:label>Key</rdfs:label>
         <rdfs:comment>A key of a musical work (e.g. C-dur, b-moll)</rdfs:comment>
       </skos:ConceptScheme>
     </rdfs:range>

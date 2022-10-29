@@ -1,0 +1,40 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://bimerr.iot.linkeddata.es/def/occupancy-profile#"/>
+  <owl:ObjectProperty rdf:about="http://bimerr.iot.linkeddata.es/def/occupancy-profile#hasTransitionType">
+    <rdfs:comment xml:lang="en">Relationship that indicates the type of status transition event.</rdfs:comment>
+    <rdfs:label xml:lang="en">has transition type</rdfs:label>
+    <rdfs:domain rdf:resource="http://bimerr.iot.linkeddata.es/def/occupancy-profile#StatusTransition"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://bimerr.iot.linkeddata.es/def/occupancy-profile#StatusTransitionTypeConcept">
+        <rdfs:isDefinedBy rdf:resource="http://bimerr.iot.linkeddata.es/def/occupancy-profile#"/>
+        <rdfs:label xml:lang="en">Status transition type concept</rdfs:label>
+        <rdfs:comment xml:lang="en">One time event involving occupancy status transition in building level.</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://bimerr.iot.linkeddata.es/def/occupancy-profile#Departure">
+    <rdfs:isDefinedBy rdf:resource="http://bimerr.iot.linkeddata.es/def/occupancy-profile#"/>
+    <skos:inScheme rdf:resource="http://bimerr.iot.linkeddata.es/def/occupancy-profile#StatusTransitionTypeConcept"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://bimerr.iot.linkeddata.es/def/occupancy-profile#ShortTermLeaving">
+    <rdfs:isDefinedBy rdf:resource="http://bimerr.iot.linkeddata.es/def/occupancy-profile#"/>
+    <skos:inScheme rdf:resource="http://bimerr.iot.linkeddata.es/def/occupancy-profile#StatusTransitionTypeConcept"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://bimerr.iot.linkeddata.es/def/occupancy-profile#Arrival">
+    <rdfs:isDefinedBy rdf:resource="http://bimerr.iot.linkeddata.es/def/occupancy-profile#"/>
+    <skos:inScheme rdf:resource="http://bimerr.iot.linkeddata.es/def/occupancy-profile#StatusTransitionTypeConcept"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://bimerr.iot.linkeddata.es/def/occupancy-profile#ShortTermVisiting">
+    <rdfs:isDefinedBy rdf:resource="http://bimerr.iot.linkeddata.es/def/occupancy-profile#"/>
+    <skos:inScheme rdf:resource="http://bimerr.iot.linkeddata.es/def/occupancy-profile#StatusTransitionTypeConcept"/>
+  </skos:Concept>
+</rdf:RDF>

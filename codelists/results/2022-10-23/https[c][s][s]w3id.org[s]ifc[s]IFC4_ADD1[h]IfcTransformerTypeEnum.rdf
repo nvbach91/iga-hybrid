@@ -1,0 +1,63 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="https://w3id.org/ifc/IFC4_ADD1"/>
+  <owl:FunctionalProperty rdf:about="https://w3id.org/ifc/IFC4_ADD1#predefinedType_IfcTransformerType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>PredefinedType</rdfs:label>
+    <rdfs:domain rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcTransformerType"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="https://w3id.org/ifc/IFC4_ADD1#IfcTransformerTypeEnum">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="https://w3id.org/ifc/IFC4_ADD1#predefinedType_IfcTransformer">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>PredefinedType</rdfs:label>
+    <rdfs:domain rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcTransformer"/>
+    <rdfs:range rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcTransformerTypeEnum"/>
+  </owl:FunctionalProperty>
+  <skos:Concept rdf:about="https://w3id.org/ifc/IFC4_ADD1#VOLTAGE">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+    <rdfs:label>VOLTAGE</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcTransformerTypeEnum"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ifc/IFC4_ADD1#RECTIFIER">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+    <rdfs:label>RECTIFIER</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcTransformerTypeEnum"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ifc/IFC4_ADD1#NOTDEFINED">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+    <rdfs:label>NOTDEFINED</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcTransformerTypeEnum"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ifc/IFC4_ADD1#INVERTER">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+    <rdfs:label>INVERTER</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcTransformerTypeEnum"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ifc/IFC4_ADD1#CURRENT">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+    <rdfs:label>CURRENT</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcTransformerTypeEnum"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ifc/IFC4_ADD1#USERDEFINED">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+    <rdfs:label>USERDEFINED</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcTransformerTypeEnum"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ifc/IFC4_ADD1#FREQUENCY">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+    <rdfs:label>FREQUENCY</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcTransformerTypeEnum"/>
+  </skos:Concept>
+</rdf:RDF>

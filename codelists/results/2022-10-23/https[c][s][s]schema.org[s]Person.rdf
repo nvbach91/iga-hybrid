@@ -1,0 +1,46 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="https://bmake.th-brandenburg.de/spv"/>
+  <owl:ObjectProperty rdf:about="https://schema.org/author">
+    <rdfs:comment xml:lang="en">Is used to indicate a author of a scientific paper.</rdfs:comment>
+    <rdfs:label xml:lang="en">author</rdfs:label>
+    <rdfs:domain rdf:resource="https://schema.org/ScholarlyArticle"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="https://schema.org/Person">
+        <rdfs:isDefinedBy rdf:resource="https://bmake.th-brandenburg.de/spv"/>
+        <rdfs:label xml:lang="en">Person</rdfs:label>
+        <rdfs:comment xml:lang="en">Mainly used for identifying authors, editors, attendees, contributers, organizers and other human agents.</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://schema.org/editor">
+    <rdfs:comment xml:lang="en">Is used to indicate an editor of a scientific paper or conference proceedings.</rdfs:comment>
+    <rdfs:label xml:lang="en">editor</rdfs:label>
+    <rdfs:domain rdf:resource="https://schema.org/CreativeWork"/>
+    <rdfs:range rdf:resource="https://schema.org/Person"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://schema.org/contributor">
+    <rdfs:comment xml:lang="en">Is used to indicate a person contributing to a conference.</rdfs:comment>
+    <rdfs:label xml:lang="en">contributor</rdfs:label>
+    <rdfs:domain rdf:resource="https://schema.org/PublicationEvent"/>
+    <rdfs:range rdf:resource="https://schema.org/Person"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://schema.org/attendee">
+    <rdfs:comment xml:lang="en">Is used to indicate a person attending a conference.</rdfs:comment>
+    <rdfs:label xml:lang="en">attendee</rdfs:label>
+    <rdfs:domain rdf:resource="https://schema.org/PublicationEvent"/>
+    <rdfs:range rdf:resource="https://schema.org/Person"/>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="https://www.th-brandenburg.de/mitarbeiterseiten/fbw/vera-meister/">
+    <rdfs:isDefinedBy rdf:resource="https://bmake.th-brandenburg.de/spv"/>
+    <skos:inScheme rdf:resource="https://schema.org/Person"/>
+  </skos:Concept>
+</rdf:RDF>

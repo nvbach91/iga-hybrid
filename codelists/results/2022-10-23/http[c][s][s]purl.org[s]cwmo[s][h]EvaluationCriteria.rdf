@@ -1,0 +1,62 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://purl.org/cwmo/#"/>
+  <skos:Concept rdf:about="http://purl.org/cwmo/#Completeness">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/cwmo/#"/>
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="http://purl.org/cwmo/#EvaluationCriteria">
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/cwmo/#"/>
+        <rdfs:label xml:lang="en">Evaluation Criteria</rdfs:label>
+        <rdfs:comment xml:lang="en">The Evaluation criteria class is the specific aspect to obsverve on idea. It is defined according to the constraints of the subject.</rdfs:comment>
+      </skos:ConceptScheme>
+    </skos:inScheme>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/cwmo/#Feasibility">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/cwmo/#"/>
+    <skos:inScheme rdf:resource="http://purl.org/cwmo/#EvaluationCriteria"/>
+  </skos:Concept>
+  <owl:AsymmetricProperty rdf:about="http://purl.org/cwmo/#applyEvaluationThanks">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment xml:lang="en">Evaluation technic apply evaluation criteria to do the evaluation.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://purl.org/cwmo/#EvaluationTechnic"/>
+    <rdfs:range rdf:resource="http://purl.org/cwmo/#EvaluationCriteria"/>
+  </owl:AsymmetricProperty>
+  <skos:Concept rdf:about="http://purl.org/cwmo/#Implementability">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/cwmo/#"/>
+    <skos:inScheme rdf:resource="http://purl.org/cwmo/#EvaluationCriteria"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/cwmo/#Workability">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/cwmo/#"/>
+    <skos:inScheme rdf:resource="http://purl.org/cwmo/#EvaluationCriteria"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/cwmo/#Complexity">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/cwmo/#"/>
+    <skos:inScheme rdf:resource="http://purl.org/cwmo/#EvaluationCriteria"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/cwmo/#Expressivness">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/cwmo/#"/>
+    <skos:inScheme rdf:resource="http://purl.org/cwmo/#EvaluationCriteria"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/cwmo/#Originality">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/cwmo/#"/>
+    <rdfs:comment>Originality is evaluated by considered both the interest of the idea and the novelty</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/cwmo/#EvaluationCriteria"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/cwmo/#Relevance">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/cwmo/#"/>
+    <skos:inScheme rdf:resource="http://purl.org/cwmo/#EvaluationCriteria"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/cwmo/#Effectivness">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/cwmo/#"/>
+    <skos:inScheme rdf:resource="http://purl.org/cwmo/#EvaluationCriteria"/>
+  </skos:Concept>
+</rdf:RDF>

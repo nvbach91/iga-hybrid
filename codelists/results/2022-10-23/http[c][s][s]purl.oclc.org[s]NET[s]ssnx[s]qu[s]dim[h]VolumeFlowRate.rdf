@@ -1,0 +1,42 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:j.0="http://purl.oclc.org/NET/ssnx/qu/qu#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#water_volume_transport_into_sea_water_from_rivers">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind>
+      <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/qu/quantity#volumeFlowRate">
+        <skos:inScheme>
+          <skos:ConceptScheme rdf:about="http://purl.oclc.org/NET/ssnx/qu/dim#VolumeFlowRate">
+            <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+          </skos:ConceptScheme>
+        </skos:inScheme>
+        <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+      </skos:Concept>
+    </j.0:generalQuantityKind>
+    <rdfs:label>water volume transport into sea water from rivers</rdfs:label>
+    <rdfs:comment>"Water" means water in all phases. The water flux or volume transport into sea water from rivers is the inflow to the ocean, often applied to the surface in ocean models.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#VolumeFlowRate"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#ocean_barotropic_streamfunction">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#volumeFlowRate"/>
+    <rdfs:label>ocean barotropic streamfunction</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#VolumeFlowRate"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#ocean_meridional_overturning_streamfunction">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#volumeFlowRate"/>
+    <rdfs:label>ocean meridional overturning streamfunction</rdfs:label>
+    <rdfs:comment>The ocean meridional overturning streamfunction should not include not include "bolus" or Gent-McWilliams velocity.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#VolumeFlowRate"/>
+  </skos:Concept>
+</rdf:RDF>

@@ -1,0 +1,93 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="https://w3id.org/ifc/IFC4_ADD1"/>
+  <owl:FunctionalProperty rdf:about="https://w3id.org/ifc/IFC4_ADD1#predefinedType_IfcAudioVisualApplianceType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>PredefinedType</rdfs:label>
+    <rdfs:domain rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcAudioVisualApplianceType"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="https://w3id.org/ifc/IFC4_ADD1#IfcAudioVisualApplianceTypeEnum">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="https://w3id.org/ifc/IFC4_ADD1#predefinedType_IfcAudioVisualAppliance">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>PredefinedType</rdfs:label>
+    <rdfs:domain rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcAudioVisualAppliance"/>
+    <rdfs:range rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcAudioVisualApplianceTypeEnum"/>
+  </owl:FunctionalProperty>
+  <skos:Concept rdf:about="https://w3id.org/ifc/IFC4_ADD1#RECEIVER">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+    <rdfs:label>RECEIVER</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcAudioVisualApplianceTypeEnum"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ifc/IFC4_ADD1#TUNER">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+    <rdfs:label>TUNER</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcAudioVisualApplianceTypeEnum"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ifc/IFC4_ADD1#PLAYER">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+    <rdfs:label>PLAYER</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcAudioVisualApplianceTypeEnum"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ifc/IFC4_ADD1#CAMERA">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+    <rdfs:label>CAMERA</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcAudioVisualApplianceTypeEnum"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ifc/IFC4_ADD1#TELEPHONE">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+    <rdfs:label>TELEPHONE</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcAudioVisualApplianceTypeEnum"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ifc/IFC4_ADD1#SWITCHER">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+    <rdfs:label>SWITCHER</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcAudioVisualApplianceTypeEnum"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ifc/IFC4_ADD1#NOTDEFINED">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+    <rdfs:label>NOTDEFINED</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcAudioVisualApplianceTypeEnum"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ifc/IFC4_ADD1#AMPLIFIER">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+    <rdfs:label>AMPLIFIER</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcAudioVisualApplianceTypeEnum"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ifc/IFC4_ADD1#PROJECTOR">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+    <rdfs:label>PROJECTOR</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcAudioVisualApplianceTypeEnum"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ifc/IFC4_ADD1#SPEAKER">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+    <rdfs:label>SPEAKER</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcAudioVisualApplianceTypeEnum"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ifc/IFC4_ADD1#DISPLAY">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+    <rdfs:label>DISPLAY</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcAudioVisualApplianceTypeEnum"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ifc/IFC4_ADD1#USERDEFINED">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+    <rdfs:label>USERDEFINED</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcAudioVisualApplianceTypeEnum"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ifc/IFC4_ADD1#MICROPHONE">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+    <rdfs:label>MICROPHONE</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcAudioVisualApplianceTypeEnum"/>
+  </skos:Concept>
+</rdf:RDF>

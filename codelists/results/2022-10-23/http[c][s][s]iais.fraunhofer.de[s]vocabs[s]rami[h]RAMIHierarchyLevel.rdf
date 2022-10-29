@@ -1,0 +1,56 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="https://w3id.org/i40/rami/"/>
+  <owl:ObjectProperty rdf:about="http://iais.fraunhofer.de/vocabs/rami#hasRAMIHierarchyLevel">
+    <rdfs:label>has RAMI Hierarchy Level</rdfs:label>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://iais.fraunhofer.de/vocabs/rami#RAMIHierarchyLevel">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/i40/rami/"/>
+        <rdfs:label xml:lang="en">RAMI Hierarchy Level</rdfs:label>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://iais.fraunhofer.de/vocabs/rami#ConnectedWorld">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/i40/rami/"/>
+    <rdfs:label xml:lang="en">Connected World</rdfs:label>
+    <skos:inScheme rdf:resource="http://iais.fraunhofer.de/vocabs/rami#RAMIHierarchyLevel"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iais.fraunhofer.de/vocabs/rami#ControlDevice">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/i40/rami/"/>
+    <rdfs:label xml:lang="en">Control Device</rdfs:label>
+    <skos:inScheme rdf:resource="http://iais.fraunhofer.de/vocabs/rami#RAMIHierarchyLevel"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iais.fraunhofer.de/vocabs/rami#Station">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/i40/rami/"/>
+    <rdfs:label xml:lang="en">Station</rdfs:label>
+    <skos:inScheme rdf:resource="http://iais.fraunhofer.de/vocabs/rami#RAMIHierarchyLevel"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iais.fraunhofer.de/vocabs/rami#WorkCenter">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/i40/rami/"/>
+    <rdfs:label xml:lang="en">Work Center</rdfs:label>
+    <skos:inScheme rdf:resource="http://iais.fraunhofer.de/vocabs/rami#RAMIHierarchyLevel"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iais.fraunhofer.de/vocabs/rami#Enterprise">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/i40/rami/"/>
+    <rdfs:label xml:lang="en">Enterprise</rdfs:label>
+    <skos:inScheme rdf:resource="http://iais.fraunhofer.de/vocabs/rami#RAMIHierarchyLevel"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iais.fraunhofer.de/vocabs/rami#Product">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/i40/rami/"/>
+    <rdfs:label xml:lang="en">Product</rdfs:label>
+    <skos:inScheme rdf:resource="http://iais.fraunhofer.de/vocabs/rami#RAMIHierarchyLevel"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iais.fraunhofer.de/vocabs/rami#FieldDevice">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/i40/rami/"/>
+    <rdfs:label xml:lang="en">Field Device</rdfs:label>
+    <skos:inScheme rdf:resource="http://iais.fraunhofer.de/vocabs/rami#RAMIHierarchyLevel"/>
+  </skos:Concept>
+</rdf:RDF>

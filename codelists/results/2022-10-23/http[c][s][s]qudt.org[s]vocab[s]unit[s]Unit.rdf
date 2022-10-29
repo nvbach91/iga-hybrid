@@ -1,0 +1,27 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="https://w3id.org/mdo/core/"/>
+  <owl:ObjectProperty rdf:about="http://qudt.org/schema/qudt/unit">
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://qudt.org/vocab/unit/Unit">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/mdo/core/"/>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://qudt.org/vocab/unit/GM-PER-CentiM3">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/mdo/core/"/>
+    <skos:inScheme rdf:resource="http://qudt.org/vocab/unit/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://qudt.org/vocab/unit/EV">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/mdo/core/"/>
+    <skos:inScheme rdf:resource="http://qudt.org/vocab/unit/Unit"/>
+  </skos:Concept>
+</rdf:RDF>

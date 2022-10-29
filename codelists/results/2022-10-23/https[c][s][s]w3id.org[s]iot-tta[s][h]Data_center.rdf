@@ -1,0 +1,89 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/"
+    xmlns:j.0="https://w3id.org/iot-tta/#">
+  <owl:Ontology rdf:about="https://w3id.org/iot-tta/"/>
+  <owl:ObjectProperty rdf:about="https://w3id.org/iot-tta/#useAlgorithm">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >useAlgorithm (Object property): algorithms used in data centers</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >useAlgorithm</rdfs:label>
+    <rdfs:domain>
+      <skos:ConceptScheme rdf:about="https://w3id.org/iot-tta/#Data_center">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/iot-tta/"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Data_center</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >A data center is a multicloud environment based on a network of computing, routers, switches, firewalls, storage systems, servers, and application-delivery controllers.</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:domain>
+    <rdfs:range rdf:resource="https://w3id.org/iot-tta/#Data_center"/>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="https://w3id.org/iot-tta/#Paxos">
+    <j.0:isApplied>
+      <skos:Concept rdf:about="https://w3id.org/iot-tta/#DC3">
+        <j.0:useAlgorithm rdf:resource="https://w3id.org/iot-tta/#Paxos"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >dc3</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >dc3 (Individual): a Data center with Object property assertions (hasService, useAlgorithm)</rdfs:comment>
+        <skos:inScheme rdf:resource="https://w3id.org/iot-tta/#Data_center"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/iot-tta/"/>
+      </skos:Concept>
+    </j.0:isApplied>
+    <j.0:isApplied>
+      <skos:Concept rdf:about="https://w3id.org/iot-tta/#DC1">
+        <j.0:useAlgorithm rdf:resource="https://w3id.org/iot-tta/#Paxos"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >dc1</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >dc1 (Individual): a Data center with Object property assertions (hasService, useAlgorithm)</rdfs:comment>
+        <skos:inScheme rdf:resource="https://w3id.org/iot-tta/#Data_center"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/iot-tta/"/>
+      </skos:Concept>
+    </j.0:isApplied>
+    <j.0:isApplied>
+      <skos:Concept rdf:about="https://w3id.org/iot-tta/#DC4">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/iot-tta/"/>
+        <j.0:useAlgorithm rdf:resource="https://w3id.org/iot-tta/#Paxos"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >dc4</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >dc4 (Individual): a Data center with Object property assertions (useAlgorithm)</rdfs:comment>
+        <skos:inScheme rdf:resource="https://w3id.org/iot-tta/#Data_center"/>
+      </skos:Concept>
+    </j.0:isApplied>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >paxos</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >paxos (Individual): a Data center with Object property assertions (isApplied)</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/iot-tta/#Data_center"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/iot-tta/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/iot-tta/#DC2">
+    <j.0:useAlgorithm>
+      <skos:Concept rdf:about="https://w3id.org/iot-tta/#Zookeeper">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/iot-tta/"/>
+        <j.0:isApplied rdf:resource="https://w3id.org/iot-tta/#DC2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >zookeeper</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >zookeeper (Individual): a Data center with Object property assertions (isApplied, hasService)</rdfs:comment>
+        <skos:inScheme rdf:resource="https://w3id.org/iot-tta/#Data_center"/>
+      </skos:Concept>
+    </j.0:useAlgorithm>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >dc2</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >dc2 (Individual): a Data center with Object property assertions (hasService, useAlgorithm)</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/iot-tta/#Data_center"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/iot-tta/"/>
+  </skos:Concept>
+</rdf:RDF>

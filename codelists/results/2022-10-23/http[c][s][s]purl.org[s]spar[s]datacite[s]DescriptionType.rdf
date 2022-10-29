@@ -1,0 +1,42 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://purl.org/spar/datacite"/>
+  <skos:Concept rdf:about="http://purl.org/spar/datacite/series-information">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite"/>
+    <rdfs:label xml:lang="en">series information</rdfs:label>
+    <rdfs:comment xml:lang="en">Used to charactierize a description of a resource that is part of a series.</rdfs:comment>
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="http://purl.org/spar/datacite/DescriptionType">
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite"/>
+        <rdfs:label xml:lang="en">description type</rdfs:label>
+        <rdfs:comment xml:lang="en">This class permits classification of the type of description given to a resource described by the DataCite Metadata schema.  Individual members of the class conform to the four values allowed in the DataCite controlled list, namely Abstract, SeriesInformation, TableOfContent, and Other.</rdfs:comment>
+      </skos:ConceptScheme>
+    </skos:inScheme>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/datacite/table-of-content">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite"/>
+    <rdfs:label xml:lang="en">table of content</rdfs:label>
+    <rdfs:comment xml:lang="en">A table of content giving information about the content of a resource, appearing before the body text.  Where the resource is a journal or magazine issue, the table of content lists the constituent items contained in that issue, typically by title, authors and first page number.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/datacite/DescriptionType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/datacite/abstract">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite"/>
+    <rdfs:label xml:lang="en">abstract</rdfs:label>
+    <rdfs:comment xml:lang="en">A brief summary of a textual work, appearing at the beginning of the work and designed to act as the point-of-entry that will help the reader quickly to obtain an overview of the work's contents.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/datacite/DescriptionType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/datacite/other">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite"/>
+    <rdfs:label xml:lang="en">other</rdfs:label>
+    <rdfs:comment xml:lang="en">A catch-all description type required by the DataCite Metadata Schema to characterize description types that are not abstracts, series information or tables of content.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/datacite/DescriptionType"/>
+  </skos:Concept>
+</rdf:RDF>

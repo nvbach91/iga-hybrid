@@ -1,0 +1,72 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="https://saref.etsi.org/saref4ehaw/"/>
+  <owl:ObjectProperty rdf:about="https://saref.etsi.org/saref4ehaw/hasBanApplicationDomain">
+    <rdfs:comment xml:lang="en">The BAN application domain - healthcare, telemedicine, assisted living, sport training, pervasive computing, safety and emergency... -.</rdfs:comment>
+    <rdfs:label xml:lang="en">has BAN application domain</rdfs:label>
+    <rdfs:domain rdf:resource="https://saref.etsi.org/saref4ehaw/Ban"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="https://saref.etsi.org/saref4ehaw/BanApplicationDomain">
+        <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4ehaw/"/>
+        <rdfs:label xml:lang="en">BAN application domain</rdfs:label>
+        <rdfs:comment xml:lang="en">The BAN application domain, e.g. healthcare, telemedicine, assisted living, sport training, safety and emergency...</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="https://saref.etsi.org/saref4ehaw/Healthcare">
+    <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4ehaw/"/>
+    <rdfs:label xml:lang="en">Healthcare</rdfs:label>
+    <rdfs:comment xml:lang="en">Healthcare domain for BAN application.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://saref.etsi.org/saref4ehaw/BanApplicationDomain"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://saref.etsi.org/saref4ehaw/Telemedicine">
+    <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4ehaw/"/>
+    <rdfs:label xml:lang="en">Telemedicine</rdfs:label>
+    <rdfs:comment xml:lang="en">Telemedicine sub-domain for BAN application.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://saref.etsi.org/saref4ehaw/BanApplicationDomain"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://saref.etsi.org/saref4ehaw/Emergency">
+    <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4ehaw/"/>
+    <rdfs:label xml:lang="en">Emergency</rdfs:label>
+    <rdfs:comment xml:lang="en">Emergency sub-domain for BAN application.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://saref.etsi.org/saref4ehaw/BanApplicationDomain"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://saref.etsi.org/saref4ehaw/Safety">
+    <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4ehaw/"/>
+    <rdfs:label xml:lang="en">Safety</rdfs:label>
+    <rdfs:comment xml:lang="en">Safety sub-domain for BAN application.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://saref.etsi.org/saref4ehaw/BanApplicationDomain"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://saref.etsi.org/saref4ehaw/SportTraining">
+    <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4ehaw/"/>
+    <rdfs:label xml:lang="en">Sport Training</rdfs:label>
+    <rdfs:comment xml:lang="en">Sport training sub-domain for BAN application.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://saref.etsi.org/saref4ehaw/BanApplicationDomain"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://saref.etsi.org/saref4ehaw/AssistedLiving">
+    <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4ehaw/"/>
+    <rdfs:label xml:lang="en">Assisted living</rdfs:label>
+    <rdfs:comment xml:lang="en">Assisted living sub-domain for BAN application.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://saref.etsi.org/saref4ehaw/BanApplicationDomain"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://saref.etsi.org/saref4ehaw/Prevention">
+    <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4ehaw/"/>
+    <rdfs:label xml:lang="en">Prevention</rdfs:label>
+    <rdfs:comment xml:lang="en">Prevention sub-domain (e.g. preventive health) for BAN application.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://saref.etsi.org/saref4ehaw/BanApplicationDomain"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://saref.etsi.org/saref4ehaw/PervasiveComputing">
+    <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4ehaw/"/>
+    <rdfs:label xml:lang="en">Pervasive computing</rdfs:label>
+    <rdfs:comment xml:lang="en">Pervasive computing sub-domain for BAN application.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://saref.etsi.org/saref4ehaw/BanApplicationDomain"/>
+  </skos:Concept>
+</rdf:RDF>

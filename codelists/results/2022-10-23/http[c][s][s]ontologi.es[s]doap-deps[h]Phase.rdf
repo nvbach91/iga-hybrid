@@ -1,0 +1,40 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://ontologi.es/doap-deps#"/>
+  <skos:Concept rdf:about="http://ontologi.es/doap-deps#ConfigurePhase">
+    <rdfs:isDefinedBy rdf:resource="http://ontologi.es/doap-deps#"/>
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="http://ontologi.es/doap-deps#Phase">
+        <rdfs:isDefinedBy rdf:resource="http://ontologi.es/doap-deps#"/>
+      </skos:ConceptScheme>
+    </skos:inScheme>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://ontologi.es/doap-deps#BuildPhase">
+    <rdfs:isDefinedBy rdf:resource="http://ontologi.es/doap-deps#"/>
+    <skos:inScheme rdf:resource="http://ontologi.es/doap-deps#Phase"/>
+  </skos:Concept>
+  <owl:AnnotationProperty rdf:about="http://ontologi.es/doap-deps#phase">
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://ontologi.es/doap-deps#Phase"/>
+  </owl:AnnotationProperty>
+  <skos:Concept rdf:about="http://ontologi.es/doap-deps#RuntimePhase">
+    <rdfs:isDefinedBy rdf:resource="http://ontologi.es/doap-deps#"/>
+    <skos:inScheme rdf:resource="http://ontologi.es/doap-deps#Phase"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://ontologi.es/doap-deps#DevelopmentPhase">
+    <rdfs:isDefinedBy rdf:resource="http://ontologi.es/doap-deps#"/>
+    <skos:inScheme rdf:resource="http://ontologi.es/doap-deps#Phase"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://ontologi.es/doap-deps#TestPhase">
+    <rdfs:isDefinedBy rdf:resource="http://ontologi.es/doap-deps#"/>
+    <skos:inScheme rdf:resource="http://ontologi.es/doap-deps#Phase"/>
+  </skos:Concept>
+</rdf:RDF>

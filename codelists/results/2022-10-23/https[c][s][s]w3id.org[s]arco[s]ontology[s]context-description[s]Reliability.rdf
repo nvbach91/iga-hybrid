@@ -1,0 +1,44 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="https://w3id.org/arco/ontology/context-description"/>
+  <owl:ObjectProperty rdf:about="https://w3id.org/arco/ontology/context-description/hasReliability">
+    <rdfs:comment xml:lang="en">This property relates a photo interpretation rendering survey to the reliability of the information collected during the survey.</rdfs:comment>
+    <rdfs:label xml:lang="en">has reliability</rdfs:label>
+    <rdfs:domain rdf:resource="https://w3id.org/arco/ontology/context-description/PhotoInterpretationRendering"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="https://w3id.org/arco/ontology/context-description/Reliability">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/context-description"/>
+        <rdfs:label xml:lang="en">Reliability</rdfs:label>
+        <rdfs:comment xml:lang="en">This class represents the reliability level of detected information relative to photo interpretation rendering.</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/context-description/InsufficientReliability">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/context-description"/>
+    <rdfs:label xml:lang="en">Insufficient reliability</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/context-description/Reliability"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/context-description/DecentReliability">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/context-description"/>
+    <rdfs:label xml:lang="en">Decent reliability</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/context-description/Reliability"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/context-description/ExcellentReliability">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/context-description"/>
+    <rdfs:label xml:lang="en">Excellent reliability</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/context-description/Reliability"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/context-description/GoodReliability">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/context-description"/>
+    <rdfs:label xml:lang="en">Good reliability</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/context-description/Reliability"/>
+  </skos:Concept>
+</rdf:RDF>

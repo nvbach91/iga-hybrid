@@ -1,0 +1,193 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://purl.uniprot.org/core/"/>
+  <owl:FunctionalProperty rdf:about="http://purl.uniprot.org/core/rank">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The rank of a taxon.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://purl.uniprot.org/core/Taxon"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://purl.uniprot.org/core/Rank">
+        <rdfs:isDefinedBy rdf:resource="http://purl.uniprot.org/core/"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >A rank of a taxon.</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:FunctionalProperty>
+  <skos:Concept rdf:about="http://purl.uniprot.org/core/Forma">
+    <rdfs:isDefinedBy rdf:resource="http://purl.uniprot.org/core/"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Taxonomy rank Forma</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.uniprot.org/core/Rank"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.uniprot.org/core/Infraclass">
+    <rdfs:isDefinedBy rdf:resource="http://purl.uniprot.org/core/"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Taxonomy rank Infraclass</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.uniprot.org/core/Rank"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.uniprot.org/core/Subspecies">
+    <rdfs:isDefinedBy rdf:resource="http://purl.uniprot.org/core/"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Taxonomic rank Subspecies</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.uniprot.org/core/Rank"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.uniprot.org/core/Superclass">
+    <rdfs:isDefinedBy rdf:resource="http://purl.uniprot.org/core/"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Taxonomic rank Superclass</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.uniprot.org/core/Rank"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.uniprot.org/core/Subfamily">
+    <rdfs:isDefinedBy rdf:resource="http://purl.uniprot.org/core/"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Taxonomic rank Subfamily</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.uniprot.org/core/Rank"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.uniprot.org/core/Order">
+    <rdfs:isDefinedBy rdf:resource="http://purl.uniprot.org/core/"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Taxonomy rank Order</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.uniprot.org/core/Rank"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.uniprot.org/core/Varietas">
+    <rdfs:isDefinedBy rdf:resource="http://purl.uniprot.org/core/"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Taxonomic rank Varietas</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.uniprot.org/core/Rank"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.uniprot.org/core/Superorder">
+    <rdfs:isDefinedBy rdf:resource="http://purl.uniprot.org/core/"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Taxonomic rank Superorder</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.uniprot.org/core/Rank"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.uniprot.org/core/Suborder">
+    <rdfs:isDefinedBy rdf:resource="http://purl.uniprot.org/core/"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Taxonomic rank Suborder</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.uniprot.org/core/Rank"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.uniprot.org/core/Subclass">
+    <rdfs:isDefinedBy rdf:resource="http://purl.uniprot.org/core/"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Taxonomic rank Subclass</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.uniprot.org/core/Rank"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.uniprot.org/core/Subgenus">
+    <rdfs:isDefinedBy rdf:resource="http://purl.uniprot.org/core/"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Taxonomic rank Subgenus</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.uniprot.org/core/Rank"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.uniprot.org/core/Genus">
+    <rdfs:isDefinedBy rdf:resource="http://purl.uniprot.org/core/"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Taxonomy rank Genus</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.uniprot.org/core/Rank"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.uniprot.org/core/Class">
+    <rdfs:isDefinedBy rdf:resource="http://purl.uniprot.org/core/"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Taxonomy rank Class</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.uniprot.org/core/Rank"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.uniprot.org/core/Phylum">
+    <rdfs:isDefinedBy rdf:resource="http://purl.uniprot.org/core/"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Taxonomy rank Phylum</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.uniprot.org/core/Rank"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.uniprot.org/core/Infraorder">
+    <rdfs:isDefinedBy rdf:resource="http://purl.uniprot.org/core/"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Taxonomy rank Infraorder</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.uniprot.org/core/Rank"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.uniprot.org/core/Family">
+    <rdfs:isDefinedBy rdf:resource="http://purl.uniprot.org/core/"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Taxonomy rank Family</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.uniprot.org/core/Rank"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.uniprot.org/core/Species_Subgroup">
+    <rdfs:isDefinedBy rdf:resource="http://purl.uniprot.org/core/"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Taxonomic rank Species Subgroup</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.uniprot.org/core/Rank"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.uniprot.org/core/Species_Group">
+    <rdfs:isDefinedBy rdf:resource="http://purl.uniprot.org/core/"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Taxonomic rank Species Group</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.uniprot.org/core/Rank"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.uniprot.org/core/Superphylum">
+    <rdfs:isDefinedBy rdf:resource="http://purl.uniprot.org/core/"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Taxonomic rank Superphylum</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.uniprot.org/core/Rank"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.uniprot.org/core/Subkingdom">
+    <rdfs:isDefinedBy rdf:resource="http://purl.uniprot.org/core/"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Taxonomic rank Subkingdom</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.uniprot.org/core/Rank"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.uniprot.org/core/Superfamily">
+    <rdfs:isDefinedBy rdf:resource="http://purl.uniprot.org/core/"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Taxonomic rank Superfamily</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.uniprot.org/core/Rank"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.uniprot.org/core/Subphylum">
+    <rdfs:isDefinedBy rdf:resource="http://purl.uniprot.org/core/"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Taxonomic rank Subphylum</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.uniprot.org/core/Rank"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.uniprot.org/core/Parvorder">
+    <rdfs:isDefinedBy rdf:resource="http://purl.uniprot.org/core/"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Taxonomy rank Parvorder</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.uniprot.org/core/Rank"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.uniprot.org/core/Superkingdom">
+    <rdfs:isDefinedBy rdf:resource="http://purl.uniprot.org/core/"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Taxonomic rank Superkingdom</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.uniprot.org/core/Rank"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.uniprot.org/core/Species">
+    <rdfs:isDefinedBy rdf:resource="http://purl.uniprot.org/core/"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Taxonomic rank Species</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.uniprot.org/core/Rank"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.uniprot.org/core/Kingdom">
+    <rdfs:isDefinedBy rdf:resource="http://purl.uniprot.org/core/"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Taxonomy rank Kingdom</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.uniprot.org/core/Rank"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.uniprot.org/core/Tribe">
+    <rdfs:isDefinedBy rdf:resource="http://purl.uniprot.org/core/"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Taxonomic rank Tribe</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.uniprot.org/core/Rank"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.uniprot.org/core/Subtribe">
+    <rdfs:isDefinedBy rdf:resource="http://purl.uniprot.org/core/"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Taxonomic rank Subtribe</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.uniprot.org/core/Rank"/>
+  </skos:Concept>
+</rdf:RDF>

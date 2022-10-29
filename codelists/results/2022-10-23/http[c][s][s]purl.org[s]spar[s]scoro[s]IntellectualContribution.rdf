@@ -1,0 +1,70 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://purl.org/spar/scoro/"/>
+  <skos:Concept rdf:about="http://purl.org/spar/scoro/interprets-results">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+    <rdfs:label xml:lang="en">interprets results</rdfs:label>
+    <rdfs:comment xml:lang="en">The contribution of interpretation of experimental results.</rdfs:comment>
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="http://purl.org/spar/scoro/IntellectualContribution">
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+        <rdfs:label xml:lang="en">intellectual contribution</rdfs:label>
+        <rdfs:comment xml:lang="en">Defines the type or nature of an intellectual contribution made to the research described in a journal article.  Individual members of this class are used to specify particular contributions.</rdfs:comment>
+      </skos:ConceptScheme>
+    </skos:inScheme>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/scoro/provides-advice">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+    <rdfs:label xml:lang="en">provides advice</rdfs:label>
+    <rdfs:comment xml:lang="en">The contribution of providing advice to facilitate the research, while not actively participating in the work.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/scoro/IntellectualContribution"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/scoro/designs-experiments">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+    <rdfs:label xml:lang="en">designs experiments</rdfs:label>
+    <rdfs:comment xml:lang="en">The contribution of experimental design and planning.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/scoro/IntellectualContribution"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/scoro/leads-investigation">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+    <rdfs:label xml:lang="en">leads investigation</rdfs:label>
+    <rdfs:comment xml:lang="en">The contribution of providing intellectual leadership and direction for the research.  
+
+Note that an individual other than the principal investigator and the co-investigators may make considerable leadership contributions to a research investigation.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/scoro/IntellectualContribution"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/scoro/analyses-data">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+    <rdfs:label xml:lang="en">analyses data</rdfs:label>
+    <rdfs:comment xml:lang="en">The contribution of data analysis.  This might include statistical analysis, bioinformatics analysis, or image analysis.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/scoro/IntellectualContribution"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/scoro/undertakes-modelling">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+    <rdfs:label xml:lang="en">undertakes modelling</rdfs:label>
+    <rdfs:comment xml:lang="en">The contribution of design, implementation and analysis of mathematical models or computer simulations.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/scoro/IntellectualContribution"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/scoro/formulates-research-questions">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+    <rdfs:label xml:lang="en">formulates research questions</rdfs:label>
+    <rdfs:comment xml:lang="en">The contribution of formulating the questions to be answered and the hypotheses to be tested by the research to be undertaken.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/scoro/IntellectualContribution"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/scoro/conceives-project">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+    <rdfs:label xml:lang="en">conceives project</rdfs:label>
+    <rdfs:comment xml:lang="en">The contribution of conceiving the research project in the first place.  
+
+Note that an individual other than the lead applicant and the co-applicants on a grant application may make considerable contributions to conceiving a research project, but may be prevented from being a formal applicant by reason of affiliation or status (e.g. as a non-academic partner, or a research student).</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/scoro/IntellectualContribution"/>
+  </skos:Concept>
+</rdf:RDF>

@@ -1,0 +1,78 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="https://w3id.org/ifc/IFC4_ADD1"/>
+  <owl:FunctionalProperty rdf:about="https://w3id.org/ifc/IFC4_ADD1#predefinedType_IfcDistributionChamberElement">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>PredefinedType</rdfs:label>
+    <rdfs:domain rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcDistributionChamberElement"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="https://w3id.org/ifc/IFC4_ADD1#IfcDistributionChamberElementTypeEnum">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="https://w3id.org/ifc/IFC4_ADD1#predefinedType_IfcDistributionChamberElementType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>PredefinedType</rdfs:label>
+    <rdfs:domain rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcDistributionChamberElementType"/>
+    <rdfs:range rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcDistributionChamberElementTypeEnum"/>
+  </owl:FunctionalProperty>
+  <skos:Concept rdf:about="https://w3id.org/ifc/IFC4_ADD1#MANHOLE">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+    <rdfs:label>MANHOLE</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcDistributionChamberElementTypeEnum"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ifc/IFC4_ADD1#TRENCH">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+    <rdfs:label>TRENCH</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcDistributionChamberElementTypeEnum"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ifc/IFC4_ADD1#INSPECTIONPIT">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+    <rdfs:label>INSPECTIONPIT</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcDistributionChamberElementTypeEnum"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ifc/IFC4_ADD1#METERCHAMBER">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+    <rdfs:label>METERCHAMBER</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcDistributionChamberElementTypeEnum"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ifc/IFC4_ADD1#INSPECTIONCHAMBER">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+    <rdfs:label>INSPECTIONCHAMBER</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcDistributionChamberElementTypeEnum"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ifc/IFC4_ADD1#SUMP">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+    <rdfs:label>SUMP</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcDistributionChamberElementTypeEnum"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ifc/IFC4_ADD1#FORMEDDUCT">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+    <rdfs:label>FORMEDDUCT</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcDistributionChamberElementTypeEnum"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ifc/IFC4_ADD1#NOTDEFINED">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+    <rdfs:label>NOTDEFINED</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcDistributionChamberElementTypeEnum"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ifc/IFC4_ADD1#VALVECHAMBER">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+    <rdfs:label>VALVECHAMBER</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcDistributionChamberElementTypeEnum"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ifc/IFC4_ADD1#USERDEFINED">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+    <rdfs:label>USERDEFINED</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcDistributionChamberElementTypeEnum"/>
+  </skos:Concept>
+</rdf:RDF>

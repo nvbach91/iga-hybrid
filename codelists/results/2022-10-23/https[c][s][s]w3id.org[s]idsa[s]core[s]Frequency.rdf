@@ -1,0 +1,130 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="https://w3id.org/idsa/core"/>
+  <owl:ObjectProperty rdf:about="https://w3id.org/idsa/core/temporalResolution">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/idsa/core/DigitalContent"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="https://w3id.org/idsa/core/Frequency">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+        <rdfs:label xml:lang="en">Frequency</rdfs:label>
+        <rdfs:comment xml:lang="en">Class of all frequencies.</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://w3id.org/idsa/core/accrualPeriodicity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/idsa/core/DigitalContent"/>
+    <rdfs:range rdf:resource="https://w3id.org/idsa/core/Frequency"/>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/THREE_TIMES_A_WEEK">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Three times a week</rdfs:label>
+    <rdfs:comment xml:lang="en">The event occurs three times a week.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Frequency"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/MONTHLY">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Monthly</rdfs:label>
+    <rdfs:comment xml:lang="en">The event occurs once a month.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Frequency"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/IRREGULAR">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Irregular</rdfs:label>
+    <rdfs:comment xml:lang="en">The event occurs at uneven intervals.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Frequency"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/BIENNIAL">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Biennial</rdfs:label>
+    <rdfs:comment xml:lang="en">The event occurs every two years.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Frequency"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/WEEKLY">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Weekly</rdfs:label>
+    <rdfs:comment xml:lang="en">The event occurs once a week.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Frequency"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/CONTINUOUS">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Continuous</rdfs:label>
+    <rdfs:comment xml:lang="en">The event repeats without interruption.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Frequency"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/SEMIMONTHLY">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Semimonthly</rdfs:label>
+    <rdfs:comment xml:lang="en">The event occurs twice a month.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Frequency"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/BIWEEKLY">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Biweekly</rdfs:label>
+    <rdfs:comment xml:lang="en">The event occurs every two weeks.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Frequency"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/DAILY">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Daily</rdfs:label>
+    <rdfs:comment xml:lang="en">The event occurs once a day.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Frequency"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/SEMIANNUAL">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Semiannual</rdfs:label>
+    <rdfs:comment xml:lang="en">The event occurs twice a year.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Frequency"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/QUARTERLY">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Quarterly</rdfs:label>
+    <rdfs:comment xml:lang="en">The event occurs every three months.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Frequency"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/SEMIWEEKLY">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Semiweekly</rdfs:label>
+    <rdfs:comment xml:lang="en">The event occurs twice a week.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Frequency"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/BIMONTHLY">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Bimonthly</rdfs:label>
+    <rdfs:comment xml:lang="en">The event occurs every two months.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Frequency"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/ANNUAL">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Annual</rdfs:label>
+    <rdfs:comment xml:lang="en">The event occurs once a year.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Frequency"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/THREE_TIMES_A_MONTH">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Three times a month</rdfs:label>
+    <rdfs:comment xml:lang="en">The event occurs three times a month.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Frequency"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/THREE_TIMES_A_YEAR">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Three times a year</rdfs:label>
+    <rdfs:comment xml:lang="en">The event occurs three times a year.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Frequency"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/TRIENNIAL">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Triennial</rdfs:label>
+    <rdfs:comment xml:lang="en">The event occurs every three years.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Frequency"/>
+  </skos:Concept>
+</rdf:RDF>

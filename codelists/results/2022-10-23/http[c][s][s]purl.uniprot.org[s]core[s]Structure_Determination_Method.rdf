@@ -1,0 +1,68 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://purl.uniprot.org/core/"/>
+  <skos:Concept rdf:about="http://purl.uniprot.org/core/Neutron_Diffraction">
+    <rdfs:isDefinedBy rdf:resource="http://purl.uniprot.org/core/"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Neutron Diffraction</rdfs:label>
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="http://purl.uniprot.org/core/Structure_Determination_Method">
+        <rdfs:isDefinedBy rdf:resource="http://purl.uniprot.org/core/"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Structure Determination</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >An experimental method for determining the 3D structure of a protein.</rdfs:comment>
+      </skos:ConceptScheme>
+    </skos:inScheme>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.uniprot.org/core/NMR_Spectroscopy">
+    <rdfs:isDefinedBy rdf:resource="http://purl.uniprot.org/core/"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >NMR Spectroscopy</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.uniprot.org/core/Structure_Determination_Method"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.uniprot.org/core/Electron_Microscopy">
+    <rdfs:isDefinedBy rdf:resource="http://purl.uniprot.org/core/"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Electron Microscopy</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The electron microscope is a microscope that can magnify very small details with high resolving power due to the use of electrons rather than light to scatter off material, magnifying at levels up to 500,000 times.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.uniprot.org/core/Structure_Determination_Method"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.uniprot.org/core/Infrared_Spectroscopy">
+    <rdfs:isDefinedBy rdf:resource="http://purl.uniprot.org/core/"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Infrared Spectroscopy</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A type of spectroscopy that uses the Infrared portion of the electromagnetic spectrum.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.uniprot.org/core/Structure_Determination_Method"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.uniprot.org/core/Fiber_Diffraction">
+    <rdfs:isDefinedBy rdf:resource="http://purl.uniprot.org/core/"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Fiber Diffraction</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.uniprot.org/core/Structure_Determination_Method"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.uniprot.org/core/X-Ray_Crystallography">
+    <rdfs:isDefinedBy rdf:resource="http://purl.uniprot.org/core/"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >X-Ray Crystallography</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A technique in crystallography in which the pattern produced by the diffraction of x-rays through the closely spaced lattice of atoms in a crystal is recorded and then analyzed to reveal the nature of that lattice.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.uniprot.org/core/Structure_Determination_Method"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.uniprot.org/core/Prediction">
+    <rdfs:isDefinedBy rdf:resource="http://purl.uniprot.org/core/"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Prediction</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.uniprot.org/core/Structure_Determination_Method"/>
+  </skos:Concept>
+</rdf:RDF>

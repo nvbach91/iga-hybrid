@@ -1,0 +1,1796 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/"
+    xmlns:j.0="http://www.ontology-of-units-of-measure.org/resource/om-2/">
+  <owl:Ontology rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+  <owl:ObjectProperty rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/hasDenominator">
+    <rdfs:label xml:lang="en">has denominator</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/UnitDivision"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit">
+        <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+        <rdfs:label xml:lang="en">unit</rdfs:label>
+        <rdfs:comment xml:lang="en">A unit of measure is a definite magnitude of a quantity, defined and adopted by convention or by law. It is used as a standard for measurement of the same quantity, where any other value of the quantity can be expressed as a simple multiple of the unit. For example, length is a quantity; the metre is a unit of length that represents a definite predetermined length. When we say 10 metre (or 10 m), we actually mean 10 times the definite predetermined length called "metre".</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/hasTerm1">
+    <rdfs:label xml:lang="en">has term 1</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/UnitMultiplication"/>
+    <rdfs:range rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/usesUnit">
+    <rdfs:label xml:lang="en">uses unit</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/ApplicationArea"/>
+    <rdfs:range rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/commonlyHasUnit">
+    <rdfs:comment>This property indicates a commonly-used unit.</rdfs:comment>
+    <rdfs:label xml:lang="en">commonly has unit</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Quantity"/>
+    <rdfs:range rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/hasDerivedUnit">
+    <rdfs:label xml:lang="en">has derived unit</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/SystemOfUnits"/>
+    <rdfs:range rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/hasBase">
+    <rdfs:label xml:lang="en">has base</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/UnitExponentiation"/>
+    <rdfs:range rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit">
+    <rdfs:label xml:lang="en">has unit</rdfs:label>
+    <rdfs:domain rdf:parseType="Resource">
+    </rdfs:domain>
+    <rdfs:range rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/hasBaseUnit">
+    <rdfs:label xml:lang="en">has base unit</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/SystemOfUnits"/>
+    <rdfs:range rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumerator">
+    <rdfs:label xml:lang="en">has numerator</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/UnitDivision"/>
+    <rdfs:range rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/hasTerm2">
+    <rdfs:label xml:lang="en">has term 2</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/UnitMultiplication"/>
+    <rdfs:range rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/cicero">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit>
+      <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/point-Didot">
+        <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+        <j.0:hasUnit>
+          <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/metre">
+            <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+            <rdfs:label xml:lang="en">metre</rdfs:label>
+            <rdfs:comment xml:lang="en">The metre is a unit of length defined as the length of the path travelled by light in vacuum during a time interval of 1/299 792 458 of a second.</rdfs:comment>
+            <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+          </skos:Concept>
+        </j.0:hasUnit>
+        <rdfs:label xml:lang="en">point (Didot)</rdfs:label>
+        <rdfs:comment xml:lang="en">The Didot point is a unit of length defined as 0.3759e-3 metre.</rdfs:comment>
+        <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+      </skos:Concept>
+    </j.0:hasUnit>
+    <rdfs:label xml:lang="en">cicero</rdfs:label>
+    <rdfs:comment xml:lang="en">The cicero is a unit of length defined as 12 point (Didot).</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/statweber">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit>
+      <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/weber">
+        <rdfs:label xml:lang="en">weber</rdfs:label>
+        <rdfs:comment xml:lang="en">The weber is a unit of magnetic flux defined as kilogram times square metre divided by second squared times ampere = volt times second = joule divided by ampere.</rdfs:comment>
+        <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+      </skos:Concept>
+    </j.0:hasUnit>
+    <rdfs:label xml:lang="en">statweber</rdfs:label>
+    <rdfs:comment xml:lang="en">The statweber is a unit of magnetic flux defined as 2.9979e2 weber.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/parsec">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/metre"/>
+    <rdfs:label xml:lang="en">parsec</rdfs:label>
+    <rdfs:comment xml:lang="en">The parsec is a unit of length defined as 3.08567758149137e16 metre.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/degreeFahrenheit">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit>
+      <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/kelvin">
+        <rdfs:label xml:lang="en">kelvin</rdfs:label>
+        <rdfs:comment xml:lang="en">The kelvin is a unit of temperature defined as 1/273.16 of the thermodynamic temperature of the triple point of water.</rdfs:comment>
+        <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+      </skos:Concept>
+    </j.0:hasUnit>
+    <rdfs:label xml:lang="en">degree Fahrenheit</rdfs:label>
+    <rdfs:comment xml:lang="en">The degree Fahrenheit is a unit of temperature defined as 5.555556e-1 kelvin.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/yard-International">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/metre"/>
+    <rdfs:label xml:lang="en">yard (international)</rdfs:label>
+    <rdfs:comment xml:lang="en">The international yard is a unit of length defined as 9.144e-1 metre.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/slice">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">slice</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/day-Sidereal">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit>
+      <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/second-Time">
+        <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+        <rdfs:label xml:lang="en">second</rdfs:label>
+        <rdfs:comment xml:lang="en">The second is a unit of time defined as the duration of 9 192 631 770 periods of the radiation corresponding to the transition between the two hyperfine levels of the ground state of the cesium 133 atom.</rdfs:comment>
+        <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+      </skos:Concept>
+    </j.0:hasUnit>
+    <rdfs:label xml:lang="en">day (sidereal)</rdfs:label>
+    <rdfs:comment xml:lang="en">The sidereal day is a unit of time defined as 8.616409e4 second.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/darcy">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">darcy</rdfs:label>
+    <rdfs:comment xml:lang="en">The darcy is a unit of area defined as 9.869233e-13 square metre.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/ton-Short">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">ton (short)</rdfs:label>
+    <rdfs:comment xml:lang="en">The short ton is a unit of mass defined as 9.071847e2 kilogram.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/faraday">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit>
+      <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/coulomb">
+        <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+        <rdfs:label xml:lang="en">coulomb</rdfs:label>
+        <rdfs:comment xml:lang="en">The coulomb is a unit of electric charge defined as ampere times second = farad times volt.</rdfs:comment>
+        <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+      </skos:Concept>
+    </j.0:hasUnit>
+    <rdfs:label xml:lang="en">faraday</rdfs:label>
+    <rdfs:comment xml:lang="en">The faraday is a unit of electric charge defined as 9.648531e4 coulomb.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/byte">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit>
+      <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/bit">
+        <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+        <rdfs:label xml:lang="en">bit</rdfs:label>
+        <rdfs:comment xml:lang="en">The bit is a unit of information capacity defined as the information capacity of one binary digit.</rdfs:comment>
+        <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+      </skos:Concept>
+    </j.0:hasUnit>
+    <rdfs:label xml:lang="en">byte</rdfs:label>
+    <rdfs:comment xml:lang="en">The byte is a unit of information capacity defined as 8 bit.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/_1-10">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">1-10</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/hundredweight-US">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">hundredweight (US)</rdfs:label>
+    <rdfs:comment xml:lang="en">The US hundredweight is a unit of mass defined as 4.535924e1 kilogram.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/ton-Force-Short">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit>
+      <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/newton">
+        <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+        <rdfs:label xml:lang="en">newton</rdfs:label>
+        <rdfs:comment xml:lang="en">The newton is a unit of force defined as kilogram timesmetre divided by second squared.</rdfs:comment>
+        <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+      </skos:Concept>
+    </j.0:hasUnit>
+    <rdfs:label xml:lang="en">ton-force (short)</rdfs:label>
+    <rdfs:comment xml:lang="en">The short ton-force is a unit of force defined as 8.896443e3 newton.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/perm-0C">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">perm (0 °C)</rdfs:label>
+    <rdfs:comment xml:lang="en">The 0 °C perm is a unit ofpermeance defined as 5.72135e-11 kilogram per pascal second (time) square metre.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/pint-Imperial">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">pint (imperial)</rdfs:label>
+    <rdfs:comment xml:lang="en">The pint is a unit of volume defined as 568.26125 millilitre.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/katal">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">katal</rdfs:label>
+    <rdfs:comment xml:lang="en">The katal is a unit of catalytic activity defined as mole divided by second.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/debye">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">debye</rdfs:label>
+    <rdfs:comment xml:lang="en">The debye is a unit of electric dipole moment defined as 3.33564e-30 coulomb metre.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/chain">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/metre"/>
+    <rdfs:label xml:lang="en">chain</rdfs:label>
+    <rdfs:comment xml:lang="en">The chain is a unit of length defined as 2.011684e1 metre.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/degreeReaumur">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/kelvin"/>
+    <rdfs:label xml:lang="en">degree Réaumur</rdfs:label>
+    <rdfs:comment xml:lang="en">The degree Réaumur is a unit of temperature defined as 1.25 kelvin.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/poundSterling">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">pound sterling</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/SwissFranc">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">Swiss franc</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/tonOfRefrigeration">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit>
+      <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/watt">
+        <rdfs:label xml:lang="en">watt</rdfs:label>
+        <rdfs:comment xml:lang="en">The watt is a unit of power defined as joule divided by second = newton times metre divided by second = volt times ampere = kilogram times square metre divided by second to the power 3.</rdfs:comment>
+        <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+      </skos:Concept>
+    </j.0:hasUnit>
+    <rdfs:label xml:lang="en">ton of refrigeration</rdfs:label>
+    <rdfs:comment xml:lang="en">The ton of refrigeration is a unit of power defined as 3.516853e3 watt.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/knot-International">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">knot (international)</rdfs:label>
+    <rdfs:comment xml:lang="en">The international knot is a unit of speed defined as nautical mile per hour.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/partsPerMillion">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit>
+      <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/one">
+        <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+        <rdfs:label xml:lang="en">one</rdfs:label>
+        <rdfs:comment xml:lang="en">Unit one is a unit of dimension one.</rdfs:comment>
+        <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+      </skos:Concept>
+    </j.0:hasUnit>
+    <rdfs:label xml:lang="en">parts per million</rdfs:label>
+    <rdfs:comment xml:lang="en">Parts per million is a unit of dimension one defined as 1/1 000 000.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/deepBowl">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">deep bowl</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/cord">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">cord</rdfs:label>
+    <rdfs:comment xml:lang="en">The cord is a unit of volume defined as 3.624556 cubic metre.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/pica-TeX">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit>
+      <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/point-TeX">
+        <j.0:hasUnit>
+          <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/inch-International">
+            <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+            <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/metre"/>
+            <rdfs:label xml:lang="en">inch (international)</rdfs:label>
+            <rdfs:comment xml:lang="en">The international inch is a unit of length defined as 2.54e-2 metre.</rdfs:comment>
+            <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+          </skos:Concept>
+        </j.0:hasUnit>
+        <rdfs:label xml:lang="en">point (TeX)</rdfs:label>
+        <rdfs:comment xml:lang="en">The TeX point is a unit of length defined as 0.01383700013837000138370001383 inch.</rdfs:comment>
+        <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+      </skos:Concept>
+    </j.0:hasUnit>
+    <rdfs:label xml:lang="en">pica (TeX)</rdfs:label>
+    <rdfs:comment xml:lang="en">The TeX pica is a unit of length defined as 12 point (TeX).</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/metreOfMercury">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit>
+      <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/pascal">
+        <rdfs:label xml:lang="en">pascal</rdfs:label>
+        <rdfs:comment xml:lang="en">The pascal is a unit of pressure and stress defined as newton divided by square metre = joule divided by cubic metre = kilogram divided by metre second squared.</rdfs:comment>
+        <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+      </skos:Concept>
+    </j.0:hasUnit>
+    <rdfs:label xml:lang="en">metre of mercury</rdfs:label>
+    <rdfs:comment xml:lang="en">The metre of mercury is a unit of pressure defined as 133 322 pascal.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/BritishThermalUnit-59F">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit>
+      <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/joule">
+        <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+        <rdfs:label xml:lang="en">joule</rdfs:label>
+        <rdfs:comment xml:lang="en">The joule is a unit of energy defined as kilogram times square metre divided by second squared.</rdfs:comment>
+        <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+      </skos:Concept>
+    </j.0:hasUnit>
+    <rdfs:label xml:lang="en">British thermal unit (59 °F)</rdfs:label>
+    <rdfs:comment xml:lang="en">The 59 °F British thermal unit is a unit of energy defined as 1.05480e3 joule.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/curie">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit>
+      <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/becquerel">
+        <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+        <rdfs:label xml:lang="en">becquerel</rdfs:label>
+        <rdfs:comment xml:lang="en">The becquerel is a unit of activity defined as the activity of a quantity of radioactive material in which one nucleus decays per second. Algebraically it is defined as 1 divided by second.</rdfs:comment>
+        <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+      </skos:Concept>
+    </j.0:hasUnit>
+    <rdfs:label xml:lang="en">curie</rdfs:label>
+    <rdfs:comment xml:lang="en">The curie is a unit of activity defined as 3.7e10 becquerel.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/dessertspoon">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit>
+      <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/teaspoon-US">
+        <rdfs:label xml:lang="en">teaspoon (US)</rdfs:label>
+        <rdfs:comment xml:lang="en">The US teaspoon is a unit of volume defined as 4.928922e-6 cubic metre.</rdfs:comment>
+        <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+      </skos:Concept>
+    </j.0:hasUnit>
+    <rdfs:label xml:lang="en">dessertspoon</rdfs:label>
+    <rdfs:comment xml:lang="en">The desserspoon is a unit of volume defined as 2 teaspoon.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/fluidOunce-US">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">fluid ounce (US)</rdfs:label>
+    <rdfs:comment xml:lang="en">The US fluid ounce is a unit of volume defined as 2.957353e-5 cubic metre.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/lightYear">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/metre"/>
+    <rdfs:label xml:lang="en">light year</rdfs:label>
+    <rdfs:comment xml:lang="en">The light year is a unit of length defined as 9.46073e15 metre.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/statfarad">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit>
+      <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/farad">
+        <rdfs:label xml:lang="en">farad</rdfs:label>
+        <rdfs:comment xml:lang="en">The farad is a unit of capacitance defined as ampere times second divided by volt = coulomb divided by volt = coulomb squared divided by joule = coulomb squared divided by newton times metre = second squared times coulomb squared divided by square metre times kilogram = second to the power 4 times ampere squared divided by square metre times kilogram.</rdfs:comment>
+        <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+      </skos:Concept>
+    </j.0:hasUnit>
+    <rdfs:label xml:lang="en">statfarad</rdfs:label>
+    <rdfs:comment xml:lang="en">The statfarad is a unit of capacitance defined as 1.112650e-12 farad.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/erg">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/joule"/>
+    <rdfs:label xml:lang="en">erg</rdfs:label>
+    <rdfs:comment xml:lang="en">The erg is a unit of energy defined as 1.0e-7 joule.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/year-Sidereal">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/second-Time"/>
+    <rdfs:label xml:lang="en">year (sidereal)</rdfs:label>
+    <rdfs:comment xml:lang="en">The sidereal year is a unit of time defined as 3.155815e7 second.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/minute-Sidereal">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/second-Time"/>
+    <rdfs:label xml:lang="en">minute (sidereal)</rdfs:label>
+    <rdfs:comment xml:lang="en">The sidereal minute is a unit of time defined as 5.983617e1 second.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/stathenry">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit>
+      <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/henry">
+        <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+        <rdfs:label xml:lang="en">henry</rdfs:label>
+        <rdfs:comment xml:lang="en">The henry is a unit of inductance defined as square metre times kilogram divided by second squared times ampere squared = weber divided by ampere = volt second divided by ampere = (joule divided by coulomb) times second divided by (coulomb divided by second) = joule times second squared divided by coulomb squared = square metre times kilogram divided by coulomb squared.</rdfs:comment>
+        <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+      </skos:Concept>
+    </j.0:hasUnit>
+    <rdfs:label xml:lang="en">stathenry</rdfs:label>
+    <rdfs:comment xml:lang="en">The stathenry is a unit of inductance defined as 8.987552e11 henry.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/minute-HourAngle">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit>
+      <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/degree">
+        <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+        <j.0:hasUnit>
+          <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/radian">
+            <rdfs:label xml:lang="en">radian</rdfs:label>
+            <rdfs:comment xml:lang="en">The radian is a unit of angle defined as the angle subtended at the center of a circle by an arc that is equal in length to the radius of the circle.</rdfs:comment>
+            <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+            <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+          </skos:Concept>
+        </j.0:hasUnit>
+        <rdfs:label xml:lang="en">degree</rdfs:label>
+        <rdfs:comment xml:lang="en">The degree is a unit of angle defined as 1.745329e-2 radian.</rdfs:comment>
+        <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+      </skos:Concept>
+    </j.0:hasUnit>
+    <rdfs:label xml:lang="en">minute (hour angle)</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/unitPole">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/weber"/>
+    <rdfs:label xml:lang="en">unit pole</rdfs:label>
+    <rdfs:comment xml:lang="en">The unit pole is a unit of magnetic flux defined as 1.256637e-7 weber.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/poise">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">poise</rdfs:label>
+    <rdfs:comment xml:lang="en">The poise is a unit of dynamic viscosity defined as 1.0e-1 pascal second (time).</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/mile-USSurvey">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/metre"/>
+    <rdfs:label xml:lang="en">mile (US survey)</rdfs:label>
+    <rdfs:comment xml:lang="en">The US survey mile is a unit of length defined as 1.609347e3 metre.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/deltaA450">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">delta A450</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/therm-EC">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/joule"/>
+    <rdfs:label xml:lang="en">therm (EC)</rdfs:label>
+    <rdfs:comment xml:lang="en">The EC therm is a unit of energy defined as 1.05506e8 joule.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/therm-US">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/joule"/>
+    <rdfs:label xml:lang="en">therm (US)</rdfs:label>
+    <rdfs:comment xml:lang="en">The US therm is a unit of energy defined as 1.054804e8 joule.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/statohm">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit>
+      <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/ohm">
+        <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+        <rdfs:label xml:lang="en">ohm</rdfs:label>
+        <rdfs:comment xml:lang="en">The ohm is a unit of electrical resistance defined as volt divided by ampere = square metre times kilogram divided by second to the power 3 times ampere squared.</rdfs:comment>
+        <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+      </skos:Concept>
+    </j.0:hasUnit>
+    <rdfs:label xml:lang="en">statohm</rdfs:label>
+    <rdfs:comment xml:lang="en">The statohm is a unit of electrical resistance defined as 8.987552e11 ohm.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/poundAvoirdupois">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">pound (avoirdupois)</rdfs:label>
+    <rdfs:comment xml:lang="en">The avoirdupois pound is a unit of mass defined as 4.535924e-1 kilogram.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/footlambert">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">footlambert</rdfs:label>
+    <rdfs:comment xml:lang="en">The footlambert is a unit of luminance defined as 3.426259 candela per square metre.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/maxwell">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/weber"/>
+    <rdfs:label xml:lang="en">maxwell</rdfs:label>
+    <rdfs:comment xml:lang="en">The maxwell is a unit of magnetic flux defined as 1.0e-8 weber.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/peck-US">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">peck (US)</rdfs:label>
+    <rdfs:comment xml:lang="en">The US peck is a unit of volume defined as 8.809768e-3 cubic metre.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/IndianRupee">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">Indian rupee</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/glass">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">glass</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/bowl">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">bowl</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/calorie-20C">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/joule"/>
+    <rdfs:label xml:lang="en">calorie (20 °C)</rdfs:label>
+    <rdfs:comment xml:lang="en">The 20 °C calorie is a unit of energy defined as 4.18190 joule.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/abhenry">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/henry"/>
+    <rdfs:label xml:lang="en">abhenry</rdfs:label>
+    <rdfs:comment xml:lang="en">The abhenry is a unit of inductance defined as 1.0e-9 henry.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/angstrom">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/metre"/>
+    <rdfs:label xml:lang="en">ångström</rdfs:label>
+    <rdfs:comment xml:lang="en">The ångström is a unit of length defined as 1.0e-10 metre. The unit is often used for wavelengths of electromagnetic radiation or to express the sizes of atoms and molecules.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/gon">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/radian"/>
+    <rdfs:label xml:lang="en">gon</rdfs:label>
+    <rdfs:comment xml:lang="en">The gon is a unit of angle defined as 1.570796e-2 radian.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/calorie-Mean">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/joule"/>
+    <rdfs:label xml:lang="en">calorie (mean)</rdfs:label>
+    <rdfs:comment xml:lang="en">The mean calorie is a unit of energy defined as 4.19002 joule.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/minute-Time">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/second-Time"/>
+    <rdfs:label xml:lang="en">minute</rdfs:label>
+    <rdfs:comment xml:lang="en">The minute (time) is a unit of time defined as 60 second.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/SouthAfricanRand">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">South African rand</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/gamma">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit>
+      <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/tesla">
+        <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+        <rdfs:label xml:lang="en">tesla</rdfs:label>
+        <rdfs:comment xml:lang="en">The tesla is a unit of magnetic flux density defined as volt times second divided by square metre = newton divided by ampere times metre = weber divided by square metre = kilogram divided by coulomb times second = kilogram divided by ampere times second squared.</rdfs:comment>
+        <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+      </skos:Concept>
+    </j.0:hasUnit>
+    <rdfs:label xml:lang="en">gamma</rdfs:label>
+    <rdfs:comment xml:lang="en">The gamma is a unit of magnetic flux density defined as 1.0e-9 tesla.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/are">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">are</rdfs:label>
+    <rdfs:comment xml:lang="en">The are is a unit of area defined as 100 square metre.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/hertz">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">hertz</rdfs:label>
+    <rdfs:comment xml:lang="en">The hertz is a unit of frequency defined as 1 divided by second.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/horsepower-Electric">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/watt"/>
+    <rdfs:label xml:lang="en">horsepower (electric)</rdfs:label>
+    <rdfs:comment xml:lang="en">The electric horsepower is a unit of power defined as 7.46e2 watt.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/bushel-US">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">bushel (US)</rdfs:label>
+    <rdfs:comment xml:lang="en">The US bushel is a unit of volume defined as 3.523907e-2 cubic metre.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/bottle">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">bottle</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/wedge">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">wedge</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/gram">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">gram</rdfs:label>
+    <rdfs:comment xml:lang="en">The gram is a unit of mass defined as 1.0e-3 kilogram.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/statcoulomb">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/coulomb"/>
+    <rdfs:label xml:lang="en">statcoulomb</rdfs:label>
+    <rdfs:comment xml:lang="en">The statcoulomb is a unit of electric charge defined as 3.335641e-10 coulomb.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/BrazilianReal">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">Brazilian real</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/röntgen">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">röntgen</rdfs:label>
+    <rdfs:comment xml:lang="en">The röntgen is a unit of exposure to x and γ rays defined as 2.58e-4 coulomb per kilogram.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/hour">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/second-Time"/>
+    <rdfs:label xml:lang="en">hour</rdfs:label>
+    <rdfs:comment xml:lang="en">The hour is a unit of time defined as 3600 second.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/mil-Length">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/metre"/>
+    <rdfs:label xml:lang="en">mil (length)</rdfs:label>
+    <rdfs:comment xml:lang="en">The mil (length) is a unit of length defined as 2.54e-5 metre.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/bar-Food">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">bar (food)</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/wineGlass">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">wine glass</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/minute-Angle">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/radian"/>
+    <rdfs:label xml:lang="en">minute (angle)</rdfs:label>
+    <rdfs:comment xml:lang="en">The minute (angle) is a unit of angle defined as 2.908882e-4 radian.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/bar">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/pascal"/>
+    <rdfs:label xml:lang="en">bar</rdfs:label>
+    <rdfs:comment xml:lang="en">The bar is a unit of pressure defined as 100 000 pascal.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/torr">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/pascal"/>
+    <rdfs:label xml:lang="en">torr</rdfs:label>
+    <rdfs:comment xml:lang="en">The torr is a unit of pressure defined as 1.333224e2 pascal.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/mho">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit>
+      <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/siemens">
+        <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+        <rdfs:label xml:lang="en">siemens</rdfs:label>
+        <rdfs:comment xml:lang="en">The siemens is a unit of electrical conductance defined as 1 divided by ohm = ampere divided by volt = coulomb squared times second divided by kilogram times square metre = ampere squared times second to the power 3 divided by kilogram times square metre.</rdfs:comment>
+        <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+      </skos:Concept>
+    </j.0:hasUnit>
+    <rdfs:label xml:lang="en">mho</rdfs:label>
+    <rdfs:comment xml:lang="en">The mho is a unit of electrical conductance defined as 1 siemens.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/euro">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">euro</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/pennyweight-Troy">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">pennyweight (Troy)</rdfs:label>
+    <rdfs:comment xml:lang="en">The Troy pennyweight is a unit of mass defined as 1.555174e-3 kilogram.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/MexicanPeso">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">Mexican peso</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/BritishThermalUnit-Mean">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/joule"/>
+    <rdfs:label xml:lang="en">British thermal unit (mean)</rdfs:label>
+    <rdfs:comment xml:lang="en">The mean British thermal unit is a unit of energy defined as 1.05587e3 joule.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/liquidPint-US">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">liquid pint (US)</rdfs:label>
+    <rdfs:comment xml:lang="en">The US liquid pint is a unit of volume defined as 4.731765e-4 cubic metre.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/steradian">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">steradian</rdfs:label>
+    <rdfs:comment xml:lang="en">The steradian is a unit of solid angle defined as the solid angle subtended at the center of a sphere by a portion of the surface of the sphere that has an area equal to the square of the radius of the sphere.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/foot-USSurvey">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/metre"/>
+    <rdfs:label xml:lang="en">foot (US survey)</rdfs:label>
+    <rdfs:comment xml:lang="en">The US survey foot is a unit of length defined as 3.048006e-1 metre.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/jansky">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">jansky</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/year">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/second-Time"/>
+    <rdfs:label xml:lang="en">year</rdfs:label>
+    <rdfs:comment xml:lang="en">The year is a unit of time defined as 3.1536e7 second.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/dash">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">dash</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/gauss">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/tesla"/>
+    <rdfs:label xml:lang="en">gauss</rdfs:label>
+    <rdfs:comment xml:lang="en">The gauss is a unit of magnetic flux density defined as 1.0e-4 tesla.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/rad">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit>
+      <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/gray">
+        <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+        <rdfs:label xml:lang="en">gray</rdfs:label>
+        <rdfs:comment xml:lang="en">The gray is a unit of absorbed dose defined as joule divided by kilogram = square metre divided by second squared.</rdfs:comment>
+        <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+      </skos:Concept>
+    </j.0:hasUnit>
+    <rdfs:label xml:lang="en">rad</rdfs:label>
+    <rdfs:comment xml:lang="en">The rad is a unit of absorbed dose defined as 1.0e-2 gray.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/atmosphere-Technical">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/pascal"/>
+    <rdfs:label xml:lang="en">atmosphere (technical)</rdfs:label>
+    <rdfs:comment xml:lang="en">The technical atmosphere is a unit of pressure defined as 9.80665e4 pascal.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/milligramRAE">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">milligram RAE</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/tonOfTNT">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/joule"/>
+    <rdfs:label xml:lang="en">ton of TNT</rdfs:label>
+    <rdfs:comment xml:lang="en">The ton of TNT is a unit of energy defined as 4.184e9 joule.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/fathom-USSurvey">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/metre"/>
+    <rdfs:label xml:lang="en">fathom (US survey)</rdfs:label>
+    <rdfs:comment xml:lang="en">The US survey fathom is a unit of length defined as 1.828804 metre.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/gill-US">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">gill (US)</rdfs:label>
+    <rdfs:comment xml:lang="en">The US gill is a unit of volume defined as 1.182941e-4 cubic metre.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/kayser">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">kayser</rdfs:label>
+    <rdfs:comment xml:lang="en">The kayser is a unit of wavenumber defined as 100 reciprocal metre.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/barye">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/pascal"/>
+    <rdfs:label xml:lang="en">barye</rdfs:label>
+    <rdfs:comment xml:lang="en">The barye is a unit of pressure defined as 0.1 pascal.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/servingSpoon">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">serving spoon</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/phot">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit>
+      <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/lux">
+        <rdfs:label xml:lang="en">lux</rdfs:label>
+        <rdfs:comment xml:lang="en">The lux is a unit of illuminance defined as lumen divided by square metre = candela times steradian divided by square metre.</rdfs:comment>
+        <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+      </skos:Concept>
+    </j.0:hasUnit>
+    <rdfs:label xml:lang="en">phot</rdfs:label>
+    <rdfs:comment xml:lang="en">The phot is a unit of illuminance defined as 1.0e4 lux.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/_0-100">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">0-100</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/stere">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">stere</rdfs:label>
+    <rdfs:comment xml:lang="en">The stere is a unit of volume defined as cubic metre.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/baud">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">baud</rdfs:label>
+    <rdfs:comment xml:lang="en">The baud is a unit of symbol rate defined as one distinct symbol change or signalling event made to the transmission medium per second in a digitally modulated signal or a line code.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/calorie-InternationalTable">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/joule"/>
+    <rdfs:label xml:lang="en">calorie (International Table)</rdfs:label>
+    <rdfs:comment xml:lang="en">The International Table calorie is a unit of energy defined as 4.1868 joule.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/horsepower-Water">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/watt"/>
+    <rdfs:label xml:lang="en">horsepower (water)</rdfs:label>
+    <rdfs:comment xml:lang="en">The water horsepower is a unit of power defined as 7.46043e2 watt.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/hartley">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/bit"/>
+    <rdfs:label xml:lang="en">hartley</rdfs:label>
+    <rdfs:comment xml:lang="en">The hartley is a unit of information capacity defined as 3.321928095 bit.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/barn">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">barn</rdfs:label>
+    <rdfs:comment xml:lang="en">The barn is a unit of area defined as 1.0e-28 square metre.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/statmho">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/siemens"/>
+    <rdfs:label xml:lang="en">statmho</rdfs:label>
+    <rdfs:comment xml:lang="en">The statmho is a unit of electrical conductance defined as 1.112650e-12 siemens.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/horsepower-British">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/watt"/>
+    <rdfs:label xml:lang="en">horsepower (British)</rdfs:label>
+    <rdfs:comment xml:lang="en">The British horsepower is a unit of power defined as 7.4570e2 watt.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/gilbert">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit>
+      <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/ampere">
+        <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+        <rdfs:label xml:lang="en">ampere</rdfs:label>
+        <rdfs:comment xml:lang="en">The ampere is a unit of electric current defined as the constant current that produces an attractive force of 2e–7 newton per metre of length between two straight, parallel conductors of infinite length and negligible circular cross section placed one metre apart in a vacuum.</rdfs:comment>
+        <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+      </skos:Concept>
+    </j.0:hasUnit>
+    <rdfs:label xml:lang="en">gilbert</rdfs:label>
+    <rdfs:comment xml:lang="en">The gilbert is a unit of electric current defined as 7.957747e-1 ampere.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/dyne">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/newton"/>
+    <rdfs:label xml:lang="en">dyne</rdfs:label>
+    <rdfs:comment xml:lang="en">The dyne is a unit of force defined as 1.0e-5 newton.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/franklin">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/coulomb"/>
+    <rdfs:label xml:lang="en">franklin</rdfs:label>
+    <rdfs:comment xml:lang="en">The franklin is a unit of electric charge defined as 3.335641e-10 coulomb.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/amylaseUnit">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">amylase unit</rdfs:label>
+    <rdfs:comment xml:lang="en">The amylase unit is a unit of catalytic activity.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/handful">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">handful</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/BritishThermalUnit-39F">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/joule"/>
+    <rdfs:label xml:lang="en">British thermal unit (39 °F)</rdfs:label>
+    <rdfs:comment xml:lang="en">The 39 °F British thermal unit is a unit of energy defined as 1.05967e3 joule.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/micron">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/metre"/>
+    <rdfs:label xml:lang="en">micron</rdfs:label>
+    <rdfs:comment xml:lang="en">The micron is a unit of length defined as 1.0e-6 metre.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/dryGallon-US">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">dry gallon (US)</rdfs:label>
+    <rdfs:comment xml:lang="en">The US dry gallon is a unit of volume defined as 4.40488377086e-3 cubic metre.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/abfarad">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/farad"/>
+    <rdfs:label xml:lang="en">abfarad</rdfs:label>
+    <rdfs:comment xml:lang="en">The abfarad is a unit of capacitance defined as 1.0e9 farad.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/astronomicalUnit">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/metre"/>
+    <rdfs:label xml:lang="en">astronomical unit</rdfs:label>
+    <rdfs:comment xml:lang="en">The atronomical unit is a unit of length defined as 149 597 870 700 metre (IAU 2012 Resolution).</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/InternationalUnit">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">International Unit</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/drop">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">drop</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/statampere">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/ampere"/>
+    <rdfs:label xml:lang="en">statampere</rdfs:label>
+    <rdfs:comment xml:lang="en">The statampere is a unit of electric current defined as 3.335641e-10 ampere.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/stokes">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">stokes</rdfs:label>
+    <rdfs:comment xml:lang="en">The stokes is a unit of kinematic viscosity defined as 1.0e-4 square metre per second (time).</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/abohm">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/ohm"/>
+    <rdfs:label xml:lang="en">abohm</rdfs:label>
+    <rdfs:comment xml:lang="en">The abohm is a unit of electrical resistance defined as 1.0e-9 ohm.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/horsepower-Metric">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/watt"/>
+    <rdfs:label xml:lang="en">horsepower (metric)</rdfs:label>
+    <rdfs:comment xml:lang="en">The metric horsepower is a unit of power defined as 7.354988e2 watt.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/footcandle">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/lux"/>
+    <rdfs:label xml:lang="en">footcandle</rdfs:label>
+    <rdfs:comment xml:lang="en">The footcandle is a unit of illuminance defined as 1.076391e1 lux.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/NorwegianKrone">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">Norwegian krone</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/BritishThermalUnit-Thermochemical">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/joule"/>
+    <rdfs:label xml:lang="en">British thermal unit (thermochemical)</rdfs:label>
+    <rdfs:comment xml:lang="en">The thermochemical British thermal unit is a unit of energy defined as 1.054350e3 joule.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/abcoulomb">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/coulomb"/>
+    <rdfs:label xml:lang="en">abcoulomb</rdfs:label>
+    <rdfs:comment xml:lang="en">The abcoulomb is a unit of electric charge defined as 10 coulomb.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/RussianRuble">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">RussianRuble</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/degreeCelsius">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/kelvin"/>
+    <rdfs:label xml:lang="en">degree Celsius</rdfs:label>
+    <rdfs:comment xml:lang="en">The degree Celsius is a unit of temperature defined as 1 kelvin.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/calorie-15C">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/joule"/>
+    <rdfs:label xml:lang="en">calorie (15 °C)</rdfs:label>
+    <rdfs:comment xml:lang="en">The 15 °C calorie is a unit of energy defined as 4.18580 joule.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/rem">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit>
+      <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/sievert">
+        <rdfs:label xml:lang="en">sievert</rdfs:label>
+        <rdfs:comment xml:lang="en">The sievert is a unit of dose equivalent defined as joule divided by kilogram = square metre divided by second squared.</rdfs:comment>
+        <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+      </skos:Concept>
+    </j.0:hasUnit>
+    <rdfs:label xml:lang="en">rem</rdfs:label>
+    <rdfs:comment xml:lang="en">The rem is a unit of dose equivalent defined as 1.0e-2 sievert.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/statvolt">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit>
+      <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/volt">
+        <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+        <rdfs:label xml:lang="en">volt</rdfs:label>
+        <rdfs:comment xml:lang="en">The volt is a unit of electric potential defined as watt divided by ampere = joule divided by coulomb = newton times metre divided by ampere times second = kilogram times square metre divided by ampere times second to the power 3.</rdfs:comment>
+        <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+      </skos:Concept>
+    </j.0:hasUnit>
+    <rdfs:label xml:lang="en">statvolt</rdfs:label>
+    <rdfs:comment xml:lang="en">The statvolt is a unit of electric potential defined as 2.997925e2 volt.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/UnitedStatesDollar">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">United States dollar</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/hour-HourAngle">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/degree"/>
+    <rdfs:label xml:lang="en">hour (hour angle)</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/foot-International">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/metre"/>
+    <rdfs:label xml:lang="en">foot (international)</rdfs:label>
+    <rdfs:comment xml:lang="en">The international foot is a unit of length defined as 3.048e-1 metre.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/poundal">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/newton"/>
+    <rdfs:label xml:lang="en">poundal</rdfs:label>
+    <rdfs:comment xml:lang="en">The poundal is a unit of force defined as 1.382550e-1 newton.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/AustralianDollar">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">Australian dollar</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/quad">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit>
+      <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/BritishThermalUnit-InternationalTable">
+        <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/joule"/>
+        <rdfs:label xml:lang="en">British thermal unit (International Table)</rdfs:label>
+        <rdfs:comment xml:lang="en">The International Table British thermal unit is a unit of energy defined as 1.055056e3 joule.</rdfs:comment>
+        <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+      </skos:Concept>
+    </j.0:hasUnit>
+    <rdfs:label xml:lang="en">quad</rdfs:label>
+    <rdfs:comment xml:lang="en">The quad is a unit of energy defined as 1.0e15 British thermal unit (International Table).</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/kilocalorie-MeanPerDay">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasDenominator>
+      <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/day">
+        <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+        <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/second-Time"/>
+        <rdfs:label xml:lang="en">day</rdfs:label>
+        <rdfs:comment xml:lang="en">The day is a unit of time defined as 86400 second.</rdfs:comment>
+        <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+      </skos:Concept>
+    </j.0:hasDenominator>
+    <rdfs:label xml:lang="en">kilocalorie (mean) per day</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/pinch">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">pinch</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/CanadianDollar">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">Canadian dollar</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/acreFoot">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">acre foot</rdfs:label>
+    <rdfs:comment xml:lang="en">The acre foot is a unit of volume defined as 1.233489e3 cubic metre.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/oersted">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">oersted</rdfs:label>
+    <rdfs:comment xml:lang="en">The oersted is a unit of magnetic field defined as 7.957747e1 ampere per metre.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/second-Sidereal">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/second-Time"/>
+    <rdfs:label xml:lang="en">second (sidereal)</rdfs:label>
+    <rdfs:comment xml:lang="en">The sidereal second is a unit of time defined as 9.972696e-1 second.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/AFS">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">AFS</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/shake">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/second-Time"/>
+    <rdfs:label xml:lang="en">shake</rdfs:label>
+    <rdfs:comment xml:lang="en">The shake is a unit of time defined as 1.0e-8 second.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/biot">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/ampere"/>
+    <rdfs:label xml:lang="en">biot</rdfs:label>
+    <rdfs:comment xml:lang="en">The biot is a unit of electric current defined as 10 ampere.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/acre-International">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">acre (international)</rdfs:label>
+    <rdfs:comment xml:lang="en">The international acre is a unit of area defined as 4.0468564224e3 square metre.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/fluidOunce-Imperial">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">fluid ounce (imperial)</rdfs:label>
+    <rdfs:comment xml:lang="en">The imperial fluid ounce is a unit of volume defined as 2.841306e-5 cubic metre.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/percent">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/one"/>
+    <rdfs:label xml:lang="en">percent</rdfs:label>
+    <rdfs:comment xml:lang="en">The percent is a unit of dimension one defined as 1/100.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/atmosphere-Standard">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/pascal"/>
+    <rdfs:label xml:lang="en">atmosphere (standard)</rdfs:label>
+    <rdfs:comment xml:lang="en">The standard atmosphere is a unit of pressure defined as 1.01325e5 pascal.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/horsepower-Boiler">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/watt"/>
+    <rdfs:label xml:lang="en">horsepower (boiler)</rdfs:label>
+    <rdfs:comment xml:lang="en">The boiler horsepower is a unit of power defined as 9.80950e3 watt.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/furlong-International">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/metre"/>
+    <rdfs:label xml:lang="en">furlong (international)</rdfs:label>
+    <rdfs:comment xml:lang="en">The international furlong is a unit of length defined as 201.168 metre.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/month">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">month</rdfs:label>
+    <rdfs:comment xml:lang="en">The month is a unit of time.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/JapaneseYen">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">Japanese yen</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/piece">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">piece</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/quart-Imperial">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit>
+      <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/litre">
+        <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+        <rdfs:label xml:lang="en">litre</rdfs:label>
+        <rdfs:comment xml:lang="en">The litre is a unit of volume defined as 1.0e-3 cubic metre.</rdfs:comment>
+        <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+      </skos:Concept>
+    </j.0:hasUnit>
+    <rdfs:label xml:lang="en">quart (imperial)</rdfs:label>
+    <rdfs:comment xml:lang="en">The imperial quart is a unit of volume defined as 1.1365 litre.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/tablespoon-US">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">tablespoon (US)</rdfs:label>
+    <rdfs:comment xml:lang="en">The US tablespoon is a unit of volume defined as 1.478676e-5 cubic metre.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/poundApothecaries">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">pound (apthecaries')</rdfs:label>
+    <rdfs:comment xml:lang="en">The apothecaries' pound is a unit of mass defined as 3.732417e-1 kilogram.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/rhe">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">rhe</rdfs:label>
+    <rdfs:comment xml:lang="en">The rhe is a unit of fluidity defined as 10 reciprocal pascal second (time).</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/_1-5">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">1-5</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/stilb">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">stilb</rdfs:label>
+    <rdfs:comment xml:lang="en">The stilb is a unit of luminance defined as 1.0e4 candela per square metre.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/solarLuminosity">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/watt"/>
+    <rdfs:label xml:lang="en">solar luminosity</rdfs:label>
+    <rdfs:comment xml:lang="en">Solar luminosity is a unit used in astronomy to denote stellar or galactic radiant fluxes (http://en.wikipedia.org/wiki/SolarLuminosity).</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/HongKongDollar">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">Hong Kong dollar</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/SingaporeDollar">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">Singapore dollar</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/lumen">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">lumen</rdfs:label>
+    <rdfs:comment xml:lang="en">The lumen is a unit of luminous flux defined as candela times steradian = lux times square metre.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/hour-Sidereal">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/second-Time"/>
+    <rdfs:label xml:lang="en">hour (sidereal)</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/scoop">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">scoop</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/electronvolt">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/joule"/>
+    <rdfs:label xml:lang="en">electronvolt</rdfs:label>
+    <rdfs:comment xml:lang="en">The electronvolt is a unit of energy defined as 1.602177e-19 joule.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/week">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/second-Time"/>
+    <rdfs:label xml:lang="en">week</rdfs:label>
+    <rdfs:comment xml:lang="en">The week is a unit of time defined as 6.04800e5 second.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/calorie-Thermochemical">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/joule"/>
+    <rdfs:label xml:lang="en">calorie (thermochemical)</rdfs:label>
+    <rdfs:comment xml:lang="en">The thermochemical calorie is a unit of energy defined as 4.184 joule.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/mile-Statute">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/metre"/>
+    <rdfs:label xml:lang="en">mile (statute)</rdfs:label>
+    <rdfs:comment xml:lang="en">The statute mile is a unit of length defined as 1.609344e3 metre.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/_0-5">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">0-5</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/solarMass">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">solar mass</rdfs:label>
+    <rdfs:comment xml:lang="en">Solar mass is a unit used in astronomy to denote stellar or galactic masses (http://en.wikipedia.org/wiki/SolarMass).</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/ounceAvoirdupois">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">ounce (avoirdupois)</rdfs:label>
+    <rdfs:comment xml:lang="en">The avoirdupois ounce is a unit of mass defined as 2.834952e-2 kilogram.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/SouthKoreanWon">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">South Korean won</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/shannon">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/bit"/>
+    <rdfs:label xml:lang="en">shannon</rdfs:label>
+    <rdfs:comment xml:lang="en">The shannon is a unit of information capacity defined as 1 bit.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/fillet">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">fillet</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/pica-Postscript">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit>
+      <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/point-Postscript">
+        <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/inch-International"/>
+        <rdfs:label xml:lang="en">point (Postscript)</rdfs:label>
+        <rdfs:comment xml:lang="en">The Postscript point is a unit of length defined as 0.013888888888888888888888888888889 inch.</rdfs:comment>
+        <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+      </skos:Concept>
+    </j.0:hasUnit>
+    <rdfs:label xml:lang="en">pica (Postscript)</rdfs:label>
+    <rdfs:comment xml:lang="en">The Postscript pica is a unit of length defined as 12 point (Postscript).</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/dryQuart-US">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">dry quart (US)</rdfs:label>
+    <rdfs:comment xml:lang="en">The US dry quart is a unit of volume defined as 1.101221e-3 cubic metre.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/abmho">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/siemens"/>
+    <rdfs:label xml:lang="en">abmho</rdfs:label>
+    <rdfs:comment xml:lang="en">The abmho is a unit of electrical conductance defined as 1.0e9 siemens.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/gallon-Imperial">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">gallon (imperial)</rdfs:label>
+    <rdfs:comment xml:lang="en">The imperial gallon is a unit of volume defined as 4.54609e-3 cubic metre.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/cup-USCustomary">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">cup (US customary)</rdfs:label>
+    <rdfs:comment xml:lang="en">The US customary cup is a unit of volume defined as 2.365882e-4 cubic metre.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/footPoundal">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/joule"/>
+    <rdfs:label xml:lang="en">foot poundal</rdfs:label>
+    <rdfs:comment xml:lang="en">The foot poundal is a unit of energy defined as 4.214011e-2 joule.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/tonne">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">tonne</rdfs:label>
+    <rdfs:comment xml:lang="en">The tonne is a unit of mass defined as 1000 kilogram.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/magnitude">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/one"/>
+    <rdfs:label xml:lang="en">magnitude</rdfs:label>
+    <rdfs:comment xml:lang="en">Eenheid waarmee de helderheid van sterren wordt aangegeven. Meestal wordt het symbool niet aangeduid (http://en.wikipedia.org/wiki/Magnitude_(astronomy)).</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/colonyFormingUnit">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">colony forming unit</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/NewZealandDollar">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">New Zealand dollar</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/portion">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">portion</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/second-HourAngle">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/degree"/>
+    <rdfs:label xml:lang="en">second (hour angle)</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/grain">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">grain</rdfs:label>
+    <rdfs:comment xml:lang="en">The grain is a unit of mass defined as 6.479891e-5 kilogram.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/pound-Force">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/newton"/>
+    <rdfs:label xml:lang="en">pound-force</rdfs:label>
+    <rdfs:comment xml:lang="en">The pound-force is a unit of force defined as 4.448222 newton.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/mole">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">mole</rdfs:label>
+    <rdfs:comment xml:lang="en">The mole is a unit of amount of substance defined as the amount of substance of a system that contains as many elementary entities as there are atoms in 0.012 kilogram of carbon 12.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/nauticalMile-International">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/metre"/>
+    <rdfs:label xml:lang="en">nautical mile (international)</rdfs:label>
+    <rdfs:comment xml:lang="en">The international nautical mile is a unit of length defined as 1852 metre.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/carat-Mass">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">carat (mass)</rdfs:label>
+    <rdfs:comment xml:lang="en">The carat (mass) is a unit of mass defined as 2.0e-4 kilogram.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/TurkishLira">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">Turkish lira</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/liquidQuart-US">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">liquid quart (US)</rdfs:label>
+    <rdfs:comment xml:lang="en">The US liquid quart is a unit of volume defined as 9.463529e-4 cubic metre.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/revolution">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/radian"/>
+    <rdfs:label xml:lang="en">revolution</rdfs:label>
+    <rdfs:comment xml:lang="en">The revolution is a unit of angle defined as 6.283185 radian.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/stattesla">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/tesla"/>
+    <rdfs:label xml:lang="en">stattesla</rdfs:label>
+    <rdfs:comment xml:lang="en">The stattesla is a unit of magnetic flux density defined as 2.9979e6 tesla.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/candela">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">candela</rdfs:label>
+    <rdfs:comment xml:lang="en">The candela is a unit of luminous intensity defined as the luminous intensity, in a given direction, of a source that emits monochromatic radiation of frequency 540e12 hertz and that has a radiant intensity in that direction of 1/683 watt per steradian.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/dryPint-US">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">dry pint (US)</rdfs:label>
+    <rdfs:comment xml:lang="en">The US dry pint is a unit of volume defined as 5.506105e-4 cubic metre.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/fermi">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/metre"/>
+    <rdfs:label xml:lang="en">fermi</rdfs:label>
+    <rdfs:comment xml:lang="en">The fermi is a unit of length defined as 1.0e-15 metre.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/cup">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">cup</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/barrel-US">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">barrel (US)</rdfs:label>
+    <rdfs:comment xml:lang="en">The US barrel is a unit of volume defined as 1.589873e-1 cubic metre.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/abvolt">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/volt"/>
+    <rdfs:label xml:lang="en">abvolt</rdfs:label>
+    <rdfs:comment xml:lang="en">The abvolt is a unit of electric potential defined as 1.0e-8 volt.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/molair">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">molair</rdfs:label>
+    <rdfs:comment xml:lang="en">Molair is a unit of amount of substance concentration defined as 1 mole per litre.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/circularMil">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">circular mil</rdfs:label>
+    <rdfs:comment xml:lang="en">The cicular mil is a unit of area defined as 5.067075e-10 square metre.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/spread">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">spread</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/year-Tropical">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/second-Time"/>
+    <rdfs:label xml:lang="en">year (tropical)</rdfs:label>
+    <rdfs:comment xml:lang="en">The tropical year is a unit of time defined as 3.155693e7 second.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/SwedishKrona">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">Swedish krona</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/gal">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">gal</rdfs:label>
+    <rdfs:comment xml:lang="en">The gal is a unit of acceleration defined as centimetre per second (time) squared.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/ton-ShortAssay">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">ton (short assay)</rdfs:label>
+    <rdfs:comment xml:lang="en">The short assay ton is a unit of mass defined as 2.916667e-2 kilogram.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/hundredweight-British">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">hundredweight (British)</rdfs:label>
+    <rdfs:comment xml:lang="en">The British hundredweight is a unit of mass defined as 5.080235e1 kilogram.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/second-Angle">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/radian"/>
+    <rdfs:label xml:lang="en">second (angle)</rdfs:label>
+    <rdfs:comment xml:lang="en">The second (angle) is a unit of angle defined as 4.848137e-6 radian.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/ton-Register">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">ton (register)</rdfs:label>
+    <rdfs:comment xml:lang="en">The register ton is a unit of volume defined as 2.831658 cubic metre.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/acre-USSurvey">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">acre (US survey)</rdfs:label>
+    <rdfs:comment xml:lang="en">The US survey acre is a unit of area defined as 4.046872609874252e3 square metre.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/kip">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/newton"/>
+    <rdfs:label xml:lang="en">kip</rdfs:label>
+    <rdfs:comment xml:lang="en">The kip is a unit of force defined as 4.448222e3 newton.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/_1-0">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">1/0</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/abampere">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/ampere"/>
+    <rdfs:label xml:lang="en">abampere</rdfs:label>
+    <rdfs:comment xml:lang="en">The abampere is a unit of electric current defined as 10 ampere.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/rod-US">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/metre"/>
+    <rdfs:label xml:lang="en">rod (US)</rdfs:label>
+    <rdfs:comment xml:lang="en">The US rod is a unit of length defined as 5.029210 metre.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/lambert">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">lambert</rdfs:label>
+    <rdfs:comment xml:lang="en">The lambert is a unit of luminance defined as 3.183099e3 candela per square metre.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/ChineseYuan">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">Chinese yuan</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/gallon-US">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">gallon (US)</rdfs:label>
+    <rdfs:comment xml:lang="en">The US gallon is a unit of volume defined as 3.785412e-3 cubic metre.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/gill-Imperial">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">gill (imperial)</rdfs:label>
+    <rdfs:comment xml:lang="en">The imperial gill is a unit of volume defined as 1.420653e-4 cubic metre.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/unifiedAtomicMassUnit">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">unified atomic mass unit</rdfs:label>
+    <rdfs:comment xml:lang="en">The unified atomic mass unit is a unit of mass defined as 1.660538782(83)e-27 kilogram.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/ton-Long">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">ton (long)</rdfs:label>
+    <rdfs:comment xml:lang="en">The long ton is a unit of mass defined as 1.016047e3 kilogram.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/ounceApothecaries">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">ounce (apothecaries')</rdfs:label>
+    <rdfs:comment xml:lang="en">The apothecaries' ounce is a unit of mass defined as 3.110348e-2 kilogram.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/solarRadius">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/metre"/>
+    <rdfs:label xml:lang="en">solar radius</rdfs:label>
+    <rdfs:comment xml:lang="en">Solar radius is a unit used in astronomy to denote stellar or stellar system radii (http://en.wikipedia.org/wiki/solarRadius).</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/degreeRankine">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/kelvin"/>
+    <rdfs:label xml:lang="en">degree Rankine</rdfs:label>
+    <rdfs:comment xml:lang="en">The degree Rankine is a unit of temperature defined as 5.555556e-1 kelvin.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/slug">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">slug</rdfs:label>
+    <rdfs:comment xml:lang="en">The slug is a unit of mass defined as 1.459390e1 kilogram.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/BritishThermalUnit-60F">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/joule"/>
+    <rdfs:label xml:lang="en">British thermal unit (60 °F)</rdfs:label>
+    <rdfs:comment xml:lang="en">The 60 °F British thermal unit is a unit of energy defined as 1.05468e3 joule.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/mil-Angle">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/radian"/>
+    <rdfs:label xml:lang="en">mil (angle)</rdfs:label>
+    <rdfs:comment xml:lang="en">The mil (angle) is a unit of angle defined as 9.817477e-4 radian.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/pica-ATA">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <j.0:hasUnit>
+      <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/point-ATA">
+        <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+        <j.0:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/metre"/>
+        <rdfs:label xml:lang="en">point (ATA)</rdfs:label>
+        <rdfs:comment xml:lang="en">The ATA point is a unit of length defined as 0.3514598e-3 metre.</rdfs:comment>
+        <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+      </skos:Concept>
+    </j.0:hasUnit>
+    <rdfs:label xml:lang="en">pica (ATA)</rdfs:label>
+    <rdfs:comment xml:lang="en">The ATA pica is a unit of length defined as 12 point (ATA).</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/perm-23C">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">perm (23 °C)</rdfs:label>
+    <rdfs:comment xml:lang="en">The 23 °C perm is a unit of permeance defined as 5.74525e-11 kilogram per pascal second (time) square metre.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+  </skos:Concept>
+</rdf:RDF>

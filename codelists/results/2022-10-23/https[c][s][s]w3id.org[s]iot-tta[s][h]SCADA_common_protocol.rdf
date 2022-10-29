@@ -1,0 +1,36 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="https://w3id.org/iot-tta/"/>
+  <skos:Concept rdf:about="https://w3id.org/iot-tta/#BACnet">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/iot-tta/"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >bacNet</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >bacNet (Individual): a SCADA common protocol with Object property assertions (Protocols_were_layered, Lack_security_measure)</rdfs:comment>
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="https://w3id.org/iot-tta/#SCADA_common_protocol">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/iot-tta/"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >SCADA_common_protocol</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >The common protocols on which SCADA systems operate and transfer data are Modbus and BACnet.</rdfs:comment>
+      </skos:ConceptScheme>
+    </skos:inScheme>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/iot-tta/#Modbus">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/iot-tta/"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >modbus</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >modbus (Individual): a SCADA common protocol with Object property assertions (Lack_security_measure, Protocols_were_layered)</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/iot-tta/#SCADA_common_protocol"/>
+  </skos:Concept>
+</rdf:RDF>

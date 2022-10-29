@@ -1,0 +1,34 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="https://w3id.org/idsa/core"/>
+  <owl:ObjectProperty rdf:about="https://w3id.org/idsa/core/contentType">
+    <rdfs:comment xml:lang="en">Detailed type, genre or interpretation of the Digital Content.</rdfs:comment>
+    <rdfs:label xml:lang="en">content type</rdfs:label>
+    <rdfs:domain rdf:resource="https://w3id.org/idsa/core/DigitalContent"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="https://w3id.org/idsa/core/ContentType">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/INTERFACE_DEFINITION">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label>Interface definition</rdfs:label>
+    <rdfs:comment xml:lang="en">Formal, machine-interpretable definition of a protocol-specific API, e.g. OpenAPI, GraphQL, API Blueprint, WSDL.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/ContentType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/SCHEMA_DEFINITION">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label>Schema definition</rdfs:label>
+    <rdfs:comment xml:lang="en">Formal, machine-interpretable definition of a data schema, e.g. XMLSchema, JSONSchema</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/ContentType"/>
+  </skos:Concept>
+</rdf:RDF>

@@ -1,6 +1,6 @@
 <rdf:RDF
-    xmlns:dct="http://purl.org/dc/terms/"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
     xmlns:dc="http://purl.org/dc/elements/1.1/"
     xmlns:owl="http://www.w3.org/2002/07/owl#"
     xmlns:dcmit="http://purl.org/dc/dcmitype/"
@@ -10,31 +10,14 @@
     xmlns:vann="http://purl.org/vocab/vann/">
   <owl:Ontology rdf:about="http://ontology.it/itsmo/v1"/>
   <owl:ObjectProperty rdf:about="http://ontology.it/itsmo/v1#hasStatus">
-    <rdfs:isDefinedBy rdf:resource="http://ontology.it/itsmo/v1"/>
     <rdfs:comment xml:lang="en">the referenced resource is a stage in the life cycle of the described resource.</rdfs:comment>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >hasStatus</rdfs:label>
     <rdfs:range>
       <skos:ConceptScheme rdf:about="http://ontology.it/itsmo/v1#LifeCycleStage">
         <rdfs:isDefinedBy rdf:resource="http://ontology.it/itsmo/v1"/>
-        <rdfs:label xml:lang="en">A stage in the life of a configuration item. The lifecycle defines the 
-    categories for status and the status transitions that are permitted. For 
-    example:
-
-    &lt;ul&gt;
-      &lt;li&gt;
-        The lifecycle of an application includes requirements, design, build, 
-        deploy, operate, optimize.
-      &lt;/li&gt;
-      &lt;li&gt;
-        The expanded incident lifecycle includes detection, diagnosis, repair, 
-        recovery and restoration
-      &lt;/li&gt;
-      &lt;li&gt;
-        The lifecycle of a server may include: ordered, received, in test, 
-        live, disposed etc
-      &lt;/li&gt;
-    &lt;/ul&gt;</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >LifeCycleStage</rdfs:label>
         <rdfs:comment xml:lang="en">A stage in the life of a configuration item. The lifecycle defines the 
     categories for status and the status transitions that are permitted. For 
     example:

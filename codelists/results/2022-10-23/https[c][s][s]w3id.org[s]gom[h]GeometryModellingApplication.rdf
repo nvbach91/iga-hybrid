@@ -1,0 +1,34 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="https://w3id.org/gom"/>
+  <owl:FunctionalProperty rdf:about="https://w3id.org/gom#createdIn">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment xml:lang="en">property to link to the geometry modelling application the geometry description was created in</rdfs:comment>
+    <rdfs:label xml:lang="en">created in</rdfs:label>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="https://w3id.org/gom#GeometryModellingApplication">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/gom"/>
+        <rdfs:label xml:lang="en">geometry modelling application</rdfs:label>
+        <rdfs:comment xml:lang="en">A geometry modelling application, used to create geometry descriptions</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:FunctionalProperty>
+  <skos:Concept rdf:about="https://w3id.org/gom#Meshlab_v2016">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/gom"/>
+    <rdfs:label xml:lang="en">Meshlab v2016 application</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/gom#GeometryModellingApplication"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/gom#Rhinoceros_v6">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/gom"/>
+    <rdfs:label xml:lang="en">Rhinoceros v6 CAD application</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/gom#GeometryModellingApplication"/>
+  </skos:Concept>
+</rdf:RDF>

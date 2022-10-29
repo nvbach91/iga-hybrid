@@ -1,0 +1,25 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://purl.org/NET/c4dm/timeline.owl"/>
+  <skos:Concept rdf:about="http://purl.org/NET/c4dm/timeline.owl#universaltimeline">
+    <rdfs:comment>The timeline one can addresss "the 1st of July, 2007"</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/NET/c4dm/timeline.owl"/>
+    <rdfs:label>the universal time line</rdfs:label>
+    <rdfs:comment>this is the `universal' time line -- can adress time intervals on it using date/dateTime -- UTC</rdfs:comment>
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="http://purl.org/NET/c4dm/timeline.owl#PhysicalTimeLine">
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/NET/c4dm/timeline.owl"/>
+        <rdfs:label>physical timeline</rdfs:label>
+        <rdfs:comment>A "physical" time-line (the universal time line (UTC)) is an instance of this class. Other time zones consists in instances of this class as well, with a "shifting" time line map relating them to the universal time line map.</rdfs:comment>
+      </skos:ConceptScheme>
+    </skos:inScheme>
+  </skos:Concept>
+</rdf:RDF>

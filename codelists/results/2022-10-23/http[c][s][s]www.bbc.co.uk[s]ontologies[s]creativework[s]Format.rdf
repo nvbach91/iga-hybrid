@@ -1,6 +1,6 @@
 <rdf:RDF
-    xmlns:dct="http://purl.org/dc/terms/"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
     xmlns:dc="http://purl.org/dc/elements/1.1/"
     xmlns:owl="http://www.w3.org/2002/07/owl#"
     xmlns:dcmit="http://purl.org/dc/dcmitype/"
@@ -10,18 +10,13 @@
     xmlns:vann="http://purl.org/vocab/vann/">
   <owl:Ontology rdf:about="http://www.bbc.co.uk/ontologies/creativework"/>
   <owl:ObjectProperty rdf:about="http://www.bbc.co.uk/ontologies/creativework/primaryFormat">
-    <rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/creativework"/>
     <rdfs:comment xml:lang="en-gb">Associates the Creative Work with the Primary Format instance</rdfs:comment>
     <rdfs:label xml:lang="en-gb">primaryFormat</rdfs:label>
-    <rdfs:domain>
-      <rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/creativework/CreativeWork">
-        <rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/creativework"/>
-      </rdf:Description>
-    </rdfs:domain>
+    <rdfs:domain rdf:resource="http://www.bbc.co.uk/ontologies/creativework/CreativeWork"/>
     <rdfs:range>
       <skos:ConceptScheme rdf:about="http://www.bbc.co.uk/ontologies/creativework/Format">
         <rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/creativework"/>
-        <rdfs:label xml:lang="en-gb">The primary format of the CreativeWork and it can be one of the five instances. This is needed for selecting the appropriate icon with which to overlay the preview thumbnail of the creative work.</rdfs:label>
+        <rdfs:label xml:lang="en-gb">Format</rdfs:label>
         <rdfs:comment xml:lang="en-gb">The primary format of the CreativeWork and it can be one of the five instances. This is needed for selecting the appropriate icon with which to overlay the preview thumbnail of the creative work.</rdfs:comment>
       </skos:ConceptScheme>
     </rdfs:range>

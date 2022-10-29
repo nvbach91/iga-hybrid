@@ -1,0 +1,84 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+  <owl:ObjectProperty rdf:about="http://www.w3.org/2007/uwa/context/software.owl#acceptedCharacterSets">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >This property represents the charsets accepted  by a user agent</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Accepted Character Sets</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.w3.org/2007/uwa/context/software.owl#Program"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://www.w3.org/2007/uwa/context/common.owl#CharacterSet">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Character Set</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >This class represents specific character sets officially identified by IANA</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.w3.org/2007/uwa/context/hardware.owl#outputCharacterSets">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >This property defines the character sets supported by the device for output</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Output Character Sets</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.w3.org/2007/uwa/context/hardware.owl#DeviceHardware"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2007/uwa/context/common.owl#CharacterSet"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.w3.org/2007/uwa/context/hardware.owl#inputCharacterSets">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >This property defines the character sets supported by the device for input</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Input Character Sets</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.w3.org/2007/uwa/context/hardware.owl#DeviceHardware"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2007/uwa/context/common.owl#CharacterSet"/>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://www.w3.org/2007/uwa/context/common.owl#CharacterSet_WINDOWS-1252">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+    <skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/common.owl#CharacterSet"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2007/uwa/context/common.owl#CharacterSet_CharacterSet_UTF-7">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+    <skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/common.owl#CharacterSet"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2007/uwa/context/common.owl#CharacterSet_UTF-16be">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+    <skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/common.owl#CharacterSet"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2007/uwa/context/common.owl#CharacterSet_ISO-8859-1">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+    <skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/common.owl#CharacterSet"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2007/uwa/context/common.owl#CharacterSet_ISO-8859-2">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+    <skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/common.owl#CharacterSet"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2007/uwa/context/common.owl#CharacterSet_UTF-16le">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+    <skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/common.owl#CharacterSet"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2007/uwa/context/common.owl#CharacterSet_UTF-16">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+    <skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/common.owl#CharacterSet"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2007/uwa/context/common.owl#UTF-8">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+    <skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/common.owl#CharacterSet"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2007/uwa/context/common.owl#CharacterSet_US-ASCII">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+    <skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/common.owl#CharacterSet"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2007/uwa/context/common.owl#CharacterSet_ISO-10646-UCS-2">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+    <skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/common.owl#CharacterSet"/>
+  </skos:Concept>
+</rdf:RDF>

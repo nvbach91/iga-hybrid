@@ -1,0 +1,294 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://purl.org/SemSur/"/>
+  <skos:Concept rdf:about="http://purl.org/semsur/A_State_of_the_Art_Survey">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <rdfs:comment>The increasing amount of Linked Data and its inherent distributed nature have
+attracted significant attention throughout the research community and amongst practitioners to search data, in the past years. Inspired by research results from traditional distributed databases, dierent approaches for managing federation over SPARQL Endpoints have been introduced. SPARQL is the standardised query language for RDF, the default data model used in Linked Data deployments and SPARQL Endpoints are a popular access mechanism provided by many Linked Open Data (LOD) repositories. In this paper, we initially give an overview of the federation framework infrastructure and then proceed with a comparison of existing SPARQL federation frameworks. Finally, we highlight shortcomings in existing frameworks, which we hope helps spawning new research directions.</rdfs:comment>
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="http://purl.org/semsur/SingleAuthorPublication">
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+      </skos:ConceptScheme>
+    </skos:inScheme>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Type_Prediction_for_Efficient_Coreference_Resolution_in_Heterogeneous_Semantic_Graphs">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://purl.org/semsur/SingleAuthorPublication"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Enriching_DBpedia_with_Targeted_Hypernym_Discovery">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <rdfs:comment>The Linked Hypernyms Dataset (LHD) provides entities described by Dutch, English and German
+Wikipedia articles with types in the DBpedia namespace. The types are extracted from the first sentences
+of Wikipedia articles using Hearst pattern matching over part-of-speech annotated text and disambiguated
+to DBpedia concepts. The dataset covers 1.3 million RDF type triples from English Wikipedia,
+out of which 1 million RDF type triples were found not to overlap with DBpedia, and 0.4 million with
+YAGO2s. There are about 770 thousand German and 650 thousand Dutch Wikipedia entities assigned a
+novel type, which exceeds the number of entities in the localized DBpedia for the respective language. RDF
+type triples from the German dataset have been incorporated to the German DBpedia. Quality assessment
+was performed altogether based on 16.500 human ratings and annotations. For the English dataset, the
+average accuracy is 0.86, for German 0.77 and for Dutch 0.88. The accuracy of raw plain text hypernyms
+exceeds 0.90 for all languages. The LHD release described and evaluated in this article targets DBpedia 3.8,
+LHD version for the DBpedia 3.9 containing approximately 4.5 million RDF type triples is also available.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/semsur/SingleAuthorPublication"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/an_OWL_wrapper_for_teasoning_on_relational_databases">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://purl.org/semsur/SingleAuthorPublication"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/A_Probabilistic_Approach_for_Integrating_Heterogeneous_Knowledge_Sources">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <rdfs:comment>Open Information Extraction (OIE) systems like Nell and
+ReVerb have achieved impressive results by harvesting massive amounts
+of machine-readable knowledge with minimal supervision. However, the
+knowledge bases they produce still lack a clean, explicit semantic data
+model. This, on the other hand, could be provided by full-fledged semantic
+networks like DBpedia or Yago, which, in turn, could benefit
+from the additional coverage provided by Web-scale IE. In this paper,
+we bring these two strains of research together, and present a method
+to align terms from Nell with instances in DBpedia. Our approach is
+unsupervised in nature and relies on two key components. First, we automatically
+acquire probabilistic type information for Nell terms given
+a set of matching hypotheses. Second, we view the mapping task as the
+statistical inference problem of finding the most likely coherent mapping
+– i.e., the maximum a posteriori (MAP) mapping – based on the outcome
+of the first component used as soft constraint. These two steps are
+highly intertwined: accordingly, we propose an approach that iteratively
+refines type acquisition based on the output of the mapping generator,
+and vice versa. Experimental results on gold-standard data indicate that
+our approach outperforms a strong baseline, and is able to produce everimproving
+mappings consistently across iterations.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/semsur/SingleAuthorPublication"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/A_Survey_of_Current_Link_Discovery_Frameworks">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <rdfs:comment>Links build the backbone of the Linked Data Cloud. With the steady growth in size of datasets comes an increased need for end users to know which frameworks to use for deriving links between datasets. In this survey, we comparatively evaluate current Link Discovery tools and frameworks. For this purpose, we outline general requirements and derive a generic architecture of Link Discovery frameworks. Based on this generic architecture, we study and compare the features of state-of the-art linking frameworks. We also analyze reported performance evaluations for the different frameworks. Finally, we derive insights pertaining to possible future developments in the domain of Link Discovery.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/semsur/SingleAuthorPublication"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Improving_the_Quality_of_Linked_Data_Using_Statistical_Distributions">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <rdfs:comment>Linked Data on the Web is either created from structured data sources (such as relational databases), from semi-structured sources (such as Wikipedia), or from unstructured sources (such as text). In the latter two cases, the generated Linked Data will likely be noisy and incomplete. In this paper, we present two algorithms that exploit statistical distributions of properties and types for enhancing the quality of incomplete and noisy Linked Data sets: SDType adds missing type statements, and SDValidate identifies faulty statements. Neither of the algorithms uses external knowledge, i.e., they operate only on the data itself. We evaluate the algorithms on the DBpedia and NELL knowledge bases, showing that they are both accurate as well as scalable. Both algorithms have been used for building the DBpedia 3.9 release: With SDType, 3.4 million missing type statements have been added, while using SDValidate, 13,000 erroneous RDF statements have been removed from the knowledge base.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/semsur/SingleAuthorPublication"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/An_Adaptive_Query_Processing_Engine_for_SPARQL_Endpoints">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://purl.org/semsur/SingleAuthorPublication"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Relational.OWL_-_A_Data_and_Schema_Representation_Format_Based_on_OWL">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://purl.org/semsur/SingleAuthorPublication"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/A_Tool_for_Generating_OWL_Ontologies_From_Relational_Database_Systems">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://purl.org/semsur/SingleAuthorPublication"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Factorizing_YAGO">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <rdfs:comment>Vast amounts of structured information have been published
+in the Semantic Web’s Linked Open Data (LOD) cloud and
+their size is still growing rapidly. Yet, access to this information
+via reasoning and querying is sometimes difficult,
+due to LOD’s size, partial data inconsistencies and inherent
+noisiness. Machine Learning offers an alternative approach
+to exploiting LOD’s data with the advantages that Machine
+Learning algorithms are typically robust to both noise and
+data inconsistencies and are able to efficiently utilize nondeterministic
+dependencies in the data. From a Machine
+Learning point of view, LOD is challenging due to its relational
+nature and its scale. Here, we present an efficient
+approach to relational learning on LOD data, based on the
+factorization of a sparse tensor that scales to data consisting
+of millions of entities, hundreds of relations and billions of
+known facts. Furthermore, we show how ontological knowledge
+can be incorporated in the factorization to improve
+learning results and how computation can be distributed
+across multiple nodes. We demonstrate that our approach
+is able to factorize the YAGO 2 core ontology and globally
+predict statements for this large knowledge base using
+a single dual-core desktop computer. Furthermore, we show
+experimentally that our approach achieves good results in
+several relational learning tasks that are relevant to Linked
+Data. Once a factorization has been computed, our model is
+able to predict efficiently, and without any additional training,
+the likelihood of any of the 4.3 · 1014 possible triples in
+the YAGO 2 core ontology.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/semsur/SingleAuthorPublication"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Automatic_typing_of_DBpedia_entities">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://purl.org/semsur/SingleAuthorPublication"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Use_of_OWL_and_SWRL_for_Semantic_Relational_Database_Translation">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://purl.org/semsur/SingleAuthorPublication"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Type_Inference_on_Noisy_RDF_Data">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <rdfs:comment> Type information is very valuable in knowledge bases. However, most large open knowledge bases are incomplete with respect to type information, and, at the same time, contain noisy and incorrect data. That makes classic type inference by reasoning difficult. In this paper, we propose the heuristic link-based type inference mechanism SD- Type, which can handle noisy and incorrect data. Instead of leveraging T-box information from the schema, SDType takes the actual use of a schema into account and thus is also robust to misused schema elements.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/semsur/SingleAuthorPublication"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/A_Survey_of_Approaches_and_Evaluation_Methods">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <rdfs:comment>In the recent years, different Web knowledge graphs, both free and commercial, have been created. While Google coined the term “Knowledge Graph” in 2012, there are also a few openly available knowledge graphs, with DBpedia, YAGO, and Freebase being among the most prominent ones. Those graphs are often constructed from semi-structured knowledge, such as Wikipedia, or harvested from the web with a combination of statistical and linguistic methods. The result are large-scale knowledge graphs that try to make a good trade-off between completeness and correctness. In order to further increase the utility of such knowledge graphs, various refinement methods have been proposed, which try to infer and add missing knowledge to the graph, or identify erroneous pieces of information. In this article, we provide a survey of such knowledge graph refinement approaches, with a dual look at both the methods being proposed as well as the evaluation methodologies used.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/semsur/SingleAuthorPublication"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/LIMES_-_A_Time-Efficient_Approach_for_Large-Scale_Link_Discovery_on_the_Web_of_Data">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://purl.org/semsur/SingleAuthorPublication"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/RDF_Instance_Matching_and_Interlinking.">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://purl.org/semsur/SingleAuthorPublication"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Discovering_and_Maintaining_Links_on_the_Web_of_Data">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://purl.org/semsur/SingleAuthorPublication"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/deep_annotation_for_mapping_and_migrating_legacy_data_to_the_Semantic_Web">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://purl.org/semsur/SingleAuthorPublication"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Browsing_Linked_Open_Data_with_Auto_Complete">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <rdfs:comment>Information in Linked Open Data is incomplete by nature and design. Nevertheless, the more complete information delivered on a subject is, the higher is its value to an end user. With our submission to the Semantic Web Challenge1, we show how information, in particular types, can be completed automatically, based on heuristic rule learning. We introduce an approach which employs lazy learning instead of learning a global model, making the approach well scalable to large data, while at the same time providing results at an accuracy of 85.6%. The auto complete function is included in a modular semantic web browser.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/semsur/SingleAuthorPublication"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Accessing_and_Documenting_Relational_Databases_through_OWL_Ontologies">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://purl.org/semsur/SingleAuthorPublication"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/ReasoningWith_Neural_Tensor_Networks_for_Knowledge_Base_Completion">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <rdfs:comment>Knowledge bases are an important resource for question answering and other tasks but often suffer from incompleteness and lack of ability to reason over their discrete entities and relationships. In this paper we introduce an expressive neural tensor network suitable for reasoning over relationships between two entities. Previous work represented entities as either discrete atomic units or with a single
+entity vector representation. We show that performance can be improved when entities are represented as an average of their constituting word vectors. This allows sharing of statistical strength between, for instance, facts involving the “Sumatran tiger” and “Bengal tiger.” Lastly, we demonstrate that all models improve when these word vectors are initialized with vectors learned from unsupervised large
+corpora. We assess the model by considering the problem of predicting additional true relations between entities given a subset of the knowledge base. Our model outperforms previous models and can classify unseen relationships in WordNet and FreeBase with an accuracy of 86.2% and 90.0%, respectively.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/semsur/SingleAuthorPublication"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/A_Comprehensive_Architecture_for_Knowledge_Fusion">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://purl.org/semsur/SingleAuthorPublication"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Zhishi.links_Results_for_OAEI_2011">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://purl.org/semsur/SingleAuthorPublication"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/SemSur/Bringing_Relational_Databases_into_the_Semantic_Web:A_Survey">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <rdfs:comment>Relational databases are considered one of the most popular storage solutions for various kinds of data and they have been recognized as a key factor in generating huge amounts of data for SemanticWeb applications. Ontologies, on the other hand, are one of the key concepts and main vehicle of knowledge in the Semantic Web research area. The problem of bridging the gap between relational databases and ontologies has attracted the interest of the SemanticWeb community, even from the early years of its existence and is commonly referred to as the database-to-ontology mapping problem. However, this term has been used interchangeably for referring to two distinct problems: namely, the creation of an ontology from an existing database instance and the discovery of mappings between an existing database instance and an existing ontology. In this paper, we clearly define these two problems and present the motivation, benefits, challenges and solutions for each one of them. We attempt to gather the most notable approaches proposed so far in the literature, present them concisely in tabular format and group them under a classification scheme. We finally explore the perspectives and future research steps for a seamless and meaningful integration of databases into the Semantic Web.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/semsur/SingleAuthorPublication"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/A_Schema-Independent_Linked_Data_Interlinking_System">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://purl.org/semsur/SingleAuthorPublication"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Adaptive_Integration_of_Distributed_Semantic_Web_Data">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://purl.org/semsur/SingleAuthorPublication"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Querying_Distributed_RDF_Data_Sources_with_SPARQL">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://purl.org/semsur/SingleAuthorPublication"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Querying_the_Web_of_Data_with_Graph_Theory-based_Techniques">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://purl.org/semsur/SingleAuthorPublication"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/SPARQL_Endpoint_Federation_Exploiting_VOID_Descriptions">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://purl.org/semsur/SingleAuthorPublication"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/a_federation_layer_for_distributed_query_processing_on_linked_open_data">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://purl.org/semsur/SingleAuthorPublication"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/single_author_publication">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://purl.org/semsur/SingleAuthorPublication"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Type-Constrained_Representation_Learning_in_Knowledge_Graphs">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <rdfs:comment>Large knowledge graphs increasingly add value to various
+applications that require machines to recognize and understand queries
+and their semantics, as in search or question answering systems. La-
+tent variable models have increasingly gained attention for the statistical
+modeling of knowledge graphs, showing promising results in tasks related
+to knowledge graph completion and cleaning. Besides storing facts about
+the world, schema-based knowledge graphs are backed by rich semantic
+descriptions of entities and relation-types that allow machines to un-
+derstand the notion of things and their semantic relationships. In this
+work, we study how type-constraints can generally support the statistical
+modeling with latent variable models. More precisely, we integrated prior
+knowledge in form of type-constraints in various state of the art latent
+variable approaches. Our experimental results show that prior knowledge
+on relation-types significantly improves these models up to 77% in link-
+prediction tasks. The achieved improvements are especially prominent
+when a low model complexity is enforced, a crucial requirement when
+these models are applied to very large datasets. Unfortunately, type-
+constraints are neither always available nor always complete e.g., they
+can become fuzzy when entities lack proper typing. We show that in
+these cases, it can be beneficial to apply a local closed-world assumption
+that approximates the semantics of relation-types based on observations
+made in the data.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/semsur/SingleAuthorPublication"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/A_Probabilistic-Logical_Framework_for_Ontology_Matching">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://purl.org/semsur/SingleAuthorPublication"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Treating_Non-RDF_Databases_as_Virtual_RDF_Graphs">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://purl.org/semsur/SingleAuthorPublication"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Semantic_Relation_Composition_in_Large_Scale">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <rdfs:comment>Semantic relation composition is a generalized approach for finding conjunctive relation paths in a knowledge base (KB). In semantic web, direct and inverse relationships between entities provide us with ample of explicit knowledge. But there is a plethora of implicit knowledge beyond these direct paths. Consider a knowledge graph, we can achieve deeper insights about a particular entity if we consider the information shared by its neighboring entities via its adjacent relation paths of arbitrary lengths. In this paper, we devise a technique to automatically discover semantically enriched conjunctive relations in a KB. </rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/semsur/SingleAuthorPublication"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/From_Relational_Data_to_RDFS_Models">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://purl.org/semsur/SingleAuthorPublication"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Ecient_Matching_for_Large_Real-World_Schemas_and_Ontologies">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://purl.org/semsur/SingleAuthorPublication"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/SemSur/Updating_Relational_Data_via_SPARQL/Update">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://purl.org/semsur/SingleAuthorPublication"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Putting_the_spirit_of_the_web_back_into_semantic_web_querying">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://purl.org/semsur/SingleAuthorPublication"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Querying_the_web_of_interlinked_datasets_using_void_descriptions">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://purl.org/semsur/SingleAuthorPublication"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Maribel_Acosta">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://purl.org/semsur/SingleAuthorPublication"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/a_Plug-in_for_Importing_Schemas_and_Data_from_Relational_Databases_into_Protégé">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://purl.org/semsur/SingleAuthorPublication"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Optimizing_SPARQL_queries_over_disparate_RDF_data_sources_through_distributed_semi-joins">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://purl.org/semsur/SingleAuthorPublication"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Logic-based_and_Scalable_Ontology_Matching">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://purl.org/semsur/SingleAuthorPublication"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/A_semantic_web_middleware_for_virtual_data_integration_on_the_web">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://purl.org/semsur/SingleAuthorPublication"/>
+  </skos:Concept>
+</rdf:RDF>

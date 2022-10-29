@@ -1,0 +1,76 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+  <owl:ObjectProperty rdf:about="http://www.w3.org/2007/uwa/context/hardware.owl#inputDevice">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The input mechanisms supported by a device</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Input Devices</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.w3.org/2007/uwa/context/hardware.owl#DeviceHardware"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://www.w3.org/2007/uwa/context/hardware.owl#InputDevice">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Input Device</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >This class represents an input mechanism that can be available in a device</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://www.w3.org/2007/uwa/context/hardware.owl#InputDevice_TRACK_BALL">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Track Ball</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A little sphere that acts like a trackball mouse</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/hardware.owl#InputDevice"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2007/uwa/context/hardware.owl#InputDevice_FOUR_WAY_SCROLLER">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Four Way Scroller</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Scroll up and down and side to side</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/hardware.owl#InputDevice"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2007/uwa/context/hardware.owl#InputDevice_MOUSE">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Mouse</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Represents a typical two button mouse found on a PC device</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/hardware.owl#InputDevice"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2007/uwa/context/hardware.owl#InputDevice_JOG_DIAL">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Jog Dial</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A jog dial, jog wheel, shuttle dial, or shuttle wheel is a type of knob, ring, wheel, or dial which allows the user to shuttle or jog</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/hardware.owl#InputDevice"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2007/uwa/context/hardware.owl#InputDevice_CLICK_WHEEL">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Click Wheel</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A wheel that is normally placed either below the screen or on the side of the device that lets the user quickly move up and down and click on link or items on the screen</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/hardware.owl#InputDevice"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2007/uwa/context/hardware.owl#InputDevice_STYLUS">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Stylus</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Represents a stylus</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/hardware.owl#InputDevice"/>
+  </skos:Concept>
+</rdf:RDF>

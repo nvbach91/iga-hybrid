@@ -1,0 +1,39 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://purl.org/cwmo/#"/>
+  <skos:Concept rdf:about="http://purl.org/cwmo/#GuidedReview">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/cwmo/#"/>
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="http://purl.org/cwmo/#EvaluationTechnic">
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/cwmo/#"/>
+        <rdfs:label xml:lang="en">Evaluation Technic</rdfs:label>
+        <rdfs:comment xml:lang="en">The evaluation technic class is the way the idea is evaluated. It can be qualitative (Review, sorting (top5),...) or quantitative (rating).</rdfs:comment>
+      </skos:ConceptScheme>
+    </skos:inScheme>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/cwmo/#FreeReview">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/cwmo/#"/>
+    <skos:inScheme rdf:resource="http://purl.org/cwmo/#EvaluationTechnic"/>
+  </skos:Concept>
+  <owl:AsymmetricProperty rdf:about="http://purl.org/cwmo/#isEvaluatedDuring">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment xml:lang="en">Evaluation criteria is applied during an evaluation technic.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://purl.org/cwmo/#EvaluationCriteria"/>
+    <rdfs:range rdf:resource="http://purl.org/cwmo/#EvaluationTechnic"/>
+  </owl:AsymmetricProperty>
+  <owl:AsymmetricProperty rdf:about="http://purl.org/cwmo/#hasEvalTechnic">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment xml:lang="en">Evaluation strategy is composed by evaluation technic.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://purl.org/cwmo/#EvaluationStrategy"/>
+    <rdfs:range rdf:resource="http://purl.org/cwmo/#EvaluationTechnic"/>
+  </owl:AsymmetricProperty>
+</rdf:RDF>

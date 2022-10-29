@@ -1,0 +1,56 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://purl.org/olia/ubyCat.owl"/>
+  <owl:ObjectProperty rdf:about="http://purl.org/olia/ubyCat.owl#hasGrammaticalFunction">
+    <rdfs:label>grammaticalFunction</rdfs:label>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://purl.org/olia/ubyCat.owl#GrammaticalFunction">
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+        <rdfs:label>grammaticalFunction</rdfs:label>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://purl.org/olia/ubyCat.owl#subject">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+    <rdfs:label>subject</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/olia/ubyCat.owl#GrammaticalFunction"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/olia/ubyCat.owl#complement">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+    <rdfs:label>complement</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/olia/ubyCat.owl#GrammaticalFunction"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/olia/ubyCat.owl#directObject">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+    <rdfs:label>directObject</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/olia/ubyCat.owl#GrammaticalFunction"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/olia/ubyCat.owl#prepositionalComplement">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+    <rdfs:label>prepositionalComplement</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/olia/ubyCat.owl#GrammaticalFunction"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/olia/ubyCat.owl#adverbialComplement">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+    <rdfs:label>adverbialComplement</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/olia/ubyCat.owl#GrammaticalFunction"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/olia/ubyCat.owl#subjectComplement">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+    <rdfs:label>subjectComplement</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/olia/ubyCat.owl#GrammaticalFunction"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/olia/ubyCat.owl#objectComplement">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+    <rdfs:label>objectComplement</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/olia/ubyCat.owl#GrammaticalFunction"/>
+  </skos:Concept>
+</rdf:RDF>

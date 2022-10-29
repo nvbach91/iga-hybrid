@@ -1,0 +1,35 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://rdf.muninn-project.org/ontologies/appearances"/>
+  <skos:Concept rdf:about="http://rdf.muninn-project.org/ontologies/organization#GenderStrict-M">
+    <rdfs:label xml:lang="en">Mann</rdfs:label>
+    <rdfs:label xml:lang="en">Homme</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/appearances"/>
+    <owl:disjointWith>
+      <skos:Concept rdf:about="http://rdf.muninn-project.org/ontologies/organization#GenderStrict-F">
+        <rdfs:label xml:lang="en">Frau</rdfs:label>
+        <rdfs:label xml:lang="en">Femme</rdfs:label>
+        <owl:disjointWith rdf:resource="http://rdf.muninn-project.org/ontologies/organization#GenderStrict-M"/>
+        <rdfs:label xml:lang="en">Woman</rdfs:label>
+        <skos:inScheme>
+          <skos:ConceptScheme rdf:about="http://rdf.muninn-project.org/ontologies/appearances#GenderStrict">
+            <rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/appearances"/>
+            <rdfs:label xml:lang="en">Gender (Strict)</rdfs:label>
+            <rdfs:comment xml:lang="en">Strict F/M coding of Gender types, with restriction.</rdfs:comment>
+          </skos:ConceptScheme>
+        </skos:inScheme>
+        <rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/appearances"/>
+      </skos:Concept>
+    </owl:disjointWith>
+    <rdfs:label xml:lang="en">Man</rdfs:label>
+    <skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#GenderStrict"/>
+  </skos:Concept>
+</rdf:RDF>

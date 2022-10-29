@@ -1,0 +1,39 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://data.totl.net/game/"/>
+  <owl:ObjectProperty rdf:about="http://data.totl.net/game/status">
+    <rdfs:comment>The status of a given game state, win, ongoing or draw. Games may introduce additional statuses.</rdfs:comment>
+    <rdfs:label>game status</rdfs:label>
+    <rdfs:domain rdf:resource="http://data.totl.net/game/State"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://data.totl.net/game/Status">
+        <rdfs:isDefinedBy rdf:resource="http://data.totl.net/game/"/>
+        <rdfs:label>Game Status</rdfs:label>
+        <rdfs:comment>A status of a game.</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://data.totl.net/game/ongoing">
+    <rdfs:isDefinedBy rdf:resource="http://data.totl.net/game/"/>
+    <rdfs:label>Ongoing</rdfs:label>
+    <skos:inScheme rdf:resource="http://data.totl.net/game/Status"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.totl.net/game/won">
+    <rdfs:isDefinedBy rdf:resource="http://data.totl.net/game/"/>
+    <rdfs:label>Won</rdfs:label>
+    <skos:inScheme rdf:resource="http://data.totl.net/game/Status"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.totl.net/game/drawn">
+    <rdfs:isDefinedBy rdf:resource="http://data.totl.net/game/"/>
+    <rdfs:label>Drawn</rdfs:label>
+    <skos:inScheme rdf:resource="http://data.totl.net/game/Status"/>
+  </skos:Concept>
+</rdf:RDF>

@@ -1,0 +1,575 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:j.0="http://purl.org/SemSur/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://purl.org/SemSur/"/>
+  <owl:ObjectProperty rdf:about="http://purl.org/semsur/proposedByPerson">
+    <rdfs:domain rdf:resource="http://purl.org/semsur/Approach"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://schema.org/Person">
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://purl.org/semsur/hasContributor">
+    <rdfs:domain rdf:resource="http://purl.org/semsur/EvaluationMethod"/>
+    <rdfs:range rdf:resource="http://schema.org/Person"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://purl.org/semsur/isCoAuthor">
+    <rdfs:domain rdf:resource="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
+    <rdfs:domain rdf:resource="http://schema.org/Person"/>
+    <rdfs:domain rdf:resource="http://purl.org/dc/terms/Agent"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    <rdfs:range rdf:resource="http://schema.org/Person"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/knows">
+    <rdfs:domain rdf:resource="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
+    <rdfs:domain rdf:resource="http://schema.org/Person"/>
+    <rdfs:domain rdf:resource="http://purl.org/dc/terms/Agent"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    <rdfs:range rdf:resource="http://schema.org/Person"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://purl.org/dc/elements/1.1/creator">
+    <rdfs:comment xml:lang="en">Examples of a Creator include a person, an organization, or a service. Typically, the name of a Creator should be used to indicate the entity.</rdfs:comment>
+    <rdfs:domain rdf:parseType="Resource">
+    </rdfs:domain>
+    <rdfs:comment xml:lang="en">An entity primarily responsible for making the resource.</rdfs:comment>
+    <rdfs:label xml:lang="en">Creator</rdfs:label>
+    <rdfs:domain rdf:resource="http://swrc.ontoware.org/ontology#Publication"/>
+    <rdfs:range rdf:resource="http://schema.org/Person"/>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://purl.org/semsur/Harald_C._Gall">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Samur_Araujo">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Emanuele_Panigati">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Michael_Schmidt">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Bac_Le">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Mike_Dean">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Letizia_Tanca">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Maximilian_Nickel">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Quang_Trinh">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Reda_Alhajj">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Michael_Hartung">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Christopher_D._Manning">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Maksym_Korotkiy">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Ljiljana_Stojanovic">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/J._Umbrich">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Pierre-Antoine_Champin">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Ken_Barker">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Matthew_Fisher">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Vojtěch_Svátek">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Heiner_Stuckenschmidt">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Andriy_Nikolov">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Martin_OaConnor">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Andy_Seaborne">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Sören_Auer">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Andrea_Giovanni_Nuzzolese">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Richard_Socher">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Jurgen_Umbrich">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Heiko_Paulheim">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Aldo_Gangemi">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Erdem_Eser_Ekinci">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Julius_Volz">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Isao_Kojima">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/WolframWoß">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Gerald_Reif">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Steven_Lynden">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Victoria_Uren">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Tim_Finin">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Maria-Esther_Vidal">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Andrew_Y.">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Denis_Krompaß">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Stefan_Conrad">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Marcel_Karnstedt">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Dimitrios-Emmanuel_Spanos">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Shu_Rong">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Giorgio_Orsi">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Bastian_Quilitz">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Tayfun_Gakmen_Halaas">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Axel-Cyrille">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Ali_Hasnain">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Steffen_Staab">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Mathias_Niepert">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Erhard_Rahm">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Carlo_Curino">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Georgi_Kobilarov">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Nur_Aini_Rakhmawati">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Siegfried_Handschuh">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Cristian_Pérez_de_Laborda">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Bernardo_Cuenca_Grau">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Enrico_Motta">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Jan_Hidders">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Philippe_Thiran">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Axel-Cyrille_Ngonga_Ngomo">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Tomas_Lampo">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Jennifer_Sleeman">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Matthias_Hert">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Vojtach_Svaitek">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Michael_Hausenblas">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Olaf_Gorlitz">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Tayfun_Gökmen_Halaç">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Simone_Paolo_Ponzetto">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Yunlong_Zhang">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Hans-Peter_Kriegel">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Periklis_Stavrou">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Martin_Blochl">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Samson_Tu">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Arnab_Dutta">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Christian_Bizer">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Cosmin_Stroe">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Connor">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Markus_Nentwig">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Katja_Hose">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Stephan_Baier">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Tomáš_Kliegr">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Yusuke_Tanimura">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Kristian_Koltho">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Ngonga_Ngomo">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Csongor_Nyulas">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Isabel_F._Cruz">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Daniel_Schwabe">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Oguz_Dikenelli">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Nenad_Stojanovic">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Khai_Nguyen">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Jan_Zemánek">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Edna_Ruckhaus">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Christian_Meilicke">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Ernesto_Jimenez-Ruiz">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Flavio_Palandri_Antonelli">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Ziya_Akar">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Andreas_Schwarte">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Abraham_Bernstein">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Danqi_Chen">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/creator">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+    <rdfs:comment xml:lang="en">Examples of a Creator include a person, an organization, or a service.</rdfs:comment>
+    <rdfs:domain rdf:parseType="Resource">
+    </rdfs:domain>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment xml:lang="en">An entity primarily responsible for making the resource.</rdfs:comment>
+    <rdfs:label xml:lang="en">Creator</rdfs:label>
+    <rdfs:domain rdf:resource="http://swrc.ontoware.org/ontology#Publication"/>
+    <rdfs:range rdf:resource="http://schema.org/Person"/>
+  </owl:NamedIndividual>
+  <skos:Concept rdf:about="http://purl.org/semsur/Ralf_Schenkel">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Raphael_Volz">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Akiyoshi_Matono">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Thanassis_Tiropanis">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Simon_Schenk">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Cosmin_Basca">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Andreas_Langegger">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/WolframWoay">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Volker_Tresp">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Nikolas_Mitrou">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Xing_Niu">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Arjen_P._de_Vries">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Soeren_Auer">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Valentina_Presutti">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Maribel_Acosta">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <dc:creator>
+      <skos:Concept rdf:about="http://purl.org/semsur/Julio_Castillo">
+        <skos:inScheme rdf:resource="http://schema.org/Person"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+      </skos:Concept>
+    </dc:creator>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Martin_Gaedke">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Jan_L._Top">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Xin_Wang">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Haofen_Wang">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <j.0:isCoAuthor rdf:resource="http://purl.org/semsur/Haofen_Wang"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Ryutaro_Ichise">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <j.0:isCoAuthor rdf:resource="http://purl.org/semsur/Ryutaro_Ichise"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Geert-Jan_Houben">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <j.0:isCoAuthor rdf:resource="http://purl.org/semsur/Geert-Jan_Houben"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Peter_Haase">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <j.0:isCoAuthor rdf:resource="http://purl.org/semsur/Peter_Haase"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Hugh_C">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <j.0:isCoAuthor rdf:resource="http://purl.org/semsur/Hugh_C"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Greg_Joiner">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <j.0:isCoAuthor rdf:resource="http://purl.org/semsur/Greg_Joiner"/>
+    <skos:inScheme rdf:resource="http://schema.org/Person"/>
+  </skos:Concept>
+</rdf:RDF>

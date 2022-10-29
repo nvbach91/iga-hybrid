@@ -1,0 +1,27 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://purl.oclc.org/NET/ldr/ns#"/>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ldr/ns#reutilization">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ldr/ns#"/>
+    <rdfs:comment xml:lang="en">General right of re-utilization</rdfs:comment>
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="http://purl.oclc.org/NET/ldr/ns#Reutilization">
+        <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ldr/ns#"/>
+        <rdfs:comment xml:lang="en">Right to make available to the public all or a substantial part of the contents of a database by the distribution of copies, by renting, by on-line or other forms of transmission</rdfs:comment>
+      </skos:ConceptScheme>
+    </skos:inScheme>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ldr/ns#publishDatabase">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ldr/ns#"/>
+    <rdfs:comment xml:lang="en">Make available a database in internet or by other means</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ldr/ns#Reutilization"/>
+  </skos:Concept>
+</rdf:RDF>

@@ -1,0 +1,48 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="https://w3id.org/arco/ontology/location"/>
+  <owl:ObjectProperty rdf:about="https://w3id.org/arco/ontology/location/hasOldTownAdministrativeType">
+    <rdfs:comment xml:lang="en">This property connects a historical center with information related to its administrative type.</rdfs:comment>
+    <rdfs:label xml:lang="en">Old town administrative type</rdfs:label>
+    <rdfs:domain rdf:resource="https://w3id.org/arco/ontology/location/OldTown"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="https://w3id.org/arco/ontology/location/OldTownAdmistrativeType">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/location"/>
+        <rdfs:label xml:lang="en">Old town administrative type</rdfs:label>
+        <rdfs:comment xml:lang="en">This class represents the information clarifying the administrative character of the old town, which may be: a chief town, a town fraction, an incorporated area or a locality.</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/location/Locality">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/location"/>
+    <rdfs:label xml:lang="en">Locality</rdfs:label>
+    <rdfs:comment xml:lang="en">This individual represents a specific type of administrative reference that characterizes the old town, that is the locality.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/location/OldTownAdmistrativeType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/location/TownFraction">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/location"/>
+    <rdfs:label xml:lang="en">Town fraction</rdfs:label>
+    <rdfs:comment xml:lang="en">This individual represents a specific type of administrative reference that characterizes the old town, i.e. the town fraction.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/location/OldTownAdmistrativeType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/location/ChiefTown">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/location"/>
+    <rdfs:label xml:lang="en">Chief town</rdfs:label>
+    <rdfs:comment xml:lang="en">This individual represents a specific type of administrative reference that characterizes an old town, that is the chief town.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/location/OldTownAdmistrativeType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/location/IncorporatedArea">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/location"/>
+    <rdfs:label xml:lang="en">Incorporated area</rdfs:label>
+    <rdfs:comment xml:lang="en">This individual represents a specific type of administrative reference that characterizes the old town, that is the denomination of 'incorporated area'.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/location/OldTownAdmistrativeType"/>
+  </skos:Concept>
+</rdf:RDF>

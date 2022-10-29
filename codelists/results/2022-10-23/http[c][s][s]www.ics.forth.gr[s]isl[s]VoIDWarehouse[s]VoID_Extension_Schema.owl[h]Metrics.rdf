@@ -1,0 +1,56 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://www.ics.forth.gr/isl/VoIDWarehouse/VoID_Extension_Schema.owl"/>
+  <owl:ObjectProperty rdf:about="http://www.ics.forth.gr/isl/VoIDWarehouse/VoID_Extension_Schema.owl#usesMetrics">
+    <rdfs:comment>A measurement is carried out by an agent using a specific metric according to one (or more) configurations over one (or more) datasets. Therefore, this property links an instance of measurement class with an instance of metrics class.</rdfs:comment>
+    <rdfs:label>uses Metrics</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.ics.forth.gr/isl/VoIDWarehouse/VoID_Extension_Schema.owl#Measurement"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://www.ics.forth.gr/isl/VoIDWarehouse/VoID_Extension_Schema.owl#Metrics">
+        <rdfs:isDefinedBy rdf:resource="http://www.ics.forth.gr/isl/VoIDWarehouse/VoID_Extension_Schema.owl"/>
+        <rdfs:label>Metrics</rdfs:label>
+        <rdfs:comment>A metric is an individual with a URI and is defined by a resource (e.g. the DOI of the scientific paper that defined that metric).</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://www.ics.forth.gr/isl/VoIDWarehouse/VoID_Extension_Schema.owl#complementarityFactor">
+    <rdfs:isDefinedBy rdf:resource="http://www.ics.forth.gr/isl/VoIDWarehouse/VoID_Extension_Schema.owl"/>
+    <skos:inScheme rdf:resource="http://www.ics.forth.gr/isl/VoIDWarehouse/VoID_Extension_Schema.owl#Metrics"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ics.forth.gr/isl/VoIDWarehouse/VoID_Extension_Schema.owl#commonUris">
+    <rdfs:isDefinedBy rdf:resource="http://www.ics.forth.gr/isl/VoIDWarehouse/VoID_Extension_Schema.owl"/>
+    <skos:inScheme rdf:resource="http://www.ics.forth.gr/isl/VoIDWarehouse/VoID_Extension_Schema.owl#Metrics"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ics.forth.gr/isl/VoIDWarehouse/VoID_Extension_Schema.owl#uniqueTriplesPercentage">
+    <rdfs:isDefinedBy rdf:resource="http://www.ics.forth.gr/isl/VoIDWarehouse/VoID_Extension_Schema.owl"/>
+    <skos:inScheme rdf:resource="http://www.ics.forth.gr/isl/VoIDWarehouse/VoID_Extension_Schema.owl#Metrics"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ics.forth.gr/isl/VoIDWarehouse/VoID_Extension_Schema.owl#commonLiteralsPercentage">
+    <rdfs:isDefinedBy rdf:resource="http://www.ics.forth.gr/isl/VoIDWarehouse/VoID_Extension_Schema.owl"/>
+    <skos:inScheme rdf:resource="http://www.ics.forth.gr/isl/VoIDWarehouse/VoID_Extension_Schema.owl#Metrics"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ics.forth.gr/isl/VoIDWarehouse/VoID_Extension_Schema.owl#averageDegreeIncrement">
+    <rdfs:isDefinedBy rdf:resource="http://www.ics.forth.gr/isl/VoIDWarehouse/VoID_Extension_Schema.owl"/>
+    <skos:inScheme rdf:resource="http://www.ics.forth.gr/isl/VoIDWarehouse/VoID_Extension_Schema.owl#Metrics"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ics.forth.gr/isl/VoIDWarehouse/VoID_Extension_Schema.owl#commonLiterals">
+    <rdfs:isDefinedBy rdf:resource="http://www.ics.forth.gr/isl/VoIDWarehouse/VoID_Extension_Schema.owl"/>
+    <skos:inScheme rdf:resource="http://www.ics.forth.gr/isl/VoIDWarehouse/VoID_Extension_Schema.owl#Metrics"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ics.forth.gr/isl/VoIDWarehouse/VoID_Extension_Schema.owl#uniqueTriples">
+    <rdfs:isDefinedBy rdf:resource="http://www.ics.forth.gr/isl/VoIDWarehouse/VoID_Extension_Schema.owl"/>
+    <skos:inScheme rdf:resource="http://www.ics.forth.gr/isl/VoIDWarehouse/VoID_Extension_Schema.owl#Metrics"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ics.forth.gr/isl/VoIDWarehouse/VoID_Extension_Schema.owl#commonUrisPercentage">
+    <rdfs:isDefinedBy rdf:resource="http://www.ics.forth.gr/isl/VoIDWarehouse/VoID_Extension_Schema.owl"/>
+    <skos:inScheme rdf:resource="http://www.ics.forth.gr/isl/VoIDWarehouse/VoID_Extension_Schema.owl#Metrics"/>
+  </skos:Concept>
+</rdf:RDF>

@@ -1,0 +1,110 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://reference.data.gov.uk/def/intervals"/>
+  <owl:ObjectProperty rdf:about="http://reference.data.gov.uk/def/intervals/monthOfYear">
+    <rdfs:comment xml:lang="en">The month of the year in which a contained instant or interval (of duration one month or less) occurs.</rdfs:comment>
+    <rdfs:label xml:lang="en">month of year</rdfs:label>
+    <rdfs:domain rdf:parseType="Resource">
+    </rdfs:domain>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://reference.data.gov.uk/def/intervals/MonthOfYear">
+        <rdfs:isDefinedBy rdf:resource="http://reference.data.gov.uk/def/intervals"/>
+        <rdfs:label xml:lang="en">month of year</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >A class for the months of a calendar year. A month of year is a recurring interval of about 12th of a year that re-occurs annually.</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://reference.data.gov.uk/def/intervals/September">
+    <rdfs:isDefinedBy rdf:resource="http://reference.data.gov.uk/def/intervals"/>
+    <rdfs:label xml:lang="en">September</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The month of September</rdfs:comment>
+    <skos:inScheme rdf:resource="http://reference.data.gov.uk/def/intervals/MonthOfYear"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://reference.data.gov.uk/def/intervals/June">
+    <rdfs:label xml:lang="en">June</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://reference.data.gov.uk/def/intervals"/>
+    <rdfs:label xml:lang="en">January</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The month of June</rdfs:comment>
+    <skos:inScheme rdf:resource="http://reference.data.gov.uk/def/intervals/MonthOfYear"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://reference.data.gov.uk/def/intervals/November">
+    <rdfs:isDefinedBy rdf:resource="http://reference.data.gov.uk/def/intervals"/>
+    <rdfs:label xml:lang="en">November</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The month of Novermber</rdfs:comment>
+    <skos:inScheme rdf:resource="http://reference.data.gov.uk/def/intervals/MonthOfYear"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://reference.data.gov.uk/def/intervals/February">
+    <rdfs:isDefinedBy rdf:resource="http://reference.data.gov.uk/def/intervals"/>
+    <rdfs:label xml:lang="en">February</rdfs:label>
+    <rdfs:comment xml:lang="en">The month of February</rdfs:comment>
+    <skos:inScheme rdf:resource="http://reference.data.gov.uk/def/intervals/MonthOfYear"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://reference.data.gov.uk/def/intervals/December">
+    <rdfs:isDefinedBy rdf:resource="http://reference.data.gov.uk/def/intervals"/>
+    <rdfs:label xml:lang="en">December</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The month of December</rdfs:comment>
+    <skos:inScheme rdf:resource="http://reference.data.gov.uk/def/intervals/MonthOfYear"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://reference.data.gov.uk/def/intervals/January">
+    <rdfs:isDefinedBy rdf:resource="http://reference.data.gov.uk/def/intervals"/>
+    <rdfs:label xml:lang="en">January</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The month of January</rdfs:comment>
+    <skos:inScheme rdf:resource="http://reference.data.gov.uk/def/intervals/MonthOfYear"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://reference.data.gov.uk/def/intervals/March">
+    <rdfs:isDefinedBy rdf:resource="http://reference.data.gov.uk/def/intervals"/>
+    <rdfs:label xml:lang="en">March</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The month of March</rdfs:comment>
+    <skos:inScheme rdf:resource="http://reference.data.gov.uk/def/intervals/MonthOfYear"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://reference.data.gov.uk/def/intervals/October">
+    <rdfs:isDefinedBy rdf:resource="http://reference.data.gov.uk/def/intervals"/>
+    <rdfs:label xml:lang="en">October</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The month of October</rdfs:comment>
+    <skos:inScheme rdf:resource="http://reference.data.gov.uk/def/intervals/MonthOfYear"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://reference.data.gov.uk/def/intervals/August">
+    <rdfs:isDefinedBy rdf:resource="http://reference.data.gov.uk/def/intervals"/>
+    <rdfs:label xml:lang="en">August</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The month of August</rdfs:comment>
+    <skos:inScheme rdf:resource="http://reference.data.gov.uk/def/intervals/MonthOfYear"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://reference.data.gov.uk/def/intervals/April">
+    <rdfs:isDefinedBy rdf:resource="http://reference.data.gov.uk/def/intervals"/>
+    <rdfs:label xml:lang="en">April</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The month of April</rdfs:comment>
+    <skos:inScheme rdf:resource="http://reference.data.gov.uk/def/intervals/MonthOfYear"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://reference.data.gov.uk/def/intervals/July">
+    <rdfs:isDefinedBy rdf:resource="http://reference.data.gov.uk/def/intervals"/>
+    <rdfs:label xml:lang="en">July</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The month of July</rdfs:comment>
+    <skos:inScheme rdf:resource="http://reference.data.gov.uk/def/intervals/MonthOfYear"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://reference.data.gov.uk/def/intervals/May">
+    <rdfs:isDefinedBy rdf:resource="http://reference.data.gov.uk/def/intervals"/>
+    <rdfs:label xml:lang="en">May</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The month of May</rdfs:comment>
+    <skos:inScheme rdf:resource="http://reference.data.gov.uk/def/intervals/MonthOfYear"/>
+  </skos:Concept>
+</rdf:RDF>

@@ -1,0 +1,30 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://semanticturkey.uniroma2.it/ns/mdr"/>
+  <owl:ObjectProperty rdf:about="http://semanticturkey.uniroma2.it/ns/mdr#sparqlEndpointLimitation">
+    <rdfs:comment xml:lang="en">relates a SPARQL endpoint to a resource describing some limitation of that endpoint</rdfs:comment>
+    <rdfs:label xml:lang="en">sparql endpoint limitation</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.w3.org/ns/sparql-service-description#Service"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://semanticturkey.uniroma2.it/ns/mdr#SparqlEndpointLimitation">
+        <rdfs:isDefinedBy rdf:resource="http://semanticturkey.uniroma2.it/ns/mdr"/>
+        <rdfs:label xml:lang="en">sparql endpoint limitation</rdfs:label>
+        <rdfs:comment xml:lang="en">a limitation of some SPARQL endpoint</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://semanticturkey.uniroma2.it/ns/mdr#noAggregation">
+    <rdfs:isDefinedBy rdf:resource="http://semanticturkey.uniroma2.it/ns/mdr"/>
+    <rdfs:label xml:lang="en">no aggregation</rdfs:label>
+    <rdfs:comment xml:lang="en">insufficient support for aggregation</rdfs:comment>
+    <skos:inScheme rdf:resource="http://semanticturkey.uniroma2.it/ns/mdr#SparqlEndpointLimitation"/>
+  </skos:Concept>
+</rdf:RDF>

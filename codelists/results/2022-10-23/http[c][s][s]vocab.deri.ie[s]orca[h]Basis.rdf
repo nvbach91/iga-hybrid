@@ -1,0 +1,41 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://vocab.deri.ie/orca"/>
+  <rdf:Property rdf:about="http://vocab.deri.ie/orca#hasBasis">
+    <rdfs:comment>Indicates the basis of the knowledge.</rdfs:comment>
+    <rdfs:label>hasBasis</rdfs:label>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://vocab.deri.ie/orca#Basis">
+        <rdfs:isDefinedBy rdf:resource="http://vocab.deri.ie/orca"/>
+        <rdfs:label>Basis</rdfs:label>
+        <rdfs:comment>Indicates the basis of the knowledge</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </rdf:Property>
+  <skos:Concept rdf:about="http://vocab.deri.ie/orca#Data">
+    <rdfs:isDefinedBy rdf:resource="http://vocab.deri.ie/orca"/>
+    <rdfs:label xml:lang="en">data</rdfs:label>
+    <rdfs:comment xml:lang="en">Indicates knowledge known by data.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://vocab.deri.ie/orca#Basis"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://vocab.deri.ie/orca#Unidentified">
+    <rdfs:isDefinedBy rdf:resource="http://vocab.deri.ie/orca"/>
+    <rdfs:label xml:lang="en">unidentified</rdfs:label>
+    <rdfs:comment xml:lang="en">Indicates knowledge whose basis is unidentified.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://vocab.deri.ie/orca#Basis"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://vocab.deri.ie/orca#Reasoning">
+    <rdfs:isDefinedBy rdf:resource="http://vocab.deri.ie/orca"/>
+    <rdfs:label xml:lang="en">reasoning</rdfs:label>
+    <rdfs:comment xml:lang="en">Indicates knowledge known by reasoning.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://vocab.deri.ie/orca#Basis"/>
+  </skos:Concept>
+</rdf:RDF>

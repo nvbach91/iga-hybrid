@@ -1,0 +1,42 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="https://saref.etsi.org/saref4watr/"/>
+  <skos:Concept rdf:about="https://saref.etsi.org/saref4watr/Humidity">
+    <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4watr/"/>
+    <rdfs:label xml:lang="en">Humidity</rdfs:label>
+    <rdfs:comment xml:lang="en">Property of the environment indicating the humidity.</rdfs:comment>
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="https://saref.etsi.org/saref4watr/EnvironmentalProperty">
+        <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4watr/"/>
+        <rdfs:label xml:lang="en">Environmental property</rdfs:label>
+        <rdfs:comment xml:lang="en">Class to group those properties related to the environment.</rdfs:comment>
+      </skos:ConceptScheme>
+    </skos:inScheme>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://saref.etsi.org/saref4watr/AtmosphericPressure">
+    <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4watr/"/>
+    <rdfs:label xml:lang="en">Atmospheric pressure</rdfs:label>
+    <rdfs:comment xml:lang="en">Property of the environment indicating the atmospheric pressure.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://saref.etsi.org/saref4watr/EnvironmentalProperty"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://saref.etsi.org/saref4watr/ExternalTemperature">
+    <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4watr/"/>
+    <rdfs:label xml:lang="en">External temperature</rdfs:label>
+    <rdfs:comment xml:lang="en">Property of the environment indicating the temperature.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://saref.etsi.org/saref4watr/EnvironmentalProperty"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://saref.etsi.org/saref4watr/Precipitation">
+    <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4watr/"/>
+    <rdfs:label xml:lang="en">Precipitation</rdfs:label>
+    <rdfs:comment xml:lang="en">Property of the environment indicating the precipitation.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://saref.etsi.org/saref4watr/EnvironmentalProperty"/>
+  </skos:Concept>
+</rdf:RDF>

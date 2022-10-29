@@ -1,0 +1,40 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://qudt.org/schema/qudt"/>
+  <skos:Concept rdf:about="http://qudt.org/schema/qudt/CT_FINITE">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/schema/qudt"/>
+    <rdfs:label>Finite Cardinality Type</rdfs:label>
+    <rdfs:comment rdf:datatype="http://qudt.org/schema/qudt/LatexString"
+    >Any set \\(X\\) with cardinality less than that of the natural numbers, or \\(| X | \\\\; &lt;  \\; | \\\\mathbb N | \\), is said to be a finite set.</rdfs:comment>
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="http://qudt.org/schema/qudt/CardinalityType">
+        <rdfs:isDefinedBy rdf:resource="http://qudt.org/schema/qudt"/>
+        <rdfs:label>Cardinality Type</rdfs:label>
+        <rdfs:comment rdf:datatype="http://qudt.org/schema/qudt/LatexString"
+        >In mathematics, the cardinality of a set is a measure of the number of elements of the set.  For example, the set \\(A = {2, 4, 6}\\) contains 3 elements, and therefore \\(A\\) has a cardinality of 3. There are two approaches to cardinality â€“ one which compares sets directly using bijections and injections, and another which uses cardinal numbers.</rdfs:comment>
+      </skos:ConceptScheme>
+    </skos:inScheme>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://qudt.org/schema/qudt/CT_UNCOUNTABLE">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/schema/qudt"/>
+    <rdfs:label>Uncountable Cardinality Type</rdfs:label>
+    <rdfs:comment rdf:datatype="http://qudt.org/schema/qudt/LatexString"
+    >Any set with cardinality greater than that of the natural numbers, or \\(| X | \\; &gt;  \\; | \\mathbb N | \\),  for example \\(| R| \\; =  \\;  c  \\; &gt; |\\mathbb N |\\), is said to be uncountable.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://qudt.org/schema/qudt/CardinalityType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://qudt.org/schema/qudt/CT_COUNTABLY-INFINITE">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/schema/qudt"/>
+    <rdfs:label>Countably Infinite Cardinality Type</rdfs:label>
+    <rdfs:comment rdf:datatype="http://qudt.org/schema/qudt/LatexString"
+    >A set of numbers is called countably infinite if there is a way to enumerate them.  Formally this is done with a bijection function that associates each number in the set with exactly one of the positive integers.  The set of all fractions is also countably infinite.  In other words, any set \\(X\\) that has the same cardinality as the set of the natural numbers, or \\(| X | \\; =  \\; | \\mathbb N | \\; = \\; \\aleph0\\), is said to be a countably infinite set.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://qudt.org/schema/qudt/CardinalityType"/>
+  </skos:Concept>
+</rdf:RDF>

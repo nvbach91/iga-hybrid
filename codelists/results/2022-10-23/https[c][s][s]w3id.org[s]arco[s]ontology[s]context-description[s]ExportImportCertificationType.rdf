@@ -1,0 +1,55 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="https://w3id.org/arco/ontology/context-description"/>
+  <owl:ObjectProperty rdf:about="https://w3id.org/arco/ontology/context-description/hasExportImportCertificationType">
+    <rdfs:comment xml:lang="en">This property relates a import-export certification of a cultural entity to its type (i.e. delivery confirmation certification, free movement certification etc).</rdfs:comment>
+    <rdfs:label xml:lang="en">has export import certification type</rdfs:label>
+    <rdfs:domain rdf:resource="https://w3id.org/arco/ontology/context-description/ExportImportCertification"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="https://w3id.org/arco/ontology/context-description/ExportImportCertificationType">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/context-description"/>
+        <rdfs:label xml:lang="en">Export import certification type</rdfs:label>
+        <rdfs:comment xml:lang="en">This class represents the type of export/import certification of a cultural property (e.g.: temporary movement certification, temporary export license, free movement certification, etc.).</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/context-description/TemporaryExportLicense">
+    <rdfs:label xml:lang="en">Temporary export license</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/context-description"/>
+    <rdfs:label xml:lang="en">unstable</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/context-description/ExportImportCertificationType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/context-description/DeliveryConfirmationCertification">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/context-description"/>
+    <rdfs:label xml:lang="en">Delivery confirmation certification</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/context-description/ExportImportCertificationType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/context-description/FreeMovementCertification">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/context-description"/>
+    <rdfs:label xml:lang="en">Free movement certification</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/context-description/ExportImportCertificationType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/context-description/TemporaryMovementCertification">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/context-description"/>
+    <rdfs:label xml:lang="en">Temporary movement certification</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/context-description/ExportImportCertificationType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/context-description/ImportConfirmationCertification">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/context-description"/>
+    <rdfs:label xml:lang="en">Import confirmation certification</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/context-description/ExportImportCertificationType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/context-description/PermanentExportLicense">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/context-description"/>
+    <rdfs:label xml:lang="en">Permanent export license</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/context-description/ExportImportCertificationType"/>
+  </skos:Concept>
+</rdf:RDF>

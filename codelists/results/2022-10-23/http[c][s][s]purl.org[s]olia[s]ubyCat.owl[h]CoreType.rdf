@@ -1,0 +1,41 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://purl.org/olia/ubyCat.owl"/>
+  <owl:ObjectProperty rdf:about="http://purl.org/olia/ubyCat.owl#hasCoreType">
+    <rdfs:label>coreType</rdfs:label>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://purl.org/olia/ubyCat.owl#CoreType">
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+        <rdfs:label>coreType</rdfs:label>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://purl.org/olia/ubyCat.owl#peripheral">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+    <rdfs:label>peripheral</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/olia/ubyCat.owl#CoreType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/olia/ubyCat.owl#extraThematic">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+    <rdfs:label>extraThematic</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/olia/ubyCat.owl#CoreType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/olia/ubyCat.owl#coreUnexpressed">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+    <rdfs:label>coreUnexpressed</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/olia/ubyCat.owl#CoreType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/olia/ubyCat.owl#core">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+    <rdfs:label>core</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/olia/ubyCat.owl#CoreType"/>
+  </skos:Concept>
+</rdf:RDF>

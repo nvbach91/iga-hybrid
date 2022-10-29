@@ -1,0 +1,42 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="https://w3id.org/idsa/core"/>
+  <owl:ObjectProperty rdf:about="https://w3id.org/idsa/core/configurationModelLogLevel">
+    <rdfs:comment xml:lang="en">Log level configuration for a Connector which is deployed using the Configuration Model</rdfs:comment>
+    <rdfs:label xml:lang="en">configuration model log level</rdfs:label>
+    <rdfs:domain rdf:resource="https://w3id.org/idsa/core/ConfigurationModel"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="https://w3id.org/idsa/core/LogLevel">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+        <rdfs:label xml:lang="en">Log Level</rdfs:label>
+        <rdfs:comment xml:lang="en">Instances of ids:LogLevel can be used to specify a log level. Currently this is only used by the Configuration Model.</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/NO_LOGGING">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">No Logging</rdfs:label>
+    <rdfs:comment xml:lang="en">No logging.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/LogLevel"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/DEBUG_LEVEL_LOGGING">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Debug Level Logging</rdfs:label>
+    <rdfs:comment xml:lang="en">Debug level logging.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/LogLevel"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/MINIMAL_LOGGING">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Minimal Logging</rdfs:label>
+    <rdfs:comment xml:lang="en">Minimal logging.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/LogLevel"/>
+  </skos:Concept>
+</rdf:RDF>

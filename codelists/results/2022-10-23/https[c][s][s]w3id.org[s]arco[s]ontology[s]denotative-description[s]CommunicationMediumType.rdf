@@ -1,0 +1,54 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="https://w3id.org/arco/ontology/denotative-description"/>
+  <owl:ObjectProperty rdf:about="https://w3id.org/arco/ontology/denotative-description/hasCommunicationMediumType">
+    <rdfs:comment xml:lang="en">This property relates a communication medium to its type (e.g.: verbal, singing, etc.)</rdfs:comment>
+    <rdfs:label xml:lang="en">has communication medium type</rdfs:label>
+    <rdfs:domain rdf:resource="https://w3id.org/arco/ontology/denotative-description/CommunicationMedium"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="https://w3id.org/arco/ontology/denotative-description/CommunicationMediumType">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/denotative-description"/>
+        <rdfs:label xml:lang="en">Communication medium type</rdfs:label>
+        <rdfs:comment xml:lang="en">This class represents the type of communication medium.</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/denotative-description/VerbalCommunication">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/denotative-description"/>
+    <rdfs:label xml:lang="en">Verbal communication</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/denotative-description/CommunicationMediumType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/denotative-description/ProxemicsCommunication">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/denotative-description"/>
+    <rdfs:label xml:lang="en">Proxemics communication</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/denotative-description/CommunicationMediumType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/denotative-description/SingingCommunication">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/denotative-description"/>
+    <rdfs:label xml:lang="en">Singing communication</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/denotative-description/CommunicationMediumType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/denotative-description/WrittenCommunication">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/denotative-description"/>
+    <rdfs:label xml:lang="en">Written communication</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/denotative-description/CommunicationMediumType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/denotative-description/InstrumentalCommunication">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/denotative-description"/>
+    <rdfs:label xml:lang="en">Instrumental communication</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/denotative-description/CommunicationMediumType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/denotative-description/KinesicCommunication">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/denotative-description"/>
+    <rdfs:label xml:lang="en">Kinesic communication</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/denotative-description/CommunicationMediumType"/>
+  </skos:Concept>
+</rdf:RDF>

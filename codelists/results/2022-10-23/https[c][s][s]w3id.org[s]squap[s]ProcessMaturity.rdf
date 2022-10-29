@@ -1,0 +1,156 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:j.0="https://w3id.org/squap/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="https://w3id.org/squap/"/>
+  <skos:Concept rdf:about="https://w3id.org/squap/ProcessMaturity/ProblemResolution">
+    <j.0:specializes>
+      <skos:Concept rdf:about="https://w3id.org/squap/ProcessMaturity/Supporting">
+        <rdfs:label>Supporting</rdfs:label>
+        <skos:inScheme>
+          <skos:ConceptScheme rdf:about="https://w3id.org/squap/ProcessMaturity">
+            <rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+            <rdfs:label>Process maturity</rdfs:label>
+            <rdfs:comment>The software quality characteristic meant as process maturity.</rdfs:comment>
+          </skos:ConceptScheme>
+        </skos:inScheme>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+      </skos:Concept>
+    </j.0:specializes>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/squap/ProcessMaturity/Supporting"/>
+    <rdfs:label>Problem resolution</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/squap/ProcessMaturity"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/squap/ProcessMaturity/Validation">
+    <j.0:specializes rdf:resource="https://w3id.org/squap/ProcessMaturity/Supporting"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/squap/ProcessMaturity/Supporting"/>
+    <rdfs:label>Validation</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/squap/ProcessMaturity"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/squap/ProcessMaturity/JointReview">
+    <j.0:specializes rdf:resource="https://w3id.org/squap/ProcessMaturity/Supporting"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/squap/ProcessMaturity/Supporting"/>
+    <rdfs:label>Joint review</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/squap/ProcessMaturity"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/squap/ProcessMaturity/Development">
+    <j.0:specializes>
+      <skos:Concept rdf:about="https://w3id.org/squap/ProcessMaturity/Primary">
+        <rdfs:label>Primary</rdfs:label>
+        <skos:inScheme rdf:resource="https://w3id.org/squap/ProcessMaturity"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+      </skos:Concept>
+    </j.0:specializes>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/squap/ProcessMaturity/Primary"/>
+    <rdfs:label>Development</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/squap/ProcessMaturity"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/squap/ProcessMaturity/Management">
+    <j.0:specializes>
+      <skos:Concept rdf:about="https://w3id.org/squap/ProcessMaturity/Organisational">
+        <rdfs:label>Organisational</rdfs:label>
+        <skos:inScheme rdf:resource="https://w3id.org/squap/ProcessMaturity"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+      </skos:Concept>
+    </j.0:specializes>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/squap/ProcessMaturity/Organisational"/>
+    <rdfs:label>Management</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/squap/ProcessMaturity"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/squap/ProcessMaturity/Acquisition">
+    <j.0:specializes rdf:resource="https://w3id.org/squap/ProcessMaturity/Primary"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/squap/ProcessMaturity/Primary"/>
+    <rdfs:label>Acquisition</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/squap/ProcessMaturity"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/squap/ProcessMaturity/Audit">
+    <j.0:specializes rdf:resource="https://w3id.org/squap/ProcessMaturity/Supporting"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/squap/ProcessMaturity/Supporting"/>
+    <rdfs:label>Audit</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/squap/ProcessMaturity"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/squap/ProcessMaturity/ConfigurationManagement">
+    <j.0:specializes rdf:resource="https://w3id.org/squap/ProcessMaturity/Supporting"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/squap/ProcessMaturity/Supporting"/>
+    <rdfs:label>Configuration management</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/squap/ProcessMaturity"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/squap/ProcessMaturity/QualityAssurance">
+    <j.0:specializes rdf:resource="https://w3id.org/squap/ProcessMaturity/Supporting"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/squap/ProcessMaturity/Supporting"/>
+    <rdfs:label>Quality assurance</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/squap/ProcessMaturity"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/squap/ProcessMaturity/Operation">
+    <j.0:specializes rdf:resource="https://w3id.org/squap/ProcessMaturity/Primary"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/squap/ProcessMaturity/Primary"/>
+    <rdfs:label>Operation</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/squap/ProcessMaturity"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/squap/ProcessMaturity/Improvement">
+    <j.0:specializes rdf:resource="https://w3id.org/squap/ProcessMaturity/Organisational"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/squap/ProcessMaturity/Organisational"/>
+    <rdfs:label>Improvement</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/squap/ProcessMaturity"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/squap/ProcessMaturity/Supply">
+    <j.0:specializes rdf:resource="https://w3id.org/squap/ProcessMaturity/Primary"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/squap/ProcessMaturity/Primary"/>
+    <rdfs:label>Supply</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/squap/ProcessMaturity"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/squap/ProcessMaturity/Verification">
+    <j.0:specializes rdf:resource="https://w3id.org/squap/ProcessMaturity/Supporting"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/squap/ProcessMaturity/Supporting"/>
+    <rdfs:label>Verification</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/squap/ProcessMaturity"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/squap/ProcessMaturity/Infrastructure">
+    <j.0:specializes rdf:resource="https://w3id.org/squap/ProcessMaturity/Organisational"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/squap/ProcessMaturity/Organisational"/>
+    <rdfs:label>Infrastructure</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/squap/ProcessMaturity"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/squap/ProcessMaturity/Maintenance">
+    <j.0:specializes rdf:resource="https://w3id.org/squap/ProcessMaturity/Primary"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/squap/ProcessMaturity/Primary"/>
+    <rdfs:label>Maintenance</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/squap/ProcessMaturity"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/squap/ProcessMaturity/Training">
+    <j.0:specializes rdf:resource="https://w3id.org/squap/ProcessMaturity/Organisational"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/squap/ProcessMaturity/Organisational"/>
+    <rdfs:label>Training</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/squap/ProcessMaturity"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/squap/ProcessMaturity/Documentation">
+    <j.0:specializes rdf:resource="https://w3id.org/squap/ProcessMaturity/Supporting"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/squap/ProcessMaturity/Supporting"/>
+    <rdfs:label>Documentation</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/squap/ProcessMaturity"/>
+  </skos:Concept>
+</rdf:RDF>

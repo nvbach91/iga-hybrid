@@ -1,0 +1,33 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="https://w3id.org/idsa/core"/>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/LOCAL_DATA_CONFIDENTIALITY_SECURE_ERASURE">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label>Local Data Confidentiality Secure Erasure</rdfs:label>
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="https://w3id.org/idsa/core/LocalDataConfidentialityGuarantee">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+        <rdfs:label xml:lang="en">Local data confidentiality</rdfs:label>
+        <rdfs:comment xml:lang="en">Means by which local data is protected.</rdfs:comment>
+      </skos:ConceptScheme>
+    </skos:inScheme>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/LOCAL_DATA_CONFIDENTIALITY_FULL_ENCRYPTION">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label>Local Data Confidentiality Full Encryption</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/LocalDataConfidentialityGuarantee"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/LOCAL_DATA_CONFIDENTIALITY_NONE">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label>Local Data Confidentiality None</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/LocalDataConfidentialityGuarantee"/>
+  </skos:Concept>
+</rdf:RDF>

@@ -1,0 +1,48 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://purl.org/spar/pso"/>
+  <skos:Concept rdf:about="http://purl.org/spar/pso/APC-fully-waived">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pso"/>
+    <rdfs:label xml:lang="en">APC fully waived</rdfs:label>
+    <rdfs:comment xml:lang="en">The status of an article for which payment of the article processing charge has been fully waived by the publisher.</rdfs:comment>
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="http://purl.org/spar/pso/ArticleProcessingChargeStatus">
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pso"/>
+        <rdfs:label xml:lang="en">article processing charge status</rdfs:label>
+        <rdfs:comment xml:lang="en">A state or condition that a document may have that relates to a fee levied by a publisher on an author or an institution to cover the cost of publishing an Open Access journal article.</rdfs:comment>
+      </skos:ConceptScheme>
+    </skos:inScheme>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/pso/APC-partially-waived">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pso"/>
+    <rdfs:label xml:lang="en">APC partially waived</rdfs:label>
+    <rdfs:comment xml:lang="en">The status of an article for which payment of the article processing charge has been partially waived by the publisher.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/pso/ArticleProcessingChargeStatus"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/pso/APC-paid">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pso"/>
+    <rdfs:label xml:lang="en">APC paid</rdfs:label>
+    <rdfs:comment xml:lang="en">The status of an article for which the article processing charge has been paid to the publisher by the author or his/her institution.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/pso/ArticleProcessingChargeStatus"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/pso/APC-not-required">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pso"/>
+    <rdfs:label xml:lang="en">APC not required</rdfs:label>
+    <rdfs:comment xml:lang="en">The status of an article for which an article processing charge is not required by the publisher.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/pso/ArticleProcessingChargeStatus"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/pso/APC-not-charged">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pso"/>
+    <rdfs:label xml:lang="en">APC not charged</rdfs:label>
+    <rdfs:comment xml:lang="en">The status of an article for which an article processing charge is not charged by the publisher.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/pso/ArticleProcessingChargeStatus"/>
+  </skos:Concept>
+</rdf:RDF>

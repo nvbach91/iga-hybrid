@@ -1,0 +1,71 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://softeng.polito.it/rsctx"/>
+  <owl:ObjectProperty rdf:about="http://softeng.polito.it/rsctx#hasMentalState">
+    <rdfs:comment xml:lang="en">This property indicates the mental state of a user.</rdfs:comment>
+    <rdfs:label xml:lang="en">has mental state</rdfs:label>
+    <rdfs:domain rdf:resource="http://ns.inria.fr/prissma/v2#User"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://softeng.polito.it/rsctx#MentalState">
+        <rdfs:isDefinedBy rdf:resource="http://softeng.polito.it/rsctx"/>
+        <rdfs:label xml:lang="en">Mental State</rdfs:label>
+        <rdfs:comment xml:lang="en">A mental condition in which the qualities of a state are relatively constant even though the state itself may be dynamic, such as depression, cognitive load, nervousness.
+
+WARNING The possible values are represented as individuals while in the GUMO ontology are classes.</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://softeng.polito.it/rsctx#cognitiveLoad">
+    <rdfs:isDefinedBy rdf:resource="http://softeng.polito.it/rsctx"/>
+    <rdfs:label xml:lang="en">cognitive load</rdfs:label>
+    <skos:inScheme rdf:resource="http://softeng.polito.it/rsctx#MentalState"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://softeng.polito.it/rsctx#psychopathy">
+    <rdfs:isDefinedBy rdf:resource="http://softeng.polito.it/rsctx"/>
+    <rdfs:label xml:lang="en">psychopathy</rdfs:label>
+    <skos:inScheme rdf:resource="http://softeng.polito.it/rsctx#MentalState"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://softeng.polito.it/rsctx#nervousness">
+    <rdfs:isDefinedBy rdf:resource="http://softeng.polito.it/rsctx"/>
+    <rdfs:label xml:lang="en">nervousness</rdfs:label>
+    <skos:inScheme rdf:resource="http://softeng.polito.it/rsctx#MentalState"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://softeng.polito.it/rsctx#trance">
+    <rdfs:isDefinedBy rdf:resource="http://softeng.polito.it/rsctx"/>
+    <rdfs:label xml:lang="en">trance</rdfs:label>
+    <skos:inScheme rdf:resource="http://softeng.polito.it/rsctx#MentalState"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://softeng.polito.it/rsctx#depression">
+    <rdfs:isDefinedBy rdf:resource="http://softeng.polito.it/rsctx"/>
+    <rdfs:label xml:lang="en">depression</rdfs:label>
+    <skos:inScheme rdf:resource="http://softeng.polito.it/rsctx#MentalState"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://softeng.polito.it/rsctx#hypnosis">
+    <rdfs:isDefinedBy rdf:resource="http://softeng.polito.it/rsctx"/>
+    <rdfs:label xml:lang="en">hypnosis</rdfs:label>
+    <skos:inScheme rdf:resource="http://softeng.polito.it/rsctx#MentalState"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://softeng.polito.it/rsctx#trauma">
+    <rdfs:isDefinedBy rdf:resource="http://softeng.polito.it/rsctx"/>
+    <rdfs:label xml:lang="en">trauma</rdfs:label>
+    <skos:inScheme rdf:resource="http://softeng.polito.it/rsctx#MentalState"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://softeng.polito.it/rsctx#timePressure">
+    <rdfs:isDefinedBy rdf:resource="http://softeng.polito.it/rsctx"/>
+    <rdfs:label xml:lang="en">time pressure</rdfs:label>
+    <skos:inScheme rdf:resource="http://softeng.polito.it/rsctx#MentalState"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://softeng.polito.it/rsctx#irritation">
+    <rdfs:isDefinedBy rdf:resource="http://softeng.polito.it/rsctx"/>
+    <rdfs:label xml:lang="en">irritation</rdfs:label>
+    <skos:inScheme rdf:resource="http://softeng.polito.it/rsctx#MentalState"/>
+  </skos:Concept>
+</rdf:RDF>

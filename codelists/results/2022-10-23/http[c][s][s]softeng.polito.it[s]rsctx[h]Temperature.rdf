@@ -1,0 +1,74 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://softeng.polito.it/rsctx"/>
+  <owl:FunctionalProperty rdf:about="http://softeng.polito.it/rsctx#hasTemperature">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment xml:lang="en">This property indicates a symbolic value for the temperature (such as warm, cold, etc.).
+
+WARNING Although there was already a temperature class and a temperature property (hw:hasExteriorTemperature) in the WeatherOntology, temperature class has been redefined with values more general and not referred to the house (such as below room temperature). Thus this property has the redefined temperature class as a range.</rdfs:comment>
+    <rdfs:label xml:lang="en">has temperature</rdfs:label>
+    <rdfs:domain rdf:resource="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherState"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://softeng.polito.it/rsctx#Temperature">
+        <rdfs:isDefinedBy rdf:resource="http://softeng.polito.it/rsctx"/>
+        <rdfs:label xml:lang="en">Temperature</rdfs:label>
+        <rdfs:comment xml:lang="en">It represents the exterior temperature by means of a symbolic value, such as warm or cool.
+
+TODO Map the individuals with temperature ranges?</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:FunctionalProperty>
+  <skos:Concept rdf:about="http://softeng.polito.it/rsctx#Pleasant">
+    <rdfs:isDefinedBy rdf:resource="http://softeng.polito.it/rsctx"/>
+    <rdfs:label xml:lang="en">Pleasant</rdfs:label>
+    <skos:inScheme rdf:resource="http://softeng.polito.it/rsctx#Temperature"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://softeng.polito.it/rsctx#Cool">
+    <rdfs:isDefinedBy rdf:resource="http://softeng.polito.it/rsctx"/>
+    <rdfs:label xml:lang="en">Cool</rdfs:label>
+    <skos:inScheme rdf:resource="http://softeng.polito.it/rsctx#Temperature"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://softeng.polito.it/rsctx#Warm">
+    <rdfs:isDefinedBy rdf:resource="http://softeng.polito.it/rsctx"/>
+    <rdfs:label xml:lang="en">Warm</rdfs:label>
+    <skos:inScheme rdf:resource="http://softeng.polito.it/rsctx#Temperature"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://softeng.polito.it/rsctx#VeryWarm">
+    <rdfs:isDefinedBy rdf:resource="http://softeng.polito.it/rsctx"/>
+    <rdfs:label xml:lang="en">Very Warm</rdfs:label>
+    <skos:inScheme rdf:resource="http://softeng.polito.it/rsctx#Temperature"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://softeng.polito.it/rsctx#Hot">
+    <rdfs:isDefinedBy rdf:resource="http://softeng.polito.it/rsctx"/>
+    <rdfs:label xml:lang="en">Hot</rdfs:label>
+    <skos:inScheme rdf:resource="http://softeng.polito.it/rsctx#Temperature"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://softeng.polito.it/rsctx#Cold">
+    <rdfs:isDefinedBy rdf:resource="http://softeng.polito.it/rsctx"/>
+    <rdfs:label xml:lang="en">Cold</rdfs:label>
+    <skos:inScheme rdf:resource="http://softeng.polito.it/rsctx#Temperature"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://softeng.polito.it/rsctx#Freezing">
+    <rdfs:isDefinedBy rdf:resource="http://softeng.polito.it/rsctx"/>
+    <rdfs:label xml:lang="en">Freezing</rdfs:label>
+    <skos:inScheme rdf:resource="http://softeng.polito.it/rsctx#Temperature"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://softeng.polito.it/rsctx#VeryCold">
+    <rdfs:isDefinedBy rdf:resource="http://softeng.polito.it/rsctx"/>
+    <rdfs:label xml:lang="en">Very Cold</rdfs:label>
+    <skos:inScheme rdf:resource="http://softeng.polito.it/rsctx#Temperature"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://softeng.polito.it/rsctx#Mild">
+    <rdfs:isDefinedBy rdf:resource="http://softeng.polito.it/rsctx"/>
+    <rdfs:label xml:lang="en">Mild</rdfs:label>
+    <skos:inScheme rdf:resource="http://softeng.polito.it/rsctx#Temperature"/>
+  </skos:Concept>
+</rdf:RDF>

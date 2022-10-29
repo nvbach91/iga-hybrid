@@ -1,0 +1,60 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://purl.org/acco/ns"/>
+  <owl:ObjectProperty rdf:about="http://purl.org/acco/ns#typeOfBed">
+    <rdfs:comment xml:lang="en">The type of bed to which the acco:BedDetail node refers, i.e. the type of bed available in the quantity indicated by acco:quantity.</rdfs:comment>
+    <rdfs:label xml:lang="en">type of bed (1..1)</rdfs:label>
+    <rdfs:domain rdf:resource="http://purl.org/acco/ns#BedDetails"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://purl.org/acco/ns#BedType">
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/acco/ns"/>
+        <rdfs:label xml:lang="en">Bed Type</rdfs:label>
+        <rdfs:comment xml:lang="en">A type of bed. This is used for indicating the bed or beds available in an accommodation. Use DBpedia URIs whenever possible.</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://purl.org/acco/ns#CaliforniaKing">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/acco/ns"/>
+    <rdfs:label xml:lang="en">California King or King Long bed (acco:BedType)</rdfs:label>
+    <rdfs:comment xml:lang="en">A California King or King Long bed. The actual dimension may vary by country, see http://en.wikipedia.org/wiki/Bed_size.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/acco/ns#BedType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/acco/ns#OlympicQueen">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/acco/ns"/>
+    <rdfs:label xml:lang="en">Olympic Queen bed (acco:BedType)</rdfs:label>
+    <rdfs:comment xml:lang="en">An Olympic Queen bed. The actual dimension may vary by country, see http://en.wikipedia.org/wiki/Bed_size.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/acco/ns#BedType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/acco/ns#Double">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/acco/ns"/>
+    <rdfs:label xml:lang="en">Double or full bed (acco:BedType)</rdfs:label>
+    <rdfs:comment xml:lang="en">A double bed. The actual dimension may vary by country, see http://en.wikipedia.org/wiki/Bed_size.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/acco/ns#BedType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/acco/ns#Queen">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/acco/ns"/>
+    <rdfs:label xml:lang="en">Queen King or Wide Double bed (acco:BedType)</rdfs:label>
+    <rdfs:comment xml:lang="en">A Queen King (UK/Ire.) or Wide Double (Japan) bed. The actual dimension may vary by country, see http://en.wikipedia.org/wiki/Bed_size.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/acco/ns#BedType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/acco/ns#King">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/acco/ns"/>
+    <rdfs:label xml:lang="en">King or Super King bed (acco:BedType)</rdfs:label>
+    <rdfs:comment xml:lang="en">An King or Super King bed. The actual dimension may vary by country, see http://en.wikipedia.org/wiki/Bed_size.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/acco/ns#BedType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/acco/ns#Single">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/acco/ns"/>
+    <rdfs:label xml:lang="en">Single or twin bed (acco:BedType)</rdfs:label>
+    <rdfs:comment xml:lang="en">A single bed. The actual dimension may vary by country, see http://en.wikipedia.org/wiki/Bed_size.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/acco/ns#BedType"/>
+  </skos:Concept>
+</rdf:RDF>

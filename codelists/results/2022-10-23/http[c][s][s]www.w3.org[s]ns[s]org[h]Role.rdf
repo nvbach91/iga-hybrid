@@ -1,6 +1,6 @@
 <rdf:RDF
-    xmlns:dct="http://purl.org/dc/terms/"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
     xmlns:dc="http://purl.org/dc/elements/1.1/"
     xmlns:owl="http://www.w3.org/2002/07/owl#"
     xmlns:dcmit="http://purl.org/dc/dcmitype/"
@@ -10,17 +10,15 @@
     xmlns:vann="http://purl.org/vocab/vann/">
   <owl:Ontology rdf:about="http://www.w3.org/ns/org#"/>
   <rdf:Property rdf:about="http://www.w3.org/ns/org#role">
-    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/org#"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdfs:comment xml:lang="en">Indicates the Role that the Agent plays in a Membership relationship with an Organization.</rdfs:comment>
     <rdfs:label xml:lang="en">role</rdfs:label>
     <rdfs:domain rdf:parseType="Resource">
-      <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/org#"/>
     </rdfs:domain>
     <rdfs:range>
       <skos:ConceptScheme rdf:about="http://www.w3.org/ns/org#Role">
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/org#"/>
-        <rdfs:label xml:lang="en">Denotes a role that a Person or other Agent can take in an organization. Instances of this class describe the abstract role; to denote a specific instance of a person playing that role in a specific organization use an instance of `org:Membership`. It is common for roles to be arranged in some taxonomic structure and we use SKOS to represent that. The normal SKOS lexical properties should be used when labelling the Role. Additional descriptive properties for the Role, such as a Salary band, may be added by extension vocabularies.</rdfs:label>
+        <rdfs:label xml:lang="en">Role</rdfs:label>
         <rdfs:comment xml:lang="en">Denotes a role that a Person or other Agent can take in an organization. Instances of this class describe the abstract role; to denote a specific instance of a person playing that role in a specific organization use an instance of `org:Membership`. It is common for roles to be arranged in some taxonomic structure and we use SKOS to represent that. The normal SKOS lexical properties should be used when labelling the Role. Additional descriptive properties for the Role, such as a Salary band, may be added by extension vocabularies.</rdfs:comment>
       </skos:ConceptScheme>
     </rdfs:range>

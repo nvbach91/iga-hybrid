@@ -1,0 +1,47 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://www.w3.org/ns/odrl/2/"/>
+  <skos:Concept rdf:about="http://www.w3.org/ns/odrl/2/All">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+    <rdfs:label xml:lang="en">All</rdfs:label>
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="http://www.w3.org/ns/odrl/2/PartyScope">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+        <rdfs:label xml:lang="en">Party Scope</rdfs:label>
+      </skos:ConceptScheme>
+    </skos:inScheme>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/ns/odrl/2/AllGroups">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+    <rdfs:label xml:lang="en">All Group Connections</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/PartyScope"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/ns/odrl/2/AllConnections">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+    <rdfs:label xml:lang="en">All First-Level Connections</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/PartyScope"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/ns/odrl/2/All2ndConnections">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+    <rdfs:label xml:lang="en">All Second-level Connections</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/PartyScope"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/ns/odrl/2/Group">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+    <rdfs:label xml:lang="en">Group</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/PartyScope"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/ns/odrl/2/Individual">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+    <rdfs:label xml:lang="en">Individual</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/PartyScope"/>
+  </skos:Concept>
+</rdf:RDF>

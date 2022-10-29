@@ -1,0 +1,42 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://purl.org/spar/scoro/"/>
+  <owl:ObjectProperty rdf:about="http://purl.org/spar/scoro/withEffort">
+    <rdfs:comment xml:lang="en">An object property connecting an agent's contribution with respect to a particular entity to the amount of effort exerted by this agent in making that contribution, defined by individuals of the class scoro:ContributionEffort.</rdfs:comment>
+    <rdfs:label xml:lang="en">with contribution effort</rdfs:label>
+    <rdfs:domain rdf:resource="http://purl.org/spar/scoro/ContributionSituation"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://purl.org/spar/scoro/ContributionEffort">
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+        <rdfs:label xml:lang="en">contribution effort</rdfs:label>
+        <rdfs:comment xml:lang="en">Defines the effort expended in making a contribution.</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://purl.org/spar/scoro/major-effort">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+    <rdfs:label xml:lang="en">contributed major effort</rdfs:label>
+    <rdfs:comment xml:lang="en">The contributor provided a major effort towards achieving this contribution.  (It would be unusual for more than three contributors to be described as providing major effort towards achieving any particular contribution).</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/scoro/ContributionEffort"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/scoro/minor-effort">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+    <rdfs:label xml:lang="en">contributed minor effort</rdfs:label>
+    <rdfs:comment xml:lang="en">The contributor provided a minor effort towards achieving this contribution. </rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/scoro/ContributionEffort"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/scoro/solo-effort">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+    <rdfs:label xml:lang="en">contributed all the effort</rdfs:label>
+    <rdfs:comment xml:lang="en">The contributor was the only person who provided effort in achieving this contribution, which was entirely due to this contributor.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/scoro/ContributionEffort"/>
+  </skos:Concept>
+</rdf:RDF>

@@ -1,0 +1,185 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://dati.beniculturali.it/cultural-ON/cultural-ON.owl"/>
+  <owl:ObjectProperty rdf:about="http://dati.beniculturali.it/cis/hasCISType">
+    <rdfs:comment xml:lang="en">The property is used to link a cultural institure or site to its type.</rdfs:comment>
+    <rdfs:label xml:lang="en">has type</rdfs:label>
+    <rdfs:domain rdf:resource="http://dati.beniculturali.it/cis/CulturalInstituteOrSite"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://dati.beniculturali.it/cis/CISType">
+        <rdfs:isDefinedBy rdf:resource="http://dati.beniculturali.it/cultural-ON/cultural-ON.owl"/>
+        <rdfs:label xml:lang="en">Cultural Institute or Site Type</rdfs:label>
+        <rdfs:comment xml:lang="en">This class represents the type of cultural institute or site.</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://dati.beniculturali.it/cis/CultReseachCenter">
+    <rdfs:comment xml:lang="en">An example of usage of the class cis:CultReseachCenter is the following:
+
+&lt;pre&gt;
+
+crc:Fondazione_Arnaldo_Pomodoro
+    a cis:CultReseachCenter ;
+    rdfs:label "Fondazione Arnaldo Pomodoro"@it ;
+    rdfs:label "Arnaldo Pomodoro Foundation"@en ;
+    cis:institutionalName "Fondazione Arnaldo Pomodoro"@it ;
+    cis:institutionalName "Arnaldo Pomodoro Foundation"@en ;
+    cis:ISILIdentifier "IT-EX0005" .
+
+&lt;/pre&gt;</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://dati.beniculturali.it/cultural-ON/cultural-ON.owl"/>
+    <rdfs:label xml:lang="en">Cultural Reseach and Promotion Center</rdfs:label>
+    <rdfs:comment xml:lang="en">This class represents cultural institutions that form so-called cultural research and promotion centers.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://dati.beniculturali.it/cis/CISType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://dati.beniculturali.it/cis/Library">
+    <rdfs:isDefinedBy rdf:resource="http://dati.beniculturali.it/cultural-ON/cultural-ON.owl"/>
+    <rdfs:label xml:lang="en">Library</rdfs:label>
+    <rdfs:comment xml:lang="en">It represents a specific type of Cultural Institute or Site; that is, Library</rdfs:comment>
+    <skos:inScheme rdf:resource="http://dati.beniculturali.it/cis/CISType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://dati.beniculturali.it/cis/Cinema">
+    <rdfs:comment xml:lang="en">An example of usage of the class cis:Cinema is the following:
+
+&lt;pre&gt;
+
+cissite:Cinema_Storico_Alberto_Sordi
+    a cis:CulturalInstituteOrSite, cis:Cinema ;
+    rdfs:label "Cinema storico Alberto Sordi" ;
+    cis:institutionalName "Cinema storico Alberto Sordi" ;
+    cis:ISILIdentifier "IT-EX0003" .
+
+&lt;/pre&gt;</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://dati.beniculturali.it/cultural-ON/cultural-ON.owl"/>
+    <rdfs:label xml:lang="en">Cinema</rdfs:label>
+    <rdfs:comment xml:lang="en">This class represents a cultural institute or site of type Cinema</rdfs:comment>
+    <skos:inScheme rdf:resource="http://dati.beniculturali.it/cis/CISType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://dati.beniculturali.it/cis/MonumentalArea">
+    <rdfs:comment xml:lang="en">An example of usage of the class cis:MonumentalArea is the following:
+
+&lt;pre&gt;
+
+cissite:COMPLESSO_MONUMENTALE_DI_VICOPISANO_ROCCA_DEL_BRUNELLESCHI_E_PALAZZO_PRETORIO
+    a cis:CulturalInstituteOrSite, cis:MonumentalArea ;
+    rdfs:label "COMPLESSO MONUMENTALE DI VICOPISANO: ROCCA DEL BRUNELLESCHI E PALAZZO PRETORIO" ;
+    cis:institutionalName "COMPLESSO MONUMENTALE DI VICOPISANO: ROCCA DEL BRUNELLESCHI E PALAZZO PRETORIOi" ;
+    cis:ISILIdentifier "IT-EX0007" .
+
+&lt;/pre&gt;</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://dati.beniculturali.it/cultural-ON/cultural-ON.owl"/>
+    <rdfs:label xml:lang="en">Monumental Area or Complex</rdfs:label>
+    <rdfs:comment xml:lang="en">It represents a specific type of Cultural Institute or Site; that is, Monumental Area</rdfs:comment>
+    <skos:inScheme rdf:resource="http://dati.beniculturali.it/cis/CISType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://dati.beniculturali.it/cis/Museum">
+    <rdfs:comment xml:lang="en">An example of usage of the class cis:Museum is the following:
+
+&lt;pre&gt;
+
+cissite:Museo_di_Capodimonte
+    a cis:CulturalInstituteOrSite, cis:Museum ;
+    rdfs:label "Museo di Capodimonte"; ;
+    cis:institutionalName "Museo di Capodimonte" ;
+    cis:ISILIdentifier "IT-EX0008" .
+
+&lt;/pre&gt;</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://dati.beniculturali.it/cultural-ON/cultural-ON.owl"/>
+    <rdfs:label xml:lang="en">Museum</rdfs:label>
+    <rdfs:comment xml:lang="en">It represents a specific type of Cultural Institute or Site; that is, Museum</rdfs:comment>
+    <skos:inScheme rdf:resource="http://dati.beniculturali.it/cis/CISType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://dati.beniculturali.it/cis/ArchaeologicalPark">
+    <rdfs:comment xml:lang="en">An example of usage of the class cis:ArchaeologicalPark is the following:
+
+&lt;pre&gt;
+
+cissite:Parco_archeologico_di_Liternum
+    a cis:CulturalInstituteOrSite, cis:ArchaeologicalPark ;
+    rdfs:label "Parco archeologico di Liternum" ;
+    cis:institutionalName "Parco archeologico di Liternum" ;
+    cis:ISILIdentifier "IT-EX0002" .
+
+&lt;/pre&gt;</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://dati.beniculturali.it/cultural-ON/cultural-ON.owl"/>
+    <rdfs:label xml:lang="en">Archaeological Park</rdfs:label>
+    <rdfs:comment xml:lang="en">It represents a specific type of Cultural Institute or SIte; that is, Archaeological Park</rdfs:comment>
+    <skos:inScheme rdf:resource="http://dati.beniculturali.it/cis/CISType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://dati.beniculturali.it/cis/Theatre">
+    <rdfs:comment xml:lang="en">An example of usage of the class cis:Theatre is the following:
+
+&lt;pre&gt;
+
+cissite:Teatro_Olimpico
+    a cis:CulturalInstituteOrSite, cis:Theatre ;
+    rdfs:label "Teatro Olimpico" ;
+    cis:name "Teatro Olimpico" ;
+    cis:ISILIdentifier "IT-EX0011" .
+
+&lt;/pre&gt;</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://dati.beniculturali.it/cultural-ON/cultural-ON.owl"/>
+    <rdfs:label xml:lang="en">Theatre</rdfs:label>
+    <rdfs:comment xml:lang="en">This class represents a cultural institute or site of type Theatre</rdfs:comment>
+    <skos:inScheme rdf:resource="http://dati.beniculturali.it/cis/CISType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://dati.beniculturali.it/cis/ArchaeologicalArea">
+    <rdfs:comment xml:lang="en">An example of usage of the class cis:ArchaeologicalArea is the following:
+
+&lt;pre&gt;
+
+cissite:Museo_delle_navi_romane_di_Nemi
+    a cis:CulturalInstituteOrSite, cis:ArchaeologicalArea ;
+    rdfs:label "Museo delle navi romane di Nemi" ;
+    cis:institutionalName "Museo delle navi romane di Nemi" ;
+    cis:ISILIdentifier "IT-EX0001" .
+ 
+&lt;/pre&gt;</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://dati.beniculturali.it/cultural-ON/cultural-ON.owl"/>
+    <rdfs:label xml:lang="en">Archaeological Area</rdfs:label>
+    <rdfs:comment xml:lang="en">It represents a specific type of Cultural Institute or SIte; that is, ArchaeologicalArea</rdfs:comment>
+    <skos:inScheme rdf:resource="http://dati.beniculturali.it/cis/CISType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://dati.beniculturali.it/cis/HolderOfArchive">
+    <rdfs:comment xml:lang="en">An example of usage of the class cis:HolderOfArchive is the following:
+
+&lt;pre&gt;
+
+cissite:Archivio_di_Stato_di_Oristano
+    a cis:CulturalInstituteOrSite, cis:HolderOfArchive ;
+    rdfs:label "Archivio di Stato di Oristano" ;
+    cis:institutionalName "Archivio di Stato di Oristano" ;
+    cis:ISILIdentifier "IT-EX0006" .
+
+&lt;/pre&gt;</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://dati.beniculturali.it/cultural-ON/cultural-ON.owl"/>
+    <rdfs:label xml:lang="en">Holder of Archives</rdfs:label>
+    <rdfs:comment xml:lang="en">This class represents a specific tyep of cultural institute or site, i.e.,  Holder of Archive</rdfs:comment>
+    <skos:inScheme rdf:resource="http://dati.beniculturali.it/cis/CISType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://dati.beniculturali.it/cis/CulturalLandscapeAsset">
+    <rdfs:comment xml:lang="en">An example of usage of the class cis:CulturalLandscapeAsset is the following:
+
+&lt;pre&gt;
+
+cissite:Costiera_Amalfitana
+ a cis:CulturalInstituteOrSite, cis:CulturalLandscapeAsset ; 
+    rdfs:label "Costiera Amalfitana"@it ;
+    cis:institutionalName "Costiera Amalfitana"@en ;
+    cis:ISILIdentifier "IT-EX0004" .
+
+&lt;/pre&gt;</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://dati.beniculturali.it/cultural-ON/cultural-ON.owl"/>
+    <rdfs:label xml:lang="en">Cultural Landscape Asset</rdfs:label>
+    <rdfs:comment xml:lang="en">This class represents a specific types of cultural institute or site, i.e., the cultural landscape asset.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://dati.beniculturali.it/cis/CISType"/>
+  </skos:Concept>
+</rdf:RDF>

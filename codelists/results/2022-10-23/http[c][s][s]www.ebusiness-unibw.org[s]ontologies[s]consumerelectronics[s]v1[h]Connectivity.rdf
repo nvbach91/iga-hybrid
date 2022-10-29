@@ -1,6 +1,6 @@
 <rdf:RDF
-    xmlns:dct="http://purl.org/dc/terms/"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
     xmlns:dc="http://purl.org/dc/elements/1.1/"
     xmlns:owl="http://www.w3.org/2002/07/owl#"
     xmlns:dcmit="http://purl.org/dc/dcmitype/"
@@ -10,13 +10,12 @@
     xmlns:vann="http://purl.org/vocab/vann/">
   <owl:Ontology rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
   <owl:ObjectProperty rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#hasConnectivity">
-    <rdfs:isDefinedBy rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
     <rdfs:comment xml:lang="en">Defines the possibilities to connect different kinds of electronical devices.</rdfs:comment>
     <rdfs:label xml:lang="en">connectivity</rdfs:label>
     <rdfs:range>
       <skos:ConceptScheme rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#Connectivity">
         <rdfs:isDefinedBy rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
-        <rdfs:label xml:lang="en">A generic term for linking devices to each other and allow sending data in one or both directions.</rdfs:label>
+        <rdfs:label xml:lang="en">Connectivity</rdfs:label>
         <rdfs:comment xml:lang="en">A generic term for linking devices to each other and allow sending data in one or both directions.</rdfs:comment>
       </skos:ConceptScheme>
     </rdfs:range>

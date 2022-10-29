@@ -1,0 +1,197 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://purl.org/spar/scoro/"/>
+  <skos:Concept rdf:about="http://purl.org/spar/scoro/departmental-administrator">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+    <rdfs:label xml:lang="en">departmental administrator</rdfs:label>
+    <rdfs:comment xml:lang="en">The role held by a person who is the administrator of a department within a larger organization, for example of a university academic department.</rdfs:comment>
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="http://purl.org/spar/scoro/OrganizationalRole">
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+        <rdfs:label xml:lang="en">organizational role</rdfs:label>
+        <rdfs:comment xml:lang="en">A role that an agent might hold with respect to an organization and its administration, particularly within an academic context.  Individual members of this class are used to specify particular roles.</rdfs:comment>
+      </skos:ConceptScheme>
+    </skos:inScheme>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/scoro/participant">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+    <rdfs:label xml:lang="en">participant</rdfs:label>
+    <rdfs:comment xml:lang="en">The role held by an agent who takes part in something, for example a conference, a private meeting or a public event.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/scoro/OrganizationalRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/scoro/employer">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+    <rdfs:label xml:lang="en">employer</rdfs:label>
+    <rdfs:comment xml:lang="en">The role held by an agent that employs one or more people to undertake work on that agent's behalf.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/scoro/OrganizationalRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/scoro/agent">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+    <rdfs:label xml:lang="en">agent</rdfs:label>
+    <rdfs:comment xml:lang="en">An agent that acts on behalf of another agent.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/scoro/OrganizationalRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/scoro/vice-chancellor">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+    <rdfs:label xml:lang="en">vice-chancellor</rdfs:label>
+    <rdfs:comment xml:lang="en">The role held by the chief executive officer of a university, responsible for directing and managing its business and academic activities.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/scoro/OrganizationalRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/scoro/employee">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+    <rdfs:label xml:lang="en">employee</rdfs:label>
+    <rdfs:comment xml:lang="en">The role held by a person employed for wages or a salary by an organization, to undertake work for that organization.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/scoro/OrganizationalRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/scoro/patent-holder">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+    <rdfs:label xml:lang="en">patent holder</rdfs:label>
+    <rdfs:comment xml:lang="en">The role held by an agent who holds a patent.
+
+[See also http://purl.org/spar/scoro/rights-holder and http://purl.org/spar/pro/copyright-owner].</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/scoro/OrganizationalRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/scoro/manager">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+    <rdfs:label xml:lang="en">manager</rdfs:label>
+    <rdfs:comment xml:lang="en">The role held by a person responsible for managing the day-to-day activities of an activity, enterprise or organization.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/scoro/OrganizationalRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/scoro/director">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+    <rdfs:label xml:lang="en">director</rdfs:label>
+    <rdfs:comment xml:lang="en">The role held by a person who is in charge of an organization or activity, for example a research institute or a dramatic performance.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/scoro/OrganizationalRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/scoro/member">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+    <rdfs:label xml:lang="en">member</rdfs:label>
+    <rdfs:comment xml:lang="en">The role held by an agent of belonging to a group or organization.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/scoro/OrganizationalRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/scoro/successor">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+    <rdfs:label xml:lang="en">successor</rdfs:label>
+    <rdfs:comment xml:lang="en">The relationship held by an entity that succeeds another, for example a new electron microscope that replaces an out-dated one, a research project that follows on from a preceding project, or a faculty member who succeeds a colleague as head of department.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/scoro/OrganizationalRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/scoro/contact-person">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+    <rdfs:label xml:lang="en">contact person</rdfs:label>
+    <rdfs:comment xml:lang="en">The role of a person who serves as the primary contact and information provider for third parties wishing to find out more about an organization or an activity.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/scoro/OrganizationalRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/scoro/chief-executive-officer">
+    <rdfs:label xml:lang="en">chief executive officer</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+    <rdfs:label xml:lang="en">CEO</rdfs:label>
+    <rdfs:comment xml:lang="en">The role held by a person who is the chief executive officer of an organization, responsible for directing and managing the business of that organization.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/scoro/OrganizationalRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/scoro/stakeholder">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+    <rdfs:label xml:lang="en">stakeholder</rdfs:label>
+    <rdfs:comment xml:lang="en">The role held by an agent with an interest or concern in something, for example the creation of a new university.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/scoro/OrganizationalRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/scoro/college-head">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+    <rdfs:label xml:lang="en">college head</rdfs:label>
+    <rdfs:comment xml:lang="en">The role held by a senior academic who heads a college and acts as its CEO.  Among the many alternative titles give to this role, the most common are President or Master of the college.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/scoro/OrganizationalRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/scoro/chief-technology-officer">
+    <rdfs:label xml:lang="en">chief technology officer</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+    <rdfs:label xml:lang="en">CTO</rdfs:label>
+    <rdfs:comment xml:lang="en">The role held by a person who is the chief technology officer of an organization, responsible for directing and managing technical developments for that organization.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/scoro/OrganizationalRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/scoro/non-academic-staff-member">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+    <rdfs:label xml:lang="en">non-academic staff member</rdfs:label>
+    <rdfs:comment xml:lang="en">The role of a person employed within a university department, school or institute who is not a member of the academic faculty.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/scoro/OrganizationalRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/scoro/affiliate">
+    <rdfs:comment xml:lang="en">The affiliation of a person to an organization or institution can be specified by using the property pro:relatesToEntity, as shown in the following example:
+
+foaf:Person scoro:holdsOrganizationalRole [ pro:withRole pro:affiliate ; pro:relatesToEntity _:aff ] .
+
+_:aff a foaf:Organization ; vcard:extended-address 'Department of Zoology, University of Oxford, United Kingdom' .</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+    <rdfs:label xml:lang="en">affiliate</rdfs:label>
+    <rdfs:comment xml:lang="en">The role an agent has of being affiliated to some organization or institution in a context of some entity or activity, for example a document, a project or an internship.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/scoro/OrganizationalRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/scoro/college-fellow">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+    <rdfs:label xml:lang="en">college fellow</rdfs:label>
+    <rdfs:comment xml:lang="en">The role held by an academic as a senior member of a college.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/scoro/OrganizationalRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/scoro/spokesperson">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+    <rdfs:label xml:lang="en">spokesperson</rdfs:label>
+    <rdfs:comment xml:lang="en">The role held by a person who makes statements on behalf of another individual, a group, a project or an institution</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/scoro/OrganizationalRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/scoro/partner">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+    <rdfs:label xml:lang="en">partner</rdfs:label>
+    <rdfs:comment xml:lang="en">The role held by a person who is a partner with one or more other people in an organization, project, endeavour, activity or sphere of common interest.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/scoro/OrganizationalRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/scoro/rights-holder">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+    <rdfs:label xml:lang="en">rights holder</rdfs:label>
+    <rdfs:comment xml:lang="en">The role held by an agent who holds the legal rights to a project or activity and its products and outcomes, for example the exploitation, licensing and intellectual property rights.  
+
+[See also http://purl.org/spar/scoro/patent-holder and http://purl.org/spar/pro/copyright-owner].</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/scoro/OrganizationalRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/scoro/organizer">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+    <rdfs:label xml:lang="en">organizer</rdfs:label>
+    <rdfs:comment xml:lang="en">The role held by an agent who organizes something, such as a conference, a private meeting or a public event.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/scoro/OrganizationalRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/scoro/programme-manager">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+    <rdfs:label xml:lang="en">programme manager</rdfs:label>
+    <rdfs:comment xml:lang="en">The role held by a person who is in charge of a programme of related activities or projects, for example on behalf of a funding agency.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/scoro/OrganizationalRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/scoro/possessor">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+    <rdfs:label xml:lang="en">possessor</rdfs:label>
+    <rdfs:comment xml:lang="en">The role held by an agent as possessor or owner of some entity such as an address or a telephone number.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/scoro/OrganizationalRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/scoro/administrator">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+    <rdfs:label xml:lang="en">administrator</rdfs:label>
+    <rdfs:comment xml:lang="en">The role held by an agent responsible for the day-to-day management and running of an organization or activity.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/scoro/OrganizationalRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/scoro/registrar">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+    <rdfs:label xml:lang="en">registrar</rdfs:label>
+    <rdfs:comment xml:lang="en">The role held by an agent responsible for maintaining official records, for example the records of student enrollment and academic standing held by a college or university, or the records of securities owned by a financial institution.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/scoro/OrganizationalRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/scoro/head-of-department">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+    <rdfs:label xml:lang="en">head of department</rdfs:label>
+    <rdfs:comment xml:lang="en">The role held by a person who is the chief executive officer of a department within a larger organization, for example a senior academic who is head of a university academic department.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/scoro/OrganizationalRole"/>
+  </skos:Concept>
+</rdf:RDF>

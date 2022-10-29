@@ -1,0 +1,30 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://softeng.polito.it/rsctx"/>
+  <skos:Concept rdf:about="http://softeng.polito.it/rsctx#WorkPlace">
+    <rdfs:isDefinedBy rdf:resource="http://softeng.polito.it/rsctx"/>
+    <rdfs:label xml:lang="en">Work Place</rdfs:label>
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="http://softeng.polito.it/rsctx#AnchorPoint">
+        <rdfs:isDefinedBy rdf:resource="http://softeng.polito.it/rsctx"/>
+        <rdfs:label xml:lang="en">Anchor Point</rdfs:label>
+        <rdfs:comment xml:lang="en">It is a key  location,  such  as  our  home  and  work  place,  that  we
+consider as "anchor" in our understanding of the geographic environment
+where we live. In general, an anchor-point is a frequently visited location or a location where one spends a lot of time.</rdfs:comment>
+      </skos:ConceptScheme>
+    </skos:inScheme>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://softeng.polito.it/rsctx#Home">
+    <rdfs:isDefinedBy rdf:resource="http://softeng.polito.it/rsctx"/>
+    <rdfs:label xml:lang="en">Home</rdfs:label>
+    <skos:inScheme rdf:resource="http://softeng.polito.it/rsctx#AnchorPoint"/>
+  </skos:Concept>
+</rdf:RDF>

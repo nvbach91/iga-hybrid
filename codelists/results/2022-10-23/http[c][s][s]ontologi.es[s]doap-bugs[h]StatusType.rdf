@@ -1,0 +1,62 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://ontologi.es/doap-bugs#"/>
+  <owl:ObjectProperty rdf:about="http://ontologi.es/doap-bugs#status">
+    <rdfs:label xml:lang="en">status</rdfs:label>
+    <rdfs:domain rdf:resource="http://ontologi.es/doap-bugs#Issue"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://ontologi.es/doap-bugs#StatusType">
+        <rdfs:isDefinedBy rdf:resource="http://ontologi.es/doap-bugs#"/>
+        <rdfs:label xml:lang="en">Status Type</rdfs:label>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://ontologi.es/doap-bugs#fixed">
+    <rdfs:isDefinedBy rdf:resource="http://ontologi.es/doap-bugs#"/>
+    <rdfs:label xml:lang="en">fixed</rdfs:label>
+    <skos:inScheme rdf:resource="http://ontologi.es/doap-bugs#StatusType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://ontologi.es/doap-bugs#third-party">
+    <rdfs:isDefinedBy rdf:resource="http://ontologi.es/doap-bugs#"/>
+    <rdfs:label xml:lang="en">third-party</rdfs:label>
+    <skos:inScheme rdf:resource="http://ontologi.es/doap-bugs#StatusType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://ontologi.es/doap-bugs#new">
+    <rdfs:isDefinedBy rdf:resource="http://ontologi.es/doap-bugs#"/>
+    <rdfs:label xml:lang="en">new</rdfs:label>
+    <skos:inScheme rdf:resource="http://ontologi.es/doap-bugs#StatusType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://ontologi.es/doap-bugs#wont-fix">
+    <rdfs:isDefinedBy rdf:resource="http://ontologi.es/doap-bugs#"/>
+    <rdfs:label xml:lang="en">won't fix</rdfs:label>
+    <skos:inScheme rdf:resource="http://ontologi.es/doap-bugs#StatusType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://ontologi.es/doap-bugs#in-progress">
+    <rdfs:isDefinedBy rdf:resource="http://ontologi.es/doap-bugs#"/>
+    <rdfs:label xml:lang="en">in progress</rdfs:label>
+    <skos:inScheme rdf:resource="http://ontologi.es/doap-bugs#StatusType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://ontologi.es/doap-bugs#confirmed">
+    <rdfs:isDefinedBy rdf:resource="http://ontologi.es/doap-bugs#"/>
+    <rdfs:label xml:lang="en">confirmed</rdfs:label>
+    <skos:inScheme rdf:resource="http://ontologi.es/doap-bugs#StatusType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://ontologi.es/doap-bugs#invalid">
+    <rdfs:isDefinedBy rdf:resource="http://ontologi.es/doap-bugs#"/>
+    <rdfs:label xml:lang="en">invalid</rdfs:label>
+    <skos:inScheme rdf:resource="http://ontologi.es/doap-bugs#StatusType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://ontologi.es/doap-bugs#works-for-me">
+    <rdfs:isDefinedBy rdf:resource="http://ontologi.es/doap-bugs#"/>
+    <rdfs:label xml:lang="en">works for me</rdfs:label>
+    <skos:inScheme rdf:resource="http://ontologi.es/doap-bugs#StatusType"/>
+  </skos:Concept>
+</rdf:RDF>

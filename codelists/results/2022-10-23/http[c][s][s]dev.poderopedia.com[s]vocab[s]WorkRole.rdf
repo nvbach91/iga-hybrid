@@ -1,0 +1,34 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://dev.poderopedia.com/vocab/schema"/>
+  <rdf:Property rdf:about="http://dev.poderopedia.com/vocab/hasWorkRole">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment xml:lang="en">Position or role of the person in this economic connection</rdfs:comment>
+    <rdfs:label xml:lang="en">Work role</rdfs:label>
+    <rdfs:domain rdf:resource="http://dev.poderopedia.com/vocab/WorkConnection"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://dev.poderopedia.com/vocab/WorkRole">
+        <rdfs:isDefinedBy rdf:resource="http://dev.poderopedia.com/vocab/schema"/>
+        <rdfs:label xml:lang="en">Work role</rdfs:label>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </rdf:Property>
+  <skos:Concept rdf:about="http://dev.poderopedia.com/vocab/cto">
+    <rdfs:isDefinedBy rdf:resource="http://dev.poderopedia.com/vocab/schema"/>
+    <rdfs:label xml:lang="en">CTO</rdfs:label>
+    <skos:inScheme rdf:resource="http://dev.poderopedia.com/vocab/WorkRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://dev.poderopedia.com/vocab/ceo">
+    <rdfs:isDefinedBy rdf:resource="http://dev.poderopedia.com/vocab/schema"/>
+    <rdfs:label xml:lang="en">CEO</rdfs:label>
+    <skos:inScheme rdf:resource="http://dev.poderopedia.com/vocab/WorkRole"/>
+  </skos:Concept>
+</rdf:RDF>

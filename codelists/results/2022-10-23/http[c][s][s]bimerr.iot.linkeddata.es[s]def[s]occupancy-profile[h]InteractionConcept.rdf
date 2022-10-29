@@ -1,0 +1,30 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://bimerr.iot.linkeddata.es/def/occupancy-profile#"/>
+  <skos:Concept rdf:about="http://bimerr.iot.linkeddata.es/def/occupancy-profile#TurnOn">
+    <rdfs:isDefinedBy rdf:resource="http://bimerr.iot.linkeddata.es/def/occupancy-profile#"/>
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="http://bimerr.iot.linkeddata.es/def/occupancy-profile#InteractionConcept">
+        <rdfs:isDefinedBy rdf:resource="http://bimerr.iot.linkeddata.es/def/occupancy-profile#"/>
+        <rdfs:label xml:lang="en">Interaction concept</rdfs:label>
+        <rdfs:comment xml:lang="en">Types of interactions between occupants and systems.</rdfs:comment>
+      </skos:ConceptScheme>
+    </skos:inScheme>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://bimerr.iot.linkeddata.es/def/occupancy-profile#TurnOff">
+    <rdfs:isDefinedBy rdf:resource="http://bimerr.iot.linkeddata.es/def/occupancy-profile#"/>
+    <skos:inScheme rdf:resource="http://bimerr.iot.linkeddata.es/def/occupancy-profile#InteractionConcept"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://bimerr.iot.linkeddata.es/def/occupancy-profile#SetToControlValue">
+    <rdfs:isDefinedBy rdf:resource="http://bimerr.iot.linkeddata.es/def/occupancy-profile#"/>
+    <skos:inScheme rdf:resource="http://bimerr.iot.linkeddata.es/def/occupancy-profile#InteractionConcept"/>
+  </skos:Concept>
+</rdf:RDF>

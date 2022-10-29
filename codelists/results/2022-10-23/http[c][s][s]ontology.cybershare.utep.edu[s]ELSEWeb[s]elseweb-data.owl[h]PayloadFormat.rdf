@@ -1,0 +1,63 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://ontology.cybershare.utep.edu/ELSEWeb/elseweb-data.owl"/>
+  <owl:ObjectProperty rdf:about="http://ontology.cybershare.utep.edu/ELSEWeb/elseweb-data.owl#hasPayloadFormat">
+    <rdfs:label>has payload format</rdfs:label>
+    <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/ELSEWeb/elseweb-data.owl#ContainerFormat"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://ontology.cybershare.utep.edu/ELSEWeb/elseweb-data.owl#PayloadFormat">
+        <rdfs:isDefinedBy rdf:resource="http://ontology.cybershare.utep.edu/ELSEWeb/elseweb-data.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >payload format</rdfs:label>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://provenanceweb.org/format/mime/image/vnd.wap.wbmp">
+    <rdfs:isDefinedBy rdf:resource="http://ontology.cybershare.utep.edu/ELSEWeb/elseweb-data.owl"/>
+    <skos:inScheme rdf:resource="http://ontology.cybershare.utep.edu/ELSEWeb/elseweb-data.owl#PayloadFormat"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://ontology.cybershare.utep.edu/ELSEWeb/elseweb-data.owl#GeoTIFF">
+    <rdfs:isDefinedBy rdf:resource="http://ontology.cybershare.utep.edu/ELSEWeb/elseweb-data.owl"/>
+    <skos:inScheme rdf:resource="http://ontology.cybershare.utep.edu/ELSEWeb/elseweb-data.owl#PayloadFormat"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://ontology.cybershare.utep.edu/ELSEWeb/elseweb-data.owl#esri-shapefile">
+    <rdfs:isDefinedBy rdf:resource="http://ontology.cybershare.utep.edu/ELSEWeb/elseweb-data.owl"/>
+    <skos:inScheme rdf:resource="http://ontology.cybershare.utep.edu/ELSEWeb/elseweb-data.owl#PayloadFormat"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://provenanceweb.org/format/mime/image/jpeg">
+    <rdfs:isDefinedBy rdf:resource="http://ontology.cybershare.utep.edu/ELSEWeb/elseweb-data.owl"/>
+    <skos:inScheme rdf:resource="http://ontology.cybershare.utep.edu/ELSEWeb/elseweb-data.owl#PayloadFormat"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://provenanceweb.org/format/mime/text/csv">
+    <rdfs:isDefinedBy rdf:resource="http://ontology.cybershare.utep.edu/ELSEWeb/elseweb-data.owl"/>
+    <skos:inScheme rdf:resource="http://ontology.cybershare.utep.edu/ELSEWeb/elseweb-data.owl#PayloadFormat"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://ontology.cybershare.utep.edu/ELSEWeb/elseweb-data.owl#hdf5">
+    <rdfs:isDefinedBy rdf:resource="http://ontology.cybershare.utep.edu/ELSEWeb/elseweb-data.owl"/>
+    <skos:inScheme rdf:resource="http://ontology.cybershare.utep.edu/ELSEWeb/elseweb-data.owl#PayloadFormat"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://provenanceweb.org/format/mime/image/tiff">
+    <rdfs:isDefinedBy rdf:resource="http://ontology.cybershare.utep.edu/ELSEWeb/elseweb-data.owl"/>
+    <skos:inScheme rdf:resource="http://ontology.cybershare.utep.edu/ELSEWeb/elseweb-data.owl#PayloadFormat"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://ontology.cybershare.utep.edu/ELSEWeb/elseweb-data.owl#esri-grid">
+    <rdfs:isDefinedBy rdf:resource="http://ontology.cybershare.utep.edu/ELSEWeb/elseweb-data.owl"/>
+    <skos:inScheme rdf:resource="http://ontology.cybershare.utep.edu/ELSEWeb/elseweb-data.owl#PayloadFormat"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://provenanceweb.org/format/mime/image/png">
+    <rdfs:isDefinedBy rdf:resource="http://ontology.cybershare.utep.edu/ELSEWeb/elseweb-data.owl"/>
+    <skos:inScheme rdf:resource="http://ontology.cybershare.utep.edu/ELSEWeb/elseweb-data.owl#PayloadFormat"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://provenanceweb.org/format/mime/image/gif">
+    <rdfs:isDefinedBy rdf:resource="http://ontology.cybershare.utep.edu/ELSEWeb/elseweb-data.owl"/>
+    <skos:inScheme rdf:resource="http://ontology.cybershare.utep.edu/ELSEWeb/elseweb-data.owl#PayloadFormat"/>
+  </skos:Concept>
+</rdf:RDF>

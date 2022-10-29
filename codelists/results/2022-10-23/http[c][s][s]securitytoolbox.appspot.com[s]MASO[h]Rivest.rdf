@@ -1,0 +1,32 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://securitytoolbox.appspot.com/MASO"/>
+  <skos:Concept rdf:about="http://securitytoolbox.appspot.com/MASO#RC5">
+    <rdfs:isDefinedBy rdf:resource="http://securitytoolbox.appspot.com/MASO"/>
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="http://securitytoolbox.appspot.com/MASO#Rivest">
+        <rdfs:isDefinedBy rdf:resource="http://securitytoolbox.appspot.com/MASO"/>
+      </skos:ConceptScheme>
+    </skos:inScheme>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://securitytoolbox.appspot.com/MASO#RC6">
+    <rdfs:isDefinedBy rdf:resource="http://securitytoolbox.appspot.com/MASO"/>
+    <skos:inScheme rdf:resource="http://securitytoolbox.appspot.com/MASO#Rivest"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://securitytoolbox.appspot.com/MASO#RC4">
+    <rdfs:isDefinedBy rdf:resource="http://securitytoolbox.appspot.com/MASO"/>
+    <skos:inScheme rdf:resource="http://securitytoolbox.appspot.com/MASO#Rivest"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://securitytoolbox.appspot.com/MASO#RC2">
+    <rdfs:isDefinedBy rdf:resource="http://securitytoolbox.appspot.com/MASO"/>
+    <skos:inScheme rdf:resource="http://securitytoolbox.appspot.com/MASO#Rivest"/>
+  </skos:Concept>
+</rdf:RDF>

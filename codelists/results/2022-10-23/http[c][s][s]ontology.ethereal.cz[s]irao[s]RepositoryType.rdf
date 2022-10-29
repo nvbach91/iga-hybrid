@@ -1,0 +1,34 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://ontology.ethereal.cz/irao"/>
+  <owl:ObjectProperty rdf:about="http://ontology.ethereal.cz/irao/hasRepositoryType">
+    <rdfs:comment xml:lang="en">This property specifies the repository type of a research artifact repository</rdfs:comment>
+    <rdfs:label xml:lang="en">has repository type</rdfs:label>
+    <rdfs:domain rdf:resource="http://ontology.ethereal.cz/irao/Repository"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://ontology.ethereal.cz/irao/RepositoryType">
+        <rdfs:isDefinedBy rdf:resource="http://ontology.ethereal.cz/irao"/>
+        <rdfs:label xml:lang="en">Repository Type</rdfs:label>
+        <rdfs:comment xml:lang="en">A repository type can be a knowledge base, knowledge graph, version control hosting, etc.</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://ontology.ethereal.cz/irao/repositorytype#KnowledgeBase">
+    <rdfs:isDefinedBy rdf:resource="http://ontology.ethereal.cz/irao"/>
+    <rdfs:label xml:lang="en">Knowledge base</rdfs:label>
+    <skos:inScheme rdf:resource="http://ontology.ethereal.cz/irao/RepositoryType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://ontology.ethereal.cz/irao/repositorytype#VersionControlHosting">
+    <rdfs:isDefinedBy rdf:resource="http://ontology.ethereal.cz/irao"/>
+    <rdfs:label xml:lang="en">Version control hosting</rdfs:label>
+    <skos:inScheme rdf:resource="http://ontology.ethereal.cz/irao/RepositoryType"/>
+  </skos:Concept>
+</rdf:RDF>

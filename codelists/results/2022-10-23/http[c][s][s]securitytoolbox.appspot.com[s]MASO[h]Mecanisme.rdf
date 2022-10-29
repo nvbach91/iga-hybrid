@@ -1,0 +1,52 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://securitytoolbox.appspot.com/MASO"/>
+  <owl:ObjectProperty rdf:about="http://securitytoolbox.appspot.com/MASO#estAssureMecanisme">
+    <rdfs:domain rdf:resource="http://securitytoolbox.appspot.com/MASO#Objectif"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://securitytoolbox.appspot.com/MASO#Mecanisme">
+        <rdfs:isDefinedBy rdf:resource="http://securitytoolbox.appspot.com/MASO"/>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://securitytoolbox.appspot.com/MASO#exigeMecanisme">
+    <rdfs:domain rdf:resource="http://securitytoolbox.appspot.com/MASO#Entite"/>
+    <rdfs:range rdf:resource="http://securitytoolbox.appspot.com/MASO#Mecanisme"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://securitytoolbox.appspot.com/MASO#utiliseMecanisme">
+    <rdfs:domain rdf:resource="http://securitytoolbox.appspot.com/MASO#Protocole"/>
+    <rdfs:range rdf:resource="http://securitytoolbox.appspot.com/MASO#Mecanisme"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://securitytoolbox.appspot.com/MASO#capableMecanisme">
+    <rdfs:domain rdf:resource="http://securitytoolbox.appspot.com/MASO#Entite"/>
+    <rdfs:range rdf:resource="http://securitytoolbox.appspot.com/MASO#Mecanisme"/>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://securitytoolbox.appspot.com/MASO#Authentification">
+    <rdfs:isDefinedBy rdf:resource="http://securitytoolbox.appspot.com/MASO"/>
+    <skos:inScheme rdf:resource="http://securitytoolbox.appspot.com/MASO#Mecanisme"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://securitytoolbox.appspot.com/MASO#Controle-dacces">
+    <rdfs:isDefinedBy rdf:resource="http://securitytoolbox.appspot.com/MASO"/>
+    <skos:inScheme rdf:resource="http://securitytoolbox.appspot.com/MASO#Mecanisme"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://securitytoolbox.appspot.com/MASO#identification">
+    <rdfs:isDefinedBy rdf:resource="http://securitytoolbox.appspot.com/MASO"/>
+    <skos:inScheme rdf:resource="http://securitytoolbox.appspot.com/MASO#Mecanisme"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://securitytoolbox.appspot.com/MASO#Autorisation">
+    <rdfs:isDefinedBy rdf:resource="http://securitytoolbox.appspot.com/MASO"/>
+    <skos:inScheme rdf:resource="http://securitytoolbox.appspot.com/MASO#Mecanisme"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://securitytoolbox.appspot.com/MASO#Gestion-cles">
+    <rdfs:isDefinedBy rdf:resource="http://securitytoolbox.appspot.com/MASO"/>
+    <skos:inScheme rdf:resource="http://securitytoolbox.appspot.com/MASO#Mecanisme"/>
+  </skos:Concept>
+</rdf:RDF>

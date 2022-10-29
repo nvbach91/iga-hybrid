@@ -1,0 +1,46 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://vivoweb.org/ontology/core"/>
+  <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#dateTimePrecision">
+    <rdfs:label>date/time precision</rdfs:label>
+    <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#DateTimeValue"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://vivoweb.org/ontology/core#DateTimeValuePrecision">
+        <rdfs:isDefinedBy rdf:resource="http://vivoweb.org/ontology/core"/>
+        <rdfs:label>Date/Time Value Precision</rdfs:label>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://vivoweb.org/ontology/core#yearMonthDayTimePrecision">
+    <rdfs:label>yearMonthDayTimePrecision</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://vivoweb.org/ontology/core"/>
+    <rdfs:label>year-month-day-time value</rdfs:label>
+    <skos:inScheme rdf:resource="http://vivoweb.org/ontology/core#DateTimeValuePrecision"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://vivoweb.org/ontology/core#yearMonthDayPrecision">
+    <rdfs:label>yearMonthDayPrecision</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://vivoweb.org/ontology/core"/>
+    <rdfs:label>year-month-day value</rdfs:label>
+    <skos:inScheme rdf:resource="http://vivoweb.org/ontology/core#DateTimeValuePrecision"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://vivoweb.org/ontology/core#yearPrecision">
+    <rdfs:label>year value</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://vivoweb.org/ontology/core"/>
+    <rdfs:label>yearPrecision</rdfs:label>
+    <skos:inScheme rdf:resource="http://vivoweb.org/ontology/core#DateTimeValuePrecision"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://vivoweb.org/ontology/core#yearMonthPrecision">
+    <rdfs:label>yearMonthPrecision</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://vivoweb.org/ontology/core"/>
+    <rdfs:label>year-month value</rdfs:label>
+    <skos:inScheme rdf:resource="http://vivoweb.org/ontology/core#DateTimeValuePrecision"/>
+  </skos:Concept>
+</rdf:RDF>

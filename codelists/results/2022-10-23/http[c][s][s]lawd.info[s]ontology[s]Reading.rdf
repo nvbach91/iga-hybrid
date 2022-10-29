@@ -1,0 +1,73 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://lawd.info/ontology/"/>
+  <owl:ObjectProperty rdf:about="http://lawd.info/ontology/readingType">
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://lawd.info/ontology/Reading">
+        <rdfs:isDefinedBy rdf:resource="http://lawd.info/ontology/"/>
+        <rdfs:comment xml:lang="en">(Experimental) The superclass for members of the readingScheme concept scheme. A Reading is a word, phrase, or larger chunk of text from a witness (or any observation of variance concerning the text, such as an omission or interpolation).</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://lawd.info/ontology/deletion">
+    <rdfs:isDefinedBy rdf:resource="http://lawd.info/ontology/"/>
+    <skos:broader>
+      <skos:Concept rdf:about="http://lawd.info/ontology/intervention">
+        <skos:broader>
+          <skos:Concept rdf:about="http://lawd.info/ontology/variant">
+            <skos:inScheme rdf:resource="http://lawd.info/ontology/Reading"/>
+            <rdfs:isDefinedBy rdf:resource="http://lawd.info/ontology/"/>
+          </skos:Concept>
+        </skos:broader>
+        <skos:inScheme rdf:resource="http://lawd.info/ontology/Reading"/>
+        <rdfs:isDefinedBy rdf:resource="http://lawd.info/ontology/"/>
+      </skos:Concept>
+    </skos:broader>
+    <skos:inScheme rdf:resource="http://lawd.info/ontology/Reading"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://lawd.info/ontology/transposition">
+    <rdfs:isDefinedBy rdf:resource="http://lawd.info/ontology/"/>
+    <skos:broader rdf:resource="http://lawd.info/ontology/variant"/>
+    <skos:inScheme rdf:resource="http://lawd.info/ontology/Reading"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://lawd.info/ontology/addition">
+    <rdfs:isDefinedBy rdf:resource="http://lawd.info/ontology/"/>
+    <skos:broader rdf:resource="http://lawd.info/ontology/variant"/>
+    <skos:inScheme rdf:resource="http://lawd.info/ontology/Reading"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://lawd.info/ontology/agreement">
+    <rdfs:isDefinedBy rdf:resource="http://lawd.info/ontology/"/>
+    <skos:inScheme rdf:resource="http://lawd.info/ontology/Reading"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://lawd.info/ontology/uncertainReading">
+    <rdfs:isDefinedBy rdf:resource="http://lawd.info/ontology/"/>
+    <skos:inScheme rdf:resource="http://lawd.info/ontology/Reading"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://lawd.info/ontology/conjecture">
+    <rdfs:isDefinedBy rdf:resource="http://lawd.info/ontology/"/>
+    <skos:inScheme rdf:resource="http://lawd.info/ontology/Reading"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://lawd.info/ontology/interpolation">
+    <rdfs:isDefinedBy rdf:resource="http://lawd.info/ontology/"/>
+    <skos:broader rdf:resource="http://lawd.info/ontology/variant"/>
+    <skos:inScheme rdf:resource="http://lawd.info/ontology/Reading"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://lawd.info/ontology/correction">
+    <rdfs:isDefinedBy rdf:resource="http://lawd.info/ontology/"/>
+    <skos:broader rdf:resource="http://lawd.info/ontology/intervention"/>
+    <skos:inScheme rdf:resource="http://lawd.info/ontology/Reading"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://lawd.info/ontology/omission">
+    <rdfs:isDefinedBy rdf:resource="http://lawd.info/ontology/"/>
+    <skos:broader rdf:resource="http://lawd.info/ontology/variant"/>
+    <skos:inScheme rdf:resource="http://lawd.info/ontology/Reading"/>
+  </skos:Concept>
+</rdf:RDF>

@@ -1,0 +1,29 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:j.0="http://purl.oclc.org/NET/ssnx/qu/qu#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#soil_thermal_conductivity">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind>
+      <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/qu/quantity#thermalConductivity">
+        <skos:inScheme>
+          <skos:ConceptScheme rdf:about="http://purl.oclc.org/NET/ssnx/qu/dim#ThermalConductivity">
+            <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+          </skos:ConceptScheme>
+        </skos:inScheme>
+        <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+      </skos:Concept>
+    </j.0:generalQuantityKind>
+    <rdfs:label>soil thermal conductivity</rdfs:label>
+    <rdfs:comment>Thermal conductivity is the constant k in the formula q = -k grad T where q is the heat transfer per unit time per unit area of a surface normal to the direction of transfer and grad T is the temperature gradient. Thermal conductivity is a property of the material.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#ThermalConductivity"/>
+  </skos:Concept>
+</rdf:RDF>

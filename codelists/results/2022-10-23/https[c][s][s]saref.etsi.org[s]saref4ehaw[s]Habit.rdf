@@ -1,0 +1,48 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="https://saref.etsi.org/saref4ehaw/"/>
+  <owl:ObjectProperty rdf:about="https://saref.etsi.org/saref4ehaw/hasHabit">
+    <rdfs:comment xml:lang="en">The habits of a user and a patient (as sub-class of user it also inherits habit), e.g. smoking or overeating.</rdfs:comment>
+    <rdfs:label xml:lang="en">has habit</rdfs:label>
+    <rdfs:domain rdf:resource="https://saref.etsi.org/saref4ehaw/User"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="https://saref.etsi.org/saref4ehaw/Habit">
+        <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4ehaw/"/>
+        <rdfs:label xml:lang="en">Habit</rdfs:label>
+        <rdfs:comment xml:lang="en">Defined for users (that can in particular be patients) habits modelling, e.g. smoking, alcohol drinking, overeating, undereating...</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="https://saref.etsi.org/saref4ehaw/AlcoholDrinking">
+    <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4ehaw/"/>
+    <rdfs:label xml:lang="en">Alcohol drinking</rdfs:label>
+    <rdfs:comment xml:lang="en">Alcohol drinking habit (User level).</rdfs:comment>
+    <skos:inScheme rdf:resource="https://saref.etsi.org/saref4ehaw/Habit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://saref.etsi.org/saref4ehaw/Smoking">
+    <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4ehaw/"/>
+    <rdfs:label xml:lang="en">Smoking</rdfs:label>
+    <rdfs:comment xml:lang="en">Smoking habit (User level).</rdfs:comment>
+    <skos:inScheme rdf:resource="https://saref.etsi.org/saref4ehaw/Habit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://saref.etsi.org/saref4ehaw/Overeating">
+    <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4ehaw/"/>
+    <rdfs:label xml:lang="en">Overeating</rdfs:label>
+    <rdfs:comment xml:lang="en">Overeating habit (User level).</rdfs:comment>
+    <skos:inScheme rdf:resource="https://saref.etsi.org/saref4ehaw/Habit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://saref.etsi.org/saref4ehaw/Undereating">
+    <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4ehaw/"/>
+    <rdfs:label xml:lang="en">Undereating</rdfs:label>
+    <rdfs:comment xml:lang="en">Undereating habit (User level).</rdfs:comment>
+    <skos:inScheme rdf:resource="https://saref.etsi.org/saref4ehaw/Habit"/>
+  </skos:Concept>
+</rdf:RDF>

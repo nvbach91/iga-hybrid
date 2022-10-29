@@ -1,0 +1,46 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://rdfunit.aksw.org/ns/core#"/>
+  <owl:ObjectProperty rdf:about="http://rdfunit.aksw.org/ns/core#appliesTo">
+    <rdfs:comment xml:lang="en">applies to describes the ontology used for terms in the Test.</rdfs:comment>
+    <rdfs:label xml:lang="en">appliesTo</rdfs:label>
+    <rdfs:domain rdf:resource="http://rdfunit.aksw.org/ns/core#TestCase"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://rdfunit.aksw.org/ns/core#TestAppliesTo">
+        <rdfs:isDefinedBy rdf:resource="http://rdfunit.aksw.org/ns/core#"/>
+        <rdfs:label xml:lang="en">TestAppliesTo</rdfs:label>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://rdfunit.aksw.org/ns/core#Dataset">
+    <rdfs:isDefinedBy rdf:resource="http://rdfunit.aksw.org/ns/core#"/>
+    <rdfs:label xml:lang="en">Dataset</rdfs:label>
+    <rdfs:comment xml:lang="en">Dataset: When the tests applies to a dataset only (i.e. a SPARQL Endpoint)</rdfs:comment>
+    <skos:inScheme rdf:resource="http://rdfunit.aksw.org/ns/core#TestAppliesTo"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://rdfunit.aksw.org/ns/core#Schema">
+    <rdfs:isDefinedBy rdf:resource="http://rdfunit.aksw.org/ns/core#"/>
+    <rdfs:label xml:lang="en">Schema</rdfs:label>
+    <skos:inScheme rdf:resource="http://rdfunit.aksw.org/ns/core#TestAppliesTo"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://rdfunit.aksw.org/ns/core#Application">
+    <rdfs:isDefinedBy rdf:resource="http://rdfunit.aksw.org/ns/core#"/>
+    <rdfs:label xml:lang="en">Application</rdfs:label>
+    <rdfs:comment xml:lang="en">Application: When the tests are specific to an application only</rdfs:comment>
+    <skos:inScheme rdf:resource="http://rdfunit.aksw.org/ns/core#TestAppliesTo"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://rdfunit.aksw.org/ns/core#EnrichedSchema">
+    <rdfs:isDefinedBy rdf:resource="http://rdfunit.aksw.org/ns/core#"/>
+    <rdfs:label xml:lang="en">EnrichedSchema</rdfs:label>
+    <rdfs:comment xml:lang="en">EnrichedSchema: When the tests applies to an ontology / vocabulary enriched with external (semi-)automatic approaches</rdfs:comment>
+    <skos:inScheme rdf:resource="http://rdfunit.aksw.org/ns/core#TestAppliesTo"/>
+  </skos:Concept>
+</rdf:RDF>

@@ -1,0 +1,198 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="https://w3id.org/arco/ontology/denotative-description"/>
+  <owl:ObjectProperty rdf:about="https://w3id.org/arco/ontology/denotative-description/hasMeasurementType">
+    <rdfs:comment xml:lang="en">This property relates a measurement to its type.</rdfs:comment>
+    <rdfs:label xml:lang="en">has measurement type</rdfs:label>
+    <rdfs:domain rdf:resource="https://w3id.org/arco/ontology/denotative-description/Measurement"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="https://w3id.org/arco/ontology/denotative-description/MeasurementType">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/denotative-description"/>
+        <rdfs:label xml:lang="en">Measurement Type</rdfs:label>
+        <rdfs:comment xml:lang="en">This class represents the observed measurement type (width, height, diameter, etc).</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/denotative-description/EdgeCircumference">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/denotative-description"/>
+    <rdfs:label xml:lang="en">Edge circumference</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/denotative-description/MeasurementType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/denotative-description/Thickness">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/denotative-description"/>
+    <rdfs:label xml:lang="en">Thickness</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/denotative-description/MeasurementType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/denotative-description/Area">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/denotative-description"/>
+    <rdfs:label xml:lang="en">Area</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/denotative-description/MeasurementType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/denotative-description/HeightLengthWidth">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/denotative-description"/>
+    <rdfs:label xml:lang="en">Height x Length x Width</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/denotative-description/MeasurementType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/denotative-description/FrontTotalLength">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/denotative-description"/>
+    <rdfs:label xml:lang="en">Front total length</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/denotative-description/MeasurementType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/denotative-description/Height">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/denotative-description"/>
+    <rdfs:label xml:lang="en">Height</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/denotative-description/MeasurementType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/denotative-description/OccupiedStorageSpace">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/denotative-description"/>
+    <rdfs:label xml:lang="en">Occupied storage space</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/denotative-description/MeasurementType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/denotative-description/Capacity">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/denotative-description"/>
+    <rdfs:label xml:lang="en">Capacity</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/denotative-description/MeasurementType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/denotative-description/Length">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/denotative-description"/>
+    <rdfs:label xml:lang="en">Length</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/denotative-description/MeasurementType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/denotative-description/HeightWidthThickness">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/denotative-description"/>
+    <rdfs:label xml:lang="en">Height x Width x Thickness</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/denotative-description/MeasurementType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/denotative-description/HipCircumference">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/denotative-description"/>
+    <rdfs:label xml:lang="en">Hip circumference</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/denotative-description/MeasurementType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/denotative-description/DepthOrHeight">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/denotative-description"/>
+    <rdfs:label xml:lang="en">Depth / Height</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/denotative-description/MeasurementType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/denotative-description/CoveredArea">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/denotative-description"/>
+    <rdfs:label xml:lang="en">Covered area</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/denotative-description/MeasurementType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/denotative-description/MaximumTotalWidth">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/denotative-description"/>
+    <rdfs:label xml:lang="en">Maximum total width</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/denotative-description/MeasurementType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/denotative-description/BackWidth">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/denotative-description"/>
+    <rdfs:label xml:lang="en">Back Width</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/denotative-description/MeasurementType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/denotative-description/VariousMeasurements">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/denotative-description"/>
+    <rdfs:label xml:lang="en">Various misurements</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/denotative-description/MeasurementType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/denotative-description/Diameter">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/denotative-description"/>
+    <rdfs:label xml:lang="en">Diameter</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/denotative-description/MeasurementType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/denotative-description/VolumetricDiamensions">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/denotative-description"/>
+    <rdfs:label xml:lang="en">Volumetric dimensions</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/denotative-description/MeasurementType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/denotative-description/ExternalInternalLength">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/denotative-description"/>
+    <rdfs:label xml:lang="en">External / Internal length</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/denotative-description/MeasurementType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/denotative-description/Weight">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/denotative-description"/>
+    <rdfs:label xml:lang="en">Weight</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/denotative-description/MeasurementType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/denotative-description/MaximumTotalLength">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/denotative-description"/>
+    <rdfs:label xml:lang="en">Maximum total length</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/denotative-description/MeasurementType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/denotative-description/HeightLength">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/denotative-description"/>
+    <rdfs:label xml:lang="en">Height x Length</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/denotative-description/MeasurementType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/denotative-description/Volume">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/denotative-description"/>
+    <rdfs:label xml:lang="en">Volume</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/denotative-description/MeasurementType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/denotative-description/UndetectedMeasurements">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/denotative-description"/>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/denotative-description/MeasurementType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/denotative-description/Perimeter">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/denotative-description"/>
+    <rdfs:label xml:lang="en">Perimeter</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/denotative-description/MeasurementType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/denotative-description/Duration">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/denotative-description"/>
+    <rdfs:label xml:lang="en">Duration</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/denotative-description/MeasurementType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/denotative-description/StorageCapacity">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/denotative-description"/>
+    <rdfs:label xml:lang="en">Storage capacity</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/denotative-description/MeasurementType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/denotative-description/Width">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/denotative-description"/>
+    <rdfs:label xml:lang="en">Width</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/denotative-description/MeasurementType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/denotative-description/MaximumMinimumWidth">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/denotative-description"/>
+    <rdfs:label xml:lang="en">Maximum / minimum width</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/denotative-description/MeasurementType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/denotative-description/Circumference">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/denotative-description"/>
+    <rdfs:label xml:lang="en">Circumference</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/denotative-description/MeasurementType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/denotative-description/ChestCircumference">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/denotative-description"/>
+    <rdfs:label xml:lang="en">Chest Circumference</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/denotative-description/MeasurementType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/denotative-description/BackTotalLength">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/denotative-description"/>
+    <rdfs:label xml:lang="en">Back total length</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/denotative-description/MeasurementType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/denotative-description/WaistCircumference">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/denotative-description"/>
+    <rdfs:label xml:lang="en">Waist Circumference</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/denotative-description/MeasurementType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/denotative-description/Depth">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/denotative-description"/>
+    <rdfs:label xml:lang="en">Depth</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/denotative-description/MeasurementType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/denotative-description/Power">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/denotative-description"/>
+    <rdfs:label xml:lang="en">Power</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/denotative-description/MeasurementType"/>
+  </skos:Concept>
+</rdf:RDF>

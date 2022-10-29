@@ -1,0 +1,71 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/rlog#"/>
+  <owl:ObjectProperty rdf:about="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/rlog#level">
+    <rdfs:label xml:lang="en">logLevel</rdfs:label>
+    <rdfs:domain rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/rlog#Entry"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/rlog#Level">
+        <rdfs:isDefinedBy rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/rlog#"/>
+        <rdfs:label xml:lang="en">Log Level</rdfs:label>
+        <rdfs:comment xml:lang="en">look here: http://logging.apache.org/log4j/1.2/apidocs/org/apache/log4j/Level.html </rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/rlog#FATAL">
+    <rdfs:isDefinedBy rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/rlog#"/>
+    <rdfs:label xml:lang="en">FATAL</rdfs:label>
+    <rdfs:comment xml:lang="en">The FATAL level designates very severe error events that will presumably lead the application to abort.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/rlog#Level"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/rlog#INFO">
+    <rdfs:isDefinedBy rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/rlog#"/>
+    <rdfs:label xml:lang="en">INFO</rdfs:label>
+    <rdfs:comment xml:lang="en">The INFO level designates informational messages that highlight the progress of the application at coarse-grained level.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/rlog#Level"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/rlog#ALL">
+    <rdfs:isDefinedBy rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/rlog#"/>
+    <rdfs:label xml:lang="en">ALL</rdfs:label>
+    <rdfs:comment xml:lang="en">The ALL has the lowest possible rank and is intended to turn on all logging.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/rlog#Level"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/rlog#TRACE">
+    <rdfs:isDefinedBy rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/rlog#"/>
+    <rdfs:label xml:lang="en">TRACE</rdfs:label>
+    <rdfs:comment xml:lang="en">The TRACE Level designates finer-grained informational events than the DEBUG.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/rlog#Level"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/rlog#ERROR">
+    <rdfs:isDefinedBy rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/rlog#"/>
+    <rdfs:label xml:lang="en">ERROR</rdfs:label>
+    <rdfs:comment xml:lang="en">The ERROR level designates error events that might still allow the application to continue running.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/rlog#Level"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/rlog#OFF">
+    <rdfs:isDefinedBy rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/rlog#"/>
+    <rdfs:label xml:lang="en">OFF</rdfs:label>
+    <rdfs:comment xml:lang="en">The OFF has the highest possible rank and is intended to turn off logging.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/rlog#Level"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/rlog#DEBUG">
+    <rdfs:isDefinedBy rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/rlog#"/>
+    <rdfs:label xml:lang="en">DEBUG</rdfs:label>
+    <rdfs:comment xml:lang="en">The DEBUG Level designates fine-grained informational events that are most useful to debug an application.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/rlog#Level"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/rlog#WARN">
+    <rdfs:isDefinedBy rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/rlog#"/>
+    <rdfs:label xml:lang="en">WARN</rdfs:label>
+    <rdfs:comment xml:lang="en">The WARN level designates potentially harmful situations.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/rlog#Level"/>
+  </skos:Concept>
+</rdf:RDF>

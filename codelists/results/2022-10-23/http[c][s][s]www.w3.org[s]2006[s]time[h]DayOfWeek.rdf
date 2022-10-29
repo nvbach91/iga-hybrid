@@ -1,0 +1,53 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://bimerr.iot.linkeddata.es/def/occupancy-profile#"/>
+  <owl:FunctionalProperty rdf:about="http://bimerr.iot.linkeddata.es/def/occupancy-profile#hasDayOfWeek">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment xml:lang="en">Indicates which days of the week are behavioral drivers for an occupant.</rdfs:comment>
+    <rdfs:label xml:lang="en">has day of week</rdfs:label>
+    <rdfs:domain rdf:resource="http://bimerr.iot.linkeddata.es/def/occupancy-profile#Time"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://www.w3.org/2006/time#DayOfWeek">
+        <rdfs:isDefinedBy rdf:resource="http://bimerr.iot.linkeddata.es/def/occupancy-profile#"/>
+        <rdfs:label xml:lang="en">Day of week</rdfs:label>
+        <rdfs:comment xml:lang="en">The day of the week.</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:FunctionalProperty>
+  <skos:Concept rdf:about="http://www.w3.org/2006/time#Friday">
+    <rdfs:isDefinedBy rdf:resource="http://bimerr.iot.linkeddata.es/def/occupancy-profile#"/>
+    <skos:inScheme rdf:resource="http://www.w3.org/2006/time#DayOfWeek"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2006/time#Wednesday">
+    <rdfs:isDefinedBy rdf:resource="http://bimerr.iot.linkeddata.es/def/occupancy-profile#"/>
+    <skos:inScheme rdf:resource="http://www.w3.org/2006/time#DayOfWeek"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2006/time#Monday">
+    <rdfs:isDefinedBy rdf:resource="http://bimerr.iot.linkeddata.es/def/occupancy-profile#"/>
+    <skos:inScheme rdf:resource="http://www.w3.org/2006/time#DayOfWeek"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2006/time#Sunday">
+    <rdfs:isDefinedBy rdf:resource="http://bimerr.iot.linkeddata.es/def/occupancy-profile#"/>
+    <skos:inScheme rdf:resource="http://www.w3.org/2006/time#DayOfWeek"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2006/time#Tuesday">
+    <rdfs:isDefinedBy rdf:resource="http://bimerr.iot.linkeddata.es/def/occupancy-profile#"/>
+    <skos:inScheme rdf:resource="http://www.w3.org/2006/time#DayOfWeek"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2006/time#Thursday">
+    <rdfs:isDefinedBy rdf:resource="http://bimerr.iot.linkeddata.es/def/occupancy-profile#"/>
+    <skos:inScheme rdf:resource="http://www.w3.org/2006/time#DayOfWeek"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2006/time#Saturday">
+    <rdfs:isDefinedBy rdf:resource="http://bimerr.iot.linkeddata.es/def/occupancy-profile#"/>
+    <skos:inScheme rdf:resource="http://www.w3.org/2006/time#DayOfWeek"/>
+  </skos:Concept>
+</rdf:RDF>

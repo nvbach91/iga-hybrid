@@ -1,6 +1,6 @@
 <rdf:RDF
-    xmlns:dct="http://purl.org/dc/terms/"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
     xmlns:dc="http://purl.org/dc/elements/1.1/"
     xmlns:owl="http://www.w3.org/2002/07/owl#"
     xmlns:dcmit="http://purl.org/dc/dcmitype/"
@@ -18,6 +18,7 @@
         <skos:inScheme>
           <skos:ConceptScheme rdf:about="http://rdf.muninn-project.org/ontologies/military#MilitaryRank">
             <rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/military"/>
+            <rdfs:label xml:lang="en">Rank (Military)</rdfs:label>
           </skos:ConceptScheme>
         </skos:inScheme>
         <rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/military"/>
@@ -2169,14 +2170,9 @@
     <skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/military#MilitaryRank"/>
   </skos:Concept>
   <skos:Concept rdf:about="http://rdf.muninn-project.org/ontologies/military#heldRank">
-    <rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/military"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdfs:label xml:lang="en">Held Rank</rdfs:label>
-    <rdfs:domain>
-      <rdf:Description rdf:about="http://xmlns.com/foaf/spec/Person">
-        <rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/military"/>
-      </rdf:Description>
-    </rdfs:domain>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/spec/Person"/>
     <rdfs:range rdf:resource="http://rdf.muninn-project.org/ontologies/military#MilitaryRank"/>
   </skos:Concept>
   <skos:Concept rdf:about="http://rdf.muninn-project.org/ontologies/military#Rank_Chiliarch_Greece">
@@ -3374,14 +3370,9 @@
     <skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/military#MilitaryRank"/>
   </skos:Concept>
   <owl:DeprecatedProperty rdf:about="http://rdf.muninn-project.org/ontologies/military#toUnit">
-    <rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/military"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:label xml:lang="en">To Unit</rdfs:label>
-    <rdfs:domain>
-      <rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/military#PostToUnit">
-        <rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/military"/>
-      </rdf:Description>
-    </rdfs:domain>
+    <rdfs:domain rdf:resource="http://rdf.muninn-project.org/ontologies/military#PostToUnit"/>
     <rdfs:range rdf:resource="http://rdf.muninn-project.org/ontologies/military#MilitaryRank"/>
   </owl:DeprecatedProperty>
   <skos:Concept rdf:about="http://rdf.muninn-project.org/ontologies/military#Rank_Gefreiter_Russia">
@@ -3791,14 +3782,9 @@
     <skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/military#MilitaryRank"/>
   </skos:Concept>
   <skos:Concept rdf:about="http://rdf.muninn-project.org/ontologies/military#rankOf">
-    <rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/military"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
     <rdfs:label xml:lang="en">Rank used by</rdfs:label>
-    <rdfs:domain>
-      <rdf:Description rdf:about="http://www.w3.org/ns/org#Organization">
-        <rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/military"/>
-      </rdf:Description>
-    </rdfs:domain>
+    <rdfs:domain rdf:resource="http://www.w3.org/ns/org#Organization"/>
     <rdfs:range rdf:resource="http://rdf.muninn-project.org/ontologies/military#MilitaryRank"/>
   </skos:Concept>
   <skos:Concept rdf:about="http://rdf.muninn-project.org/ontologies/military#Rank_Daffadar_British_India">

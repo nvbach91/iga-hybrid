@@ -1,0 +1,36 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="https://saref.etsi.org/saref4ehaw/"/>
+  <owl:ObjectProperty rdf:about="https://saref.etsi.org/saref4ehaw/hasAgeCategory">
+    <rdfs:comment xml:lang="en">The age group of a health actor, e.g. old or young.</rdfs:comment>
+    <rdfs:label xml:lang="en">has age category</rdfs:label>
+    <rdfs:domain rdf:resource="https://saref.etsi.org/saref4ehaw/HealthActor"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="https://saref.etsi.org/saref4ehaw/AgeCategory">
+        <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4ehaw/"/>
+        <rdfs:label xml:lang="en">Age category</rdfs:label>
+        <rdfs:comment xml:lang="en">The age group of a health actor, e.g. old or young.</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="https://saref.etsi.org/saref4ehaw/Old">
+    <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4ehaw/"/>
+    <rdfs:label xml:lang="en">Old</rdfs:label>
+    <rdfs:comment xml:lang="en">Old, one user age category.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://saref.etsi.org/saref4ehaw/AgeCategory"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://saref.etsi.org/saref4ehaw/Young">
+    <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4ehaw/"/>
+    <rdfs:label xml:lang="en">Young</rdfs:label>
+    <rdfs:comment xml:lang="en">Young, one user age category.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://saref.etsi.org/saref4ehaw/AgeCategory"/>
+  </skos:Concept>
+</rdf:RDF>

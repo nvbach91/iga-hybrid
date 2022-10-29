@@ -1,0 +1,85 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="https://w3id.org/GConsent"/>
+  <owl:FunctionalProperty rdf:about="https://w3id.org/GConsent#hasStatus">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment xml:lang="en">Denotes the state or status of consent.</rdfs:comment>
+    <rdfs:label xml:lang="en">has status</rdfs:label>
+    <rdfs:domain rdf:resource="https://w3id.org/GConsent#Consent"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="https://w3id.org/GConsent#Status">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/GConsent"/>
+        <rdfs:label xml:lang="en">Status</rdfs:label>
+        <rdfs:comment xml:lang="en">Represents the status of consent for the data subject. This allows persisting the determination of the validatity or suitability of consent (as an entity or instance) for use in processing and other activities. Examples: consent is given, consent is requested but not given, consent was withdrawn.</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:FunctionalProperty>
+  <skos:Concept rdf:about="https://w3id.org/GConsent#ConsentStatusGivenByDelegation">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/GConsent"/>
+    <rdfs:label xml:lang="en">Given by Delegation</rdfs:label>
+    <rdfs:comment xml:lang="en">Indicates consent is given via delegation.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/GConsent#Status"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/GConsent#ConsentStatusRequested">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/GConsent"/>
+    <rdfs:label xml:lang="en">Requested</rdfs:label>
+    <rdfs:comment xml:lang="en">Indicates consent has been requested but has not been given (yet).</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/GConsent#Status"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/GConsent#ConsentStatusWithdrawn">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/GConsent"/>
+    <rdfs:label xml:lang="en">Withdrawn</rdfs:label>
+    <rdfs:comment xml:lang="en">Indicates consent has been withdrawn.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/GConsent#Status"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/GConsent#ConsentStatusUnknown">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/GConsent"/>
+    <rdfs:label xml:lang="en">Unknown</rdfs:label>
+    <rdfs:comment xml:lang="en">Indicates the consent status is unknown.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/GConsent#Status"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/GConsent#ConsentStatusNotGiven">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/GConsent"/>
+    <rdfs:label xml:lang="en">Not Given</rdfs:label>
+    <rdfs:comment xml:lang="en">Indicates that consent has not been given.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/GConsent#Status"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/GConsent#ConsentStatusRefused">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/GConsent"/>
+    <rdfs:label xml:lang="en">Refused</rdfs:label>
+    <rdfs:comment xml:lang="en">Indicates that consent has been refused (to be given).</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/GConsent#Status"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/GConsent#ConsentStatusExplicitlyGiven">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/GConsent"/>
+    <rdfs:label xml:lang="en">Explicitly Given</rdfs:label>
+    <rdfs:comment xml:lang="en">Indicates consent is explicitly given.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/GConsent#Status"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/GConsent#ConsentStatusExpired">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/GConsent"/>
+    <rdfs:label xml:lang="en">Expired</rdfs:label>
+    <rdfs:comment xml:lang="en">Indicates the consent has expired.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/GConsent#Status"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/GConsent#ConsentStatusInvalidated">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/GConsent"/>
+    <rdfs:label xml:lang="en">Invalidated</rdfs:label>
+    <rdfs:comment xml:lang="en">Indicates the consent has been invalidated.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/GConsent#Status"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/GConsent#ConsentStatusImplicitlyGiven">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/GConsent"/>
+    <rdfs:label xml:lang="en">Implicitly Given</rdfs:label>
+    <rdfs:comment xml:lang="en">Indicates consent is given via an implicit action or assumption.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/GConsent#Status"/>
+  </skos:Concept>
+</rdf:RDF>

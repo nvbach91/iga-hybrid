@@ -1,6 +1,6 @@
 <rdf:RDF
-    xmlns:dct="http://purl.org/dc/terms/"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
     xmlns:dc="http://purl.org/dc/elements/1.1/"
     xmlns:owl="http://www.w3.org/2002/07/owl#"
     xmlns:dcmit="http://purl.org/dc/dcmitype/"
@@ -10,17 +10,15 @@
     xmlns:vann="http://purl.org/vocab/vann/">
   <owl:Ontology rdf:about="http://schema.mobivoc.org/"/>
   <rdf:Property rdf:about="http://schema.mobivoc.org/validForUserGroup">
-    <rdfs:isDefinedBy rdf:resource="http://schema.mobivoc.org/"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdfs:comment xml:lang="en">Indicates that an entity is valid for a specific group of users.</rdfs:comment>
     <rdfs:label xml:lang="en">valid for user group</rdfs:label>
     <rdfs:domain rdf:parseType="Resource">
-      <rdfs:isDefinedBy rdf:resource="http://schema.mobivoc.org/"/>
     </rdfs:domain>
     <rdfs:range>
       <skos:ConceptScheme rdf:about="http://schema.mobivoc.org/UserGroup">
         <rdfs:isDefinedBy rdf:resource="http://schema.mobivoc.org/"/>
-        <rdfs:label xml:lang="en">A group of users having a common characteristic.</rdfs:label>
+        <rdfs:label xml:lang="en">User group</rdfs:label>
         <rdfs:comment xml:lang="en">A group of users having a common characteristic.</rdfs:comment>
       </skos:ConceptScheme>
     </rdfs:range>

@@ -1,0 +1,1011 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:j.0="http://purl.oclc.org/NET/ssnx/qu/qu#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#downwelling_radiative_flux_in_sea_water">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind>
+      <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux">
+        <skos:inScheme>
+          <skos:ConceptScheme rdf:about="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux">
+            <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+          </skos:ConceptScheme>
+        </skos:inScheme>
+        <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+      </skos:Concept>
+    </j.0:generalQuantityKind>
+    <rdfs:label>downwelling radiative flux in sea water</rdfs:label>
+    <rdfs:comment>Downwelling radiation is radiation from above. It does not mean "net downward". Radiative flux is the sum of shortwave and longwave radiative fluxes. When thought of as being incident on a surface, a radiative flux is sometimes called "irradiance". In addition, it is identical with the quantity measured by a cosine-collector light-meter and sometimes called "vector irradiance". In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#net_rate_of_absorption_of_shortwave_energy_in_atmosphere_layer">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>net rate of absorption of shortwave energy in atmosphere layer</rdfs:label>
+    <rdfs:comment>"shortwave" means shortwave radiation. "Layer" means any layer with upper and lower boundaries that have constant values in some vertical coordinate. There must be a vertical coordinate variable indicating the extent of the layer(s). If the layers are model layers, the vertical coordinate can be model_level_number, but it is recommended to specify a physical coordinate (in a scalar or auxiliary coordinate variable) as well. Net absorbed radiation is the difference between absorbed and emitted radiation.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_ocean_potential_energy_content">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>tendency of ocean potential energy content</rdfs:label>
+    <rdfs:comment> "Content" indicates a quantity per unit area.  Potential energy is the sum of the gravitational potential energy relative to the geoid and the centripetal potential energy. (The geopotential is the specific potential energy.)  "tendency_of_X" means derivative of X with respect to time. </rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#net_downward_shortwave_flux_in_air">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>net downward shortwave flux in air</rdfs:label>
+    <rdfs:comment>"shortwave" means shortwave radiation. "Downward" indicates a vector component which is positive when directed downward (negative upward). Net downward radiation is the difference between radiation from above (downwelling) and radiation from below (upwelling). In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#surface_upward_sensible_heat_flux">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind>
+      <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/qu/quantity#heatFlux">
+        <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+      </skos:Concept>
+    </j.0:generalQuantityKind>
+    <rdfs:label>surface upward sensible heat flux</rdfs:label>
+    <rdfs:comment>The surface called "surface" means the lower boundary of the atmosphere. "Upward" indicates a vector component which is positive when directed upward (negative downward). The surface sensible heat flux, also called "turbulent" heat flux, is the exchange of heat between the surface and the air by motion of air. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics. Unless indicated in the cell_methods attribute, a quantity is assumed to apply to the whole area of each horizontal grid box. Previously, the qualifier where_type was used to specify that the quantity applies only to the part of the grid box of the named type.  Names containing the where_type qualifier are deprecated and newly created data should use the cell_methods attribute to indicate the horizontal area to which the quantity applies.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#sound_intensity_in_water">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind>
+      <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/qu/quantity#soundIntensity">
+        <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+      </skos:Concept>
+    </j.0:generalQuantityKind>
+    <rdfs:label>sound intensity in water</rdfs:label>
+    <rdfs:comment>Sound intensity is the sound energy per unit time per unit area.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#temperature_flux_due_to_runoff_expressed_as_heat_flux_into_sea_water">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#heatFlux"/>
+    <rdfs:label>temperature flux due to runoff expressed as heat flux into sea water</rdfs:label>
+    <rdfs:comment> Runoff is the liquid water which drains from land. If not specified, "runoff" refers to the sum of surface runoff and subsurface drainage.  The quantity with standard name temperature_flux_due_to_runoff_expressed_as_heat_flux_into_sea_water is the heat carried by the transfer of water into the liquid ocean by the process of runoff. This quantity additonally includes melt water from sea ice and icebergs. It is calculated relative to the heat that would be transported by runoff water entering the sea at zero degrees Celsius.  It is calculated as the product QrunoffCpTrunoff, where Q runoff is the mass flux of liquid runoff entering the sea water (kg m-2 s-1), Cp is the specific heat capacity of water, and Trunoff is the temperature in degrees Celsius of the runoff water. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.  The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity  named by omitting the phrase. </rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#surface_downwelling_photosynthetic_radiative_flux_in_air">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>surface downwelling photosynthetic radiative flux in air</rdfs:label>
+    <rdfs:comment>The surface called "surface" means the lower boundary of the atmosphere. Downwelling radiation is radiation from above. It does not mean "net downward". Radiative flux is the sum of shortwave and longwave radiative fluxes. "Photosynthetic" radiation is the part of the spectrum which is used in photosynthesis e.g. 300-700 nm. The range of wavelengths could be specified precisely by the bounds of a coordinate of radiation_wavelength. When thought of as being incident on a surface, a radiative flux is sometimes called "irradiance". In addition, it is identical with the quantity measured by a cosine-collector light-meter and sometimes called "vector irradiance". In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#sound_intensity_in_air">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#soundIntensity"/>
+    <rdfs:label>sound intensity in air</rdfs:label>
+    <rdfs:comment>Sound intensity is the sound energy per unit time per unit area.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#heat_flux_into_sea_water_due_to_sea_ice_thermodynamics">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#heatFlux"/>
+    <rdfs:label>heat flux into sea water due to sea ice thermodynamics</rdfs:label>
+    <rdfs:comment> In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.  The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity  named by omitting the phrase.  "Sea ice thermodynamics" refers to the addition or subtraction of mass due to surface and basal fluxes, i.e., due to melting, sublimation and fusion.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#downward_heat_flux_in_sea_ice">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#heatFlux"/>
+    <rdfs:label>downward heat flux in sea ice</rdfs:label>
+    <rdfs:comment>"Downward" indicates a vector component which is positive when directed downward (negative upward). In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#heat_flux_into_sea_water_due_to_snow_thermodynamics">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#heatFlux"/>
+    <rdfs:label>heat flux into sea water due to snow thermodynamics</rdfs:label>
+    <rdfs:comment> In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.  The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity  named by omitting the phrase.  "Snow thermodynamics" refers to the addition or subtraction of mass due to surface and basal fluxes, i.e., due to melting, sublimation and fusion.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_kinetic_energy_content_of_atmosphere_layer_due_to_advection">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>tendency of kinetic energy content of atmosphere layer due to advection</rdfs:label>
+    <rdfs:comment>The specification of a physical process by the phrase due_to_process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. "tendency_of_X" means derivative of X with respect to time. "Content" indicates a quantity per unit area. "Layer" means any layer with upper and lower boundaries that have constant values in some vertical coordinate. There must be a vertical coordinate variable indicating the extent of the layer(s). If the layers are model layers, the vertical coordinate can be model_level_number, but it is recommended to specify a physical coordinate (in a scalar or auxiliary coordinate variable) as well.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_potential_energy_content_of_ocean_layer_due_to_diffusion">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>tendency of potential energy content of ocean layer due to diffusion</rdfs:label>
+    <rdfs:comment>The specification of a physical process by the phrase due_to_process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. "tendency_of_X" means derivative of X with respect to time. "Content" indicates a quantity per unit area. "Layer" means any layer with upper and lower boundaries that have constant values in some vertical coordinate. There must be a vertical coordinate variable indicating the extent of the layer(s). If the layers are model layers, the vertical coordinate can be model_level_number, but it is recommended to specify a physical coordinate (in a scalar or auxiliary coordinate variable) as well. Potential energy is the sum of the gravitational potential energy relative to the geoid and the centripetal potential energy. (The geopotential is the specific potential energy.)</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#minus_one_times_surface_upwelling_longwave_flux_in_air">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>minus one times surface upwelling longwave flux in air</rdfs:label>
+    <rdfs:comment>"Minus one times" means that the quantity described takes the opposite sign convention  to that for the quantity which has the same standard name apart from this phrase, i.e. the two quantities differ from one another by a factor of -1. The surface called "surface" means the lower boundary of the atmosphere. "longwave" means longwave radiation. Upwelling radiation is radiation from below. It does not mean "net upward". When thought of as being incident on a surface, a radiative flux is sometimes called "irradiance". In addition, it is identical with the quantity measured by a cosine-collector light-meter and sometimes called "vector irradiance". In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_ocean_potential_energy_content_due_to_background">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>tendency of ocean potential energy content due to background</rdfs:label>
+    <rdfs:comment> "Content" indicates a quantity per unit area.  Potential energy is the sum of the gravitational potential energy relative to the geoid and the centripetal potential energy. (The geopotential is the specific potential energy.)  "Due to background" means caused by a time invariant imposed field which may be either constant over the globe or spatially varying, depending on the ocean model used. The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity  named by omitting the phrase.  "tendency_of_X" means derivative of X with respect to time. </rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#upward_sea_ice_basal_heat_flux">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#heatFlux"/>
+    <rdfs:label>upward sea ice basal heat flux</rdfs:label>
+    <rdfs:comment>"Upward" indicates a vector component which is positive when directed upward (negative downward). The sea ice basal heat flux is the vertical heat flux (apart from radiation i.e. "diffusive") in sea water at the base of the sea ice. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#net_downward_radiative_flux_at_top_of_atmosphere_model">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>net downward radiative flux at top of atmosphere model</rdfs:label>
+    <rdfs:comment>Fluxes at the top_of_atmosphere_model differ from TOA fluxes only if the model TOA fluxes make some allowance for the atmosphere above the top of the model; if not, it is usual to give standard names with toa to the fluxes at the top of the model atmosphere. "Downward" indicates a vector component which is positive when directed downward (negative upward). Net downward radiation is the difference between radiation from above (downwelling) and radiation from below (upwelling). Radiative flux is the sum of shortwave and longwave radiative fluxes. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#downward_heat_flux_in_floating_ice">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#heatFlux"/>
+    <rdfs:label>downward heat flux in floating ice</rdfs:label>
+    <rdfs:comment>"Downward" indicates a vector component which is positive when directed downward (negative upward). In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.  "Floating ice" means any ice that is floating on water, e.g. on a sea or lake surface.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#downwelling_spherical_irradiance_in_sea_water">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>downwelling spherical irradiance in sea water</rdfs:label>
+    <rdfs:comment>Downwelling radiation is radiation from above. It does not mean "net downward". Spherical irradiance is the radiation incident on unit area of a hemispherical (or "2-pi") collector. It is sometimes called "scalar irradiance". The direction (up/downwelling) is specified. Radiation incident on a 4-pi collector has standard names of "omnidirectional spherical irradiance".</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tropopause_adjusted_shortwave_forcing">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>tropopause adjusted shortwave forcing</rdfs:label>
+    <rdfs:comment>"shortwave" means shortwave radiation. Adjusted forcing is the radiative flux change caused by an imposed change in radiative forcing agent (greenhouse gases, aerosol, solar radiation, etc.) after allowance for stratospheric temperature adjustment.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tropopause_net_downward_shortwave_flux">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>tropopause net downward shortwave flux</rdfs:label>
+    <rdfs:comment>"shortwave" means shortwave radiation. "Downward" indicates a vector component which is positive when directed downward (negative upward). Net downward radiation is the difference between radiation from above (downwelling) and radiation from below (upwelling). In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#surface_downwelling_photosynthetic_spherical_irradiance_in_sea_water">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>surface downwelling photosynthetic spherical irradiance in sea water</rdfs:label>
+    <rdfs:comment>The surface called "surface" means the lower boundary of the atmosphere. "Water" means water in all phases, including frozen i.e. ice and snow. Downwelling radiation is radiation from above. It does not mean "net downward". "Photosynthetic" radiation is the part of the spectrum which is used in photosynthesis e.g. 300-700 nm. The range of wavelengths could be specified precisely by the bounds of a coordinate of radiation_wavelength. Spherical irradiance is the radiation incident on unit area of a hemispherical (or "2-pi") collector. It is sometimes called "scalar irradiance". The direction (up/downwelling) is specified. Radiation incident on a 4-pi collector has standard names of "omnidirectional spherical irradiance".</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#toa_adjusted_shortwave_forcing">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>toa adjusted shortwave forcing</rdfs:label>
+    <rdfs:comment>"shortwave" means shortwave radiation. "toa" means top of atmosphere. Adjusted forcing is the radiative flux change caused by an imposed change in radiative forcing agent (greenhouse gases, aerosol, solar radiation, etc.) after allowance for stratospheric temperature adjustment.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#surface_net_upward_shortwave_flux">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>surface net upward shortwave flux</rdfs:label>
+    <rdfs:comment>The surface called "surface" means the lower boundary of the atmosphere. "shortwave" means shortwave radiation. "Upward" indicates a vector component which is positive when directed upward (negative downward). Net upward radiation is the difference between radiation from below (upwelling) and radiation from above (downwelling). In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#surface_upward_latent_heat_flux">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#heatFlux"/>
+    <rdfs:label>surface upward latent heat flux</rdfs:label>
+    <rdfs:comment>The surface called "surface" means the lower boundary of the atmosphere. "Upward" indicates a vector component which is positive when directed upward (negative downward). The surface latent heat flux is the exchange of heat between the surface and the air on account of evaporation (including sublimation). In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_dry_energy_content">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>tendency of atmosphere dry energy content</rdfs:label>
+    <rdfs:comment>"tendency_of_X" means derivative of X with respect to time. "Content" indicates a quantity per unit area. The "atmosphere content" of a quantity refers to the vertical integral from the surface to the top of the atmosphere. For the content between specified levels in the atmosphere, standard names including content_of_atmosphere_layer are used. Dry energy is the sum of dry static energy and kinetic energy. Dry static energy is the sum of enthalpy and potential energy (itself the sum of gravitational and centripetal potential energy). Enthalpy can be written either as (1) CpT, where Cp is heat capacity at constant pressure, T is absolute temperature, or (2) U+pV, where U is internal energy, p is pressure and V is volume.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#toa_adjusted_radiative_forcing">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>toa adjusted radiative forcing</rdfs:label>
+    <rdfs:comment>"toa" means top of atmosphere. Adjusted forcing is the radiative flux change caused by an imposed change in radiative forcing agent (greenhouse gases, aerosol, solar radiation, etc.) after allowance for stratospheric temperature adjustment.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#surface_net_upward_longwave_flux">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>surface net upward longwave flux</rdfs:label>
+    <rdfs:comment>The surface called "surface" means the lower boundary of the atmosphere. "longwave" means longwave radiation. "Upward" indicates a vector component which is positive when directed upward (negative downward). Net upward radiation is the difference between radiation from below (upwelling) and radiation from above (downwelling). In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#downward_heat_flux_in_air">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#heatFlux"/>
+    <rdfs:label>downward heat flux in air</rdfs:label>
+    <rdfs:comment>"Downward" indicates a vector component which is positive when directed downward (negative upward). The vertical heat flux in air is the sum of all heat fluxes i.e. radiative, latent and sensible. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#downward_heat_flux_at_ground_level_in_snow">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#heatFlux"/>
+    <rdfs:label>downward heat flux at ground level in snow</rdfs:label>
+    <rdfs:comment>ground_level means the land surface (beneath the snow and surface water, if any). "Downward" indicates a vector component which is positive when directed downward (negative upward). In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#minus_one_times_toa_outgoing_shortwave_flux">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>minus one times toa outgoing shortwave flux</rdfs:label>
+    <rdfs:comment>"Minus one times" means that the quantity described takes the opposite sign convention  to that for the quantity which has the same standard name apart from this phrase, i.e. the two quantities differ from one another by a factor of -1.  Shortwave means shortwave radiation. "toa" means top of atmosphere. The TOA outgoing shortwave flux is the reflected and scattered solar radiative flux i.e. the "upwelling" TOA shortwave flux, sometimes called the "outgoing shortwave radiation" or "OSR". In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#downwelling_photosynthetic_radiative_flux_in_sea_water">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>downwelling photosynthetic radiative flux in sea water</rdfs:label>
+    <rdfs:comment>Downwelling radiation is radiation from above. It does not mean "net downward". Radiative flux is the sum of shortwave and longwave radiative fluxes. "Photosynthetic" radiation is the part of the spectrum which is used in photosynthesis e.g. 300-700 nm. The range of wavelengths could be specified precisely by the bounds of a coordinate of radiation_wavelength. When thought of as being incident on a surface, a radiative flux is sometimes called "irradiance". In addition, it is identical with the quantity measured by a cosine-collector light-meter and sometimes called "vector irradiance". In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#surface_net_downward_longwave_flux_assuming_clear_sky">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>surface net downward longwave flux assuming clear sky</rdfs:label>
+    <rdfs:comment>The surface called "surface" means the lower boundary of the atmosphere. A phrase assuming_condition indicates that the named quantity is the value which would obtain if all aspects of the system were unaltered except for the assumption of the circumstances specified by the condition. "longwave" means longwave radiation. "Downward" indicates a vector component which is positive when directed downward (negative upward). Net downward radiation is the difference between radiation from above (downwelling) and radiation from below (upwelling). In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#surface_upward_heat_flux_in_air">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#heatFlux"/>
+    <rdfs:label>surface upward heat flux in air</rdfs:label>
+    <rdfs:comment>The surface called "surface" means the lower boundary of the atmosphere. "Upward" indicates a vector component which is positive when directed upward (negative downward). The vertical heat flux in air is the sum of all heat fluxes i.e. radiative, latent and sensible. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#upward_heat_flux_at_ground_level_in_snow">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#heatFlux"/>
+    <rdfs:label>upward heat flux at ground level in snow</rdfs:label>
+    <rdfs:comment>ground_level means the land surface (beneath the snow and surface water, if any). "Upward" indicates a vector component which is positive when directed upward (negative downward). In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#downwelling_shortwave_flux_in_sea_water">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>downwelling shortwave flux in sea water</rdfs:label>
+    <rdfs:comment> Downwelling radiation is radiation from above. It does not mean "net downward".  When thought of as being incident on a surface, a radiative flux is sometimes called "irradiance".  In addition, it is identical with the quantity measured by a cosine-collector light-meter and sometimes called "vector irradiance".  In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.  "shortwave" means shortwave radiation.  </rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#net_rate_of_absorption_of_longwave_energy_in_atmosphere_layer">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>net rate of absorption of longwave energy in atmosphere layer</rdfs:label>
+    <rdfs:comment>"longwave" means longwave radiation. "Layer" means any layer with upper and lower boundaries that have constant values in some vertical coordinate. There must be a vertical coordinate variable indicating the extent of the layer(s). If the layers are model layers, the vertical coordinate can be model_level_number, but it is recommended to specify a physical coordinate (in a scalar or auxiliary coordinate variable) as well. Net absorbed radiation is the difference between absorbed and emitted radiation.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#horizontal_dry_energy_transport_in_atmosphere_layer">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>horizontal dry energy transport in atmosphere layer</rdfs:label>
+    <rdfs:comment>"Layer" means any layer with upper and lower boundaries that have constant values in some vertical coordinate. There must be a vertical coordinate variable indicating the extent of the layer(s). If the layers are model layers, the vertical coordinate can be model_level_number, but it is recommended to specify a physical coordinate (in a scalar or auxiliary coordinate variable) as well. Dry energy is the sum of dry static energy and kinetic energy. Dry static energy is the sum of enthalpy and potential energy (itself the sum of gravitational and centripetal potential energy). Enthalpy can be written either as (1) CpT, where Cp is heat capacity at constant pressure, T is absolute temperature, or (2) U+pV, where U is internal energy, p is pressure and V is volume.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#net_upward_longwave_flux_in_air_assuming_clear_sky">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>net upward longwave flux in air assuming clear sky</rdfs:label>
+    <rdfs:comment>A phrase assuming_condition indicates that the named quantity is the value which would obtain if all aspects of the system were unaltered except for the assumption of the circumstances specified by the condition. "longwave" means longwave radiation. "Upward" indicates a vector component which is positive when directed upward (negative downward). Net upward radiation is the difference between radiation from below (upwelling) and radiation from above (downwelling). In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#upward_geothermal_heat_flux_at_sea_floor">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#heatFlux"/>
+    <rdfs:label>upward geothermal heat flux at sea floor</rdfs:label>
+    <rdfs:comment> "Upward" indicates a vector component which is positive when directed upward (negative downward).  In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics. </rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#upwelling_longwave_flux_in_air">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>upwelling longwave flux in air</rdfs:label>
+    <rdfs:comment>"longwave" means longwave radiation. Upwelling radiation is radiation from below. It does not mean "net upward". When thought of as being incident on a surface, a radiative flux is sometimes called "irradiance". In addition, it is identical with the quantity measured by a cosine-collector light-meter and sometimes called "vector irradiance". In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_ocean_potential_energy_content_due_to_tides">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>tendency of ocean potential energy content due to tides</rdfs:label>
+    <rdfs:comment> "Content" indicates a quantity per unit area.  Potential energy is the sum of the gravitational potential energy relative to the geoid and the centripetal potential energy. (The geopotential is the specific potential energy.)  "Due to tides" means due to all astronomical gravity changes which manifest as tides.  No distinction is made between different tidal components. The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity  named by omitting the phrase.  "tendency_of_X" means derivative of X with respect to time. </rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#surface_downwelling_shortwave_flux_in_air">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>surface downwelling shortwave flux in air</rdfs:label>
+    <rdfs:comment>The surface called "surface" means the lower boundary of the atmosphere. "shortwave" means shortwave radiation. Downwelling radiation is radiation from above. It does not mean "net downward". Surface downwelling shortwave is the sum of direct and diffuse solar radiation incident on the surface, and is sometimes called "global radiation". When thought of as being incident on a surface, a radiative flux is sometimes called "irradiance". In addition, it is identical with the quantity measured by a cosine-collector light-meter and sometimes called "vector irradiance". In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#toa_incoming_shortwave_flux">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>toa incoming shortwave flux</rdfs:label>
+    <rdfs:comment>"shortwave" means shortwave radiation. "toa" means top of atmosphere. The TOA incoming shortwave flux is the radiative flux from the sun i.e. the "downwelling" TOA shortwave flux. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#surface_net_upward_radiative_flux">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>surface net upward radiative flux</rdfs:label>
+    <rdfs:comment>The surface called "surface" means the lower boundary of the atmosphere. "Upward" indicates a vector component which is positive when directed upward (negative downward). Net upward radiation is the difference between radiation from below (upwelling) and radiation from above (downwelling). Radiative flux is the sum of shortwave and longwave radiative fluxes. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#toa_net_upward_longwave_flux_assuming_clear_sky">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>toa net upward longwave flux assuming clear sky</rdfs:label>
+    <rdfs:comment>A phrase assuming_condition indicates that the named quantity is the value which would obtain if all aspects of the system were unaltered except for the assumption of the circumstances specified by the condition. "longwave" means longwave radiation. "toa" means top of atmosphere. "Upward" indicates a vector component which is positive when directed upward (negative downward). Net upward radiation is the difference between radiation from below (upwelling) and radiation from above (downwelling). In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#surface_net_downward_longwave_flux">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>surface net downward longwave flux</rdfs:label>
+    <rdfs:comment>The surface called "surface" means the lower boundary of the atmosphere. "longwave" means longwave radiation. "Downward" indicates a vector component which is positive when directed downward (negative upward). Net downward radiation is the difference between radiation from above (downwelling) and radiation from below (upwelling). In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#net_downward_longwave_flux_in_air">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>net downward longwave flux in air</rdfs:label>
+    <rdfs:comment>"longwave" means longwave radiation. "Downward" indicates a vector component which is positive when directed downward (negative upward). Net downward radiation is the difference between radiation from above (downwelling) and radiation from below (upwelling). In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#net_upward_shortwave_flux_in_air_assuming_clear_sky">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>net upward shortwave flux in air assuming clear sky</rdfs:label>
+    <rdfs:comment>A phrase assuming_condition indicates that the named quantity is the value which would obtain if all aspects of the system were unaltered except for the assumption of the circumstances specified by the condition. "shortwave" means shortwave radiation. "Upward" indicates a vector component which is positive when directed upward (negative downward). Net upward radiation is the difference between radiation from below (upwelling) and radiation from above (downwelling). In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#net_upward_longwave_flux_in_air">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>net upward longwave flux in air</rdfs:label>
+    <rdfs:comment>"longwave" means longwave radiation. "Upward" indicates a vector component which is positive when directed upward (negative downward). Net upward radiation is the difference between radiation from below (upwelling) and radiation from above (downwelling). In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_potential_energy_content_of_atmosphere_layer_due_to_advection">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>tendency of potential energy content of atmosphere layer due to advection</rdfs:label>
+    <rdfs:comment>The specification of a physical process by the phrase due_to_process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. "tendency_of_X" means derivative of X with respect to time. "Content" indicates a quantity per unit area. "Layer" means any layer with upper and lower boundaries that have constant values in some vertical coordinate. There must be a vertical coordinate variable indicating the extent of the layer(s). If the layers are model layers, the vertical coordinate can be model_level_number, but it is recommended to specify a physical coordinate (in a scalar or auxiliary coordinate variable) as well. Potential energy is the sum of the gravitational potential energy relative to the geoid and the centripetal potential energy. (The geopotential is the specific potential energy.)</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#toa_net_downward_longwave_flux">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>toa net downward longwave flux</rdfs:label>
+    <rdfs:comment>"longwave" means longwave radiation. "toa" means top of atmosphere.   "Downward" indicates a vector component which is positive when directed downward (negative upward).  Net downward radiation is the difference between radiation from above (downwelling) and radiation from below (upwelling).  In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#upward_heat_flux_in_air">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#heatFlux"/>
+    <rdfs:label>upward heat flux in air</rdfs:label>
+    <rdfs:comment>"Upward" indicates a vector component which is positive when directed upward (negative downward). The vertical heat flux in air is the sum of all heat fluxes i.e. radiative, latent and sensible. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#surface_downwelling_longwave_flux_in_air_assuming_clear_sky">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>surface downwelling longwave flux in air assuming clear sky</rdfs:label>
+    <rdfs:comment>The surface called "surface" means the lower boundary of the atmosphere. A phrase assuming_condition indicates that the named quantity is the value which would obtain if all aspects of the system were unaltered except for the assumption of the circumstances specified by the condition. "longwave" means longwave radiation. Downwelling radiation is radiation from above. It does not mean "net downward". When thought of as being incident on a surface, a radiative flux is sometimes called "irradiance". In addition, it is identical with the quantity measured by a cosine-collector light-meter and sometimes called "vector irradiance". In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#heat_flux_into_sea_water_due_to_newtonian_relaxation">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#heatFlux"/>
+    <rdfs:label>heat flux into sea water due to newtonian relaxation</rdfs:label>
+    <rdfs:comment>The specification of a physical process by the phrase due_to_process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase.  The heat_flux_into_sea_water_due_to_newtonian_relaxation is the heat flux resulting from the Newtonian relaxation of the sea surface temperature. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#surface_snow_sublimation_heat_flux">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#heatFlux"/>
+    <rdfs:label>surface snow sublimation heat flux</rdfs:label>
+    <rdfs:comment>The surface called "surface" means the lower boundary of the atmosphere. Sublimation is the conversion of solid into vapor. The snow sublimation heat flux is the supply of latent heat which is causing evaporation of snow to water vapor. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#surface_diffuse_downwelling_photosynthetic_radiative_flux_in_air">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>surface diffuse downwelling photosynthetic radiative flux in air</rdfs:label>
+    <rdfs:comment>The surface called "surface" means the lower boundary of the atmosphere. Downwelling radiation is radiation from above. It does not mean "net downward". Radiative flux is the sum of shortwave and longwave radiative fluxes. "Photosynthetic" radiation is the part of the spectrum which is used in photosynthesis e.g. 300-700 nm. The range of wavelengths could be specified precisely by the bounds of a coordinate of radiation_wavelength. When thought of as being incident on a surface, a radiative flux is sometimes called "irradiance". In addition, it is identical with the quantity measured by a cosine-collector light-meter and sometimes called "vector irradiance". In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#net_downward_shortwave_flux_in_air_assuming_clear_sky">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>net downward shortwave flux in air assuming clear sky</rdfs:label>
+    <rdfs:comment>A phrase assuming_condition indicates that the named quantity is the value which would obtain if all aspects of the system were unaltered except for the assumption of the circumstances specified by the condition. "shortwave" means shortwave radiation. "Downward" indicates a vector component which is positive when directed downward (negative upward). Net downward radiation is the difference between radiation from above (downwelling) and radiation from below (upwelling). In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tropopause_downwelling_longwave_flux">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>tropopause downwelling longwave flux</rdfs:label>
+    <rdfs:comment>"longwave" means longwave radiation. Downwelling radiation is radiation from above. It does not mean "net downward". When thought of as being incident on a surface, a radiative flux is sometimes called "irradiance". In addition, it is identical with the quantity measured by a cosine-collector light-meter and sometimes called "vector irradiance". In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#toa_net_upward_longwave_flux">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>toa net upward longwave flux</rdfs:label>
+    <rdfs:comment>"longwave" means longwave radiation. "toa" means top of atmosphere. "Upward" indicates a vector component which is positive when directed upward (negative downward). Net upward radiation is the difference between radiation from below (upwelling) and radiation from above (downwelling). In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#upwelling_shortwave_flux_in_air">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>upwelling shortwave flux in air</rdfs:label>
+    <rdfs:comment>"shortwave" means shortwave radiation. Upwelling radiation is radiation from below. It does not mean "net upward". When thought of as being incident on a surface, a radiative flux is sometimes called "irradiance". In addition, it is identical with the quantity measured by a cosine-collector light-meter and sometimes called "vector irradiance". In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#surface_net_downward_shortwave_flux_assuming_clear_sky">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>surface net downward shortwave flux assuming clear sky</rdfs:label>
+    <rdfs:comment>The surface called "surface" means the lower boundary of the atmosphere. A phrase assuming_condition indicates that the named quantity is the value which would obtain if all aspects of the system were unaltered except for the assumption of the circumstances specified by the condition. "shortwave" means shortwave radiation. "Downward" indicates a vector component which is positive when directed downward (negative upward). Net downward radiation is the difference between radiation from above (downwelling) and radiation from below (upwelling). In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#surface_downward_latent_heat_flux">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#heatFlux"/>
+    <rdfs:label>surface downward latent heat flux</rdfs:label>
+    <rdfs:comment>The surface called "surface" means the lower boundary of the atmosphere. "Downward" indicates a vector component which is positive when directed downward (negative upward). The surface latent heat flux is the exchange of heat between the surface and the air on account of evaporation (including sublimation). In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#toa_instantaneous_longwave_forcing">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>toa instantaneous longwave forcing</rdfs:label>
+    <rdfs:comment>"longwave" means longwave radiation. "toa" means top of atmosphere. Instantaneous forcing is the radiative flux change caused instantaneously by an imposed change in radiative forcing agent (greenhouse gases, aerosol, solar radiation, etc.).</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#surface_downward_heat_flux_in_air">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#heatFlux"/>
+    <rdfs:label>surface downward heat flux in air</rdfs:label>
+    <rdfs:comment>The surface called "surface" means the lower boundary of the atmosphere. "Downward" indicates a vector component which is positive when directed downward (negative upward). The vertical heat flux in air is the sum of all heat fluxes i.e. radiative, latent and sensible. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#surface_upwelling_shortwave_flux_in_air_assuming_clear_sky">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>surface upwelling shortwave flux in air assuming clear sky</rdfs:label>
+    <rdfs:comment>The surface called "surface" means the lower boundary of the atmosphere. A phrase assuming_condition indicates that the named quantity is the value which would obtain if all aspects of the system were unaltered except for the assumption of the circumstances specified by the condition. "shortwave" means shortwave radiation. Upwelling radiation is radiation from below. It does not mean "net upward". When thought of as being incident on a surface, a radiative flux is sometimes called "irradiance". In addition, it is identical with the quantity measured by a cosine-collector light-meter and sometimes called "vector irradiance". In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#downwelling_photosynthetic_spherical_irradiance_in_sea_water">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>downwelling photosynthetic spherical irradiance in sea water</rdfs:label>
+    <rdfs:comment>Downwelling radiation is radiation from above. It does not mean "net downward". "Photosynthetic" radiation is the part of the spectrum which is used in photosynthesis e.g. 300-700 nm. The range of wavelengths could be specified precisely by the bounds of a coordinate of radiation_wavelength. Spherical irradiance is the radiation incident on unit area of a hemispherical (or "2-pi") collector. It is sometimes called "scalar irradiance". The direction (up/downwelling) is specified. Radiation incident on a 4-pi collector has standard names of "omnidirectional spherical irradiance".</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tropopause_instantaneous_longwave_forcing">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>tropopause instantaneous longwave forcing</rdfs:label>
+    <rdfs:comment>"longwave" means longwave radiation. Instantaneous forcing is the radiative flux change caused instantaneously by an imposed change in radiative forcing agent (greenhouse gases, aerosol, solar radiation, etc.).</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#ocean_kinetic_energy_dissipation_per_unit_area_due_to_vertical_friction">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>ocean kinetic energy dissipation per unit area due to vertical friction</rdfs:label>
+    <rdfs:comment> Friction, leading to the dissipation of kinetic energy, arises in ocean models as a result of the viscosity of sea water.  Generally, the  lateral (xy) viscosity is given a large value to maintain the numerical stability of the model.  In contrast, the vertical viscosity is usually much smaller. The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity  named by omitting the phrase. </rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#downwelling_longwave_flux_in_air_assuming_clear_sky">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>downwelling longwave flux in air assuming clear sky</rdfs:label>
+    <rdfs:comment>Downwelling radiation is radiation from above. It does not mean "net downward".  When thought of as being incident on a surface, a radiative flux is sometimes called "irradiance".  In addition, it is identical with the quantity measured by a cosine-collector light-meter and sometimes called "vector irradiance".  In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.  A phrase assuming_condition  indicates that the named quantity is the value which would obtain if all  aspects of the system were unaltered except for the assumption of the  circumstances specified by the condition.  "longwave" means longwave radiation. </rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#ocean_kinetic_energy_dissipation_per_unit_area_due_to_xy_friction">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>ocean kinetic energy dissipation per unit area due to xy friction</rdfs:label>
+    <rdfs:comment> Friction, leading to the dissipation of kinetic energy, arises in ocean models as a result of the viscosity of sea water.  Generally, the  lateral (xy) viscosity is given a large value to maintain the numerical stability of the model.  In contrast, the vertical viscosity is usually much smaller. The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity  named by omitting the phrase. </rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_potential_energy_content_of_ocean_layer_due_to_convection">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>tendency of potential energy content of ocean layer due to convection</rdfs:label>
+    <rdfs:comment>The specification of a physical process by the phrase due_to_process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. "tendency_of_X" means derivative of X with respect to time. "Content" indicates a quantity per unit area. "Layer" means any layer with upper and lower boundaries that have constant values in some vertical coordinate. There must be a vertical coordinate variable indicating the extent of the layer(s). If the layers are model layers, the vertical coordinate can be model_level_number, but it is recommended to specify a physical coordinate (in a scalar or auxiliary coordinate variable) as well. Potential energy is the sum of the gravitational potential energy relative to the geoid and the centripetal potential energy. (The geopotential is the specific potential energy.)</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#surface_net_downward_radiative_flux">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>surface net downward radiative flux</rdfs:label>
+    <rdfs:comment>The surface called "surface" means the lower boundary of the atmosphere. "Downward" indicates a vector component which is positive when directed downward (negative upward). Net downward radiation is the difference between radiation from above (downwelling) and radiation from below (upwelling). Radiative flux is the sum of shortwave and longwave radiative fluxes. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics. Unless indicated in the cell_methods attribute, a quantity is assumed to apply to the whole area of each horizontal grid box. Previously, the qualifier where_type was used to specify that the quantity applies only to the part of the grid box of the named type.  Names containing the where_type qualifier are deprecated and newly created data should use the cell_methods attribute to indicate the horizontal area to which the quantity applies.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#surface_downwelling_shortwave_flux_in_air_assuming_clear_sky">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>surface downwelling shortwave flux in air assuming clear sky</rdfs:label>
+    <rdfs:comment>The surface called "surface" means the lower boundary of the atmosphere. A phrase assuming_condition indicates that the named quantity is the value which would obtain if all aspects of the system were unaltered except for the assumption of the circumstances specified by the condition. "shortwave" means shortwave radiation. Downwelling radiation is radiation from above. It does not mean "net downward". Surface downwelling shortwave is the sum of direct and diffuse solar radiation incident on the surface, and is sometimes called "global radiation". When thought of as being incident on a surface, a radiative flux is sometimes called "irradiance". In addition, it is identical with the quantity measured by a cosine-collector light-meter and sometimes called "vector irradiance". In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#omnidirectional_photosynthetic_spherical_irradiance_in_sea_water">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>omnidirectional photosynthetic spherical irradiance in sea water</rdfs:label>
+    <rdfs:comment>"Photosynthetic" radiation is the part of the spectrum which is used in photosynthesis e.g. 300-700 nm. The range of wavelengths could be specified precisely by the bounds of a coordinate of radiation_wavelength. Omnidirectional spherical irradiance is the radiation incident on unit area of a spherical (or "4-pi") collector. It is sometimes called "scalar irradiance". Radiation incident on a 2-pi collector has standard names of "spherical irradiance" which specify up/downwelling.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_dry_energy_content_of_atmosphere_layer">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>tendency of dry energy content of atmosphere layer</rdfs:label>
+    <rdfs:comment>"tendency_of_X" means derivative of X with respect to time. "Content" indicates a quantity per unit area. "Layer" means any layer with upper and lower boundaries that have constant values in some vertical coordinate. There must be a vertical coordinate variable indicating the extent of the layer(s). If the layers are model layers, the vertical coordinate can be model_level_number, but it is recommended to specify a physical coordinate (in a scalar or auxiliary coordinate variable) as well. Dry energy is the sum of dry static energy and kinetic energy. Dry static energy is the sum of enthalpy and potential energy (itself the sum of gravitational and centripetal potential energy). Enthalpy can be written either as (1) CpT, where Cp is heat capacity at constant pressure, T is absolute temperature, or (2) U+pV, where U is internal energy, p is pressure and V is volume.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#surface_downwelling_longwave_flux_in_air">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>surface downwelling longwave flux in air</rdfs:label>
+    <rdfs:comment>The surface called "surface" means the lower boundary of the atmosphere. "longwave" means longwave radiation. Downwelling radiation is radiation from above. It does not mean "net downward". When thought of as being incident on a surface, a radiative flux is sometimes called "irradiance". In addition, it is identical with the quantity measured by a cosine-collector light-meter and sometimes called "vector irradiance". In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_enthalpy_content_of_atmosphere_layer_due_to_advection">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>tendency of enthalpy content of atmosphere layer due to advection</rdfs:label>
+    <rdfs:comment>The specification of a physical process by the phrase due_to_process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. "tendency_of_X" means derivative of X with respect to time. "Content" indicates a quantity per unit area. "Layer" means any layer with upper and lower boundaries that have constant values in some vertical coordinate. There must be a vertical coordinate variable indicating the extent of the layer(s). If the layers are model layers, the vertical coordinate can be model_level_number, but it is recommended to specify a physical coordinate (in a scalar or auxiliary coordinate variable) as well. Enthalpy can be written either as (1) CpT, where Cp is heat capacity at constant pressure, T is absolute temperature, or (2) U+pV, where U is internal energy, p is pressure and V is volume.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#surface_upwelling_shortwave_flux_in_air">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>surface upwelling shortwave flux in air</rdfs:label>
+    <rdfs:comment>The surface called "surface" means the lower boundary of the atmosphere. "shortwave" means shortwave radiation. Upwelling radiation is radiation from below. It does not mean "net upward". When thought of as being incident on a surface, a radiative flux is sometimes called "irradiance". In addition, it is identical with the quantity measured by a cosine-collector light-meter and sometimes called "vector irradiance". In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#heat_flux_into_sea_water_due_to_iceberg_thermodynamics">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#heatFlux"/>
+    <rdfs:label>heat flux into sea water due to iceberg thermodynamics</rdfs:label>
+    <rdfs:comment> In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.  The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity  named by omitting the phrase.  " Iceberg thermodynamics" refers to the addition or subtraction of mass due to surface and basal fluxes, i.e., due to melting, sublimation and fusion.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#downwelling_shortwave_flux_in_air">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>downwelling shortwave flux in air</rdfs:label>
+    <rdfs:comment>"shortwave" means shortwave radiation. Downwelling radiation is radiation from above. It does not mean "net downward". When thought of as being incident on a surface, a radiative flux is sometimes called "irradiance". In addition, it is identical with the quantity measured by a cosine-collector light-meter and sometimes called "vector irradiance". In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#downwelling_longwave_flux_in_air">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>downwelling longwave flux in air</rdfs:label>
+    <rdfs:comment>"longwave" means longwave radiation. Downwelling radiation is radiation from above. It does not mean "net downward". When thought of as being incident on a surface, a radiative flux is sometimes called "irradiance". In addition, it is identical with the quantity measured by a cosine-collector light-meter and sometimes called "vector irradiance". In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tropopause_net_downward_longwave_flux">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>tropopause net downward longwave flux</rdfs:label>
+    <rdfs:comment>"longwave" means longwave radiation. "Downward" indicates a vector component which is positive when directed downward (negative upward). Net downward radiation is the difference between radiation from above (downwelling) and radiation from below (upwelling). In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tropopause_instantaneous_radiative_forcing">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>tropopause instantaneous radiative forcing</rdfs:label>
+    <rdfs:comment>Instantaneous forcing is the radiative flux change caused instantaneously by an imposed change in radiative forcing agent (greenhouse gases, aerosol, solar radiation, etc.).</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#surface_upwelling_longwave_flux_in_air_assuming_clear_sky">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>surface upwelling longwave flux in air assuming clear sky</rdfs:label>
+    <rdfs:comment>The surface called "surface" means the lower boundary of the atmosphere. A phrase assuming_condition indicates that the named quantity is the value which would obtain if all aspects of the system were unaltered except for the assumption of the circumstances specified by the condition. "longwave" means longwave radiation. Upwelling radiation is radiation from below. It does not mean "net upward". When thought of as being incident on a surface, a radiative flux is sometimes called "irradiance". In addition, it is identical with the quantity measured by a cosine-collector light-meter and sometimes called "vector irradiance". In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#toa_net_downward_longwave_flux_assuming_clear_sky">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>toa net downward longwave flux assuming clear sky</rdfs:label>
+    <rdfs:comment>A phrase assuming_condition indicates that the named quantity is the value which would obtain if all aspects of the system were unaltered except for the assumption of the circumstances specified by the condition. "longwave" means longwave radiation. "toa" means top of atmosphere. "Downward" indicates a vector component which is positive when directed downward (negative upward). Net downward radiation is the difference between radiation from above (downwelling) and radiation from below (upwelling). In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#net_upward_shortwave_flux_in_air">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>net upward shortwave flux in air</rdfs:label>
+    <rdfs:comment>"shortwave" means shortwave radiation. "Upward" indicates a vector component which is positive when directed upward (negative downward). Net upward radiation is the difference between radiation from below (upwelling) and radiation from above (downwelling). In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#toa_net_upward_shortwave_flux">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>toa net upward shortwave flux</rdfs:label>
+    <rdfs:comment>"shortwave" means shortwave radiation. "toa" means top of atmosphere. "Upward" indicates a vector component which is positive when directed upward (negative downward). Net upward radiation is the difference between radiation from below (upwelling) and radiation from above (downwelling). In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#surface_downwelling_spherical_irradiance_in_sea_water">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>surface downwelling spherical irradiance in sea water</rdfs:label>
+    <rdfs:comment>The surface called "surface" means the lower boundary of the atmosphere. "Water" means water in all phases, including frozen i.e. ice and snow. Downwelling radiation is radiation from above. It does not mean "net downward". Spherical irradiance is the radiation incident on unit area of a hemispherical (or "2-pi") collector. It is sometimes called "scalar irradiance". The direction (up/downwelling) is specified. Radiation incident on a 4-pi collector has standard names of "omnidirectional spherical irradiance".</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#northward_heat_flux_in_air_due_to_eddy_advection">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#heatFlux"/>
+    <rdfs:label>northward heat flux in air due to eddy advection</rdfs:label>
+    <rdfs:comment>The specification of a physical process by the phrase due_to_process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. "Northward" indicates a vector component which is positive when directed northward (negative southward).  In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tropopause_adjusted_radiative_forcing">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>tropopause adjusted radiative forcing</rdfs:label>
+    <rdfs:comment>Adjusted forcing is the radiative flux change caused by an imposed change in radiative forcing agent (greenhouse gases, aerosol, solar radiation, etc.) after allowance for stratospheric temperature adjustment.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#upwelling_longwave_flux_in_air_assuming_clear_sky">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>upwelling longwave flux in air assuming clear sky</rdfs:label>
+    <rdfs:comment>Upwelling radiation is radiation from below. It does not mean "net upward".  When thought of as being incident on a surface, a radiative flux is sometimes called "irradiance".  In addition, it is identical with the quantity measured by a cosine-collector light-meter and sometimes called "vector irradiance".  In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.  A phrase assuming_condition  indicates that the named quantity is the value which would obtain if all  aspects of the system were unaltered except for the assumption of the  circumstances specified by the condition.  "longwave" means longwave radiation. </rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#downwelling_shortwave_flux_in_air_assuming_clear_sky">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>downwelling shortwave flux in air assuming clear sky</rdfs:label>
+    <rdfs:comment>Downwelling radiation is radiation from above. It does not mean "net downward".  When thought of as being incident on a surface, a radiative flux is sometimes called "irradiance".  In addition, it is identical with the quantity measured by a cosine-collector light-meter and sometimes called "vector irradiance".  In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.  A phrase assuming_condition  indicates that the named quantity is the value which would obtain if all  aspects of the system were unaltered except for the assumption of the  circumstances specified by the condition.  "shortwave" means shortwave radiation. </rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#surface_upwelling_longwave_flux_in_air">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>surface upwelling longwave flux in air</rdfs:label>
+    <rdfs:comment>The surface called "surface" means the lower boundary of the atmosphere. "longwave" means longwave radiation. Upwelling radiation is radiation from below. It does not mean "net upward". When thought of as being incident on a surface, a radiative flux is sometimes called "irradiance". In addition, it is identical with the quantity measured by a cosine-collector light-meter and sometimes called "vector irradiance". In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#surface_snow_and_ice_melt_heat_flux">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#heatFlux"/>
+    <rdfs:label>surface snow and ice melt heat flux</rdfs:label>
+    <rdfs:comment>The surface called "surface" means the lower boundary of the atmosphere. The snow and ice melt heat flux is the supply of latent heat which is melting snow and ice at freezing point. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#atmosphere_net_rate_of_absorption_of_shortwave_energy">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>atmosphere net rate of absorption of shortwave energy</rdfs:label>
+    <rdfs:comment>"shortwave" means shortwave radiation. Net absorbed radiation is the difference between absorbed and emitted radiation.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#temperature_flux_due_to_rainfall_expressed_as_heat_flux_into_sea_water">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#heatFlux"/>
+    <rdfs:label>temperature flux due to rainfall expressed as heat flux into sea water</rdfs:label>
+    <rdfs:comment> The quantity with standard name temperature_flux_due_to_rainfall_expressed_as_heat_flux_into_sea_water is the heat energy carried by rainfall entering the sea at the sea surface.  It is calculated relative to the heat that would be carried by rainfall entering the sea at zero degrees Celsius.  It is calculated as the product QrainCpTrain, where Qrain is the mass flux of rainfall entering the sea (kg m-2 s-1), Cp is the specific heat capacity of water and Train is the temperature in degrees Celsius of the rain water entering the sea surface. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.  The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity  named by omitting the phrase.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#heat_flux_correction">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#heatFlux"/>
+    <rdfs:label>heat flux correction</rdfs:label>
+    <rdfs:comment>Flux correction is also called "flux adjustment". A positive flux correction is downward i.e. added to the ocean. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#toa_instantaneous_radiative_forcing">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>toa instantaneous radiative forcing</rdfs:label>
+    <rdfs:comment>"toa" means top of atmosphere. Instantaneous forcing is the radiative flux change caused instantaneously by an imposed change in radiative forcing agent (greenhouse gases, aerosol, solar radiation, etc.).</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#toa_instantaneous_shortwave_forcing">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>toa instantaneous shortwave forcing</rdfs:label>
+    <rdfs:comment>"shortwave" means shortwave radiation. "toa" means top of atmosphere. Instantaneous forcing is the radiative flux change caused instantaneously by an imposed change in radiative forcing agent (greenhouse gases, aerosol, solar radiation, etc.).</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#toa_net_downward_shortwave_flux">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>toa net downward shortwave flux</rdfs:label>
+    <rdfs:comment>"shortwave" means shortwave radiation. "toa" means top of atmosphere. "Downward" indicates a vector component which is positive when directed downward (negative upward). Net downward radiation is the difference between radiation from above (downwelling) and radiation from below (upwelling). In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#downward_heat_flux_at_ground_level_in_soil">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#heatFlux"/>
+    <rdfs:label>downward heat flux at ground level in soil</rdfs:label>
+    <rdfs:comment>ground_level means the land surface (beneath the snow and surface water, if any). "Downward" indicates a vector component which is positive when directed downward (negative upward). In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#toa_outgoing_shortwave_flux">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>toa outgoing shortwave flux</rdfs:label>
+    <rdfs:comment>"shortwave" means shortwave radiation. "toa" means top of atmosphere. The TOA outgoing shortwave flux is the reflected and scattered solar radiative flux i.e. the "upwelling" TOA shortwave flux, sometimes called the "outgoing shortwave radiation" or "OSR". In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#upward_heat_flux_at_ground_level_in_soil">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#heatFlux"/>
+    <rdfs:label>upward heat flux at ground level in soil</rdfs:label>
+    <rdfs:comment>ground_level means the land surface (beneath the snow and surface water, if any). "Upward" indicates a vector component which is positive when directed upward (negative downward). In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#upward_dry_static_energy_flux_due_to_diffusion">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>upward dry static energy flux due to diffusion</rdfs:label>
+    <rdfs:comment>The specification of a physical process by the phrase due_to_process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. "Upward" indicates a vector component which is positive when directed upward (negative downward). Dry static energy is the sum of enthalpy and potential energy (itself the sum of gravitational and centripetal potential energy). Enthalpy can be written either as (1) CpT, where Cp is heat capacity at constant pressure, T is absolute temperature, or (2) U+pV, where U is internal energy, p is pressure and V is volume. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#surface_downward_heat_flux_in_sea_water">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#heatFlux"/>
+    <rdfs:label>surface downward heat flux in sea water</rdfs:label>
+    <rdfs:comment>The surface called "surface" means the lower boundary of the atmosphere. "Water" means water in all phases, including frozen i.e. ice and snow. "Downward" indicates a vector component which is positive when directed downward (negative upward). In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#surface_downward_sensible_heat_flux">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#heatFlux"/>
+    <rdfs:label>surface downward sensible heat flux</rdfs:label>
+    <rdfs:comment>The surface called "surface" means the lower boundary of the atmosphere. "Downward" indicates a vector component which is positive when directed downward (negative upward). The surface sensible heat flux, also called "turbulent" heat flux, is the exchange of heat between the surface and the air by motion of air. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#temperature_flux_due_to_evaporation_expressed_as_heat_flux_out_of_sea_water">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#heatFlux"/>
+    <rdfs:label>temperature flux due to evaporation expressed as heat flux out of sea water</rdfs:label>
+    <rdfs:comment> Evaporation is the conversion of liquid or solid into vapor.  (The conversion of solid alone into vapor is called "sublimation".)  The quantity with standard name temperature_flux_due_to_evaporation_expressed_as_heat_flux_out_of_sea_water is the heat energy carried by the transfer of water away from the liquid ocean through the process of evaporation.  It is distinct from the transfer of latent heat and is calculated relative to the heat that would be transported by water evaporating at zero degrees Celsius. It is calculated as the product QevapCpTevap, where Qevap is the mass flux of evaporating water (kg m-2 s-1), Cp is the specific heat capacity of water and Tevap is the temperature in degrees Celsius of the evaporating water. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.  The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity  named by omitting the phrase. </rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#surface_snow_melt_heat_flux">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#heatFlux"/>
+    <rdfs:label>surface snow melt heat flux</rdfs:label>
+    <rdfs:comment>The surface called "surface" means the lower boundary of the atmosphere. The snow melt heat flux is the supply of latent heat which is melting snow at freezing point. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#wind_mixing_energy_flux_into_sea_water">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>wind mixing energy flux into sea water</rdfs:label>
+    <rdfs:comment>Wind is defined as a two-dimensional (horizontal) air velocity vector, with no vertical component. (Vertical motion in the atmosphere has the standard name upward_air_velocity.) In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#surface_snow_melt_and_sublimation_heat_flux">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#heatFlux"/>
+    <rdfs:label>surface snow melt and sublimation heat flux</rdfs:label>
+    <rdfs:comment>The surface called "surface" means the lower boundary of the atmosphere. Sublimation is the conversion of solid into vapor. The snow melt and sublimation heat flux is the supply of latent heat which converting snow to liquid water (melting) and water vapor (sublimation). In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#surface_downwelling_radiative_flux_in_sea_water">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>surface downwelling radiative flux in sea water</rdfs:label>
+    <rdfs:comment>The surface called "surface" means the lower boundary of the atmosphere. "Water" means water in all phases, including frozen i.e. ice and snow. Downwelling radiation is radiation from above. It does not mean "net downward". Radiative flux is the sum of shortwave and longwave radiative fluxes. When thought of as being incident on a surface, a radiative flux is sometimes called "irradiance". In addition, it is identical with the quantity measured by a cosine-collector light-meter and sometimes called "vector irradiance". In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_enthalpy_content_due_to_advection">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>tendency of atmosphere enthalpy content due to advection</rdfs:label>
+    <rdfs:comment>The specification of a physical process by the phrase due_to_process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. "tendency_of_X" means derivative of X with respect to time. "Content" indicates a quantity per unit area. The "atmosphere content" of a quantity refers to the vertical integral from the surface to the top of the atmosphere. For the content between specified levels in the atmosphere, standard names including content_of_atmosphere_layer are used. Enthalpy can be written either as (1) CpT, where Cp is heat capacity at constant pressure, T is absolute temperature, or (2) U+pV, where U is internal energy, p is pressure and V is volume.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#dissipation_in_atmosphere_boundary_layer">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>dissipation in atmosphere boundary layer</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tropopause_upwelling_shortwave_flux">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>tropopause upwelling shortwave flux</rdfs:label>
+    <rdfs:comment>"shortwave" means shortwave radiation. Upwelling radiation is radiation from below. It does not mean "net upward". When thought of as being incident on a surface, a radiative flux is sometimes called "irradiance". In addition, it is identical with the quantity measured by a cosine-collector light-meter and sometimes called "vector irradiance". In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tropopause_adjusted_longwave_forcing">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>tropopause adjusted longwave forcing</rdfs:label>
+    <rdfs:comment>"longwave" means longwave radiation. Adjusted forcing is the radiative flux change caused by an imposed change in radiative forcing agent (greenhouse gases, aerosol, solar radiation, etc.) after allowance for stratospheric temperature adjustment.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#toa_net_downward_radiative_flux">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>toa net downward radiative flux</rdfs:label>
+    <rdfs:comment>"toa" means top of atmosphere. "Downward" indicates a vector component which is positive when directed downward (negative upward). Net downward radiation is the difference between radiation from above (downwelling) and radiation from below (upwelling). Radiative flux is the sum of shortwave and longwave radiative fluxes. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#horizontal_atmosphere_dry_energy_transport">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>horizontal atmosphere dry energy transport</rdfs:label>
+    <rdfs:comment>Dry energy is the sum of dry static energy and kinetic energy. Dry static energy is the sum of enthalpy and potential energy (itself the sum of gravitational and centripetal potential energy). Enthalpy can be written either as (1) CpT, where Cp is heat capacity at constant pressure, T is absolute temperature, or (2) U+pV, where U is internal energy, p is pressure and V is volume.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_ocean_eddy_kinetic_energy_content_due_to_bolus_transport">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>tendency of ocean eddy kinetic energy content due to bolus transport</rdfs:label>
+    <rdfs:comment> "Content" indicates a quantity per unit area.  The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity  named by omitting the phrase.  "tendency_of_X" means derivative of X with respect to time.  Bolus transport in an ocean model means the part due to a scheme representing eddy-induced effects not included in the velocity field.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#toa_net_downward_shortwave_flux_assuming_clear_sky">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>toa net downward shortwave flux assuming clear sky</rdfs:label>
+    <rdfs:comment>A phrase assuming_condition indicates that the named quantity is the value which would obtain if all aspects of the system were unaltered except for the assumption of the circumstances specified by the condition. "shortwave" means shortwave radiation. "toa" means top of atmosphere. "Downward" indicates a vector component which is positive when directed downward (negative upward). Net downward radiation is the difference between radiation from above (downwelling) and radiation from below (upwelling). In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tropopause_instantaneous_shortwave_forcing">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>tropopause instantaneous shortwave forcing</rdfs:label>
+    <rdfs:comment>"shortwave" means shortwave radiation. Instantaneous forcing is the radiative flux change caused instantaneously by an imposed change in radiative forcing agent (greenhouse gases, aerosol, solar radiation, etc.).</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#toa_outgoing_longwave_flux_assuming_clear_sky">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>toa outgoing longwave flux assuming clear sky</rdfs:label>
+    <rdfs:comment>A phrase assuming_condition indicates that the named quantity is the value which would obtain if all aspects of the system were unaltered except for the assumption of the circumstances specified by the condition. "longwave" means longwave radiation. "toa" means top of atmosphere. The TOA outgoing longwave flux is the upwelling thermal radiative flux, often called the "outgoing longwave radiation" or "OLR". In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#atmosphere_net_rate_of_absorption_of_longwave_energy">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>atmosphere net rate of absorption of longwave energy</rdfs:label>
+    <rdfs:comment>"longwave" means longwave radiation. Net absorbed radiation is the difference between absorbed and emitted radiation.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#upwelling_shortwave_flux_in_air_assuming_clear_sky">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>upwelling shortwave flux in air assuming clear sky</rdfs:label>
+    <rdfs:comment>Upwelling radiation is radiation from below. It does not mean "net upward".  When thought of as being incident on a surface, a radiative flux is sometimes called "irradiance".  In addition, it is identical with the quantity measured by a cosine-collector light-meter and sometimes called "vector irradiance".  In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.  A phrase assuming_condition  indicates that the named quantity is the value which would obtain if all  aspects of the system were unaltered except for the assumption of the  circumstances specified by the condition.  "shortwave" means shortwave radiation. </rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#surface_net_downward_shortwave_flux">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>surface net downward shortwave flux</rdfs:label>
+    <rdfs:comment>The surface called "surface" means the lower boundary of the atmosphere. "shortwave" means shortwave radiation. "Downward" indicates a vector component which is positive when directed downward (negative upward). Net downward radiation is the difference between radiation from above (downwelling) and radiation from below (upwelling). In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#surface_downwelling_photosynthetic_radiative_flux_in_sea_water">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>surface downwelling photosynthetic radiative flux in sea water</rdfs:label>
+    <rdfs:comment>The surface called "surface" means the lower boundary of the atmosphere. "Water" means water in all phases, including frozen i.e. ice and snow. Downwelling radiation is radiation from above. It does not mean "net downward". Radiative flux is the sum of shortwave and longwave radiative fluxes. "Photosynthetic" radiation is the part of the spectrum which is used in photosynthesis e.g. 300-700 nm. The range of wavelengths could be specified precisely by the bounds of a coordinate of radiation_wavelength. When thought of as being incident on a surface, a radiative flux is sometimes called "irradiance". In addition, it is identical with the quantity measured by a cosine-collector light-meter and sometimes called "vector irradiance". In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#toa_cloud_radiative_effect">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>toa cloud radiative effect</rdfs:label>
+    <rdfs:comment>"toa" means top of atmosphere.  Cloud radiative effect is also commonly known as "cloud radiative forcing".  It is the sum of the quantities with standard names toa_shortwave_cloud_radiative_effect and toa_longwave_cloud_radiative_effect.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#net_downward_longwave_flux_in_air_assuming_clear_sky">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>net downward longwave flux in air assuming clear sky</rdfs:label>
+    <rdfs:comment>A phrase assuming_condition indicates that the named quantity is the value which would obtain if all aspects of the system were unaltered except for the assumption of the circumstances specified by the condition. "longwave" means longwave radiation. "Downward" indicates a vector component which is positive when directed downward (negative upward). Net downward radiation is the difference between radiation from above (downwelling) and radiation from below (upwelling). In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_potential_energy_content_due_to_advection">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>tendency of atmosphere potential energy content due to advection</rdfs:label>
+    <rdfs:comment>The specification of a physical process by the phrase due_to_process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. "tendency_of_X" means derivative of X with respect to time. "Content" indicates a quantity per unit area. The "atmosphere content" of a quantity refers to the vertical integral from the surface to the top of the atmosphere. For the content between specified levels in the atmosphere, standard names including content_of_atmosphere_layer are used. Potential energy is the sum of the gravitational potential energy relative to the geoid and the centripetal potential energy. (The geopotential is the specific potential energy.)</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#toa_adjusted_longwave_forcing">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>toa adjusted longwave forcing</rdfs:label>
+    <rdfs:comment>"longwave" means longwave radiation. "toa" means top of atmosphere. Adjusted forcing is the radiative flux change caused by an imposed change in radiative forcing agent (greenhouse gases, aerosol, solar radiation, etc.) after allowance for stratospheric temperature adjustment.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#downward_heat_flux_in_soil">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#heatFlux"/>
+    <rdfs:label>downward heat flux in soil</rdfs:label>
+    <rdfs:comment>"Downward" indicates a vector component which is positive when directed downward (negative upward). In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#toa_outgoing_longwave_flux">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>toa outgoing longwave flux</rdfs:label>
+    <rdfs:comment>"longwave" means longwave radiation. "toa" means top of atmosphere. The TOA outgoing longwave flux is the upwelling thermal radiative flux, often called the "outgoing longwave radiation" or "OLR". In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#minus_one_times_surface_upwelling_shortwave_flux_in_air">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>minus one times surface upwelling shortwave flux in air</rdfs:label>
+    <rdfs:comment>"Minus one times" means that the quantity described takes the opposite sign convention  to that for the quantity which has the same standard name apart from this phrase, i.e. the two quantities differ from one another by a factor of -1. The surface called "surface" means the lower boundary of the atmosphere. "shortwave" means shortwave radiation. Upwelling radiation is radiation from below. It does not mean "net upward". When thought of as being incident on a surface, a radiative flux is sometimes called "irradiance". In addition, it is identical with the quantity measured by a cosine-collector light-meter and sometimes called "vector irradiance". In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#downward_dry_static_energy_flux_due_to_diffusion">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>downward dry static energy flux due to diffusion</rdfs:label>
+    <rdfs:comment>The specification of a physical process by the phrase due_to_process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. "Downward" indicates a vector component which is positive when directed downward (negative upward). Dry static energy is the sum of enthalpy and potential energy (itself the sum of gravitational and centripetal potential energy). Enthalpy can be written either as (1) CpT, where Cp is heat capacity at constant pressure, T is absolute temperature, or (2) U+pV, where U is internal energy, p is pressure and V is volume. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#toa_outgoing_shortwave_flux_assuming_clear_sky">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>toa outgoing shortwave flux assuming clear sky</rdfs:label>
+    <rdfs:comment>A phrase assuming_condition indicates that the named quantity is the value which would obtain if all aspects of the system were unaltered except for the assumption of the circumstances specified by the condition. "shortwave" means shortwave radiation. "toa" means top of atmosphere. The TOA outgoing shortwave flux is the reflected and scattered solar radiative flux i.e. the "upwelling" TOA shortwave flux, sometimes called the "outgoing shortwave radiation" or "OSR". In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#toa_longwave_cloud_radiative_effect">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>toa longwave cloud radiative effect</rdfs:label>
+    <rdfs:comment>"toa" means top of atmosphere.  "Longwave" means longwave radiation.  Cloud radiative effect is also commonly known as "cloud radiative forcing".  It is the difference in radiative flux resulting from the presence of clouds, i.e. it is the difference between toa_outgoing_longwave_flux_assuming_clear_sky and toa_outgoing_longwave_flux.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#toa_shortwave_cloud_radiative_effect">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>toa shortwave cloud radiative effect</rdfs:label>
+    <rdfs:comment>"toa" means top of atmosphere.  "Shortwave" means shortwave radiation.  Cloud radiative effect is also commonly known as "cloud radiative forcing".  It is the difference in radiative flux resulting from the presence of clouds, i.e.  the difference between toa_net_downward_shortwave_flux and toa_net_downward_shortwave_flux_assuming_clear_sky.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_kinetic_energy_content_due_to_advection">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>tendency of atmosphere kinetic energy content due to advection</rdfs:label>
+    <rdfs:comment>The specification of a physical process by the phrase due_to_process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. "tendency_of_X" means derivative of X with respect to time. "Content" indicates a quantity per unit area. The "atmosphere content" of a quantity refers to the vertical integral from the surface to the top of the atmosphere. For the content between specified levels in the atmosphere, standard names including content_of_atmosphere_layer are used.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_dry_static_energy_content_of_atmosphere_layer">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#energyFlux"/>
+    <rdfs:label>tendency of dry static energy content of atmosphere layer</rdfs:label>
+    <rdfs:comment>"tendency_of_X" means derivative of X with respect to time. "Content" indicates a quantity per unit area. "Layer" means any layer with upper and lower boundaries that have constant values in some vertical coordinate. There must be a vertical coordinate variable indicating the extent of the layer(s). If the layers are model layers, the vertical coordinate can be model_level_number, but it is recommended to specify a physical coordinate (in a scalar or auxiliary coordinate variable) as well. Dry static energy is the sum of enthalpy and potential energy (itself the sum of gravitational and centripetal potential energy). Enthalpy can be written either as (1) CpT, where Cp is heat capacity at constant pressure, T is absolute temperature, or (2) U+pV, where U is internal energy, p is pressure and V is volume.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
+  </skos:Concept>
+</rdf:RDF>

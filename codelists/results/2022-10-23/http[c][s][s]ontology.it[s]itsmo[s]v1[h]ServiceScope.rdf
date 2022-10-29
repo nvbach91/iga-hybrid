@@ -1,6 +1,6 @@
 <rdf:RDF
-    xmlns:dct="http://purl.org/dc/terms/"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
     xmlns:dc="http://purl.org/dc/elements/1.1/"
     xmlns:owl="http://www.w3.org/2002/07/owl#"
     xmlns:dcmit="http://purl.org/dc/dcmitype/"
@@ -10,18 +10,13 @@
     xmlns:vann="http://purl.org/vocab/vann/">
   <owl:Ontology rdf:about="http://ontology.it/itsmo/v1"/>
   <owl:ObjectProperty rdf:about="http://ontology.it/itsmo/v1#hasServiceScope">
-    <rdfs:isDefinedBy rdf:resource="http://ontology.it/itsmo/v1"/>
     <rdfs:comment xml:lang="en">This atribute state the service scope</rdfs:comment>
     <rdfs:label xml:lang="en">hasServiceScope</rdfs:label>
-    <rdfs:domain>
-      <rdf:Description rdf:about="http://ontology.it/itsmo/v1#ITService">
-        <rdfs:isDefinedBy rdf:resource="http://ontology.it/itsmo/v1"/>
-      </rdf:Description>
-    </rdfs:domain>
+    <rdfs:domain rdf:resource="http://ontology.it/itsmo/v1#ITService"/>
     <rdfs:range>
       <skos:ConceptScheme rdf:about="http://ontology.it/itsmo/v1#ServiceScope">
         <rdfs:isDefinedBy rdf:resource="http://ontology.it/itsmo/v1"/>
-        <rdfs:label xml:lang="en">The service Scope (busines or infrastructure)</rdfs:label>
+        <rdfs:label xml:lang="en">ServiceScope</rdfs:label>
         <rdfs:comment xml:lang="en">The service Scope (busines or infrastructure)</rdfs:comment>
       </skos:ConceptScheme>
     </rdfs:range>

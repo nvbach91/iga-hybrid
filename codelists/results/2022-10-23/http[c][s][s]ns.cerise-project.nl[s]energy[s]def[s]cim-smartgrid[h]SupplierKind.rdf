@@ -1,0 +1,36 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://ns.cerise-project.nl/energy/def/cim-smartgrid"/>
+  <skos:Concept rdf:about="http://ns.cerise-project.nl/energy/def/cim-smartgrid#SupplierKind.retailer">
+    <rdfs:isDefinedBy rdf:resource="http://ns.cerise-project.nl/energy/def/cim-smartgrid"/>
+    <rdfs:label>retailer</rdfs:label>
+    <rdfs:comment>Entity that sells the service, but does not deliver to the customer; applies to the deregulated markets.</rdfs:comment>
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="http://ns.cerise-project.nl/energy/def/cim-smartgrid#SupplierKind">
+        <rdfs:isDefinedBy rdf:resource="http://ns.cerise-project.nl/energy/def/cim-smartgrid"/>
+        <rdfs:label>SupplierKind</rdfs:label>
+        <rdfs:comment>Kind of supplier.</rdfs:comment>
+      </skos:ConceptScheme>
+    </skos:inScheme>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://ns.cerise-project.nl/energy/def/cim-smartgrid#SupplierKind.other">
+    <rdfs:isDefinedBy rdf:resource="http://ns.cerise-project.nl/energy/def/cim-smartgrid"/>
+    <rdfs:label>other</rdfs:label>
+    <rdfs:comment>Other kind of supplier.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://ns.cerise-project.nl/energy/def/cim-smartgrid#SupplierKind"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://ns.cerise-project.nl/energy/def/cim-smartgrid#SupplierKind.utility">
+    <rdfs:isDefinedBy rdf:resource="http://ns.cerise-project.nl/energy/def/cim-smartgrid"/>
+    <rdfs:label>utility</rdfs:label>
+    <rdfs:comment>Entity that delivers the service to the customer.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://ns.cerise-project.nl/energy/def/cim-smartgrid#SupplierKind"/>
+  </skos:Concept>
+</rdf:RDF>

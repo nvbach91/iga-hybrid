@@ -1,6 +1,6 @@
 <rdf:RDF
-    xmlns:dct="http://purl.org/dc/terms/"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
     xmlns:dc="http://purl.org/dc/elements/1.1/"
     xmlns:owl="http://www.w3.org/2002/07/owl#"
     xmlns:dcmit="http://purl.org/dc/dcmitype/"
@@ -10,18 +10,13 @@
     xmlns:vann="http://purl.org/vocab/vann/">
   <owl:Ontology rdf:about="http://dataid.dbpedia.org/ns/core#"/>
   <owl:ObjectProperty rdf:about="http://dataid.dbpedia.org/ns/core#authorityAgentRole">
-    <rdfs:isDefinedBy rdf:resource="http://dataid.dbpedia.org/ns/core#"/>
     <rdfs:comment xml:lang="en">Adds a role an agent can administer in the scope provided by the AuthorityEntityContext, thereby allowing for certain actions an agent can execute.</rdfs:comment>
     <rdfs:label xml:lang="en">authority agent role</rdfs:label>
-    <rdfs:domain>
-      <rdf:Description rdf:about="http://dataid.dbpedia.org/ns/core#AuthorityEntityContext">
-        <rdfs:isDefinedBy rdf:resource="http://dataid.dbpedia.org/ns/core#"/>
-      </rdf:Description>
-    </rdfs:domain>
+    <rdfs:domain rdf:resource="http://dataid.dbpedia.org/ns/core#AuthorityEntityContext"/>
     <rdfs:range>
       <skos:ConceptScheme rdf:about="http://dataid.dbpedia.org/ns/core#AgentRole">
         <rdfs:isDefinedBy rdf:resource="http://dataid.dbpedia.org/ns/core#"/>
-        <rdfs:label xml:lang="en">Instances of this class define an array of rights and responsibilities an agent, assigned with this role for a given scope of entities, has to address or can execute.</rdfs:label>
+        <rdfs:label xml:lang="en">Agent role</rdfs:label>
         <rdfs:comment xml:lang="en">Instances of this class define an array of rights and responsibilities an agent, assigned with this role for a given scope of entities, has to address or can execute.</rdfs:comment>
       </skos:ConceptScheme>
     </rdfs:range>

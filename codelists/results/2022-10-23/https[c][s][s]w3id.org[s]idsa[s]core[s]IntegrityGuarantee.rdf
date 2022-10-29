@@ -1,0 +1,33 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="https://w3id.org/idsa/core"/>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/INTEGRITY_PROTECTION_LOCAL">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label>Integrity Protection Local</rdfs:label>
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="https://w3id.org/idsa/core/IntegrityGuarantee">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+        <rdfs:label xml:lang="en">Integrity protection and verification</rdfs:label>
+        <rdfs:comment xml:lang="en">Level of integrity protection and verification of the installed software stack. Trusted boot is an example of local integrity protection, remote integrity verification comprises, for example, remote attestation.</rdfs:comment>
+      </skos:ConceptScheme>
+    </skos:inScheme>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/INTEGRITY_PROTECTION_NONE">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label>Integrity Protection None</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/IntegrityGuarantee"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/INTEGRITY_VERIFICATION_REMOTE">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label>Integrity Protection Remote</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/IntegrityGuarantee"/>
+  </skos:Concept>
+</rdf:RDF>

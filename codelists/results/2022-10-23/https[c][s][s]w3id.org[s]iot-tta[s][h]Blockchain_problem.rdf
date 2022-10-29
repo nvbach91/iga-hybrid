@@ -1,0 +1,52 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="https://w3id.org/iot-tta/"/>
+  <owl:ObjectProperty rdf:about="https://w3id.org/iot-tta/#challenge">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >challenge (Object property): Blockchain technology comes with some challenges to implementation</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >challenge</rdfs:label>
+    <rdfs:domain rdf:resource="https://w3id.org/iot-tta/#Blockchain"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="https://w3id.org/iot-tta/#Blockchain_problem">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/iot-tta/"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Blockchain_problem</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Blockchain problems: (a) Blockchain algorithm requires energy that IoT devices may not manage; (b) IoT devices continue to stream data while Blockchain throughput is limited; (c) Almost impossible to identify illegal Blockchain transaction; (d) Blockchain’s transparency feature brings privacy challenges for IoT customer, etc.</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://w3id.org/iot-tta/#hasProblem">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >hasProblem (Object property): Blockchain technology has some problems</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >hasProblem</rdfs:label>
+    <rdfs:domain rdf:resource="https://w3id.org/iot-tta/#Blockchain"/>
+    <rdfs:range rdf:resource="https://w3id.org/iot-tta/#Blockchain_problem"/>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="https://w3id.org/iot-tta/#Energy_managed">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/iot-tta/"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >energy_managed</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >energy_managed (Individual): a Blockchain problem with Object property assertions (hasSolution)</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/iot-tta/#Blockchain_problem"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/iot-tta/#Throughput_limited">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/iot-tta/"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >throughput_limited</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >throughput_limited (Individual): a Blockchain problem with Object property assertions (hasSolution)</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/iot-tta/#Blockchain_problem"/>
+  </skos:Concept>
+</rdf:RDF>

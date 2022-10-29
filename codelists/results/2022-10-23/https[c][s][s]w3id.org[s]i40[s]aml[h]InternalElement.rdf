@@ -1,0 +1,57 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:j.0="https://w3id.org/i40/aml#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="https://w3id.org/i40/aml"/>
+  <owl:ObjectProperty rdf:about="https://w3id.org/i40/aml#hasInternalElement">
+    <rdfs:label xml:lang="en">hasInternalElement</rdfs:label>
+    <rdfs:domain rdf:resource="https://w3id.org/i40/aml#InstanceHierarchy"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="https://w3id.org/i40/aml#InternalElement">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/i40/aml"/>
+        <rdfs:label xml:lang="en">InternalElement</rdfs:label>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <owl:TransitiveProperty rdf:about="https://w3id.org/i40/aml#isPartOfIE">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">isPartOfIE</rdfs:label>
+    <rdfs:domain rdf:resource="https://w3id.org/i40/aml#InternalElement"/>
+    <rdfs:range rdf:resource="https://w3id.org/i40/aml#InternalElement"/>
+  </owl:TransitiveProperty>
+  <skos:Concept rdf:about="https://w3id.org/i40/aml#LIRCS1">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/i40/aml"/>
+    <j.0:isPartOfIE>
+      <skos:Concept rdf:about="https://w3id.org/i40/aml#L1001">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/i40/aml"/>
+        <j.0:isPartOfIE>
+          <skos:Concept rdf:about="https://w3id.org/i40/aml#DemoArea">
+            <rdfs:isDefinedBy rdf:resource="https://w3id.org/i40/aml"/>
+            <j.0:isPartOfIE>
+              <skos:Concept rdf:about="https://w3id.org/i40/aml#DemoSite">
+                <j.0:isPartOfIE>
+                  <skos:Concept rdf:about="https://w3id.org/i40/aml#DemoEnterprise">
+                    <skos:inScheme rdf:resource="https://w3id.org/i40/aml#InternalElement"/>
+                    <rdfs:isDefinedBy rdf:resource="https://w3id.org/i40/aml"/>
+                  </skos:Concept>
+                </j.0:isPartOfIE>
+                <skos:inScheme rdf:resource="https://w3id.org/i40/aml#InternalElement"/>
+                <rdfs:isDefinedBy rdf:resource="https://w3id.org/i40/aml"/>
+              </skos:Concept>
+            </j.0:isPartOfIE>
+            <skos:inScheme rdf:resource="https://w3id.org/i40/aml#InternalElement"/>
+          </skos:Concept>
+        </j.0:isPartOfIE>
+        <skos:inScheme rdf:resource="https://w3id.org/i40/aml#InternalElement"/>
+      </skos:Concept>
+    </j.0:isPartOfIE>
+    <skos:inScheme rdf:resource="https://w3id.org/i40/aml#InternalElement"/>
+  </skos:Concept>
+</rdf:RDF>

@@ -1,0 +1,62 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://purl.oclc.org/NET/ldr/ns#"/>
+  <owl:ObjectProperty rdf:about="http://purl.oclc.org/NET/ldr/ns#hasLegalStatus">
+    <rdfs:comment>Declares the legal status of a resource</rdfs:comment>
+    <rdfs:domain rdf:resource="http://purl.oclc.org/NET/ldr/ns#LinkedDataResource"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://purl.oclc.org/NET/ldr/ns#ResourceLegalStatus">
+        <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ldr/ns#"/>
+        <rdfs:comment xml:lang="en">Attribute of a resource regarding its legal status</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ldr/ns#hasAllRightsReserved">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ldr/ns#"/>
+    <rdfs:comment xml:lang="en">Declares that the referred resource is protected under copyright or database rights, and none of them is waived</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ldr/ns#ResourceLegalStatus"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ldr/ns#isInPublicDomain">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ldr/ns#"/>
+    <rdfs:comment xml:lang="en">Declares that the declared resource is in the public domain</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ldr/ns#ResourceLegalStatus"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ldr/ns#hasNationalSecurityInfo">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ldr/ns#"/>
+    <rdfs:comment xml:lang="en">Declares that the referred resource has information whose disclosure might harm the national security</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ldr/ns#ResourceLegalStatus"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ldr/ns#hasTopSecret">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ldr/ns#"/>
+    <rdfs:comment xml:lang="en">Declares that the referred resource contains top secret information of military nature or other</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ldr/ns#ResourceLegalStatus"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ldr/ns#hasDatabaseRightsExpired">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ldr/ns#"/>
+    <rdfs:comment xml:lang="en">Declares that the referred resource has the database rights expired</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ldr/ns#ResourceLegalStatus"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ldr/ns#hasCopyrightExpired">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ldr/ns#"/>
+    <rdfs:comment xml:lang="en">Declares that the referred resource has its copyright expired</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ldr/ns#ResourceLegalStatus"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ldr/ns#hasPersonalData">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ldr/ns#"/>
+    <rdfs:comment xml:lang="en">Declares that the referred resource has personal data</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ldr/ns#ResourceLegalStatus"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ldr/ns#hasIndustrialSecret">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ldr/ns#"/>
+    <rdfs:comment xml:lang="en">The referred resource containts an Industrial Secret</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ldr/ns#ResourceLegalStatus"/>
+  </skos:Concept>
+</rdf:RDF>

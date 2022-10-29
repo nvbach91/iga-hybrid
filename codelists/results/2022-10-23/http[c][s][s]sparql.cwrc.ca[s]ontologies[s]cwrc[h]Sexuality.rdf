@@ -1,0 +1,77 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://sparql.cwrc.ca/ontologies/cwrc"/>
+  <owl:ObjectProperty rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#hasSexuality">
+    <rdfs:label xml:lang="en">has sexual identity</rdfs:label>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#Sexuality">
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+        <rdfs:label xml:lang="en">sexuality</rdfs:label>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#hasSexualitySelfReported">
+    <rdfs:label xml:lang="en">has sexual identity (self-reported)</rdfs:label>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:range rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Sexuality"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#hasSexualityReported">
+    <rdfs:label xml:lang="en">has sexual identity (reported)</rdfs:label>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:range rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Sexuality"/>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#sexualityCelibacy">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">celibacy</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Sexuality"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#sexualityBisexuality">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">bisexuality</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Sexuality"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#sexualityPromiscuity">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">promiscuity</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Sexuality"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#heterosexual">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">heterosexuality</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Sexuality"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#sexualityFrigidity">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">frigidity</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Sexuality"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#homosexual">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">homosexuality</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Sexuality"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#lesbian">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">lesbianism</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Sexuality"/>
+  </skos:Concept>
+  <owl:DeprecatedProperty rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#hasSexualitySelfDeclared">
+    <rdfs:comment xml:lang="en">Deprecated in favour of instance &lt;a href="#hasSexualitySelfReported" title="#hasSexualitySelfReported"&gt;has sexual identity (self-reported)&lt;/a&gt;.</rdfs:comment>
+    <rdfs:label xml:lang="en">has sexual orientation (self declared)</rdfs:label>
+    <rdfs:range rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Sexuality"/>
+  </owl:DeprecatedProperty>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#sexualityLibertinism">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">libertinism</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Sexuality"/>
+  </skos:Concept>
+</rdf:RDF>

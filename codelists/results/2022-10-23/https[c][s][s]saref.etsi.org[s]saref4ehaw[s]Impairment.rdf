@@ -1,0 +1,55 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="https://saref.etsi.org/saref4ehaw/"/>
+  <owl:ObjectProperty rdf:about="https://saref.etsi.org/saref4ehaw/hasImpairment">
+    <rdfs:comment xml:lang="en">The impairment type of a user and a patient (as sub-class of user it also inherits impairment), e.g. aural, skeletal, ocular, mobility, intellectual...</rdfs:comment>
+    <rdfs:label xml:lang="en">has impairment</rdfs:label>
+    <rdfs:domain rdf:resource="https://saref.etsi.org/saref4ehaw/User"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="https://saref.etsi.org/saref4ehaw/Impairment">
+        <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4ehaw/"/>
+        <rdfs:label xml:lang="en">Impairment</rdfs:label>
+        <rdfs:comment xml:lang="en">Defined for users (that can in particular be patients) impairments modelling, e.g. aural impairment, skeletal impairment, ocular impairment, mobility impairment, intellectual impairment. Those non exhaustive impairments are compatible with the World Health Organization classification.</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="https://saref.etsi.org/saref4ehaw/AuralImpairment">
+    <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4ehaw/"/>
+    <rdfs:label xml:lang="en">Aural impairment</rdfs:label>
+    <rdfs:comment xml:lang="en">Aural impairment (User level), i.e. impairments of auditory sensitivity.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://saref.etsi.org/saref4ehaw/Impairment"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://saref.etsi.org/saref4ehaw/IntellectualImpairment">
+    <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4ehaw/"/>
+    <rdfs:label xml:lang="en">Intellectual impairment</rdfs:label>
+    <rdfs:comment xml:lang="en">Skeletal impairment (User level), e.g. ...</rdfs:comment>
+    <skos:inScheme rdf:resource="https://saref.etsi.org/saref4ehaw/Impairment"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://saref.etsi.org/saref4ehaw/MobilityImpairment">
+    <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4ehaw/"/>
+    <rdfs:label xml:lang="en">Mobility impairment</rdfs:label>
+    <rdfs:comment xml:lang="en">Mobility impairment (User level).</rdfs:comment>
+    <skos:inScheme rdf:resource="https://saref.etsi.org/saref4ehaw/Impairment"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://saref.etsi.org/saref4ehaw/OcularImpairment">
+    <rdfs:comment xml:lang="en">Ocular impairment (User level).</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4ehaw/"/>
+    <rdfs:label xml:lang="en">Ocular impairment</rdfs:label>
+    <rdfs:comment xml:lang="en">Ocular impairment (User level), i.e. impamnents of visual acuity.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://saref.etsi.org/saref4ehaw/Impairment"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://saref.etsi.org/saref4ehaw/SkeletalImpairment">
+    <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4ehaw/"/>
+    <rdfs:label xml:lang="en">Skeletal impairment</rdfs:label>
+    <rdfs:comment xml:lang="en">Skeletal impairment (User level), e.g. of head and trunk regions, limbs...</rdfs:comment>
+    <skos:inScheme rdf:resource="https://saref.etsi.org/saref4ehaw/Impairment"/>
+  </skos:Concept>
+</rdf:RDF>

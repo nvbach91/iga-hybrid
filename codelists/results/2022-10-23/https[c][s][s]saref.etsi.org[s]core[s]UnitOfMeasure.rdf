@@ -1,0 +1,44 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="https://saref.etsi.org/saref4agri/"/>
+  <skos:Concept rdf:about="http://dbpedia.org/resource/DBM">
+    <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4agri/"/>
+    <rdfs:label xml:lang="en">decibel-milliwatts</rdfs:label>
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="https://saref.etsi.org/core/UnitOfMeasure">
+        <rdfs:comment xml:lang="en">The unit of measure is a standard for measurement of a quantity, such as a Property. For example,  Power is a property and Watt is a unit of power that represents a definite predetermined power: when we say 10 Watt, we actually mean 10 times the definite predetermined power called "watt". Our definition is based on the definition of unit of measure in the Ontology of units of Measure (OM). We propose here a list of some units of measure that are relevant for the purpose of SAREF, but this list can be extended, also using some other ontologies rather than the Ontology of units of Measure (OM).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4agri/"/>
+        <rdfs:label xml:lang="en">Unit of measure</rdfs:label>
+        <rdfs:comment xml:lang="en">The unit of measure is a standard for measurement of a quantity, such as a Property. For example,  Power is a property and Watt is a unit of power that represents a definite predetermined power: when we say 10 Watt, we actually mean 10 times the definite predetermined power called "watt". Our definition is based on the definition of unit of measure in the Ontology of units of Measure (OM). We propose here a list of some units of measure that are relevant for the purpose of the Smart Appliances ontology, but this list can be extended.</rdfs:comment>
+      </skos:ConceptScheme>
+    </skos:inScheme>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/millivolt">
+    <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4agri/"/>
+    <rdfs:label xml:lang="en">millivolt</rdfs:label>
+    <skos:inScheme rdf:resource="https://saref.etsi.org/core/UnitOfMeasure"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/millimetre">
+    <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4agri/"/>
+    <rdfs:label xml:lang="en">millimetre</rdfs:label>
+    <skos:inScheme rdf:resource="https://saref.etsi.org/core/UnitOfMeasure"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/millibar">
+    <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4agri/"/>
+    <rdfs:label xml:lang="en">millibar</rdfs:label>
+    <skos:inScheme rdf:resource="https://saref.etsi.org/core/UnitOfMeasure"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/degreeCelsius">
+    <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4agri/"/>
+    <rdfs:label xml:lang="en">degree Celsius</rdfs:label>
+    <skos:inScheme rdf:resource="https://saref.etsi.org/core/UnitOfMeasure"/>
+  </skos:Concept>
+</rdf:RDF>

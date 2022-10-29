@@ -1,0 +1,60 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://purl.org/onto-ocds/ocds"/>
+  <owl:FunctionalProperty rdf:about="http://purl.org/onto-ocds/ocds#tenderStatus">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment xml:lang="en">The current status of the tender based on the [tenderStatus codelist](http://standard.open-contracting.org/latest/en/schema/codelists/#tender-status)</rdfs:comment>
+    <rdfs:label xml:lang="en">Tender Status</rdfs:label>
+    <rdfs:domain rdf:resource="http://purl.org/onto-ocds/ocds#Tender"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://purl.org/onto-ocds/ocds#TenderStatus">
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/onto-ocds/ocds"/>
+        <rdfs:label xml:lang="en">Codelist Tender Status</rdfs:label>
+        <rdfs:comment xml:lang="en">The tender.status field is used to indicate the current status of a tender process.</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:FunctionalProperty>
+  <skos:Concept rdf:about="http://purl.org/onto-ocds/ocds#tenderStatusActive">
+    <rdfs:label xml:lang="en">Active</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/onto-ocds/ocds"/>
+    <rdfs:label xml:lang="en">active</rdfs:label>
+    <rdfs:comment xml:lang="en">A tender process is currently taking place.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/onto-ocds/ocds#TenderStatus"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/onto-ocds/ocds#tenderStatusCancelled">
+    <rdfs:label xml:lang="en">Cancelled</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/onto-ocds/ocds"/>
+    <rdfs:label xml:lang="en">cancelled</rdfs:label>
+    <rdfs:comment xml:lang="en">The tender process has been cancelled.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/onto-ocds/ocds#TenderStatus"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/onto-ocds/ocds#tenderStatusUnsuccessful">
+    <rdfs:label xml:lang="en">Unsuccessful</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/onto-ocds/ocds"/>
+    <rdfs:label xml:lang="en">unsuccessful</rdfs:label>
+    <rdfs:comment xml:lang="en">The tender process as unsucessful.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/onto-ocds/ocds#TenderStatus"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/onto-ocds/ocds#tenderStatusComplete">
+    <rdfs:label xml:lang="en">Complete</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/onto-ocds/ocds"/>
+    <rdfs:label xml:lang="en">complete</rdfs:label>
+    <rdfs:comment xml:lang="en">The tender process as unsucessful.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/onto-ocds/ocds#TenderStatus"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/onto-ocds/ocds#tenderStatusPlanned">
+    <rdfs:label xml:lang="en">Planned</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/onto-ocds/ocds"/>
+    <rdfs:label xml:lang="en">planned</rdfs:label>
+    <rdfs:comment xml:lang="en">This tender has been proposed, but is not yet taking place.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/onto-ocds/ocds#TenderStatus"/>
+  </skos:Concept>
+</rdf:RDF>

@@ -1,0 +1,44 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="https://w3id.org/cdc"/>
+  <owl:ObjectProperty rdf:about="https://w3id.org/cdc#hadDistributionRole">
+    <rdfs:comment xml:lang="en">A property to connect an instance of cdc:DistributionRelation to an instance of cdc:DistributionRole. The object of this property defines the type of the qualified distribution relation (cdc:qualifiedDistributionRelation) between a source distribution and another target DCAT entity.</rdfs:comment>
+    <rdfs:label xml:lang="en">had distribution role</rdfs:label>
+    <rdfs:domain rdf:resource="https://w3id.org/cdc#DistributionRelation"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="https://w3id.org/cdc#DistributionRole">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/cdc"/>
+        <rdfs:label xml:lang="en">distribution role</rdfs:label>
+        <rdfs:comment xml:lang="en">A distribution role defines the kind of qualified relation between two dataset distributions.</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="https://w3id.org/cdc#standaloneLink">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/cdc"/>
+    <rdfs:label xml:lang="en">standalone link</rdfs:label>
+    <rdfs:comment xml:lang="en">A role of a qualified relation between a standalone distribution (cdc:StandaloneDistribution) and a complementing distribution (cdc:AdditionDistribution, cdc:DeletionDistribution or cdc:AdditionAndDeletionDistribution) of the same dataset.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/cdc#DistributionRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/cdc#copiedDistributionLink">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/cdc"/>
+    <rdfs:label xml:lang="en">copied distribution of link</rdfs:label>
+    <rdfs:comment xml:lang="en">By connecting this node to a cdc:DistributionRelation instance, the source distribution (subject of cdc:qualifiedDistributionRelation) is marked as a copy of the target distribution (object of dcterms:relation).</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/cdc#DistributionRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/cdc#complementLink">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/cdc"/>
+    <rdfs:label xml:lang="en">complement link</rdfs:label>
+    <rdfs:comment xml:lang="en">A role of a qualified relation between a distribution of a dataset B that complements another dataset A, where the source distribution (subject of cdc:qualifiedDistributionRelation) complements the target dataset (object of dcterms:relation). The intermediate node between the distribution of dataset B and dataset A has a property cdc:hadDistributionRole pointing to cdc:complementLink. 
+
+When the dataset B is the result of both additions and deletions on dataset A, dataset B should have a direct distribution with two subdistributions (cdc:hasSubDistribution): one containing triples to be deleted (cdc:DeletetionDistribution) from the source dataset and another containing triples that should be added (cdc:AdditionDistribution) to the source dataset. The qualified relation described above is established between the direct distribution of dataset B and dataset A .</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/cdc#DistributionRole"/>
+  </skos:Concept>
+</rdf:RDF>

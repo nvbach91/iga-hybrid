@@ -1,0 +1,62 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://sparql.cwrc.ca/ontologies/cwrc"/>
+  <owl:ObjectProperty rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#hasReproductiveHistory">
+    <rdfs:label xml:lang="en">has reproductive history</rdfs:label>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#ReproductiveHistory">
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+        <rdfs:label xml:lang="en">reproductive history</rdfs:label>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#venerealDisease">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">venereal disease</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#ReproductiveHistory"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#birthControl">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">birth control</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#ReproductiveHistory"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#stillbirth">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">stillbirth</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#ReproductiveHistory"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#abortion">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">abortion</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#ReproductiveHistory"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#unspecifiedReproductiveHistory">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">unspecified</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#ReproductiveHistory"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#miscarriage">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">miscarriage</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#ReproductiveHistory"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#childlessness">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">childlessness</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#ReproductiveHistory"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#adoption">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">adoption</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#ReproductiveHistory"/>
+  </skos:Concept>
+</rdf:RDF>

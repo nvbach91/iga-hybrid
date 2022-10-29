@@ -1,0 +1,35 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:j.0="http://aims.fao.org/aos/geopolitical.owl#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://aims.fao.org/aos/geopolitical.owl"/>
+  <skos:Concept rdf:about="http://aims.fao.org/aos/geopolitical.owl#FAO_2007">
+    <j.0:isPredecessorOf>
+      <skos:Concept rdf:about="http://aims.fao.org/aos/geopolitical.owl#FAO">
+        <rdfs:isDefinedBy rdf:resource="http://aims.fao.org/aos/geopolitical.owl"/>
+        <j.0:isSuccessorOf rdf:resource="http://aims.fao.org/aos/geopolitical.owl#FAO_2007"/>
+        <skos:inScheme>
+          <skos:ConceptScheme rdf:about="http://aims.fao.org/aos/geopolitical.owl#organization">
+            <rdfs:isDefinedBy rdf:resource="http://aims.fao.org/aos/geopolitical.owl"/>
+          </skos:ConceptScheme>
+        </skos:inScheme>
+      </skos:Concept>
+    </j.0:isPredecessorOf>
+    <j.0:isSuccessorOf>
+      <skos:Concept rdf:about="http://aims.fao.org/aos/geopolitical.owl#FAO_2006">
+        <rdfs:isDefinedBy rdf:resource="http://aims.fao.org/aos/geopolitical.owl"/>
+        <j.0:isPredecessorOf rdf:resource="http://aims.fao.org/aos/geopolitical.owl#FAO_2007"/>
+        <skos:inScheme rdf:resource="http://aims.fao.org/aos/geopolitical.owl#organization"/>
+      </skos:Concept>
+    </j.0:isSuccessorOf>
+    <skos:inScheme rdf:resource="http://aims.fao.org/aos/geopolitical.owl#organization"/>
+    <rdfs:isDefinedBy rdf:resource="http://aims.fao.org/aos/geopolitical.owl"/>
+  </skos:Concept>
+</rdf:RDF>

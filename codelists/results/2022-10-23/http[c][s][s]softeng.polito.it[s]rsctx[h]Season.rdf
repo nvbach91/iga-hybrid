@@ -1,0 +1,63 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://softeng.polito.it/rsctx"/>
+  <owl:FunctionalProperty rdf:about="http://softeng.polito.it/rsctx#season">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment xml:lang="en">It indicates the season in which a Time is included in.</rdfs:comment>
+    <rdfs:label xml:lang="en">season</rdfs:label>
+    <rdfs:domain rdf:resource="http://softeng.polito.it/rsctx#Time"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://softeng.polito.it/rsctx#Season">
+        <rdfs:isDefinedBy rdf:resource="http://softeng.polito.it/rsctx"/>
+        <rdfs:comment xml:lang="en">A season is a division of the year marked by changes in weather.</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:FunctionalProperty>
+  <skos:Concept rdf:about="http://softeng.polito.it/rsctx#Winter">
+    <rdfs:isDefinedBy rdf:resource="http://softeng.polito.it/rsctx"/>
+    <rdfs:label xml:lang="en">Winter</rdfs:label>
+    <skos:inScheme rdf:resource="http://softeng.polito.it/rsctx#Season"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://softeng.polito.it/rsctx#Fall">
+    <rdfs:label xml:lang="en">Fall</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://softeng.polito.it/rsctx"/>
+    <rdfs:label xml:lang="en">Autumn</rdfs:label>
+    <skos:inScheme rdf:resource="http://softeng.polito.it/rsctx#Season"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://softeng.polito.it/rsctx#DrySeason">
+    <rdfs:isDefinedBy rdf:resource="http://softeng.polito.it/rsctx"/>
+    <rdfs:label xml:lang="en">Dry Season</rdfs:label>
+    <skos:inScheme rdf:resource="http://softeng.polito.it/rsctx#Season"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://softeng.polito.it/rsctx#WetSeason">
+    <rdfs:label xml:lang="en">Wet Season</rdfs:label>
+    <rdfs:label xml:lang="en">Rainy Season</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://softeng.polito.it/rsctx"/>
+    <rdfs:label xml:lang="en">Monsoon Season</rdfs:label>
+    <skos:inScheme rdf:resource="http://softeng.polito.it/rsctx#Season"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://softeng.polito.it/rsctx#Spring">
+    <rdfs:isDefinedBy rdf:resource="http://softeng.polito.it/rsctx"/>
+    <rdfs:label xml:lang="en">Spring</rdfs:label>
+    <skos:inScheme rdf:resource="http://softeng.polito.it/rsctx#Season"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://softeng.polito.it/rsctx#Summer">
+    <rdfs:isDefinedBy rdf:resource="http://softeng.polito.it/rsctx"/>
+    <rdfs:label xml:lang="en">Summer</rdfs:label>
+    <skos:inScheme rdf:resource="http://softeng.polito.it/rsctx#Season"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://softeng.polito.it/rsctx#MildSeason">
+    <rdfs:label xml:lang="en">Mild Season</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://softeng.polito.it/rsctx"/>
+    <rdfs:label xml:lang="en">Cool season</rdfs:label>
+    <skos:inScheme rdf:resource="http://softeng.polito.it/rsctx#Season"/>
+  </skos:Concept>
+</rdf:RDF>

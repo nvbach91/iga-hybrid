@@ -1,0 +1,48 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl"/>
+  <owl:ObjectProperty rdf:about="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl#referesToNetwork">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Defines network which supports bearer.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl#NetworkBearerService"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl#Network">
+        <rdfs:isDefinedBy rdf:resource="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Defines general term for telecommunication network.</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl#WLAN">
+    <rdfs:isDefinedBy rdf:resource="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Defines wireless LAN network type.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl#Network"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl#UMTS">
+    <rdfs:isDefinedBy rdf:resource="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Universal Mobile Telecommunications System (UMTS) is one of the third-generation (3G) cell phone technologies.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl#Network"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl#IS-95">
+    <rdfs:isDefinedBy rdf:resource="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Interim Standard 95 (IS-95), is the first CDMA-based digital cellular standard pioneered by Qualcomm. CDMA or "code division multiple access" is a digital radio system that transmits streams of bits (PN Sequences).</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl#Network"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl#GSM">
+    <rdfs:isDefinedBy rdf:resource="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The Global System for Mobile communications is the most popular standard for mobile phones in the world. GSM is a cellular network, which means that mobile phones connect to it by searching for cells in the immediate vicinity.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl#Network"/>
+  </skos:Concept>
+</rdf:RDF>

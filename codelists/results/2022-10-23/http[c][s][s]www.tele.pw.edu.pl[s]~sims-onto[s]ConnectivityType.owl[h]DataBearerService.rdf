@@ -1,0 +1,54 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl"/>
+  <skos:Concept rdf:about="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl#WLAN_IPv4">
+    <rdfs:isDefinedBy rdf:resource="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Defines bearer service in WLAN networks with IPv4 address protocol.</rdfs:comment>
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl#DataBearerService">
+        <rdfs:isDefinedBy rdf:resource="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Defines bearer capable to transmit data.</rdfs:comment>
+      </skos:ConceptScheme>
+    </skos:inScheme>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl#GSM_GPRS_IPV4">
+    <rdfs:isDefinedBy rdf:resource="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Defines GPRS bearer service in GSM network using IPv4 address type. Type of data transfer bearer in GSM network.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl#DataBearerService"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl#GSM_CSD_IPv4">
+    <rdfs:isDefinedBy rdf:resource="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Defines bearer service in GSM network which use IPv4 address type and CSD bearer. Type of data transfer bearer in GSM network.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl#DataBearerService"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl#GSM_HSCSD_IPv4">
+    <rdfs:isDefinedBy rdf:resource="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Defines HSCSD bearer service in GSM network with IP v4 address protocol.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl#DataBearerService"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl#GSM_USSD">
+    <rdfs:isDefinedBy rdf:resource="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >USSD is a technology built into the GSM standard for support of transmitting information over the signaling channels of the GSM network. USSD provides session-based communication. Defined within the GSM standard in the documents GSM 02.90 (USSD Stage 1) and GSM 03.90 (USSD Stage 2).</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl#DataBearerService"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl#GSM_EDGE_IPv4">
+    <rdfs:isDefinedBy rdf:resource="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Defines EDGE bearer service in GSM network with IPv4 address protocol.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl#DataBearerService"/>
+  </skos:Concept>
+</rdf:RDF>

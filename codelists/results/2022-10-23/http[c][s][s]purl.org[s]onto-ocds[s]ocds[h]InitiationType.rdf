@@ -1,0 +1,32 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://purl.org/onto-ocds/ocds"/>
+  <owl:FunctionalProperty rdf:about="http://purl.org/onto-ocds/ocds#initiationType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment xml:lang="en">String specifying the type of initiation process used for this contract, taken from the [initiationType](http://standard.open-contracting.org/latest/en/schema/codelists/#initiation-type) codelist. Currently only tender is supported.</rdfs:comment>
+    <rdfs:label xml:lang="en">Initiation Type</rdfs:label>
+    <rdfs:domain rdf:resource="http://purl.org/onto-ocds/ocds#Release"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://purl.org/onto-ocds/ocds#InitiationType">
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/onto-ocds/ocds"/>
+        <rdfs:label xml:lang="en">Codelist Initiation Type</rdfs:label>
+        <rdfs:comment xml:lang="en">Contracting processes may be formed under a number of different processes. Currently, only ‘tender’ is supported in this codelist. Future versions of the standard may support other Initiation Types. The initiation type may be provide information to consuming applications on the different blocks of data and releases they should expect from a contracting process.</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:FunctionalProperty>
+  <skos:Concept rdf:about="http://purl.org/onto-ocds/ocds#initiationTypeTender">
+    <rdfs:label xml:lang="en">Tender</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/onto-ocds/ocds"/>
+    <rdfs:label xml:lang="en">tender</rdfs:label>
+    <rdfs:comment xml:lang="en">An open competitive bidding or tendering to form contracts. The process generally involves publicly inviting prospective contractors to submit bids for evaluation and selecting a winner or winners.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/onto-ocds/ocds#InitiationType"/>
+  </skos:Concept>
+</rdf:RDF>

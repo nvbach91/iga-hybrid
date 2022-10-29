@@ -1,0 +1,43 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://purl.org/linked-data/sdmx/2009/code"/>
+  <skos:Concept rdf:about="http://purl.org/linked-data/sdmx/2009/code#confStatus-N">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/linked-data/sdmx/2009/code"/>
+    <rdfs:label xml:lang="en">Not for publication, restricted for internal use only</rdfs:label>
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="http://purl.org/linked-data/sdmx/2009/code#ConfStatus">
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/linked-data/sdmx/2009/code"/>
+        <rdfs:label xml:lang="en">code list for Confidentiality Status (CONF_STATUS) - codelist class</rdfs:label>
+        <rdfs:comment xml:lang="en">this code list provides coded information about the sensitivity and confidentiality status of the data.</rdfs:comment>
+      </skos:ConceptScheme>
+    </skos:inScheme>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/linked-data/sdmx/2009/code#confStatus-S">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/linked-data/sdmx/2009/code"/>
+    <rdfs:label xml:lang="en">Secondary confidentiality set and managed by the receiver, not for publication</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/linked-data/sdmx/2009/code#ConfStatus"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/linked-data/sdmx/2009/code#confStatus-C">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/linked-data/sdmx/2009/code"/>
+    <rdfs:label xml:lang="en">Confidential statistical information</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/linked-data/sdmx/2009/code#ConfStatus"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/linked-data/sdmx/2009/code#confStatus-D">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/linked-data/sdmx/2009/code"/>
+    <rdfs:label xml:lang="en">Secondary confidentiality set by the sender, not for publication</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/linked-data/sdmx/2009/code#ConfStatus"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/linked-data/sdmx/2009/code#confStatus-F">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/linked-data/sdmx/2009/code"/>
+    <rdfs:label xml:lang="en">Free</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/linked-data/sdmx/2009/code#ConfStatus"/>
+  </skos:Concept>
+</rdf:RDF>

@@ -1,0 +1,42 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://www.gsi.dit.upm.es/ontologies/marl/ns"/>
+  <owl:ObjectProperty rdf:about="http://www.gsi.dit.upm.es/ontologies/marl/ns#hasPolarity">
+    <rdfs:comment xml:lang="en">Indicates if the opinion is positive/negative or neutral. Use instances of class marl:Polarity.</rdfs:comment>
+    <rdfs:label xml:lang="en">hasPolarity</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.gsi.dit.upm.es/ontologies/marl/ns#Opinion"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://www.gsi.dit.upm.es/ontologies/marl/ns#Polarity">
+        <rdfs:isDefinedBy rdf:resource="http://www.gsi.dit.upm.es/ontologies/marl/ns"/>
+        <rdfs:label xml:lang="en">Polarity</rdfs:label>
+        <rdfs:comment xml:lang="en">Class that represents the opinion polarity. Use instances to express if the polarity is positive, neutral or negative.</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://www.gsi.dit.upm.es/ontologies/marl/ns#Negative">
+    <rdfs:isDefinedBy rdf:resource="http://www.gsi.dit.upm.es/ontologies/marl/ns"/>
+    <rdfs:label xml:lang="en">Negative</rdfs:label>
+    <rdfs:comment xml:lang="en">Negative polarity.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.gsi.dit.upm.es/ontologies/marl/ns#Polarity"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.gsi.dit.upm.es/ontologies/marl/ns#Positive">
+    <rdfs:isDefinedBy rdf:resource="http://www.gsi.dit.upm.es/ontologies/marl/ns"/>
+    <rdfs:label xml:lang="en">Positive</rdfs:label>
+    <rdfs:comment xml:lang="en">Positive polarity</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.gsi.dit.upm.es/ontologies/marl/ns#Polarity"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.gsi.dit.upm.es/ontologies/marl/ns#Neutral">
+    <rdfs:isDefinedBy rdf:resource="http://www.gsi.dit.upm.es/ontologies/marl/ns"/>
+    <rdfs:label xml:lang="en">Neutral</rdfs:label>
+    <rdfs:comment xml:lang="en">Neutral polarity</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.gsi.dit.upm.es/ontologies/marl/ns#Polarity"/>
+  </skos:Concept>
+</rdf:RDF>

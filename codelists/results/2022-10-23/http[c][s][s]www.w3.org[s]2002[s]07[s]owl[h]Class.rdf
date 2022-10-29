@@ -1,0 +1,46 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://www.demcare.eu/ontologies/contextdescriptor.owl"/>
+  <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Class">
+    <rdfs:isDefinedBy rdf:resource="http://www.demcare.eu/ontologies/contextdescriptor.owl"/>
+    <skos:inScheme rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.demcare.eu/ontologies/contextdescriptor.owl#ContextDescriptor">
+    <rdfs:isDefinedBy rdf:resource="http://www.demcare.eu/ontologies/contextdescriptor.owl"/>
+    <rdfs:label xml:lang="en">Context Descriptor</rdfs:label>
+    <rdfs:comment xml:lang="en">A ContextDescriptor instance is a container class that allows the definition of relationships (dependencies) among ontology classes. 
+
+The goal is to define relations among classes, therefore, the proposed ontology treats classes as instances, allowing property assertions to be made among domain concepts. Intuitively, the ontology can be thought of as a conceptual (meta) layer that can be placed on top of any domain activity ontology. This way, instances of the ContextDescriptor are used to link domain activities (describes property) with one or more lower-level conceptualisations through dependency property assertions.
+
+The pattern has been used for building human activity models by defining the dependencies between low-level observations and high-level activities. 
+
+For more details, please see the relevant paper: 
+Georgios Meditskos, Efstratios Kontopoulos, Ioannis Kompatsiaris, "Knowledge-driven Activity Recognition and Segmentation Using Context Connections", International Semantic Web Conference (ISWC), pp. 260-275, Riva del Garda, Trento, Italy, 19-23 October 2014 </rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="http://www.demcare.eu/ontologies/contextdescriptor.owl#describes">
+    <rdfs:comment xml:lang="en">This property is used for defining the higher level class of the ContextDescriptor</rdfs:comment>
+    <rdfs:label xml:lang="en">describes</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.demcare.eu/ontologies/contextdescriptor.owl#ContextDescriptor"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.demcare.eu/ontologies/contextdescriptor.owl#dependency">
+    <rdfs:comment xml:lang="en">This property is used for denoting the dependencies of a particular ontology class.
+
+The model also allows annotated classes to inherit the context dependencies of the superclasses through property chain axiom (OWL 2 RL Profile).</rdfs:comment>
+    <rdfs:label xml:lang="en">dependency</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.demcare.eu/ontologies/contextdescriptor.owl#ContextDescriptor"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </owl:ObjectProperty>
+</rdf:RDF>

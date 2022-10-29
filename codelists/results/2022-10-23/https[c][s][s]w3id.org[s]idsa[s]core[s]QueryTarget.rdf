@@ -1,0 +1,49 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="https://w3id.org/idsa/core"/>
+  <owl:ObjectProperty rdf:about="https://w3id.org/idsa/core/recipientScope">
+    <rdfs:comment xml:lang="en">Refers to the target property of a query message, see ids:QueryTarget.</rdfs:comment>
+    <rdfs:label xml:lang="en">recipient scope</rdfs:label>
+    <rdfs:domain rdf:resource="https://w3id.org/idsa/core/QueryMessage"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="https://w3id.org/idsa/core/QueryTarget">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+        <rdfs:label xml:lang="en">Query Target</rdfs:label>
+        <rdfs:comment xml:lang="en">Class of recipients of a query message, e.g. BROKER, APPSTORE, ANY.</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/APPSTORE">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label>APPSTORE</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/QueryTarget"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/BROKER">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label>BROKER</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/QueryTarget"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/ANY">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label>ANY</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/QueryTarget"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/CLEARING_HOUSE">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label>CLEARING_HOUSE</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/QueryTarget"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/PARIS">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label>PARTICIPANT INFORMATION SERVICE</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/QueryTarget"/>
+  </skos:Concept>
+</rdf:RDF>

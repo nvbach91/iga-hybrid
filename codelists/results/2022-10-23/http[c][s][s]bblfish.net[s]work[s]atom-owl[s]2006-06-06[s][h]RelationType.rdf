@@ -1,0 +1,56 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://bblfish.net/work/atom-owl/2006-06-06/"/>
+  <owl:ObjectProperty rdf:about="http://bblfish.net/work/atom-owl/2006-06-06/#rel">
+    <rdfs:comment xml:lang="en">see §4.2.7.2 of rfc 4287. The relationship type. The relationship type is a property that relates a awol:Version to a :Content </rdfs:comment>
+    <rdfs:label xml:lang="en">relation type</rdfs:label>
+    <rdfs:domain rdf:resource="http://bblfish.net/work/atom-owl/2006-06-06/#Link"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://bblfish.net/work/atom-owl/2006-06-06/#RelationType">
+        <rdfs:isDefinedBy rdf:resource="http://bblfish.net/work/atom-owl/2006-06-06/"/>
+        <rdfs:label xml:lang="en">Relation Type Class</rdfs:label>
+        <rdfs:comment xml:lang="en">see §4.2.7.2 of rfc 4287. Relation types are registered, or can be created as described in rfc 4287. They are special types of properties that relate awol:Versions to :Contents.</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://www.iana.org/assignments/relation/enclosure">
+    <rdfs:isDefinedBy rdf:resource="http://bblfish.net/work/atom-owl/2006-06-06/"/>
+    <rdfs:subPropertyOf>
+      <skos:Concept rdf:about="http://www.iana.org/assignments/relation/alternate">
+        <rdfs:isDefinedBy rdf:resource="http://bblfish.net/work/atom-owl/2006-06-06/"/>
+        <rdfs:label xml:lang="en">alternate relation</rdfs:label>
+        <rdfs:comment xml:lang="en">see §4.2.7.2.1 of rfc 4287. The object points to an alternate version of the subject</rdfs:comment>
+        <skos:inScheme rdf:resource="http://bblfish.net/work/atom-owl/2006-06-06/#RelationType"/>
+      </skos:Concept>
+    </rdfs:subPropertyOf>
+    <rdfs:label xml:lang="en">enclosure relation</rdfs:label>
+    <rdfs:comment xml:lang="en">see §4.2.7.2.4 of rfc 4287. The object is a related resource that is potentially large in size and requires special handling.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://bblfish.net/work/atom-owl/2006-06-06/#RelationType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.iana.org/assignments/relation/self">
+    <rdfs:isDefinedBy rdf:resource="http://bblfish.net/work/atom-owl/2006-06-06/"/>
+    <rdfs:label xml:lang="en">self relation</rdfs:label>
+    <rdfs:comment xml:lang="en">see §4.2.7.2.3 of rfc 4287. The object is equivalent to the subject.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://bblfish.net/work/atom-owl/2006-06-06/#RelationType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.iana.org/assignments/relation/related">
+    <rdfs:isDefinedBy rdf:resource="http://bblfish.net/work/atom-owl/2006-06-06/"/>
+    <rdfs:label xml:lang="en">related</rdfs:label>
+    <rdfs:comment xml:lang="en">see §4.2.7.2.2 of rfc 4287. The object points to a related version of the subject. So if the subject is a Entry the object might be a resource with an html representation of that entry.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://bblfish.net/work/atom-owl/2006-06-06/#RelationType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.iana.org/assignments/relation/via">
+    <rdfs:isDefinedBy rdf:resource="http://bblfish.net/work/atom-owl/2006-06-06/"/>
+    <rdfs:label xml:lang="en">via relation</rdfs:label>
+    <rdfs:comment xml:lang="en">see §4.2.7.2.5 of rfc 4287. The object provided a source of the information found in the subject.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://bblfish.net/work/atom-owl/2006-06-06/#RelationType"/>
+  </skos:Concept>
+</rdf:RDF>

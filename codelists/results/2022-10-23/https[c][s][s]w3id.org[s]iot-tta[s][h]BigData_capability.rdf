@@ -1,0 +1,52 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="https://w3id.org/iot-tta/"/>
+  <owl:ObjectProperty rdf:about="https://w3id.org/iot-tta/#requires">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >requires (Object property): Applications with Big Data require Big data capabilities - distributed processing and storing, etc.</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >requires</rdfs:label>
+    <rdfs:domain rdf:resource="https://w3id.org/iot-tta/#BigData_app"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="https://w3id.org/iot-tta/#BigData_capability">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/iot-tta/"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >BigData_capability</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Big data capabilities - distributed processing and storing, big data analytics, machine learning algorithms.</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://w3id.org/iot-tta/#isProcessed">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >isProcessed (Object property): the big data relies on distributed processing and storing, data analytics, and machine learning</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >isProcessed</rdfs:label>
+    <rdfs:domain rdf:resource="https://w3id.org/iot-tta/#BigData"/>
+    <rdfs:range rdf:resource="https://w3id.org/iot-tta/#BigData_capability"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://w3id.org/iot-tta/#hasCapability">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >hasCapability (Object property): tool that provides capabilities for big data processing in distributed systems</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >hasCapability</rdfs:label>
+    <rdfs:domain rdf:resource="https://w3id.org/iot-tta/#Tool"/>
+    <rdfs:range rdf:resource="https://w3id.org/iot-tta/#BigData_capability"/>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="https://w3id.org/iot-tta/#Distributed_capability">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/iot-tta/"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >distributed_capability</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >distributed_capability (Individual): Big data capability</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/iot-tta/#BigData_capability"/>
+  </skos:Concept>
+</rdf:RDF>

@@ -1,0 +1,42 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://purl.org/spar/fabio"/>
+  <skos:Concept rdf:about="http://purl.org/spar/fabio/paper">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio"/>
+    <rdfs:label>paper</rdfs:label>
+    <rdfs:comment xml:lang="en">A thin flat material, typically made from wood pulp, mainly used for writing upon, for printing upon or for packaging.</rdfs:comment>
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="http://purl.org/spar/fabio/AnalogStorageMedium">
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio"/>
+        <rdfs:label xml:lang="en">analog storage medium</rdfs:label>
+        <rdfs:comment xml:lang="en">A means of storing information in non-digital form, e.g. paper, film (for analogue photographs or movies), magnetic tape (for analogue sound recordings or video recordings) or vinyl disc.</rdfs:comment>
+      </skos:ConceptScheme>
+    </skos:inScheme>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/fabio/vinyl-disk">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio"/>
+    <rdfs:label xml:lang="en">vinyl disk</rdfs:label>
+    <rdfs:comment xml:lang="en">An analog sound storage medium consisting of a flat disc made of moulded vinyl plastic with an inscribed, modulated spiral groove.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/fabio/AnalogStorageMedium"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/fabio/analog-magnetic-tape">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio"/>
+    <rdfs:label xml:lang="en">analog magnetic tape</rdfs:label>
+    <rdfs:comment xml:lang="en">An analog medium for magnetic recording of audio and video information, made of a thin magnetizable coating on a long, narrow plastic tape, typically wound on a spool. </rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/fabio/AnalogStorageMedium"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/fabio/film">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio"/>
+    <rdfs:label xml:lang="en">film</rdfs:label>
+    <rdfs:comment xml:lang="en">A thin flexible strip of plastic or other material coated with light-sensitive emulsion upon which images can be recorded, typically using a camera, usually used to record photographic images or motion pictures.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/fabio/AnalogStorageMedium"/>
+  </skos:Concept>
+</rdf:RDF>

@@ -1,0 +1,36 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="https://saref.etsi.org/saref4ehaw/"/>
+  <owl:ObjectProperty rdf:about="https://saref.etsi.org/saref4ehaw/hasChronicDisease">
+    <rdfs:comment xml:lang="en">A patient can suffer from one or more chronic disease like Diabetes, azma, etc.</rdfs:comment>
+    <rdfs:label xml:lang="en">has chronic disease</rdfs:label>
+    <rdfs:domain rdf:resource="https://saref.etsi.org/saref4ehaw/Patient"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="https://saref.etsi.org/saref4ehaw/ChronicDisease">
+        <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4ehaw/"/>
+        <rdfs:label xml:lang="en">Chronic disease</rdfs:label>
+        <rdfs:comment xml:lang="en">For chronic disease modelling, e.g. diabetes, asthma...</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="https://saref.etsi.org/saref4ehaw/Diabetes">
+    <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4ehaw/"/>
+    <rdfs:label xml:lang="en">Diabetes</rdfs:label>
+    <rdfs:comment xml:lang="en">Diabetes, a chronical disease that some users can have.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://saref.etsi.org/saref4ehaw/ChronicDisease"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://saref.etsi.org/saref4ehaw/Asthma">
+    <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4ehaw/"/>
+    <rdfs:label xml:lang="en">Asthma</rdfs:label>
+    <rdfs:comment xml:lang="en">Asthma, a chronical disease that some users can have.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://saref.etsi.org/saref4ehaw/ChronicDisease"/>
+  </skos:Concept>
+</rdf:RDF>

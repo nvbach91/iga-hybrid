@@ -1,0 +1,24 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://www.semanticweb.org/ontologies/2008/11/OntologySecurity.owl"/>
+  <skos:Concept rdf:about="http://www.semanticweb.org/ontologies/2008/11/OntologySecurity.owl#FullIntegrity">
+    <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ontologies/2008/11/OntologySecurity.owl"/>
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="http://www.semanticweb.org/ontologies/2008/11/OntologySecurity.owl#IntegrityType">
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ontologies/2008/11/OntologySecurity.owl"/>
+      </skos:ConceptScheme>
+    </skos:inScheme>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.semanticweb.org/ontologies/2008/11/OntologySecurity.owl#SemanticIntegrity">
+    <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ontologies/2008/11/OntologySecurity.owl"/>
+    <skos:inScheme rdf:resource="http://www.semanticweb.org/ontologies/2008/11/OntologySecurity.owl#IntegrityType"/>
+  </skos:Concept>
+</rdf:RDF>

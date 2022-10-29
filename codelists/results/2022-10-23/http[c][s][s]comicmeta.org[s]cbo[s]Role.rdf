@@ -1,0 +1,76 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://comicmeta.org/cbo/"/>
+  <owl:ObjectProperty rdf:about="http://comicmeta.org/cbo/role">
+    <rdfs:comment xml:lang="en">Describes the role of a contributor in the creation of a comic work.</rdfs:comment>
+    <rdfs:label xml:lang="en">role</rdfs:label>
+    <rdfs:domain rdf:resource="http://comicmeta.org/cbo/Contributor"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://comicmeta.org/cbo/Role">
+        <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+        <rdfs:label xml:lang="en">Role</rdfs:label>
+        <rdfs:comment xml:lang="en">A creative role in the production of a comic work.</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/Letterer">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Role"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/Inker">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Role"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/Plotter">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Role"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/Writer">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Role"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/Embellisher">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Role"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/Editor">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Role"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/Finisher">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Role"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/Publisher">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Role"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/Penciller">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Role"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/Colorist">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Role"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/Producer">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Role"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/Painter">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Role"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/Illustrator">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Role"/>
+  </skos:Concept>
+</rdf:RDF>

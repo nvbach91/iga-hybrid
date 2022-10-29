@@ -1,0 +1,147 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:j.0="http://www.w3.org/ns/odrl/2/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="https://w3id.org/idsa/core"/>
+  <owl:ObjectProperty rdf:about="https://w3id.org/idsa/core/includedIn">
+    <rdfs:comment xml:lang="en">The subject transitively asserts the object Action.</rdfs:comment>
+    <rdfs:label xml:lang="en">is included in</rdfs:label>
+    <rdfs:domain>
+      <skos:ConceptScheme rdf:about="https://w3id.org/idsa/core/Action">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+      </skos:ConceptScheme>
+    </rdfs:domain>
+    <rdfs:range rdf:resource="https://w3id.org/idsa/core/Action"/>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/TRACK_PROVENANCE">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <j.0:includedIn>
+      <skos:Concept rdf:about="https://w3id.org/idsa/code/NOTIFY">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+        <j.0:includedIn>
+          <skos:Concept rdf:about="https://w3id.org/idsa/code/LOG">
+            <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+            <j.0:includedIn>
+              <skos:Concept rdf:about="https://w3id.org/idsa/code/USE">
+                <rdfs:label xml:lang="en">use</rdfs:label>
+                <rdfs:comment xml:lang="en">To use a resource in any possible way. Includes all other actions.</rdfs:comment>
+                <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Action"/>
+                <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+              </skos:Concept>
+            </j.0:includedIn>
+            <rdfs:label xml:lang="en">log</rdfs:label>
+            <rdfs:comment xml:lang="en">To log information or store information about incidents in a local file or database. Is not necessarily available to external parties but can be used to create transparency on happened events.</rdfs:comment>
+            <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Action"/>
+          </skos:Concept>
+        </j.0:includedIn>
+        <rdfs:label xml:lang="en">notify</rdfs:label>
+        <rdfs:comment xml:lang="en">To log information or notify an instance about incidents. Can be used to define Clearing House interactions.</rdfs:comment>
+        <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Action"/>
+      </skos:Concept>
+    </j.0:includedIn>
+    <rdfs:label xml:lang="en">track provenance</rdfs:label>
+    <rdfs:comment xml:lang="en">To accept that the use of the Asset may be tracked.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Action"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/NEXT_POLICY">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <j.0:includedIn>
+      <skos:Concept rdf:about="https://w3id.org/idsa/code/DISTRIBUTE">
+        <j.0:includedIn rdf:resource="https://w3id.org/idsa/code/USE"/>
+        <rdfs:label xml:lang="en">distribute</rdfs:label>
+        <rdfs:comment xml:lang="en">To forward or supply a resource to a third-party.</rdfs:comment>
+        <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Action"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+      </skos:Concept>
+    </j.0:includedIn>
+    <rdfs:label xml:lang="en">next policy</rdfs:label>
+    <rdfs:comment xml:lang="en">To forward the resource under the same policy. Implies a permission to distribute.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Action"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/COMPENSATE">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <j.0:includedIn rdf:resource="https://w3id.org/idsa/code/USE"/>
+    <rdfs:label xml:lang="en">compensate</rdfs:label>
+    <rdfs:comment xml:lang="en">To pay a certain amount of money in order to use a resource.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Action"/>
+  </skos:Concept>
+  <owl:AnnotationProperty rdf:about="https://w3id.org/idsa/core/action">
+    <rdfs:domain rdf:resource="https://w3id.org/idsa/core/UsageControlObject"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/idsa/core/Rule"/>
+    <rdfs:range rdf:resource="https://w3id.org/idsa/core/Action"/>
+  </owl:AnnotationProperty>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/ANONYMIZE">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <j.0:includedIn rdf:resource="https://w3id.org/idsa/code/USE"/>
+    <rdfs:label xml:lang="en">anonymize</rdfs:label>
+    <rdfs:comment xml:lang="en">To anonymize all, parts or certain attributes of the resource.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Action"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/READ">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <j.0:includedIn>
+      <skos:Concept rdf:about="https://w3id.org/idsa/code/MODIFY">
+        <j.0:includedIn>
+          <skos:Concept rdf:about="https://w3id.org/idsa/code/WRITE">
+            <j.0:includedIn rdf:resource="https://w3id.org/idsa/code/USE"/>
+            <rdfs:label xml:lang="en">write</rdfs:label>
+            <rdfs:comment xml:lang="en">To change a remote resource.</rdfs:comment>
+            <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Action"/>
+            <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+          </skos:Concept>
+        </j.0:includedIn>
+        <rdfs:label xml:lang="en">modify</rdfs:label>
+        <rdfs:comment xml:lang="en">To change a resource locally.</rdfs:comment>
+        <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Action"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+      </skos:Concept>
+    </j.0:includedIn>
+    <rdfs:label xml:lang="en">read</rdfs:label>
+    <rdfs:comment xml:lang="en">To obtain data from the resource.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Action"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/AGGREGATE_BY_PROVIDER">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <j.0:includedIn>
+      <skos:Concept rdf:about="https://w3id.org/idsa/code/AGGREGATE_BY_CONSUMER">
+        <j.0:includedIn rdf:resource="https://w3id.org/idsa/code/USE"/>
+        <rdfs:label xml:lang="en">aggregate by consumer</rdfs:label>
+        <rdfs:comment xml:lang="en">Data will be part of another piece of data so that it is not distinguishable anymore.</rdfs:comment>
+        <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Action"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+      </skos:Concept>
+    </j.0:includedIn>
+    <rdfs:label xml:lang="en">aggregate by provider</rdfs:label>
+    <rdfs:comment xml:lang="en">Data will be part of another piece of data so that it is not distinguishable anymore.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Action"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/GRANT_USE">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <j.0:includedIn rdf:resource="https://w3id.org/idsa/code/USE"/>
+    <rdfs:label xml:lang="en">grant use</rdfs:label>
+    <rdfs:comment xml:lang="en">To grant use of a resource to another party. Does *not* imply any other usage rights.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Action"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/DELETE">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <j.0:includedIn rdf:resource="https://w3id.org/idsa/code/WRITE"/>
+    <rdfs:label xml:lang="en">delete</rdfs:label>
+    <rdfs:comment xml:lang="en">To remove a resource or inhibit any further access with reasonable measures.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Action"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/ENCRYPT">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <j.0:includedIn rdf:resource="https://w3id.org/idsa/code/USE"/>
+    <rdfs:label xml:lang="en">ecrypt</rdfs:label>
+    <rdfs:comment xml:lang="en">The data artifact or parts of it are encrypted and can not be read by neither the ids:DataConsumer nor any other third party. The encryption algorithm might be specified by a constraint.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Action"/>
+  </skos:Concept>
+</rdf:RDF>

@@ -1,0 +1,39 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://purl.org/onto-ocds/ocds"/>
+  <owl:FunctionalProperty rdf:about="http://purl.org/onto-ocds/ocds#identifierScheme">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment xml:lang="en">Organization identifiers be drawn from an existing identification scheme. This field is used to indicate the scheme or codelist in which the identifier will be found. This value should be drawn from the [Organization Identifier Scheme](http://standard.open-contracting.org/latest/en/schema/codelists/#organization-identifier-scheme).</rdfs:comment>
+    <rdfs:label xml:lang="en">Identifier scheme</rdfs:label>
+    <rdfs:domain rdf:resource="http://purl.org/onto-ocds/ocds#Identifier"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://purl.org/onto-ocds/ocds#OrganizationIdentifierScheme">
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/onto-ocds/ocds"/>
+        <rdfs:label xml:lang="en">Codelist Organization Identifier Scheme</rdfs:label>
+        <rdfs:comment xml:lang="en">The Organization Identifier Scheme currently uses the codes from the International Aid Transparency Initiative ‘Organisation Registration Agency’ codelist. See the identifiers section for more information on organization identifiers.</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:FunctionalProperty>
+  <skos:Concept rdf:about="http://purl.org/onto-ocds/ocds#ois_AF-CBR">
+    <rdfs:label xml:lang="en">Afghanistan Central Business Registry</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/onto-ocds/ocds"/>
+    <rdfs:label xml:lang="en">AF-CBR</rdfs:label>
+    <rdfs:comment xml:lang="en">Website not yet searchable.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/onto-ocds/ocds#OrganizationIdentifierScheme"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/onto-ocds/ocds#ois_AF-MOE">
+    <rdfs:label xml:lang="en">Ministry of Economy</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/onto-ocds/ocds"/>
+    <rdfs:label xml:lang="en">AF-MOE</rdfs:label>
+    <rdfs:comment xml:lang="en"></rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/onto-ocds/ocds#OrganizationIdentifierScheme"/>
+  </skos:Concept>
+</rdf:RDF>

@@ -1,0 +1,68 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://www.w3.org/2006/time"/>
+  <owl:ObjectProperty rdf:about="http://www.w3.org/2006/time#unitType">
+    <rdfs:comment xml:lang="en">The temporal unit which provides the precision of a date-time value or scale of a temporal extent</rdfs:comment>
+    <rdfs:label xml:lang="en">temporal unit type</rdfs:label>
+    <rdfs:domain rdf:parseType="Resource">
+    </rdfs:domain>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://www.w3.org/2006/time#TemporalUnit">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2006/time"/>
+        <rdfs:label xml:lang="en">Temporal unit</rdfs:label>
+        <rdfs:comment xml:lang="en">A standard duration, which provides a scale factor for a time extent, or the granularity or precision for a time position.</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://www.w3.org/2006/time#unitHour">
+    <rdfs:label>один час"@ru</rdfs:label>
+    <rdfs:label xml:lang="en">hour</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2006/time"/>
+    <rdfs:label xml:lang="en">Hour (unit of temporal duration)</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.w3.org/2006/time#TemporalUnit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2006/time#unitMinute">
+    <rdfs:label xml:lang="en">minute</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2006/time"/>
+    <rdfs:label xml:lang="en">Minute (unit of temporal duration)</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.w3.org/2006/time#TemporalUnit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2006/time#unitMonth">
+    <rdfs:label xml:lang="en">month</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2006/time"/>
+    <rdfs:label xml:lang="en">Month (unit of temporal duration)</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.w3.org/2006/time#TemporalUnit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2006/time#unitYear">
+    <rdfs:label xml:lang="en">year</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2006/time"/>
+    <rdfs:label xml:lang="en">Year (unit of temporal duration)</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.w3.org/2006/time#TemporalUnit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2006/time#unitSecond">
+    <rdfs:label xml:lang="en">second</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2006/time"/>
+    <rdfs:label xml:lang="en">Second (unit of temporal duration)</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.w3.org/2006/time#TemporalUnit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2006/time#unitWeek">
+    <rdfs:label xml:lang="en">week</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2006/time"/>
+    <rdfs:label xml:lang="en">Week (unit of temporal duration)</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.w3.org/2006/time#TemporalUnit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2006/time#unitDay">
+    <rdfs:label xml:lang="en">day</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2006/time"/>
+    <rdfs:label xml:lang="en">Day (unit of temporal duration)</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.w3.org/2006/time#TemporalUnit"/>
+  </skos:Concept>
+</rdf:RDF>

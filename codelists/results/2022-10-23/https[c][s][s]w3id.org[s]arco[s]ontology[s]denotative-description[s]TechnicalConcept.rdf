@@ -1,0 +1,162 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="https://w3id.org/arco/ontology/denotative-description"/>
+  <owl:ObjectProperty rdf:about="https://w3id.org/arco/ontology/denotative-description/usesTechnicalConcept">
+    <rdfs:comment xml:lang="en">This property relates a technical description of a cultural property to one of the concepts used in that description.</rdfs:comment>
+    <rdfs:label xml:lang="en">uses technical concept</rdfs:label>
+    <rdfs:domain rdf:resource="https://w3id.org/arco/ontology/denotative-description/CulturalEntityTechnicalDescription"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="https://w3id.org/arco/ontology/denotative-description/TechnicalConcept">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/denotative-description"/>
+        <rdfs:label xml:lang="en">Technical concept</rdfs:label>
+        <rdfs:comment xml:lang="en">This class represents a technical concept, a particular type of concept that classifies a technical characteristic of an entity, e.g. cultural property. For instance, "material" is a techincal concept that classifies the technical characteristic "pottery" related to a cultural property.</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://w3id.org/arco/ontology/denotative-description/isCharacteristicClassifiedBy">
+    <rdfs:comment xml:lang="en">This property connects an entity's techincal characteristic to a technical concept, which classifies that characteristic.</rdfs:comment>
+    <rdfs:label xml:lang="en">is technical characteristic classified by</rdfs:label>
+    <rdfs:domain rdf:resource="https://w3id.org/arco/ontology/denotative-description/TechnicalCharacteristic"/>
+    <rdfs:range rdf:resource="https://w3id.org/arco/ontology/denotative-description/TechnicalConcept"/>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/denotative-description/GarmentColour">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/denotative-description"/>
+    <rdfs:label xml:lang="en">Garment colour</rdfs:label>
+    <rdfs:comment xml:lang="en">This individual represents the dominant color of a ancient and contemporary garment, usually it is base fabric's color, or the interlaced decoration's color.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/denotative-description/TechnicalConcept"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/denotative-description/PhotoColour">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/denotative-description"/>
+    <rdfs:label xml:lang="en">Photo colour</rdfs:label>
+    <rdfs:comment xml:lang="en">This individual represents a digital photograph's colour, i.e. black and white or colours.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/denotative-description/TechnicalConcept"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/denotative-description/PhotoSize">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/denotative-description"/>
+    <rdfs:label xml:lang="en">Photo size</rdfs:label>
+    <rdfs:comment xml:lang="en">This individual represents a digital photograph format, intended as the photogrphic material's standardised size (e.g. negative, positives).</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/denotative-description/TechnicalConcept"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/denotative-description/Shape">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/denotative-description"/>
+    <rdfs:label xml:lang="en">Shape</rdfs:label>
+    <rdfs:comment xml:lang="en">This individual represents an object's shape. It is used for bidimensional objects, e.g. octagonal or round shape.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/denotative-description/TechnicalConcept"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/denotative-description/MaterialOrTechnique">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/denotative-description"/>
+    <rdfs:label xml:lang="en">Material or Technique</rdfs:label>
+    <rdfs:comment xml:lang="en">This individual represents the material or technique through which an object has been realized, e.g. a cultural entity. In ICCD standard for cataloguing cultural entities, this label is necessary when material and techinque are registered in the same field.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/denotative-description/TechnicalConcept"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/denotative-description/AvailableNotes">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/denotative-description"/>
+    <rdfs:label xml:lang="en">Available notes</rdfs:label>
+    <rdfs:comment xml:lang="en">This individual represents playable notes by a musical instrument, from low to high.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/denotative-description/TechnicalConcept"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/denotative-description/Diapason">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/denotative-description"/>
+    <rdfs:label xml:lang="en">Diapason</rdfs:label>
+    <rdfs:comment xml:lang="en">This individual represents the identified diapason (note, temperature and eventually humidity during the detection).</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/denotative-description/TechnicalConcept"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/denotative-description/QualityLevel">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/denotative-description"/>
+    <rdfs:label xml:lang="en">Quality level</rdfs:label>
+    <rdfs:comment xml:lang="en">This individual represents a digital resource's quality level, e.g. high-resolution, low-resolution, preview.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/denotative-description/TechnicalConcept"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/denotative-description/Temperament">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/denotative-description"/>
+    <rdfs:label xml:lang="en">Temperament</rdfs:label>
+    <rdfs:comment xml:lang="en">This individual represents a musical instrument adopted temperament, especially in relation to an object in its original conditions, or after its restoration. For idiophones with fixed keys (e.g. xylophone, litophone, metallophone) the temperament represents the succession of intervals.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/denotative-description/TechnicalConcept"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/denotative-description/FileFormat">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/denotative-description"/>
+    <rdfs:label xml:lang="en">File Format</rdfs:label>
+    <rdfs:comment xml:lang="en">This individual represents the format used to write a digital resource on a data medium.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/denotative-description/TechnicalConcept"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/denotative-description/Technique">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/denotative-description"/>
+    <rdfs:label xml:lang="en">Technique</rdfs:label>
+    <rdfs:comment xml:lang="en">This individual represents an object's execution technique.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/denotative-description/TechnicalConcept"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/denotative-description/Extension">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/denotative-description"/>
+    <rdfs:label xml:lang="en">Extension</rdfs:label>
+    <rdfs:comment xml:lang="en">This individual represents a musical instrument's musical extension.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/denotative-description/TechnicalConcept"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/denotative-description/Filigree">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/denotative-description"/>
+    <rdfs:label xml:lang="en">Filigree</rdfs:label>
+    <rdfs:comment xml:lang="en">This individual represents the filigree of an artwork, painting, photography, print.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/denotative-description/TechnicalConcept"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/denotative-description/Tuning">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/denotative-description"/>
+    <rdfs:label xml:lang="en">Tuning</rdfs:label>
+    <rdfs:comment xml:lang="en">This individual represents a musical instrument tuning.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/denotative-description/TechnicalConcept"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/denotative-description/VibratingLenght">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/denotative-description"/>
+    <rdfs:label xml:lang="en">Vibrating lenght</rdfs:label>
+    <rdfs:comment xml:lang="en">This individual represents a musical instrument vibrating length, in particular a chordophone.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/denotative-description/TechnicalConcept"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/denotative-description/PhotoProgram">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/denotative-description"/>
+    <rdfs:label xml:lang="en">Photo program</rdfs:label>
+    <rdfs:comment xml:lang="en">This individual represents the visualization, storage and processing program used for a digital photograph.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/denotative-description/TechnicalConcept"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/denotative-description/Resolution">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/denotative-description"/>
+    <rdfs:label xml:lang="en">Resolution</rdfs:label>
+    <rdfs:comment xml:lang="en">This individual represents the specific value and resolution used for storing a digital photograph.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/denotative-description/TechnicalConcept"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/denotative-description/MassStorage">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/denotative-description"/>
+    <rdfs:label xml:lang="en">Mass storage</rdfs:label>
+    <rdfs:comment xml:lang="en">This individual represents the mass storage where a digital photograph is stored.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/denotative-description/TechnicalConcept"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/denotative-description/PixelDimension">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/denotative-description"/>
+    <rdfs:label xml:lang="en">Pixel dimension</rdfs:label>
+    <rdfs:comment xml:lang="en">This individual represents a digital photograph size in pixels.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/denotative-description/TechnicalConcept"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/denotative-description/StorageMethodColourDepth">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/denotative-description"/>
+    <rdfs:label xml:lang="en">Storage method and colour depth</rdfs:label>
+    <rdfs:comment xml:lang="en">This individual represents the method and color depth through which a digital photograph has been stored.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/denotative-description/TechnicalConcept"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/denotative-description/Material">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/denotative-description"/>
+    <rdfs:label xml:lang="en">Material</rdfs:label>
+    <rdfs:comment xml:lang="en">This individual represents the material through which an object has been realized, e.g. a cultural entity.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/denotative-description/TechnicalConcept"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/denotative-description/GarmentAnalysis">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/denotative-description"/>
+    <rdfs:label xml:lang="en">Garment analysis</rdfs:label>
+    <rdfs:comment xml:lang="en">This individual represents the techincal definition of textured fabrics of an ancient or contemporary garment, according to the standard provided by C.I.E.T.A., or laces. It can also represent the dinstrinction between plain fabric and textured fabric.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/denotative-description/TechnicalConcept"/>
+  </skos:Concept>
+</rdf:RDF>

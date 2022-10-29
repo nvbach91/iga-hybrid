@@ -1,0 +1,32 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://www.identity.org/ontologies/identity.owl"/>
+  <owl:ObjectProperty rdf:about="http://www.identity.org/ontologies/identity.owl#hasDefaultPolicyMode">
+    <rdfs:label>hasDefaultPolicyMode</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.identity.org/ontologies/identity.owl#Policy"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://www.identity.org/ontologies/identity.owl#Mode">
+        <rdfs:isDefinedBy rdf:resource="http://www.identity.org/ontologies/identity.owl"/>
+        <rdfs:label>Mode</rdfs:label>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://www.identity.org/ontologies/identity.owl#conservative">
+    <rdfs:isDefinedBy rdf:resource="http://www.identity.org/ontologies/identity.owl"/>
+    <rdfs:label>conservative</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.identity.org/ontologies/identity.owl#Mode"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.identity.org/ontologies/identity.owl#liberal">
+    <rdfs:isDefinedBy rdf:resource="http://www.identity.org/ontologies/identity.owl"/>
+    <rdfs:label>liberal</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.identity.org/ontologies/identity.owl#Mode"/>
+  </skos:Concept>
+</rdf:RDF>

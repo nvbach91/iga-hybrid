@@ -1,0 +1,76 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:j.0="https://w3id.org/i40/aml#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="https://w3id.org/i40/aml"/>
+  <owl:ObjectProperty rdf:about="https://w3id.org/i40/aml#hasAttributeRC">
+    <rdfs:domain rdf:resource="https://w3id.org/i40/aml#RoleClass"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="https://w3id.org/i40/aml#Attribute">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/i40/aml"/>
+        <rdfs:label xml:lang="en">Attribute</rdfs:label>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://w3id.org/i40/aml#hasAttributeIE">
+    <rdfs:domain rdf:resource="https://w3id.org/i40/aml#InternalElement"/>
+    <rdfs:range rdf:resource="https://w3id.org/i40/aml#Attribute"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://w3id.org/i40/aml#hasAttributeSUC">
+    <rdfs:domain rdf:resource="https://w3id.org/i40/aml#SystemUnitClass"/>
+    <rdfs:range rdf:resource="https://w3id.org/i40/aml#Attribute"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://w3id.org/i40/aml#hasAttribute">
+    <rdfs:label xml:lang="en">hasAttribute</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:range rdf:resource="https://w3id.org/i40/aml#Attribute"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://w3id.org/i40/aml#hasAttributeIC">
+    <rdfs:domain rdf:resource="https://w3id.org/i40/aml#InterfaceClass"/>
+    <rdfs:range rdf:resource="https://w3id.org/i40/aml#Attribute"/>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="https://w3id.org/i40/aml#PCEInitial">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/i40/aml"/>
+    <skos:inScheme rdf:resource="https://w3id.org/i40/aml#Attribute"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/i40/aml#PCEDescription">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/i40/aml"/>
+    <skos:inScheme rdf:resource="https://w3id.org/i40/aml#Attribute"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/i40/aml#OldPCE">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/i40/aml"/>
+    <skos:inScheme rdf:resource="https://w3id.org/i40/aml#Attribute"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/i40/aml#PCEFunction">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/i40/aml"/>
+    <skos:inScheme rdf:resource="https://w3id.org/i40/aml#Attribute"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/i40/aml#MaxConveyingSpeed">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/i40/aml"/>
+    <skos:inScheme rdf:resource="https://w3id.org/i40/aml#Attribute"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/i40/aml#MeasurementRangeStart">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/i40/aml"/>
+    <skos:inScheme rdf:resource="https://w3id.org/i40/aml#Attribute"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/i40/aml#MeasurementRangeEnd">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/i40/aml"/>
+    <skos:inScheme rdf:resource="https://w3id.org/i40/aml#Attribute"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/i40/aml#FlowchartNumber">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/i40/aml"/>
+    <skos:inScheme rdf:resource="https://w3id.org/i40/aml#Attribute"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/i40/aml#SoftwareSignalName">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/i40/aml"/>
+    <j.0:hasAttributeIC rdf:resource="https://w3id.org/i40/aml#SoftwareSignalName"/>
+    <skos:inScheme rdf:resource="https://w3id.org/i40/aml#Attribute"/>
+  </skos:Concept>
+</rdf:RDF>

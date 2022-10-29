@@ -1,0 +1,120 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:j.0="http://purl.oclc.org/NET/ssnx/qu/qu#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#upwelling_longwave_radiance_in_air">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind>
+      <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/qu/quantity#radiance">
+        <skos:inScheme>
+          <skos:ConceptScheme rdf:about="http://purl.oclc.org/NET/ssnx/qu/dim#Radiance">
+            <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+          </skos:ConceptScheme>
+        </skos:inScheme>
+        <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+      </skos:Concept>
+    </j.0:generalQuantityKind>
+    <rdfs:label>upwelling longwave radiance in air</rdfs:label>
+    <rdfs:comment>"longwave" means longwave radiation. Upwelling radiation is radiation from below. It does not mean "net upward". Radiance is the radiative flux in a particular direction, per unit of solid angle. The direction towards which it is going must be specified, for instance with a coordinate of zenith_angle. If the radiation does not depend on direction, a standard name of isotropic radiance should be chosen instead.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#Radiance"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#downwelling_shortwave_radiance_in_air">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#radiance"/>
+    <rdfs:label>downwelling shortwave radiance in air</rdfs:label>
+    <rdfs:comment>"shortwave" means shortwave radiation. Downwelling radiation is radiation from above. It does not mean "net downward". Radiance is the radiative flux in a particular direction, per unit of solid angle. The direction from which it is coming must be specified, for instance with a coordinate of zenith_angle. If the radiation does not depend on direction, a standard name of isotropic radiance should be chosen instead.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#Radiance"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#isotropic_longwave_radiance_in_air">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#radiance"/>
+    <rdfs:label>isotropic longwave radiance in air</rdfs:label>
+    <rdfs:comment>"longwave" means longwave radiation. Radiance is the radiative flux in a particular direction, per unit of solid angle. If radiation is isotropic, the radiance is independent of direction, so the direction should not be specified. If the radiation is directionally dependent, a standard name of upwelling or downwelling radiance should be chosen instead.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#Radiance"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#downwelling_photosynthetic_radiance_in_sea_water">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#radiance"/>
+    <rdfs:label>downwelling photosynthetic radiance in sea water</rdfs:label>
+    <rdfs:comment>Downwelling radiation is radiation from above. It does not mean "net downward". Radiance is the radiative flux in a particular direction, per unit of solid angle. The direction from which it is coming must be specified, for instance with a coordinate of zenith_angle. If the radiation does not depend on direction, a standard name of isotropic radiance should be chosen instead. "Photosynthetic" radiation is the part of the spectrum which is used in photosynthesis e.g. 300-700 nm. The range of wavelengths could be specified precisely by the bounds of a coordinate of radiation_wavelength.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#Radiance"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#downwelling_longwave_radiance_in_air">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#radiance"/>
+    <rdfs:label>downwelling longwave radiance in air</rdfs:label>
+    <rdfs:comment>"longwave" means longwave radiation. Downwelling radiation is radiation from above. It does not mean "net downward". Radiance is the radiative flux in a particular direction, per unit of solid angle. The direction from which it is coming must be specified, for instance with a coordinate of zenith_angle. If the radiation does not depend on direction, a standard name of isotropic radiance should be chosen instead.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#Radiance"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#upwelling_shortwave_radiance_in_air">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#radiance"/>
+    <rdfs:label>upwelling shortwave radiance in air</rdfs:label>
+    <rdfs:comment>"shortwave" means shortwave radiation. Upwelling radiation is radiation from below. It does not mean "net upward". Radiance is the radiative flux in a particular direction, per unit of solid angle. The direction towards which it is going must be specified, for instance with a coordinate of zenith_angle. If the radiation does not depend on direction, a standard name of isotropic radiance should be chosen instead.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#Radiance"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#surface_upwelling_radiance_in_sea_water">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#radiance"/>
+    <rdfs:label>surface upwelling radiance in sea water</rdfs:label>
+    <rdfs:comment>The surface called "surface" means the lower boundary of the atmosphere. "Water" means water in all phases, including frozen i.e. ice and snow. Upwelling radiation is radiation from below. It does not mean "net upward". Radiance is the radiative flux in a particular direction, per unit of solid angle. The direction towards which it is going must be specified, for instance with a coordinate of zenith_angle. If the radiation does not depend on direction, a standard name of isotropic radiance should be chosen instead.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#Radiance"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#downwelling_radiance_in_sea_water">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#radiance"/>
+    <rdfs:label>downwelling radiance in sea water</rdfs:label>
+    <rdfs:comment>Downwelling radiation is radiation from above. It does not mean "net downward". Radiance is the radiative flux in a particular direction, per unit of solid angle. The direction from which it is coming must be specified, for instance with a coordinate of zenith_angle. If the radiation does not depend on direction, a standard name of isotropic radiance should be chosen instead.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#Radiance"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#surface_upwelling_radiance_in_air">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#radiance"/>
+    <rdfs:label>surface upwelling radiance in air</rdfs:label>
+    <rdfs:comment>The surface called "surface" means the lower boundary of the atmosphere. Upwelling radiation is radiation from below. It does not mean "net upward". Radiance is the radiative flux in a particular direction, per unit of solid angle. The direction towards which it is going must be specified, for instance with a coordinate of zenith_angle. If the radiation does not depend on direction, a standard name of isotropic radiance should be chosen instead.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#Radiance"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#surface_downwelling_radiance_in_sea_water">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#radiance"/>
+    <rdfs:label>surface downwelling radiance in sea water</rdfs:label>
+    <rdfs:comment>The surface called "surface" means the lower boundary of the atmosphere. "Water" means water in all phases, including frozen i.e. ice and snow. Downwelling radiation is radiation from above. It does not mean "net downward". Radiance is the radiative flux in a particular direction, per unit of solid angle. The direction from which it is coming must be specified, for instance with a coordinate of zenith_angle. If the radiation does not depend on direction, a standard name of isotropic radiance should be chosen instead.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#Radiance"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#isotropic_shortwave_radiance_in_air">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#radiance"/>
+    <rdfs:label>isotropic shortwave radiance in air</rdfs:label>
+    <rdfs:comment>"shortwave" means shortwave radiation. Radiance is the radiative flux in a particular direction, per unit of solid angle. If radiation is isotropic, the radiance is independent of direction, so the direction should not be specified. If the radiation is directionally dependent, a standard name of upwelling or downwelling radiance should be chosen instead.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#Radiance"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#surface_upwelling_radiance_in_air_reflected_by_sea_water">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#radiance"/>
+    <rdfs:label>surface upwelling radiance in air reflected by sea water</rdfs:label>
+    <rdfs:comment>The surface called "surface" means the lower boundary of the atmosphere. "Water" means water in all phases, including frozen i.e. ice and snow. Upwelling radiation is radiation from below. It does not mean "net upward". Radiance is the radiative flux in a particular direction, per unit of solid angle. The direction towards which it is going must be specified, for instance with a coordinate of zenith_angle. If the radiation does not depend on direction, a standard name of isotropic radiance should be chosen instead.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#Radiance"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#surface_upwelling_radiance_in_air_emerging_from_sea_water">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#radiance"/>
+    <rdfs:label>surface upwelling radiance in air emerging from sea water</rdfs:label>
+    <rdfs:comment>The surface called "surface" means the lower boundary of the atmosphere. "Water" means water in all phases, including frozen i.e. ice and snow. Upwelling radiation is radiation from below. It does not mean "net upward". Radiance is the radiative flux in a particular direction, per unit of solid angle. The direction towards which it is going must be specified, for instance with a coordinate of zenith_angle. If the radiation does not depend on direction, a standard name of isotropic radiance should be chosen instead.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#Radiance"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#surface_downwelling_photosynthetic_radiance_in_sea_water">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#radiance"/>
+    <rdfs:label>surface downwelling photosynthetic radiance in sea water</rdfs:label>
+    <rdfs:comment>The surface called "surface" means the lower boundary of the atmosphere. "Water" means water in all phases, including frozen i.e. ice and snow. Downwelling radiation is radiation from above. It does not mean "net downward". Radiance is the radiative flux in a particular direction, per unit of solid angle. The direction from which it is coming must be specified, for instance with a coordinate of zenith_angle. If the radiation does not depend on direction, a standard name of isotropic radiance should be chosen instead. "Photosynthetic" radiation is the part of the spectrum which is used in photosynthesis e.g. 300-700 nm. The range of wavelengths could be specified precisely by the bounds of a coordinate of radiation_wavelength.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#Radiance"/>
+  </skos:Concept>
+</rdf:RDF>

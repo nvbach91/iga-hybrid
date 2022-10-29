@@ -1,0 +1,104 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://idi.fundacionctic.org/cruzar/turismo"/>
+  <skos:Concept rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Estilo-neoclasico">
+    <rdfs:isDefinedBy rdf:resource="http://idi.fundacionctic.org/cruzar/turismo"/>
+    <rdfs:label xml:lang="en">Neoclassical style</rdfs:label>
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Estilo-artistico">
+        <rdfs:isDefinedBy rdf:resource="http://idi.fundacionctic.org/cruzar/turismo"/>
+      </skos:ConceptScheme>
+    </skos:inScheme>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Estilo-gotico">
+    <owl:differentFrom>
+      <skos:Concept rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Estilo-barroco">
+        <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Estilo-gotico"/>
+        <owl:differentFrom>
+          <skos:Concept rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Estilo-contemporaneo">
+            <owl:differentFrom>
+              <skos:Concept rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Estilo-romano">
+                <rdfs:label xml:lang="en">Roman style</rdfs:label>
+                <owl:differentFrom>
+                  <skos:Concept rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Estilo-renacentista">
+                    <rdfs:isDefinedBy rdf:resource="http://idi.fundacionctic.org/cruzar/turismo"/>
+                    <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Estilo-romano"/>
+                    <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Estilo-barroco"/>
+                    <skos:inScheme rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Estilo-artistico"/>
+                    <owl:differentFrom>
+                      <skos:Concept rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Estilo-mudejar">
+                        <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Estilo-renacentista"/>
+                        <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Estilo-romano"/>
+                        <rdfs:isDefinedBy rdf:resource="http://idi.fundacionctic.org/cruzar/turismo"/>
+                        <owl:differentFrom>
+                          <skos:Concept rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Estilo-modernista">
+                            <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Estilo-mudejar"/>
+                            <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Estilo-gotico"/>
+                            <rdfs:label xml:lang="en">Modernist style</rdfs:label>
+                            <rdfs:isDefinedBy rdf:resource="http://idi.fundacionctic.org/cruzar/turismo"/>
+                            <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Estilo-renacentista"/>
+                            <skos:inScheme rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Estilo-artistico"/>
+                            <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Estilo-romano"/>
+                            <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Estilo-contemporaneo"/>
+                            <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Estilo-barroco"/>
+                          </skos:Concept>
+                        </owl:differentFrom>
+                        <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Estilo-contemporaneo"/>
+                        <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Estilo-gotico"/>
+                        <skos:inScheme rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Estilo-artistico"/>
+                        <rdfs:label xml:lang="en">Mudéjar style</rdfs:label>
+                        <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Estilo-barroco"/>
+                      </skos:Concept>
+                    </owl:differentFrom>
+                    <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Estilo-gotico"/>
+                    <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Estilo-modernista"/>
+                    <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Estilo-contemporaneo"/>
+                    <rdfs:label xml:lang="en">Renaissance style</rdfs:label>
+                  </skos:Concept>
+                </owl:differentFrom>
+                <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Estilo-barroco"/>
+                <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Estilo-contemporaneo"/>
+                <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Estilo-gotico"/>
+                <rdfs:isDefinedBy rdf:resource="http://idi.fundacionctic.org/cruzar/turismo"/>
+                <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Estilo-mudejar"/>
+                <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Estilo-modernista"/>
+                <skos:inScheme rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Estilo-artistico"/>
+              </skos:Concept>
+            </owl:differentFrom>
+            <skos:inScheme rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Estilo-artistico"/>
+            <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Estilo-gotico"/>
+            <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Estilo-mudejar"/>
+            <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Estilo-modernista"/>
+            <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Estilo-renacentista"/>
+            <rdfs:label xml:lang="en">Contemporary style</rdfs:label>
+            <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Estilo-barroco"/>
+            <rdfs:isDefinedBy rdf:resource="http://idi.fundacionctic.org/cruzar/turismo"/>
+          </skos:Concept>
+        </owl:differentFrom>
+        <rdfs:isDefinedBy rdf:resource="http://idi.fundacionctic.org/cruzar/turismo"/>
+        <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Estilo-mudejar"/>
+        <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Estilo-modernista"/>
+        <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Estilo-renacentista"/>
+        <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Estilo-romano"/>
+        <skos:inScheme rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Estilo-artistico"/>
+        <rdfs:label xml:lang="en">Baroque style</rdfs:label>
+      </skos:Concept>
+    </owl:differentFrom>
+    <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Estilo-romano"/>
+    <rdfs:isDefinedBy rdf:resource="http://idi.fundacionctic.org/cruzar/turismo"/>
+    <skos:inScheme rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Estilo-artistico"/>
+    <rdfs:label xml:lang="en">Gothic style</rdfs:label>
+    <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Estilo-renacentista"/>
+    <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Estilo-modernista"/>
+    <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Estilo-mudejar"/>
+    <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Estilo-contemporaneo"/>
+  </skos:Concept>
+</rdf:RDF>

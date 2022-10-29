@@ -1,0 +1,58 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://rdf.geospecies.org/ont/geospecies"/>
+  <owl:ObjectProperty rdf:about="http://rdf.geospecies.org/ont/geospecies#hasNomenclaturalCode">
+    <rdfs:label>hasNomenclaturalCode</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://rdf.geospecies.org/ont/geospecies#NomenclaturalCode">
+        <rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://rdf.geospecies.org/ont/geospecies#NomenclaturalCode_ICZN">
+    <rdfs:label>NomenclaturalCode_ICZN</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+    <rdfs:label>International Code of Zoological Nomenclature</rdfs:label>
+    <skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#NomenclaturalCode"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://rdf.geospecies.org/ont/geospecies#NomenclaturalCode_ICNB">
+    <rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+    <skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#NomenclaturalCode"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://rdf.geospecies.org/ont/geospecies#NomenclaturalCode_ICTV">
+    <rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+    <rdfs:label>International Committee on Taxonomy of Viruses</rdfs:label>
+    <skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#NomenclaturalCode"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://rdf.geospecies.org/ont/geospecies#NomenclaturalCode_ICNCP">
+    <rdfs:label>NomenclaturalCode_ICNCP</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+    <rdfs:label>International Code of Cultivated Plants</rdfs:label>
+    <skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#NomenclaturalCode"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://rdf.geospecies.org/ont/geospecies#NomenclaturalCode_ICVCN">
+    <rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+    <rdfs:label>NomenclaturalCode_ICVCN</rdfs:label>
+    <skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#NomenclaturalCode"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://rdf.geospecies.org/ont/geospecies#NomenclaturalCode_ICBN">
+    <rdfs:label>NomenclaturalCode_ICBN</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+    <rdfs:label>International Code of Botanical Nomenclature</rdfs:label>
+    <skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#NomenclaturalCode"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://rdf.geospecies.org/ont/geospecies#NomenclaturalCode_BioCode">
+    <rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+    <rdfs:label>BioCode</rdfs:label>
+    <skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#NomenclaturalCode"/>
+  </skos:Concept>
+</rdf:RDF>

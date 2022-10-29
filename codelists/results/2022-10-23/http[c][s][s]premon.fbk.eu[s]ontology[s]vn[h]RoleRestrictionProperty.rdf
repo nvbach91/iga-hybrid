@@ -1,0 +1,251 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://premon.fbk.eu/ontology/vn"/>
+  <skos:Concept rdf:about="http://premon.fbk.eu/ontology/vn#idea_rrp">
+    <rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+    <skos:broader>
+      <skos:Concept rdf:about="http://premon.fbk.eu/ontology/vn#abstract_rrp">
+        <rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+        <rdfs:label>abstract</rdfs:label>
+        <skos:inScheme>
+          <skos:ConceptScheme rdf:about="http://premon.fbk.eu/ontology/vn#RoleRestrictionProperty">
+            <rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+            <rdfs:label xml:lang="en">Role Selectional Restriction Property</rdfs:label>
+          </skos:ConceptScheme>
+        </skos:inScheme>
+      </skos:Concept>
+    </skos:broader>
+    <rdfs:label>idea</rdfs:label>
+    <skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#RoleRestrictionProperty"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://premon.fbk.eu/ontology/vn#comestible_rrp">
+    <rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+    <skos:broader>
+      <skos:Concept rdf:about="http://premon.fbk.eu/ontology/vn#phys_obj_rrp">
+        <skos:broader>
+          <skos:Concept rdf:about="http://premon.fbk.eu/ontology/vn#concrete_rrp">
+            <rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+            <rdfs:label>concrete</rdfs:label>
+            <skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#RoleRestrictionProperty"/>
+          </skos:Concept>
+        </skos:broader>
+        <rdfs:label>physical object</rdfs:label>
+        <rdfs:comment>Non in the data</rdfs:comment>
+        <skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#RoleRestrictionProperty"/>
+        <rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+      </skos:Concept>
+    </skos:broader>
+    <rdfs:label>comestible</rdfs:label>
+    <skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#RoleRestrictionProperty"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://premon.fbk.eu/ontology/vn#garment_rrp">
+    <rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+    <skos:broader>
+      <skos:Concept rdf:about="http://premon.fbk.eu/ontology/vn#artifact_rrp">
+        <skos:broader rdf:resource="http://premon.fbk.eu/ontology/vn#phys_obj_rrp"/>
+        <rdfs:label>artifact</rdfs:label>
+        <rdfs:comment>Non in the data</rdfs:comment>
+        <skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#RoleRestrictionProperty"/>
+        <rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+      </skos:Concept>
+    </skos:broader>
+    <rdfs:label>garment</rdfs:label>
+    <skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#RoleRestrictionProperty"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://premon.fbk.eu/ontology/vn#refl_rrp">
+    <rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+    <rdfs:label>refl</rdfs:label>
+    <skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#RoleRestrictionProperty"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://premon.fbk.eu/ontology/vn#elongated_rrp">
+    <rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+    <skos:broader>
+      <skos:Concept rdf:about="http://premon.fbk.eu/ontology/vn#shape_rrp">
+        <skos:broader rdf:resource="http://premon.fbk.eu/ontology/vn#concrete_rrp"/>
+        <rdfs:label>shape</rdfs:label>
+        <rdfs:comment>Non in the data</rdfs:comment>
+        <skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#RoleRestrictionProperty"/>
+        <rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+      </skos:Concept>
+    </skos:broader>
+    <rdfs:label>elongated</rdfs:label>
+    <skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#RoleRestrictionProperty"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://premon.fbk.eu/ontology/vn#scalar_rrp">
+    <rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+    <rdfs:label>scalar</rdfs:label>
+    <skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#RoleRestrictionProperty"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://premon.fbk.eu/ontology/vn#sound_rrp">
+    <rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+    <skos:broader rdf:resource="http://premon.fbk.eu/ontology/vn#abstract_rrp"/>
+    <rdfs:label>sound</rdfs:label>
+    <skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#RoleRestrictionProperty"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://premon.fbk.eu/ontology/vn#body_part_rrp">
+    <rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+    <skos:broader>
+      <skos:Concept rdf:about="http://premon.fbk.eu/ontology/vn#animate_rrp">
+        <skos:related>
+          <skos:Concept rdf:about="http://premon.fbk.eu/ontology/vn#int_control_rrp">
+            <skos:related>
+              <skos:Concept rdf:about="http://premon.fbk.eu/ontology/vn#machine_rrp">
+                <skos:broader rdf:resource="http://premon.fbk.eu/ontology/vn#artifact_rrp"/>
+                <skos:related rdf:resource="http://premon.fbk.eu/ontology/vn#int_control_rrp"/>
+                <rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+                <skos:broader rdf:resource="http://premon.fbk.eu/ontology/vn#int_control_rrp"/>
+                <rdfs:label>machine</rdfs:label>
+                <skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#RoleRestrictionProperty"/>
+              </skos:Concept>
+            </skos:related>
+            <skos:related rdf:resource="http://premon.fbk.eu/ontology/vn#animate_rrp"/>
+            <skos:broader rdf:resource="http://premon.fbk.eu/ontology/vn#concrete_rrp"/>
+            <rdfs:label>int_control</rdfs:label>
+            <skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#RoleRestrictionProperty"/>
+            <rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+          </skos:Concept>
+        </skos:related>
+        <skos:broader>
+          <skos:Concept rdf:about="http://premon.fbk.eu/ontology/vn#natural_rrp">
+            <skos:broader rdf:resource="http://premon.fbk.eu/ontology/vn#concrete_rrp"/>
+            <rdfs:label>natural</rdfs:label>
+            <skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#RoleRestrictionProperty"/>
+            <rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+          </skos:Concept>
+        </skos:broader>
+        <rdfs:label>animate</rdfs:label>
+        <skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#RoleRestrictionProperty"/>
+        <rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+      </skos:Concept>
+    </skos:broader>
+    <rdfs:label>body_part</rdfs:label>
+    <skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#RoleRestrictionProperty"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://premon.fbk.eu/ontology/vn#currency_rrp">
+    <rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+    <rdfs:label>currency</rdfs:label>
+    <skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#RoleRestrictionProperty"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://premon.fbk.eu/ontology/vn#organization_rrp">
+    <rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+    <rdfs:label>organization</rdfs:label>
+    <skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#RoleRestrictionProperty"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://premon.fbk.eu/ontology/vn#substance_rrp">
+    <rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+    <skos:broader rdf:resource="http://premon.fbk.eu/ontology/vn#concrete_rrp"/>
+    <rdfs:label>substance</rdfs:label>
+    <skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#RoleRestrictionProperty"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://premon.fbk.eu/ontology/vn#nonrigid_rrp">
+    <rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+    <skos:broader>
+      <skos:Concept rdf:about="http://premon.fbk.eu/ontology/vn#solid_rrp">
+        <rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+        <skos:broader rdf:resource="http://premon.fbk.eu/ontology/vn#concrete_rrp"/>
+        <rdfs:label>solid</rdfs:label>
+        <rdfs:comment>Non in the data</rdfs:comment>
+        <skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#RoleRestrictionProperty"/>
+      </skos:Concept>
+    </skos:broader>
+    <rdfs:label>nonrigid</rdfs:label>
+    <skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#RoleRestrictionProperty"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://premon.fbk.eu/ontology/vn#biotic_rrp">
+    <rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+    <rdfs:label>biotic</rdfs:label>
+    <skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#RoleRestrictionProperty"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://premon.fbk.eu/ontology/vn#tool_rrp">
+    <rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+    <skos:broader rdf:resource="http://premon.fbk.eu/ontology/vn#artifact_rrp"/>
+    <rdfs:label>tool</rdfs:label>
+    <rdfs:comment>Non in the data</rdfs:comment>
+    <skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#RoleRestrictionProperty"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://premon.fbk.eu/ontology/vn#pointy_rrp">
+    <rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+    <skos:broader rdf:resource="http://premon.fbk.eu/ontology/vn#shape_rrp"/>
+    <rdfs:label>pointy</rdfs:label>
+    <skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#RoleRestrictionProperty"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://premon.fbk.eu/ontology/vn#vehicle_rrp">
+    <rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+    <skos:broader rdf:resource="http://premon.fbk.eu/ontology/vn#machine_rrp"/>
+    <rdfs:label>vehicle</rdfs:label>
+    <skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#RoleRestrictionProperty"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://premon.fbk.eu/ontology/vn#human_rrp">
+    <rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+    <skos:broader rdf:resource="http://premon.fbk.eu/ontology/vn#animate_rrp"/>
+    <rdfs:label>human</rdfs:label>
+    <skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#RoleRestrictionProperty"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://premon.fbk.eu/ontology/vn#rigid_rrp">
+    <rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+    <skos:broader rdf:resource="http://premon.fbk.eu/ontology/vn#solid_rrp"/>
+    <rdfs:label>rigid</rdfs:label>
+    <rdfs:comment>Non in the data</rdfs:comment>
+    <skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#RoleRestrictionProperty"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://premon.fbk.eu/ontology/vn#plant_rrp">
+    <rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+    <skos:broader rdf:resource="http://premon.fbk.eu/ontology/vn#natural_rrp"/>
+    <rdfs:label>plant</rdfs:label>
+    <rdfs:comment>Non in the data</rdfs:comment>
+    <skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#RoleRestrictionProperty"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://premon.fbk.eu/ontology/vn#animal_rrp">
+    <rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+    <skos:broader rdf:resource="http://premon.fbk.eu/ontology/vn#animate_rrp"/>
+    <rdfs:label>animal</rdfs:label>
+    <skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#RoleRestrictionProperty"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://premon.fbk.eu/ontology/vn#region_rrp">
+    <rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+    <skos:broader>
+      <skos:Concept rdf:about="http://premon.fbk.eu/ontology/vn#location_rrp">
+        <rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+        <rdfs:label>location</rdfs:label>
+        <skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#RoleRestrictionProperty"/>
+      </skos:Concept>
+    </skos:broader>
+    <rdfs:label>region</rdfs:label>
+    <skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#RoleRestrictionProperty"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://premon.fbk.eu/ontology/vn#communication_rrp">
+    <rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+    <skos:broader rdf:resource="http://premon.fbk.eu/ontology/vn#abstract_rrp"/>
+    <rdfs:label>communication</rdfs:label>
+    <skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#RoleRestrictionProperty"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://premon.fbk.eu/ontology/vn#time_rrp">
+    <rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+    <rdfs:label>time</rdfs:label>
+    <skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#RoleRestrictionProperty"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://premon.fbk.eu/ontology/vn#force_rrp">
+    <rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+    <skos:broader rdf:resource="http://premon.fbk.eu/ontology/vn#int_control_rrp"/>
+    <rdfs:label>force</rdfs:label>
+    <skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#RoleRestrictionProperty"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://premon.fbk.eu/ontology/vn#plural_rrp">
+    <rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+    <rdfs:label>plural</rdfs:label>
+    <skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#RoleRestrictionProperty"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://premon.fbk.eu/ontology/vn#state_rrp">
+    <rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+    <rdfs:label>state</rdfs:label>
+    <skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#RoleRestrictionProperty"/>
+  </skos:Concept>
+</rdf:RDF>

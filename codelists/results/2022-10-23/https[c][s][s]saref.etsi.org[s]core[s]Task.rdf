@@ -1,0 +1,83 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="https://saref.etsi.org/core/"/>
+  <owl:ObjectProperty rdf:about="https://saref.etsi.org/core/accomplishes">
+    <rdfs:comment xml:lang="en">A relationship between a certain entity (e.g., a device) and the task it accomplishes</rdfs:comment>
+    <rdfs:label xml:lang="en">accomplishes</rdfs:label>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="https://saref.etsi.org/core/Task">
+        <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/core/"/>
+        <rdfs:label xml:lang="en">Task</rdfs:label>
+        <rdfs:comment xml:lang="en">The goal for which a device is designed (from a user perspective). For example, a washing machine is designed for the task of washing. We propose here a list of tasks that are relevant for the purpose of SAREF, but this list can be extended. Tasks can be accomplished by devices (saref:isAccomplishedBy).</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="https://saref.etsi.org/core/Cleaning">
+    <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/core/"/>
+    <rdfs:label xml:lang="en">Cleaning</rdfs:label>
+    <rdfs:comment xml:lang="en">A type of task for which a device is designed</rdfs:comment>
+    <skos:inScheme rdf:resource="https://saref.etsi.org/core/Task"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://saref.etsi.org/core/Lighting">
+    <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/core/"/>
+    <rdfs:label xml:lang="en">Lighting</rdfs:label>
+    <rdfs:comment xml:lang="en">A type of task for which a device is designed</rdfs:comment>
+    <skos:inScheme rdf:resource="https://saref.etsi.org/core/Task"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://saref.etsi.org/core/Drying">
+    <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/core/"/>
+    <rdfs:label xml:lang="en">Drying</rdfs:label>
+    <rdfs:comment xml:lang="en">A type of task for which a device is designed</rdfs:comment>
+    <skos:inScheme rdf:resource="https://saref.etsi.org/core/Task"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://saref.etsi.org/core/EnergyEfficiency">
+    <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/core/"/>
+    <rdfs:label xml:lang="en">EnergyEfficiency</rdfs:label>
+    <rdfs:comment xml:lang="en">A type of task for which a device is designed</rdfs:comment>
+    <skos:inScheme rdf:resource="https://saref.etsi.org/core/Task"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://saref.etsi.org/core/Safety">
+    <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/core/"/>
+    <rdfs:label xml:lang="en">Safety</rdfs:label>
+    <rdfs:comment xml:lang="en">A type of task for which a device is designed</rdfs:comment>
+    <skos:inScheme rdf:resource="https://saref.etsi.org/core/Task"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://saref.etsi.org/core/WellBeing">
+    <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/core/"/>
+    <rdfs:label xml:lang="en">WellBeing</rdfs:label>
+    <rdfs:comment xml:lang="en">A type of task for which a device is designed</rdfs:comment>
+    <skos:inScheme rdf:resource="https://saref.etsi.org/core/Task"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://saref.etsi.org/core/Entertainment">
+    <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/core/"/>
+    <rdfs:label xml:lang="en">Entertainment</rdfs:label>
+    <rdfs:comment xml:lang="en">A type of task for which a device is designed</rdfs:comment>
+    <skos:inScheme rdf:resource="https://saref.etsi.org/core/Task"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://saref.etsi.org/core/Washing">
+    <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/core/"/>
+    <rdfs:label xml:lang="en">Washing</rdfs:label>
+    <rdfs:comment xml:lang="en">A type of task for which a device is designed</rdfs:comment>
+    <skos:inScheme rdf:resource="https://saref.etsi.org/core/Task"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://saref.etsi.org/core/MeterReading">
+    <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/core/"/>
+    <rdfs:label xml:lang="en">Meter reading</rdfs:label>
+    <rdfs:comment xml:lang="en">A type of task for which a device is designed</rdfs:comment>
+    <skos:inScheme rdf:resource="https://saref.etsi.org/core/Task"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://saref.etsi.org/core/Comfort">
+    <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/core/"/>
+    <rdfs:label xml:lang="en">Comfort</rdfs:label>
+    <rdfs:comment xml:lang="en">A type of task for which a device is designed</rdfs:comment>
+    <skos:inScheme rdf:resource="https://saref.etsi.org/core/Task"/>
+  </skos:Concept>
+</rdf:RDF>

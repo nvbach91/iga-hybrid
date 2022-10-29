@@ -1,6 +1,6 @@
 <rdf:RDF
-    xmlns:dct="http://purl.org/dc/terms/"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
     xmlns:dc="http://purl.org/dc/elements/1.1/"
     xmlns:owl="http://www.w3.org/2002/07/owl#"
     xmlns:dcmit="http://purl.org/dc/dcmitype/"
@@ -10,18 +10,13 @@
     xmlns:vann="http://purl.org/vocab/vann/">
   <owl:Ontology rdf:about="http://purl.org/hpi/patchr#"/>
   <owl:ObjectProperty rdf:about="http://purl.org/hpi/patchr#status">
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/hpi/patchr#"/>
     <rdfs:comment xml:lang="en">The status of the patch, might be one of Open, Resolved, Postponed, or Rejected.</rdfs:comment>
     <rdfs:label xml:lang="en">status</rdfs:label>
-    <rdfs:domain>
-      <rdf:Description rdf:about="http://purl.org/hpi/patchr#Patch">
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/hpi/patchr#"/>
-      </rdf:Description>
-    </rdfs:domain>
+    <rdfs:domain rdf:resource="http://purl.org/hpi/patchr#Patch"/>
     <rdfs:range>
       <skos:ConceptScheme rdf:about="http://purl.org/hpi/patchr#PatchStatus">
         <rdfs:isDefinedBy rdf:resource="http://purl.org/hpi/patchr#"/>
-        <rdfs:label xml:lang="en">The status of the patch, might be one of Open, Resolved, Postponed, or Rejected.</rdfs:label>
+        <rdfs:label xml:lang="en">PatchStatus</rdfs:label>
         <rdfs:comment xml:lang="en">The status of the patch, might be one of Open, Resolved, Postponed, or Rejected.</rdfs:comment>
       </skos:ConceptScheme>
     </rdfs:range>

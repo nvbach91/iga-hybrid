@@ -1,0 +1,47 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="https://www.w3id.org/survey-ontology"/>
+  <owl:ObjectProperty rdf:about="https://w3id.org/survey-ontology#hasVisualization">
+    <rdfs:label>has visualization</rdfs:label>
+    <rdfs:domain rdf:resource="https://w3id.org/survey-ontology#MultipleChoiceQuestion"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="https://w3id.org/survey-ontology#QuestionVisualization">
+        <rdfs:isDefinedBy rdf:resource="https://www.w3id.org/survey-ontology"/>
+        <rdfs:label>Question Visualization</rdfs:label>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="https://w3id.org/survey-ontology#Emoji">
+    <rdfs:isDefinedBy rdf:resource="https://www.w3id.org/survey-ontology"/>
+    <rdfs:label>Emoji</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/survey-ontology#QuestionVisualization"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/survey-ontology#Option">
+    <rdfs:isDefinedBy rdf:resource="https://www.w3id.org/survey-ontology"/>
+    <rdfs:label>Option</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/survey-ontology#QuestionVisualization"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/survey-ontology#Scale">
+    <rdfs:isDefinedBy rdf:resource="https://www.w3id.org/survey-ontology"/>
+    <rdfs:label>Scale</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/survey-ontology#QuestionVisualization"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/survey-ontology#Slider">
+    <rdfs:isDefinedBy rdf:resource="https://www.w3id.org/survey-ontology"/>
+    <rdfs:label>Slider</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/survey-ontology#QuestionVisualization"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/survey-ontology#Dropdown">
+    <rdfs:isDefinedBy rdf:resource="https://www.w3id.org/survey-ontology"/>
+    <rdfs:label>Dropdown</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/survey-ontology#QuestionVisualization"/>
+  </skos:Concept>
+</rdf:RDF>

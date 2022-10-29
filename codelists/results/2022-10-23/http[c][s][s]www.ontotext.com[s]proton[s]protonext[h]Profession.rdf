@@ -1,0 +1,114 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://www.ontotext.com/proton/protonext"/>
+  <owl:ObjectProperty rdf:about="http://www.ontotext.com/proton/protonext#hasProfession">
+    <rdfs:comment xml:lang="en">A relation between a person and his/her profession.</rdfs:comment>
+    <rdfs:label xml:lang="en">has Profession</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.ontotext.com/proton/protontop#Person"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://www.ontotext.com/proton/protonext#Profession">
+        <rdfs:isDefinedBy rdf:resource="http://www.ontotext.com/proton/protonext"/>
+        <rdfs:label xml:lang="en">Profession</rdfs:label>
+        <rdfs:comment xml:lang="en">A profession is a vocation founded upon specialized educational training. Wikipedia.</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://www.ontotext.com/proton/protonext#Cricketer">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontotext.com/proton/protonext"/>
+    <rdfs:label xml:lang="en">Cricketer </rdfs:label>
+    <rdfs:comment xml:lang="en">The profession of cricketer</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontotext.com/proton/protonext#Profession"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontotext.com/proton/protonext#Politician">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontotext.com/proton/protonext"/>
+    <rdfs:label xml:lang="en">Politician</rdfs:label>
+    <rdfs:comment xml:lang="en">Any Politician, a profession of participating in the political life of a given society.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontotext.com/proton/protonext#Profession"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontotext.com/proton/protonext#Priest">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontotext.com/proton/protonext"/>
+    <rdfs:label xml:lang="en">Priest</rdfs:label>
+    <rdfs:comment xml:lang="en">Any priest, a professsion of a person who is authorized to perform the sacred rites of a religion. (Wikipedia)</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontotext.com/proton/protonext#Profession"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontotext.com/proton/protonext#Philosopher">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontotext.com/proton/protonext"/>
+    <rdfs:label xml:lang="en">Philosopher</rdfs:label>
+    <rdfs:comment xml:lang="en">Any philosopher, a profession of studying of general and fundamental problems, such as those connected with existence, knowledge, values, reason, mind, and language.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontotext.com/proton/protonext#Profession"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontotext.com/proton/protonext#MilitaryPerson">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontotext.com/proton/protonext"/>
+    <rdfs:label xml:lang="en">Military Person</rdfs:label>
+    <rdfs:comment xml:lang="en">Any occupation involving service in the military.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontotext.com/proton/protonext#Profession"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontotext.com/proton/protonext#Referee">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontotext.com/proton/protonext"/>
+    <rdfs:label xml:lang="en">Referee</rdfs:label>
+    <rdfs:comment xml:lang="en">A referee is the person of authority, in a variety of sports, who is responsible for presiding over the game from a neutral point of view. (Wikipedia)</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontotext.com/proton/protonext#Profession"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontotext.com/proton/protonext#Judge">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontotext.com/proton/protonext"/>
+    <rdfs:label xml:lang="en">Judge</rdfs:label>
+    <rdfs:comment xml:lang="en">Any judge, a profession of presiding over a court of law, either alone or as part of a panel of judges. (Wikipedia)</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontotext.com/proton/protonext#Profession"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontotext.com/proton/protonext#Journalist">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontotext.com/proton/protonext"/>
+    <rdfs:label xml:lang="en">Journalist</rdfs:label>
+    <rdfs:comment xml:lang="en">Any journalist, a profession of collecting and disseminating information about current events, people, trends, and issues. (Wikipedia)</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontotext.com/proton/protonext#Profession"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontotext.com/proton/protonext#Astronaut">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontotext.com/proton/protonext"/>
+    <rdfs:label xml:lang="en">Astronaut</rdfs:label>
+    <rdfs:comment xml:lang="en">Any astronaut, a profession allowing to command, pilot, or serve as a crew member of a spacecraft. (Wikipedia)</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontotext.com/proton/protonext#Profession"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontotext.com/proton/protonext#FashionModel">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontotext.com/proton/protonext"/>
+    <rdfs:label xml:lang="en">Model</rdfs:label>
+    <rdfs:comment xml:lang="en">Any model, a profession involving posing to draw attention to a particualr object or cause.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontotext.com/proton/protonext#Profession"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontotext.com/proton/protonext#Scientist">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontotext.com/proton/protonext"/>
+    <rdfs:label xml:lang="en">Scientist</rdfs:label>
+    <rdfs:comment xml:lang="en">Any scientist, a profession of studying and making research on a particualr subject.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontotext.com/proton/protonext#Profession"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontotext.com/proton/protonext#CanadianFootballPlayer">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontotext.com/proton/protonext"/>
+    <rdfs:label xml:lang="en">Canadian Football Player</rdfs:label>
+    <rdfs:comment xml:lang="en">Any player of Canadian football.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontotext.com/proton/protonext#Profession"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontotext.com/proton/protonext#Lawyer">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontotext.com/proton/protonext"/>
+    <rdfs:label xml:lang="en">Lawyer</rdfs:label>
+    <rdfs:comment xml:lang="en">Any lawyer, a profession of according to Black's Law Dictionary, is a person learned in the law; as an attorney, counsel or solicitor; a person who is practicing law. of judges. (Wikipedia)</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontotext.com/proton/protonext#Profession"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontotext.com/proton/protonext#PokerPlayer">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontotext.com/proton/protonext"/>
+    <rdfs:label xml:lang="en">Poker player</rdfs:label>
+    <rdfs:comment xml:lang="en">The profession of a poker player</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontotext.com/proton/protonext#Profession"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontotext.com/proton/protonext#Architect">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontotext.com/proton/protonext"/>
+    <rdfs:label xml:lang="en">Architect</rdfs:label>
+    <rdfs:comment xml:lang="en">Any architect, a profession of planning, design and oversight of the construction of buildings. (Wikipedia)</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontotext.com/proton/protonext#Profession"/>
+  </skos:Concept>
+</rdf:RDF>

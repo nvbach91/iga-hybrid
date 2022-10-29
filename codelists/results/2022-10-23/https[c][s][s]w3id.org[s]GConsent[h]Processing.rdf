@@ -1,0 +1,137 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="https://w3id.org/GConsent"/>
+  <owl:ObjectProperty rdf:about="https://w3id.org/GConsent#forProcessing">
+    <rdfs:comment xml:lang="en">Links the consent with its associated processing.</rdfs:comment>
+    <rdfs:label xml:lang="en">for processing</rdfs:label>
+    <rdfs:domain rdf:resource="https://w3id.org/GConsent#Consent"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="https://w3id.org/GConsent#Processing">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/GConsent"/>
+        <rdfs:label xml:lang="en">Processing</rdfs:label>
+        <rdfs:comment xml:lang="en">Processing is defined by the GDPR (Article 4-2) as "any operation or set of operations which is performed on personal data or on sets of personal data, whether or not by automated means, such as collection, recording, organisation, structuring, storage, adaptation or alteration, retrieval, consultation, use, disclosure by transmission, dissemination or otherwise making available, alignment or combination, restriction, erasure or destruction;".
+
+Processing can be considered as the action, within an activity for example, that uses data in a particular or specific way. Therefore, processing specifies what is happening to/with the data. 
+
+To define a type of processing (or its associated action), the Processing class should be subclassed for each type. Furthermore, each subclass should define a instance as a generic representative of that action. For example, "collect" as a type of processing (defined by the GDPR), is defined as the class DataCollection, which is a subclass of Processing, and has the individual CollectionOfPersonalData to represent a generic instance of the concept. This is to provide a ready-to-use ontology in terms of "collect" as an action, while also providing a way to specialise the action/processing.
+GConsent defines several such types of processing taken from the text of the GDPR.</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="https://w3id.org/GConsent#StructuringOfPersonalData">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/GConsent"/>
+    <rdfs:label xml:lang="en">Structuring Of Personal Data</rdfs:label>
+    <rdfs:comment xml:lang="en">Represents Structuring Of personal data.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/GConsent#Processing"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/GConsent#ErasureOfPersonalData">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/GConsent"/>
+    <rdfs:label xml:lang="en">Erasure Of Personal Data</rdfs:label>
+    <rdfs:comment xml:lang="en">Represents Erasure Of personal data.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/GConsent#Processing"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/GConsent#RecordingOfPersonalData">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/GConsent"/>
+    <rdfs:label xml:lang="en">Recording Of Personal Data</rdfs:label>
+    <rdfs:comment xml:lang="en">Represents Recording Of personal data.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/GConsent#Processing"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/GConsent#DisclosureByTransmissionOfPersonalData">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/GConsent"/>
+    <rdfs:label xml:lang="en">Disclosure by Transmission Of Personal Data</rdfs:label>
+    <rdfs:comment xml:lang="en">Represents Disclosure by Transmission Of personal data.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/GConsent#Processing"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/GConsent#SharingOfPersonalData">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/GConsent"/>
+    <rdfs:label xml:lang="en">Sharing of Personal Data</rdfs:label>
+    <rdfs:comment xml:lang="en">Represents sharing of personal data</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/GConsent#Processing"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/GConsent#AlignmentOfPersonalData">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/GConsent"/>
+    <rdfs:label xml:lang="en">Alignment Of Personal Data</rdfs:label>
+    <rdfs:comment xml:lang="en">Represents Alignment Of personal data.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/GConsent#Processing"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/GConsent#AlterationOfPersonalData">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/GConsent"/>
+    <rdfs:label xml:lang="en">Alteration Of Personal Data</rdfs:label>
+    <rdfs:comment xml:lang="en">Represents Alteration Of personal data.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/GConsent#Processing"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/GConsent#ConsultationOfPersonalData">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/GConsent"/>
+    <rdfs:label xml:lang="en">Consultation Of Personal Data</rdfs:label>
+    <rdfs:comment xml:lang="en">Represents Consultation Of personal data.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/GConsent#Processing"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/GConsent#AdaptationOfPersonalData">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/GConsent"/>
+    <rdfs:label xml:lang="en">Adaptation Of Personal Data</rdfs:label>
+    <rdfs:comment xml:lang="en">Represents Adaptation Of personal data.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/GConsent#Processing"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/GConsent#DisseminationOfPersonalData">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/GConsent"/>
+    <rdfs:label xml:lang="en">Dissemination Of Personal Data</rdfs:label>
+    <rdfs:comment xml:lang="en">Represents Dissemination Of personal data.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/GConsent#Processing"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/GConsent#CollectionOfPersonalData">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/GConsent"/>
+    <rdfs:label xml:lang="en">Collection Of Personal Data</rdfs:label>
+    <rdfs:comment xml:lang="en">Represents Collection Of personal data.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/GConsent#Processing"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/GConsent#UseOfPersonalData">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/GConsent"/>
+    <rdfs:label xml:lang="en">Use Of Personal Data</rdfs:label>
+    <rdfs:comment xml:lang="en">Represents Use Of personal data.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/GConsent#Processing"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/GConsent#StorageOfPersonalData">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/GConsent"/>
+    <rdfs:label xml:lang="en">Storage Of Personal Data</rdfs:label>
+    <rdfs:comment xml:lang="en">Represents Storage Of personal data.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/GConsent#Processing"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/GConsent#RetrievalOfPersonalData">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/GConsent"/>
+    <rdfs:label xml:lang="en">Retrieval Of Personal Data</rdfs:label>
+    <rdfs:comment xml:lang="en">Represents Retrieval Of personal data.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/GConsent#Processing"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/GConsent#DestructionOfPersonalData">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/GConsent"/>
+    <rdfs:label xml:lang="en">Destruction Of Personal Data</rdfs:label>
+    <rdfs:comment xml:lang="en">Represents Destruction Of personal data.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/GConsent#Processing"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/GConsent#RestrictionOfPersonalData">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/GConsent"/>
+    <rdfs:label xml:lang="en">Restriction Of Personal Data</rdfs:label>
+    <rdfs:comment xml:lang="en">Represents Restriction Of personal data.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/GConsent#Processing"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/GConsent#CombinationOfPersonalData">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/GConsent"/>
+    <rdfs:label xml:lang="en">Combination Of Personal Data</rdfs:label>
+    <rdfs:comment xml:lang="en">Represents Combination Of personal data.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/GConsent#Processing"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/GConsent#OrganisationOfPersonalData">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/GConsent"/>
+    <rdfs:label xml:lang="en">Organisation Of Personal Data</rdfs:label>
+    <rdfs:comment xml:lang="en">Represents Organisation Of personal data.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/GConsent#Processing"/>
+  </skos:Concept>
+</rdf:RDF>

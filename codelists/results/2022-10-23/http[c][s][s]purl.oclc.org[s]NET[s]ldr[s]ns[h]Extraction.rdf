@@ -1,0 +1,32 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://purl.oclc.org/NET/ldr/ns#"/>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ldr/ns#extract">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ldr/ns#"/>
+    <rdfs:comment xml:lang="en">General right of extraction</rdfs:comment>
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="http://purl.oclc.org/NET/ldr/ns#Extraction">
+        <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ldr/ns#"/>
+        <rdfs:comment xml:lang="en">Right to permanent or temporary transfer of all or a substantial part of the contents of a database to another medium by any means or in any form</rdfs:comment>
+      </skos:ConceptScheme>
+    </skos:inScheme>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ldr/ns#downloadDatabase">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ldr/ns#"/>
+    <rdfs:comment xml:lang="en">Downloading a dataset, for other purposes than private use</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ldr/ns#Extraction"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ldr/ns#copyDatabase">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ldr/ns#"/>
+    <rdfs:comment xml:lang="en">Coyping a dataset, for other purposes than private use</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ldr/ns#Extraction"/>
+  </skos:Concept>
+</rdf:RDF>

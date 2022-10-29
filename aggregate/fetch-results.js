@@ -99,3 +99,23 @@ const operate = () => {
 };
 
 operate();
+
+/*
+const resultFolder = `./results/2022-10-23/`;
+const path = `${resultFolder}/2022-10-23_lov-analyzer-results.json`;
+const rs = require(path);
+const pathFlat = `${resultFolder}/2022-10-23_lov-analyzer-results-flat.json`;
+  const flatData = {};
+  Object.keys(rs).forEach((vocabIri) => {
+    Object.keys(rs[vocabIri]).forEach((codeListIri) => {
+      flatData[codeListIri] = {
+        vocab: vocabIri,
+        codes: {
+          instances: rs[vocabIri][codeListIri].instances,
+          properties: rs[vocabIri][codeListIri].properties,
+        }
+      };
+    })
+  });
+  fs.writeFileSync(pathFlat, JSON.stringify(flatData, null, 2));
+*/

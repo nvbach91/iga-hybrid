@@ -1,0 +1,64 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://comicmeta.org/cbo/"/>
+  <owl:ObjectProperty rdf:about="http://comicmeta.org/cbo/genre">
+    <rdfs:comment xml:lang="en">Describes the genre of a comic work.</rdfs:comment>
+    <rdfs:label xml:lang="en">genre</rdfs:label>
+    <rdfs:domain rdf:resource="http://comicmeta.org/cbo/Comic"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://comicmeta.org/cbo/Genre">
+        <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+        <rdfs:label xml:lang="en">Genre</rdfs:label>
+        <rdfs:comment xml:lang="en">A comics genre.</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/War">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Genre"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/Western">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Genre"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/Crime">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Genre"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/ScienceFiction">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Genre"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/Comix">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Genre"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/FunnyAnimal">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Genre"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/Horror">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Genre"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/Romance">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Genre"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/SuperHero">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Genre"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/Adult">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Genre"/>
+  </skos:Concept>
+</rdf:RDF>

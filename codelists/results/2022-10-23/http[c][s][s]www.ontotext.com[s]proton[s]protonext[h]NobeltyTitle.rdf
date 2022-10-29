@@ -1,0 +1,42 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://www.ontotext.com/proton/protonext"/>
+  <owl:ObjectProperty rdf:about="http://www.ontotext.com/proton/protonext#hasNobeltyTitle">
+    <rdfs:comment xml:lang="en">The relation between the social position and the social title of nobelty.</rdfs:comment>
+    <rdfs:label xml:lang="en">has Nobetlty Title</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.ontotext.com/proton/protonext#Nobelty"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://www.ontotext.com/proton/protonext#NobeltyTitle">
+        <rdfs:isDefinedBy rdf:resource="http://www.ontotext.com/proton/protonext"/>
+        <rdfs:label xml:lang="en">Nobelty</rdfs:label>
+        <rdfs:comment xml:lang="en">The social function of a nobelty.</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://www.ontotext.com/proton/protonext#Monarch">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontotext.com/proton/protonext"/>
+    <rdfs:label xml:lang="en">Monarch</rdfs:label>
+    <rdfs:comment xml:lang="en">Any Monarch, a title of a head of state in a monarchy.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontotext.com/proton/protonext#NobeltyTitle"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontotext.com/proton/protonext#PolishKing">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontotext.com/proton/protonext"/>
+    <rdfs:label xml:lang="en">Polish king</rdfs:label>
+    <rdfs:comment xml:lang="en">A title of Polish kings.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontotext.com/proton/protonext#NobeltyTitle"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontotext.com/proton/protonext#BritishRoyalty">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontotext.com/proton/protonext"/>
+    <rdfs:label xml:lang="en">British Royalty</rdfs:label>
+    <rdfs:comment xml:lang="en">Any British Royalty, a title of a memebr of the British royal family.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontotext.com/proton/protonext#NobeltyTitle"/>
+  </skos:Concept>
+</rdf:RDF>

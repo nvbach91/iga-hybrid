@@ -1,0 +1,51 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://purl.uniprot.org/core/"/>
+  <owl:FunctionalProperty rdf:about="http://purl.uniprot.org/core/status">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The reliability of a statement.</rdfs:comment>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://purl.uniprot.org/core/Status">
+        <rdfs:isDefinedBy rdf:resource="http://purl.uniprot.org/core/"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Indicator for the reliability of a piece of information.</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:FunctionalProperty>
+  <skos:Concept rdf:about="http://purl.uniprot.org/core/Probable">
+    <rdfs:isDefinedBy rdf:resource="http://purl.uniprot.org/core/"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Probable</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The status ‘Probable’ indicates stronger evidence than the qualifier ‘Potential’. This qualifier implies that there must be at least some experimental evidence, which indicates, that the information is expected to be found in the natural environment of a protein.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.uniprot.org/core/Status"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.uniprot.org/core/By_Similarity">
+    <rdfs:isDefinedBy rdf:resource="http://purl.uniprot.org/core/"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >By Similarity</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.uniprot.org/core/Status"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.uniprot.org/core/Potential">
+    <rdfs:isDefinedBy rdf:resource="http://purl.uniprot.org/core/"/>
+    <rdfs:label>Potential</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >indicates that there is some logical or conclusive evidence that the given annotation could apply. This non-experimental qualifier is often used to present results from protein sequence analysis software tools, which are only annotated if the result makes sense in the biological context of a given protein. A typical example is the annotation of N-glycosylation sites in secreted proteins</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.uniprot.org/core/Status"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.uniprot.org/core/Experimental">
+    <rdfs:isDefinedBy rdf:resource="http://purl.uniprot.org/core/"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Indicates that there is some experimental evidence that the given annotation could apply.</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.uniprot.org/core/Status"/>
+  </skos:Concept>
+</rdf:RDF>

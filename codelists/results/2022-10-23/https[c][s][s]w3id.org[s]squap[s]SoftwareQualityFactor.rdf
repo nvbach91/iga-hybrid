@@ -1,0 +1,195 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="https://w3id.org/squap/"/>
+  <owl:ObjectProperty rdf:about="https://w3id.org/squap/satisfiesFactor">
+    <rdfs:label>satisfies factor</rdfs:label>
+    <rdfs:domain rdf:resource="https://w3id.org/squap/FactorOccurrence"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="https://w3id.org/squap/SoftwareQualityFactor">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+        <rdfs:label>Software quality factor</rdfs:label>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://w3id.org/squap/isQualityCharacteristicUsedIn">
+    <rdfs:label>is quality characteristic used in</rdfs:label>
+    <rdfs:domain rdf:resource="https://w3id.org/squap/SoftwareQualityCharacteristic"/>
+    <rdfs:range rdf:resource="https://w3id.org/squap/SoftwareQualityFactor"/>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="https://w3id.org/squap/Factor/FunctionalAnalysisVsDataModeling">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+    <rdfs:label>Functional analysis vs data modeling</rdfs:label>
+    <rdfs:comment>Difficulties in functional analysis lies in bad data modeling and identification of data sources.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQualityFactor"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/squap/Factor/QualityVsTimeAndBudget">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+    <rdfs:label>Quality vs time and budget</rdfs:label>
+    <rdfs:comment>The whole panel agreed unanimously that there is a direct relationship among quality and time and budget.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQualityFactor"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/squap/Factor/ItalianApplicationsVsQualityAndMaintainability">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+    <rdfs:label>Italian applications vs quality and maintainability</rdfs:label>
+    <rdfs:comment>Regarding Italian applications, they appear to have more functionalities but incur in higher maintenance costs.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQualityFactor"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/squap/Factor/PackagesDocumentationVsSystemAnalysis">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+    <rdfs:label>Packages documentation vs system analysis</rdfs:label>
+    <rdfs:comment>The lack of documentation in packages impacts directly on the logical data model and quality controls.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQualityFactor"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/squap/Factor/InterfacesArchitecturalComplexity">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+    <rdfs:label>Interfaces architectural complexity</rdfs:label>
+    <rdfs:comment>This factor is a direct consequence of the first one. Module interfaces complexity led to a typical anti-pattern.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQualityFactor"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/squap/Factor/ModuleInterfacesComplexity">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+    <rdfs:label>Module interfaces complexity</rdfs:label>
+    <rdfs:comment>A banking information system is characterized by a high number of modules;if these are strongly coupled this increases the number of interfaces and their complexity.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQualityFactor"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/squap/Factor/CustomSoftwareQuality">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+    <rdfs:label>Custom software quality</rdfs:label>
+    <rdfs:comment>The perceived quality of custom software applications is decreasing.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQualityFactor"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/squap/Factor/ApplicationAndMaintenanceContractsVsDocumentation">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+    <rdfs:label>Application and maintenance contracts vs documentation</rdfs:label>
+    <rdfs:comment>Application &amp; Maintenance (AM) contracts are set to outsource the development and maintenance, to decrease internal costs.Typically, they do not provide an adequate documentation.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQualityFactor"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/squap/Factor/EstablishmentOfInternalAndExternalDevelopmentProcesses">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+    <rdfs:label>Establishment of internal and external development processes</rdfs:label>
+    <rdfs:comment>Merging internal and external development processes is extremely difficult.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQualityFactor"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/squap/Factor/IncreaseOfMaintenanceCosts">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+    <rdfs:label>Increase of maintenance costs</rdfs:label>
+    <rdfs:comment>Some factors have a direct impact on maintenance costs. The overall architectural complexity, the decreasing software quality and incomplete documentation are the most important drivers of high maintenance costs and time.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQualityFactor"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/squap/Factor/LackingToolsAndMethodologies">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+    <rdfs:label>Lacking tools and methodologies</rdfs:label>
+    <rdfs:comment>Finding and implementing the right tools &amp; methodologies is quite a hard task.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQualityFactor"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/squap/Factor/Non-ItalianApplicationsVsQualityAndMaintainability">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+    <rdfs:label>Non-Italian applications vs quality and maintainability</rdfs:label>
+    <rdfs:comment>Non-Italian applications are more maintainable but have less functionalities.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQualityFactor"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/squap/Factor/DataAnalysisVsFunctionalAnalysis">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+    <rdfs:label>Data analysis vs functional analysis</rdfs:label>
+    <rdfs:comment>Poor data analysis influences functional analysis and so, system integrity.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQualityFactor"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/squap/Factor/DeveloperProfessionalismVsSkills">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+    <rdfs:label>Developer professionalism vs skills</rdfs:label>
+    <rdfs:comment>No adequate resources to invest in education and to train developers, especially those with no formal education in IT.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQualityFactor"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/squap/Factor/RequirementsVsTechnicalJargon">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+    <rdfs:label>Requirements vs technical jargon</rdfs:label>
+    <rdfs:comment>The (mis-)use of technical jargon of different departments for requirement elicitation leads to low software quality.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQualityFactor"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/squap/Factor/QualityVsRequirements">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+    <rdfs:label>Quality vs requirements</rdfs:label>
+    <rdfs:comment>Poorly defined requirements lead to misunderstandings with software developers, which will deliver lower quality software. The functional quality will be low if the requirements' clarity is low.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQualityFactor"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/squap/Factor/ContractingAndSkills">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+    <rdfs:label>Contracting and skills</rdfs:label>
+    <rdfs:comment>Outsourcing is the main cause of poor software quality.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQualityFactor"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/squap/Factor/WebTechnologiesVsMethodologies">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+    <rdfs:label>Web technologies vs methodologies</rdfs:label>
+    <rdfs:comment>There is the idea that the adoption of such technologies lead to less rigorous approach to software engineering. In this regard, Agile is considered a scapegoat of such sloppiness.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQualityFactor"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/squap/Factor/MeasurementOfSoftwareQuality">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+    <rdfs:label>Measurement of software quality</rdfs:label>
+    <rdfs:comment>Losing control over the system quality is a concern.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQualityFactor"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/squap/Factor/RequirementsVsMethodologies">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+    <rdfs:label>Requirements vs methodologies</rdfs:label>
+    <rdfs:comment>Poor methodologies to elicit business goals and needs lead to the definition of unclear software requirements.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQualityFactor"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/squap/Factor/SystemAnalysisVsDocumentation">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+    <rdfs:label>System analysis vs documentation</rdfs:label>
+    <rdfs:comment>Inadequate documentation impacts on the system analysis and so on software quality.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQualityFactor"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/squap/Factor/LowerDevelopersExpertiseAndProfessionalism">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+    <rdfs:label>Lower developers expertise and professionalism</rdfs:label>
+    <rdfs:comment>Short time to market expectations and shrinking IT budget is generally considered the main reason for low software quality.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQualityFactor"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/squap/Factor/NewPackagesFunctionalitiesVsComplexity">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+    <rdfs:label>New packages functionalities vs complexity</rdfs:label>
+    <rdfs:comment>The demand for more functionalities rose in the last years, along with their complexity.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQualityFactor"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/squap/Factor/DocumentationVsTimeAndBudget">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+    <rdfs:label>Documentation vs time and budget</rdfs:label>
+    <rdfs:comment>Time and budget constraints have a direct impact on software documentation. Due to low budget for new developments and urgency for new applications, documentation is the first element which is skipped.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQualityFactor"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/squap/Factor/DocumentationStandardsAndTools">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+    <rdfs:label>Documentation standards and tools</rdfs:label>
+    <rdfs:comment>Poor documentation hinders software maintainability and increases evolution costs.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQualityFactor"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/squap/Factor/DeveloperProfessionalismVsRates">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+    <rdfs:label>Developer professionalism vs rates</rdfs:label>
+    <rdfs:comment>Decreasing developer's professionalism and the decrease of professional rates appears to be quite connected.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQualityFactor"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/squap/Factor/PackagesVsDocumentation">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+    <rdfs:label>Packages vs documentation</rdfs:label>
+    <rdfs:comment>The lack of documentation for software packages is perceived as a commercial strategy of suppliers to lock-in customers.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQualityFactor"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/squap/Factor/QualityVsSystemAnalysis">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+    <rdfs:label>Quality vs system analysis</rdfs:label>
+    <rdfs:comment>Even though the design phase is perceived as the most important up-front activity, it is poorly implemented.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQualityFactor"/>
+  </skos:Concept>
+</rdf:RDF>

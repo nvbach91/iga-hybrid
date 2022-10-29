@@ -1,0 +1,62 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://paul.staroch.name/thesis/SmartHomeWeather.owl#"/>
+  <owl:ObjectProperty rdf:about="http://paul.staroch.name/thesis/SmartHomeWeather.owl#hasCondition">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Links a WeatherCondition to a WeatherPhenomenon. A WeatherPhenomenon can be associated with an arbitrary number of instances of WeatherCondition.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://paul.staroch.name/thesis/SmartHomeWeather.owl#WeatherState"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://paul.staroch.name/thesis/SmartHomeWeather.owl#WeatherCondition">
+        <rdfs:isDefinedBy rdf:resource="http://paul.staroch.name/thesis/SmartHomeWeather.owl#"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >A WeatherCondition is a simple description of the state of the weather. Currently there are: Cloud, Fog, LightCloud, PartlyCloud, Rain, Sleet, Snow, Sun, Thunder.
+
+Several instances of WeatherCondition can be associated with the same instance of WeatherPhenomenon using the hasCondition property. That way, it is possible to describe a thunderstorm that comes with rain.</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://paul.staroch.name/thesis/SmartHomeWeather.owl#PartlyCloud">
+    <rdfs:isDefinedBy rdf:resource="http://paul.staroch.name/thesis/SmartHomeWeather.owl#"/>
+    <skos:inScheme rdf:resource="http://paul.staroch.name/thesis/SmartHomeWeather.owl#WeatherCondition"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://paul.staroch.name/thesis/SmartHomeWeather.owl#Sun">
+    <rdfs:isDefinedBy rdf:resource="http://paul.staroch.name/thesis/SmartHomeWeather.owl#"/>
+    <skos:inScheme rdf:resource="http://paul.staroch.name/thesis/SmartHomeWeather.owl#WeatherCondition"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://paul.staroch.name/thesis/SmartHomeWeather.owl#Sleet">
+    <rdfs:isDefinedBy rdf:resource="http://paul.staroch.name/thesis/SmartHomeWeather.owl#"/>
+    <skos:inScheme rdf:resource="http://paul.staroch.name/thesis/SmartHomeWeather.owl#WeatherCondition"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://paul.staroch.name/thesis/SmartHomeWeather.owl#Rain">
+    <rdfs:isDefinedBy rdf:resource="http://paul.staroch.name/thesis/SmartHomeWeather.owl#"/>
+    <skos:inScheme rdf:resource="http://paul.staroch.name/thesis/SmartHomeWeather.owl#WeatherCondition"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://paul.staroch.name/thesis/SmartHomeWeather.owl#Cloud">
+    <rdfs:isDefinedBy rdf:resource="http://paul.staroch.name/thesis/SmartHomeWeather.owl#"/>
+    <skos:inScheme rdf:resource="http://paul.staroch.name/thesis/SmartHomeWeather.owl#WeatherCondition"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://paul.staroch.name/thesis/SmartHomeWeather.owl#LightCloud">
+    <rdfs:isDefinedBy rdf:resource="http://paul.staroch.name/thesis/SmartHomeWeather.owl#"/>
+    <skos:inScheme rdf:resource="http://paul.staroch.name/thesis/SmartHomeWeather.owl#WeatherCondition"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://paul.staroch.name/thesis/SmartHomeWeather.owl#Fog">
+    <rdfs:isDefinedBy rdf:resource="http://paul.staroch.name/thesis/SmartHomeWeather.owl#"/>
+    <skos:inScheme rdf:resource="http://paul.staroch.name/thesis/SmartHomeWeather.owl#WeatherCondition"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://paul.staroch.name/thesis/SmartHomeWeather.owl#Snow">
+    <rdfs:isDefinedBy rdf:resource="http://paul.staroch.name/thesis/SmartHomeWeather.owl#"/>
+    <skos:inScheme rdf:resource="http://paul.staroch.name/thesis/SmartHomeWeather.owl#WeatherCondition"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://paul.staroch.name/thesis/SmartHomeWeather.owl#Thunder">
+    <rdfs:isDefinedBy rdf:resource="http://paul.staroch.name/thesis/SmartHomeWeather.owl#"/>
+    <skos:inScheme rdf:resource="http://paul.staroch.name/thesis/SmartHomeWeather.owl#WeatherCondition"/>
+  </skos:Concept>
+</rdf:RDF>

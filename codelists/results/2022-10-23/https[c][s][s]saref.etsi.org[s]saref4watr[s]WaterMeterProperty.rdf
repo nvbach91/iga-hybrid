@@ -1,0 +1,48 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="https://saref.etsi.org/saref4watr/"/>
+  <skos:Concept rdf:about="https://saref.etsi.org/saref4watr/BatteryLastChange">
+    <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4watr/"/>
+    <rdfs:label xml:lang="en">Battery last change</rdfs:label>
+    <rdfs:comment xml:lang="en">The time in which the battery was last changed.</rdfs:comment>
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="https://saref.etsi.org/saref4watr/WaterMeterProperty">
+        <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4watr/"/>
+        <rdfs:label xml:lang="en">Water meter property</rdfs:label>
+        <rdfs:comment xml:lang="en">Class to group those properties related to water meters.</rdfs:comment>
+      </skos:ConceptScheme>
+    </skos:inScheme>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://saref.etsi.org/saref4watr/MeterOnTime">
+    <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4watr/"/>
+    <rdfs:label xml:lang="en">Meter on time</rdfs:label>
+    <rdfs:comment xml:lang="en">The duration of the meter power up.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://saref.etsi.org/saref4watr/WaterMeterProperty"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://saref.etsi.org/saref4watr/MeterOperatingTime">
+    <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4watr/"/>
+    <rdfs:label xml:lang="en">Meter operating time</rdfs:label>
+    <rdfs:comment xml:lang="en">The time for which the meter has been operating.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://saref.etsi.org/saref4watr/WaterMeterProperty"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://saref.etsi.org/saref4watr/BatteryOperatingTime">
+    <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4watr/"/>
+    <rdfs:label xml:lang="en">Battery operating time</rdfs:label>
+    <rdfs:comment xml:lang="en">The time for which the battery has been operating since the last charge.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://saref.etsi.org/saref4watr/WaterMeterProperty"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://saref.etsi.org/saref4watr/BatteryRemainingTime">
+    <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4watr/"/>
+    <rdfs:label xml:lang="en">Battery remaining time</rdfs:label>
+    <rdfs:comment xml:lang="en">The time until the battery is discharged.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://saref.etsi.org/saref4watr/WaterMeterProperty"/>
+  </skos:Concept>
+</rdf:RDF>

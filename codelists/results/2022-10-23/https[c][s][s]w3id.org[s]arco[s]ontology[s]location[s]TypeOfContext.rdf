@@ -1,0 +1,54 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="https://w3id.org/arco/ontology/location"/>
+  <owl:ObjectProperty rdf:about="https://w3id.org/arco/ontology/location/hasTypeOfContext">
+    <rdfs:comment xml:lang="en">This property relates an entity to the type of context where the cultural property is located (i.e. urban context, suburban context, extra-urban context, territorial context, underwater context).</rdfs:comment>
+    <rdfs:label xml:lang="en">has type of geographical context</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="https://w3id.org/arco/ontology/location/TypeOfContext">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/location"/>
+        <rdfs:label xml:lang="en">Type of geographic context</rdfs:label>
+        <rdfs:comment xml:lang="en">This class represents the type of geographical context where the cultural property is located: i.e. urban, suburban, extra-urban, territorial, underwater.</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/location/UnderwaterContext">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/location"/>
+    <rdfs:label xml:lang="en">Underwater context</rdfs:label>
+    <rdfs:comment xml:lang="en">This individual represents a specific type of context, that is the underwater context where the cultural property is located.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/location/TypeOfContext"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/location/TerritorialContext">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/location"/>
+    <rdfs:label xml:lang="en">Territorial context</rdfs:label>
+    <rdfs:comment xml:lang="en">This individual represents a specific type of context, i.e. the territorial context where the cultural property is located.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/location/TypeOfContext"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/location/UrbanContext">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/location"/>
+    <rdfs:label xml:lang="en">Urban context</rdfs:label>
+    <rdfs:comment xml:lang="en">This individual represents a specific type of context, that is the urban context where the cultural asset is located.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/location/TypeOfContext"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/location/ExtraurbanContext">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/location"/>
+    <rdfs:label xml:lang="en">Extra-urban context</rdfs:label>
+    <rdfs:comment xml:lang="en">This individual represents a specific type of context, that is the extra-urban context where the cultural property is located.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/location/TypeOfContext"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/location/SuburbanContext">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/location"/>
+    <rdfs:label xml:lang="en">Suburban context</rdfs:label>
+    <rdfs:comment xml:lang="en">This individual represents a specific type of geographical context, that is a suburban context, which is located in the intermediate area between the urban and extraurban context.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/location/TypeOfContext"/>
+  </skos:Concept>
+</rdf:RDF>

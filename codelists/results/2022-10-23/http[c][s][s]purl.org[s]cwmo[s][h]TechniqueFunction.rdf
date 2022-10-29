@@ -1,0 +1,51 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://purl.org/cwmo/#"/>
+  <owl:AsymmetricProperty rdf:about="http://purl.org/cwmo/#hasFunction">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment xml:lang="en">A creative method produce different results which can be classified according to these typology: exploration, generation, and/or evaluation.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://purl.org/cwmo/#TechniqueFunction">
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/cwmo/#"/>
+        <rdfs:label xml:lang="en">Technique Function</rdfs:label>
+        <rdfs:comment xml:lang="en">Technique Function class define the primary purpose of a creative technique.</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:AsymmetricProperty>
+  <skos:Concept rdf:about="http://purl.org/cwmo/#Exploration">
+    <rdfs:seeAlso>
+      <skos:Concept rdf:about="http://purl.org/cwmo/#Generation">
+        <rdfs:seeAlso>
+          <skos:Concept rdf:about="http://purl.org/cwmo/#Evaluation">
+            <rdfs:seeAlso rdf:resource="http://purl.org/cwmo/#Generation"/>
+            <rdfs:seeAlso rdf:resource="http://purl.org/cwmo/#Exploration"/>
+            <rdfs:label xml:lang="en">Evaluation</rdfs:label>
+            <rdfs:comment xml:lang="en">The evluation class is a creative technic which has the purpose to evaluate/sort/contextualise the ideas.</rdfs:comment>
+            <skos:inScheme rdf:resource="http://purl.org/cwmo/#TechniqueFunction"/>
+            <rdfs:isDefinedBy rdf:resource="http://purl.org/cwmo/#"/>
+          </skos:Concept>
+        </rdfs:seeAlso>
+        <rdfs:seeAlso rdf:resource="http://purl.org/cwmo/#Exploration"/>
+        <rdfs:label xml:lang="en">Generation</rdfs:label>
+        <rdfs:comment xml:lang="en">The Generation class is a creative technic which has the purpose to generate ideas.</rdfs:comment>
+        <skos:inScheme rdf:resource="http://purl.org/cwmo/#TechniqueFunction"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/cwmo/#"/>
+      </skos:Concept>
+    </rdfs:seeAlso>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/cwmo/#"/>
+    <rdfs:seeAlso rdf:resource="http://purl.org/cwmo/#Evaluation"/>
+    <rdfs:label xml:lang="en">Exploration</rdfs:label>
+    <rdfs:comment xml:lang="en">The exploration class is a creativ technic which has the porpose to explore the problem, to redefine the scope or the focus of the problem, or to collect further information</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/cwmo/#TechniqueFunction"/>
+  </skos:Concept>
+</rdf:RDF>

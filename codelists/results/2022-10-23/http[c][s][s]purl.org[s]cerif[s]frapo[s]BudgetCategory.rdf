@@ -1,0 +1,122 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://purl.org/cerif/frapo/"/>
+  <skos:Concept rdf:about="http://purl.org/cerif/frapo/non-staff-costs">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/cerif/frapo/"/>
+    <rdfs:label xml:lang="en">non-staff costs</rdfs:label>
+    <rdfs:comment xml:lang="en">A budget category to cover all the costs associated with a project that do not involve the employment of staff by the institution, thus, for example, including consumables purchase, travel costs and consultancy fees, but excluding the salary, estates and indirect costs associated with the allocation of the PI's time to the project and the direct employment of a project manager.</rdfs:comment>
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="http://purl.org/cerif/frapo/BudgetCategory">
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/cerif/frapo/"/>
+        <rdfs:label xml:lang="en">budget category</rdfs:label>
+        <rdfs:comment xml:lang="en">A category of expenditure within a budget, determining what the allocated money can be spent on, for example salaries, equipment, travel.</rdfs:comment>
+      </skos:ConceptScheme>
+    </skos:inScheme>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/cerif/frapo/facilities-costs">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/cerif/frapo/"/>
+    <rdfs:label xml:lang="en">facilities costs</rdfs:label>
+    <rdfs:comment xml:lang="en">A budget category to cover the costs of maintaining facilities used by a project, for example an electron microscopy facility.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/cerif/frapo/BudgetCategory"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/cerif/frapo/full-economic-costs">
+    <rdfs:comment xml:lang="en">Frequently abbreviated 'FEC'.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/cerif/frapo/"/>
+    <rdfs:label xml:lang="en">full economic costs</rdfs:label>
+    <rdfs:comment xml:lang="en">A budget category to cover all the direct and indirect costs of a project. </rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/cerif/frapo/BudgetCategory"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/cerif/frapo/service-costs">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/cerif/frapo/"/>
+    <rdfs:label xml:lang="en">service costs</rdfs:label>
+    <rdfs:comment xml:lang="en">A budget category to cover the costs of services used by a project, for example a DNA sequencing service, or an equipment maintenance service.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/cerif/frapo/BudgetCategory"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/cerif/frapo/software-costs">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/cerif/frapo/"/>
+    <rdfs:label xml:lang="en">software costs</rdfs:label>
+    <rdfs:comment xml:lang="en">A budget category to cover the costs of software licenses required by a project.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/cerif/frapo/BudgetCategory"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/cerif/frapo/other-costs">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/cerif/frapo/"/>
+    <rdfs:label xml:lang="en">other costs</rdfs:label>
+    <rdfs:comment xml:lang="en">A budget category to cover costs not covered in other budget categories.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/cerif/frapo/BudgetCategory"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/cerif/frapo/indirect-costs">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/cerif/frapo/"/>
+    <rdfs:label xml:lang="en">indirect costs</rdfs:label>
+    <rdfs:comment xml:lang="en">A budget category to cover the indirect costs of running a project, for example heating and lighting, and the employment of non-project staff including administrators, accountants and cleaners.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/cerif/frapo/BudgetCategory"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/cerif/frapo/overhead-costs">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/cerif/frapo/"/>
+    <rdfs:label xml:lang="en">overhead costs</rdfs:label>
+    <rdfs:comment xml:lang="en">A budget category to cover all the non-directly incurred costs of a project, including estates costs and indirect costs, that enable an institution to host an externally-funded project. </rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/cerif/frapo/BudgetCategory"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/cerif/frapo/travel-and-subsistence-costs">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/cerif/frapo/"/>
+    <rdfs:label xml:lang="en">travel and subsistence costs</rdfs:label>
+    <rdfs:comment xml:lang="en">A budget category to cover the costs of travel and subsistence incurred on behalf of the project.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/cerif/frapo/BudgetCategory"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/cerif/frapo/directly-incurred-costs">
+    <rdfs:comment xml:lang="en">Also known as the 'direct costs' of the project.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/cerif/frapo/"/>
+    <rdfs:label xml:lang="en">directly incurred costs</rdfs:label>
+    <rdfs:comment xml:lang="en">A budget category to cover all costs directly incurred because of a legitimate expenditure on a project, for example the purchase of reagents or the employment of a post-doctoral researcher.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/cerif/frapo/BudgetCategory"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/cerif/frapo/consumables-costs">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/cerif/frapo/"/>
+    <rdfs:label xml:lang="en">consumables costs</rdfs:label>
+    <rdfs:comment xml:lang="en">A budget category to cover the costs of purchasing consumables.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/cerif/frapo/BudgetCategory"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/cerif/frapo/consultancy-costs">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/cerif/frapo/"/>
+    <rdfs:label xml:lang="en">consultancy costs</rdfs:label>
+    <rdfs:comment xml:lang="en">A budget category to cover the costs of consultancy fees.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/cerif/frapo/BudgetCategory"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/cerif/frapo/directly-allocated-costs">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/cerif/frapo/"/>
+    <rdfs:label xml:lang="en">directly allocated costs</rdfs:label>
+    <rdfs:comment xml:lang="en">A budget category to cover those costs normally borne by an institution, that are assigned to the budget of an externally funded project to cover the value of contributions to that project, for example to pay for the salary of a permanent member of staff seconded to work on the project, to compensate the employing organization for the loss of that person's efforts on other activities that he or she would otherwise be undertaking were it not for that secondment.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/cerif/frapo/BudgetCategory"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/cerif/frapo/estates-costs">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/cerif/frapo/"/>
+    <rdfs:label xml:lang="en">estates costs</rdfs:label>
+    <rdfs:comment xml:lang="en">A budget category to cover the 'overhead' costs of maintaining the premises in which work is undertaken.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/cerif/frapo/BudgetCategory"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/cerif/frapo/building-costs">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/cerif/frapo/"/>
+    <rdfs:label xml:lang="en">building costs</rdfs:label>
+    <rdfs:comment xml:lang="en">A budget category to cover the costs of constructing, renovating or modifying a physical building.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/cerif/frapo/BudgetCategory"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/cerif/frapo/publishing-costs">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/cerif/frapo/"/>
+    <rdfs:label xml:lang="en">publishing costs</rdfs:label>
+    <rdfs:comment xml:lang="en">A budget category to cover the cost of publishing outpots from a project, for example author fees for journal articles in an open access journal.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/cerif/frapo/BudgetCategory"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/cerif/frapo/contributions-in-kind">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/cerif/frapo/"/>
+    <rdfs:label xml:lang="en">contributions in kind</rdfs:label>
+    <rdfs:comment xml:lang="en">A budget category to categorize the financial worth of contributions in kind (e.g. staff effort, access to facilities, sharing of know-how) given to a project by an agent, for example by the host institution or by a commerical partner in an academic project. </rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/cerif/frapo/BudgetCategory"/>
+  </skos:Concept>
+</rdf:RDF>

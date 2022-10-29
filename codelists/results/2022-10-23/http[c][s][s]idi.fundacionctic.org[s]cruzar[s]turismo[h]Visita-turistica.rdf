@@ -1,0 +1,115 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:j.0="http://www.loa-cnr.it/ontologies/TemporalRelations#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://idi.fundacionctic.org/cruzar/turismo"/>
+  <owl:ObjectProperty rdf:about="http://www.loa-cnr.it/ontologies/ExtendedDnS#setting-for">
+    <rdfs:label xml:lang="en">setting for</rdfs:label>
+    <rdfs:domain rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ruta-turistica"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Visita-turistica">
+        <rdfs:isDefinedBy rdf:resource="http://idi.fundacionctic.org/cruzar/turismo"/>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.loa-cnr.it/ontologies/TemporalRelations#follows">
+    <rdfs:label xml:lang="en">follows</rdfs:label>
+    <rdfs:domain rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Visita-turistica"/>
+    <rdfs:range rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Visita-turistica"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.loa-cnr.it/ontologies/TemporalRelations#precedes">
+    <rdfs:label xml:lang="en">precedes</rdfs:label>
+    <rdfs:domain rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Visita-turistica"/>
+    <rdfs:range rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Visita-turistica"/>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Visita-planificada_04">
+    <j.0:precedes>
+      <skos:Concept rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Visita-planificada_05">
+        <j.0:precedes>
+          <skos:Concept rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Visita-planificada_06">
+            <j.0:follows>
+              <skos:Concept rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Visita-planificada_05bis">
+                <j.0:precedes rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Visita-planificada_06"/>
+                <j.0:follows>
+                  <skos:Concept rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Visita-planificada_04bis">
+                    <j.0:precedes rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Visita-planificada_05bis"/>
+                    <j.0:follows>
+                      <skos:Concept rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Visita-planificada_03">
+                        <j.0:precedes rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Visita-planificada_04bis"/>
+                        <j.0:precedes rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Visita-planificada_04"/>
+                        <j.0:follows>
+                          <skos:Concept rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Visita-planificada_02">
+                            <j.0:precedes rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Visita-planificada_03"/>
+                            <rdfs:isDefinedBy rdf:resource="http://idi.fundacionctic.org/cruzar/turismo"/>
+                            <j.0:follows>
+                              <skos:Concept rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Visita-planificada_01">
+                                <j.0:precedes rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Visita-planificada_02"/>
+                                <skos:inScheme rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Visita-turistica"/>
+                                <rdfs:isDefinedBy rdf:resource="http://idi.fundacionctic.org/cruzar/turismo"/>
+                              </skos:Concept>
+                            </j.0:follows>
+                            <skos:inScheme rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Visita-turistica"/>
+                          </skos:Concept>
+                        </j.0:follows>
+                        <skos:inScheme rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Visita-turistica"/>
+                        <rdfs:isDefinedBy rdf:resource="http://idi.fundacionctic.org/cruzar/turismo"/>
+                      </skos:Concept>
+                    </j.0:follows>
+                    <skos:inScheme rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Visita-turistica"/>
+                    <rdfs:isDefinedBy rdf:resource="http://idi.fundacionctic.org/cruzar/turismo"/>
+                  </skos:Concept>
+                </j.0:follows>
+                <skos:inScheme rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Visita-turistica"/>
+                <rdfs:isDefinedBy rdf:resource="http://idi.fundacionctic.org/cruzar/turismo"/>
+              </skos:Concept>
+            </j.0:follows>
+            <j.0:follows rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Visita-planificada_05"/>
+            <j.0:precedes>
+              <skos:Concept rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Visita-planificada_07">
+                <j.0:follows rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Visita-planificada_06"/>
+                <j.0:precedes>
+                  <skos:Concept rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Visita-planificada_08">
+                    <j.0:follows rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Visita-planificada_07"/>
+                    <rdfs:isDefinedBy rdf:resource="http://idi.fundacionctic.org/cruzar/turismo"/>
+                    <j.0:precedes>
+                      <skos:Concept rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Visita-planificada_09">
+                        <j.0:precedes>
+                          <skos:Concept rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Visita-planificada_10">
+                            <j.0:follows rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Visita-planificada_09"/>
+                            <skos:inScheme rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Visita-turistica"/>
+                            <rdfs:isDefinedBy rdf:resource="http://idi.fundacionctic.org/cruzar/turismo"/>
+                          </skos:Concept>
+                        </j.0:precedes>
+                        <j.0:follows rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Visita-planificada_08"/>
+                        <skos:inScheme rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Visita-turistica"/>
+                        <rdfs:isDefinedBy rdf:resource="http://idi.fundacionctic.org/cruzar/turismo"/>
+                      </skos:Concept>
+                    </j.0:precedes>
+                    <skos:inScheme rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Visita-turistica"/>
+                  </skos:Concept>
+                </j.0:precedes>
+                <skos:inScheme rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Visita-turistica"/>
+                <rdfs:isDefinedBy rdf:resource="http://idi.fundacionctic.org/cruzar/turismo"/>
+              </skos:Concept>
+            </j.0:precedes>
+            <skos:inScheme rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Visita-turistica"/>
+            <rdfs:isDefinedBy rdf:resource="http://idi.fundacionctic.org/cruzar/turismo"/>
+          </skos:Concept>
+        </j.0:precedes>
+        <j.0:follows rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Visita-planificada_04"/>
+        <skos:inScheme rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Visita-turistica"/>
+        <rdfs:isDefinedBy rdf:resource="http://idi.fundacionctic.org/cruzar/turismo"/>
+      </skos:Concept>
+    </j.0:precedes>
+    <j.0:follows rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Visita-planificada_03"/>
+    <skos:inScheme rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Visita-turistica"/>
+    <rdfs:isDefinedBy rdf:resource="http://idi.fundacionctic.org/cruzar/turismo"/>
+  </skos:Concept>
+</rdf:RDF>

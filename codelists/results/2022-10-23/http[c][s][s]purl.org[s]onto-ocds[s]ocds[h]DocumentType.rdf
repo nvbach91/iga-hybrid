@@ -1,0 +1,39 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://purl.org/onto-ocds/ocds"/>
+  <owl:FunctionalProperty rdf:about="http://purl.org/onto-ocds/ocds#documentType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment xml:lang="en">A classification of the document described taken from the [documentType codelist](http://standard.open-contracting.org/latest/en/schema/codelists/#document-type). Values from the provided codelist should be used wherever possible, though extended values can be provided if the codelist does not have a relevant code.</rdfs:comment>
+    <rdfs:label xml:lang="en">Document type</rdfs:label>
+    <rdfs:domain rdf:resource="http://purl.org/onto-ocds/ocds#Document"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://purl.org/onto-ocds/ocds#DocumentType">
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/onto-ocds/ocds"/>
+        <rdfs:label xml:lang="en">Codelist Document Type</rdfs:label>
+        <rdfs:comment xml:lang="en">This list provides details of the documents that publishers may wish to provide at various points their contracting process.</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:FunctionalProperty>
+  <skos:Concept rdf:about="http://purl.org/onto-ocds/ocds#documentTypeTenderNotice">
+    <rdfs:label xml:lang="en">Tender Notice</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/onto-ocds/ocds"/>
+    <rdfs:label xml:lang="en">tenderNotice</rdfs:label>
+    <rdfs:comment xml:lang="en">The formal notice that gives details of a tender. This may be a link to a downloadable document, to a web page, or to an official gazette in which the notice is contained.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/onto-ocds/ocds#DocumentType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/onto-ocds/ocds#documentTypeAwardNotice">
+    <rdfs:label xml:lang="en">Award Notice</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/onto-ocds/ocds"/>
+    <rdfs:label xml:lang="en">awardNotice</rdfs:label>
+    <rdfs:comment xml:lang="en">The formal notice that gives details of the contract award. This may be a link to a downloadable document, to a web page, or to an official gazette in which the notice is contained.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/onto-ocds/ocds#DocumentType"/>
+  </skos:Concept>
+</rdf:RDF>

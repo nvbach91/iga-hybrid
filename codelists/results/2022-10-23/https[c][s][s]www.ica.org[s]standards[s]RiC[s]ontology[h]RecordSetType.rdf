@@ -1,0 +1,45 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="https://www.ica.org/standards/RiC/ontology"/>
+  <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#hasRecordSetType">
+    <rdfs:comment xml:lang="en">Connects a Record Set to a Record Set Type that categorizes
+            it.</rdfs:comment>
+    <rdfs:label xml:lang="en">has record set type</rdfs:label>
+    <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="https://www.ica.org/standards/RiC/ontology#RecordSetType">
+        <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+        <rdfs:label xml:lang="en">Record Set Type</rdfs:label>
+        <rdfs:comment xml:lang="en">A broad categorization of the type of Record Set.</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Series">
+    <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+    <rdfs:label xml:lang="en">series</rdfs:label>
+    <skos:inScheme rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSetType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Collection">
+    <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+    <rdfs:label xml:lang="en">collection</rdfs:label>
+    <skos:inScheme rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSetType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Fonds">
+    <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+    <rdfs:label xml:lang="en">fonds</rdfs:label>
+    <skos:inScheme rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSetType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#File">
+    <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+    <rdfs:label xml:lang="en">file</rdfs:label>
+    <skos:inScheme rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSetType"/>
+  </skos:Concept>
+</rdf:RDF>

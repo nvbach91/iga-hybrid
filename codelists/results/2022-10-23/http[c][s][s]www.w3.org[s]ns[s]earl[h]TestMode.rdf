@@ -1,0 +1,55 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://www.w3.org/ns/earl"/>
+  <rdf:Property rdf:about="http://www.w3.org/ns/earl#mode">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment xml:lang="en">mode in which the test was performed</rdfs:comment>
+    <rdfs:label xml:lang="en">Mode</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.w3.org/ns/earl#Assertion"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://www.w3.org/ns/earl#TestMode">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/earl"/>
+        <rdfs:label xml:lang="en">Test Mode</rdfs:label>
+        <rdfs:comment xml:lang="en">describes how a test was carried out</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </rdf:Property>
+  <skos:Concept rdf:about="http://www.w3.org/ns/earl#semiAuto">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/earl"/>
+    <rdfs:label xml:lang="en">Semi-Automatic</rdfs:label>
+    <rdfs:comment xml:lang="en">where the test was partially carried out by software tools, but where human input or judgment was still required to decide or help decide the outcome of the test</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.w3.org/ns/earl#TestMode"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/ns/earl#manual">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/earl"/>
+    <rdfs:label xml:lang="en">Manual</rdfs:label>
+    <rdfs:comment xml:lang="en">where the test was carried out by human evaluators</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.w3.org/ns/earl#TestMode"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/ns/earl#undisclosed">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/earl"/>
+    <rdfs:label xml:lang="en">Undisclosed</rdfs:label>
+    <rdfs:comment xml:lang="en">where the exact testing process is undisclosed</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.w3.org/ns/earl#TestMode"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/ns/earl#unknownMode">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/earl"/>
+    <rdfs:label xml:lang="en">Unknown</rdfs:label>
+    <rdfs:comment xml:lang="en">where the testing process is unknown or undetermined</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.w3.org/ns/earl#TestMode"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/ns/earl#automatic">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/earl"/>
+    <rdfs:label xml:lang="en">Automatic</rdfs:label>
+    <rdfs:comment xml:lang="en">where the test was carried out automatically by the software tool and without any human intervention</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.w3.org/ns/earl#TestMode"/>
+  </skos:Concept>
+</rdf:RDF>

@@ -1,0 +1,74 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://promsns.org/def/agr"/>
+  <owl:ObjectProperty rdf:about="http://promsns.org/def/agr#requirementLevel">
+    <rdfs:comment xml:lang="en">a Requirement has a requirementLevel of a RequirementLevel</rdfs:comment>
+    <rdfs:label xml:lang="en">requirement level</rdfs:label>
+    <rdfs:domain rdf:resource="http://promsns.org/def/agr#Requirement"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://promsns.org/def/agr#RequirementLevel">
+        <rdfs:isDefinedBy rdf:resource="http://promsns.org/def/agr"/>
+        <rdfs:label xml:lang="en">Requirement Level</rdfs:label>
+        <rdfs:comment xml:lang="en">An RequirementLevel is the level at which an Agreement complels the Agents it affects to action. The initial instances of Imperative are taken from RFC2119.</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://promsns.org/def/agr#MAY">
+    <rdfs:isDefinedBy rdf:resource="http://promsns.org/def/agr"/>
+    <rdfs:label>MAY</rdfs:label>
+    <skos:inScheme rdf:resource="http://promsns.org/def/agr#RequirementLevel"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://promsns.org/def/agr#OPTIONAL">
+    <rdfs:isDefinedBy rdf:resource="http://promsns.org/def/agr"/>
+    <rdfs:label>OPTIONAL</rdfs:label>
+    <skos:inScheme rdf:resource="http://promsns.org/def/agr#RequirementLevel"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://promsns.org/def/agr#MUST_NOT">
+    <rdfs:isDefinedBy rdf:resource="http://promsns.org/def/agr"/>
+    <rdfs:label>MUST NOT</rdfs:label>
+    <skos:inScheme rdf:resource="http://promsns.org/def/agr#RequirementLevel"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://promsns.org/def/agr#SHALL">
+    <rdfs:isDefinedBy rdf:resource="http://promsns.org/def/agr"/>
+    <rdfs:label>SHALL</rdfs:label>
+    <skos:inScheme rdf:resource="http://promsns.org/def/agr#RequirementLevel"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://promsns.org/def/agr#SHALL_NOT">
+    <rdfs:isDefinedBy rdf:resource="http://promsns.org/def/agr"/>
+    <rdfs:label>SHALL NOT</rdfs:label>
+    <skos:inScheme rdf:resource="http://promsns.org/def/agr#RequirementLevel"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://promsns.org/def/agr#REQUIRED">
+    <rdfs:isDefinedBy rdf:resource="http://promsns.org/def/agr"/>
+    <rdfs:label>REQUIRED</rdfs:label>
+    <skos:inScheme rdf:resource="http://promsns.org/def/agr#RequirementLevel"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://promsns.org/def/agr#RECOMMENDED">
+    <rdfs:isDefinedBy rdf:resource="http://promsns.org/def/agr"/>
+    <rdfs:label>RECOMMENDED</rdfs:label>
+    <skos:inScheme rdf:resource="http://promsns.org/def/agr#RequirementLevel"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://promsns.org/def/agr#SHOULD">
+    <rdfs:isDefinedBy rdf:resource="http://promsns.org/def/agr"/>
+    <rdfs:label>SHOULD</rdfs:label>
+    <skos:inScheme rdf:resource="http://promsns.org/def/agr#RequirementLevel"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://promsns.org/def/agr#MUST">
+    <rdfs:isDefinedBy rdf:resource="http://promsns.org/def/agr"/>
+    <rdfs:label>MUST</rdfs:label>
+    <skos:inScheme rdf:resource="http://promsns.org/def/agr#RequirementLevel"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://promsns.org/def/agr#SHOULD_NOT">
+    <rdfs:isDefinedBy rdf:resource="http://promsns.org/def/agr"/>
+    <rdfs:label>SHOULD NOT</rdfs:label>
+    <skos:inScheme rdf:resource="http://promsns.org/def/agr#RequirementLevel"/>
+  </skos:Concept>
+</rdf:RDF>

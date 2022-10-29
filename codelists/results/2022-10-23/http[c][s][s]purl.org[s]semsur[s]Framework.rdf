@@ -1,0 +1,171 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:j.0="http://purl.org/SemSur/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://purl.org/SemSur/"/>
+  <owl:ObjectProperty rdf:about="http://purl.org/semsur/hasImplementation">
+    <rdfs:domain rdf:resource="http://purl.org/semsur/Approach"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://purl.org/semsur/Framework">
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://purl.org/semsur/proposeFramework">
+    <rdfs:domain rdf:parseType="Resource">
+    </rdfs:domain>
+    <rdfs:domain rdf:resource="http://swrc.ontoware.org/ontology#Publication"/>
+    <rdfs:range rdf:resource="http://purl.org/semsur/Framework"/>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://purl.org/semsur/WoDQA">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <j.0:addressProblem>
+      <skos:Concept rdf:about="http://purl.org/semsur/Query_Execution">
+        <skos:inScheme rdf:resource="http://purl.org/semsur/Framework"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+      </skos:Concept>
+    </j.0:addressProblem>
+    <skos:inScheme rdf:resource="http://purl.org/semsur/Framework"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/SLINT">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://purl.org/semsur/Framework"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Avalanche">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <j.0:addressProblem rdf:resource="http://purl.org/semsur/Query_Execution"/>
+    <skos:inScheme rdf:resource="http://purl.org/semsur/Framework"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/GDS">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <j.0:addressProblem rdf:resource="http://purl.org/semsur/Query_Execution"/>
+    <skos:inScheme rdf:resource="http://purl.org/semsur/Framework"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/OntoMat-Reverse">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://purl.org/semsur/Framework"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/RDB2ONT">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://purl.org/semsur/Framework"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/FDR2">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://purl.org/semsur/Framework"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/KnoFuss">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://purl.org/semsur/Framework"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/FedX">
+    <j.0:provideSolution>
+      <skos:Concept rdf:about="http://purl.org/semsur/ASK">
+        <j.0:provideSolution rdf:resource="http://purl.org/semsur/ASK"/>
+        <skos:inScheme rdf:resource="http://purl.org/semsur/Framework"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+      </skos:Concept>
+    </j.0:provideSolution>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <j.0:addressProblem rdf:resource="http://purl.org/semsur/Query_Execution"/>
+    <skos:inScheme rdf:resource="http://purl.org/semsur/Framework"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Splendid">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://purl.org/semsur/Framework"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Automapper">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://purl.org/semsur/Framework"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/D2RQ">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://purl.org/semsur/Framework"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Zhishi.links">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://purl.org/semsur/Framework"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/CODI">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://purl.org/semsur/Framework"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/DataMaster">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://purl.org/semsur/Framework"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/LIMES">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <j.0:provideSolution>
+      <skos:Concept rdf:about="http://purl.org/semsur/space_tiling">
+        <j.0:provideSolution rdf:resource="http://purl.org/semsur/space_tiling"/>
+        <skos:inScheme rdf:resource="http://purl.org/semsur/Framework"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+      </skos:Concept>
+    </j.0:provideSolution>
+    <skos:inScheme rdf:resource="http://purl.org/semsur/Framework"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/DARQ">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <j.0:addressProblem rdf:resource="http://purl.org/semsur/Query_Execution"/>
+    <skos:inScheme rdf:resource="http://purl.org/semsur/Framework"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/ANAPSID">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <j.0:addressProblem rdf:resource="http://purl.org/semsur/Query_Execution"/>
+    <skos:inScheme rdf:resource="http://purl.org/semsur/Framework"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Distributed_SPARQL">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <j.0:addressProblem rdf:resource="http://purl.org/semsur/Query_Execution"/>
+    <skos:inScheme rdf:resource="http://purl.org/semsur/Framework"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/CROSS">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://purl.org/semsur/Framework"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/SERIMI">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://purl.org/semsur/Framework"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/SemWIQ">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <j.0:addressProblem rdf:resource="http://purl.org/semsur/Query_Execution"/>
+    <skos:inScheme rdf:resource="http://purl.org/semsur/Framework"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/AgreementMaker">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://purl.org/semsur/Framework"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/LogMap">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://purl.org/semsur/Framework"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/R3M">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://purl.org/semsur/Framework"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/ADERIS">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <j.0:addressProblem rdf:resource="http://purl.org/semsur/Query_Execution"/>
+    <skos:inScheme rdf:resource="http://purl.org/semsur/Framework"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/Relational.OWL">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://purl.org/semsur/Framework"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/ROSEX">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://purl.org/semsur/Framework"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/semsur/SiLK">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+    <skos:inScheme rdf:resource="http://purl.org/semsur/Framework"/>
+  </skos:Concept>
+</rdf:RDF>

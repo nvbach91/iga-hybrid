@@ -1,0 +1,156 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://comicmeta.org/cbo/"/>
+  <owl:ObjectProperty rdf:about="http://comicmeta.org/cbo/condition">
+    <rdfs:comment xml:lang="en">Describes the physical condition of a comic item.</rdfs:comment>
+    <rdfs:label xml:lang="en">condition</rdfs:label>
+    <rdfs:domain rdf:resource="http://comicmeta.org/cbo/Copy"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://comicmeta.org/cbo/Condition">
+        <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+        <rdfs:label xml:lang="en">Condition</rdfs:label>
+        <rdfs:comment xml:lang="en">A physical condition describing an object.</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/VeryGood">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Condition"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/NM+">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Condition"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/GD">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Condition"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/NM-">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Condition"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/VeryFine">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Condition"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/FR_GD">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Condition"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/VF_NM">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Condition"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/FR">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Condition"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/VG">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Condition"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/PR">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Condition"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/Fair">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Condition"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/MT">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Condition"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/GD+">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Condition"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/FN">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Condition"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/GD-">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Condition"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/GD_VG">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Condition"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/Poor">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Condition"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/NM">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Condition"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/NM_MT">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Condition"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/Fine">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Condition"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/VG+">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Condition"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/VF+">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Condition"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/Mint">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Condition"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/FN+">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Condition"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/FN-">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Condition"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/VG-">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Condition"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/NearMint">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Condition"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/VF-">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Condition"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/VF">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Condition"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/Good">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Condition"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/VG_FN">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Condition"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/GM">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Condition"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/FN_VF">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Condition"/>
+  </skos:Concept>
+</rdf:RDF>

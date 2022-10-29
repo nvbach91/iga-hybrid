@@ -1,0 +1,44 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="https://w3id.org/iot-tta/"/>
+  <owl:ObjectProperty rdf:about="https://w3id.org/iot-tta/#Protocols_were_layered">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >protocols_were_layered (Object property): SCADA common protocols, such as Modbus and BACnet, were layered into Ethernet and TCP/IP</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >protocols_were_layered</rdfs:label>
+    <rdfs:domain rdf:resource="https://w3id.org/iot-tta/#SCADA_common_protocol"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="https://w3id.org/iot-tta/#SCADA_today_protocol">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/iot-tta/"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >SCADA_today_protocol</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Ethernet and TCP/IP protocols are still used today by SCADA around the world.</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="https://w3id.org/iot-tta/#TCP_IP">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/iot-tta/"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >tcp_IP</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >tcp_IP (Individual): a SCADA today protocol with Object property assertions (Support_communication)</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/iot-tta/#SCADA_today_protocol"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/iot-tta/#Ethernet">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/iot-tta/"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >ethernet</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >ethernet (Individual): a SCADA todat protocol with Object property assertions (Support_communication)</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/iot-tta/#SCADA_today_protocol"/>
+  </skos:Concept>
+</rdf:RDF>

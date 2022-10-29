@@ -1,0 +1,34 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="https://w3id.org/cocoon/v1.0"/>
+  <skos:Concept rdf:about="https://w3id.org/cocoon/v1.0#GBPerMonth">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/cocoon/v1.0"/>
+    <rdfs:label xml:lang="en">Gigabyte per Month</rdfs:label>
+    <rdfs:comment xml:lang="en">Often describe 1 GB per Month usage.</rdfs:comment>
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="http://qudt.org/schema/qudt#DataRateUnit">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/cocoon/v1.0"/>
+      </skos:ConceptScheme>
+    </skos:inScheme>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/cocoon/v1.0#MBPerSec">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/cocoon/v1.0"/>
+    <rdfs:label xml:lang="en">MB/second</rdfs:label>
+    <rdfs:comment xml:lang="en">Azure Managed Disks throughput caps per disk.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://qudt.org/schema/qudt#DataRateUnit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/cocoon/v1.0#IOPs">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/cocoon/v1.0"/>
+    <rdfs:label xml:lang="en">Input/output operations per sec</rdfs:label>
+    <rdfs:comment xml:lang="en">Azure Managed Disks provide different input/output operations per sec (IOPs)</rdfs:comment>
+    <skos:inScheme rdf:resource="http://qudt.org/schema/qudt#DataRateUnit"/>
+  </skos:Concept>
+</rdf:RDF>

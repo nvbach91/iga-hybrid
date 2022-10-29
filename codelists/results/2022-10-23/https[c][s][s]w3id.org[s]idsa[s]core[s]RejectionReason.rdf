@@ -1,0 +1,90 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="https://w3id.org/idsa/core"/>
+  <owl:ObjectProperty rdf:about="https://w3id.org/idsa/core/rejectionReason">
+    <rdfs:comment xml:lang="en">Specifies the reason of the rejection.</rdfs:comment>
+    <rdfs:label xml:lang="en">rejectionReason</rdfs:label>
+    <rdfs:domain rdf:resource="https://w3id.org/idsa/core/RejectionMessage"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="https://w3id.org/idsa/core/RejectionReason">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+        <rdfs:label xml:lang="en">RejectionReason</rdfs:label>
+        <rdfs:comment xml:lang="en">Class of reasons that might lead to issuing a Rejection message.</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/MALFORMED_MESSAGE">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label>MALFORMED_MESSAGE</rdfs:label>
+    <rdfs:comment>The originating message is malformed or missing information.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/RejectionReason"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/TOO_MANY_RESULTS">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label>TOO_MANY_RESULTS</rdfs:label>
+    <rdfs:comment>Processing of the command would lead to too many results (computational or bandwidth limitations)</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/RejectionReason"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/METHOD_NOT_SUPPORTED">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label>METHOD_NOT_SUPPORTED</rdfs:label>
+    <rdfs:comment>The sender of the rejection does not implement a certain functionality stated in the message (e.g., query language).</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/RejectionReason"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/NOT_AUTHORIZED">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label>NOT_AUTHORIZED</rdfs:label>
+    <rdfs:comment>Sender is not authorized to initiate the command.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/RejectionReason"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/MESSAGE_TYPE_NOT_SUPPORTED">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label>MESSAGE_TYPE_NOT_SUPPORTED</rdfs:label>
+    <rdfs:comment>The sender of the rejection does not support the incoming message type (e.g., ids:QueryMessage).</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/RejectionReason"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/VERSION_NOT_SUPPORTED">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label>VERSION_NOT_SUPPORTED</rdfs:label>
+    <rdfs:comment>The version of the information model against which the referenced message should be interpreted, is not supported by the recipient.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/RejectionReason"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/INTERNAL_RECIPIENT_ERROR">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label>INTERNAL_RECIPIENT_ERROR</rdfs:label>
+    <rdfs:comment>The message recipient encountered an internal error while processing the message (e.g., storage capacity exceeded).</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/RejectionReason"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/NOT_AUTHENTICATED">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label>NOT_AUTHENTICATED</rdfs:label>
+    <rdfs:comment>Authenticity of a message sender has failed or is not verifiable.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/RejectionReason"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/BAD_PARAMETERS">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label>BAD_PARAMETERS</rdfs:label>
+    <rdfs:comment>At least one query or operation parameter is not acceptable for the sender of this rejection message.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/RejectionReason"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/NOT_FOUND">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label>NOT_FOUND</rdfs:label>
+    <rdfs:comment>Requested Resource was not found.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/RejectionReason"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/TEMPORARILY_NOT_AVAILABLE">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label>TEMPORARILY_NOT_AVAILABLE</rdfs:label>
+    <rdfs:comment>The requested resource, representation or artifact is temporarily not available but might be back later.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/RejectionReason"/>
+  </skos:Concept>
+</rdf:RDF>

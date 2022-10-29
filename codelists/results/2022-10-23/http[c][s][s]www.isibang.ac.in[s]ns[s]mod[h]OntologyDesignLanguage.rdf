@@ -1,0 +1,63 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://www.isibang.ac.in/ns/mod"/>
+  <owl:ObjectProperty rdf:about="http://www.isibang.ac.in/ns/mod#ontologyLanguage">
+    <rdfs:comment xml:lang="en">A language that is used to create an ontology. </rdfs:comment>
+    <rdfs:label>ontology design language</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.isibang.ac.in/ns/mod#Ontology"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://www.isibang.ac.in/ns/mod#OntologyDesignLanguage">
+        <rdfs:isDefinedBy rdf:resource="http://www.isibang.ac.in/ns/mod"/>
+        <rdfs:label>Ontology Design Language</rdfs:label>
+        <rdfs:comment xml:lang="en">A knowledge representation language using which an ontology is written. For example, RDFS, OWL, Ontolingua and Loom. </rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://www.isibang.ac.in/ns/mod#KIF">
+    <rdfs:isDefinedBy rdf:resource="http://www.isibang.ac.in/ns/mod"/>
+    <skos:inScheme rdf:resource="http://www.isibang.ac.in/ns/mod#OntologyDesignLanguage"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.isibang.ac.in/ns/mod#XOL">
+    <rdfs:isDefinedBy rdf:resource="http://www.isibang.ac.in/ns/mod"/>
+    <skos:inScheme rdf:resource="http://www.isibang.ac.in/ns/mod#OntologyDesignLanguage"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.isibang.ac.in/ns/mod#RDFS">
+    <rdfs:isDefinedBy rdf:resource="http://www.isibang.ac.in/ns/mod"/>
+    <skos:inScheme rdf:resource="http://www.isibang.ac.in/ns/mod#OntologyDesignLanguage"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.isibang.ac.in/ns/mod#Loom">
+    <rdfs:isDefinedBy rdf:resource="http://www.isibang.ac.in/ns/mod"/>
+    <skos:inScheme rdf:resource="http://www.isibang.ac.in/ns/mod#OntologyDesignLanguage"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.isibang.ac.in/ns/mod#DAML">
+    <rdfs:isDefinedBy rdf:resource="http://www.isibang.ac.in/ns/mod"/>
+    <rdfs:label xml:lang="en">Darpa Agent Markup Language </rdfs:label>
+    <skos:inScheme rdf:resource="http://www.isibang.ac.in/ns/mod#OntologyDesignLanguage"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.isibang.ac.in/ns/mod#Ontolingua">
+    <rdfs:isDefinedBy rdf:resource="http://www.isibang.ac.in/ns/mod"/>
+    <skos:inScheme rdf:resource="http://www.isibang.ac.in/ns/mod#OntologyDesignLanguage"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.isibang.ac.in/ns/mod#OCML">
+    <rdfs:isDefinedBy rdf:resource="http://www.isibang.ac.in/ns/mod"/>
+    <skos:inScheme rdf:resource="http://www.isibang.ac.in/ns/mod#OntologyDesignLanguage"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.isibang.ac.in/ns/mod#OIL">
+    <rdfs:isDefinedBy rdf:resource="http://www.isibang.ac.in/ns/mod"/>
+    <rdfs:label xml:lang="en">Ontology Interchange Language </rdfs:label>
+    <skos:inScheme rdf:resource="http://www.isibang.ac.in/ns/mod#OntologyDesignLanguage"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.isibang.ac.in/ns/mod#OWL">
+    <rdfs:isDefinedBy rdf:resource="http://www.isibang.ac.in/ns/mod"/>
+    <rdfs:label>Web Ontology Language</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.isibang.ac.in/ns/mod#OntologyDesignLanguage"/>
+  </skos:Concept>
+</rdf:RDF>

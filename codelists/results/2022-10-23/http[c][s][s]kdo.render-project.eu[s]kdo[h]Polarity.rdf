@@ -1,6 +1,6 @@
 <rdf:RDF
-    xmlns:dct="http://purl.org/dc/terms/"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
     xmlns:dc="http://purl.org/dc/elements/1.1/"
     xmlns:owl="http://www.w3.org/2002/07/owl#"
     xmlns:dcmit="http://purl.org/dc/dcmitype/"
@@ -10,20 +10,13 @@
     xmlns:vann="http://purl.org/vocab/vann/">
   <owl:Ontology rdf:about="http://kdo.render-project.eu/kdo#"/>
   <owl:ObjectProperty rdf:about="http://kdo.render-project.eu/kdo#hasPolarity">
-    <rdfs:isDefinedBy rdf:resource="http://kdo.render-project.eu/kdo#"/>
     <rdfs:comment xml:lang="en">The kdo:hasPolarity is used to specify the polarity of a kdo:Sentiment. It has three individuals: kdo:positivePolarity representing the positive orientation, kdo:negativePolarity representing the negative orientation, kdo:neutralPolarity representing the neutral.
 </rdfs:comment>
     <rdfs:label xml:lang="en">has polarity</rdfs:label>
-    <rdfs:domain>
-      <rdf:Description rdf:about="http://kdo.render-project.eu/kdo#Sentiment">
-        <rdfs:isDefinedBy rdf:resource="http://kdo.render-project.eu/kdo#"/>
-      </rdf:Description>
-    </rdfs:domain>
+    <rdfs:domain rdf:resource="http://kdo.render-project.eu/kdo#Sentiment"/>
     <rdfs:range>
       <skos:ConceptScheme rdf:about="http://kdo.render-project.eu/kdo#Polarity">
         <rdfs:isDefinedBy rdf:resource="http://kdo.render-project.eu/kdo#"/>
-        <rdfs:label xml:lang="en">The kdo:Polarity class is used to express the polarity of sentiments. The predefined instances of this class are: kdo:neutralPolarity, kdo:positivePolarity, kdo:negativePolarity.
-</rdfs:label>
         <rdfs:comment xml:lang="en">The kdo:Polarity class is used to express the polarity of sentiments. The predefined instances of this class are: kdo:neutralPolarity, kdo:positivePolarity, kdo:negativePolarity.
 </rdfs:comment>
       </skos:ConceptScheme>

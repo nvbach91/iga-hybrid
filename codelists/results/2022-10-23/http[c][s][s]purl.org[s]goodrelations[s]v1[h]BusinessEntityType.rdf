@@ -1,6 +1,6 @@
 <rdf:RDF
-    xmlns:dct="http://purl.org/dc/terms/"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
     xmlns:dc="http://purl.org/dc/elements/1.1/"
     xmlns:owl="http://www.w3.org/2002/07/owl#"
     xmlns:dcmit="http://purl.org/dc/dcmitype/"
@@ -10,18 +10,14 @@
     xmlns:vann="http://purl.org/vocab/vann/">
   <owl:Ontology rdf:about="http://purl.org/goodrelations/v1"/>
   <owl:ObjectProperty rdf:about="http://purl.org/goodrelations/v1#eligibleCustomerTypes">
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/goodrelations/v1"/>
     <rdfs:comment xml:lang="en">The types of customers (gr:BusinessEntityType) for which the given gr:Offering is valid.</rdfs:comment>
     <rdfs:label xml:lang="en">eligible customer types (0..*)</rdfs:label>
     <rdfs:domain rdf:parseType="Resource">
-      <rdfs:isDefinedBy rdf:resource="http://purl.org/goodrelations/v1"/>
     </rdfs:domain>
     <rdfs:range>
       <skos:ConceptScheme rdf:about="http://purl.org/goodrelations/v1#BusinessEntityType">
         <rdfs:isDefinedBy rdf:resource="http://purl.org/goodrelations/v1"/>
-        <rdfs:label xml:lang="en">A business entity type is a conceptual entity representing the legal form, the size, the main line of business, the position in the value chain, or any combination thereof, of a gr:BusinessEntity. From the ontological point of view, business entity types are mostly roles that a business entity has in the market. Business entity types are important for specifying eligible customers, since a gr:Offering is often valid only for business entities of a certain size, legal structure, or role in the value chain. 
-
-Examples: Consumers, Retailers, Wholesalers, or Public Institutions</rdfs:label>
+        <rdfs:label xml:lang="en">Business entity type</rdfs:label>
         <rdfs:comment xml:lang="en">A business entity type is a conceptual entity representing the legal form, the size, the main line of business, the position in the value chain, or any combination thereof, of a gr:BusinessEntity. From the ontological point of view, business entity types are mostly roles that a business entity has in the market. Business entity types are important for specifying eligible customers, since a gr:Offering is often valid only for business entities of a certain size, legal structure, or role in the value chain. 
 
 Examples: Consumers, Retailers, Wholesalers, or Public Institutions</rdfs:comment>

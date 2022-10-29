@@ -1,0 +1,272 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://premon.fbk.eu/ontology/vn"/>
+  <owl:FunctionalProperty rdf:about="http://premon.fbk.eu/ontology/vn#thematicRole">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">thematic role</rdfs:label>
+    <rdfs:domain rdf:resource="http://premon.fbk.eu/ontology/vn#SemanticRole"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://premon.fbk.eu/ontology/vn#ThematicRole">
+        <rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+        <rdfs:label xml:lang="en">Thematic Role (VN)</rdfs:label>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:FunctionalProperty>
+  <skos:Concept rdf:about="http://premon.fbk.eu/ontology/vn#reflexive">
+    <rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+    <skos:broader>
+      <skos:Concept rdf:about="http://premon.fbk.eu/ontology/vn#participant">
+        <rdfs:label xml:lang="en">participant</rdfs:label>
+        <rdfs:comment xml:lang="en">abstract, non instantiated in the dataset.</rdfs:comment>
+        <skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#ThematicRole"/>
+        <rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+      </skos:Concept>
+    </skos:broader>
+    <rdfs:label xml:lang="en">reflexive</rdfs:label>
+    <skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#ThematicRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://premon.fbk.eu/ontology/vn#attribute">
+    <rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+    <skos:broader>
+      <skos:Concept rdf:about="http://premon.fbk.eu/ontology/vn#undergoer">
+        <skos:broader rdf:resource="http://premon.fbk.eu/ontology/vn#participant"/>
+        <rdfs:label xml:lang="en">undergoer</rdfs:label>
+        <rdfs:comment xml:lang="en">abstract, non instantiated in the dataset</rdfs:comment>
+        <skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#ThematicRole"/>
+        <rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+      </skos:Concept>
+    </skos:broader>
+    <rdfs:label xml:lang="en">attribute</rdfs:label>
+    <skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#ThematicRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://premon.fbk.eu/ontology/vn#recipient">
+    <rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+    <skos:broader>
+      <skos:Concept rdf:about="http://premon.fbk.eu/ontology/vn#destination">
+        <skos:broader>
+          <skos:Concept rdf:about="http://premon.fbk.eu/ontology/vn#location">
+            <skos:broader>
+              <skos:Concept rdf:about="http://premon.fbk.eu/ontology/vn#place">
+                <skos:broader rdf:resource="http://premon.fbk.eu/ontology/vn#participant"/>
+                <rdfs:label xml:lang="en">place</rdfs:label>
+                <rdfs:comment xml:lang="en">abstract, non instantiated in the dataset</rdfs:comment>
+                <skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#ThematicRole"/>
+                <rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+              </skos:Concept>
+            </skos:broader>
+            <rdfs:label xml:lang="en">location</rdfs:label>
+            <skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#ThematicRole"/>
+            <rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+          </skos:Concept>
+        </skos:broader>
+        <skos:broader>
+          <skos:Concept rdf:about="http://premon.fbk.eu/ontology/vn#goal">
+            <skos:broader rdf:resource="http://premon.fbk.eu/ontology/vn#place"/>
+            <rdfs:label xml:lang="en">goal</rdfs:label>
+            <skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#ThematicRole"/>
+            <rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+          </skos:Concept>
+        </skos:broader>
+        <rdfs:label xml:lang="en">destination</rdfs:label>
+        <skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#ThematicRole"/>
+        <rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+      </skos:Concept>
+    </skos:broader>
+    <rdfs:label xml:lang="en">recipient</rdfs:label>
+    <skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#ThematicRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://premon.fbk.eu/ontology/vn#pivot">
+    <rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+    <skos:broader rdf:resource="http://premon.fbk.eu/ontology/vn#undergoer"/>
+    <rdfs:label xml:lang="en">pivot</rdfs:label>
+    <skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#ThematicRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://premon.fbk.eu/ontology/vn#asset">
+    <rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+    <skos:broader>
+      <skos:Concept rdf:about="http://premon.fbk.eu/ontology/vn#value">
+        <rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+        <skos:broader rdf:resource="http://premon.fbk.eu/ontology/vn#place"/>
+        <rdfs:label xml:lang="en">value</rdfs:label>
+        <skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#ThematicRole"/>
+      </skos:Concept>
+    </skos:broader>
+    <rdfs:label xml:lang="en">asset</rdfs:label>
+    <skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#ThematicRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://premon.fbk.eu/ontology/vn#beneficiary">
+    <rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+    <skos:broader rdf:resource="http://premon.fbk.eu/ontology/vn#undergoer"/>
+    <rdfs:label xml:lang="en">beneficiary</rdfs:label>
+    <skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#ThematicRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://premon.fbk.eu/ontology/vn#product">
+    <rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+    <skos:broader>
+      <skos:Concept rdf:about="http://premon.fbk.eu/ontology/vn#result">
+        <skos:broader>
+          <skos:Concept rdf:about="http://premon.fbk.eu/ontology/vn#patient">
+            <skos:broader rdf:resource="http://premon.fbk.eu/ontology/vn#undergoer"/>
+            <rdfs:label xml:lang="en">patient</rdfs:label>
+            <skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#ThematicRole"/>
+            <rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+          </skos:Concept>
+        </skos:broader>
+        <skos:broader rdf:resource="http://premon.fbk.eu/ontology/vn#goal"/>
+        <rdfs:label xml:lang="en">result</rdfs:label>
+        <skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#ThematicRole"/>
+        <rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+      </skos:Concept>
+    </skos:broader>
+    <rdfs:label xml:lang="en">product</rdfs:label>
+    <skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#ThematicRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://premon.fbk.eu/ontology/vn#duration">
+    <rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+    <skos:broader>
+      <skos:Concept rdf:about="http://premon.fbk.eu/ontology/vn#time">
+        <skos:broader rdf:resource="http://premon.fbk.eu/ontology/vn#participant"/>
+        <rdfs:label xml:lang="en">time</rdfs:label>
+        <skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#ThematicRole"/>
+        <rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+      </skos:Concept>
+    </skos:broader>
+    <rdfs:label xml:lang="en">duration</rdfs:label>
+    <skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#ThematicRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://premon.fbk.eu/ontology/vn#frequency">
+    <rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+    <skos:broader rdf:resource="http://premon.fbk.eu/ontology/vn#time"/>
+    <rdfs:label xml:lang="en">frequency</rdfs:label>
+    <skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#ThematicRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://premon.fbk.eu/ontology/vn#coAgent">
+    <rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+    <skos:broader>
+      <skos:Concept rdf:about="http://premon.fbk.eu/ontology/vn#actor">
+        <skos:broader rdf:resource="http://premon.fbk.eu/ontology/vn#participant"/>
+        <rdfs:label xml:lang="en">actor</rdfs:label>
+        <rdfs:comment xml:lang="en">abstract, non instantiated in the dataset</rdfs:comment>
+        <skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#ThematicRole"/>
+        <rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+      </skos:Concept>
+    </skos:broader>
+    <rdfs:label xml:lang="en">co-agent</rdfs:label>
+    <skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#ThematicRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://premon.fbk.eu/ontology/vn#initialTime">
+    <rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+    <skos:broader rdf:resource="http://premon.fbk.eu/ontology/vn#time"/>
+    <rdfs:label xml:lang="en">initial time</rdfs:label>
+    <skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#ThematicRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://premon.fbk.eu/ontology/vn#coTheme">
+    <rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+    <skos:broader rdf:resource="http://premon.fbk.eu/ontology/vn#undergoer"/>
+    <rdfs:label xml:lang="en">co-theme</rdfs:label>
+    <skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#ThematicRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://premon.fbk.eu/ontology/vn#material">
+    <skos:broader rdf:resource="http://premon.fbk.eu/ontology/vn#patient"/>
+    <rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+    <skos:broader>
+      <skos:Concept rdf:about="http://premon.fbk.eu/ontology/vn#source">
+        <skos:broader rdf:resource="http://premon.fbk.eu/ontology/vn#place"/>
+        <rdfs:label xml:lang="en">source</rdfs:label>
+        <skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#ThematicRole"/>
+        <rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+      </skos:Concept>
+    </skos:broader>
+    <rdfs:label xml:lang="en">material</rdfs:label>
+    <skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#ThematicRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://premon.fbk.eu/ontology/vn#stimulus">
+    <rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+    <skos:broader>
+      <skos:Concept rdf:about="http://premon.fbk.eu/ontology/vn#cause">
+        <rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+        <skos:broader rdf:resource="http://premon.fbk.eu/ontology/vn#actor"/>
+        <rdfs:label xml:lang="en">cause</rdfs:label>
+        <skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#ThematicRole"/>
+      </skos:Concept>
+    </skos:broader>
+    <rdfs:label xml:lang="en">stimulus</rdfs:label>
+    <skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#ThematicRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://premon.fbk.eu/ontology/vn#predicate">
+    <rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+    <skos:broader rdf:resource="http://premon.fbk.eu/ontology/vn#participant"/>
+    <rdfs:label xml:lang="en">predicate</rdfs:label>
+    <skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#ThematicRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://premon.fbk.eu/ontology/vn#extent">
+    <rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+    <skos:broader rdf:resource="http://premon.fbk.eu/ontology/vn#value"/>
+    <rdfs:label xml:lang="en">extent</rdfs:label>
+    <skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#ThematicRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://premon.fbk.eu/ontology/vn#initialLocation">
+    <skos:broader rdf:resource="http://premon.fbk.eu/ontology/vn#source"/>
+    <rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+    <skos:broader rdf:resource="http://premon.fbk.eu/ontology/vn#location"/>
+    <rdfs:label xml:lang="en">initial location</rdfs:label>
+    <skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#ThematicRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://premon.fbk.eu/ontology/vn#topic">
+    <rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+    <skos:broader>
+      <skos:Concept rdf:about="http://premon.fbk.eu/ontology/vn#theme">
+        <skos:broader rdf:resource="http://premon.fbk.eu/ontology/vn#undergoer"/>
+        <rdfs:label xml:lang="en">theme</rdfs:label>
+        <skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#ThematicRole"/>
+        <rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+      </skos:Concept>
+    </skos:broader>
+    <rdfs:label xml:lang="en">topic</rdfs:label>
+    <skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#ThematicRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://premon.fbk.eu/ontology/vn#coPatient">
+    <rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+    <skos:broader rdf:resource="http://premon.fbk.eu/ontology/vn#undergoer"/>
+    <rdfs:label xml:lang="en">co-patient</rdfs:label>
+    <skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#ThematicRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://premon.fbk.eu/ontology/vn#agent">
+    <rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+    <skos:broader rdf:resource="http://premon.fbk.eu/ontology/vn#actor"/>
+    <rdfs:label xml:lang="en">agent</rdfs:label>
+    <skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#ThematicRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://premon.fbk.eu/ontology/vn#trajectory">
+    <rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+    <skos:broader rdf:resource="http://premon.fbk.eu/ontology/vn#participant"/>
+    <rdfs:label xml:lang="en">trajectory</rdfs:label>
+    <skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#ThematicRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://premon.fbk.eu/ontology/vn#instrument">
+    <rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+    <skos:broader rdf:resource="http://premon.fbk.eu/ontology/vn#undergoer"/>
+    <rdfs:label xml:lang="en">instrument</rdfs:label>
+    <skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#ThematicRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://premon.fbk.eu/ontology/vn#experiencer">
+    <rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+    <skos:broader rdf:resource="http://premon.fbk.eu/ontology/vn#patient"/>
+    <rdfs:label xml:lang="en">experiencer</rdfs:label>
+    <skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#ThematicRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://premon.fbk.eu/ontology/vn#finalTime">
+    <rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+    <skos:broader rdf:resource="http://premon.fbk.eu/ontology/vn#time"/>
+    <rdfs:label xml:lang="en">final time</rdfs:label>
+    <skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#ThematicRole"/>
+  </skos:Concept>
+</rdf:RDF>

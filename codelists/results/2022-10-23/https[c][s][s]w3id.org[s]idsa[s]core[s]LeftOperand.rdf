@@ -1,0 +1,135 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/"
+    xmlns:j.0="https://w3id.org/idsa/core/">
+  <owl:Ontology rdf:about="https://w3id.org/idsa/core"/>
+  <owl:ObjectProperty rdf:about="https://w3id.org/idsa/core/leftOperand">
+    <rdfs:comment xml:lang="en">The left operand in a constraint expression.</rdfs:comment>
+    <rdfs:label xml:lang="en">leftOperand</rdfs:label>
+    <rdfs:domain rdf:resource="https://w3id.org/idsa/core/Constraint"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="https://w3id.org/idsa/core/LeftOperand">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+        <rdfs:label xml:lang="en">LeftOperand</rdfs:label>
+        <rdfs:comment xml:lang="en">Instances of the LeftOperand class are used as the leftOperand of a Constraint.</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://w3id.org/idsa/core/broader">
+    <rdfs:comment xml:lang="en">This LeftOperand is transitively included in the object LeftOperand.</rdfs:comment>
+    <rdfs:label xml:lang="en">broader LeftOperand</rdfs:label>
+    <rdfs:domain rdf:resource="https://w3id.org/idsa/core/LeftOperand"/>
+    <rdfs:range rdf:resource="https://w3id.org/idsa/core/LeftOperand"/>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/STATE">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">state</rdfs:label>
+    <rdfs:comment xml:lang="en">Specifies whether an (external) resource is true/false, active/inactive, has happened/not happened, etc. Operator must be idsc:EQUALS with RightOperands of datatype xsd:anyURI. The referenced URI should point to a (remote) resource which returns a xsd:boolean value.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/LeftOperand"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/ENDPOINT">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label>endpoint</rdfs:label>
+    <rdfs:comment xml:lang="en">Remote target for an action or information provider (PIP). Must be used together with idsc:IS or idsc:IN operators. RightOperand must be a xsd:anyURI or an URL which should point to an actually deployed endpoint. An example is a refinment of idsc:NOTIFY where idsc:REMOTE points to a Clearing House.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/LeftOperand"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/QUANTITY">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label>quantity</rdfs:label>
+    <rdfs:comment>Quantity limitation for exercising the action of the Rule. Operators can be idsc:LT, idsc:LTEQ, idsc:EQ, idsc:GT, idsc:GTEQ. Datatype is xsd:double.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/LeftOperand"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/SYSTEM">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label>execution system</rdfs:label>
+    <rdfs:comment xml:lang="en">Execution system or execution environment that is used to access the asset under consideration, usually an IDS Connector. The regarded data object should correspond to the IDS Connector class and its attributes. Must be used together with idsc:SAME_AS, idsc:NOT, idsc:HAS_STATE, idsc:IN, idsc:COVERED_BY idsc:INSIDE, idsc:SPATIAL_EQUALS, idsc:DISJOINT, or idsc:INSIDE_NETWORK operators. RightOperandReference must be a URI identifying the target system(s).</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/LeftOperand"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/POLICY_EVALUATION_TIME">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">policy evaluation time</rdfs:label>
+    <rdfs:comment xml:lang="en">The current system time (as UTC xsd:dateTimeStamp) for evaluating a time-related constraint. Allowed operators are idsc:AFTER, idsc:BEFORE, idsc:CONTAINS, idsc:TEMPORAL_DISJOINT, idsc:DURING, idsc:TEMPORAL_EQUALS, idsc:FINISHED_BY, idsc:FINISHES, idsc:MEETS, idsc:MET_BY, idsc:OVERLAPS, idsc:OVERLAPPED_BY, idsc:STARTS, idsc:STARTED_BY and idsc:DURATION_EQ with RightOperand ids:TemporalEntity.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/LeftOperand"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/ELAPSED_TIME">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">elapsed time</rdfs:label>
+    <rdfs:comment xml:lang="en">A continuous elapsed time period which may be used for exercising of the action of the Rule. Allowed operators are idsc:SHORTER, idsc:SHORTER_EQ, idsc:LONGER, idsc:LONGER_EQ, and idsc:DURATION_EQ with datatype xsd:duration.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/LeftOperand"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/ABSOLUTE_SPATIAL_POSITION">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Absolute geo-spatial position</rdfs:label>
+    <rdfs:comment xml:lang="en">The current geospatial position of the *consuming connector*. In case the connector only appears as a virtual entity, the physical location of the hosting server is referenced. Allowed operators are idsc:in. No other spatial operators (close to, north of, etc.) are currently allowed.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/LeftOperand"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/EVENT">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">current event</rdfs:label>
+    <rdfs:comment xml:lang="en">The feature dimension regarding whether current events are happening. Does NOT refer 'events' as in real-time data, sensor observations, or Complex Event Processing but rather as 'World Cup 2018' or 'Hannover Trade Fair'.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/LeftOperand"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/COUNT">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">count</rdfs:label>
+    <rdfs:comment xml:lang="en">Numeric count of executions of the Rule. Operators can be idsc:LT, idsc:LTEQ, idsc:EQ, idsc:GT, idsc:GTEQ. Datatype is xsd:double.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/LeftOperand"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/PURPOSE">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">purpose</rdfs:label>
+    <rdfs:comment xml:lang="en">A defined purpose for exercising the action of the Rule. Use with idsc:IN or idsc:SAME_AS and RDF Resources.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/LeftOperand"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/SECURITY_LEVEL">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label>security level</rdfs:label>
+    <rdfs:comment xml:lang="en">The security level the consuming connector must have. Use together with idsc:SAME_AS or idsc:IN. The value decides which attribute dimension is regarded.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/LeftOperand"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/USER">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">user</rdfs:label>
+    <rdfs:comment xml:lang="en">The user of a system at the *consuming connector* requesting access to a resource. Recommended usage for checking whether the user's role is sufficient for his/her desired action. Allowed operators are idsc:MEMBER_OF, idsc:HAS_MEMBERSHIP, idsc:HAS_SITE with a RightOperand referencing a (set of) acceptable organisations (ids:Participant),memberships, sites. Preferred behaviour is that the RightOperand dereferences to an endpoint hosting the required role information.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/LeftOperand"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/RECURRENCE_RATE">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label>recurrence rate</rdfs:label>
+    <rdfs:comment>The limit how often exercising the action of the Rule may be possible. Operators can be idsc:LT, idsc:LTEQ, idsc:EQ, idsc:GT, idsc:GTEQ. Datatype is xsd:double.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/LeftOperand"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/DELAY">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">delay</rdfs:label>
+    <rdfs:comment xml:lang="en">Delay the action. Use idsc:DURATION_EQ, idsc:LONGER, idsc:LONGER_EQ, idsc:SHORTER_EQ, or idsc:SHORTER with datatype xsd:duration.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/LeftOperand"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/PATH">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label>path to attribute</rdfs:label>
+    <rdfs:comment xml:lang="en">Path to specific attribute (default JsonPath). Must be used together with idsc:STRING_EQ, idsc:STRING_CONTAINS, idsc:STRING_IS_CONTAINED, or idsc:MATCHES operators. RightOperand must be a xsd:string.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/LeftOperand"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/PAY_AMOUNT">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <j.0:broader>
+      <skos:Concept rdf:about="https://w3id.org/idsa/code/PAYMENT">
+        <rdfs:label xml:lang="en">payment</rdfs:label>
+        <rdfs:comment xml:lang="en">Monetary payment, without any further sepcification on the type, amount or purpose.</rdfs:comment>
+        <skos:inScheme rdf:resource="https://w3id.org/idsa/core/LeftOperand"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+      </skos:Concept>
+    </j.0:broader>
+    <rdfs:label xml:lang="en">payAmount</rdfs:label>
+    <rdfs:comment xml:lang="en">Monetary amount to pay, usually used with idsc:EQ. Datatype is double. Currency required.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/LeftOperand"/>
+  </skos:Concept>
+</rdf:RDF>

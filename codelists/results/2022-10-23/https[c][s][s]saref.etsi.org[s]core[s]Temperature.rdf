@@ -1,0 +1,30 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="https://saref.etsi.org/saref4agri/"/>
+  <skos:Concept rdf:about="https://saref.etsi.org/saref4agri/AirTemperature">
+    <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4agri/"/>
+    <rdfs:label xml:lang="en">Air temperature</rdfs:label>
+    <rdfs:comment xml:lang="en">The degree or intensity of heat present in the air.</rdfs:comment>
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="https://saref.etsi.org/core/Temperature">
+        <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4agri/"/>
+        <rdfs:label xml:lang="en">Temperature</rdfs:label>
+        <rdfs:comment xml:lang="en">A saref:Property related to some measurements that are characterized by a certain value that is measured in a temperature unit (degree_Celsius, degree_Fahrenheit, or degree_kelvin)</rdfs:comment>
+      </skos:ConceptScheme>
+    </skos:inScheme>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://saref.etsi.org/saref4agri/SoilTemperature">
+    <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4agri/"/>
+    <rdfs:label xml:lang="en">Soil temperature</rdfs:label>
+    <rdfs:comment xml:lang="en">The degree or intensity of heat present in the soil.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://saref.etsi.org/core/Temperature"/>
+  </skos:Concept>
+</rdf:RDF>

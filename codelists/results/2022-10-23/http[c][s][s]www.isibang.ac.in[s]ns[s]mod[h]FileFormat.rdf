@@ -1,0 +1,43 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://www.isibang.ac.in/ns/mod"/>
+  <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/format">
+    <rdfs:comment xml:lang="en">The file format of an ontological resource. </rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.isibang.ac.in/ns/mod#Ontology"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://www.isibang.ac.in/ns/mod#FileFormat">
+        <rdfs:isDefinedBy rdf:resource="http://www.isibang.ac.in/ns/mod"/>
+        <rdfs:label>File Format</rdfs:label>
+        <rdfs:comment xml:lang="en">A file format of an ontology. For example .rdf, .owl, .xml, etc.  </rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://www.isibang.ac.in/ns/mod#.RDFS">
+    <rdfs:isDefinedBy rdf:resource="http://www.isibang.ac.in/ns/mod"/>
+    <skos:inScheme rdf:resource="http://www.isibang.ac.in/ns/mod#FileFormat"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.isibang.ac.in/ns/mod#.GAF">
+    <rdfs:isDefinedBy rdf:resource="http://www.isibang.ac.in/ns/mod"/>
+    <skos:inScheme rdf:resource="http://www.isibang.ac.in/ns/mod#FileFormat"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.isibang.ac.in/ns/mod#.OWL">
+    <rdfs:isDefinedBy rdf:resource="http://www.isibang.ac.in/ns/mod"/>
+    <skos:inScheme rdf:resource="http://www.isibang.ac.in/ns/mod#FileFormat"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.isibang.ac.in/ns/mod#.RDF">
+    <rdfs:isDefinedBy rdf:resource="http://www.isibang.ac.in/ns/mod"/>
+    <skos:inScheme rdf:resource="http://www.isibang.ac.in/ns/mod#FileFormat"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.isibang.ac.in/ns/mod#.XML">
+    <rdfs:isDefinedBy rdf:resource="http://www.isibang.ac.in/ns/mod"/>
+    <skos:inScheme rdf:resource="http://www.isibang.ac.in/ns/mod#FileFormat"/>
+  </skos:Concept>
+</rdf:RDF>

@@ -1,0 +1,953 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="https://w3id.org/idsa/core"/>
+  <owl:ObjectProperty rdf:about="https://w3id.org/idsa/core/language">
+    <rdfs:comment xml:lang="en">Natural language(s) used within the content.</rdfs:comment>
+    <rdfs:label xml:lang="en">language</rdfs:label>
+    <rdfs:domain rdf:parseType="Resource">
+    </rdfs:domain>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="https://w3id.org/idsa/core/Language">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+        <rdfs:label xml:lang="en">Language</rdfs:label>
+        <rdfs:comment xml:lang="en">The class of languages potentially being used by textual Data Assets.</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/MG">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Malagasy</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/FA">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Persian (Farsi)</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/HE">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Hebrew (modern)</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/IG">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Igbo</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/BA">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Bashkir</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/KK">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Kazakh</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/SS">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Swati</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/DE">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">German</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/DV">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Divehi, Dhivehi, Maldivian</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/UG">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Uyghur</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/VI">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Vietnamese</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/NA">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Nauruan</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/OC">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Occitan</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/YO">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Yoruba</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/JA">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Japanese</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/SK">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Slovak</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/EO">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Esperanto</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/MULTI_LINGUAL">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Multilingual</rdfs:label>
+    <rdfs:comment>Code indicates that several languages are used or no concrete language can be determined.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/NY">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Chichewa, Chewa, Nyanja</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/HU">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Hungarian</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/ZH">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Chinese</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/CS">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Czech</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/FI">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Finnish</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/OS">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Ossetian, Ossetic</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/IO">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Ido</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/BI">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Bislama</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/KS">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Kashmiri</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/LU">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Luba-Katanga</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/TN">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Tswana</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/MH">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Marshallese</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/GD">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Scottish Gaelic, Gaelic</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/ST">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Southern Sotho</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/KL">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Kalaallisut, Greenlandic</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/CU">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Old Church Slavonic, Church Slavonic, Old Bulgarian</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/NB">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Norwegian Bokmål</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/AY">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Aymara</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/SL">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Slovene</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/LV">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Latvian</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/FR">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">French</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/BR">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Breton</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/SC">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Sardinian</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/TE">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Telugu</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/LN">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Lingala</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/NR">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Southern Ndebele</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/FJ">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Fijian</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/GL">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Galician</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/ZA">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Zhuang, Chuang</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/GA">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Irish</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/IE">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Interlingue</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/RO">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Romanian</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/KI">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Kikuyu, Gikuyu</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/CA">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Catalan</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/SQ">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Albanian</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/TS">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Tsonga</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/EE">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Ewe</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/NO">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Norwegian</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/AV">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Avaric</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/KA">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Georgian</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/SI">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Sinhalese, Sinhala</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/TK">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Turkmen</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/NG">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Ndonga</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/VO">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Volapük</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/IU">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Inuktitut</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/AM">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Amharic</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/BO">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Tibetan Standard, Tibetan, Central</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/KY">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Kyrgyz</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/EU">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Basque</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/PS">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Pashto, Pushto</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/AE">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Avestan</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/QU">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Quechua</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/BG">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Bulgarian</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/RW">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Kinyarwanda</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/FO">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Faroese</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/OJ">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Ojibwe, Ojibwa</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/PL">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Polish</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/SR">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Serbian</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/KJ">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Kwanyama, Kuanyama</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/TT">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Tatar</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/MN">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Mongolian</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/FY">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Western Frisian</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/TL">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Tagalog</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/WA">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Walloon</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/HT">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Haitian, Haitian Creole</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/AN">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Aragonese</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/SA">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Sanskrit (Saṁskṛta)</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/CR">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Cree</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/OR">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Oriya</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/PT">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Portuguese</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/AF">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Afrikaans</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/BH">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Bihari</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/KR">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Kanuri</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/LT">
+    <rdfs:label xml:lang="en">less than</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Lithuanian</rdfs:label>
+    <rdfs:comment xml:lang="en">Less-than operator. Can be used for numeric (2 idsc:LT 5) comparisons.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/EN">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">English</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/ZU">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Zulu</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/RM">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Romansh</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/SO">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Somali</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/KG">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Kongo</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/LI">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Limburgish, Limburgan, Limburger</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/DA">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Danish</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/MK">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Macedonian</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/HI">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Hindi</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/HZ">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Herero</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/SG">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Sango</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/LA">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Latin</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/TI">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Tigrinya</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/DZ">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Dzongkha</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/UK">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Ukrainian</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/NE">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Nepali</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/WO">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Wolof</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/PI">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Pāli</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/HA">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Hausa</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/AK">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Akan</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/IS">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Icelandic</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/BM">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Bambara</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/CO">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Corsican</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/KW">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Cornish</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/ES">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Spanish</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/XH">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Xhosa</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/HY">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Armenian</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/IK">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Inupiaq</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/BE">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Belarusian</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/RU">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Russian</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/SW">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Swahili</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/KO">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Korean</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/TY">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Tahitian</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/MS">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Malay</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/ID">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Indonesian</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/RN">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Kirundi</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/TR">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Turkish</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/ML">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Malayalam</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/FF">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Fula, Fulah, Pulaar, Pular</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/NN">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Norwegian Nynorsk</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/CY">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Welsh</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/LB">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Luxembourgish, Letzeburgesch</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/HR">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Croatian</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/IT">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Italian</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/BN">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Bengali, Bangla</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/JV">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Javanese</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/TA">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Tamil</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/ET">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Estonian</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/VE">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Venda</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/PA">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">(Eastern) Punjabi</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/CH">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Chamorro</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/MT">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Maltese</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/EL">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Greek (modern)</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/NV">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Navajo, Navaho</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/SM">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Samoan</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/LG">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Ganda</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/TO">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Tonga (Tonga Islands)</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/MI">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Māori</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/OM">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Oromo</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/AA">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Afar</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/II">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Nuosu</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/SE">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Northern Sami</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/CV">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Chuvash</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/TG">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Tajik</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/IA">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Interlingua</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/AZ">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Azerbaijani</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/KU">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Kurdish</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/MY">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Burmese</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/GU">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Gujarati</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/BS">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Bosnian</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/SD">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Sindhi</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/CE">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Chechen</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/SU">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Sundanese</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/KM">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Khmer</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/LO">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Lao</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/TW">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Twi</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/HO">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Hiri Motu</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/SN">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Shona</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/UR">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Urdu</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/NL">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Dutch</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/AB">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Abkhaz</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/AS">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Assamese</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/TH">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Thai</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/ND">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Northern Ndebele</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/KV">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Komi</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/GV">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Manx</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/YI">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Yiddish</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/AR">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Arabic</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/KN">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Kannada</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/SV">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Swedish</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/MR">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Marathi (Marāṭhī)</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/UZ">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Uzbek</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/GN">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Guaraní</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/Language"/>
+  </skos:Concept>
+</rdf:RDF>

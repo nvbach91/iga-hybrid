@@ -1,0 +1,47 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://dati.beniculturali.it/cultural-ON/cultural-ON.owl"/>
+  <owl:ObjectProperty rdf:about="http://dati.beniculturali.it/cis/hasCurrency">
+    <rdfs:comment xml:lang="en">This property is used to connected the Price specification to Currency</rdfs:comment>
+    <rdfs:label xml:lang="en">has currency</rdfs:label>
+    <rdfs:domain rdf:resource="http://dati.beniculturali.it/cis/PriceSpecification"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://dati.beniculturali.it/cis/Currency">
+        <rdfs:comment xml:lang="en">Individuals of the this class represent currency instances (e.g., Euro, US Dollar, Pound, Australian Dollar, etc.); they are always associated with individuals of the class 'Price Specification'.
+
+This allows modelling Price Specification as a a quantified value, where the value is expressed as an integer and it is quantified in terms of a currency
+
+An example is the following:
+
+&lt;pre&gt;
+
+priceSpecification:Under18&gt;
+      a       cis:PriceSpecification ;
+      rdfs:label "price specification under 18 "@en , "costo under 18 "@it ;
+      cis:hasCurrency cis:Euro ;
+      cis:hasCurrencyValue
+              "5"^^xsd:float .
+
+cis:Euro a cis:Currency ;
+      rdfs:label "Euro"@en, "Euro"@it .
+
+&lt;/pre&gt;</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://dati.beniculturali.it/cultural-ON/cultural-ON.owl"/>
+        <rdfs:label xml:lang="en">Currency</rdfs:label>
+        <rdfs:comment xml:lang="en">This class represents a currency. In our domain currency is typically associated with Price Specification for tickets, and assumes specific values (e.g., Euro).</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://dati.beniculturali.it/cis/Euro">
+    <rdfs:isDefinedBy rdf:resource="http://dati.beniculturali.it/cultural-ON/cultural-ON.owl"/>
+    <skos:inScheme rdf:resource="http://dati.beniculturali.it/cis/Currency"/>
+  </skos:Concept>
+</rdf:RDF>

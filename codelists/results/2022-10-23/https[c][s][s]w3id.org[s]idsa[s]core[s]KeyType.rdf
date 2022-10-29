@@ -1,0 +1,44 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="https://w3id.org/idsa/core"/>
+  <owl:ObjectProperty rdf:about="https://w3id.org/idsa/core/keyType">
+    <rdfs:comment xml:lang="en">Type of the public key.</rdfs:comment>
+    <rdfs:label xml:lang="en">Key Type</rdfs:label>
+    <rdfs:domain rdf:resource="https://w3id.org/idsa/core/PublicKey"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="https://w3id.org/idsa/core/KeyType">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+        <rdfs:label xml:lang="en">Key Type</rdfs:label>
+        <rdfs:comment xml:lang="en">Cryptographic Key Type.</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/RSA">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">RSA</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/KeyType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/ECDSA">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">ECDSA</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/KeyType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/ED25519">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">ED25519</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/KeyType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/DSA">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">DSA</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/KeyType"/>
+  </skos:Concept>
+</rdf:RDF>

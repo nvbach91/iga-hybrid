@@ -1,0 +1,370 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://idi.fundacionctic.org/cruzar/turismo"/>
+  <owl:ObjectProperty rdf:about="http://idi.fundacionctic.org/cruzar/turismo#has-interest">
+    <rdfs:label xml:lang="en">Tiene interés</rdfs:label>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Interes-turistico">
+        <rdfs:isDefinedBy rdf:resource="http://idi.fundacionctic.org/cruzar/turismo"/>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://idi.fundacionctic.org/cruzar/turismo#has-no-interest">
+    <rdfs:label xml:lang="en">No tiene interés</rdfs:label>
+    <rdfs:domain rdf:parseType="Resource">
+    </rdfs:domain>
+    <rdfs:range rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-turistico"/>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-escultura">
+    <rdfs:isDefinedBy rdf:resource="http://idi.fundacionctic.org/cruzar/turismo"/>
+    <rdfs:label xml:lang="en">Interest in sculpture</rdfs:label>
+    <skos:inScheme rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-turistico"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-fortalezas">
+    <rdfs:isDefinedBy rdf:resource="http://idi.fundacionctic.org/cruzar/turismo"/>
+    <rdfs:label xml:lang="en">Interest in fortress</rdfs:label>
+    <skos:inScheme rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-turistico"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-museos">
+    <rdfs:isDefinedBy rdf:resource="http://idi.fundacionctic.org/cruzar/turismo"/>
+    <rdfs:label xml:lang="en">Interest in museums</rdfs:label>
+    <skos:inScheme rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-turistico"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-edificio-historico">
+    <rdfs:isDefinedBy rdf:resource="http://idi.fundacionctic.org/cruzar/turismo"/>
+    <rdfs:label xml:lang="en">Interest in historical buildings</rdfs:label>
+    <skos:inScheme rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-turistico"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-edificio-religioso">
+    <rdfs:isDefinedBy rdf:resource="http://idi.fundacionctic.org/cruzar/turismo"/>
+    <rdfs:label xml:lang="en">Interest in religious buildings</rdfs:label>
+    <skos:inScheme rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-turistico"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-palacios">
+    <rdfs:isDefinedBy rdf:resource="http://idi.fundacionctic.org/cruzar/turismo"/>
+    <rdfs:label xml:lang="en">Interest in palaces</rdfs:label>
+    <skos:inScheme rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-turistico"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-renacentista">
+    <owl:differentFrom>
+      <skos:Concept rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-neoclasico">
+        <owl:differentFrom>
+          <skos:Concept rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-entorno-natural">
+            <rdfs:label xml:lang="en">Interest in natural spaces and environment</rdfs:label>
+            <owl:differentFrom>
+              <skos:Concept rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-gotico">
+                <owl:differentFrom>
+                  <skos:Concept rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-compras">
+                    <owl:differentFrom>
+                      <skos:Concept rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-zona-verde">
+                        <owl:differentFrom>
+                          <skos:Concept rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-contemporaneo">
+                            <rdfs:label xml:lang="en">Interest in contemporary style</rdfs:label>
+                            <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-gotico"/>
+                            <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-neoclasico"/>
+                            <rdfs:isDefinedBy rdf:resource="http://idi.fundacionctic.org/cruzar/turismo"/>
+                            <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-entorno-natural"/>
+                            <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-zona-verde"/>
+                            <owl:differentFrom>
+                              <skos:Concept rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-mudejar">
+                                <rdfs:isDefinedBy rdf:resource="http://idi.fundacionctic.org/cruzar/turismo"/>
+                                <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-zona-verde"/>
+                                <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-contemporaneo"/>
+                                <rdfs:label xml:lang="en">Interest in mudéjar style</rdfs:label>
+                                <owl:differentFrom>
+                                  <skos:Concept rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-barroco">
+                                    <skos:inScheme rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-turistico"/>
+                                    <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-entorno-natural"/>
+                                    <owl:differentFrom>
+                                      <skos:Concept rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-modernista">
+                                        <owl:differentFrom>
+                                          <skos:Concept rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-arquitectura">
+                                            <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-barroco"/>
+                                            <owl:differentFrom>
+                                              <skos:Concept rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-expo">
+                                                <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-modernista"/>
+                                                <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-contemporaneo"/>
+                                                <owl:differentFrom>
+                                                  <skos:Concept rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-arte">
+                                                    <skos:inScheme rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-turistico"/>
+                                                    <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-zona-verde"/>
+                                                    <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-barroco"/>
+                                                    <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-mudejar"/>
+                                                    <owl:differentFrom>
+                                                      <skos:Concept rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-romano">
+                                                        <rdfs:label
+                                                         xml:lang="en"
+                                                        >Interest in roman style</rdfs:label>
+                                                        <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-mudejar"/>
+                                                        <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-expo"/>
+                                                        <rdfs:isDefinedBy rdf:resource="http://idi.fundacionctic.org/cruzar/turismo"/>
+                                                        <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-entorno-natural"/>
+                                                        <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-compras"/>
+                                                        <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-modernista"/>
+                                                        <skos:inScheme rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-turistico"/>
+                                                        <owl:differentFrom>
+                                                          <skos:Concept rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-accesibilidad">
+                                                            <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-contemporaneo"/>
+                                                            <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-barroco"/>
+                                                            <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-arquitectura"/>
+                                                            <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-expo"/>
+                                                            <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-compras"/>
+                                                            <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-neoclasico"/>
+                                                            <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-gotico"/>
+                                                            <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-romano"/>
+                                                            <rdfs:isDefinedBy rdf:resource="http://idi.fundacionctic.org/cruzar/turismo"/>
+                                                            <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-mudejar"/>
+                                                            <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-modernista"/>
+                                                            <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-zona-verde"/>
+                                                            <rdfs:label
+                                                             xml:lang="en"
+                                                            >Interest in accessible monuments</rdfs:label>
+                                                            <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-entorno-natural"/>
+                                                            <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-renacentista"/>
+                                                            <skos:inScheme rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-turistico"/>
+                                                            <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-arte"/>
+                                                          </skos:Concept>
+                                                        </owl:differentFrom>
+                                                        <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-zona-verde"/>
+                                                        <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-neoclasico"/>
+                                                        <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-renacentista"/>
+                                                        <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-contemporaneo"/>
+                                                        <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-arquitectura"/>
+                                                        <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-arte"/>
+                                                        <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-gotico"/>
+                                                        <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-barroco"/>
+                                                      </skos:Concept>
+                                                    </owl:differentFrom>
+                                                    <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-arquitectura"/>
+                                                    <rdfs:isDefinedBy rdf:resource="http://idi.fundacionctic.org/cruzar/turismo"/>
+                                                    <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-contemporaneo"/>
+                                                    <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-gotico"/>
+                                                    <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-modernista"/>
+                                                    <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-entorno-natural"/>
+                                                    <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-accesibilidad"/>
+                                                    <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-renacentista"/>
+                                                    <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-compras"/>
+                                                    <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-expo"/>
+                                                    <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-neoclasico"/>
+                                                    <rdfs:label
+                                                     xml:lang="en"
+                                                    >Interest in art</rdfs:label>
+                                                  </skos:Concept>
+                                                </owl:differentFrom>
+                                                <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-renacentista"/>
+                                                <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-mudejar"/>
+                                                <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-zona-verde"/>
+                                                <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-romano"/>
+                                                <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-gotico"/>
+                                                <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-entorno-natural"/>
+                                                <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-arquitectura"/>
+                                                <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-accesibilidad"/>
+                                                <rdfs:label xml:lang="en"
+                                                >Interest in EXPO 2008</rdfs:label>
+                                                <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-barroco"/>
+                                                <skos:inScheme rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-turistico"/>
+                                                <rdfs:isDefinedBy rdf:resource="http://idi.fundacionctic.org/cruzar/turismo"/>
+                                                <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-neoclasico"/>
+                                                <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-compras"/>
+                                              </skos:Concept>
+                                            </owl:differentFrom>
+                                            <skos:inScheme rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-turistico"/>
+                                            <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-compras"/>
+                                            <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-neoclasico"/>
+                                            <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-renacentista"/>
+                                            <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-accesibilidad"/>
+                                            <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-arte"/>
+                                            <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-entorno-natural"/>
+                                            <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-romano"/>
+                                            <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-gotico"/>
+                                            <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-contemporaneo"/>
+                                            <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-mudejar"/>
+                                            <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-zona-verde"/>
+                                            <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-modernista"/>
+                                            <rdfs:isDefinedBy rdf:resource="http://idi.fundacionctic.org/cruzar/turismo"/>
+                                            <rdfs:label xml:lang="en"
+                                            >Interest in architecture</rdfs:label>
+                                          </skos:Concept>
+                                        </owl:differentFrom>
+                                        <rdfs:label xml:lang="en"
+                                        >Interest in modernistic style</rdfs:label>
+                                        <rdfs:isDefinedBy rdf:resource="http://idi.fundacionctic.org/cruzar/turismo"/>
+                                        <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-accesibilidad"/>
+                                        <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-compras"/>
+                                        <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-entorno-natural"/>
+                                        <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-barroco"/>
+                                        <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-romano"/>
+                                        <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-zona-verde"/>
+                                        <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-expo"/>
+                                        <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-gotico"/>
+                                        <skos:inScheme rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-turistico"/>
+                                        <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-contemporaneo"/>
+                                        <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-mudejar"/>
+                                        <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-arte"/>
+                                        <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-neoclasico"/>
+                                        <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-renacentista"/>
+                                      </skos:Concept>
+                                    </owl:differentFrom>
+                                    <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-arte"/>
+                                    <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-compras"/>
+                                    <rdfs:label xml:lang="en"
+                                    >Interest in baroque style</rdfs:label>
+                                    <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-neoclasico"/>
+                                    <rdfs:isDefinedBy rdf:resource="http://idi.fundacionctic.org/cruzar/turismo"/>
+                                    <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-zona-verde"/>
+                                    <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-accesibilidad"/>
+                                    <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-arquitectura"/>
+                                    <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-contemporaneo"/>
+                                    <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-romano"/>
+                                    <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-expo"/>
+                                    <rdfs:comment rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#string"
+                                    ></rdfs:comment>
+                                    <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-gotico"/>
+                                    <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-mudejar"/>
+                                    <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-renacentista"/>
+                                  </skos:Concept>
+                                </owl:differentFrom>
+                                <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-arte"/>
+                                <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-gotico"/>
+                                <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-neoclasico"/>
+                                <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-accesibilidad"/>
+                                <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-expo"/>
+                                <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-compras"/>
+                                <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-renacentista"/>
+                                <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-entorno-natural"/>
+                                <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-modernista"/>
+                                <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-romano"/>
+                                <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-arquitectura"/>
+                                <skos:inScheme rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-turistico"/>
+                              </skos:Concept>
+                            </owl:differentFrom>
+                            <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-renacentista"/>
+                            <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-romano"/>
+                            <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-arquitectura"/>
+                            <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-accesibilidad"/>
+                            <skos:inScheme rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-turistico"/>
+                            <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-barroco"/>
+                            <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-compras"/>
+                            <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-expo"/>
+                            <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-arte"/>
+                            <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-modernista"/>
+                          </skos:Concept>
+                        </owl:differentFrom>
+                        <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-gotico"/>
+                        <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-arquitectura"/>
+                        <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-modernista"/>
+                        <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-accesibilidad"/>
+                        <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-romano"/>
+                        <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-renacentista"/>
+                        <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-entorno-natural"/>
+                        <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-expo"/>
+                        <rdfs:label xml:lang="en">Interest in green spaces (parks, public gardens, etc)</rdfs:label>
+                        <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-barroco"/>
+                        <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-compras"/>
+                        <rdfs:isDefinedBy rdf:resource="http://idi.fundacionctic.org/cruzar/turismo"/>
+                        <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-neoclasico"/>
+                        <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-arte"/>
+                        <skos:inScheme rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-turistico"/>
+                        <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-mudejar"/>
+                      </skos:Concept>
+                    </owl:differentFrom>
+                    <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-romano"/>
+                    <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-mudejar"/>
+                    <rdfs:label xml:lang="en">Interest in shopping</rdfs:label>
+                    <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-accesibilidad"/>
+                    <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-renacentista"/>
+                    <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-gotico"/>
+                    <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-arquitectura"/>
+                    <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-expo"/>
+                    <skos:inScheme rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-turistico"/>
+                    <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-modernista"/>
+                    <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-arte"/>
+                    <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-entorno-natural"/>
+                    <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-barroco"/>
+                    <rdfs:isDefinedBy rdf:resource="http://idi.fundacionctic.org/cruzar/turismo"/>
+                    <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-contemporaneo"/>
+                    <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-neoclasico"/>
+                  </skos:Concept>
+                </owl:differentFrom>
+                <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-neoclasico"/>
+                <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-romano"/>
+                <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-renacentista"/>
+                <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-entorno-natural"/>
+                <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-barroco"/>
+                <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-modernista"/>
+                <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-contemporaneo"/>
+                <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-accesibilidad"/>
+                <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-zona-verde"/>
+                <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-mudejar"/>
+                <rdfs:label xml:lang="en">Interest in gothic style</rdfs:label>
+                <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-arquitectura"/>
+                <skos:inScheme rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-turistico"/>
+                <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-arte"/>
+                <rdfs:isDefinedBy rdf:resource="http://idi.fundacionctic.org/cruzar/turismo"/>
+                <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-expo"/>
+              </skos:Concept>
+            </owl:differentFrom>
+            <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-contemporaneo"/>
+            <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-expo"/>
+            <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            ></rdfs:comment>
+            <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-renacentista"/>
+            <rdfs:isDefinedBy rdf:resource="http://idi.fundacionctic.org/cruzar/turismo"/>
+            <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-romano"/>
+            <skos:inScheme rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-turistico"/>
+            <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-barroco"/>
+            <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-compras"/>
+            <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-accesibilidad"/>
+            <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-neoclasico"/>
+            <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-arte"/>
+            <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-arquitectura"/>
+            <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-mudejar"/>
+            <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-modernista"/>
+            <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-zona-verde"/>
+          </skos:Concept>
+        </owl:differentFrom>
+        <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-accesibilidad"/>
+        <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-contemporaneo"/>
+        <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-arte"/>
+        <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-gotico"/>
+        <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-expo"/>
+        <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-renacentista"/>
+        <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-barroco"/>
+        <rdfs:isDefinedBy rdf:resource="http://idi.fundacionctic.org/cruzar/turismo"/>
+        <skos:inScheme rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-turistico"/>
+        <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-compras"/>
+        <rdfs:label xml:lang="en">Interest in neoclassical style</rdfs:label>
+        <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-mudejar"/>
+        <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-romano"/>
+        <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-zona-verde"/>
+        <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-arquitectura"/>
+        <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-modernista"/>
+      </skos:Concept>
+    </owl:differentFrom>
+    <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-romano"/>
+    <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-accesibilidad"/>
+    <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-zona-verde"/>
+    <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-barroco"/>
+    <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-expo"/>
+    <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-arte"/>
+    <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-compras"/>
+    <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-gotico"/>
+    <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-entorno-natural"/>
+    <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-mudejar"/>
+    <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-modernista"/>
+    <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-arquitectura"/>
+    <skos:inScheme rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-turistico"/>
+    <rdfs:isDefinedBy rdf:resource="http://idi.fundacionctic.org/cruzar/turismo"/>
+    <owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Interes-en-estilo-contemporaneo"/>
+    <rdfs:label xml:lang="en">Interest in Renaissance style</rdfs:label>
+  </skos:Concept>
+</rdf:RDF>

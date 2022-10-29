@@ -1,0 +1,219 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://purl.org/spar/pro"/>
+  <skos:Concept rdf:about="http://purl.org/spar/pro/ghost-writer">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pro"/>
+    <rdfs:label xml:lang="en">ghost writer</rdfs:label>
+    <rdfs:comment xml:lang="en">The role of a professional writer who assists an aspiring author lacking authorship skills to write a book or article for publication, for example by helping the author to create grammatically correct and lucid prose, or who writes the book on behalf of the named author, without himself/herself claiming authorship.</rdfs:comment>
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="http://purl.org/spar/pro/PublishingRole">
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pro"/>
+        <rdfs:label xml:lang="en">publishing role</rdfs:label>
+        <rdfs:comment xml:lang="en">A role an agent may have with respect to the publishing process.  Individual members of this class are used to specify particular roles.</rdfs:comment>
+      </skos:ConceptScheme>
+    </skos:inScheme>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/pro/producer">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pro"/>
+    <rdfs:label xml:lang="en">producer</rdfs:label>
+    <rdfs:comment xml:lang="en">The role of someone who acts as a producer.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/pro/PublishingRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/pro/translator">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pro"/>
+    <rdfs:label xml:lang="en">translator</rdfs:label>
+    <rdfs:comment xml:lang="en">The role of an agent that translates a document into another language.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/pro/PublishingRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/pro/distributor">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pro"/>
+    <rdfs:label xml:lang="en">distributor</rdfs:label>
+    <rdfs:comment xml:lang="en">The role of a person who distributes publications.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/pro/PublishingRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/pro/peer-reviewer">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pro"/>
+    <rdfs:seeAlso>
+      <skos:Concept rdf:about="http://purl.org/spar/pro/reviewer">
+        <rdfs:label xml:lang="en">reviewer</rdfs:label>
+        <rdfs:comment xml:lang="en">The role of a person who subjects a publication to a written review and critical analysis of its content, scope and quality.</rdfs:comment>
+        <skos:inScheme rdf:resource="http://purl.org/spar/pro/PublishingRole"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pro"/>
+      </skos:Concept>
+    </rdfs:seeAlso>
+    <rdfs:label xml:lang="en">peer reviewer</rdfs:label>
+    <rdfs:comment xml:lang="en">The role of an academic peer in evaluating a manuscript submitted by an author for publication as a journal article on behalf of the journal editor, or a conference paper on behalf of the conference programme committee, and in deciding whether it is suitable for acceptance, usually subject to revisions suggested by the peer-reviewer.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/pro/PublishingRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/pro/publisher">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pro"/>
+    <rdfs:label xml:lang="en">publisher</rdfs:label>
+    <rdfs:comment xml:lang="en">The role of a person or an organization that published material, or of a publisher's employee who has responsibility for such publications.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/pro/PublishingRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/pro/biographer">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pro"/>
+    <rdfs:label xml:lang="en">biographer</rdfs:label>
+    <rdfs:comment xml:lang="en">The role of an author who writes biographies.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/pro/PublishingRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/pro/commissioning-editor">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pro"/>
+    <rdfs:label xml:lang="en">commissioning editor</rdfs:label>
+    <rdfs:comment xml:lang="en">The role of an editor who actively commissions authors to write books to be published by the publishing house for which the commissioning editor works.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/pro/PublishingRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/pro/printer">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pro"/>
+    <rdfs:label xml:lang="en">printer</rdfs:label>
+    <rdfs:comment xml:lang="en">The role of an agent involved in printing documents, either a company providing printing services or an individual engaged in the process of printing documents.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/pro/PublishingRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/pro/author">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pro"/>
+    <rdfs:label xml:lang="en">author</rdfs:label>
+    <rdfs:comment xml:lang="en">The role a person has of authorship of some material (for example a document).</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/pro/PublishingRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/pro/illustrator">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pro"/>
+    <rdfs:label xml:lang="en">illustrator</rdfs:label>
+    <rdfs:comment xml:lang="en">The role of an agent that illustrates a document.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/pro/PublishingRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/pro/editor-in-chief">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pro"/>
+    <rdfs:label xml:lang="en">editor-in-chief</rdfs:label>
+    <rdfs:comment xml:lang="en">The role of the person who has final responsibility for the editorial operations and policies for a particular publication.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/pro/PublishingRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/pro/blogger">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pro"/>
+    <rdfs:label xml:lang="en">blogger</rdfs:label>
+    <rdfs:comment xml:lang="en">The role of an author who writes blog posts.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/pro/PublishingRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/pro/deputy-editor">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pro"/>
+    <rdfs:label xml:lang="en">deputy editor</rdfs:label>
+    <rdfs:comment xml:lang="en">The role of a senior editor of a publication who deputizes for the Editor-in-Chief.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/pro/PublishingRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/pro/copy-editor">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pro"/>
+    <rdfs:label xml:lang="en">copy editor</rdfs:label>
+    <rdfs:comment xml:lang="en">The role of an editor who undertakes alterations to the text of a document submitted for publication to improve the formatting, style and accuracy of text, or to bring the text into the house style of the publisher (e.g. Americanization of British spelling), without intentionally altering the substance or meaning of the text.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/pro/PublishingRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/pro/compiler">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pro"/>
+    <rdfs:label xml:lang="en">compiler</rdfs:label>
+    <rdfs:comment xml:lang="en">The role an agent has of compiling a number of items into a compilation or collection.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/pro/PublishingRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/pro/managing-editor">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pro"/>
+    <rdfs:label xml:lang="en">managing editor</rdfs:label>
+    <rdfs:comment xml:lang="en">The role of an editor who has management responsibility for the production of particular publication, usually acting under the authority of the Executive Editor and the Editor-in-Chief.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/pro/PublishingRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/pro/senior-editor">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pro"/>
+    <rdfs:label xml:lang="en">senior editor</rdfs:label>
+    <rdfs:comment xml:lang="en">The role of the person who has senior responsibility for the editorial operations and policies for a particular publication, usually acting under the authority of the Editor-in-Chief.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/pro/PublishingRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/pro/copyright-owner">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pro"/>
+    <rdfs:label xml:lang="en">copyright owner</rdfs:label>
+    <rdfs:comment xml:lang="en">The role of owning the copyright to a publication, usually held by the author or by the publishing house that publishes the author's work.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/pro/PublishingRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/pro/reader">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pro"/>
+    <rdfs:label xml:lang="en">reader</rdfs:label>
+    <rdfs:comment xml:lang="en">The role of a person who reads publications.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/pro/PublishingRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/pro/series-editor">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pro"/>
+    <rdfs:label xml:lang="en">series editor</rdfs:label>
+    <rdfs:comment xml:lang="en">The role of the person who has editorial responsibility for publication series, for example a book series.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/pro/PublishingRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/pro/journalist">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pro"/>
+    <rdfs:label xml:lang="en">journalist</rdfs:label>
+    <rdfs:comment xml:lang="en">The role of an author who writes newspaper or magazine news reports or articles.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/pro/PublishingRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/pro/authors-agent">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pro"/>
+    <rdfs:label xml:lang="en">author's agent</rdfs:label>
+    <rdfs:comment xml:lang="en">A person who finds work for professional authors, manages their contracts, and works to advance their careers, charging their clients as fees for their services a percentage of the money made from the authors' writings.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/pro/PublishingRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/pro/librarian">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pro"/>
+    <rdfs:label xml:lang="en">librarian</rdfs:label>
+    <rdfs:comment xml:lang="en">The role of a person who manages, undertakes and supervises the work of a library.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/pro/PublishingRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/pro/proof-reader">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pro"/>
+    <rdfs:label xml:lang="en">proof reader</rdfs:label>
+    <rdfs:comment xml:lang="en">The role of a person who reads the proofs of documents to detect any errors prior to final publication.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/pro/PublishingRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/pro/contributor">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pro"/>
+    <rdfs:label xml:lang="en">contributor</rdfs:label>
+    <rdfs:comment xml:lang="en">The role an agent has of contribution of some material (for example an article to a magazine).</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/pro/PublishingRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/pro/guest-editor">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pro"/>
+    <rdfs:label xml:lang="en">guest editor</rdfs:label>
+    <rdfs:comment xml:lang="en">The role of someone who is a guest editor, for example for a special themed issue of a journal.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/pro/PublishingRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/pro/production-editor">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pro"/>
+    <rdfs:label xml:lang="en">production editor</rdfs:label>
+    <rdfs:comment xml:lang="en">The role of an editor who takes responsibility for the passage of a document through the various stages of the publication workflow from the submitted manuscript to the final publication, including responsibility for scheduling and budget.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/pro/PublishingRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/pro/editor">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pro"/>
+    <rdfs:label xml:lang="en">editor</rdfs:label>
+    <rdfs:comment xml:lang="en">The role of a person who selects and prepares for publication material written and submitted by authors.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/pro/PublishingRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/pro/critic">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pro"/>
+    <rdfs:seeAlso rdf:resource="http://purl.org/spar/pro/reviewer"/>
+    <rdfs:label xml:lang="en">critic</rdfs:label>
+    <rdfs:comment xml:lang="en">The role of an author who writes evaluations and criticisms of, for example, plays or other works of art.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/pro/PublishingRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/pro/archivist">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pro"/>
+    <rdfs:label xml:lang="en">archivist</rdfs:label>
+    <rdfs:comment xml:lang="en">The role of a person who manages, undertakes and supervises the work of an archive.  [This term is typically used with respect to a document archive, whereas the term data curator is used with respect to a data archive.]</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/pro/PublishingRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/pro/executive-editor">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pro"/>
+    <rdfs:label xml:lang="en">executive editor</rdfs:label>
+    <rdfs:comment xml:lang="en">The role of an editor who has executive responsibility for the production of particular publication, usually acting under the authority of the Editor-in-Chief.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/pro/PublishingRole"/>
+  </skos:Concept>
+</rdf:RDF>

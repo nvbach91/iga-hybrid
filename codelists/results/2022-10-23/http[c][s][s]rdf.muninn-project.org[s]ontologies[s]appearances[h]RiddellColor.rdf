@@ -1,0 +1,68 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://rdf.muninn-project.org/ontologies/appearances"/>
+  <skos:Concept rdf:about="http://rdf.muninn-project.org/ontologies/appearances#RiddellColorGrey">
+    <rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/appearances"/>
+    <rdfs:label xml:lang="en">Grey (Riddell)</rdfs:label>
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="http://rdf.muninn-project.org/ontologies/appearances#RiddellColor">
+        <rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/appearances"/>
+        <rdfs:label xml:lang="en">Riddell Color Reference</rdfs:label>
+        <rdfs:comment xml:lang="en">Riddell Color Reference.</rdfs:comment>
+      </skos:ConceptScheme>
+    </skos:inScheme>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://rdf.muninn-project.org/ontologies/appearances#RiddellColorBlue">
+    <rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/appearances"/>
+    <rdfs:label xml:lang="en">Blue (Riddell)</rdfs:label>
+    <skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#RiddellColor"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://rdf.muninn-project.org/ontologies/appearances#RiddellColorGreen">
+    <rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/appearances"/>
+    <rdfs:label xml:lang="en">Green (Riddell)</rdfs:label>
+    <skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#RiddellColor"/>
+  </skos:Concept>
+  <owl:DataProperty rdf:about="http://rdf.muninn-project.org/ontologies/appearances#RiddellSpotsColor">
+    <rdfs:label xml:lang="en">Riddell Spots Eye Color</rdfs:label>
+    <rdfs:domain rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#EyeColorRiddell"/>
+    <rdfs:range rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#RiddellColor"/>
+  </owl:DataProperty>
+  <skos:Concept rdf:about="http://rdf.muninn-project.org/ontologies/appearances#RiddellColorYellow">
+    <rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/appearances"/>
+    <rdfs:label xml:lang="en">Yellow (Riddell)</rdfs:label>
+    <skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#RiddellColor"/>
+  </skos:Concept>
+  <owl:DataProperty rdf:about="http://rdf.muninn-project.org/ontologies/appearances#RiddellGeneralColor">
+    <rdfs:label xml:lang="en">Riddell General Eye Color</rdfs:label>
+    <rdfs:domain rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#EyeColorRiddell"/>
+    <rdfs:range rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#RiddellColor"/>
+  </owl:DataProperty>
+  <skos:Concept rdf:about="http://rdf.muninn-project.org/ontologies/appearances#RiddellColorChocolate">
+    <rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/appearances"/>
+    <rdfs:label xml:lang="en">Chocolate (Riddell)</rdfs:label>
+    <skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#RiddellColor"/>
+  </skos:Concept>
+  <owl:DataProperty rdf:about="http://rdf.muninn-project.org/ontologies/appearances#RiddellDiffuseColor">
+    <rdfs:label xml:lang="en">Riddell Diffuse Eye Color</rdfs:label>
+    <rdfs:domain rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#EyeColorRiddell"/>
+    <rdfs:range rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#RiddellColor"/>
+  </owl:DataProperty>
+  <skos:Concept rdf:about="http://rdf.muninn-project.org/ontologies/appearances#RiddellColorTan">
+    <rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/appearances"/>
+    <rdfs:label xml:lang="en">Tan (Riddell)</rdfs:label>
+    <skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#RiddellColor"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://rdf.muninn-project.org/ontologies/appearances#RiddellColorNil">
+    <rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/appearances"/>
+    <rdfs:label xml:lang="en">No color (Riddell)</rdfs:label>
+    <skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#RiddellColor"/>
+  </skos:Concept>
+</rdf:RDF>

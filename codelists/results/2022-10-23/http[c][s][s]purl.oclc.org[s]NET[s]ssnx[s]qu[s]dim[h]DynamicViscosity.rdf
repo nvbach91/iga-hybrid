@@ -1,0 +1,36 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:j.0="http://purl.oclc.org/NET/ssnx/qu/qu#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#integral_of_surface_downward_northward_stress_wrt_time">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind>
+      <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/qu/quantity#dynamicViscosity">
+        <skos:inScheme>
+          <skos:ConceptScheme rdf:about="http://purl.oclc.org/NET/ssnx/qu/dim#DynamicViscosity">
+            <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+          </skos:ConceptScheme>
+        </skos:inScheme>
+        <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+      </skos:Concept>
+    </j.0:generalQuantityKind>
+    <rdfs:label>integral of surface downward northward stress wrt time</rdfs:label>
+    <rdfs:comment>"integral_of_Y_wrt_X" means int Y dX. The data variable should have an axis for X specifying the limits of the integral as bounds. "wrt" means with respect to. The surface called "surface" means the lower boundary of the atmosphere. "Northward" indicates a vector component which is positive when directed northward (negative southward). "Downward" indicates a vector component which is positive when directed downward (negative upward). "Downward northward" indicates the ZY component of a tensor. A downward northward stress is a downward flux of northward momentum, which accelerates the lower medium northward and the upper medium southward. The surface downward stress is the windstress on the surface.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#DynamicViscosity"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#integral_of_surface_downward_eastward_stress_wrt_time">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#dynamicViscosity"/>
+    <rdfs:label>integral of surface downward eastward stress wrt time</rdfs:label>
+    <rdfs:comment>"integral_of_Y_wrt_X" means int Y dX. The data variable should have an axis for X specifying the limits of the integral as bounds. "wrt" means with respect to. The surface called "surface" means the lower boundary of the atmosphere. "Eastward" indicates a vector component which is positive when directed eastward (negative westward). "Downward" indicates a vector component which is positive when directed downward (negative upward). "Downward eastward" indicates the ZX component of a tensor. A downward eastward stress is a downward flux of eastward momentum, which accelerates the lower medium eastward and the upper medium westward. The surface downward stress is the windstress on the surface.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#DynamicViscosity"/>
+  </skos:Concept>
+</rdf:RDF>

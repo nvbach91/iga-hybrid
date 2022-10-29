@@ -1,0 +1,42 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="https://w3id.org/idsa/core"/>
+  <owl:ObjectProperty rdf:about="https://w3id.org/idsa/core/connectorStatus">
+    <rdfs:comment xml:lang="en">Status of a Connector deployed by the Configuration Model</rdfs:comment>
+    <rdfs:label xml:lang="en">Connector Status</rdfs:label>
+    <rdfs:domain rdf:resource="https://w3id.org/idsa/core/ConfigurationModel"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="https://w3id.org/idsa/core/ConnectorStatus">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+        <rdfs:label xml:lang="en">Connector Status</rdfs:label>
+        <rdfs:comment xml:lang="en">Connector Status is used to represent a Connectors current state inside the Configuration Model.</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/CONNECTOR_OFFLINE">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Connector Offline</rdfs:label>
+    <rdfs:comment xml:lang="en">Indicates that a Connector is offline.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/ConnectorStatus"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/CONNECTOR_ONLINE">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Connector Online</rdfs:label>
+    <rdfs:comment xml:lang="en">Indicates that a Connector is online.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/ConnectorStatus"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/CONNECTOR_BADLY_CONFIGURED">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label xml:lang="en">Connector badly configured</rdfs:label>
+    <rdfs:comment xml:lang="en">Indicates that a Connector is badly configured.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/ConnectorStatus"/>
+  </skos:Concept>
+</rdf:RDF>

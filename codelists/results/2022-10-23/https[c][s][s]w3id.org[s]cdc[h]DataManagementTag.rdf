@@ -1,0 +1,41 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="https://w3id.org/cdc"/>
+  <owl:ObjectProperty rdf:about="https://w3id.org/cdc#hasDataManagementTag">
+    <rdfs:comment xml:lang="en">Connects a DCAT catalog, dataset, distribution, data service or qualified relation (cdc:DistributionRelation or dcat:Relation) to exactly one of the following predefined data management tags: cdc:internal, cdc:incoming or cdc:outgoing.</rdfs:comment>
+    <rdfs:label xml:lang="en">has data management tag</rdfs:label>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="https://w3id.org/cdc#DataManagementTag">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/cdc"/>
+        <rdfs:label xml:lang="en">data management tag</rdfs:label>
+        <rdfs:comment xml:lang="en">A tag that is linked to a DCAT catalog, dataset, distribution or data service instance node using the cdc:hasDataManagementTag property. CDC predefines three instances of this class, i.e. cdc:incoming, cdc:internal and cdc:outgoing. Each catalog, dataset, distribution or data service can only have one tag that is not supposed to change over the lifetime of the described resource unless it considers a dataset (that is not a catalog). When necessary, qualified relations between DCAT entities can also get a tag.</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="https://w3id.org/cdc#incoming">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/cdc"/>
+    <rdfs:label xml:lang="en">incoming</rdfs:label>
+    <rdfs:comment xml:lang="en">A predefined tag to mark an incoming catalog, dataset, distribution or data service. It can also be used to annotate qualified relations between DCAT entities.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/cdc#DataManagementTag"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/cdc#outgoing">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/cdc"/>
+    <rdfs:label xml:lang="en">outgoing</rdfs:label>
+    <rdfs:comment xml:lang="en">A predefined tag to mark an outgoing catalog, dataset, distribution or data service. It can also be used to annotate qualified relations between DCAT entities.{</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/cdc#DataManagementTag"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/cdc#internal">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/cdc"/>
+    <rdfs:label xml:lang="en">internal</rdfs:label>
+    <rdfs:comment xml:lang="en">A predefined tag to mark an internal (= not exchanged) catalog, dataset, distribution or data service. It can also be used to annotate qualified relations between DCAT entities.{</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/cdc#DataManagementTag"/>
+  </skos:Concept>
+</rdf:RDF>

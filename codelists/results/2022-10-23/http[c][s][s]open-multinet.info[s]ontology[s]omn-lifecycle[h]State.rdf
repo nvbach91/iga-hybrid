@@ -1,0 +1,115 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://open-multinet.info/ontology/omn-lifecycle"/>
+  <skos:Concept rdf:about="http://open-multinet.info/ontology/omn-lifecycle#Stopping">
+    <rdfs:isDefinedBy rdf:resource="http://open-multinet.info/ontology/omn-lifecycle"/>
+    <rdfs:label xml:lang="en">Stopping</rdfs:label>
+    <rdfs:comment xml:lang="en">The related resource/service is stopping</rdfs:comment>
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="http://open-multinet.info/ontology/omn-lifecycle#State">
+        <rdfs:isDefinedBy rdf:resource="http://open-multinet.info/ontology/omn-lifecycle"/>
+        <rdfs:label xml:lang="en">State</rdfs:label>
+        <rdfs:comment xml:lang="en">The current state of the resource, service or group</rdfs:comment>
+      </skos:ConceptScheme>
+    </skos:inScheme>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://open-multinet.info/ontology/omn-lifecycle#Cleaned">
+    <rdfs:isDefinedBy rdf:resource="http://open-multinet.info/ontology/omn-lifecycle"/>
+    <rdfs:label xml:lang="en">Cleaned</rdfs:label>
+    <rdfs:comment xml:lang="en">The related resource/service has been cleaned</rdfs:comment>
+    <skos:inScheme rdf:resource="http://open-multinet.info/ontology/omn-lifecycle#State"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://open-multinet.info/ontology/omn-lifecycle#Removing">
+    <rdfs:isDefinedBy rdf:resource="http://open-multinet.info/ontology/omn-lifecycle"/>
+    <rdfs:label xml:lang="en">Removing</rdfs:label>
+    <rdfs:comment xml:lang="en">The related resource/service gets removed</rdfs:comment>
+    <skos:inScheme rdf:resource="http://open-multinet.info/ontology/omn-lifecycle#State"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://open-multinet.info/ontology/omn-lifecycle#Installed">
+    <rdfs:isDefinedBy rdf:resource="http://open-multinet.info/ontology/omn-lifecycle"/>
+    <rdfs:label xml:lang="en">Installed</rdfs:label>
+    <rdfs:comment xml:lang="en">The related resource/service has been installed</rdfs:comment>
+    <skos:inScheme rdf:resource="http://open-multinet.info/ontology/omn-lifecycle#State"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://open-multinet.info/ontology/omn-lifecycle#Active">
+    <rdfs:isDefinedBy rdf:resource="http://open-multinet.info/ontology/omn-lifecycle"/>
+    <rdfs:label xml:lang="en">Active</rdfs:label>
+    <rdfs:comment xml:lang="en">The related resource/service is actively performing an action</rdfs:comment>
+    <skos:inScheme rdf:resource="http://open-multinet.info/ontology/omn-lifecycle#State"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://open-multinet.info/ontology/omn-lifecycle#NotYetInitialized">
+    <rdfs:isDefinedBy rdf:resource="http://open-multinet.info/ontology/omn-lifecycle"/>
+    <rdfs:label xml:lang="en">NotYetInitialized</rdfs:label>
+    <rdfs:comment xml:lang="en">The related resource/service are not yet active/ready</rdfs:comment>
+    <skos:inScheme rdf:resource="http://open-multinet.info/ontology/omn-lifecycle#State"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://open-multinet.info/ontology/omn-lifecycle#Uncompleted">
+    <rdfs:isDefinedBy rdf:resource="http://open-multinet.info/ontology/omn-lifecycle"/>
+    <rdfs:label xml:lang="en">Uncompleted</rdfs:label>
+    <rdfs:comment xml:lang="en">The related resource/service is not complete</rdfs:comment>
+    <skos:inScheme rdf:resource="http://open-multinet.info/ontology/omn-lifecycle#State"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://open-multinet.info/ontology/omn-lifecycle#Started">
+    <rdfs:isDefinedBy rdf:resource="http://open-multinet.info/ontology/omn-lifecycle"/>
+    <rdfs:label xml:lang="en">Started</rdfs:label>
+    <rdfs:comment xml:lang="en">The related resource/service has been started</rdfs:comment>
+    <skos:inScheme rdf:resource="http://open-multinet.info/ontology/omn-lifecycle#State"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://open-multinet.info/ontology/omn-lifecycle#Stopped">
+    <rdfs:isDefinedBy rdf:resource="http://open-multinet.info/ontology/omn-lifecycle"/>
+    <rdfs:label xml:lang="en">Stopped</rdfs:label>
+    <rdfs:comment xml:lang="en">The related resource/service is stopped</rdfs:comment>
+    <skos:inScheme rdf:resource="http://open-multinet.info/ontology/omn-lifecycle#State"/>
+  </skos:Concept>
+  <owl:IrreflexiveProperty rdf:about="http://open-multinet.info/ontology/omn-lifecycle#hasState">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:parseType="Resource">
+    </rdfs:domain>
+    <rdfs:range rdf:resource="http://open-multinet.info/ontology/omn-lifecycle#State"/>
+  </owl:IrreflexiveProperty>
+  <skos:Concept rdf:about="http://open-multinet.info/ontology/omn-lifecycle#Ready">
+    <rdfs:isDefinedBy rdf:resource="http://open-multinet.info/ontology/omn-lifecycle"/>
+    <rdfs:label xml:lang="en">Ready</rdfs:label>
+    <rdfs:comment xml:lang="en">The related resource/service is ready</rdfs:comment>
+    <skos:inScheme rdf:resource="http://open-multinet.info/ontology/omn-lifecycle#State"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://open-multinet.info/ontology/omn-lifecycle#Error">
+    <rdfs:isDefinedBy rdf:resource="http://open-multinet.info/ontology/omn-lifecycle"/>
+    <rdfs:label xml:lang="en">Error</rdfs:label>
+    <rdfs:comment xml:lang="en">The related resource/service is in an error state</rdfs:comment>
+    <skos:inScheme rdf:resource="http://open-multinet.info/ontology/omn-lifecycle#State"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://open-multinet.info/ontology/omn-lifecycle#Initialized">
+    <rdfs:isDefinedBy rdf:resource="http://open-multinet.info/ontology/omn-lifecycle"/>
+    <rdfs:label xml:lang="en">Initialized</rdfs:label>
+    <rdfs:comment xml:lang="en">The related resource/service has been initialized</rdfs:comment>
+    <skos:inScheme rdf:resource="http://open-multinet.info/ontology/omn-lifecycle#State"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://open-multinet.info/ontology/omn-lifecycle#Updating">
+    <rdfs:isDefinedBy rdf:resource="http://open-multinet.info/ontology/omn-lifecycle"/>
+    <rdfs:label xml:lang="en">Updating</rdfs:label>
+    <rdfs:comment xml:lang="en">The related resource/service is getting updated</rdfs:comment>
+    <skos:inScheme rdf:resource="http://open-multinet.info/ontology/omn-lifecycle#State"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://open-multinet.info/ontology/omn-lifecycle#Preinit">
+    <rdfs:isDefinedBy rdf:resource="http://open-multinet.info/ontology/omn-lifecycle"/>
+    <rdfs:label xml:lang="en">Preinit</rdfs:label>
+    <rdfs:comment xml:lang="en">The related resource/service is currently configuring</rdfs:comment>
+    <skos:inScheme rdf:resource="http://open-multinet.info/ontology/omn-lifecycle#State"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://open-multinet.info/ontology/omn-lifecycle#Pending">
+    <rdfs:isDefinedBy rdf:resource="http://open-multinet.info/ontology/omn-lifecycle"/>
+    <rdfs:label xml:lang="en">Pending</rdfs:label>
+    <rdfs:comment xml:lang="en">The related resource/service is not yet provisioned</rdfs:comment>
+    <skos:inScheme rdf:resource="http://open-multinet.info/ontology/omn-lifecycle#State"/>
+  </skos:Concept>
+</rdf:RDF>

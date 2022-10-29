@@ -1,0 +1,49 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://purl.org/cwmo/#"/>
+  <owl:AsymmetricProperty rdf:about="http://purl.org/cwmo/#hasContextType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://purl.org/cwmo/#Context"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://purl.org/cwmo/#ContextType">
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/cwmo/#"/>
+        <rdfs:label xml:lang="en">Context Type</rdfs:label>
+        <rdfs:comment xml:lang="en">The context type class gather the typology of creative workshop context</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:AsymmetricProperty>
+  <skos:Concept rdf:about="http://purl.org/cwmo/#AM">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/cwmo/#"/>
+    <rdfs:label xml:lang="en">Advertising/ Management</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/cwmo/#ContextType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/cwmo/#PSI">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/cwmo/#"/>
+    <rdfs:label xml:lang="en">Product/ Process / Services Improvement</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/cwmo/#ContextType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/cwmo/#NPD">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/cwmo/#"/>
+    <rdfs:label xml:lang="en">New Products/ Process/ Services</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/cwmo/#ContextType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/cwmo/#Strategy">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/cwmo/#"/>
+    <skos:inScheme rdf:resource="http://purl.org/cwmo/#ContextType"/>
+  </skos:Concept>
+  <owl:AsymmetricProperty rdf:about="http://purl.org/cwmo/#appliedInContextType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
+    <rdfs:range rdf:resource="http://purl.org/cwmo/#ContextType"/>
+  </owl:AsymmetricProperty>
+</rdf:RDF>

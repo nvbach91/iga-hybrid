@@ -1,0 +1,75 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://dati.beniculturali.it/cultural-ON/cultural-ON.owl"/>
+  <owl:ObjectProperty rdf:about="http://dati.beniculturali.it/cis/hasDayOfWeek">
+    <rdfs:comment xml:lang="en">This property is used to specify the opening hours and in particular the days of the week.</rdfs:comment>
+    <rdfs:label xml:lang="en">has day of week </rdfs:label>
+    <rdfs:domain rdf:resource="http://dati.beniculturali.it/cis/OpeningHoursSpecification"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://dati.beniculturali.it/cis/DayOfWeek">
+        <rdfs:comment xml:lang="en">An example of usage of the class cis:DayOfTheWeek is the following:
+
+&lt;pre&gt;
+
+orari:Orari_di_apertura_di_Biblioteca_nazionale_centrale_di_Roma_giovedi
+      a       cis:OpeningHoursSpecification ;
+      rdfs:label "Opening Hours of Biblioteca nazionale centrale di Roma - thursday"@en , 
+      "Orari di apertura di Biblioteca nazionale centrale di Roma - giovedì"@it ;
+      cis:closes "19:00:00"^^xsd:time ;
+      cis:hasAdmissionType addmissionType:Tipo_di_apertura_al_pubblico ;
+      cis:hasDayOfWeek cis:Thursday ;
+      cis:opens "08:30:00"^^xsd:time .
+
+&lt;/pre&gt;
+
+For the complete example see the class cis:OpeningHoursSpecification</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://dati.beniculturali.it/cultural-ON/cultural-ON.owl"/>
+        <rdfs:label xml:lang="en">Day of the Week</rdfs:label>
+        <rdfs:comment xml:lang="en">This class represents the set of all the days of the week.</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://dati.beniculturali.it/cis/Sunday">
+    <rdfs:isDefinedBy rdf:resource="http://dati.beniculturali.it/cultural-ON/cultural-ON.owl"/>
+    <rdfs:label xml:lang="en">Sunday</rdfs:label>
+    <skos:inScheme rdf:resource="http://dati.beniculturali.it/cis/DayOfWeek"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://dati.beniculturali.it/cis/Thursday">
+    <rdfs:isDefinedBy rdf:resource="http://dati.beniculturali.it/cultural-ON/cultural-ON.owl"/>
+    <rdfs:label xml:lang="en">Thursday </rdfs:label>
+    <skos:inScheme rdf:resource="http://dati.beniculturali.it/cis/DayOfWeek"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://dati.beniculturali.it/cis/Wednesday">
+    <rdfs:isDefinedBy rdf:resource="http://dati.beniculturali.it/cultural-ON/cultural-ON.owl"/>
+    <rdfs:label xml:lang="en">Wednesday</rdfs:label>
+    <skos:inScheme rdf:resource="http://dati.beniculturali.it/cis/DayOfWeek"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://dati.beniculturali.it/cis/Saturday">
+    <rdfs:isDefinedBy rdf:resource="http://dati.beniculturali.it/cultural-ON/cultural-ON.owl"/>
+    <rdfs:label xml:lang="en">Saturday</rdfs:label>
+    <skos:inScheme rdf:resource="http://dati.beniculturali.it/cis/DayOfWeek"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://dati.beniculturali.it/cis/Tuesday">
+    <rdfs:isDefinedBy rdf:resource="http://dati.beniculturali.it/cultural-ON/cultural-ON.owl"/>
+    <rdfs:label xml:lang="en">Tuesday</rdfs:label>
+    <skos:inScheme rdf:resource="http://dati.beniculturali.it/cis/DayOfWeek"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://dati.beniculturali.it/cis/Friday">
+    <rdfs:isDefinedBy rdf:resource="http://dati.beniculturali.it/cultural-ON/cultural-ON.owl"/>
+    <rdfs:label xml:lang="en">Friday</rdfs:label>
+    <skos:inScheme rdf:resource="http://dati.beniculturali.it/cis/DayOfWeek"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://dati.beniculturali.it/cis/Monday">
+    <rdfs:isDefinedBy rdf:resource="http://dati.beniculturali.it/cultural-ON/cultural-ON.owl"/>
+    <rdfs:label xml:lang="en">Monday </rdfs:label>
+    <skos:inScheme rdf:resource="http://dati.beniculturali.it/cis/DayOfWeek"/>
+  </skos:Concept>
+</rdf:RDF>

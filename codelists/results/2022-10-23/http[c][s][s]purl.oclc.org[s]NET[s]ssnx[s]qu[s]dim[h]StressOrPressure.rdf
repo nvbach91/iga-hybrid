@@ -1,0 +1,368 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:j.0="http://purl.oclc.org/NET/ssnx/qu/qu#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#air_pressure">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind>
+      <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/qu/quantity#pressure">
+        <skos:inScheme>
+          <skos:ConceptScheme rdf:about="http://purl.oclc.org/NET/ssnx/qu/dim#StressOrPressure">
+            <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+          </skos:ConceptScheme>
+        </skos:inScheme>
+        <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+      </skos:Concept>
+    </j.0:generalQuantityKind>
+    <rdfs:label>air pressure</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#StressOrPressure"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#soil_suction_at_saturation">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind>
+      <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/qu/quantity#stressOrPressure">
+        <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#StressOrPressure"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+      </skos:Concept>
+    </j.0:generalQuantityKind>
+    <rdfs:label>soil suction at saturation</rdfs:label>
+    <rdfs:comment>Soil suction is the tensile stress on water in soil due to molecular forces acting at the water-soil particle boundary. The forces may cause water to be drawn into the spaces within the soil matrix or cause it to be held in the soil without draining. Soil suction occurs in soil above the water table.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#StressOrPressure"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#magnitude_of_surface_downward_stress">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind>
+      <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/qu/quantity#stress">
+        <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#StressOrPressure"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+      </skos:Concept>
+    </j.0:generalQuantityKind>
+    <rdfs:label>magnitude of surface downward stress</rdfs:label>
+    <rdfs:comment>The surface called "surface" means the lower boundary of the atmosphere. "magnitude_of_X" means magnitude of a vector X. "Downward" indicates a vector component which is positive when directed downward (negative upward).</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#StressOrPressure"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#surface_downward_y_stress">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#stress"/>
+    <rdfs:label>surface downward y stress</rdfs:label>
+    <rdfs:comment>The surface called "surface" means the lower boundary of the atmosphere. "y" indicates a vector component along the grid y-axis, when this is not true latitude, positive with increasing y. "Downward" indicates a vector component which is positive when directed downward (negative upward).</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#StressOrPressure"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#surface_downward_northward_stress">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#stress"/>
+    <rdfs:label>surface downward northward stress</rdfs:label>
+    <rdfs:comment>The surface called "surface" means the lower boundary of the atmosphere. "Northward" indicates a vector component which is positive when directed northward (negative southward). "Downward" indicates a vector component which is positive when directed downward (negative upward). "Downward northward" indicates the ZY component of a tensor. A downward northward stress is a downward flux of northward momentum, which accelerates the lower medium northward and the upper medium southward. The surface downward stress is the windstress on the surface.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#StressOrPressure"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#air_pressure_at_sea_level">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#pressure"/>
+    <rdfs:label>air pressure at sea level</rdfs:label>
+    <rdfs:comment>sea_level means mean sea level, which is close to the geoid in sea areas. Air pressure at sea level is the quantity often abbreviated as MSLP or PMSL.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#StressOrPressure"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#downward_northward_momentum_flux_in_air_due_to_diffusion">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#stressOrPressure"/>
+    <rdfs:label>downward northward momentum flux in air due to diffusion</rdfs:label>
+    <rdfs:comment> "Northward" indicates a vector component which is positive when directed northward (negative southward).  "Downward" indicates a vector component which is positive when directed downward (negative upward).  "Downward northward" indicates the ZY component of a tensor.  Momentum flux is dimensionally equivalent to stress and pressure. It is a tensor quantity.  In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.  The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity  named by omitting the phrase. </rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#StressOrPressure"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#air_pressure_anomaly">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#pressure"/>
+    <rdfs:label>air pressure anomaly</rdfs:label>
+    <rdfs:comment>"anomaly" means difference from climatology.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#StressOrPressure"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#air_pressure_at_cloud_base">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#pressure"/>
+    <rdfs:label>air pressure at cloud base</rdfs:label>
+    <rdfs:comment>cloud_base refers to the base of the lowest cloud.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#StressOrPressure"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#downward_eastward_momentum_flux_in_air_due_to_diffusion">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#stressOrPressure"/>
+    <rdfs:label>downward eastward momentum flux in air due to diffusion</rdfs:label>
+    <rdfs:comment> "Eastward" indicates a vector component which is positive when directed eastward (negative westward).  "Downward" indicates a vector component which is positive when directed downward (negative upward).  "Downward eastward" indicates the ZX component of a tensor.  Momentum flux is dimensionally equivalent to stress and pressure. It is a tensor quantity.  In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.  The specification of a physical process by the phrase due_to_process means thatthe quantity named is a  single term in a sum of terms which together compose the generalquantity  named by omitting the phrase. </rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#StressOrPressure"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#surface_downward_eastward_stress">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#stress"/>
+    <rdfs:label>surface downward eastward stress</rdfs:label>
+    <rdfs:comment>The surface called "surface" means the lower boundary of the atmosphere. "Eastward" indicates a vector component which is positive when directed eastward (negative westward). "Downward" indicates a vector component which is positive when directed downward (negative upward). "Downward eastward" indicates the ZX component of a tensor. A downward eastward stress is a downward flux of eastward momentum, which accelerates the lower medium eastward and the upper medium westward. The surface downward stress is the windstress on the surface.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#StressOrPressure"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#downward_x_stress_at_sea_ice_base">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#stress"/>
+    <rdfs:label>downward x stress at sea ice base</rdfs:label>
+    <rdfs:comment>"x" indicates a vector component along the grid x-axis, when this is not true longitude, positive with increasing x. "Downward" indicates a vector component which is positive when directed downward (negative upward).</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#StressOrPressure"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tropopause_air_pressure">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#pressure"/>
+    <rdfs:label>tropopause air pressure</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#StressOrPressure"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#surface_air_pressure">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#pressure"/>
+    <rdfs:label>surface air pressure</rdfs:label>
+    <rdfs:comment>The surface called "surface" means the lower boundary of the atmosphere.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#StressOrPressure"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#water_vapor_pressure">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#pressure"/>
+    <rdfs:label>water vapor pressure</rdfs:label>
+    <rdfs:comment>Vapor pressure is the partial pressure of a constituent of air, such as water, which exists as liquid or solid under "normal" conditions. "Water" is specified when the term is being applied to water.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#StressOrPressure"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#surface_carbon_dioxide_partial_pressure_difference_between_air_and_sea_water">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind>
+      <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/qu/quantity#partialPressure">
+        <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#StressOrPressure"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+      </skos:Concept>
+    </j.0:generalQuantityKind>
+    <rdfs:label>surface carbon dioxide partial pressure difference between air and sea water</rdfs:label>
+    <rdfs:comment>The surface called "surface" means the lower boundary of the atmosphere. "Water" means water in all phases, including frozen i.e. ice and snow. The partial pressure of a gaseous constituent of air is the pressure which it alone would exert with unchanged temperature and number of moles per unit volume.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#StressOrPressure"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#downward_eastward_momentum_flux_in_air">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#stressOrPressure"/>
+    <rdfs:label>downward eastward momentum flux in air</rdfs:label>
+    <rdfs:comment>"Eastward" indicates a vector component which is positive when directed eastward (negative westward). "Downward" indicates a vector component which is positive when directed downward (negative upward). "Downward eastward" indicates the ZX component of a tensor. Momentum flux is dimensionally equivalent to stress and pressure. It is a tensor quantity. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#StressOrPressure"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#equivalent_pressure_of_atmosphere_ozone_content">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#pressure"/>
+    <rdfs:label>equivalent pressure of atmosphere ozone content</rdfs:label>
+    <rdfs:comment>"Content" indicates a quantity per unit area. The "atmosphere content" of a quantity refers to the vertical integral from the surface to the top of the atmosphere. For the content between specified levels in the atmosphere, standard names including content_of_atmosphere_layer are used. The equivalent pressure of a particular constituent of the atmosphere is the surface pressure exerted by the weight of that constituent alone.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#StressOrPressure"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#surface_downward_y_stress_correction">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#stress"/>
+    <rdfs:label>surface downward y stress correction</rdfs:label>
+    <rdfs:comment> "y" indicates a vector component along the grid y-axis, when this is not true latitude, positive with increasing y.  "Downward" indicates a vector component which is positive when directed downward (negative upward).  The surface called "surface" means the lower boundary of the atmosphere.  A downward y stress is a downward flux of momentum towards the positive direction of the model's y-axis.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#StressOrPressure"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#upward_eastward_momentum_flux_in_air_due_to_orographic_gravity_waves">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#stressOrPressure"/>
+    <rdfs:label>upward eastward momentum flux in air due to orographic gravity waves</rdfs:label>
+    <rdfs:comment>The specification of a physical process by the phrase due_to_process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. "Upward" indicates a vector component which is positive when directed upward (negative downward).  "Eastward" indicates a vector component which is positive when directed eastward (negative westward).  "Upward eastward" indicates the ZX component of a tensor. An upward eastward momentum flux is an upward flux of eastward momentum, which accelerates the upper medium eastward and the lower medium westward.  Momentum flux is dimensionally equivalent to stress and pressure.  In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics. The total upward eastward momentum flux due to gravity waves is the sum of the fluxes due to orographic gravity waves and nonorographic waves. The total upward eastward momentum flux due to nonorographic gravity waves is the sum of the fluxes due to eastward and westward propagating waves. These quantities have the standard names upward_eastward_momentum_flux_in_air_due_to_nonorographic_eastward_gravity_waves and upward_eastward_momentum_flux_in_air_due_to_nonorographic_westward_gravity_waves, respectively.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#StressOrPressure"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#surface_downward_x_stress_correction">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#stress"/>
+    <rdfs:label>surface downward x stress correction</rdfs:label>
+    <rdfs:comment> "x" indicates a vector component along the grid x-axis, when this is not true longitude, positive with increasing x.  "Downward" indicates a vector component which is positive when directed downward (negative upward).  The surface called "surface" means the lower boundary of the atmosphere.  A downward x stress is a downward flux of momentum towards the positive direction of the model's x-axis.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#StressOrPressure"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#downward_northward_momentum_flux_in_air">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#stressOrPressure"/>
+    <rdfs:label>downward northward momentum flux in air</rdfs:label>
+    <rdfs:comment>"Northward" indicates a vector component which is positive when directed northward (negative southward). "Downward" indicates a vector component which is positive when directed downward (negative upward). "Downward northward" indicates the ZY component of a tensor. Momentum flux is dimensionally equivalent to stress and pressure. It is a tensor quantity. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#StressOrPressure"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#downward_eastward_stress_at_sea_ice_base">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#stress"/>
+    <rdfs:label>downward eastward stress at sea ice base</rdfs:label>
+    <rdfs:comment>"Eastward" indicates a vector component which is positive when directed eastward (negative westward). "Downward" indicates a vector component which is positive when directed downward (negative upward). "Downward eastward" indicates the ZX component of a tensor. A downward eastward stress is a downward flux of eastward momentum, which accelerates the lower medium eastward and the upper medium westward.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#StressOrPressure"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#surface_carbon_dioxide_partial_pressure_difference_between_sea_water_and_air">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#partialPressure"/>
+    <rdfs:label>surface carbon dioxide partial pressure difference between sea water and air</rdfs:label>
+    <rdfs:comment> The partial pressure of a dissolved gas in sea water is the partial pressure in air with which it would be in equilibrium.  The partial pressure of a gaseous constituent of air is the pressure which it alone would exert with unchanged temperature and number of moles per unit volume.  The surface called "surface" means the lower boundary of the atmosphere.  The chemical formula for carbon dioxide is CO2.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#StressOrPressure"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#upward_eastward_momentum_flux_in_air_due_to_nonorographic_eastward_gravity_waves">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#stressOrPressure"/>
+    <rdfs:label>upward eastward momentum flux in air due to nonorographic eastward gravity waves</rdfs:label>
+    <rdfs:comment>The specification of a physical process by the phrase due_to_process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. "Upward" indicates a vector component which is positive when directed upward (negative downward). "Eastward" indicates a vector component which is positive when directed eastward (negative westward). "Upward eastward" indicates the ZX component of a tensor. An upward eastward momentum flux is an upward flux of eastward momentum, which accelerates the upper medium eastward and the lower medium westward.  Momentum flux is dimensionally equivalent to stress and pressure.  In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics. The total upward eastward momentum flux due to gravity waves is the sum of the fluxes due to orographic gravity waves and nonorographic waves. The upward eastward momentum flux due to orographic gravity waves has the standard name upward_eastward_momentum_flux_in_air_due_to_orographic_gravity_waves. The total upward eastward momentum flux due to nonorographic gravity waves is the sum of the fluxes due to eastward and westward propagating waves. The latter has the standard name upward_eastward_momentum_flux_in_air_due_to_nonorographic_westward_gravity_waves.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#StressOrPressure"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#surface_molecular_oxygen_partial_pressure_difference_between_sea_water_and_air">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#partialPressure"/>
+    <rdfs:label>surface molecular oxygen partial pressure difference between sea water and air</rdfs:label>
+    <rdfs:comment>The partial pressure of a dissolved gas in sea water is the partial pressure in air with which it would be in equilibrium.  The partial pressure of a gaseous constituent of air is the pressure which it alone would exert with unchanged temperature and number of moles per unit volume.  The surface called "surface" means the lower boundary of the atmosphere. </rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#StressOrPressure"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#upward_eastward_momentum_flux_in_air_due_to_nonorographic_westward_gravity_waves">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#stressOrPressure"/>
+    <rdfs:label>upward eastward momentum flux in air due to nonorographic westward gravity waves</rdfs:label>
+    <rdfs:comment>The specification of a physical process by the phrase due_to_process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. "Upward" indicates a vector component which is positive when directed upward (negative downward).  "Eastward" indicates a vector component which is positive when directed eastward (negative westward).  "Upward eastward" indicates the ZX component of a tensor. An upward eastward momentum flux is an upward flux of eastward momentum, which accelerates the upper medium eastward and the lower medium westward.  Momentum flux is dimensionally equivalent to stress and pressure.  In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics. The total upward eastward momentum flux due to gravity waves is the sum of the fluxes due to orographic gravity waves and nonorographic waves. The upward eastward momentum flux due to orographic gravity waves has the standard name upward_eastward_momentum_flux_in_air_due_to_orographic_gravity_waves. The total upward eastward momentum flux due to nonorographic gravity waves is the sum of the fluxes due to eastward and westward propagating waves. The former has the standard name upward_eastward_momentum_flux_in_air_due_to_nonorographic_eastward _gravity_waves.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#StressOrPressure"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#air_pressure_at_freezing_level">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#pressure"/>
+    <rdfs:label>air pressure at freezing level</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#StressOrPressure"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#surface_partial_pressure_of_carbon_dioxide_in_sea_water">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#partialPressure"/>
+    <rdfs:label>surface partial pressure of carbon dioxide in sea water</rdfs:label>
+    <rdfs:comment>The surface called "surface" means the lower boundary of the atmosphere. "Water" means water in all phases, including frozen i.e. ice and snow. The partial pressure of a dissolved gas in sea water is the partial pressure in air with which it would be in equilibrium. The partial pressure of a gaseous constituent of air is the pressure which it alone would exert with unchanged temperature and number of moles per unit volume.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#StressOrPressure"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#water_vapor_saturation_deficit">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#stressOrPressure"/>
+    <rdfs:label>water vapor saturation deficit</rdfs:label>
+    <rdfs:comment>Water vapor saturation deficit is the difference between the saturation water vapor pressure and the actual water vapor pressure.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#StressOrPressure"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#atmosphere_northward_stress_due_to_gravity_wave_drag">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#stress"/>
+    <rdfs:label>atmosphere northward stress due to gravity wave drag</rdfs:label>
+    <rdfs:comment>The specification of a physical process by the phrase due_to_process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. "Northward" indicates a vector component which is positive when directed northward (negative southward). Atmosphere_Xward_stress is a stress which tends to accelerate the atmosphere in direction X.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#StressOrPressure"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#surface_downward_x_stress">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#stress"/>
+    <rdfs:label>surface downward x stress</rdfs:label>
+    <rdfs:comment>The surface called "surface" means the lower boundary of the atmosphere. "x" indicates a vector component along the grid x-axis, when this is not true longitude, positive with increasing x. "Downward" indicates a vector component which is positive when directed downward (negative upward).</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#StressOrPressure"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#ocean_rigid_lid_pressure">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#pressure"/>
+    <rdfs:label>ocean rigid lid pressure</rdfs:label>
+    <rdfs:comment>"Ocean rigid lid pressure" means the pressure at the surface of an ocean model assuming that it is bounded above by a rigid lid.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#StressOrPressure"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#upward_eastward_stress_at_sea_ice_base">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#stress"/>
+    <rdfs:label>upward eastward stress at sea ice base</rdfs:label>
+    <rdfs:comment>"Eastward" indicates a vector component which is positive when directed eastward (negative westward). "Upward" indicates a vector component which is positive when directed upward (negative downward). "Upward eastward" indicates the ZX component of a tensor. An upward eastward stress is an upward flux of eastward momentum, which accelerates the upper medium eastward and the lower medium westward.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#StressOrPressure"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#air_pressure_at_cloud_top">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#pressure"/>
+    <rdfs:label>air pressure at cloud top</rdfs:label>
+    <rdfs:comment>cloud_top refers to the top of the highest cloud.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#StressOrPressure"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#northward_momentum_flux_correction">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#stressOrPressure"/>
+    <rdfs:label>northward momentum flux correction</rdfs:label>
+    <rdfs:comment>"Northward" indicates a vector component which is positive when directed northward (negative southward). Momentum flux is dimensionally equivalent to stress and pressure. It is a tensor quantity. Flux correction is also called "flux adjustment". A positive flux correction is downward i.e. added to the ocean. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#StressOrPressure"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#sound_pressure_in_water">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind>
+      <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/qu/quantity#soundPressure">
+        <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#StressOrPressure"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+      </skos:Concept>
+    </j.0:generalQuantityKind>
+    <rdfs:label>sound pressure in water</rdfs:label>
+    <rdfs:comment>Sound pressure is the difference from the local ambient pressure caused by a sound wave at a particular location and time.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#StressOrPressure"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#upward_northward_stress_at_sea_ice_base">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#stress"/>
+    <rdfs:label>upward northward stress at sea ice base</rdfs:label>
+    <rdfs:comment>"Northward" indicates a vector component which is positive when directed northward (negative southward). "Upward" indicates a vector component which is positive when directed upward (negative downward). "Upward northward" indicates the ZY component of a tensor. An upward northward stress is an upward flux of northward momentum, which accelerates the upper medium northward and the lower medium southward.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#StressOrPressure"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#air_pressure_at_convective_cloud_base">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#pressure"/>
+    <rdfs:label>air pressure at convective cloud base</rdfs:label>
+    <rdfs:comment>cloud_base refers to the base of the lowest cloud. Convective cloud is that produced by the convection schemes in an atmosphere model.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#StressOrPressure"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#surface_partial_pressure_of_carbon_dioxide_in_air">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#partialPressure"/>
+    <rdfs:label>surface partial pressure of carbon dioxide in air</rdfs:label>
+    <rdfs:comment>The surface called "surface" means the lower boundary of the atmosphere. The partial pressure of a gaseous constituent of air is the pressure which it alone would exert with unchanged temperature and number of moles per unit volume.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#StressOrPressure"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#downward_y_stress_at_sea_ice_base">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#stress"/>
+    <rdfs:label>downward y stress at sea ice base</rdfs:label>
+    <rdfs:comment>"y" indicates a vector component along the grid y-axis, when this is not true latitude, positive with increasing y. "Downward" indicates a vector component which is positive when directed downward (negative upward).</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#StressOrPressure"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#sound_pressure_in_air">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#soundPressure"/>
+    <rdfs:label>sound pressure in air</rdfs:label>
+    <rdfs:comment>Sound pressure is the difference from the local ambient pressure caused by a sound wave at a particular location and time.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#StressOrPressure"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#downward_northward_stress_at_sea_ice_base">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#stress"/>
+    <rdfs:label>downward northward stress at sea ice base</rdfs:label>
+    <rdfs:comment>"Northward" indicates a vector component which is positive when directed northward (negative southward). "Downward" indicates a vector component which is positive when directed downward (negative upward). "Downward northward" indicates the ZY component of a tensor. A downward northward stress is a downward flux of northward momentum, which accelerates the lower medium northward and the upper medium southward.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#StressOrPressure"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#difference_of_air_pressure_from_model_reference">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#pressure"/>
+    <rdfs:label>difference of air pressure from model reference</rdfs:label>
+    <rdfs:comment>In some atmosphere models, the difference of air pressure from model reference is a prognostic variable, instead of the air pressure itself. The model reference air pressure is a model-dependent constant.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#StressOrPressure"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#air_pressure_at_convective_cloud_top">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#pressure"/>
+    <rdfs:label>air pressure at convective cloud top</rdfs:label>
+    <rdfs:comment>cloud_top refers to the top of the highest cloud. Convective cloud is that produced by the convection schemes in an atmosphere model.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#StressOrPressure"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#eastward_momentum_flux_correction">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#stressOrPressure"/>
+    <rdfs:label>eastward momentum flux correction</rdfs:label>
+    <rdfs:comment>"Eastward" indicates a vector component which is positive when directed eastward (negative westward). Momentum flux is dimensionally equivalent to stress and pressure. It is a tensor quantity. Flux correction is also called "flux adjustment". A positive flux correction is downward i.e. added to the ocean. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#StressOrPressure"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#atmosphere_eastward_stress_due_to_gravity_wave_drag">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#stress"/>
+    <rdfs:label>atmosphere eastward stress due to gravity wave drag</rdfs:label>
+    <rdfs:comment>The specification of a physical process by the phrase due_to_process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. "Eastward" indicates a vector component which is positive when directed eastward (negative westward). Atmosphere_Xward_stress is a stress which tends to accelerate the atmosphere in direction X.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#StressOrPressure"/>
+  </skos:Concept>
+</rdf:RDF>

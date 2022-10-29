@@ -1,0 +1,2271 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://sparql.cwrc.ca/ontologies/cwrc"/>
+  <owl:ObjectProperty rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#hasOccupation">
+    <rdfs:label xml:lang="en">has occupation</rdfs:label>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#Occupation">
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+        <rdfs:label xml:lang="en">occupation</rdfs:label>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#hasFamilyBasedOccupation">
+    <rdfs:label xml:lang="en">has family-based occupation</rdfs:label>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:range rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#hasVolunteerOccupation">
+    <rdfs:label xml:lang="en">has volunteer occupation</rdfs:label>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:range rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#hasPaidOccupation">
+    <rdfs:label xml:lang="en">has paid occupation</rdfs:label>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:range rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#metallurgy">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">metallurgy</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#propagandist">
+    <skos:broaderTransitive>
+      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#writer">
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+        <rdfs:label xml:lang="en">writer</rdfs:label>
+        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+      </skos:Concept>
+    </skos:broaderTransitive>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive>
+      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#politics">
+        <rdfs:label xml:lang="en">politics</rdfs:label>
+        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+      </skos:Concept>
+    </skos:broaderTransitive>
+    <rdfs:label xml:lang="en">propagandist</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#researcher">
+    <skos:related>
+      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#academic">
+        <skos:broaderTransitive>
+          <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#education">
+            <rdfs:label xml:lang="en">education</rdfs:label>
+            <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+            <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+          </skos:Concept>
+        </skos:broaderTransitive>
+        <rdfs:label xml:lang="en">academic</rdfs:label>
+        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+      </skos:Concept>
+    </skos:related>
+    <skos:related>
+      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#intellectual">
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+        <skos:related rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#academic"/>
+        <rdfs:label xml:lang="en">public intellectual</rdfs:label>
+        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+      </skos:Concept>
+    </skos:related>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:related>
+      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#scientist">
+        <skos:related rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#academic"/>
+        <rdfs:label xml:lang="en">scientist</rdfs:label>
+        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+      </skos:Concept>
+    </skos:related>
+    <rdfs:label xml:lang="en">researcher</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#judge">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">judge</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#housePainter">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">house painter</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#bursar">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">bursar</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#gentleman">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">gentleman</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#archaeologist">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">archaeologist</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#pottery">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive>
+      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#skilledTrade">
+        <rdfs:label xml:lang="en">skilled trade</rdfs:label>
+        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+      </skos:Concept>
+    </skos:broaderTransitive>
+    <rdfs:label xml:lang="en">pottery</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#computerScientist">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#scientist"/>
+    <rdfs:label xml:lang="en">computer scientist</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#hospitality">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">hospitality</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#vintner">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">vintner</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#gardener">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">gardener</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#maidOfHonour">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">maid of honour</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#insurance">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">insurance</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#classicist">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">classicist</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#firefighter">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">firefighter</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#catering">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive>
+      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#cooking">
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+        <rdfs:label xml:lang="en">cooking</rdfs:label>
+        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+      </skos:Concept>
+    </skos:broaderTransitive>
+    <rdfs:label xml:lang="en">catering</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#lobbyist">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#politics"/>
+    <rdfs:label xml:lang="en">lobbyist</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#writerInResidence">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">writer In residence</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#wetNurse">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive>
+      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#nursing">
+        <skos:broaderTransitive>
+          <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#healthCareProvider">
+            <rdfs:label xml:lang="en">healthcare provider</rdfs:label>
+            <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+            <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+          </skos:Concept>
+        </skos:broaderTransitive>
+        <rdfs:label xml:lang="en">nursing</rdfs:label>
+        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+      </skos:Concept>
+    </skos:broaderTransitive>
+    <rdfs:label xml:lang="en">wet nurse</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#intelligenceWork">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">intelligence work</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#consultant">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">consultant</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#religiousStudies">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">religious studies</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#lawyer">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive>
+      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#legalWork">
+        <rdfs:label xml:lang="en">legal work</rdfs:label>
+        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+      </skos:Concept>
+    </skos:broaderTransitive>
+    <rdfs:label xml:lang="en">lawyer</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#hunter">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive>
+      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#sports">
+        <rdfs:label xml:lang="en">sports</rdfs:label>
+        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+      </skos:Concept>
+    </skos:broaderTransitive>
+    <rdfs:label xml:lang="en">hunter</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#drinking">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">drinking</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#philanthropicVisitor">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">philanthropic visitor</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#knight">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive>
+      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#aristocrat">
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+        <rdfs:label xml:lang="en">aristocrat</rdfs:label>
+        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+      </skos:Concept>
+    </skos:broaderTransitive>
+    <rdfs:label xml:lang="en">knight</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#lordChamberlain">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive>
+      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#higherGovernment">
+        <skos:broaderTransitive>
+          <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#government">
+            <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+            <skos:related rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#politics"/>
+            <rdfs:label xml:lang="en">government</rdfs:label>
+            <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+          </skos:Concept>
+        </skos:broaderTransitive>
+        <rdfs:label xml:lang="en">higher government</rdfs:label>
+        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+      </skos:Concept>
+    </skos:broaderTransitive>
+    <rdfs:label xml:lang="en">lord chamberlain</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#elevatorOperator">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">elevator operator</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#actorManager">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive>
+      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#theatreWork">
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+        <rdfs:label xml:lang="en">theatre work</rdfs:label>
+        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+      </skos:Concept>
+    </skos:broaderTransitive>
+    <rdfs:label xml:lang="en">actor manager</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#beautician">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">beautician</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#headOfState">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#higherGovernment"/>
+    <rdfs:label xml:lang="en">head of state</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#salter">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">salter</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#walking">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">walking</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#radioOperator">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">radio operator</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#airman">
+    <skos:broaderTransitive>
+      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#military">
+        <rdfs:label xml:lang="en">military</rdfs:label>
+        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+      </skos:Concept>
+    </skos:broaderTransitive>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive>
+      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#pilot">
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+        <rdfs:label xml:lang="en">pilot</rdfs:label>
+        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+      </skos:Concept>
+    </skos:broaderTransitive>
+    <rdfs:label xml:lang="en">airman</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#handwritingExpert">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">handwriting expert</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#literaryExecutor">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">literary executor</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#pornographer">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">pornographer</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#beauty">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">beauty</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#settler">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">settler</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#hostess">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">hostess</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#socializer">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">socializer</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#cleaner">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:closeMatch>
+      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#domesticServant">
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+        <skos:broaderTransitive>
+          <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#servant">
+            <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+            <rdfs:label xml:lang="en">servant</rdfs:label>
+            <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+          </skos:Concept>
+        </skos:broaderTransitive>
+        <rdfs:label xml:lang="en">domestic servant</rdfs:label>
+        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+      </skos:Concept>
+    </skos:closeMatch>
+    <rdfs:label xml:lang="en">cleaner</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#anti-Suffrage">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#politics"/>
+    <rdfs:label xml:lang="en">anti-suffrage</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#propertyAgent">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">land agent</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#tourGuide">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">tour guide</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#parishWork">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive>
+      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#religious">
+        <rdfs:label xml:lang="en">religious</rdfs:label>
+        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+      </skos:Concept>
+    </skos:broaderTransitive>
+    <rdfs:label xml:lang="en">parish work</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#fundraiser">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">fundraiser</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#eventOrganizer">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">event organizer</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#writingGroupParticipant">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">writing group participant</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#socialScientist">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">social scientist</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#mason">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#skilledTrade"/>
+    <rdfs:label xml:lang="en">mason</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#cricket">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#sports"/>
+    <rdfs:label xml:lang="en">cricket</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#drugUse">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">drug abuse</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#retail">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">retail</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#clothworker">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive>
+      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#clothingProduction">
+        <rdfs:label xml:lang="en">clothing production</rdfs:label>
+        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+      </skos:Concept>
+    </skos:broaderTransitive>
+    <rdfs:label xml:lang="en">clothworker</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#associationInvolvement">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">association involvement</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#auctioneer">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">auctioneer</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#typeSetter">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive>
+      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#bookProduction">
+        <skos:broaderTransitive>
+          <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#publishing">
+            <rdfs:label xml:lang="en">publishing</rdfs:label>
+            <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+            <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+          </skos:Concept>
+        </skos:broaderTransitive>
+        <rdfs:label xml:lang="en">book production</rdfs:label>
+        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+      </skos:Concept>
+    </skos:broaderTransitive>
+    <rdfs:label xml:lang="en">type setter</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#engraver">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">engraver</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#fisherman">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">fisherman</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#optician">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">optician</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#bibliophile">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">bibliophile</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#equineActivity">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">equine activity</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#needlework">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:related>
+      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#domesticWork">
+        <rdfs:label xml:lang="en">domestic work</rdfs:label>
+        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+      </skos:Concept>
+    </skos:related>
+    <rdfs:label xml:lang="en">needlework</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#salesperson">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">salesperson</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#companion">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">companion</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#astronomer">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#scientist"/>
+    <rdfs:label xml:lang="en">astronomer</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#reading">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">reading</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#baker">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#skilledTrade"/>
+    <rdfs:label xml:lang="en">baker</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#advertising">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">advertising</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#lithographer">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#skilledTrade"/>
+    <rdfs:label xml:lang="en">lithographer</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#fellow">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">fellow</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#refugeeWork">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive>
+      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#socialWork">
+        <rdfs:label xml:lang="en">social work</rdfs:label>
+        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+      </skos:Concept>
+    </skos:broaderTransitive>
+    <rdfs:label xml:lang="en">refugee work</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#settlementWork">
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#socialWork"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#politics"/>
+    <rdfs:label xml:lang="en">settlement work</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#director">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">director</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#trader">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">trader</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#taxOfficial">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive>
+      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#governmentOfficial">
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+        <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#government"/>
+        <rdfs:label xml:lang="en">government official</rdfs:label>
+        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+      </skos:Concept>
+    </skos:broaderTransitive>
+    <rdfs:label xml:lang="en">tax official</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#draper">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">draper</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#abolitionist">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive>
+      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#activist">
+        <rdfs:label xml:lang="en">activist</rdfs:label>
+        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+      </skos:Concept>
+    </skos:broaderTransitive>
+    <rdfs:label xml:lang="en">abolitionist</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#communeOrganizer">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#politics"/>
+    <rdfs:label xml:lang="en">commune organizer</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#connoisseur">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">connoisseur</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#childcareWork">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">childcare work</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#corporateDirector">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">corporate or organizational director</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#confectioner">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">confectioner</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#jacobitism">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#politics"/>
+    <rdfs:label xml:lang="en">Jacobitism</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#beggar">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">beggar</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#charityWorker">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:related>
+      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#philanthropist">
+        <rdfs:label xml:lang="en">philanthropist</rdfs:label>
+        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+      </skos:Concept>
+    </skos:related>
+    <rdfs:label xml:lang="en">charity worker</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#journalist">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">journalist</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#visualArtist">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">visual artist</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#criminal">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">criminal</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#engineering">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">engineering</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#italianNationalism">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#politics"/>
+    <rdfs:label xml:lang="en">Italian nationalism</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#mapping">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">mapping</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#ironmonger">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">ironmonger</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#watchmaker">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#skilledTrade"/>
+    <rdfs:label xml:lang="en">watchmaker</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#wife">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">wife</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#munitionsWorker">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive>
+      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#warWork">
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+        <rdfs:label xml:lang="en">war work</rdfs:label>
+        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+      </skos:Concept>
+    </skos:broaderTransitive>
+    <rdfs:label xml:lang="en">munitions worker</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#miser">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">miser</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#fishmonger">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">fishmonger</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#nun">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">nun</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#manufacturer">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">manufacturer</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#warehouseWork">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">warehouse work</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#milliner">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">milliner</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#calligraphy">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">calligraphy</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#temperanceMovement">
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#politics"/>
+    <skos:related>
+      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#conservatism">
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+        <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#politics"/>
+        <rdfs:label xml:lang="en">conservatism</rdfs:label>
+        <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+      </skos:Concept>
+    </skos:related>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:related>
+      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#feminism">
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+        <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#politics"/>
+        <rdfs:label xml:lang="en">feminism</rdfs:label>
+        <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+      </skos:Concept>
+    </skos:related>
+    <rdfs:label xml:lang="en">temperance movement</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#liaisonOfficer">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">liaison officer</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#trustee">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">trustee</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#childcare">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">childcare</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#coopOrganizer">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#politics"/>
+    <rdfs:label xml:lang="en">co-op organizer</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#careGiver">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">care giver</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#labourUnion">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">labour union</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#socialism">
+    <skos:related>
+      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#communism">
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+        <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#politics"/>
+        <rdfs:label xml:lang="en">communism</rdfs:label>
+        <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+      </skos:Concept>
+    </skos:related>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#politics"/>
+    <rdfs:label xml:lang="en">socialism</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#architecture">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">architecture</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#factoryWorker">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">factory worker</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#brewer">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#skilledTrade"/>
+    <rdfs:label xml:lang="en">brewer</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#publicReader">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive>
+      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#publicSpeaker">
+        <skos:broaderTransitive>
+          <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#performer">
+            <rdfs:label xml:lang="en">performer</rdfs:label>
+            <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+            <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+          </skos:Concept>
+        </skos:broaderTransitive>
+        <rdfs:label xml:lang="en">public speaker</rdfs:label>
+        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+      </skos:Concept>
+    </skos:broaderTransitive>
+    <rdfs:label xml:lang="en">public reader</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#student">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">student</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#editing">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">editing</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#reviewer">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#writer"/>
+    <rdfs:label xml:lang="en">reviewer</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#litigant">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">litigant</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#producer">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">producer</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#poetLaureate">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">poet laureate</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#mayor">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#politics"/>
+    <rdfs:label xml:lang="en">mayor</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#mistress">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:related>
+      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#sexWorker">
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+        <rdfs:label xml:lang="en">sex worker</rdfs:label>
+        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+      </skos:Concept>
+    </skos:related>
+    <rdfs:label xml:lang="en">mistress</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#skinner">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive>
+      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#leatherWorker">
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+        <skos:broaderTransitive>
+          <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#craftsperson">
+            <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+            <rdfs:label xml:lang="en">craftsperson</rdfs:label>
+            <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+          </skos:Concept>
+        </skos:broaderTransitive>
+        <rdfs:label xml:lang="en">leather worker</rdfs:label>
+        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+      </skos:Concept>
+    </skos:broaderTransitive>
+    <rdfs:label xml:lang="en">skinner</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#chaperone">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">chaperone</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#politicalScience">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:related rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#politics"/>
+    <rdfs:label xml:lang="en">political science</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#attorneyGeneral">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#governmentOfficial"/>
+    <rdfs:label xml:lang="en">attorney general</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#haberdasher">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">haberdasher</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#radioIndustry">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive>
+      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#broadcasting">
+        <rdfs:label xml:lang="en">broadcaster</rdfs:label>
+        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+      </skos:Concept>
+    </skos:broaderTransitive>
+    <rdfs:label xml:lang="en">radio industry</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#glassWorker">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">glass worker</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#courtier">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:related rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#aristocrat"/>
+    <rdfs:label xml:lang="en">courtier</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#occultism">
+    <rdfs:label xml:lang="en">occultism/theosophism</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">occultism</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#navy">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">naval rating</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#reliefWork">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#socialWork"/>
+    <rdfs:label xml:lang="en">relief work</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#refugee">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">refugee</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#surveyor">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">surveyor</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#missionaryWork">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#religious"/>
+    <rdfs:label xml:lang="en">missionary work</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#curator">
+    <skos:related>
+      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#exhibitions">
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+        <rdfs:label xml:lang="en">exhibitions</rdfs:label>
+        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+      </skos:Concept>
+    </skos:related>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:related>
+      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#archivist">
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+        <skos:related>
+          <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#librarian">
+            <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+            <rdfs:label xml:lang="en">librarian</rdfs:label>
+            <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+          </skos:Concept>
+        </skos:related>
+        <rdfs:label xml:lang="en">archivist</rdfs:label>
+        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+      </skos:Concept>
+    </skos:related>
+    <rdfs:label xml:lang="en">curator</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#magistrate">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#governmentOfficial"/>
+    <rdfs:label xml:lang="en">magistrate</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#collector">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">collector</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#boardingHouseKeeper">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive>
+      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#housekeeper">
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+        <skos:closeMatch>
+          <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#housework">
+            <rdfs:label xml:lang="en">housework</rdfs:label>
+            <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+            <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+          </skos:Concept>
+        </skos:closeMatch>
+        <rdfs:label xml:lang="en">housekeeper</rdfs:label>
+        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+      </skos:Concept>
+    </skos:broaderTransitive>
+    <rdfs:label xml:lang="en">boarding house keeper</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#clericalWork">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">clerical work</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#administrator">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">administrator</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#dentist">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#healthCareProvider"/>
+    <rdfs:label xml:lang="en">dentist</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#chairperson">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">chairperson</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#patriot">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">patriot</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#translator">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">translator</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#illustrator">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">illustrator</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#dance">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">dance</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#committeeMember">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">committee member</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#geologist">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#scientist"/>
+    <rdfs:label xml:lang="en">geologist</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#colonialOfficial">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#government"/>
+    <rdfs:label xml:lang="en">colonial official</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#smuggler">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">smuggler</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#billCollector">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">bill collector</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#meteorologist">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">meteorologist</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#governorGeneral">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#higherGovernment"/>
+    <rdfs:label xml:lang="en">governor general</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#teacher">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#education"/>
+    <rdfs:label xml:lang="en">teacher</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#metalWork">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">metal work</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#midwife">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#healthCareProvider"/>
+    <rdfs:label xml:lang="en">midwife</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#literaryAssistant">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">literary assistant</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#composer">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive>
+      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#music">
+        <skos:related rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#performer"/>
+        <rdfs:label xml:lang="en">music</rdfs:label>
+        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+      </skos:Concept>
+    </skos:broaderTransitive>
+    <rdfs:label xml:lang="en">composer</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#orphanageWork">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#socialWork"/>
+    <rdfs:label xml:lang="en">orphanage work</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#gambling">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">gambling</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#musicologist">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">musicologist</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#explorer">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">explorer</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#saint">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#religious"/>
+    <rdfs:label xml:lang="en">saint</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#merchantTaylor">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive>
+      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#tailor">
+        <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#clothingProduction"/>
+        <rdfs:label xml:lang="en">tailor</rdfs:label>
+        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+      </skos:Concept>
+    </skos:broaderTransitive>
+    <rdfs:label xml:lang="en">merchant taylor</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#orderly">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">orderly</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#mountaineering">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#sports"/>
+    <rdfs:label xml:lang="en">mountaineering</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#shipping">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive>
+      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#transportationWork">
+        <rdfs:label xml:lang="en">transportation work</rdfs:label>
+        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+      </skos:Concept>
+    </skos:broaderTransitive>
+    <rdfs:label xml:lang="en">shipping</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#martyr">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">martyr</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#botanist">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive>
+      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#biologist">
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+        <skos:broaderTransitive>
+          <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#lifeScientist">
+            <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#scientist"/>
+            <rdfs:label xml:lang="en">life scientist</rdfs:label>
+            <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+            <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+          </skos:Concept>
+        </skos:broaderTransitive>
+        <rdfs:label xml:lang="en">biologist</rdfs:label>
+        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+      </skos:Concept>
+    </skos:broaderTransitive>
+    <rdfs:label xml:lang="en">botanist</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#contractor">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">contractor</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#appraiser">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">appraiser</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#chess">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">chess</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#automobileIndustry">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#transportationWork"/>
+    <rdfs:label xml:lang="en">automobileIndustry</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#cyclist">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#sports"/>
+    <rdfs:label xml:lang="en">bicyclist</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#singer">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">singer</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#fosterParent">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">foster-parent</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#matron">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">matron</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#riding">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#sports"/>
+    <rdfs:label xml:lang="en">riding</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#governess">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#education"/>
+    <rdfs:label xml:lang="en">governess</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#grocer">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">grocer</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#reformer">
+    <skos:related rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#socialWork"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:related rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#politics"/>
+    <rdfs:label xml:lang="en">reformer</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#treasurer">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">treasurer</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#professor">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#academic"/>
+    <rdfs:label xml:lang="en">professor</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#philosopher">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:related rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#academic"/>
+    <rdfs:label xml:lang="en">philosopher</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#veterinaryWork">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">veterinary work</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#regionalGovernment">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#government"/>
+    <rdfs:label xml:lang="en">regional government</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#bankrupt">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">bankrupt</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#ambulanceWorker">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">ambulance worker</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#diver">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">diver</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#slave">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">slave</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#pollster">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">pollster</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#geographer">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">geographer</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#mentor">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">mentor</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#radicalism">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#politics"/>
+    <rdfs:label xml:lang="en">radicalism</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#manualLabourer">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">manual labourer</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#houseSitter">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">house sitter</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#censor">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">censor</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#deliveryPerson">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">delivery person</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#genealogist">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">genealogist</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#literaryPrizeAdjudicator">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive>
+      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#adjudicator">
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+        <rdfs:label xml:lang="en">adjudicator</rdfs:label>
+        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+      </skos:Concept>
+    </skos:broaderTransitive>
+    <rdfs:label xml:lang="en">literary prize adjudicator</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#cobbler">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#clothingProduction"/>
+    <rdfs:label xml:lang="en">cobbler</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#localGovernment">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#government"/>
+    <rdfs:label xml:lang="en">local government</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#miller">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">miller</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#volunteer">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#philanthropist"/>
+    <rdfs:label xml:lang="en">volunteer</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#model">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">model</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#diplomat">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:related rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#politics"/>
+    <rdfs:label xml:lang="en">diplomat</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#copyist">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:related>
+      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#transcriber">
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+        <rdfs:label xml:lang="en">transcriber</rdfs:label>
+        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+      </skos:Concept>
+    </skos:related>
+    <rdfs:label xml:lang="en">copyist</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#whaler">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">whaler</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#physiognomist">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">physiognomist</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#upholsterer">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#skilledTrade"/>
+    <rdfs:label xml:lang="en">upholsterer</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#founder">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">founder</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#postalWorker">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">postal worker</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#prisoner">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">prisoner</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#lordChancellor">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">lord chancellor</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#logger">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">logger</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#redCross">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#healthCareProvider"/>
+    <rdfs:label xml:lang="en">red cross</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#medicalDoctor">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#healthCareProvider"/>
+    <rdfs:label xml:lang="en">medical doctor</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#counsellor">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">counsellor</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#artsAdvocate">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive>
+      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#advocate">
+        <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#politics"/>
+        <rdfs:label xml:lang="en">advocate</rdfs:label>
+        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+      </skos:Concept>
+    </skos:broaderTransitive>
+    <rdfs:label xml:lang="en">literature advocate</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#filmIndustry">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">film industry</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#spinner">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#skilledTrade"/>
+    <rdfs:label xml:lang="en">spinner</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#businessOwner">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive>
+      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#business">
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+        <rdfs:label xml:lang="en">business</rdfs:label>
+        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+      </skos:Concept>
+    </skos:broaderTransitive>
+    <rdfs:label xml:lang="en">business owner</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#literaryForger">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">literary forger</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#dairyWork">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive>
+      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#farming">
+        <rdfs:label xml:lang="en">farming</rdfs:label>
+        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+      </skos:Concept>
+    </skos:broaderTransitive>
+    <rdfs:label xml:lang="en">dairy work</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#blacksmith">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#skilledTrade"/>
+    <rdfs:label xml:lang="en">blacksmith</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#pacifist">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#politics"/>
+    <rdfs:label xml:lang="en">pacifist</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#bookclubParticipatant">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive>
+      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#literaryGroupParticipant">
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+        <rdfs:label xml:lang="en">literary group participant</rdfs:label>
+        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+      </skos:Concept>
+    </skos:broaderTransitive>
+    <rdfs:label xml:lang="en">bookclub participation</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#machineWork">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">machineWork</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#boardMember">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">board member</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#slaveOwner">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">slave owner</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#telephoneOperator">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">telephone operator</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#tinker">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">tinker</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#inventor">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">inventor</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#manservant">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#servant"/>
+    <rdfs:label xml:lang="en">manservant</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#accountant">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:related>
+      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#finance">
+        <skos:related>
+          <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#investor">
+            <rdfs:label xml:lang="en">investor</rdfs:label>
+            <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+            <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+          </skos:Concept>
+        </skos:related>
+        <rdfs:label xml:lang="en">finance</rdfs:label>
+        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+      </skos:Concept>
+    </skos:related>
+    <rdfs:label xml:lang="en">accountant</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#bookbinder">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#bookProduction"/>
+    <rdfs:label xml:lang="en">bookbinder</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#storyteller">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">storyteller</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#urbanPlanning">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">urban planning</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#unskilledLabourer">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">unskilled labourer</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#linguist">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:related rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#academic"/>
+    <rdfs:label xml:lang="en">linguist</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#employmentAgent">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">employment agent</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#railwayWork">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#transportationWork"/>
+    <rdfs:label xml:lang="en">railway work</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#aircraftIndustry">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">aircraft industry</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#televisionIndustry">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#broadcasting"/>
+    <rdfs:label xml:lang="en">television industry</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#elocutionist">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">elucutionist</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#army">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">army</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#coastGuard">
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#military"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive>
+      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#lawEnforcement">
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+        <rdfs:label xml:lang="en">law enforcement</rdfs:label>
+        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+      </skos:Concept>
+    </skos:broaderTransitive>
+    <rdfs:label xml:lang="en">coastguard</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#mentalHealthProfessional">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">mental health professional</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#unitarianism">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#religious"/>
+    <rdfs:label xml:lang="en">Unitarianism</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#construction">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">construction</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#coach">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#sports"/>
+    <rdfs:label xml:lang="en">coach</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#miner">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">miner</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#butcher">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">butcher</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#goldsmith">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive>
+      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#jeweller">
+        <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#skilledTrade"/>
+        <rdfs:label xml:lang="en">jeweller</rdfs:label>
+        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+      </skos:Concept>
+    </skos:broaderTransitive>
+    <rdfs:label xml:lang="en">goldsmith</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#statistician">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive>
+      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#mathematics">
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+        <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#scientist"/>
+        <rdfs:label xml:lang="en">mathematics</rdfs:label>
+        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+      </skos:Concept>
+    </skos:broaderTransitive>
+    <rdfs:label xml:lang="en">statistician</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#witness">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">witness</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#historian">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">historian</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#educationalAdministration">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#education"/>
+    <rdfs:label xml:lang="en">educational administration</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#slaver">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">slaver</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#patron">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#philanthropist"/>
+    <rdfs:label xml:lang="en">patron</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#hypnotist">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">hypnotist</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#interviewer">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">interviewer</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#firstAid">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">first aid</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#rebel">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#activist"/>
+    <rdfs:label xml:lang="en">rebel</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#monarchism">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#politics"/>
+    <rdfs:label xml:lang="en">monarchism</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#propertyOwner">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">property owner</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#glover">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#clothingProduction"/>
+    <rdfs:label xml:lang="en">glover</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#immunologist">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">immunologist</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#gastronome">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">gastronome</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#literaryConservationist">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive>
+      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#conservationist">
+        <rdfs:label xml:lang="en">conservationist</rdfs:label>
+        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+      </skos:Concept>
+    </skos:broaderTransitive>
+    <rdfs:label xml:lang="en">literary conservationist</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#bullionCarrier">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">bullion carrier</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#airForce">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">airForce</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#airRaidWarden">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#warWork"/>
+    <rdfs:label xml:lang="en">air raid warden</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#commissioner">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#governmentOfficial"/>
+    <rdfs:label xml:lang="en">commissioner</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#artsAdministrator">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive>
+      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#manager">
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+        <rdfs:label xml:lang="en">manager</rdfs:label>
+        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+      </skos:Concept>
+    </skos:broaderTransitive>
+    <rdfs:label xml:lang="en">arts manager</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#prospector">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive>
+      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#mining">
+        <rdfs:label xml:lang="en">mining</rdfs:label>
+        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+      </skos:Concept>
+    </skos:broaderTransitive>
+    <rdfs:label xml:lang="en">prospector</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#politicalHost">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">politicalHost</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#naturalist">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">naturalist</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#employer">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">employer</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#designer">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">designer</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#masterOfTheRevels">
+    <skos:related rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#theatreWork"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:related rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#government"/>
+    <rdfs:label xml:lang="en">master or mistress of the revels</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#monarch">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#higherGovernment"/>
+    <rdfs:label xml:lang="en">monarch</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#server">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">server</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#welder">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">welder</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#yeoman-farmer">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#farming"/>
+    <rdfs:label xml:lang="en">yeoman farmer</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#prophet">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#religious"/>
+    <rdfs:label xml:lang="en">prophet</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#assistant">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">assistant</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#numismatist">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">numismatist</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#ironmaster">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">ironmaster</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#cooper">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">cooper</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#photography">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">photography</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#dressmaking">
+    <skos:related rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#tailor"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#clothingProduction"/>
+    <rdfs:label xml:lang="en">dressmaking</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#foodDistribution">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive>
+      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#merchant">
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+        <rdfs:label xml:lang="en">merchant</rdfs:label>
+        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+      </skos:Concept>
+    </skos:broaderTransitive>
+    <rdfs:label xml:lang="en">food distribution</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#chemist">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#scientist"/>
+    <rdfs:label xml:lang="en">chemist</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#rescueWork">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">rescue work</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#religiousOfficial">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#religious"/>
+    <rdfs:label xml:lang="en">religiousOfficial</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#mercer">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">mercer</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#pharmacist">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">pharmacist</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#timberTrade">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">timber trade</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#guardian">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">guardian</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#laundryWorker">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">laundry worker</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#weaver">
+    <skos:broaderTransitive>
+      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#textiles">
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+        <rdfs:label xml:lang="en">textiles</rdfs:label>
+        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+      </skos:Concept>
+    </skos:broaderTransitive>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#skilledTrade"/>
+    <rdfs:label xml:lang="en">weaver</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#cartoonist">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">cartoonist</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#technician">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">technician</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#decoder">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">decoder</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#dockyardWork">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">dockyard work</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#critic">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#writer"/>
+    <rdfs:label xml:lang="en">critic</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#seaCaptain">
+    <skos:broaderTransitive>
+      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#sailor">
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+        <rdfs:label xml:lang="en">sailor</rdfs:label>
+        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+      </skos:Concept>
+    </skos:broaderTransitive>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive>
+      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#captain">
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+        <rdfs:label xml:lang="en">captain</rdfs:label>
+        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+      </skos:Concept>
+    </skos:broaderTransitive>
+    <rdfs:label xml:lang="en">sea captain</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#politicalSpeaker">
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#publicSpeaker"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#politics"/>
+    <rdfs:label xml:lang="en">political speaker</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#pawnbroker">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">pawnbroker</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#literaryAgent">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">literary agent</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#memberOfParliament">
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#higherGovernment"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#politics"/>
+    <rdfs:label xml:lang="en">member of parliament</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#printing">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">printing</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#humanitarianWork">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">humanitarian work</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#alternativeMedicine">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">alternative medicine</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#agent">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">agent</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#literaryScholar">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">literary scholar</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#fashion">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">fashion</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#plumber">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#skilledTrade"/>
+    <rdfs:label xml:lang="en">plumber</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#travelling">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">travelling</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#dataProcessing">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:related>
+      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#computerWork">
+        <skos:related rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#dataProcessing"/>
+        <rdfs:label xml:lang="en">computer work</rdfs:label>
+        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+      </skos:Concept>
+    </skos:related>
+    <rdfs:label xml:lang="en">data processing</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation"/>
+  </skos:Concept>
+</rdf:RDF>

@@ -1,0 +1,36 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://purl.oclc.org/NET/ldr/ns#"/>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ldr/ns#SPARQLASK">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ldr/ns#"/>
+    <rdfs:comment xml:lang="en">Access through the SPARQL ASK query form</rdfs:comment>
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="http://purl.oclc.org/NET/ldr/ns#SPARQLAccess">
+        <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ldr/ns#"/>
+      </skos:ConceptScheme>
+    </skos:inScheme>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ldr/ns#SPARQLDESCRIBE">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ldr/ns#"/>
+    <rdfs:comment xml:lang="en">Access through the SPARQL DESCRIBE query form</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ldr/ns#SPARQLAccess"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ldr/ns#SPARQLCONSTRUCT">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ldr/ns#"/>
+    <rdfs:comment xml:lang="en">Access through the SPARQL CONSTRUCT query form</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ldr/ns#SPARQLAccess"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ldr/ns#SPARQLSELECT">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ldr/ns#"/>
+    <rdfs:comment xml:lang="en">Access through the SPARQL SELECT query form</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ldr/ns#SPARQLAccess"/>
+  </skos:Concept>
+</rdf:RDF>

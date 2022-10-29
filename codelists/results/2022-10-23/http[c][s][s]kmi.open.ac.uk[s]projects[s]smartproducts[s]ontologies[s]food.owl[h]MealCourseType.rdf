@@ -1,0 +1,48 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://kmi.open.ac.uk/projects/smartproducts/ontologies/food.owl"/>
+  <owl:ObjectProperty rdf:about="http://kmi.open.ac.uk/projects/smartproducts/ontologies/food.owl#courseType">
+    <rdfs:domain rdf:resource="http://kmi.open.ac.uk/projects/smartproducts/ontologies/food.owl#MealCourseRole"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://kmi.open.ac.uk/projects/smartproducts/ontologies/food.owl#MealCourseType">
+        <rdfs:isDefinedBy rdf:resource="http://kmi.open.ac.uk/projects/smartproducts/ontologies/food.owl"/>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://kmi.open.ac.uk/projects/smartproducts/ontologies/food.owl#suitableForMealCourse">
+    <rdfs:domain rdf:resource="http://kmi.open.ac.uk/projects/smartproducts/ontologies/food.owl#FoodOrDrinkItem"/>
+    <rdfs:range rdf:resource="http://kmi.open.ac.uk/projects/smartproducts/ontologies/food.owl#MealCourseType"/>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://kmi.open.ac.uk/projects/smartproducts/ontologies/food.owl#SideCourse">
+    <rdfs:isDefinedBy rdf:resource="http://kmi.open.ac.uk/projects/smartproducts/ontologies/food.owl"/>
+    <skos:inScheme rdf:resource="http://kmi.open.ac.uk/projects/smartproducts/ontologies/food.owl#MealCourseType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://kmi.open.ac.uk/projects/smartproducts/ontologies/food.owl#Appetizer">
+    <rdfs:isDefinedBy rdf:resource="http://kmi.open.ac.uk/projects/smartproducts/ontologies/food.owl"/>
+    <skos:inScheme rdf:resource="http://kmi.open.ac.uk/projects/smartproducts/ontologies/food.owl#MealCourseType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://kmi.open.ac.uk/projects/smartproducts/ontologies/food.owl#Drinks">
+    <rdfs:isDefinedBy rdf:resource="http://kmi.open.ac.uk/projects/smartproducts/ontologies/food.owl"/>
+    <skos:inScheme rdf:resource="http://kmi.open.ac.uk/projects/smartproducts/ontologies/food.owl#MealCourseType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://kmi.open.ac.uk/projects/smartproducts/ontologies/food.owl#MainCourse">
+    <rdfs:isDefinedBy rdf:resource="http://kmi.open.ac.uk/projects/smartproducts/ontologies/food.owl"/>
+    <skos:inScheme rdf:resource="http://kmi.open.ac.uk/projects/smartproducts/ontologies/food.owl#MealCourseType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://kmi.open.ac.uk/projects/smartproducts/ontologies/food.owl#Dessert">
+    <rdfs:isDefinedBy rdf:resource="http://kmi.open.ac.uk/projects/smartproducts/ontologies/food.owl"/>
+    <skos:inScheme rdf:resource="http://kmi.open.ac.uk/projects/smartproducts/ontologies/food.owl#MealCourseType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://kmi.open.ac.uk/projects/smartproducts/ontologies/food.owl#Soup">
+    <rdfs:isDefinedBy rdf:resource="http://kmi.open.ac.uk/projects/smartproducts/ontologies/food.owl"/>
+    <skos:inScheme rdf:resource="http://kmi.open.ac.uk/projects/smartproducts/ontologies/food.owl#MealCourseType"/>
+  </skos:Concept>
+</rdf:RDF>

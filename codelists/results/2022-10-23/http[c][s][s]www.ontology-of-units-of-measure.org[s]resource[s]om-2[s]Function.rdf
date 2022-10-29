@@ -1,0 +1,72 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+  <owl:ObjectProperty rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/hasAggregateFunction">
+    <rdfs:label xml:lang="en">has aggregate function</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Quantity"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/Function">
+        <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+        <rdfs:label xml:lang="en">function</rdfs:label>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/first">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">first</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Function"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/median">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">median</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Function"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/last">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">last</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Function"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/maximum">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">maximum</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Function"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/product">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">product</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Function"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/average">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">average</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Function"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/count">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">count</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Function"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/sum">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">sum</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Function"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/minimum">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">minimum</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Function"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/standardDeviation">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <rdfs:label xml:lang="en">standard deviation</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Function"/>
+  </skos:Concept>
+</rdf:RDF>

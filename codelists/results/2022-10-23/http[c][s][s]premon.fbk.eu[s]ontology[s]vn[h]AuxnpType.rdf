@@ -1,0 +1,37 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://premon.fbk.eu/ontology/vn"/>
+  <skos:Concept rdf:about="http://premon.fbk.eu/ontology/vn#np_auxnpType">
+    <rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+    <rdfs:label>NP</rdfs:label>
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="http://premon.fbk.eu/ontology/vn#AuxnpType">
+        <rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+        <rdfs:label xml:lang="en">Auxiliary NP Type</rdfs:label>
+      </skos:ConceptScheme>
+    </skos:inScheme>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://premon.fbk.eu/ontology/vn#oblique2_auxnpType">
+    <rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+    <rdfs:label>Oblique2</rdfs:label>
+    <skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#AuxnpType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://premon.fbk.eu/ontology/vn#oblique_auxnpType">
+    <rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+    <rdfs:label>Oblique</rdfs:label>
+    <skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#AuxnpType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://premon.fbk.eu/ontology/vn#oblique1_auxnpType">
+    <rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+    <rdfs:label>Oblique1</rdfs:label>
+    <skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#AuxnpType"/>
+  </skos:Concept>
+</rdf:RDF>

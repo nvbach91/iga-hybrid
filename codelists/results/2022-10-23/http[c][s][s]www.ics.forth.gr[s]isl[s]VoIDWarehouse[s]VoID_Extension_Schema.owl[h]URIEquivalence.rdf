@@ -1,0 +1,30 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://www.ics.forth.gr/isl/VoIDWarehouse/VoID_Extension_Schema.owl"/>
+  <skos:Concept rdf:about="http://www.ics.forth.gr/isl/VoIDWarehouse/VoID_Extension_Schema.owl#suffixCanonicalization">
+    <rdfs:isDefinedBy rdf:resource="http://www.ics.forth.gr/isl/VoIDWarehouse/VoID_Extension_Schema.owl"/>
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="http://www.ics.forth.gr/isl/VoIDWarehouse/VoID_Extension_Schema.owl#URIEquivalence">
+        <rdfs:isDefinedBy rdf:resource="http://www.ics.forth.gr/isl/VoIDWarehouse/VoID_Extension_Schema.owl"/>
+        <rdfs:label>URI Equivalence</rdfs:label>
+        <rdfs:comment>The notion of Configuration concerns issues that explain how the measurement was done. At this point, and for the requirements at hand, we need two subclasses: the first concerns the way URI equivalence is defined (see URIEquivalence class), while the second (the EntityConfiguration class) concerns how the entities of interest are defined. Regarding the latter the current modeling allows someone to specify the desired set of entities by providing a SPARQL query that returns them.</rdfs:comment>
+      </skos:ConceptScheme>
+    </skos:inScheme>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ics.forth.gr/isl/VoIDWarehouse/VoID_Extension_Schema.owl#exactStringEquality">
+    <rdfs:isDefinedBy rdf:resource="http://www.ics.forth.gr/isl/VoIDWarehouse/VoID_Extension_Schema.owl"/>
+    <skos:inScheme rdf:resource="http://www.ics.forth.gr/isl/VoIDWarehouse/VoID_Extension_Schema.owl#URIEquivalence"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ics.forth.gr/isl/VoIDWarehouse/VoID_Extension_Schema.owl#entityMatching">
+    <rdfs:isDefinedBy rdf:resource="http://www.ics.forth.gr/isl/VoIDWarehouse/VoID_Extension_Schema.owl"/>
+    <skos:inScheme rdf:resource="http://www.ics.forth.gr/isl/VoIDWarehouse/VoID_Extension_Schema.owl#URIEquivalence"/>
+  </skos:Concept>
+</rdf:RDF>

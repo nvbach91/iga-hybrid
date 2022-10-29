@@ -1,0 +1,72 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl"/>
+  <owl:ObjectProperty rdf:about="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl#hasBearerType">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Defines transmission technology.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl#NetworkBearerService"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl#BearerType">
+        <rdfs:isDefinedBy rdf:resource="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Defines transmission technology used to transfer voice or data in network.</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl#UMTS_VideoBearer">
+    <rdfs:isDefinedBy rdf:resource="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Defines bearer capable to tansfer video data in UMTS networks.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl#BearerType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl#USSD">
+    <rdfs:isDefinedBy rdf:resource="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Defines bearer capable to transmit information over the signaling channels of the GSM network.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl#BearerType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl#CSD">
+    <rdfs:isDefinedBy rdf:resource="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Circuit Switched Data (CSD) is the original form of data transmission developed for the time division multiple access (TDMA)-based mobile phone systems like Global System for Mobile Communications (GSM).</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl#BearerType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl#WLANBearer">
+    <rdfs:isDefinedBy rdf:resource="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Defines bearer accessible in wireless LAN networks specified in 802.11 IEEE standars.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl#BearerType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl#EDGE">
+    <rdfs:isDefinedBy rdf:resource="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Defnes Enhanced Data rates for GSM Evolution technology which allows to increase data transmission rate.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl#BearerType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl#HSCSD">
+    <rdfs:isDefinedBy rdf:resource="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Defines High-Speed Circuit-Switched Data, data transmission mechanism in GSM Network, enhancement of CSD.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl#BearerType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl#GPRS">
+    <rdfs:isDefinedBy rdf:resource="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >General Packet Radio Service (GPRS) is a Mobile Data Service available to users of Global System for Mobile Communications (GSM) and IS-136 mobile phones.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl#BearerType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl#SMS_BearerType">
+    <rdfs:isDefinedBy rdf:resource="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Defines transmission technology used in GSM network to transmit SMS messages.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl#BearerType"/>
+  </skos:Concept>
+</rdf:RDF>

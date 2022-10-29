@@ -1,6 +1,6 @@
 <rdf:RDF
-    xmlns:dct="http://purl.org/dc/terms/"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
     xmlns:dc="http://purl.org/dc/elements/1.1/"
     xmlns:owl="http://www.w3.org/2002/07/owl#"
     xmlns:dcmit="http://purl.org/dc/dcmitype/"
@@ -11,18 +11,22 @@
   <owl:Ontology rdf:about="http://data.ign.fr/def/topo"/>
   <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedeterraindesport/BassinDeNatation">
     <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <rdfs:label xml:lang="en">Swimming-pool</rdfs:label>
     <skos:inScheme>
       <skos:ConceptScheme rdf:about="http://data.ign.fr/def/topo#TypeDeTerrainDeSport">
         <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+        <rdfs:label xml:lang="en">Type of sports ground </rdfs:label>
       </skos:ConceptScheme>
     </skos:inScheme>
   </skos:Concept>
   <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedeterraindesport/PisteDeSport">
     <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <rdfs:label xml:lang="en">Sports track</rdfs:label>
     <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeTerrainDeSport"/>
   </skos:Concept>
   <skos:Concept rdf:about="http://data.ign.fr/id/codes/topo/typedeterraindesport/TerrainDeTennis">
     <rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+    <rdfs:label xml:lang="en">Tennis court</rdfs:label>
     <skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeTerrainDeSport"/>
   </skos:Concept>
 </rdf:RDF>

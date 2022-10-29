@@ -1,0 +1,48 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="https://saref.etsi.org/saref4watr/"/>
+  <skos:Concept rdf:about="https://saref.etsi.org/saref4watr/Agriculture">
+    <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4watr/"/>
+    <rdfs:label xml:lang="en">Agriculture</rdfs:label>
+    <rdfs:comment xml:lang="en">Use of water for the farming of plants and livestock.</rdfs:comment>
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="https://saref.etsi.org/saref4watr/WaterUse">
+        <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4watr/"/>
+        <rdfs:label xml:lang="en">Water use</rdfs:label>
+        <rdfs:comment xml:lang="en">This class is used to define the different uses of water.</rdfs:comment>
+      </skos:ConceptScheme>
+    </skos:inScheme>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://saref.etsi.org/saref4watr/Recreation">
+    <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4watr/"/>
+    <rdfs:label xml:lang="en">Recreation</rdfs:label>
+    <rdfs:comment xml:lang="en">Use of water for recreational purposes.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://saref.etsi.org/saref4watr/WaterUse"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://saref.etsi.org/saref4watr/Domestic">
+    <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4watr/"/>
+    <rdfs:label xml:lang="en">Domestic</rdfs:label>
+    <rdfs:comment xml:lang="en">Use of water for domestic purposes.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://saref.etsi.org/saref4watr/WaterUse"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://saref.etsi.org/saref4watr/Aquaculture">
+    <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4watr/"/>
+    <rdfs:label xml:lang="en">Aquaculture</rdfs:label>
+    <rdfs:comment xml:lang="en">Use of water for the farming of fish, crustaceans, molluscs, aquatic plants, algae, and other organisms.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://saref.etsi.org/saref4watr/WaterUse"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://saref.etsi.org/saref4watr/Industry">
+    <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4watr/"/>
+    <rdfs:label xml:lang="en">Industry</rdfs:label>
+    <rdfs:comment xml:lang="en">Use of water for industrial purposes.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://saref.etsi.org/saref4watr/WaterUse"/>
+  </skos:Concept>
+</rdf:RDF>

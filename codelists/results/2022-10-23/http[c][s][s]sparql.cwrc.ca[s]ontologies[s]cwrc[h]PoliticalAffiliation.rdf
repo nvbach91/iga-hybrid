@@ -1,0 +1,1451 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/"
+    xmlns:j.0="http://sparql.cwrc.ca/ontologies/cwrc#">
+  <owl:Ontology rdf:about="http://sparql.cwrc.ca/ontologies/cwrc"/>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#parliamentarianism">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">parliamentarianism</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation">
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+        <rdfs:label xml:lang="en">political affiliation</rdfs:label>
+      </skos:ConceptScheme>
+    </skos:inScheme>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#guelphPartyFlorence">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:related>
+      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#pro-Catholicism">
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+        <rdfs:label xml:lang="en">pro-Catholicism</rdfs:label>
+        <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+      </skos:Concept>
+    </skos:related>
+    <rdfs:label xml:lang="en">Guelph party (Florence)</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#individualism">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">individualism</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#covenanters">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">Covenanters</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#artsAdvocacy">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">arts advocacy</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#anarchism">
+    <skos:related>
+      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#anti-Monarchism">
+        <j.0:contraryTo>
+          <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#monarchism">
+            <rdfs:label xml:lang="en">monarchism</rdfs:label>
+            <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+            <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+            <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+          </skos:Concept>
+        </j.0:contraryTo>
+        <rdfs:label xml:lang="en">anti-monarchism</rdfs:label>
+        <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+      </skos:Concept>
+    </skos:related>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <j.0:contraryTo>
+      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#nationalism">
+        <skos:related>
+          <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#patriotism">
+            <rdfs:label xml:lang="en">patriotism</rdfs:label>
+            <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+            <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+            <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+          </skos:Concept>
+        </skos:related>
+        <rdfs:label xml:lang="en">nationalism</rdfs:label>
+        <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+      </skos:Concept>
+    </j.0:contraryTo>
+    <rdfs:label xml:lang="en">anarchism</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#protestantRule">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">Protestant rule</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#societyOfFriends">
+    <skos:related>
+      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#abolitionism">
+        <j.0:contraryTo>
+          <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#pro-Slavery">
+            <skos:broaderTransitive>
+              <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#racism">
+                <j.0:contraryTo rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#abolitionism"/>
+                <j.0:contraryTo>
+                  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#blackAnti-Oppression">
+                    <skos:related rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#abolitionism"/>
+                    <skos:broaderTransitive>
+                      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#civilRights">
+                        <rdfs:label xml:lang="en">civil rights movement</rdfs:label>
+                        <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+                        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+                        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+                      </skos:Concept>
+                    </skos:broaderTransitive>
+                    <skos:broaderTransitive>
+                      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#racialEquality">
+                        <j.0:contraryTo rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#racism"/>
+                        <rdfs:label xml:lang="en">racial equality</rdfs:label>
+                        <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+                        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+                        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+                      </skos:Concept>
+                    </skos:broaderTransitive>
+                    <rdfs:label xml:lang="en">black anti-oppression movement</rdfs:label>
+                    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+                    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+                    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+                  </skos:Concept>
+                </j.0:contraryTo>
+                <rdfs:label xml:lang="en">racism</rdfs:label>
+                <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+                <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+                <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+              </skos:Concept>
+            </skos:broaderTransitive>
+            <j.0:contraryTo rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#blackAnti-Oppression"/>
+            <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+            <j.0:contraryTo>
+              <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#anti-Racism">
+                <j.0:contraryTo rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#racism"/>
+                <skos:related rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#blackAnti-Oppression"/>
+                <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+                <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#civilRights"/>
+                <rdfs:label xml:lang="en">anti-racism</rdfs:label>
+                <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+                <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+              </skos:Concept>
+            </j.0:contraryTo>
+            <rdfs:label xml:lang="en">pro-slavery</rdfs:label>
+            <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+            <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+          </skos:Concept>
+        </j.0:contraryTo>
+        <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#civilRights"/>
+        <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#racialEquality"/>
+        <skos:broaderTransitive>
+          <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#humanRights">
+            <rdfs:label xml:lang="en">human rights</rdfs:label>
+            <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+            <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+            <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+          </skos:Concept>
+        </skos:broaderTransitive>
+        <rdfs:label xml:lang="en">abolitionism</rdfs:label>
+        <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+      </skos:Concept>
+    </skos:related>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#humanRights"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:related>
+      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#feminism">
+        <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#civilRights"/>
+        <rdfs:label xml:lang="en">feminism</rdfs:label>
+        <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+      </skos:Concept>
+    </skos:related>
+    <rdfs:label xml:lang="en">Society of Friends</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#sabbatarianism">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">Sabbatarianism</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#taxResistance">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:related rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#anti-Monarchism"/>
+    <rdfs:label xml:lang="en">tax resistance</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#antidisestablishmentarianism">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <j.0:contraryTo>
+      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#disestablishmentarianism">
+        <rdfs:label xml:lang="en">disestablishmentarianism</rdfs:label>
+        <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+      </skos:Concept>
+    </j.0:contraryTo>
+    <rdfs:label xml:lang="en">antidisestablishmentarianism</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#anti-Apartheid">
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#racialEquality"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#humanRights"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive>
+      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#socialReform">
+        <rdfs:label xml:lang="en">social reform</rdfs:label>
+        <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+      </skos:Concept>
+    </skos:broaderTransitive>
+    <rdfs:label xml:lang="en">anti-apartheid</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#spanishRepublicanism">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive>
+      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#republicanism">
+        <rdfs:label xml:lang="en">republicanism</rdfs:label>
+        <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+      </skos:Concept>
+    </skos:broaderTransitive>
+    <rdfs:label xml:lang="en">Spanish republicanism</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#welshNationalism">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#nationalism"/>
+    <rdfs:label xml:lang="en">Welsh nationalism</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#girondin">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:related>
+      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#jacobinism">
+        <skos:broaderTransitive>
+          <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#revolutionaryPolitics">
+            <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+            <rdfs:label xml:lang="en">revolutionary</rdfs:label>
+            <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+            <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+          </skos:Concept>
+        </skos:broaderTransitive>
+        <rdfs:label xml:lang="en">Jacobinism</rdfs:label>
+        <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+      </skos:Concept>
+    </skos:related>
+    <rdfs:label xml:lang="en">Girondin</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#philosophicalRadicals">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">Philosophical Radicals</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#multiculturalism">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">multiculturalism</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#anti-masonry">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">anti-masonry</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#anti-Bonapartism">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <j.0:contraryTo>
+      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#bonapartism">
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+        <rdfs:label xml:lang="en">Bonapartism</rdfs:label>
+        <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+      </skos:Concept>
+    </j.0:contraryTo>
+    <rdfs:label xml:lang="en">anti-Bonapartism</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#radicalism">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">radicalism</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#anti-Boer">
+    <j.0:contraryTo>
+      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#pro-BoerWar">
+        <rdfs:label xml:lang="en">pro-Boer War</rdfs:label>
+        <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+      </skos:Concept>
+    </j.0:contraryTo>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:related>
+      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#anti-War">
+        <j.0:contraryTo rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#pro-BoerWar"/>
+        <skos:broaderTransitive>
+          <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#pacifism">
+            <skos:related rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#anti-War"/>
+            <skos:related>
+              <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#anti-Conscriptionism">
+                <skos:related rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#anti-War"/>
+                <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+                <j.0:contraryTo>
+                  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#communism">
+                    <skos:related>
+                      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#maoism">
+                        <rdfs:label xml:lang="en">Maoism</rdfs:label>
+                        <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+                        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+                        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+                      </skos:Concept>
+                    </skos:related>
+                    <skos:related>
+                      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#marxism">
+                        <skos:related rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#revolutionaryPolitics"/>
+                        <rdfs:label xml:lang="en">Marxism</rdfs:label>
+                        <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+                        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+                        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+                      </skos:Concept>
+                    </skos:related>
+                    <j.0:contraryTo>
+                      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#anti-Communism">
+                        <j.0:contraryTo rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#communism"/>
+                        <rdfs:label xml:lang="en">anti-communism</rdfs:label>
+                        <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+                        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+                        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+                      </skos:Concept>
+                    </j.0:contraryTo>
+                    <j.0:contraryTo>
+                      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#liberalism">
+                        <rdfs:label xml:lang="en">liberalism</rdfs:label>
+                        <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+                        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+                        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+                      </skos:Concept>
+                    </j.0:contraryTo>
+                    <rdfs:label xml:lang="en">communism</rdfs:label>
+                    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+                    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+                    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+                  </skos:Concept>
+                </j.0:contraryTo>
+                <rdfs:label xml:lang="en">anti-conscriptionism</rdfs:label>
+                <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+                <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+              </skos:Concept>
+            </skos:related>
+            <rdfs:label xml:lang="en">pacifism</rdfs:label>
+            <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+            <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+            <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+          </skos:Concept>
+        </skos:broaderTransitive>
+        <rdfs:label xml:lang="en">anti-war movement</rdfs:label>
+        <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+      </skos:Concept>
+    </skos:related>
+    <rdfs:label xml:lang="en">anti-Boer politics</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#britishNationalism">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#nationalism"/>
+    <rdfs:label xml:lang="en">British nationalism</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#militarism">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">militarism</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#nonjurorsMovement">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive>
+      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#jacobitism">
+        <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#pro-Catholicism"/>
+        <rdfs:label xml:lang="en">Jacobitism</rdfs:label>
+        <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+      </skos:Concept>
+    </skos:broaderTransitive>
+    <rdfs:label xml:lang="en">nonjurors movement</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#democrat">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">democrat</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#anti-PovertyMovement">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">anti-poverty movement</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#anti-Suffrage">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <j.0:contraryTo>
+      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#suffrage">
+        <j.0:contraryTo>
+          <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#anti-Feminism">
+            <j.0:contraryTo rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#suffrage"/>
+            <j.0:contraryTo rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#feminism"/>
+            <rdfs:label xml:lang="en">anti-feminism</rdfs:label>
+            <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+            <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+            <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+          </skos:Concept>
+        </j.0:contraryTo>
+        <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#socialReform"/>
+        <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#feminism"/>
+        <rdfs:label xml:lang="en">suffrage movement</rdfs:label>
+        <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+      </skos:Concept>
+    </j.0:contraryTo>
+    <rdfs:label xml:lang="en">anti-suffrage</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#anti-Catholicism">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <j.0:contraryTo rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#pro-Catholicism"/>
+    <rdfs:label xml:lang="en">anti-catholicism</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#parliamentaryReform">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">parliamentary reform</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#italianUnification">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">Italian unification</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#homeRule">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">Home rule</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#indianUnification">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">Indian unification</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#anti-CapitalPunishment">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#socialReform"/>
+    <rdfs:label xml:lang="en">anti-capital punishment</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#elderRights">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#civilRights"/>
+    <rdfs:label xml:lang="en">elder rights</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#poorLawReform">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#socialReform"/>
+    <rdfs:label xml:lang="en">poor law reform</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#anti-Globalism">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">anti-globalism</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#constitutionalism">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">constitutionalism</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#existentialism">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">existentialism</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#newUnionism">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">New Unionism</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#dressReform">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#feminism"/>
+    <rdfs:label xml:lang="en">dress reform</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#housingMovement">
+    <skos:related rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#civilRights"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#socialReform"/>
+    <rdfs:label xml:lang="en">housing movement</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#hanoverian">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">Hanoverian</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#womensEmploymentReform">
+    <j.0:contraryTo rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#anti-Feminism"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#socialReform"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#feminism"/>
+    <rdfs:label xml:lang="en">women's employment reform</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#prisonReform">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#socialReform"/>
+    <rdfs:label xml:lang="en">prison reform</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#anti-Censorship">
+    <skos:related rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#anti-Monarchism"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#socialReform"/>
+    <rdfs:label xml:lang="en">anti-censorship movement</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#womensEnfranchisement">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">Women's Enfranchisement</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#liberalUnionistParty">
+    <j.0:contraryTo>
+      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#irishHomeRuleMovement">
+        <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#republicanism"/>
+        <skos:related>
+          <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#irishRepublicanism">
+            <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#republicanism"/>
+            <skos:related>
+              <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#irishNationalism">
+                <skos:related rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#irishRepublicanism"/>
+                <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#nationalism"/>
+                <rdfs:label xml:lang="en">Irish nationalism</rdfs:label>
+                <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+                <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+                <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+              </skos:Concept>
+            </skos:related>
+            <rdfs:label xml:lang="en">Irish republicanism</rdfs:label>
+            <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+            <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+            <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+          </skos:Concept>
+        </skos:related>
+        <skos:related rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#irishNationalism"/>
+        <j.0:contraryTo>
+          <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#irishUnionism">
+            <skos:related rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#irishRepublicanism"/>
+            <skos:related rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#irishNationalism"/>
+            <rdfs:label xml:lang="en">Irish unionism</rdfs:label>
+            <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+            <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+            <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+          </skos:Concept>
+        </j.0:contraryTo>
+        <rdfs:label xml:lang="en">Irish Home Rule Movement</rdfs:label>
+        <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+      </skos:Concept>
+    </j.0:contraryTo>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#liberalism"/>
+    <rdfs:label xml:lang="en">Liberal Unionist Party</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#indianIndependence">
+    <skos:related rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#civilRights"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#humanRights"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:related rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#socialReform"/>
+    <rdfs:label xml:lang="en">Indian independence movement</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#anti-LandLeague">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:related rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#irishUnionism"/>
+    <rdfs:label xml:lang="en">Anti-Irish National Land League</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#womanism">
+    <skos:related rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#anti-Racism"/>
+    <j.0:contraryTo rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#anti-Feminism"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#feminism"/>
+    <rdfs:label xml:lang="en">womanism</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#utilitarianism">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">utilitarianism</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#co-operativeMovement">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:related rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#socialReform"/>
+    <rdfs:label xml:lang="en">co-operative movement</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#antiClericalism">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">anti-clericalism</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#appeasement">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">appeasement</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#feministAnti-ViolenceActivism">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#feminism"/>
+    <rdfs:label xml:lang="en">feminist anti-violence activism</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#sanitaryMovement">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:related>
+      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#urbanReform">
+        <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#socialReform"/>
+        <rdfs:label xml:lang="en">urban reform</rdfs:label>
+        <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+      </skos:Concept>
+    </skos:related>
+    <rdfs:label xml:lang="en">sanitary movement</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#marriageLawReform">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#socialReform"/>
+    <rdfs:label xml:lang="en">marriage law reform</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#birthControlActivism">
+    <skos:related>
+      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#pro-Choice">
+        <skos:related rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#feminism"/>
+        <rdfs:label xml:lang="en">pro-choice</rdfs:label>
+        <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+      </skos:Concept>
+    </skos:related>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#socialReform"/>
+    <skos:related>
+      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#sexualReform">
+        <skos:related>
+          <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#socialPurity">
+            <skos:related rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#feminism"/>
+            <rdfs:label xml:lang="en">social purity</rdfs:label>
+            <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+            <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+            <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+          </skos:Concept>
+        </skos:related>
+        <skos:related rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#pro-Choice"/>
+        <skos:related rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#feminism"/>
+        <rdfs:label xml:lang="en">sexual reform</rdfs:label>
+        <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+      </skos:Concept>
+    </skos:related>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:related rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#feminism"/>
+    <rdfs:label xml:lang="en">birth control activism</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#feministPacifism">
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#pacifism"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#feminism"/>
+    <rdfs:label xml:lang="en">feminist pacifism</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#wilkite">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#socialReform"/>
+    <rdfs:label xml:lang="en">Wilkite</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#anti-CorporalPunishment">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#socialReform"/>
+    <rdfs:label xml:lang="en">anti-corporal punishment</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#anti-Caste">
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#civilRights"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#socialReform"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:related rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#feminism"/>
+    <rdfs:label xml:lang="en">anti-caste movement</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#capitalism">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">capitalism</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#feministInternationalism">
+    <skos:broaderTransitive>
+      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#internationalism">
+        <rdfs:label xml:lang="en">internationalism</rdfs:label>
+        <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+      </skos:Concept>
+    </skos:broaderTransitive>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#feminism"/>
+    <rdfs:label xml:lang="en">feminist internationalism</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#anti-Zionism">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <j.0:contraryTo>
+      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#zionism">
+        <skos:related>
+          <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#anti-Antisemitism">
+            <skos:related>
+              <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#anti-Fascism">
+                <j.0:contraryTo>
+                  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#fascism">
+                    <rdfs:label xml:lang="en">fascism</rdfs:label>
+                    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+                    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+                    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+                  </skos:Concept>
+                </j.0:contraryTo>
+                <skos:related rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#anti-Antisemitism"/>
+                <rdfs:label xml:lang="en">anti-fascism</rdfs:label>
+                <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+                <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+                <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+              </skos:Concept>
+            </skos:related>
+            <j.0:contraryTo>
+              <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#antisemitism">
+                <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#racism"/>
+                <rdfs:label xml:lang="en">antisemitism</rdfs:label>
+                <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+                <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+                <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+              </skos:Concept>
+            </j.0:contraryTo>
+            <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#racialEquality"/>
+            <rdfs:label xml:lang="en">anti-antisemitism</rdfs:label>
+            <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+            <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+            <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+          </skos:Concept>
+        </skos:related>
+        <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#nationalism"/>
+        <rdfs:label xml:lang="en">Zionism</rdfs:label>
+        <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+      </skos:Concept>
+    </j.0:contraryTo>
+    <rdfs:label xml:lang="en">anti-Zionism</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#rationalism">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">rationalism</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#communalism">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">communalism</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#separatism">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">separatism</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#eugenics">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">eugenics</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#italianNationalism">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#nationalism"/>
+    <rdfs:label xml:lang="en">Italian nationalism</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#christianPacifism">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#pacifism"/>
+    <rdfs:label xml:lang="en">Christian pacifism</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#dissentProtestant">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">Dissent (Protestant)</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#anti-Urbanism">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">anti-urbanism</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#whiggism">
+    <skos:related rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#liberalism"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:related>
+      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#left-Wing">
+        <rdfs:label xml:lang="en">left-wing</rdfs:label>
+        <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+      </skos:Concept>
+    </skos:related>
+    <rdfs:label xml:lang="en">whiggism</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#conscientiousObjection">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#pacifism"/>
+    <rdfs:label xml:lang="en">conscientious objection</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#conservativeFeminism">
+    <skos:related>
+      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#conservatism">
+        <skos:related>
+          <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#neo-Conservatism">
+            <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+            <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#conservatism"/>
+            <rdfs:label xml:lang="en">neo-conservatism</rdfs:label>
+            <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+            <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+          </skos:Concept>
+        </skos:related>
+        <rdfs:label xml:lang="en">conservatism</rdfs:label>
+        <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+      </skos:Concept>
+    </skos:related>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#feminism"/>
+    <rdfs:label xml:lang="en">conservative feminism</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#highChurchParty">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">High Church Party</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#anti-Pacifism">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <j.0:contraryTo rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#pacifism"/>
+    <rdfs:label xml:lang="en">anti-pacifism</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#scottishNationalism">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#nationalism"/>
+    <rdfs:label xml:lang="en">Scottish nationalism</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#temperanceMovement">
+    <skos:related rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#conservatism"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:related rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#feminism"/>
+    <rdfs:label xml:lang="en">temperance movement</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#blackNationalism">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">Black nationalism</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#landReform">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">land reform</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#nazism">
+    <skos:related rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#fascism"/>
+    <skos:related rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#antisemitism"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <j.0:contraryTo rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#anti-Antisemitism"/>
+    <rdfs:label xml:lang="en">Nazism</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#germanNationalism">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#nationalism"/>
+    <rdfs:label xml:lang="en">German nationalism</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#lesbianFeminism">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#feminism"/>
+    <rdfs:label xml:lang="en">lesbian feminism</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#anti-Jacobite">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <j.0:contraryTo rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#jacobitism"/>
+    <rdfs:label xml:lang="en">anti-Jacobite</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#anti-European">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <j.0:contraryTo>
+      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#pro-European">
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+        <rdfs:label xml:lang="en">pro-European</rdfs:label>
+        <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+      </skos:Concept>
+    </j.0:contraryTo>
+    <rdfs:label xml:lang="en">anti-European politics</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#anti-American">
+    <j.0:contraryTo>
+      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#americanNationalism">
+        <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#nationalism"/>
+        <rdfs:label xml:lang="en">American nationalism</rdfs:label>
+        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+      </skos:Concept>
+    </j.0:contraryTo>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <j.0:contraryTo>
+      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#pro-American">
+        <skos:related rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#nationalism"/>
+        <rdfs:label xml:lang="en">pro-American</rdfs:label>
+        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+      </skos:Concept>
+    </j.0:contraryTo>
+    <rdfs:label xml:lang="en">anti-American politics</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#tradeUnionism">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#socialReform"/>
+    <rdfs:label xml:lang="en">trade unionism</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#humanism">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">humanism</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#anti-Dreyfusard">
+    <j.0:contraryTo>
+      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#dreyfusard">
+        <j.0:contraryTo rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#antisemitism"/>
+        <skos:related rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#anti-Antisemitism"/>
+        <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#humanRights"/>
+        <rdfs:label xml:lang="en">Dreyfusard</rdfs:label>
+        <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+      </skos:Concept>
+    </j.0:contraryTo>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#humanRights"/>
+    <rdfs:label xml:lang="en">anti-Dreyfusard</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#anti-Jacobin">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">anti-Jacobin</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#oppositionPolitics">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">opposition politics</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#civilLibertarianism">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive>
+      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#libertarianism">
+        <rdfs:label xml:lang="en">Libertarianism</rdfs:label>
+        <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+      </skos:Concept>
+    </skos:broaderTransitive>
+    <rdfs:label xml:lang="en">civil libertarianism</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#yorkist">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">Yorkist</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#newDealer">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">new dealer</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#egyptianNationalism">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#nationalism"/>
+    <rdfs:label xml:lang="en">Egyptian nationalism</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#chartism">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">Chartist</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#catholicEmancipation">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">Catholic emancipation</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#anti-Capitalism">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:related rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#communism"/>
+    <rdfs:label xml:lang="en">anti-capitalism</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#anti-Federalism">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">Anti-Federalism</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#freeTradeMovement">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">free trade movement</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#christianSocialism">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive>
+      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#socialism">
+        <skos:related rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#communism"/>
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+        <skos:related rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#socialReform"/>
+        <rdfs:label xml:lang="en">socialism</rdfs:label>
+        <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+      </skos:Concept>
+    </skos:broaderTransitive>
+    <rdfs:label xml:lang="en">Christian socialism</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#poorAdvocacy">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#socialReform"/>
+    <rdfs:label xml:lang="en">poor advocacy</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#paternalism">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">paternalism</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#egalitarianism">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:related rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#feminism"/>
+    <rdfs:label xml:lang="en">egalitarianism</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#womensEducationReform">
+    <skos:broaderTransitive>
+      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#educationReform">
+        <skos:related rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#civilRights"/>
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+        <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#socialReform"/>
+        <rdfs:label xml:lang="en">education reform</rdfs:label>
+        <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+      </skos:Concept>
+    </skos:broaderTransitive>
+    <j.0:contraryTo rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#anti-Feminism"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#feminism"/>
+    <rdfs:label xml:lang="en">women's education reform</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#anti-NuclearMovement">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive>
+      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#environmentalism">
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+        <rdfs:label xml:lang="en">environmentalism</rdfs:label>
+        <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+      </skos:Concept>
+    </skos:broaderTransitive>
+    <rdfs:label xml:lang="en">anti-nuclear movement</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#stalinism">
+    <skos:related>
+      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#bolshevism">
+        <skos:related rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#communism"/>
+        <rdfs:label xml:lang="en">Bolshevism</rdfs:label>
+        <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+      </skos:Concept>
+    </skos:related>
+    <skos:related rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#marxism"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:related rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#communism"/>
+    <rdfs:label xml:lang="en">Stalinism</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#anti-Vivisection">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:related rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#feminism"/>
+    <rdfs:label xml:lang="en">anti-vivisection</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#frenchNationalism">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#nationalism"/>
+    <rdfs:label xml:lang="en">French nationalism</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#indigenousRights">
+    <skos:related>
+      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#anti-Imperialism">
+        <skos:related>
+          <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#anti-British">
+            <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+            <rdfs:label xml:lang="en">anti-British politics</rdfs:label>
+            <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+            <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+          </skos:Concept>
+        </skos:related>
+        <j.0:contraryTo>
+          <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#imperialism">
+            <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+            <rdfs:label xml:lang="en">imperialism</rdfs:label>
+            <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+            <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+          </skos:Concept>
+        </j.0:contraryTo>
+        <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#humanRights"/>
+        <rdfs:label xml:lang="en">Anti-imperialism</rdfs:label>
+        <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+      </skos:Concept>
+    </skos:related>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#civilRights"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:related rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#humanRights"/>
+    <rdfs:label xml:lang="en">Indigenous rights movement</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#boulangism">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">boulangism</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#isolationism">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">isolationism</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#vegetarianism">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:related>
+      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#animalWelfareAdvocacy">
+        <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#socialReform"/>
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+        <skos:related rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#feminism"/>
+        <rdfs:label xml:lang="en">animal welfare advocacy</rdfs:label>
+        <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+      </skos:Concept>
+    </skos:related>
+    <rdfs:label xml:lang="en">vegetarianism</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#anti-ContagiousDiseasesAct">
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#socialReform"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#feminism"/>
+    <rdfs:label xml:lang="en">anti-Contagious Diseases Act</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#greekNationalist">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#nationalism"/>
+    <rdfs:label xml:lang="en">Greek nationalism</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#malthusianism">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">Malthusianism</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#conservativePartyUk">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#conservatism"/>
+    <rdfs:label xml:lang="en">Conservative Party (UK)</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#secularism">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">secularism</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#gayRights">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#civilRights"/>
+    <rdfs:label xml:lang="en">gay rights movement</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#nihilism">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">nihilism</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#polishNationalism">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#nationalism"/>
+    <rdfs:label xml:lang="en">Polish nationalism</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#multiracialism">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">multiracialism</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#jewishEmancipation">
+    <j.0:contraryTo rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#antisemitism"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#civilRights"/>
+    <rdfs:label xml:lang="en">Jewish emancipation</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#anti-Vaccination">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">anti-vaccination movement</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#anti-Socialism">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <j.0:contraryTo rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#socialism"/>
+    <rdfs:label xml:lang="en">anti-socialism</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#aidsActivism">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#socialReform"/>
+    <rdfs:label xml:lang="en">AIDS activism</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#childrensWelfare">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#humanRights"/>
+    <rdfs:label xml:lang="en">children's welfare</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#highToryism">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">High Toryism</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#anti-Bolshevism">
+    <j.0:contraryTo rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#bolshevism"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:related rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#anti-Communism"/>
+    <rdfs:label xml:lang="en">anti-Bolshevism</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#propertyLawReform">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:related rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#socialReform"/>
+    <rdfs:label xml:lang="en">property law reform</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#labourMovement">
+    <j.0:contraryTo>
+      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#anti-Trade-Unionism">
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+        <j.0:contraryTo rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#labourMovement"/>
+        <rdfs:label xml:lang="en">anti-trade-unionism</rdfs:label>
+        <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+      </skos:Concept>
+    </j.0:contraryTo>
+    <skos:related rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#socialism"/>
+    <skos:related rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#socialReform"/>
+    <rdfs:label xml:lang="en">labour movement</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+  </skos:Concept>
+</rdf:RDF>

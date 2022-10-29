@@ -1,0 +1,54 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="https://saref.etsi.org/saref4ener/"/>
+  <skos:Concept rdf:about="https://saref.etsi.org/saref4ener/EventAccepted">
+    <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4ener/"/>
+    <rdfs:label xml:lang="en">Event accepted</rdfs:label>
+    <rdfs:comment xml:lang="en">Load control state with value 'event accepted'</rdfs:comment>
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="https://saref.etsi.org/saref4ener/EventStateProduce">
+        <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4ener/"/>
+        <rdfs:label xml:lang="en">Event state produce</rdfs:label>
+        <rdfs:comment xml:lang="en">In the load control, it expresses a produce state of an event an event used to send overload warning severity level and related load control commands to a device (e.g. a household appliance or a smart meter).</rdfs:comment>
+      </skos:ConceptScheme>
+    </skos:inScheme>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://saref.etsi.org/saref4ener/EventCancelled">
+    <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4ener/"/>
+    <rdfs:label xml:lang="en">Event cancelled</rdfs:label>
+    <rdfs:comment xml:lang="en">Load control state with value 'event cancelled'</rdfs:comment>
+    <skos:inScheme rdf:resource="https://saref.etsi.org/saref4ener/EventStateProduce"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://saref.etsi.org/saref4ener/EventStopped">
+    <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4ener/"/>
+    <rdfs:label xml:lang="en">Event stopped</rdfs:label>
+    <rdfs:comment xml:lang="en">Load control state with value 'event stopped'</rdfs:comment>
+    <skos:inScheme rdf:resource="https://saref.etsi.org/saref4ener/EventStateProduce"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://saref.etsi.org/saref4ener/EventStarted">
+    <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4ener/"/>
+    <rdfs:label xml:lang="en">Event started</rdfs:label>
+    <rdfs:comment xml:lang="en">Load control state with value 'event started'</rdfs:comment>
+    <skos:inScheme rdf:resource="https://saref.etsi.org/saref4ener/EventStateProduce"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://saref.etsi.org/saref4ener/EventRejected">
+    <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4ener/"/>
+    <rdfs:label xml:lang="en">Event rejected</rdfs:label>
+    <rdfs:comment xml:lang="en">Load control state with value 'event rejected'</rdfs:comment>
+    <skos:inScheme rdf:resource="https://saref.etsi.org/saref4ener/EventStateProduce"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://saref.etsi.org/saref4ener/EventError">
+    <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4ener/"/>
+    <rdfs:label xml:lang="en">Event error</rdfs:label>
+    <rdfs:comment xml:lang="en">Load control state with value 'event error'</rdfs:comment>
+    <skos:inScheme rdf:resource="https://saref.etsi.org/saref4ener/EventStateProduce"/>
+  </skos:Concept>
+</rdf:RDF>

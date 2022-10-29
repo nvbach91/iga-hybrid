@@ -1,0 +1,28 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://www.w3.org/ns/dqv"/>
+  <rdf:Property rdf:about="http://www.w3.org/ns/dqv#inDimension">
+    <rdfs:comment xml:lang="en">Represents the dimensions a quality metric, certificate and annotation allow a measurement of.</rdfs:comment>
+    <rdfs:label xml:lang="en">in dimension</rdfs:label>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://www.w3.org/ns/dqv#Dimension">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/dqv"/>
+        <rdfs:label xml:lang="en">Dimension</rdfs:label>
+        <rdfs:comment xml:lang="en">Represents criteria relevant for assessing quality. Each quality dimension must have one or more metric to measure it. A dimension is linked with a category using the dqv:inCategory property.</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </rdf:Property>
+  <skos:Concept rdf:about="http://www.w3.org/ns/dqv#precision">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/dqv"/>
+    <rdfs:label xml:lang="en">Precision</rdfs:label>
+    <skos:inScheme rdf:resource="http://www.w3.org/ns/dqv#Dimension"/>
+  </skos:Concept>
+</rdf:RDF>

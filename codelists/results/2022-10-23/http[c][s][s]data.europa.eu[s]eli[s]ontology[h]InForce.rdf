@@ -1,0 +1,44 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://data.europa.eu/eli/ontology"/>
+  <owl:FunctionalProperty rdf:about="http://data.europa.eu/eli/ontology#in_force">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment xml:lang="en">A value indicating the legal force of a legal resource or a legal expression. A set of values is defined by ELI in the corresponding concept scheme. These values are :
+  - in force
+  - partially in force
+  - not in force</rdfs:comment>
+    <rdfs:label xml:lang="en">in force</rdfs:label>
+    <rdfs:domain rdf:parseType="Resource">
+    </rdfs:domain>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://data.europa.eu/eli/ontology#InForce">
+        <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/eli/ontology"/>
+        <rdfs:label xml:lang="en">In force</rdfs:label>
+        <rdfs:comment xml:lang="en">Formally defined as the set of skos:Concept in concept scheme eli:InForceTable</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:FunctionalProperty>
+  <skos:Concept rdf:about="http://data.europa.eu/eli/ontology#InForce-partiallyInForce">
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/eli/ontology"/>
+    <rdfs:label xml:lang="en">partially in force</rdfs:label>
+    <skos:inScheme rdf:resource="http://data.europa.eu/eli/ontology#InForce"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.europa.eu/eli/ontology#InForce-notInForce">
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/eli/ontology"/>
+    <rdfs:label xml:lang="en">not in force</rdfs:label>
+    <skos:inScheme rdf:resource="http://data.europa.eu/eli/ontology#InForce"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://data.europa.eu/eli/ontology#InForce-inForce">
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/eli/ontology"/>
+    <rdfs:label xml:lang="en">in force</rdfs:label>
+    <skos:inScheme rdf:resource="http://data.europa.eu/eli/ontology#InForce"/>
+  </skos:Concept>
+</rdf:RDF>

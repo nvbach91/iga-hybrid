@@ -1,0 +1,65 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://purl.uniprot.org/core/"/>
+  <skos:Concept rdf:about="http://purl.uniprot.org/core/SELDI">
+    <rdfs:isDefinedBy rdf:resource="http://purl.uniprot.org/core/"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Surface Enhanced Laser Desorption Ionization</rdfs:label>
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="http://purl.uniprot.org/core/Mass_Measurement_Method">
+        <rdfs:isDefinedBy rdf:resource="http://purl.uniprot.org/core/"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Mass Measurement</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >An experimental method for measuring the mass of a molecule.</rdfs:comment>
+      </skos:ConceptScheme>
+    </skos:inScheme>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.uniprot.org/core/FAB">
+    <rdfs:isDefinedBy rdf:resource="http://purl.uniprot.org/core/"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Fast Atom Bombardment</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.uniprot.org/core/Mass_Measurement_Method"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.uniprot.org/core/MALDI">
+    <rdfs:isDefinedBy rdf:resource="http://purl.uniprot.org/core/"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Matrix-Assisted Laser Desorption</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.uniprot.org/core/Mass_Measurement_Method"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.uniprot.org/core/LSIMS">
+    <rdfs:isDefinedBy rdf:resource="http://purl.uniprot.org/core/"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Liquid Secondary Ionization</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.uniprot.org/core/Mass_Measurement_Method"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.uniprot.org/core/ESI">
+    <rdfs:isDefinedBy rdf:resource="http://purl.uniprot.org/core/"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Electrospray Ionization</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.uniprot.org/core/Mass_Measurement_Method"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.uniprot.org/core/PD">
+    <rdfs:isDefinedBy rdf:resource="http://purl.uniprot.org/core/"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Plasma Desorption</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    ></rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.uniprot.org/core/Mass_Measurement_Method"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.uniprot.org/core/API">
+    <rdfs:isDefinedBy rdf:resource="http://purl.uniprot.org/core/"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Atmospheric Pressure Ionization</rdfs:label>
+    <rdfs:comment>Mass measurement using Atmospheric Pressure Ionization</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.uniprot.org/core/Mass_Measurement_Method"/>
+  </skos:Concept>
+</rdf:RDF>

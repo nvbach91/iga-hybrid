@@ -1,6 +1,6 @@
 <rdf:RDF
-    xmlns:dct="http://purl.org/dc/terms/"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
     xmlns:dc="http://purl.org/dc/elements/1.1/"
     xmlns:owl="http://www.w3.org/2002/07/owl#"
     xmlns:dcmit="http://purl.org/dc/dcmitype/"
@@ -10,18 +10,13 @@
     xmlns:vann="http://purl.org/vocab/vann/">
   <owl:Ontology rdf:about="http://www.bbc.co.uk/ontologies/bbc"/>
   <owl:ObjectProperty rdf:about="http://www.bbc.co.uk/ontologies/bbc/product">
-    <rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/bbc"/>
     <rdfs:comment xml:lang="en-gb">Associates the WebDocument with the particular BBC Product it belongs to. This reflects the editorial branding of the product.</rdfs:comment>
     <rdfs:label xml:lang="en-gb">product</rdfs:label>
-    <rdfs:domain>
-      <rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/bbc/WebDocument">
-        <rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/bbc"/>
-      </rdf:Description>
-    </rdfs:domain>
+    <rdfs:domain rdf:resource="http://www.bbc.co.uk/ontologies/bbc/WebDocument"/>
     <rdfs:range>
       <skos:ConceptScheme rdf:about="http://www.bbc.co.uk/ontologies/bbc/Product">
         <rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/bbc"/>
-        <rdfs:label xml:lang="en-gb">Class representing products which create content about things. Within the BBC's scope, this would be one of the ten Future Media Products. Outside the BBC, this could refer to an organisation or company whose web pages we link to. Typically the official web pages of things (e.g., http://www.tomdaley.tv/) or their Wikipedia, Twitter and Facebook pages.</rdfs:label>
+        <rdfs:label xml:lang="en-gb">Product</rdfs:label>
         <rdfs:comment xml:lang="en-gb">Class representing products which create content about things. Within the BBC's scope, this would be one of the ten Future Media Products. Outside the BBC, this could refer to an organisation or company whose web pages we link to. Typically the official web pages of things (e.g., http://www.tomdaley.tv/) or their Wikipedia, Twitter and Facebook pages.</rdfs:comment>
       </skos:ConceptScheme>
     </rdfs:range>

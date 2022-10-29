@@ -1,6 +1,6 @@
 <rdf:RDF
-    xmlns:dct="http://purl.org/dc/terms/"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
     xmlns:dc="http://purl.org/dc/elements/1.1/"
     xmlns:owl="http://www.w3.org/2002/07/owl#"
     xmlns:dcmit="http://purl.org/dc/dcmitype/"
@@ -10,18 +10,13 @@
     xmlns:vann="http://purl.org/vocab/vann/">
   <owl:Ontology rdf:about="http://purl.org/opdm/refrigerator#"/>
   <owl:ObjectProperty rdf:about="http://purl.org/opdm/refrigerator#ratingOfClimateClass">
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/opdm/refrigerator#"/>
     <rdfs:comment xml:lang="en">The climate class rating that the fridge/freezer can operate at.</rdfs:comment>
     <rdfs:label xml:lang="en">Rating of climate class</rdfs:label>
-    <rdfs:domain>
-      <rdf:Description rdf:about="http://purl.org/opdm/refrigerator#FridgeFreezer">
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/opdm/refrigerator#"/>
-      </rdf:Description>
-    </rdfs:domain>
+    <rdfs:domain rdf:resource="http://purl.org/opdm/refrigerator#FridgeFreezer"/>
     <rdfs:range>
       <skos:ConceptScheme rdf:about="http://purl.org/opdm/refrigerator#ClimateClass">
         <rdfs:isDefinedBy rdf:resource="http://purl.org/opdm/refrigerator#"/>
-        <rdfs:label xml:lang="en">Class to represent the range of room temperatures that a fridge/freezer can operate. Possible values include: N, SN, ST, T.</rdfs:label>
+        <rdfs:label xml:lang="en">ClimateClass</rdfs:label>
         <rdfs:comment xml:lang="en">Class to represent the range of room temperatures that a fridge/freezer can operate. Possible values include: N, SN, ST, T.</rdfs:comment>
       </skos:ConceptScheme>
     </rdfs:range>

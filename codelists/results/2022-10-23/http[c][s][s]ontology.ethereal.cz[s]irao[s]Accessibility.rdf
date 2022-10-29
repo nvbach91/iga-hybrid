@@ -1,0 +1,44 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://ontology.ethereal.cz/irao"/>
+  <owl:ObjectProperty rdf:about="http://ontology.ethereal.cz/irao/hasAccessibility">
+    <rdfs:comment xml:lang="en">This property specifies the accessibility of a research artifact</rdfs:comment>
+    <rdfs:label xml:lang="en">has accessibility</rdfs:label>
+    <rdfs:domain rdf:resource="http://ontology.ethereal.cz/irao/ResearchArtifact"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://ontology.ethereal.cz/irao/Accessibility">
+        <rdfs:isDefinedBy rdf:resource="http://ontology.ethereal.cz/irao"/>
+        <rdfs:label xml:lang="en">Accessibility</rdfs:label>
+        <rdfs:comment xml:lang="en">A research artifact can be made accessible via download or some kind of API, etc.</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://ontology.ethereal.cz/irao/accessibility#API">
+    <rdfs:isDefinedBy rdf:resource="http://ontology.ethereal.cz/irao"/>
+    <rdfs:label xml:lang="en">API</rdfs:label>
+    <skos:inScheme rdf:resource="http://ontology.ethereal.cz/irao/Accessibility"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://ontology.ethereal.cz/irao/accessibility#OpenData">
+    <rdfs:isDefinedBy rdf:resource="http://ontology.ethereal.cz/irao"/>
+    <rdfs:label xml:lang="en">Open Data</rdfs:label>
+    <skos:inScheme rdf:resource="http://ontology.ethereal.cz/irao/Accessibility"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://ontology.ethereal.cz/irao/accessibility#OpenSource">
+    <rdfs:isDefinedBy rdf:resource="http://ontology.ethereal.cz/irao"/>
+    <rdfs:label xml:lang="en">Opensource</rdfs:label>
+    <skos:inScheme rdf:resource="http://ontology.ethereal.cz/irao/Accessibility"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://ontology.ethereal.cz/irao/accessibility#Download">
+    <rdfs:isDefinedBy rdf:resource="http://ontology.ethereal.cz/irao"/>
+    <rdfs:label xml:lang="en">Download</rdfs:label>
+    <skos:inScheme rdf:resource="http://ontology.ethereal.cz/irao/Accessibility"/>
+  </skos:Concept>
+</rdf:RDF>

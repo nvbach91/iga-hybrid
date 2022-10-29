@@ -1,0 +1,106 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:j.0="http://purl.oclc.org/NET/ssnx/qu/qu#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#ocean_heat_y_transport_due_to_diffusion">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind>
+      <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/qu/quantity#power">
+        <skos:inScheme>
+          <skos:ConceptScheme rdf:about="http://purl.oclc.org/NET/ssnx/qu/dim#Power">
+            <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+          </skos:ConceptScheme>
+        </skos:inScheme>
+        <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+      </skos:Concept>
+    </j.0:generalQuantityKind>
+    <rdfs:label>ocean heat y transport due to diffusion</rdfs:label>
+    <rdfs:comment> "y" indicates a vector component along the grid y-axis, when this is not true latitude, positive with increasing y.  The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity  named by omitting the phrase. </rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#Power"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#ocean_heat_y_transport_due_to_bolus_advection">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#power"/>
+    <rdfs:label>ocean heat y transport due to bolus advection</rdfs:label>
+    <rdfs:comment> "y" indicates a vector component along the grid y-axis, when this is not true latitude, positive with increasing y.  Transport by bolus advection in an ocean model means the part due to a scheme representing eddy-induced effects not included inthe velocity field.  The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity  named by omitting the phrase. </rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#Power"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#northward_ocean_heat_transport_due_to_diffusion">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#power"/>
+    <rdfs:label>northward ocean heat transport due to diffusion</rdfs:label>
+    <rdfs:comment>The specification of a physical process by the phrase due_to_process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. "Northward" indicates a vector component which is positive when directed northward (negative southward). Northward transport by diffusion means the part due to horizontal or isopyncal diffusion schemes in an ocean model, but not including the "bolus" or Gent-McWilliams velocity.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#Power"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#northward_atmosphere_heat_transport">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#power"/>
+    <rdfs:label>northward atmosphere heat transport</rdfs:label>
+    <rdfs:comment>"Northward" indicates a vector component which is positive when directed northward (negative southward). "Atmosphere heat transport" means total heat transport by the atmosphere by all processes.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#Power"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#ocean_heat_x_transport">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#power"/>
+    <rdfs:label>ocean heat x transport</rdfs:label>
+    <rdfs:comment> "x" indicates a vector component along the grid x-axis, when this is not true longitude, positive with increasing x. </rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#Power"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#northward_ocean_heat_transport">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#power"/>
+    <rdfs:label>northward ocean heat transport</rdfs:label>
+    <rdfs:comment>"Northward" indicates a vector component which is positive when directed northward (negative southward). Ocean transport means transport by all processes, both sea water and sea ice.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#Power"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#northward_ocean_heat_transport_due_to_bolus_advection">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#power"/>
+    <rdfs:label>northward ocean heat transport due to bolus advection</rdfs:label>
+    <rdfs:comment>The specification of a physical process by the phrase due_to_process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. "Northward" indicates a vector component which is positive when directed northward (negative southward). Northward transport by bolus advection in an ocean model means the part due to a scheme representing eddy-induced effects not included in the velocity field.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#Power"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#northward_ocean_heat_transport_due_to_overturning">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#power"/>
+    <rdfs:label>northward ocean heat transport due to overturning</rdfs:label>
+    <rdfs:comment>The specification of a physical process by the phrase due_to_process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. "Northward" indicates a vector component which is positive when directed northward (negative southward). Northward transport by (meridional) overturning is geometrically defined as being the part due to the vertical integral of the product of zonal means of velocity and tracer. The velocity does not include "bolus" or Gent-McWilliams velocity.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#Power"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#northward_ocean_heat_transport_due_to_gyre">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#power"/>
+    <rdfs:label>northward ocean heat transport due to gyre</rdfs:label>
+    <rdfs:comment>The specification of a physical process by the phrase due_to_process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. "Northward" indicates a vector component which is positive when directed northward (negative southward). Northward transport by the ocean gyre is geometrically defined as being the part due to the vertical integral of the product of deviations of velocity and tracer from their zonal means. The velocity does not include "bolus" or Gent-McWilliams velocity.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#Power"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#ocean_heat_y_transport">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#power"/>
+    <rdfs:label>ocean heat y transport</rdfs:label>
+    <rdfs:comment> "y" indicates a vector component along the grid y-axis, when this is not true latitude, positive with increasing y. </rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#Power"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#ocean_heat_x_transport_due_to_bolus_advection">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#power"/>
+    <rdfs:label>ocean heat x transport due to bolus advection</rdfs:label>
+    <rdfs:comment> "x" indicates a vector component along the grid x-axis, when this is not true longitude, positive with increasing x.  Transport by bolus advection in an ocean model means the part due to a scheme representing eddy-induced effects not included in the velocity field.  The specification of a physical process by the phrase due_to_processmeans that the quantity named is a  single term in a sum of terms which together compose the general quantity  named by omitting the phrase. </rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#Power"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#ocean_heat_x_transport_due_to_diffusion">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#power"/>
+    <rdfs:label>ocean heat x transport due to diffusion</rdfs:label>
+    <rdfs:comment> "x" indicates a vector component along the grid x-axis, when this is not true longitude, positive with increasing x.  The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity  named by omitting the phrase. </rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#Power"/>
+  </skos:Concept>
+</rdf:RDF>

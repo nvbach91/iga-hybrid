@@ -1,0 +1,33 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://www.demcare.eu/ontologies/demlab.owl"/>
+  <owl:ObjectProperty rdf:about="http://www.demcare.eu/ontologies/demlab.owl#activityStatus">
+    <rdfs:comment>The status of a semi-directed activity</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.demcare.eu/ontologies/demlab.owl#CognitiveAbilitiesData"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://www.demcare.eu/ontologies/demlab.owl#ActivityStatusType">
+        <rdfs:isDefinedBy rdf:resource="http://www.demcare.eu/ontologies/demlab.owl"/>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://www.demcare.eu/ontologies/demlab.owl#completed">
+    <rdfs:isDefinedBy rdf:resource="http://www.demcare.eu/ontologies/demlab.owl"/>
+    <skos:inScheme rdf:resource="http://www.demcare.eu/ontologies/demlab.owl#ActivityStatusType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.demcare.eu/ontologies/demlab.owl#incomplete">
+    <rdfs:isDefinedBy rdf:resource="http://www.demcare.eu/ontologies/demlab.owl"/>
+    <skos:inScheme rdf:resource="http://www.demcare.eu/ontologies/demlab.owl#ActivityStatusType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.demcare.eu/ontologies/demlab.owl#omitted">
+    <rdfs:isDefinedBy rdf:resource="http://www.demcare.eu/ontologies/demlab.owl"/>
+    <skos:inScheme rdf:resource="http://www.demcare.eu/ontologies/demlab.owl#ActivityStatusType"/>
+  </skos:Concept>
+</rdf:RDF>

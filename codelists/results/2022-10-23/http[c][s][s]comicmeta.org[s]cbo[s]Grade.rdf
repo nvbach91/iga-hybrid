@@ -1,0 +1,124 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://comicmeta.org/cbo/"/>
+  <owl:ObjectProperty rdf:about="http://comicmeta.org/cbo/grade">
+    <rdfs:comment xml:lang="en">Describes the grade assigned to a comic item by a guarantor.</rdfs:comment>
+    <rdfs:label xml:lang="en">grade</rdfs:label>
+    <rdfs:domain rdf:resource="http://comicmeta.org/cbo/Copy"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://comicmeta.org/cbo/Grade">
+        <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+        <rdfs:label xml:lang="en">Grade</rdfs:label>
+        <rdfs:comment xml:lang="en">A grade assigned to a comic item that represents a summary of its condition.</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/1.8">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Grade"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/7.0">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Grade"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/4.5">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Grade"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/2.5">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Grade"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/6.5">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Grade"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/8.5">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Grade"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/9.4">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Grade"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/1.0">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Grade"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/10.0">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Grade"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/9.2">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Grade"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/0.5">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Grade"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/9.0">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Grade"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/5.0">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Grade"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/3.0">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Grade"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/9.8">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Grade"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/9.6">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Grade"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/3.5">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Grade"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/6.0">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Grade"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/8.0">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Grade"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/1.5">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Grade"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/5.5">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Grade"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/7.5">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Grade"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/4.0">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Grade"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/2.0">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Grade"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/9.9">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Grade"/>
+  </skos:Concept>
+</rdf:RDF>

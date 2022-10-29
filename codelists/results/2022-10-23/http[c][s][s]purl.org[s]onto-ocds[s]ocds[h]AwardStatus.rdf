@@ -1,0 +1,53 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://purl.org/onto-ocds/ocds"/>
+  <owl:FunctionalProperty rdf:about="http://purl.org/onto-ocds/ocds#awardStatus">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment>The current status of the award drawn from the [awardStatus codelist](http://standard.open-contracting.org/latest/en/schema/codelists/#award-status)</rdfs:comment>
+    <rdfs:label>Award status</rdfs:label>
+    <rdfs:domain rdf:resource="http://purl.org/onto-ocds/ocds#Award"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://purl.org/onto-ocds/ocds#AwardStatus">
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/onto-ocds/ocds"/>
+        <rdfs:label xml:lang="en">Codelist Award Status</rdfs:label>
+        <rdfs:comment xml:lang="en">An award move through multiple states. Releases over time may update the status of an award.</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:FunctionalProperty>
+  <skos:Concept rdf:about="http://purl.org/onto-ocds/ocds#awardStatusPending">
+    <rdfs:label xml:lang="en">Pending</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/onto-ocds/ocds"/>
+    <rdfs:label xml:lang="en">pending</rdfs:label>
+    <rdfs:comment xml:lang="en">This award has been proposed, but is not yet in force. This may be due to a cooling off period, or some other process.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/onto-ocds/ocds#AwardStatus"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/onto-ocds/ocds#awardStatusUnsuccessful">
+    <rdfs:label xml:lang="en">Unsuccessful</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/onto-ocds/ocds"/>
+    <rdfs:label xml:lang="en">unsuccessful</rdfs:label>
+    <rdfs:comment xml:lang="en">This award could not be successfully made. If items or supplier details are included within the award section, then these narrow the scope of the unsuccessful award (i.e. the award of noted items, or an award to the noted supplier, was unsuccessful, but there may be other successful awards for different items listed in the tender, or to different suppliers).</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/onto-ocds/ocds#AwardStatus"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/onto-ocds/ocds#awardStatusActive">
+    <rdfs:label xml:lang="en">Active</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/onto-ocds/ocds"/>
+    <rdfs:label xml:lang="en">active</rdfs:label>
+    <rdfs:comment xml:lang="en">This award has been made, and is currently in force.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/onto-ocds/ocds#AwardStatus"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/onto-ocds/ocds#awardStatusCancelled">
+    <rdfs:label xml:lang="en">Cancelled</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/onto-ocds/ocds"/>
+    <rdfs:label xml:lang="en">cancelled</rdfs:label>
+    <rdfs:comment xml:lang="en">This award has been cancelled.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/onto-ocds/ocds#AwardStatus"/>
+  </skos:Concept>
+</rdf:RDF>

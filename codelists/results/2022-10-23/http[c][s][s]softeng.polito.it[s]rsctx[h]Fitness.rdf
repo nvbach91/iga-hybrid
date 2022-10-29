@@ -1,0 +1,70 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://softeng.polito.it/rsctx"/>
+  <owl:FunctionalProperty rdf:about="http://softeng.polito.it/rsctx#hasFitness">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment xml:lang="en">This property indicates the fitness of a user.</rdfs:comment>
+    <rdfs:label xml:lang="en">has fitness</rdfs:label>
+    <rdfs:domain rdf:resource="http://ns.inria.fr/prissma/v2#User"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://softeng.polito.it/rsctx#Fitness">
+        <rdfs:isDefinedBy rdf:resource="http://softeng.polito.it/rsctx"/>
+        <rdfs:label xml:lang="en">Fitness</rdfs:label>
+        <rdfs:comment xml:lang="en">It is a value partition which represents the health of the body, it can be seen as a summary of physiological state, since it is possible to map fitness values with physiological indicators ranges (e.g. ill if temperature greater than a certain threshold), although this is up to the designer which is using the ontology.</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:FunctionalProperty>
+  <skos:Concept rdf:about="http://softeng.polito.it/rsctx#ill">
+    <rdfs:isDefinedBy rdf:resource="http://softeng.polito.it/rsctx"/>
+    <rdfs:label xml:lang="en">ill</rdfs:label>
+    <skos:inScheme rdf:resource="http://softeng.polito.it/rsctx#Fitness"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://softeng.polito.it/rsctx#injured">
+    <rdfs:isDefinedBy rdf:resource="http://softeng.polito.it/rsctx"/>
+    <rdfs:label xml:lang="en">injured</rdfs:label>
+    <skos:inScheme rdf:resource="http://softeng.polito.it/rsctx#Fitness"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://softeng.polito.it/rsctx#good">
+    <rdfs:isDefinedBy rdf:resource="http://softeng.polito.it/rsctx"/>
+    <rdfs:label xml:lang="en">good</rdfs:label>
+    <skos:inScheme rdf:resource="http://softeng.polito.it/rsctx#Fitness"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://softeng.polito.it/rsctx#great">
+    <rdfs:isDefinedBy rdf:resource="http://softeng.polito.it/rsctx"/>
+    <rdfs:label xml:lang="en">great</rdfs:label>
+    <skos:inScheme rdf:resource="http://softeng.polito.it/rsctx#Fitness"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://softeng.polito.it/rsctx#sleepy">
+    <rdfs:isDefinedBy rdf:resource="http://softeng.polito.it/rsctx"/>
+    <rdfs:label xml:lang="en">sleepy</rdfs:label>
+    <skos:inScheme rdf:resource="http://softeng.polito.it/rsctx#Fitness"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://softeng.polito.it/rsctx#tired">
+    <rdfs:isDefinedBy rdf:resource="http://softeng.polito.it/rsctx"/>
+    <rdfs:label xml:lang="en">tired</rdfs:label>
+    <skos:inScheme rdf:resource="http://softeng.polito.it/rsctx#Fitness"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://softeng.polito.it/rsctx#weak">
+    <rdfs:isDefinedBy rdf:resource="http://softeng.polito.it/rsctx"/>
+    <rdfs:label xml:lang="en">weak</rdfs:label>
+    <skos:inScheme rdf:resource="http://softeng.polito.it/rsctx#Fitness"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://softeng.polito.it/rsctx#inFit">
+    <rdfs:isDefinedBy rdf:resource="http://softeng.polito.it/rsctx"/>
+    <rdfs:label xml:lang="en">in fit</rdfs:label>
+    <skos:inScheme rdf:resource="http://softeng.polito.it/rsctx#Fitness"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://softeng.polito.it/rsctx#exahust">
+    <rdfs:isDefinedBy rdf:resource="http://softeng.polito.it/rsctx"/>
+    <rdfs:label xml:lang="en">exhaust</rdfs:label>
+    <skos:inScheme rdf:resource="http://softeng.polito.it/rsctx#Fitness"/>
+  </skos:Concept>
+</rdf:RDF>

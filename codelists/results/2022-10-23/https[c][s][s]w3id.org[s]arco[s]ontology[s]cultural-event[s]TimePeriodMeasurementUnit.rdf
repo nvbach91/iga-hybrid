@@ -1,0 +1,54 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="https://w3id.org/arco/ontology/cultural-event"/>
+  <owl:ObjectProperty rdf:about="https://w3id.org/arco/ontology/cultural-event/hasTimePeriodMeasurementUnit">
+    <rdfs:comment xml:lang="en">This property relates the maximum time period that elapses between one of the member events of a recurrent event, as a collection of events, and the next one, to the unit of measurement associated to it.</rdfs:comment>
+    <rdfs:label xml:lang="en">has time period measurement unit</rdfs:label>
+    <rdfs:domain rdf:resource="https://w3id.org/arco/ontology/cultural-event/RecurrentTimePeriod"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="https://w3id.org/arco/ontology/cultural-event/TimePeriodMeasurementUnit">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/cultural-event"/>
+        <rdfs:label xml:lang="en">Time period measurement unit</rdfs:label>
+        <rdfs:comment xml:lang="en">This class represents the unit of measurement associated to the maximum time period that elapses between one of the member events of a recurrent event, as a collection of events, and the next one.</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/cultural-event/Year">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/cultural-event"/>
+    <rdfs:label xml:lang="en">Year</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/cultural-event/TimePeriodMeasurementUnit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/cultural-event/Hour">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/cultural-event"/>
+    <rdfs:label xml:lang="en">Hour</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/cultural-event/TimePeriodMeasurementUnit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/cultural-event/Month">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/cultural-event"/>
+    <rdfs:label xml:lang="en">Month</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/cultural-event/TimePeriodMeasurementUnit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/cultural-event/Week">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/cultural-event"/>
+    <rdfs:label xml:lang="en">Week</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/cultural-event/TimePeriodMeasurementUnit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/cultural-event/Second">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/cultural-event"/>
+    <rdfs:label xml:lang="en">Second</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/cultural-event/TimePeriodMeasurementUnit"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/cultural-event/Minute">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/cultural-event"/>
+    <rdfs:label xml:lang="en">Minute</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/cultural-event/TimePeriodMeasurementUnit"/>
+  </skos:Concept>
+</rdf:RDF>

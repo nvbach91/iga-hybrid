@@ -1,0 +1,49 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://www.ontotext.com/proton/protonext"/>
+  <owl:ObjectProperty rdf:about="http://www.ontotext.com/proton/protonext#hasClericTitle">
+    <rdfs:comment xml:lang="en">The relation between a Cleric and its cleric title, like Bishop, Pole, etc.</rdfs:comment>
+    <rdfs:label xml:lang="en">has Cleric Title</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.ontotext.com/proton/protonext#Cleric"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://www.ontotext.com/proton/protonext#ClericTitle">
+        <rdfs:isDefinedBy rdf:resource="http://www.ontotext.com/proton/protonext"/>
+        <rdfs:label xml:lang="en">Cleric</rdfs:label>
+        <rdfs:comment xml:lang="en">The social function of a cleric, involving the church.</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://www.ontotext.com/proton/protonext#Cardinal">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontotext.com/proton/protonext"/>
+    <rdfs:label xml:lang="en">Cardinal</rdfs:label>
+    <rdfs:comment xml:lang="en">Any Cardinal, a high official in the Roman-Catholic church.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontotext.com/proton/protonext#ClericTitle"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontotext.com/proton/protonext#Pope">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontotext.com/proton/protonext"/>
+    <rdfs:label xml:lang="en">Pope</rdfs:label>
+    <rdfs:comment xml:lang="en">Any Pope. the head of the Roman-Catholic church.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontotext.com/proton/protonext#ClericTitle"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontotext.com/proton/protonext#Bishop">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontotext.com/proton/protonext"/>
+    <rdfs:label xml:lang="en">Bishop</rdfs:label>
+    <rdfs:comment xml:lang="en">Any bishop, an official in the Roman-Catholic church.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontotext.com/proton/protonext#ClericTitle"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.ontotext.com/proton/protonext#ChristianPatriarch">
+    <rdfs:label xml:lang="en">Christian Patriarch</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://www.ontotext.com/proton/protonext"/>
+    <rdfs:label xml:lang="en">Patriarch</rdfs:label>
+    <rdfs:comment xml:lang="en">Any Christian Patriarch.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.ontotext.com/proton/protonext#ClericTitle"/>
+  </skos:Concept>
+</rdf:RDF>

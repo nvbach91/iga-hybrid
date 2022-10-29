@@ -1,0 +1,176 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:j.0="http://purl.oclc.org/NET/ssnx/qu/qu#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_air_temperature">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind>
+      <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/qu/quantity#temperatureDrift">
+        <skos:inScheme>
+          <skos:ConceptScheme rdf:about="http://purl.oclc.org/NET/ssnx/qu/dim#TemperatureDrift">
+            <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+          </skos:ConceptScheme>
+        </skos:inScheme>
+        <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+      </skos:Concept>
+    </j.0:generalQuantityKind>
+    <rdfs:label>tendency of air temperature</rdfs:label>
+    <rdfs:comment>"tendency_of_X" means derivative of X with respect to time. Air temperature is the bulk temperature of the air, not the surface (skin) temperature.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#TemperatureDrift"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_air_temperature_due_to_diabatic_processes">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#temperatureDrift"/>
+    <rdfs:label>tendency of air temperature due to diabatic processes</rdfs:label>
+    <rdfs:comment>The specification of a physical process by the phrase due_to_process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. "tendency_of_X" means derivative of X with respect to time. Air temperature is the bulk temperature of the air, not the surface (skin) temperature.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#TemperatureDrift"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_specific_humidity_due_to_stratiform_cloud_and_precipitation_and_boundary_layer_mixing">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#temperatureDrift"/>
+    <rdfs:label>tendency of specific humidity due to stratiform cloud and precipitation and boundary layer mixing</rdfs:label>
+    <rdfs:comment>Specific humidity is the mass fraction of water vapor in (moist) air.  In an atmosphere model, stratiform cloud is that produced by large-scale convergence (not the convection schemes).  The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity  named by omitting the phrase.  "tendency_of_X" means derivative of X with respect to time.  "specific" means per unit mass. </rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#TemperatureDrift"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_air_temperature_due_to_turbulence">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#temperatureDrift"/>
+    <rdfs:label>tendency of air temperature due to turbulence</rdfs:label>
+    <rdfs:comment>The specification of a physical process by the phrase due_to_process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. "tendency_of_X" means derivative of X with respect to time. Air temperature is the bulk temperature of the air, not the surface (skin) temperature.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#TemperatureDrift"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_air_temperature_due_to_stratiform_cloud_and_precipitation_and_boundary_layer_mixing">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#temperatureDrift"/>
+    <rdfs:label>tendency of air temperature due to stratiform cloud and precipitation and boundary layer mixing</rdfs:label>
+    <rdfs:comment>Air temperature is the bulk temperature of the air, not the surface (skin) temperature.  In an atmosphere model, stratiform cloud is that produced by large-scale convergence (not the convection schemes).  The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity  named by omitting the phrase.  "tendency_of_X" means derivative of X with respect to time. </rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#TemperatureDrift"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_air_temperature_due_to_shortwave_heating">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#temperatureDrift"/>
+    <rdfs:label>tendency of air temperature due to shortwave heating</rdfs:label>
+    <rdfs:comment>The specification of a physical process by the phrase due_to_process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. "tendency_of_X" means derivative of X with respect to time. "shortwave" means shortwave radiation. Air temperature is the bulk temperature of the air, not the surface (skin) temperature.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#TemperatureDrift"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_air_temperature_due_to_longwave_heating_assuming_clear_sky">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#temperatureDrift"/>
+    <rdfs:label>tendency of air temperature due to longwave heating assuming clear sky</rdfs:label>
+    <rdfs:comment>The specification of a physical process by the phrase due_to_process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. A phrase assuming_condition indicates that the named quantity is the value which would obtain if all aspects of the system were unaltered except for the assumption of the circumstances specified by the condition. "tendency_of_X" means derivative of X with respect to time. "longwave" means longwave radiation. Air temperature is the bulk temperature of the air, not the surface (skin) temperature.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#TemperatureDrift"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_air_temperature_due_to_shortwave_heating_assuming_clear_sky">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#temperatureDrift"/>
+    <rdfs:label>tendency of air temperature due to shortwave heating assuming clear sky</rdfs:label>
+    <rdfs:comment>The specification of a physical process by the phrase due_to_process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. A phrase assuming_condition indicates that the named quantity is the value which would obtain if all aspects of the system were unaltered except for the assumption of the circumstances specified by the condition. "tendency_of_X" means derivative of X with respect to time. "shortwave" means shortwave radiation. Air temperature is the bulk temperature of the air, not the surface (skin) temperature.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#TemperatureDrift"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_air_temperature_due_to_stratiform_precipitation">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#temperatureDrift"/>
+    <rdfs:label>tendency of air temperature due to stratiform precipitation</rdfs:label>
+    <rdfs:comment>Air temperature is the bulk temperature of the air, not the surface (skin) temperature. In an atmosphere model, stratiform cloud is that produced by large-scale convergence (not the convection schemes). The specification of a physical process by the phrase due_to_process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. "tendency_of_X" means derivative of X with respect to time.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#TemperatureDrift"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_air_temperature_due_to_radiative_heating">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#temperatureDrift"/>
+    <rdfs:label>tendency of air temperature due to radiative heating</rdfs:label>
+    <rdfs:comment>The specification of a physical process by the phrase due_to_process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. "tendency_of_X" means derivative of X with respect to time. Air temperature is the bulk temperature of the air, not the surface (skin) temperature.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#TemperatureDrift"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_air_temperature_due_to_dry_convection">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#temperatureDrift"/>
+    <rdfs:label>tendency of air temperature due to dry convection</rdfs:label>
+    <rdfs:comment>The specification of a physical process by the phrase due_to_process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. "tendency_of_X" means derivative of X with respect to time. Air temperature is the bulk temperature of the air, not the surface (skin) temperature.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#TemperatureDrift"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_air_temperature_due_to_moist_convection">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#temperatureDrift"/>
+    <rdfs:label>tendency of air temperature due to moist convection</rdfs:label>
+    <rdfs:comment>The specification of a physical process by the phrase due_to_process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. "tendency_of_X" means derivative of X with respect to time. Air temperature is the bulk temperature of the air, not the surface (skin) temperature.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#TemperatureDrift"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_sea_water_temperature_due_to_advection">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#temperatureDrift"/>
+    <rdfs:label>tendency of sea water temperature due to advection</rdfs:label>
+    <rdfs:comment>"tendency_of_X" means derivative of X with respect to time.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#TemperatureDrift"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_air_temperature_due_to_diffusion">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#temperatureDrift"/>
+    <rdfs:label>tendency of air temperature due to diffusion</rdfs:label>
+    <rdfs:comment>The specification of a physical process by the phrase due_to_process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. "tendency_of_X" means derivative of X with respect to time. Air temperature is the bulk temperature of the air, not the surface (skin) temperature.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#TemperatureDrift"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_sea_water_temperature">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#temperatureDrift"/>
+    <rdfs:label>tendency of sea water temperature</rdfs:label>
+    <rdfs:comment> "tendency_of_X" means derivative of X with respect to time. </rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#TemperatureDrift"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_air_temperature_due_to_convection">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#temperatureDrift"/>
+    <rdfs:label>tendency of air temperature due to convection</rdfs:label>
+    <rdfs:comment>Air temperature is the bulk temperature of the air, not the surface (skin) temperature.  The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity  named by omitting the phrase.  "tendency_of_X" means derivative of X with respect to time. </rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#TemperatureDrift"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_sea_water_temperature_due_to_vertical_mixing">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#temperatureDrift"/>
+    <rdfs:label>tendency of sea water temperature due to vertical mixing</rdfs:label>
+    <rdfs:comment>"tendency_of_X" means derivative of X with respect to time.  "Vertical mixing" means any vertical transport other than by advection and bolus advection, represented by a combination of vertical diffusion, turbulent mixing and convection in ocean models.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#TemperatureDrift"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_sea_water_temperature_due_to_bolus_advection">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#temperatureDrift"/>
+    <rdfs:label>tendency of sea water temperature due to bolus advection</rdfs:label>
+    <rdfs:comment>"tendency_of_X" means derivative of X with respect to time.  Bolus advection in an ocean model means the part due to a scheme representing eddy-induced effects not included in the velocity field.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#TemperatureDrift"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_air_temperature_due_to_longwave_heating">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#temperatureDrift"/>
+    <rdfs:label>tendency of air temperature due to longwave heating</rdfs:label>
+    <rdfs:comment>The specification of a physical process by the phrase due_to_process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. "tendency_of_X" means derivative of X with respect to time. "longwave" means longwave radiation. Air temperature is the bulk temperature of the air, not the surface (skin) temperature.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#TemperatureDrift"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_air_temperature_due_to_advection">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#temperatureDrift"/>
+    <rdfs:label>tendency of air temperature due to advection</rdfs:label>
+    <rdfs:comment>The specification of a physical process by the phrase due_to_process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. "tendency_of_X" means derivative of X with respect to time. Air temperature is the bulk temperature of the air, not the surface (skin) temperature.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#TemperatureDrift"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_air_temperature_due_to_model_physics">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#temperatureDrift"/>
+    <rdfs:label>tendency of air temperature due to model physics</rdfs:label>
+    <rdfs:comment>Air temperature is the bulk temperature of the air, not the surface (skin) temperature.  The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity  named by omitting the phrase.  "tendency_of_X" means derivative of X with respect to time. </rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#TemperatureDrift"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_sea_water_temperature_due_to_horizontal_mixing">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#temperatureDrift"/>
+    <rdfs:label>tendency of sea water temperature due to horizontal mixing</rdfs:label>
+    <rdfs:comment>"tendency_of_X" means derivative of X with respect to time. "Horizontal mixing" means any horizontal transport other than by advection and bolus advection, usually represented as horizontal diffusion in ocean models. </rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#TemperatureDrift"/>
+  </skos:Concept>
+</rdf:RDF>

@@ -1,0 +1,58 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="https://w3id.org/nno/ontology"/>
+  <skos:Concept rdf:about="https://w3id.org/nno/ontology#meansquaredlogarithmicerror">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/nno/ontology"/>
+    <rdfs:label>Mean Squared Logarithmic Error</rdfs:label>
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="https://w3id.org/nno/ontology#RegressiveLoss">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/nno/ontology"/>
+        <rdfs:label>Regression Loss Function</rdfs:label>
+        <rdfs:comment>Loss function typically used for regression problems.</rdfs:comment>
+      </skos:ConceptScheme>
+    </skos:inScheme>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/nno/ontology#ontologyhuberloss">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/nno/ontology"/>
+    <rdfs:label>Huber Loss</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/nno/ontology#RegressiveLoss"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/nno/ontology#meansquarederror">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/nno/ontology"/>
+    <rdfs:label>Mean Squared Error</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/nno/ontology#RegressiveLoss"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/nno/ontology#cosineproximity">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/nno/ontology"/>
+    <rdfs:label>Cosine Proximity</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/nno/ontology#RegressiveLoss"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/nno/ontology#meanabsoluteerror">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/nno/ontology"/>
+    <rdfs:label>Mean Absolute Error</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/nno/ontology#RegressiveLoss"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/nno/ontology#poisson">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/nno/ontology"/>
+    <rdfs:label>Poisson</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/nno/ontology#RegressiveLoss"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/nno/ontology#logcosh">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/nno/ontology"/>
+    <rdfs:label>Log Cosh Loss</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/nno/ontology#RegressiveLoss"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/nno/ontology#meanabsolutepercentageerror">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/nno/ontology"/>
+    <rdfs:label>Mean Absolute Percentage Error</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/nno/ontology#RegressiveLoss"/>
+  </skos:Concept>
+</rdf:RDF>

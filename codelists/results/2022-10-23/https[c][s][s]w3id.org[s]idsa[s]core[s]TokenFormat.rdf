@@ -1,0 +1,54 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="https://w3id.org/idsa/core"/>
+  <owl:ObjectProperty rdf:about="https://w3id.org/idsa/core/tokenFormat">
+    <rdfs:comment xml:lang="en">Describes the format of the authentication token.</rdfs:comment>
+    <rdfs:label xml:lang="en">tokenFormat</rdfs:label>
+    <rdfs:domain rdf:resource="https://w3id.org/idsa/core/Token"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="https://w3id.org/idsa/core/TokenFormat">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+        <rdfs:label xml:lang="en">Token format</rdfs:label>
+        <rdfs:comment xml:lang="en">Possible formats for (security-related) tokens.</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/JWT">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label>Json Web Token</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/TokenFormat"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/UNKNOWN">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label>Unknown</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/TokenFormat"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/OTHER">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label>Other</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/TokenFormat"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/SWT">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label>Simple Web Token</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/TokenFormat"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/SAML_1_1">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label>Security Assertion Markup Language (SAML) 1.1</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/TokenFormat"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/idsa/code/SAML_2_0">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+    <rdfs:label>Security Assertion Markup Language (SAML) 2.0</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/idsa/core/TokenFormat"/>
+  </skos:Concept>
+</rdf:RDF>

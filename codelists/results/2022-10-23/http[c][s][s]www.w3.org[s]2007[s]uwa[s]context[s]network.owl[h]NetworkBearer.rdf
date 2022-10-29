@@ -1,0 +1,68 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+  <owl:ObjectProperty rdf:about="http://www.w3.org/2007/uwa/context/network.owl#availableNetworkBearers">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The available network bearers offered by a Network or available for a Device</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Available Network Bearers</rdfs:label>
+    <rdfs:domain rdf:parseType="Resource">
+    </rdfs:domain>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://www.w3.org/2007/uwa/context/network.owl#NetworkBearer">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Network Bearer</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >This class represents a network bearer in a delivery context</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.w3.org/2007/uwa/context/network.owl#supportedNetworkBearers">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >This property holds the set of network bearers supported by a Network or by a Device.</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Supported Network Bearers</rdfs:label>
+    <rdfs:domain rdf:parseType="Resource">
+    </rdfs:domain>
+    <rdfs:range rdf:resource="http://www.w3.org/2007/uwa/context/network.owl#NetworkBearer"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.w3.org/2007/uwa/context/network.owl#defaultNetworkBearer">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >This property represents the default Network Bearer for a Device</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Default Network Bearer</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.w3.org/2007/uwa/context/network.owl#NetworkSupport"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2007/uwa/context/network.owl#NetworkBearer"/>
+  </owl:ObjectProperty>
+  <owl:FunctionalProperty rdf:about="http://www.w3.org/2007/uwa/context/network.owl#preferredNetworkBearer">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >This property represents the preferred network bearer for a Network</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Preferred Network Bearer</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.w3.org/2007/uwa/context/network.owl#Network"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2007/uwa/context/network.owl#NetworkBearer"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="http://www.w3.org/2007/uwa/context/deliverycontext.owl#currentNetworkBearer">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >This property represents the currently used network bearer in a Delivery Context</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Current Network Bearer</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl#DeliveryContext"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2007/uwa/context/network.owl#NetworkBearer"/>
+  </owl:FunctionalProperty>
+  <skos:Concept rdf:about="http://www.example.org/2007/uwa/context/examples.owl#NetworkBearer_2">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+    <skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/network.owl#NetworkBearer"/>
+  </skos:Concept>
+</rdf:RDF>

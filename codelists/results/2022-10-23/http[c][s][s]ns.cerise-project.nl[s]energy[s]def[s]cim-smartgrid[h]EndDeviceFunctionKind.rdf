@@ -1,0 +1,78 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://ns.cerise-project.nl/energy/def/cim-smartgrid"/>
+  <skos:Concept rdf:about="http://ns.cerise-project.nl/energy/def/cim-smartgrid#EndDeviceFunctionKind.reverseFlow">
+    <rdfs:isDefinedBy rdf:resource="http://ns.cerise-project.nl/energy/def/cim-smartgrid"/>
+    <rdfs:label>reverseFlow</rdfs:label>
+    <rdfs:comment>Detection and monitoring of reverse flow.</rdfs:comment>
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="http://ns.cerise-project.nl/energy/def/cim-smartgrid#EndDeviceFunctionKind">
+        <rdfs:isDefinedBy rdf:resource="http://ns.cerise-project.nl/energy/def/cim-smartgrid"/>
+        <rdfs:label>EndDeviceFunctionKind</rdfs:label>
+        <rdfs:comment>Kind of end device function.</rdfs:comment>
+      </skos:ConceptScheme>
+    </skos:inScheme>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://ns.cerise-project.nl/energy/def/cim-smartgrid#EndDeviceFunctionKind.autonomousDst">
+    <rdfs:isDefinedBy rdf:resource="http://ns.cerise-project.nl/energy/def/cim-smartgrid"/>
+    <rdfs:label>autonomousDst</rdfs:label>
+    <rdfs:comment>Autonomous application of daylight savings time (DST).</rdfs:comment>
+    <skos:inScheme rdf:resource="http://ns.cerise-project.nl/energy/def/cim-smartgrid#EndDeviceFunctionKind"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://ns.cerise-project.nl/energy/def/cim-smartgrid#EndDeviceFunctionKind.outageHistory">
+    <rdfs:isDefinedBy rdf:resource="http://ns.cerise-project.nl/energy/def/cim-smartgrid"/>
+    <rdfs:label>outageHistory</rdfs:label>
+    <rdfs:comment>Reporting historical power interruption data.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://ns.cerise-project.nl/energy/def/cim-smartgrid#EndDeviceFunctionKind"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://ns.cerise-project.nl/energy/def/cim-smartgrid#EndDeviceFunctionKind.demandResponse">
+    <rdfs:isDefinedBy rdf:resource="http://ns.cerise-project.nl/energy/def/cim-smartgrid"/>
+    <rdfs:label>demandResponse</rdfs:label>
+    <rdfs:comment>Demand response functions.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://ns.cerise-project.nl/energy/def/cim-smartgrid#EndDeviceFunctionKind"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://ns.cerise-project.nl/energy/def/cim-smartgrid#EndDeviceFunctionKind.metrology">
+    <rdfs:isDefinedBy rdf:resource="http://ns.cerise-project.nl/energy/def/cim-smartgrid"/>
+    <rdfs:label>metrology</rdfs:label>
+    <rdfs:comment>Presentation of metered values to a user or another system (always a function of a meter, but might not be supported by a load control unit).</rdfs:comment>
+    <skos:inScheme rdf:resource="http://ns.cerise-project.nl/energy/def/cim-smartgrid#EndDeviceFunctionKind"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://ns.cerise-project.nl/energy/def/cim-smartgrid#EndDeviceFunctionKind.waterMetering">
+    <rdfs:isDefinedBy rdf:resource="http://ns.cerise-project.nl/energy/def/cim-smartgrid"/>
+    <rdfs:label>waterMetering</rdfs:label>
+    <rdfs:comment>Water metering.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://ns.cerise-project.nl/energy/def/cim-smartgrid#EndDeviceFunctionKind"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://ns.cerise-project.nl/energy/def/cim-smartgrid#EndDeviceFunctionKind.relaysProgramming">
+    <rdfs:isDefinedBy rdf:resource="http://ns.cerise-project.nl/energy/def/cim-smartgrid"/>
+    <rdfs:label>relaysProgramming</rdfs:label>
+    <rdfs:comment>Support for one or more relays that may be programmable in the meter (and tied to TOU, time pulse, load control or other functions).</rdfs:comment>
+    <skos:inScheme rdf:resource="http://ns.cerise-project.nl/energy/def/cim-smartgrid#EndDeviceFunctionKind"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://ns.cerise-project.nl/energy/def/cim-smartgrid#EndDeviceFunctionKind.gasMetering">
+    <rdfs:isDefinedBy rdf:resource="http://ns.cerise-project.nl/energy/def/cim-smartgrid"/>
+    <rdfs:label>gasMetering</rdfs:label>
+    <rdfs:comment>Gas metering.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://ns.cerise-project.nl/energy/def/cim-smartgrid#EndDeviceFunctionKind"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://ns.cerise-project.nl/energy/def/cim-smartgrid#EndDeviceFunctionKind.onRequestRead">
+    <rdfs:isDefinedBy rdf:resource="http://ns.cerise-project.nl/energy/def/cim-smartgrid"/>
+    <rdfs:label>onRequestRead</rdfs:label>
+    <rdfs:comment>On-request reads.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://ns.cerise-project.nl/energy/def/cim-smartgrid#EndDeviceFunctionKind"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://ns.cerise-project.nl/energy/def/cim-smartgrid#EndDeviceFunctionKind.electricMetering">
+    <rdfs:isDefinedBy rdf:resource="http://ns.cerise-project.nl/energy/def/cim-smartgrid"/>
+    <rdfs:label>electricMetering</rdfs:label>
+    <rdfs:comment>Electricity metering.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://ns.cerise-project.nl/energy/def/cim-smartgrid#EndDeviceFunctionKind"/>
+  </skos:Concept>
+</rdf:RDF>

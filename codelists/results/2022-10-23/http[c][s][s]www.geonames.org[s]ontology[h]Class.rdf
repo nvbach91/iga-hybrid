@@ -1,0 +1,69 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://www.geonames.org/ontology"/>
+  <owl:ObjectProperty rdf:about="http://www.geonames.org/ontology#featureClass">
+    <rdfs:comment xml:lang="en">The main category of the feature, as defined in geonames taxonomy.</rdfs:comment>
+    <rdfs:label xml:lang="en">feature class</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://www.geonames.org/ontology#Class">
+        <rdfs:isDefinedBy rdf:resource="http://www.geonames.org/ontology"/>
+        <rdfs:label xml:lang="en">Class</rdfs:label>
+        <rdfs:comment xml:lang="en">A class of features.</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://www.geonames.org/ontology#T">
+    <rdfs:isDefinedBy rdf:resource="http://www.geonames.org/ontology"/>
+    <rdfs:comment xml:lang="en">mountain, hill, rock, ...</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.geonames.org/ontology#Class"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.geonames.org/ontology#U">
+    <rdfs:isDefinedBy rdf:resource="http://www.geonames.org/ontology"/>
+    <rdfs:comment xml:lang="en">undersea</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.geonames.org/ontology#Class"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.geonames.org/ontology#V">
+    <rdfs:isDefinedBy rdf:resource="http://www.geonames.org/ontology"/>
+    <rdfs:comment xml:lang="en">forest, heath, ...</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.geonames.org/ontology#Class"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.geonames.org/ontology#H">
+    <rdfs:isDefinedBy rdf:resource="http://www.geonames.org/ontology"/>
+    <rdfs:comment xml:lang="en">stream, lake, ...</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.geonames.org/ontology#Class"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.geonames.org/ontology#L">
+    <rdfs:isDefinedBy rdf:resource="http://www.geonames.org/ontology"/>
+    <rdfs:comment xml:lang="en">parks,area, ...</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.geonames.org/ontology#Class"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.geonames.org/ontology#P">
+    <rdfs:isDefinedBy rdf:resource="http://www.geonames.org/ontology"/>
+    <rdfs:comment xml:lang="en">city, village,...</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.geonames.org/ontology#Class"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.geonames.org/ontology#A">
+    <rdfs:isDefinedBy rdf:resource="http://www.geonames.org/ontology"/>
+    <rdfs:comment xml:lang="en">country, state, region ...</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.geonames.org/ontology#Class"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.geonames.org/ontology#R">
+    <rdfs:isDefinedBy rdf:resource="http://www.geonames.org/ontology"/>
+    <rdfs:comment xml:lang="en">road, railroad, ...</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.geonames.org/ontology#Class"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.geonames.org/ontology#S">
+    <rdfs:isDefinedBy rdf:resource="http://www.geonames.org/ontology"/>
+    <rdfs:comment xml:lang="en">spot, building, farm, ...</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.geonames.org/ontology#Class"/>
+  </skos:Concept>
+</rdf:RDF>

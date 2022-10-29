@@ -1,0 +1,58 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://www.w3.org/2006/03/test-description"/>
+  <owl:ObjectProperty rdf:about="http://www.w3.org/2006/03/test-description#reviewStatus">
+    <rdfs:label xml:lang="en">status of review</rdfs:label>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://www.w3.org/2006/03/test-description#ReviewStatus">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2006/03/test-description"/>
+        <rdfs:label xml:lang="en">Status in a review process</rdfs:label>
+        <rdfs:comment>A particular stage in a review process</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://www.w3.org/2006/03/test-description#rejected">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2006/03/test-description"/>
+    <rdfs:label xml:lang="en">rejected</rdfs:label>
+    <rdfs:comment>the item has gone through the review process and was rejected</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.w3.org/2006/03/test-description#ReviewStatus"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2006/03/test-description#unreviewed">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2006/03/test-description"/>
+    <rdfs:label xml:lang="en">unreviewed</rdfs:label>
+    <rdfs:comment>the item has been proposed, but hasn't been reviewed (e.g. for completeness) yet</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.w3.org/2006/03/test-description#ReviewStatus"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2006/03/test-description#accepted">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2006/03/test-description"/>
+    <rdfs:label xml:lang="en">accepted</rdfs:label>
+    <rdfs:comment>the item has gone through a first review, which shows it as valid for further processing</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.w3.org/2006/03/test-description#ReviewStatus"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2006/03/test-description#assigned">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2006/03/test-description"/>
+    <rdfs:label xml:lang="en">assigned</rdfs:label>
+    <rdfs:comment>a more specific review of the item has been assigned to someone</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.w3.org/2006/03/test-description#ReviewStatus"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2006/03/test-description#approved">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2006/03/test-description"/>
+    <rdfs:label xml:lang="en">approved</rdfs:label>
+    <rdfs:comment>the item has gone through the review process and was approved</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.w3.org/2006/03/test-description#ReviewStatus"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2006/03/test-description#onhold">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2006/03/test-description"/>
+    <rdfs:label>on hold</rdfs:label>
+    <rdfs:comment>the item had already gone through the review process, but the results of the review need to be re-assessed due to new input</rdfs:comment>
+    <skos:inScheme rdf:resource="http://www.w3.org/2006/03/test-description#ReviewStatus"/>
+  </skos:Concept>
+</rdf:RDF>

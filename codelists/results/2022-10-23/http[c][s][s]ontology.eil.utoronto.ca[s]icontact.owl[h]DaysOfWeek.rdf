@@ -1,0 +1,56 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://ontology.eil.utoronto.ca/icontact.owl"/>
+  <owl:ObjectProperty rdf:about="http://ontology.eil.utoronto.ca/icontact.owl#dayofWeek">
+    <rdfs:comment xml:lang="en">Specifies the day of the week, e.g., Monday, that the times apply to.  This is the default for that day and can be overidden by the "hasDate" property.</rdfs:comment>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://ontology.eil.utoronto.ca/icontact.owl#DaysOfWeek">
+        <rdfs:isDefinedBy rdf:resource="http://ontology.eil.utoronto.ca/icontact.owl"/>
+        <rdfs:label xml:lang="en">Days of the Week</rdfs:label>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://ontology.eil.utoronto.ca/icontact.owl#Sunday">
+    <rdfs:isDefinedBy rdf:resource="http://ontology.eil.utoronto.ca/icontact.owl"/>
+    <rdfs:label xml:lang="en">Sunday</rdfs:label>
+    <skos:inScheme rdf:resource="http://ontology.eil.utoronto.ca/icontact.owl#DaysOfWeek"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://ontology.eil.utoronto.ca/icontact.owl#Monday">
+    <rdfs:isDefinedBy rdf:resource="http://ontology.eil.utoronto.ca/icontact.owl"/>
+    <rdfs:label xml:lang="en">Monday</rdfs:label>
+    <skos:inScheme rdf:resource="http://ontology.eil.utoronto.ca/icontact.owl#DaysOfWeek"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://ontology.eil.utoronto.ca/icontact.owl#Saturday">
+    <rdfs:isDefinedBy rdf:resource="http://ontology.eil.utoronto.ca/icontact.owl"/>
+    <rdfs:label xml:lang="en">Saturday</rdfs:label>
+    <skos:inScheme rdf:resource="http://ontology.eil.utoronto.ca/icontact.owl#DaysOfWeek"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://ontology.eil.utoronto.ca/icontact.owl#Tuesday">
+    <rdfs:isDefinedBy rdf:resource="http://ontology.eil.utoronto.ca/icontact.owl"/>
+    <rdfs:label xml:lang="en">Tuesday</rdfs:label>
+    <skos:inScheme rdf:resource="http://ontology.eil.utoronto.ca/icontact.owl#DaysOfWeek"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://ontology.eil.utoronto.ca/icontact.owl#Friday">
+    <rdfs:isDefinedBy rdf:resource="http://ontology.eil.utoronto.ca/icontact.owl"/>
+    <rdfs:label xml:lang="en">Friday</rdfs:label>
+    <skos:inScheme rdf:resource="http://ontology.eil.utoronto.ca/icontact.owl#DaysOfWeek"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://ontology.eil.utoronto.ca/icontact.owl#Thursday">
+    <rdfs:isDefinedBy rdf:resource="http://ontology.eil.utoronto.ca/icontact.owl"/>
+    <rdfs:label xml:lang="en">Thursday</rdfs:label>
+    <skos:inScheme rdf:resource="http://ontology.eil.utoronto.ca/icontact.owl#DaysOfWeek"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://ontology.eil.utoronto.ca/icontact.owl#Wednesday">
+    <rdfs:isDefinedBy rdf:resource="http://ontology.eil.utoronto.ca/icontact.owl"/>
+    <rdfs:label xml:lang="en">Wednesday</rdfs:label>
+    <skos:inScheme rdf:resource="http://ontology.eil.utoronto.ca/icontact.owl#DaysOfWeek"/>
+  </skos:Concept>
+</rdf:RDF>

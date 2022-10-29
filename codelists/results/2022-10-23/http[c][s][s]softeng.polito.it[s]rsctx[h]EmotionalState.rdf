@@ -1,0 +1,121 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://softeng.polito.it/rsctx"/>
+  <owl:ObjectProperty rdf:about="http://softeng.polito.it/rsctx#hasEmotionalState">
+    <rdfs:comment xml:lang="en">This property indicates the emotional state of a user.</rdfs:comment>
+    <rdfs:label xml:lang="en">has emotional state</rdfs:label>
+    <rdfs:domain rdf:resource="http://ns.inria.fr/prissma/v2#User"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://softeng.polito.it/rsctx#EmotionalState">
+        <rdfs:isDefinedBy rdf:resource="http://softeng.polito.it/rsctx"/>
+        <rdfs:label xml:lang="en">Emotional State</rdfs:label>
+        <rdfs:comment xml:lang="en">The state of a person's emotions (especially with regard to pleasure or dejection).
+
+WARNING The possible values are represented as individuals while in the GUMO ontology are classes.</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://softeng.polito.it/rsctx#boredom">
+    <rdfs:isDefinedBy rdf:resource="http://softeng.polito.it/rsctx"/>
+    <rdfs:label xml:lang="en">boredom</rdfs:label>
+    <skos:inScheme rdf:resource="http://softeng.polito.it/rsctx#EmotionalState"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://softeng.polito.it/rsctx#fear">
+    <rdfs:isDefinedBy rdf:resource="http://softeng.polito.it/rsctx"/>
+    <rdfs:label xml:lang="en">fear</rdfs:label>
+    <skos:inScheme rdf:resource="http://softeng.polito.it/rsctx#EmotionalState"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://softeng.polito.it/rsctx#relief">
+    <rdfs:isDefinedBy rdf:resource="http://softeng.polito.it/rsctx"/>
+    <rdfs:label xml:lang="en">relief</rdfs:label>
+    <skos:inScheme rdf:resource="http://softeng.polito.it/rsctx#EmotionalState"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://softeng.polito.it/rsctx#satisfaction">
+    <rdfs:isDefinedBy rdf:resource="http://softeng.polito.it/rsctx"/>
+    <rdfs:label xml:lang="en">satisfaction</rdfs:label>
+    <skos:inScheme rdf:resource="http://softeng.polito.it/rsctx#EmotionalState"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://softeng.polito.it/rsctx#worry">
+    <rdfs:isDefinedBy rdf:resource="http://softeng.polito.it/rsctx"/>
+    <rdfs:label xml:lang="en">worry</rdfs:label>
+    <skos:inScheme rdf:resource="http://softeng.polito.it/rsctx#EmotionalState"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://softeng.polito.it/rsctx#sadness">
+    <rdfs:isDefinedBy rdf:resource="http://softeng.polito.it/rsctx"/>
+    <rdfs:label xml:lang="en">sadness</rdfs:label>
+    <skos:inScheme rdf:resource="http://softeng.polito.it/rsctx#EmotionalState"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://softeng.polito.it/rsctx#pride">
+    <rdfs:isDefinedBy rdf:resource="http://softeng.polito.it/rsctx"/>
+    <rdfs:label xml:lang="en">pride</rdfs:label>
+    <skos:inScheme rdf:resource="http://softeng.polito.it/rsctx#EmotionalState"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://softeng.polito.it/rsctx#anxiety">
+    <rdfs:isDefinedBy rdf:resource="http://softeng.polito.it/rsctx"/>
+    <rdfs:label xml:lang="en">anxiety</rdfs:label>
+    <skos:inScheme rdf:resource="http://softeng.polito.it/rsctx#EmotionalState"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://softeng.polito.it/rsctx#shame">
+    <rdfs:isDefinedBy rdf:resource="http://softeng.polito.it/rsctx"/>
+    <rdfs:label xml:lang="en">shame</rdfs:label>
+    <skos:inScheme rdf:resource="http://softeng.polito.it/rsctx#EmotionalState"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://softeng.polito.it/rsctx#love">
+    <rdfs:isDefinedBy rdf:resource="http://softeng.polito.it/rsctx"/>
+    <rdfs:label xml:lang="en">love</rdfs:label>
+    <skos:inScheme rdf:resource="http://softeng.polito.it/rsctx#EmotionalState"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://softeng.polito.it/rsctx#dread">
+    <rdfs:isDefinedBy rdf:resource="http://softeng.polito.it/rsctx"/>
+    <rdfs:label xml:lang="en">dread</rdfs:label>
+    <skos:inScheme rdf:resource="http://softeng.polito.it/rsctx#EmotionalState"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://softeng.polito.it/rsctx#hope">
+    <rdfs:isDefinedBy rdf:resource="http://softeng.polito.it/rsctx"/>
+    <rdfs:label xml:lang="en">hope</rdfs:label>
+    <skos:inScheme rdf:resource="http://softeng.polito.it/rsctx#EmotionalState"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://softeng.polito.it/rsctx#disgust">
+    <rdfs:isDefinedBy rdf:resource="http://softeng.polito.it/rsctx"/>
+    <rdfs:label xml:lang="en">disgust</rdfs:label>
+    <skos:inScheme rdf:resource="http://softeng.polito.it/rsctx#EmotionalState"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://softeng.polito.it/rsctx#hate">
+    <rdfs:isDefinedBy rdf:resource="http://softeng.polito.it/rsctx"/>
+    <rdfs:label xml:lang="en">hate</rdfs:label>
+    <skos:inScheme rdf:resource="http://softeng.polito.it/rsctx#EmotionalState"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://softeng.polito.it/rsctx#anger">
+    <rdfs:isDefinedBy rdf:resource="http://softeng.polito.it/rsctx"/>
+    <rdfs:label xml:lang="en">anger</rdfs:label>
+    <skos:inScheme rdf:resource="http://softeng.polito.it/rsctx#EmotionalState"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://softeng.polito.it/rsctx#confusion">
+    <rdfs:isDefinedBy rdf:resource="http://softeng.polito.it/rsctx"/>
+    <rdfs:label xml:lang="en">confusion</rdfs:label>
+    <skos:inScheme rdf:resource="http://softeng.polito.it/rsctx#EmotionalState"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://softeng.polito.it/rsctx#happiness">
+    <rdfs:isDefinedBy rdf:resource="http://softeng.polito.it/rsctx"/>
+    <rdfs:label xml:lang="en">happiness</rdfs:label>
+    <skos:inScheme rdf:resource="http://softeng.polito.it/rsctx#EmotionalState"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://softeng.polito.it/rsctx#excitement">
+    <rdfs:isDefinedBy rdf:resource="http://softeng.polito.it/rsctx"/>
+    <rdfs:label xml:lang="en">excitement</rdfs:label>
+    <skos:inScheme rdf:resource="http://softeng.polito.it/rsctx#EmotionalState"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://softeng.polito.it/rsctx#joy">
+    <rdfs:isDefinedBy rdf:resource="http://softeng.polito.it/rsctx"/>
+    <rdfs:label xml:lang="en">joy</rdfs:label>
+    <skos:inScheme rdf:resource="http://softeng.polito.it/rsctx#EmotionalState"/>
+  </skos:Concept>
+</rdf:RDF>

@@ -1,0 +1,66 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://purl.org/spar/scoro/"/>
+  <skos:Concept rdf:about="http://purl.org/spar/scoro/photographer">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+    <rdfs:label xml:lang="en">photographer</rdfs:label>
+    <rdfs:comment xml:lang="en">The role a person has of being a photographer of, or for, some entity.</rdfs:comment>
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="http://purl.org/spar/scoro/AuthorshipRole">
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+        <rdfs:label xml:lang="en">authorship role</rdfs:label>
+        <rdfs:comment xml:lang="en">A role that a person might hold as an author of a publication or the creator of a work.  Individual members of this class are used to specify particular roles.</rdfs:comment>
+      </skos:ConceptScheme>
+    </skos:inScheme>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/scoro/article-guarantor">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+    <rdfs:label xml:lang="en">article guarantor</rdfs:label>
+    <rdfs:comment xml:lang="en">The role of a person who takes responsibility for the integrity of the work as a whole, from the inception of the research investigation to the published research article.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/scoro/AuthorshipRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/pro/author">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+    <skos:inScheme rdf:resource="http://purl.org/spar/scoro/AuthorshipRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/scoro/principal-author">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+    <rdfs:label xml:lang="en">principal author</rdfs:label>
+    <rdfs:comment xml:lang="en">The role an author has of being the principal or primary author of the document, who has contributed most to the work described.  
+
+(In some communities, but not all, the principal author is named first in the author list.  Two or more authors can have the role of principal author if they contributed equally to the work.  This role should not be employed in communities in which no primacy of authorship is asserted, but where all authors are deemed to have made an equal contribution to the work.)</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/scoro/AuthorshipRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/scoro/illustrator">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+    <rdfs:label xml:lang="en">illustrator</rdfs:label>
+    <rdfs:comment xml:lang="en">The role a person has of being an illustrator of, or for, some entity.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/scoro/AuthorshipRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/scoro/consortium-author">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+    <rdfs:label xml:lang="en">consortium author</rdfs:label>
+    <rdfs:comment xml:lang="en">The authorship role of an organisation or consortium that has contributed collectively to the work described in the publication and is named in the list of authors, e.g. 'Wellcome Trust Case Control Consortium' or 'Malaria Genomic Epidemiology Network'.  (The members of such a group should be separately listed elsewhere in the document).</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/scoro/AuthorshipRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/scoro/senior-author">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+    <rdfs:label xml:lang="en">senior author</rdfs:label>
+    <rdfs:comment xml:lang="en">The role an author has of being the senior author of the document. </rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/scoro/AuthorshipRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/scoro/corresponding-author">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+    <rdfs:label xml:lang="en">corresponding author</rdfs:label>
+    <rdfs:comment xml:lang="en">The role an author has of being the corresponding author of the document, with whom editors and readers should correspond concerning it. </rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/scoro/AuthorshipRole"/>
+  </skos:Concept>
+</rdf:RDF>

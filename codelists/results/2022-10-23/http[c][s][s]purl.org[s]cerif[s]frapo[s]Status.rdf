@@ -1,0 +1,42 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://purl.org/cerif/frapo/"/>
+  <skos:Concept rdf:about="http://purl.org/cerif/frapo/funded">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/cerif/frapo/"/>
+    <rdfs:label xml:lang="en">funded</rdfs:label>
+    <rdfs:comment xml:lang="en">The status of something such as an investigation or a project as being funded.</rdfs:comment>
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="http://purl.org/cerif/frapo/Status">
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/cerif/frapo/"/>
+        <rdfs:label xml:lang="en">status</rdfs:label>
+        <rdfs:comment xml:lang="en">The status of something such as an application, an investigation or a project.</rdfs:comment>
+      </skos:ConceptScheme>
+    </skos:inScheme>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/cerif/frapo/accepted">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/cerif/frapo/"/>
+    <rdfs:label xml:lang="en">accepted</rdfs:label>
+    <rdfs:comment xml:lang="en">The status of something such as an application as having been accepted.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/cerif/frapo/Status"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/cerif/frapo/rejected">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/cerif/frapo/"/>
+    <rdfs:label xml:lang="en">rejected</rdfs:label>
+    <rdfs:comment xml:lang="en">The status of something such as an application as having been rejected.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/cerif/frapo/Status"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/cerif/frapo/unfunded">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/cerif/frapo/"/>
+    <rdfs:label xml:lang="en">unfunded</rdfs:label>
+    <rdfs:comment xml:lang="en">The status of something such as an investigation or a project as being unfunded.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/cerif/frapo/Status"/>
+  </skos:Concept>
+</rdf:RDF>

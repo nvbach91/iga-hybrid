@@ -1,0 +1,44 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology"/>
+  <owl:ObjectProperty rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#typeOfSE">
+    <rdfs:comment xml:lang="en">Variable indicating the SE-establishment mode: by merger, conversion, holding-SE, subsidiary-SE or unsure</rdfs:comment>
+    <rdfs:label xml:lang="en">Type of SE</rdfs:label>
+    <rdfs:domain rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#CompanyTransaction"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#SEType">
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology"/>
+        <rdfs:label xml:lang="en">Societas Europaea (SE) type</rdfs:label>
+        <rdfs:comment xml:lang="en">Variable indicating the SE-establishment mode: by merger, conversion, holding-SE, subsidiary-SE or unsure (cases)</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#se_holding">
+    <rdfs:isDefinedBy rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology"/>
+    <skos:inScheme rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#SEType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#se_unsure">
+    <rdfs:isDefinedBy rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology"/>
+    <skos:inScheme rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#SEType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#se_merger">
+    <rdfs:isDefinedBy rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology"/>
+    <skos:inScheme rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#SEType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#se_subsidiary">
+    <rdfs:isDefinedBy rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology"/>
+    <skos:inScheme rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#SEType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#se_conversion">
+    <rdfs:isDefinedBy rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology"/>
+    <skos:inScheme rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#SEType"/>
+  </skos:Concept>
+</rdf:RDF>

@@ -1,0 +1,121 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://rdf.geospecies.org/ont/geospecies"/>
+  <owl:ObjectProperty rdf:about="http://rdf.geospecies.org/ont/geospecies#hasWI_Herbarium_Habitat">
+    <rdfs:label>hasWI_Herbarium_Habitat</rdfs:label>
+    <rdfs:domain rdf:resource="http://rdf.geospecies.org/ont/geospecies#Location"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://rdf.geospecies.org/ont/geospecies#Wisconsin_Herbarium_Habitat_Classification">
+        <rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+        <rdfs:label>Wisconsin Herbarium Habitat Classification</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
+        >C.E. Umbanhowar, Jr.'s revised "Vegetation of Wisconsin Habitats" as originally defined by J.T. Curtis (Wisconsin Plant Ecology Laboratory Data (PEL))
+
+The descriptions under each major habitat type were written by Eric J. Epstein, Emmet J. Judziewicz, and Elizabeth Spencer of the Natural Heritage Inventory (NHI), Bureau of Endangered Resources, Wisconsin Department of Natural Resources for the forthcoming Habitat Database of Endangered, Theatened, and Special Concern Vascular Plants, and must be considered tentative.  They were condensed and summarized for the Curtis-Umbanhowar classification by Judziewicz.  Not all NHI type as currently recognized are included in the preliminary classification below.</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://rdf.geospecies.org/ont/geospecies#hasWisconsinHerbariumHabitatAssociation">
+    <rdfs:label>hasWisconsinHerbariumHabitatAssociation</rdfs:label>
+    <rdfs:domain rdf:resource="http://rdf.geospecies.org/ont/geospecies#SpeciesConcept"/>
+    <rdfs:range rdf:resource="http://rdf.geospecies.org/ont/geospecies#Wisconsin_Herbarium_Habitat_Classification"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://rdf.geospecies.org/ont/geospecies#hasWisconsinHerbariumHabitatPreference">
+    <rdfs:label>hasWisconsinHerbariumHabitatPreference</rdfs:label>
+    <rdfs:domain rdf:resource="http://rdf.geospecies.org/ont/geospecies#SpeciesConcept"/>
+    <rdfs:range rdf:resource="http://rdf.geospecies.org/ont/geospecies#Wisconsin_Herbarium_Habitat_Classification"/>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://rdf.geospecies.org/ont/geospecies#Wisconsin_Herbarium_Southern_Upland_Forest">
+    <rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+    <rdfs:label>Wisconsin_Herbarium_Southern_Upland_Forest</rdfs:label>
+    <skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#Wisconsin_Herbarium_Habitat_Classification"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://rdf.geospecies.org/ont/geospecies#Wisconsin_Herbarium_Bracken_Grassland">
+    <rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+    <rdfs:label>Wisconsin_Herbarium_Bracken_Grassland</rdfs:label>
+    <skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#Wisconsin_Herbarium_Habitat_Classification"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://rdf.geospecies.org/ont/geospecies#Wisconsin_Herbarium_Shrub_Carr">
+    <rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+    <rdfs:label>Wisconsin_Herbarium_Shrub_Carr</rdfs:label>
+    <skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#Wisconsin_Herbarium_Habitat_Classification"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://rdf.geospecies.org/ont/geospecies#Wisconsin_Herbarium_Prairie">
+    <rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+    <rdfs:label>Wisconsin_Herbarium_Prairie</rdfs:label>
+    <skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#Wisconsin_Herbarium_Habitat_Classification"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://rdf.geospecies.org/ont/geospecies#Wisconsin_Herbarium_Emergent_Aquatic">
+    <rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+    <rdfs:label>Wisconsin_Herbarium_Emergent_Aquatic</rdfs:label>
+    <skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#Wisconsin_Herbarium_Habitat_Classification"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://rdf.geospecies.org/ont/geospecies#Wisconsin_Herbarium_Savanna">
+    <rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+    <rdfs:label>Wisconsin_Herbarium_Savanna</rdfs:label>
+    <skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#Wisconsin_Herbarium_Habitat_Classification"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://rdf.geospecies.org/ont/geospecies#Wisconsin_Herbarium_Cliff">
+    <rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+    <rdfs:label>Wisconsin_Herbarium_Cliff</rdfs:label>
+    <skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#Wisconsin_Herbarium_Habitat_Classification"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://rdf.geospecies.org/ont/geospecies#Wisconsin_Herbarium_Pine_Barrens">
+    <rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+    <rdfs:label>Wisconsin_Herbarium_Pine_Barrens</rdfs:label>
+    <skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#Wisconsin_Herbarium_Habitat_Classification"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://rdf.geospecies.org/ont/geospecies#Wisconsin_Herbarium_Sand_Dunes">
+    <rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+    <rdfs:label>Wisconsin_Herbarium_Sand_Dunes</rdfs:label>
+    <skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#Wisconsin_Herbarium_Habitat_Classification"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://rdf.geospecies.org/ont/geospecies#Wisconsin_Herbarium_Beech_Forest">
+    <rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+    <rdfs:label>Wisconsin_Herbarium_Beech_Forest</rdfs:label>
+    <skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#Wisconsin_Herbarium_Habitat_Classification"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://rdf.geospecies.org/ont/geospecies#Wisconsin_Herbarium_Sand_Barrens">
+    <rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+    <rdfs:label>Wisconsin_Herbarium_Sand_Barrens</rdfs:label>
+    <skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#Wisconsin_Herbarium_Habitat_Classification"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://rdf.geospecies.org/ont/geospecies#Wisconsin_Herbarium_Bog_and_Fen">
+    <rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+    <rdfs:label>Wisconsin_Herbarium_Bog</rdfs:label>
+    <skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#Wisconsin_Herbarium_Habitat_Classification"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://rdf.geospecies.org/ont/geospecies#Wisconsin_Herbarium_Northern_Lowland_Forest">
+    <rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+    <rdfs:label>Wisconsin_Herbarium_Northern_Lowland_Forest</rdfs:label>
+    <skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#Wisconsin_Herbarium_Habitat_Classification"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://rdf.geospecies.org/ont/geospecies#Wisconsin_Herbarium_Southern_Lowland_Forest">
+    <rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+    <rdfs:label>Wisconsin_Herbarium_Southern_Lowland_Forest</rdfs:label>
+    <skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#Wisconsin_Herbarium_Habitat_Classification"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://rdf.geospecies.org/ont/geospecies#Wisconsin_Herbarium_Sedge_Meadow">
+    <rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+    <rdfs:label>Wisconsin_Herbarium_Sedge_Meadow</rdfs:label>
+    <skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#Wisconsin_Herbarium_Habitat_Classification"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://rdf.geospecies.org/ont/geospecies#Wisconsin_Herbarium_Boreal_Forest">
+    <rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+    <rdfs:label>Wisconsin_Herbarium_Boreal_Forest</rdfs:label>
+    <skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#Wisconsin_Herbarium_Habitat_Classification"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://rdf.geospecies.org/ont/geospecies#Wisconsin_Herbarium_Northern_Upland_Forest">
+    <rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+    <rdfs:label>Wisconsin_Herbarium_Northern_Upland_Forest</rdfs:label>
+    <skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#Wisconsin_Herbarium_Habitat_Classification"/>
+  </skos:Concept>
+</rdf:RDF>

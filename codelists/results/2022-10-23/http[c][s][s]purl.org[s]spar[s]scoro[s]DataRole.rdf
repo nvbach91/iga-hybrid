@@ -1,0 +1,78 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://purl.org/spar/scoro/"/>
+  <skos:Concept rdf:about="http://purl.org/spar/scoro/web-master">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+    <rdfs:label xml:lang="en">web-master</rdfs:label>
+    <rdfs:comment xml:lang="en">The role of a person responsible for maintaining a web site and its content.</rdfs:comment>
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="http://purl.org/spar/scoro/DataRole">
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+        <rdfs:label xml:lang="en">data role</rdfs:label>
+        <rdfs:comment xml:lang="en">A role that an agent might hold with respect to data.  Individual members of this class are used to specify particular roles.</rdfs:comment>
+      </skos:ConceptScheme>
+    </skos:inScheme>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/scoro/data-creator">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+    <rdfs:label xml:lang="en">data creator</rdfs:label>
+    <rdfs:comment xml:lang="en">The role a person has of being a creator or originator of new data.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/scoro/DataRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/scoro/embargo-controller">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+    <rdfs:label xml:lang="en">embargo controller</rdfs:label>
+    <rdfs:comment xml:lang="en">The role of the person who has responsibility for setting and lifting embargos that restrict access to a dataset (or a document) for a specified period of time.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/scoro/DataRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/scoro/repository-manager">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+    <rdfs:label xml:lang="en">repository manager</rdfs:label>
+    <rdfs:comment xml:lang="en">The role a person has of being a manager of a repository where entities are given secure long-term storage, typically digital repository for information objects, for example a data repository.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/scoro/DataRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/scoro/data-user">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+    <rdfs:label xml:lang="en">data user</rdfs:label>
+    <rdfs:comment xml:lang="en">The role a person has of being a user or re-user of existing data.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/scoro/DataRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/scoro/data-manager">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+    <rdfs:label xml:lang="en">data manager</rdfs:label>
+    <rdfs:comment xml:lang="en">The role a person has of being a data manager, responsible for day-to-day management and back-up of data, for example those arising from the research project.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/scoro/DataRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/scoro/access-provider">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+    <rdfs:label xml:lang="en">access provider</rdfs:label>
+    <rdfs:comment xml:lang="en">The role of an agent who provides access to a resource, for example an online data repository.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/scoro/DataRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/scoro/data-curator">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+    <rdfs:label xml:lang="en">data curator</rdfs:label>
+    <rdfs:comment xml:lang="en">The role a person has of being a data curator, responsible for long-term preservation of data, for example those arising from the research project.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/scoro/DataRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/scoro/data-publisher">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+    <rdfs:label xml:lang="en">data publisher</rdfs:label>
+    <rdfs:comment xml:lang="en">The role of an agent who publishes data.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/scoro/DataRole"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/scoro/curator">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+    <rdfs:label xml:lang="en">curator</rdfs:label>
+    <rdfs:comment xml:lang="en">The role of an agent that documents, cares for and manages collections of objects (for example in a museum) or of data (as in a data repository or database).  [A data curator is a curator who specializes in digital data, while a librarian is a type of curator specializing in textual publications.]</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/scoro/DataRole"/>
+  </skos:Concept>
+</rdf:RDF>

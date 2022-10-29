@@ -1,6 +1,6 @@
 <rdf:RDF
-    xmlns:dct="http://purl.org/dc/terms/"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
     xmlns:dc="http://purl.org/dc/elements/1.1/"
     xmlns:owl="http://www.w3.org/2002/07/owl#"
     xmlns:dcmit="http://purl.org/dc/dcmitype/"
@@ -10,19 +10,20 @@
     xmlns:vann="http://purl.org/vocab/vann/">
   <owl:Ontology rdf:about="https://www.gleif.org/ontology/ReportingException/"/>
   <owl:ObjectProperty rdf:about="https://www.gleif.org/ontology/ReportingException/hasExceptionReason">
-    <rdfs:isDefinedBy rdf:resource="https://www.gleif.org/ontology/ReportingException/"/>
     <rdfs:label>has exception reason</rdfs:label>
-    <rdfs:domain>
-      <rdf:Description rdf:about="https://www.gleif.org/ontology/ReportingException/ReportingException">
-        <rdfs:isDefinedBy rdf:resource="https://www.gleif.org/ontology/ReportingException/"/>
-      </rdf:Description>
-    </rdfs:domain>
+    <rdfs:domain rdf:resource="https://www.gleif.org/ontology/ReportingException/ReportingException"/>
     <rdfs:range>
       <skos:ConceptScheme rdf:about="https://www.gleif.org/ontology/ReportingException/ExceptionReasonKind">
         <rdfs:isDefinedBy rdf:resource="https://www.gleif.org/ontology/ReportingException/"/>
+        <rdfs:label>exception reason</rdfs:label>
       </skos:ConceptScheme>
     </rdfs:range>
   </owl:ObjectProperty>
+  <skos:Concept rdf:about="https://www.gleif.org/ontology/ReportingException/ExceptionReasonKindBindingLegalCommitments">
+    <rdfs:isDefinedBy rdf:resource="https://www.gleif.org/ontology/ReportingException/"/>
+    <rdfs:label>binding legal commitments</rdfs:label>
+    <skos:inScheme rdf:resource="https://www.gleif.org/ontology/ReportingException/ExceptionReasonKind"/>
+  </skos:Concept>
   <skos:Concept rdf:about="https://www.gleif.org/ontology/ReportingException/ExceptionReasonKindLegalObstacles">
     <rdfs:isDefinedBy rdf:resource="https://www.gleif.org/ontology/ReportingException/"/>
     <rdfs:label>legal obstacles</rdfs:label>
@@ -38,21 +39,6 @@
     <rdfs:label>non consolidating</rdfs:label>
     <skos:inScheme rdf:resource="https://www.gleif.org/ontology/ReportingException/ExceptionReasonKind"/>
   </skos:Concept>
-  <skos:Concept rdf:about="https://www.gleif.org/ontology/ReportingException/ExceptionReasonKindDisclosureDetrimental">
-    <rdfs:isDefinedBy rdf:resource="https://www.gleif.org/ontology/ReportingException/"/>
-    <rdfs:label>disclosure detrimental</rdfs:label>
-    <skos:inScheme rdf:resource="https://www.gleif.org/ontology/ReportingException/ExceptionReasonKind"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://www.gleif.org/ontology/ReportingException/ExceptionReasonKindNoLEI">
-    <rdfs:isDefinedBy rdf:resource="https://www.gleif.org/ontology/ReportingException/"/>
-    <rdfs:label>no LEI</rdfs:label>
-    <skos:inScheme rdf:resource="https://www.gleif.org/ontology/ReportingException/ExceptionReasonKind"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://www.gleif.org/ontology/ReportingException/ExceptionReasonKindBindingLegalCommitments">
-    <rdfs:isDefinedBy rdf:resource="https://www.gleif.org/ontology/ReportingException/"/>
-    <rdfs:label>binding legal commitments</rdfs:label>
-    <skos:inScheme rdf:resource="https://www.gleif.org/ontology/ReportingException/ExceptionReasonKind"/>
-  </skos:Concept>
   <skos:Concept rdf:about="https://www.gleif.org/ontology/ReportingException/ExceptionReasonKindConsentNotObtained">
     <rdfs:isDefinedBy rdf:resource="https://www.gleif.org/ontology/ReportingException/"/>
     <rdfs:label>consent not obtained</rdfs:label>
@@ -61,6 +47,16 @@
   <skos:Concept rdf:about="https://www.gleif.org/ontology/ReportingException/ExceptionReasonKindDetrimentNotExcluded">
     <rdfs:isDefinedBy rdf:resource="https://www.gleif.org/ontology/ReportingException/"/>
     <rdfs:label>detriment not excluded</rdfs:label>
+    <skos:inScheme rdf:resource="https://www.gleif.org/ontology/ReportingException/ExceptionReasonKind"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://www.gleif.org/ontology/ReportingException/ExceptionReasonKindDisclosureDetrimental">
+    <rdfs:isDefinedBy rdf:resource="https://www.gleif.org/ontology/ReportingException/"/>
+    <rdfs:label>disclosure detrimental</rdfs:label>
+    <skos:inScheme rdf:resource="https://www.gleif.org/ontology/ReportingException/ExceptionReasonKind"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://www.gleif.org/ontology/ReportingException/ExceptionReasonKindNoLEI">
+    <rdfs:isDefinedBy rdf:resource="https://www.gleif.org/ontology/ReportingException/"/>
+    <rdfs:label>no LEI</rdfs:label>
     <skos:inScheme rdf:resource="https://www.gleif.org/ontology/ReportingException/ExceptionReasonKind"/>
   </skos:Concept>
   <skos:Concept rdf:about="https://www.gleif.org/ontology/ReportingException/ExceptionReasonKindNoKnownPerson">

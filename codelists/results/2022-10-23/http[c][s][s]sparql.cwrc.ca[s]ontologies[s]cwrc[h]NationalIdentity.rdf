@@ -1,0 +1,100 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://sparql.cwrc.ca/ontologies/cwrc"/>
+  <owl:ObjectProperty rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#hasNationalityReported">
+    <rdfs:label xml:lang="en">has national identity (reported)</rdfs:label>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#NationalIdentity">
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+        <rdfs:label xml:lang="en">national identity</rdfs:label>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#hasNationalitySelfReported">
+    <rdfs:label xml:lang="en">has national identity (self-reported)</rdfs:label>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:range rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#NationalIdentity"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#hasNationality">
+    <rdfs:label xml:lang="en">has national identity</rdfs:label>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:range rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#NationalIdentity"/>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#saxonNationalIdentity">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">Saxon</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#NationalIdentity"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#britishNationalIdentity">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">British</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#NationalIdentity"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#europeanNationalIdentity">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">European</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#NationalIdentity"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#hanoverianNationalIdentity">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">Hanoverian</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#NationalIdentity"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#africanNationalIdentity">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">African</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#NationalIdentity"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#mohawkNationalIdentity">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">Mohawk</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#NationalIdentity"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#florentineNationalIdentity">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">Florentine</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#NationalIdentity"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#sephardicJewishNationalIdentity">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <skos:broaderTransitive>
+      <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#jewishNationalIdentity">
+        <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+        <rdfs:label xml:lang="en">Jewish</rdfs:label>
+        <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#NationalIdentity"/>
+      </skos:Concept>
+    </skos:broaderTransitive>
+    <rdfs:label xml:lang="en">Sephardic Jewish</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#NationalIdentity"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#statelessNationalIdentity">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">stateless</rdfs:label>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#NationalIdentity"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#anglo-IndianNationalIdentity">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">Anglo-Indian</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#NationalIdentity"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#anglo-IrishNationalIdentity">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+    <rdfs:label xml:lang="en">Anglo-Irish</rdfs:label>
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#NationalIdentity"/>
+  </skos:Concept>
+  <owl:DeprecatedProperty rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#hasNationalitySelfDeclared">
+    <rdfs:comment xml:lang="en">Deprecated in favour of instance &lt;a href="#hasNationalitySelfReported" title="#hasNationalitySelfReported"&gt;has national identity (self-reported)&lt;/a&gt;.</rdfs:comment>
+    <rdfs:label xml:lang="en">has nationality (self declared)</rdfs:label>
+    <rdfs:range rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#NationalIdentity"/>
+  </owl:DeprecatedProperty>
+</rdf:RDF>

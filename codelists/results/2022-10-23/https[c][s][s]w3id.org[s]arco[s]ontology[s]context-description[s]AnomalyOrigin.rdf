@@ -1,0 +1,39 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="https://w3id.org/arco/ontology/context-description"/>
+  <owl:ObjectProperty rdf:about="https://w3id.org/arco/ontology/context-description/hasAnomalyOrigin">
+    <rdfs:comment xml:lang="en">This property relates an anomaly detected during a photo interpretation or rendering survey to the origin of the anomaly (e.g. natural, unsure).</rdfs:comment>
+    <rdfs:label xml:lang="en">has anomaly origin</rdfs:label>
+    <rdfs:domain rdf:resource="https://w3id.org/arco/ontology/context-description/Anomaly"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="https://w3id.org/arco/ontology/context-description/AnomalyOrigin">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/context-description"/>
+        <rdfs:label xml:lang="en">Anomaly origin</rdfs:label>
+        <rdfs:comment xml:lang="en">This class represents the anomaly origin of the photo interpretation rendering.</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/context-description/NaturalOrigin">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/context-description"/>
+    <rdfs:label xml:lang="en">Natural origin</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/context-description/AnomalyOrigin"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/context-description/UncertainOrigin">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/context-description"/>
+    <rdfs:label xml:lang="en">Uncertain origin</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/context-description/AnomalyOrigin"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/context-description/AnthropicOrigin">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/context-description"/>
+    <rdfs:label xml:lang="en">Anthropic origin</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/context-description/AnomalyOrigin"/>
+  </skos:Concept>
+</rdf:RDF>

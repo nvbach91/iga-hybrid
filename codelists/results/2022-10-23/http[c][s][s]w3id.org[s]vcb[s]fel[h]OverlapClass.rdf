@@ -1,0 +1,42 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://w3id.org/vcb/fel#"/>
+  <skos:Concept rdf:about="http://w3id.org/vcb/fel#IntermediateOverlap">
+    <rdfs:isDefinedBy rdf:resource="http://w3id.org/vcb/fel#"/>
+    <rdfs:label xml:lang="en">Intermediate Overlap</rdfs:label>
+    <rdfs:comment>This class describes all the mentions that overlap with others and that, more specifically, both contain and are contained in other mentions. For instance, in the mention 'New York Police Department Museum', the mention 'New York Police Department' has intermediate overlap because it is contained in the overall mention and contains the mention 'New York'.</rdfs:comment>
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="http://w3id.org/vcb/fel#OverlapClass">
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/vcb/fel#"/>
+        <rdfs:label xml:lang="en">Overlap Class</rdfs:label>
+        <rdfs:comment xml:lang="en">This meta-class gathers classes that divide annotations based on whether or not their mention overlaps with others. For example, in the sentence 'Living with Michael Jackson is a tfelevision documentary' the mention 'documentary' does not overlap with another mention; for this reason it is considered non-overlapping. On the other hand, the mentions 'Living with Michael Jackson' and 'Michael Jackson' have overlap.</rdfs:comment>
+      </skos:ConceptScheme>
+    </skos:inScheme>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://w3id.org/vcb/fel#MinimalOverlap">
+    <rdfs:isDefinedBy rdf:resource="http://w3id.org/vcb/fel#"/>
+    <rdfs:label xml:lang="en">Minimal Overlap</rdfs:label>
+    <rdfs:comment>This class describes all the mentions that overlap with others and that, more specifically, are contained in but do not contain other mentions. For instance, in the annotation 'Living with Michael Jackson', the mention 'Michael Jackson' is considered to have minimal overlap.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://w3id.org/vcb/fel#OverlapClass"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://w3id.org/vcb/fel#NoOverlap">
+    <rdfs:isDefinedBy rdf:resource="http://w3id.org/vcb/fel#"/>
+    <rdfs:label xml:lang="en">No Overlap</rdfs:label>
+    <rdfs:comment>This class gathers all the mentions without overlap.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://w3id.org/vcb/fel#OverlapClass"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://w3id.org/vcb/fel#MaximalOverlap">
+    <rdfs:isDefinedBy rdf:resource="http://w3id.org/vcb/fel#"/>
+    <rdfs:label xml:lang="en">Maximal Overlap</rdfs:label>
+    <rdfs:comment>This class describes all the mentions that overlap with others and that, more specifically, contain other mentions entirfely inside them but are not contained in other mentions. For instance, 'Living with Michael Jackson' is considered as maximal overlap assuming 'Michael Jackson' is also annotated and it is not contained inside another mention.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://w3id.org/vcb/fel#OverlapClass"/>
+  </skos:Concept>
+</rdf:RDF>

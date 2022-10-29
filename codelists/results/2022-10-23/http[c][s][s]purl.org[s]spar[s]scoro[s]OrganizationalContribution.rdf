@@ -1,0 +1,58 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://purl.org/spar/scoro/"/>
+  <skos:Concept rdf:about="http://purl.org/spar/scoro/supervises-colleagues">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+    <rdfs:label xml:lang="en">Supervises, mentors or trains colleagues</rdfs:label>
+    <rdfs:comment xml:lang="en">The contribution of supervising, mentoring, instructing or training colleagues, particularly junior research assistants and research students, in aspects of the research or its methodologies.</rdfs:comment>
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="http://purl.org/spar/scoro/OrganizationalContribution">
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+        <rdfs:label xml:lang="en">organizational contribution</rdfs:label>
+        <rdfs:comment xml:lang="en">Defines the type or nature of an organizational or administrative contribution.  Individual members of this class are used to specify particular contributions.</rdfs:comment>
+      </skos:ConceptScheme>
+    </skos:inScheme>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/scoro/ensures-regulatory-compliance">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+    <rdfs:label xml:lang="en">ensures regulatory compliance</rdfs:label>
+    <rdfs:comment xml:lang="en">The contribution of ensuring regulatory compliance for the research undertaken, for example in obtaining informed consent from patients, approval from research ethics or radiation safety committees, or a license for animal experimentation.  </rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/scoro/OrganizationalContribution"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/scoro/manages-project">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+    <rdfs:label xml:lang="en">manages project</rdfs:label>
+    <rdfs:comment xml:lang="en">The contribution of project management.  
+
+Note that an individual other than the person holding the formal role of project manager may make considerable contributions to the management of a research project.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/scoro/OrganizationalContribution"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/scoro/secures-funding">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+    <rdfs:label xml:lang="en">secures funding</rdfs:label>
+    <rdfs:comment xml:lang="en">The contribution of securing funding for the research project.  
+
+Note that an individual other than the lead applicant and the co-applicants on a grant application may make contributions to securing funding for a research project, for example by assisting in writing the grant application.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/scoro/OrganizationalContribution"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/scoro/provides-administrative-support">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+    <rdfs:label xml:lang="en">provides administrative support</rdfs:label>
+    <rdfs:comment xml:lang="en">The contribution of providing administrative support for the research project.  </rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/scoro/OrganizationalContribution"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/spar/scoro/controls-project-finances">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+    <rdfs:label xml:lang="en">controls project finances</rdfs:label>
+    <rdfs:comment xml:lang="en">The contribution of controlling the financial aspects of the research project, including authorizing expenditure, creating and managing budgets, and submitting financial reports to the funding agency.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/spar/scoro/OrganizationalContribution"/>
+  </skos:Concept>
+</rdf:RDF>

@@ -1,0 +1,79 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://rdf.geospecies.org/ont/geospecies"/>
+  <owl:ObjectProperty rdf:about="http://rdf.geospecies.org/ont/geospecies#hasTaxonomicStatus">
+    <rdfs:label>hasTaxonomicStatus</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://rdf.geospecies.org/ont/geospecies#TaxonomicStatus">
+        <rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+        <rdfs:label>taxonomicStatus</rdfs:label>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://rdf.geospecies.org/ont/geospecies#TaxonomicStatus_homotypicSynonym">
+    <rdfs:label>taxonomicStatus_homotypic_synonym</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+    <rdfs:label>Homotypic Synonym</rdfs:label>
+    <rdfs:comment>Objective synonym based on the same type(s)</rdfs:comment>
+    <skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#TaxonomicStatus"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://rdf.geospecies.org/ont/geospecies#TaxonomicStatus_synonym">
+    <rdfs:label>taxonomicStatus_synonym</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+    <rdfs:label>Synonym</rdfs:label>
+    <rdfs:comment>if unclear whether hetero- or homotypic. May be qualified by the nomenclatural status of the name</rdfs:comment>
+    <skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#TaxonomicStatus"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://rdf.geospecies.org/ont/geospecies#TaxonomicStatus_unverified">
+    <rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+    <rdfs:label>taxonomicStatus_unverified</rdfs:label>
+    <skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#TaxonomicStatus"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://rdf.geospecies.org/ont/geospecies#TaxonomicStatus_unaccepted">
+    <rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+    <rdfs:label>Unaccepted</rdfs:label>
+    <rdfs:comment>unaccepted name, invalid, invalid name</rdfs:comment>
+    <skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#TaxonomicStatus"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://rdf.geospecies.org/ont/geospecies#TaxonomicStatus_accepted">
+    <rdfs:label>taxonomicStatus_valid</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+    <rdfs:label>Accepted</rdfs:label>
+    <rdfs:comment>The status of a taxon according to the taxonomic judgement of a cited authority</rdfs:comment>
+    <skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#TaxonomicStatus"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://rdf.geospecies.org/ont/geospecies#TaxonomicStatus_proParteSynonym">
+    <rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+    <rdfs:label>Proparte Synonym</rdfs:label>
+    <rdfs:comment>Some specimens of the original type series have been assigned to a new type</rdfs:comment>
+    <skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#TaxonomicStatus"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://rdf.geospecies.org/ont/geospecies#TaxonomicStatus_heterotypicSynonym">
+    <rdfs:label>taxonomicStatus_heterotypic_synonym</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+    <rdfs:label>Heterotypic Synonym</rdfs:label>
+    <rdfs:comment>Subjective synonym based on different type(s)</rdfs:comment>
+    <skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#TaxonomicStatus"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://rdf.geospecies.org/ont/geospecies#TaxonomicStatus_misapplied">
+    <rdfs:label>taxonomicStatus_misapplied_name</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+    <rdfs:label>Misapplied</rdfs:label>
+    <rdfs:comment>misapplied name</rdfs:comment>
+    <skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#TaxonomicStatus"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://rdf.geospecies.org/ont/geospecies#TaxonomicStatus_invalid">
+    <rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+    <rdfs:label>taxonomicStatus_invalid</rdfs:label>
+    <skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#TaxonomicStatus"/>
+  </skos:Concept>
+</rdf:RDF>

@@ -1,0 +1,119 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://purl.org/onto-ocds/ocds"/>
+  <owl:FunctionalProperty rdf:about="http://purl.org/onto-ocds/ocds#tag">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment xml:lang="en">A value from the [releaseTag codelist](http://standard.open-contracting.org/latest/en/schema/codelists/#release-tag) that identifies the nature of the release being made. Tags may be used to filter release, or, in future, for for advanced validation when certain kinds of releases should contain certain fields.</rdfs:comment>
+    <rdfs:label xml:lang="en">Release Tag</rdfs:label>
+    <rdfs:domain rdf:resource="http://purl.org/onto-ocds/ocds#Release"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://purl.org/onto-ocds/ocds#ReleaseTag">
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/onto-ocds/ocds"/>
+        <rdfs:label xml:lang="en">Codelist ReleaseTag</rdfs:label>
+        <rdfs:comment xml:lang="en">A contracting process may result in a number of releases of information over time. These should be tagged to indicate the stage of the contracting process they relate to.</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:FunctionalProperty>
+  <skos:Concept rdf:about="http://purl.org/onto-ocds/ocds#releaseTagContract">
+    <rdfs:label xml:lang="en">Contract</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/onto-ocds/ocds"/>
+    <rdfs:label xml:lang="en">contract</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/onto-ocds/ocds#ReleaseTag"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/onto-ocds/ocds#releaseTagImplementation">
+    <rdfs:label xml:lang="en">Implementation</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/onto-ocds/ocds"/>
+    <rdfs:label xml:lang="en">implementation</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/onto-ocds/ocds#ReleaseTag"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/onto-ocds/ocds#releaseTagPlanning">
+    <rdfs:label xml:lang="en">Planning</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/onto-ocds/ocds"/>
+    <rdfs:label xml:lang="en">planning</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/onto-ocds/ocds#ReleaseTag"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/onto-ocds/ocds#releaseTagTenderUpdate">
+    <rdfs:label xml:lang="en">Tender Update</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/onto-ocds/ocds"/>
+    <rdfs:label xml:lang="en">tenderUpdate</rdfs:label>
+    <rdfs:comment xml:lang="en">An updated to an existing tender release. There should be at least one tender release with the same ocid, but an earlier releaseDate, before a tenderUpdate is published. An update may add new information or make corrections to prior published information. It should not be used for formal legal amendments to a tender, for which the tenderAmendment tag should be used.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/onto-ocds/ocds#ReleaseTag"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/onto-ocds/ocds#releaseTagContractAmendment">
+    <rdfs:label xml:lang="en">Contract Amendment</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/onto-ocds/ocds"/>
+    <rdfs:label xml:lang="en">contractAmendment</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/onto-ocds/ocds#ReleaseTag"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/onto-ocds/ocds#releaseTagContractUpdate">
+    <rdfs:label xml:lang="en">Contract Update</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/onto-ocds/ocds"/>
+    <rdfs:label xml:lang="en">contractUpdate</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/onto-ocds/ocds#ReleaseTag"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/onto-ocds/ocds#releaseTagTender">
+    <rdfs:label xml:lang="en">Tender</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/onto-ocds/ocds"/>
+    <rdfs:label xml:lang="en">tender</rdfs:label>
+    <rdfs:comment xml:lang="en">Announcing a new tender (call for proposals) process. Tender release should contain details of the goods or services being sought.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/onto-ocds/ocds#ReleaseTag"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/onto-ocds/ocds#releaseTagContractTermination">
+    <rdfs:label xml:lang="en">Contract Termination</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/onto-ocds/ocds"/>
+    <rdfs:label xml:lang="en">contractTermination</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/onto-ocds/ocds#ReleaseTag"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/onto-ocds/ocds#releaseTagImplementationUpdate">
+    <rdfs:label xml:lang="en">Implementation Update</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/onto-ocds/ocds"/>
+    <rdfs:label xml:lang="en">implementationUpdate</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/onto-ocds/ocds#ReleaseTag"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/onto-ocds/ocds#releaseTagCompiled">
+    <rdfs:label xml:lang="en">Compiled Record</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/onto-ocds/ocds"/>
+    <rdfs:label xml:lang="en">compiled</rdfs:label>
+    <rdfs:comment xml:lang="en">This tag is used only in compiled records, which have merged together multiple releases to provide a snapshot view of the contract, and a version history.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/onto-ocds/ocds#ReleaseTag"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/onto-ocds/ocds#releaseTagAwardUpdate">
+    <rdfs:label xml:lang="en">Award Update</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/onto-ocds/ocds"/>
+    <rdfs:label xml:lang="en">awardUpdate</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/onto-ocds/ocds#ReleaseTag"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/onto-ocds/ocds#releaseTagAwardCancellation">
+    <rdfs:label xml:lang="en">Award Cancellation</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/onto-ocds/ocds"/>
+    <rdfs:label xml:lang="en">awardCancellation</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/onto-ocds/ocds#ReleaseTag"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/onto-ocds/ocds#releaseTagAward">
+    <rdfs:label xml:lang="en">Award</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/onto-ocds/ocds"/>
+    <rdfs:label xml:lang="en">award</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/onto-ocds/ocds#ReleaseTag"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/onto-ocds/ocds#releaseTagTenderCancellation">
+    <rdfs:label xml:lang="en">Tender Cancellation</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/onto-ocds/ocds"/>
+    <rdfs:label xml:lang="en">tenderCancellation</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.org/onto-ocds/ocds#ReleaseTag"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/onto-ocds/ocds#releaseTagTenderAmendment">
+    <rdfs:label xml:lang="en">Tender Amendment</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/onto-ocds/ocds"/>
+    <rdfs:label xml:lang="en">tenderAmendment</rdfs:label>
+    <rdfs:comment xml:lang="en">An amendment to an existing tender release. There should be at least one tender release with the same ocid, but an earlier releaseDate, before a tenderAmendment is published. The term amendment has legal meaning in many jurisdictions.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/onto-ocds/ocds#ReleaseTag"/>
+  </skos:Concept>
+</rdf:RDF>

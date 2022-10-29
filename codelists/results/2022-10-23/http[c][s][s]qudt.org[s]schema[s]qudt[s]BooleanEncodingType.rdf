@@ -1,0 +1,38 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://qudt.org/schema/qudt"/>
+  <skos:Concept rdf:about="http://qudt.org/schema/qudt/ShortUnsignedIntegerEncoding">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/schema/qudt"/>
+    <rdfs:label>Short Unsigned Integer Encoding</rdfs:label>
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="http://qudt.org/schema/qudt/BooleanEncodingType">
+        <rdfs:isDefinedBy rdf:resource="http://qudt.org/schema/qudt"/>
+        <rdfs:label>Boolean encoding type</rdfs:label>
+      </skos:ConceptScheme>
+    </skos:inScheme>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://qudt.org/schema/qudt/OctetEncoding">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/schema/qudt"/>
+    <rdfs:label>OCTET Encoding</rdfs:label>
+    <skos:inScheme rdf:resource="http://qudt.org/schema/qudt/BooleanEncodingType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://qudt.org/schema/qudt/CharEncoding">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/schema/qudt"/>
+    <rdfs:label>Char Encoding</rdfs:label>
+    <rdfs:comment>7 bits of 1 octet</rdfs:comment>
+    <skos:inScheme rdf:resource="http://qudt.org/schema/qudt/BooleanEncodingType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://qudt.org/schema/qudt/BooleanEncoding">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/schema/qudt"/>
+    <rdfs:label>Boolean Encoding</rdfs:label>
+    <skos:inScheme rdf:resource="http://qudt.org/schema/qudt/BooleanEncodingType"/>
+  </skos:Concept>
+</rdf:RDF>

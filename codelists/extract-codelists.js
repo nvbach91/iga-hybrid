@@ -21,7 +21,7 @@ if (!fs.existsSync(filePath)) {
 const codeLists = require(`../aggregate/results/${date}/${date}_lov-analyzer-results-flat.json`);
 const codeListIris = Object.keys(codeLists);
 const { username, password, endpoint } = require('./config.json');
-const downloadFolder = `./results/${moment().format('YYYY-MM-DD')}`;
+const downloadFolder = `./results/${date}`;
 let dir = '.';
 downloadFolder.split('/').slice(1).forEach((step) => {
   dir = `${dir}/${step}`;
@@ -41,73 +41,70 @@ const axiosConfig = {
     },
 };
 /*  CONSTRUCT {
-        ?cl a skos:ConceptScheme .
-        ?c1 a skos:Concept .
-        ?c1 skos:inScheme ?cl .
-        ?c1 rdfs:comment ?c1Comment .
-        ?c1 rdfs:label ?c1Label .
-        ?c1 ?p ?c2 .
+        ?codeList a skos:ConceptScheme .
+        ?code1 a skos:Concept .
+        ?code1 skos:inScheme ?codeList .
+        ?code1 rdfs:comment ?code1Comment .
+        ?code1 rdfs:label ?code1Label .
+        ?code1 ?p ?code2 .
     }
     FROM <${vocabIri}>
     WHERE {
-        BIND(<${codeListIri}> AS ?cl)
-        ?c1 a ?cl .
-        OPTIONAL { ?c1 rdfs:comment ?c1Comment . }
-        OPTIONAL { ?c1 rdfs:label|dc:title|dcterms:title ?c1Label . }
+        BIND(<${codeListIri}> AS ?codeList)
+        ?code1 a ?codeList .
+        OPTIONAL { ?code1 rdfs:comment ?code1Comment . }
+        OPTIONAL { ?code1 rdfs:label|dc:title|dcterms:title ?code1Label . }
         OPTIONAL {
-            ?c2 a ?cl .
-            ?c1 ?p ?c2 .
+            ?code2 a ?codeList .
+            ?code1 ?p ?code2 .
         }
     } */
-const labelProps = 'rdfs:label|dc:title|dcterms:title';
+const labelProps = 'rdfs:label|dc:title|dcterms:title|skos:prefLabel';
 const commentProps = 'rdfs:comment|dc:description|dcterms:description';
 const filterLangs = (v) => `FILTER(LANGMATCHES(LANG(${v}), "en") || LANGMATCHES(LANG(${v}), ""))`;
 
 const createCodeListQuery = (codeListIri, vocabIri) => `
     ${Object.keys(prefixes).map((prefix) => `PREFIX ${prefix}: <${prefixes[prefix]}>`).join('\n')}
-    # ?cl = code list
-    # ?c1, ?c2 = class 1, class 2
-    # ?p = relationship between ?c1 and ?c2
+    # ?p = relationship between ?code1 and ?code2
     # ?ap = assignment property
-    # ?dt = assignment property domain
-    # ?apLabel = assignment property label
-    # ?apComment = assignment property comment
+    # ?dt = assignment property domain term
     CONSTRUCT {
-        ?cl a skos:ConceptScheme .
-        ?c1 a skos:Concept .
-        ?c1 skos:inScheme ?cl .
-        ?cl rdfs:comment ?clComment .
-        ?cl rdfs:label ?clComment .
-        ?c1 rdfs:comment ?c1Comment .
-        ?c1 rdfs:label ?c1Label .
-        ?c1 ?p ?c2 .
-        ?ap rdfs:range ?cl . 
-        ?ap rdfs:domain ?dt.
-        ?ap rdfs:label ?apLabel .
-        ?ap rdfs:comment ?apComment .
-        ?ap a ?apType .
-        <${vocabIri}> a owl:Ontology .
-        ?cl rdfs:isDefinedBy <${vocabIri}> .
-        ?c1 rdfs:isDefinedBy <${vocabIri}> .
-        ?c2 rdfs:isDefinedBy <${vocabIri}> .
-        ?ap rdfs:isDefinedBy <${vocabIri}> .
-        ?dt rdfs:isDefinedBy <${vocabIri}> .
+        ?codeList       a                   skos:ConceptScheme .
+        ?code1          a                   skos:Concept .
+        ?code1          skos:inScheme       ?codeList .
+        ?codeList       rdfs:comment        ?codeListComment .
+        ?codeList       rdfs:label          ?codeListLabel .
+        ?code1          rdfs:comment        ?code1Comment .
+        ?code1          rdfs:label          ?code1Label .
+        ?code1          ?p                  ?code2 .
+        ?code2          a                   skos:Concept .
+        ?ap             rdfs:range          ?codeList . 
+        ?ap             rdfs:domain         ?dt .
+        ?ap             rdfs:label          ?apLabel .
+        ?ap             rdfs:comment        ?apComment .
+        ?ap             a                   ?apType .
+        <${vocabIri}>   a                   owl:Ontology .
+        ?codeList       rdfs:isDefinedBy    <${vocabIri}> .
+        ?code1          rdfs:isDefinedBy    <${vocabIri}> .
+        ?code2          rdfs:isDefinedBy    <${vocabIri}> .
+        #?ap             rdfs:isDefinedBy    <${vocabIri}> .
+        #?dt             rdfs:isDefinedBy    <${vocabIri}> .
     }
     FROM <${vocabIri}>
     WHERE {
-        BIND(<${codeListIri}> AS ?cl)
-        ?c1 a ?cl .
-        FILTER NOT EXISTS { ?c1 a owl:Ontology }
-        OPTIONAL { ?cl ${labelProps} ?clLabel . ${filterLangs('?clLabel')} }
-        OPTIONAL { ?cl ${commentProps} ?clComment . ${filterLangs('?clComment')} }
-        OPTIONAL { ?c1 ${labelProps} ?c1Label . ${filterLangs('?c1Label')} }
-        OPTIONAL { ?c1 ${commentProps} ?c1Comment . ${filterLangs('?c1Comment')} }
+        BIND(<${codeListIri}> AS ?codeList)
+        ?code1 a ?codeList .
+        FILTER NOT EXISTS { ?code1 a owl:Ontology }
+        OPTIONAL { ?codeList ${labelProps} ?codeListLabel . ${filterLangs('?codeListLabel')} }
+        OPTIONAL { ?codeList ${commentProps} ?codeListComment . ${filterLangs('?codeListComment')} }
+        OPTIONAL { ?code1 ${labelProps} ?code1Label . ${filterLangs('?code1Label')} }
+        OPTIONAL { ?code1 ${commentProps} ?code1Comment . ${filterLangs('?code1Comment')} }
         OPTIONAL {
-            ?c2 a ?cl .
-            ?c1 ?p ?c2 .
+            ?code2 a ?codeList .
+            ?code1 ?p ?code2 .
         }
         OPTIONAL {
-            ?ap rdfs:range ?cl . 
+            ?ap rdfs:range ?codeList . 
             OPTIONAL { ?ap a ?apType . }
             OPTIONAL { ?ap ${labelProps} ?apLabel . ${filterLangs('?apLabel')} }
             OPTIONAL { ?ap ${commentProps} ?apComment . ${filterLangs('?apComment')} }

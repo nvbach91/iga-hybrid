@@ -1,0 +1,84 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://ns.cerise-project.nl/energy/def/cim-smartgrid"/>
+  <skos:Concept rdf:about="http://ns.cerise-project.nl/energy/def/cim-smartgrid#ServiceKind.rates">
+    <rdfs:isDefinedBy rdf:resource="http://ns.cerise-project.nl/energy/def/cim-smartgrid"/>
+    <rdfs:label>rates</rdfs:label>
+    <rdfs:comment>Rates (e.g. tax, charge, toll, duty, tariff, etc.) service.</rdfs:comment>
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="http://ns.cerise-project.nl/energy/def/cim-smartgrid#ServiceKind">
+        <rdfs:isDefinedBy rdf:resource="http://ns.cerise-project.nl/energy/def/cim-smartgrid"/>
+        <rdfs:label>ServiceKind</rdfs:label>
+        <rdfs:comment>Kind of service.</rdfs:comment>
+      </skos:ConceptScheme>
+    </skos:inScheme>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://ns.cerise-project.nl/energy/def/cim-smartgrid#ServiceKind.heat">
+    <rdfs:isDefinedBy rdf:resource="http://ns.cerise-project.nl/energy/def/cim-smartgrid"/>
+    <rdfs:label>heat</rdfs:label>
+    <rdfs:comment>Heat service.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://ns.cerise-project.nl/energy/def/cim-smartgrid#ServiceKind"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://ns.cerise-project.nl/energy/def/cim-smartgrid#ServiceKind.gas">
+    <rdfs:isDefinedBy rdf:resource="http://ns.cerise-project.nl/energy/def/cim-smartgrid"/>
+    <rdfs:label>gas</rdfs:label>
+    <rdfs:comment>Gas service.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://ns.cerise-project.nl/energy/def/cim-smartgrid#ServiceKind"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://ns.cerise-project.nl/energy/def/cim-smartgrid#ServiceKind.refuse">
+    <rdfs:isDefinedBy rdf:resource="http://ns.cerise-project.nl/energy/def/cim-smartgrid"/>
+    <rdfs:label>refuse</rdfs:label>
+    <rdfs:comment>Refuse (waster) service.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://ns.cerise-project.nl/energy/def/cim-smartgrid#ServiceKind"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://ns.cerise-project.nl/energy/def/cim-smartgrid#ServiceKind.electricity">
+    <rdfs:isDefinedBy rdf:resource="http://ns.cerise-project.nl/energy/def/cim-smartgrid"/>
+    <rdfs:label>electricity</rdfs:label>
+    <rdfs:comment>Electricity service.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://ns.cerise-project.nl/energy/def/cim-smartgrid#ServiceKind"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://ns.cerise-project.nl/energy/def/cim-smartgrid#ServiceKind.time">
+    <rdfs:isDefinedBy rdf:resource="http://ns.cerise-project.nl/energy/def/cim-smartgrid"/>
+    <rdfs:label>time</rdfs:label>
+    <rdfs:comment>Time service.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://ns.cerise-project.nl/energy/def/cim-smartgrid#ServiceKind"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://ns.cerise-project.nl/energy/def/cim-smartgrid#ServiceKind.water">
+    <rdfs:isDefinedBy rdf:resource="http://ns.cerise-project.nl/energy/def/cim-smartgrid"/>
+    <rdfs:label>water</rdfs:label>
+    <rdfs:comment>Water service.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://ns.cerise-project.nl/energy/def/cim-smartgrid#ServiceKind"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://ns.cerise-project.nl/energy/def/cim-smartgrid#ServiceKind.tvLicence">
+    <rdfs:isDefinedBy rdf:resource="http://ns.cerise-project.nl/energy/def/cim-smartgrid"/>
+    <rdfs:label>tvLicence</rdfs:label>
+    <rdfs:comment>TV license service.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://ns.cerise-project.nl/energy/def/cim-smartgrid#ServiceKind"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://ns.cerise-project.nl/energy/def/cim-smartgrid#ServiceKind.internet">
+    <rdfs:isDefinedBy rdf:resource="http://ns.cerise-project.nl/energy/def/cim-smartgrid"/>
+    <rdfs:label>internet</rdfs:label>
+    <rdfs:comment>Internet service.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://ns.cerise-project.nl/energy/def/cim-smartgrid#ServiceKind"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://ns.cerise-project.nl/energy/def/cim-smartgrid#ServiceKind.sewerage">
+    <rdfs:isDefinedBy rdf:resource="http://ns.cerise-project.nl/energy/def/cim-smartgrid"/>
+    <rdfs:label>sewerage</rdfs:label>
+    <rdfs:comment>Sewerage service.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://ns.cerise-project.nl/energy/def/cim-smartgrid#ServiceKind"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://ns.cerise-project.nl/energy/def/cim-smartgrid#ServiceKind.other">
+    <rdfs:isDefinedBy rdf:resource="http://ns.cerise-project.nl/energy/def/cim-smartgrid"/>
+    <rdfs:label>other</rdfs:label>
+    <rdfs:comment>Other kind of service.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://ns.cerise-project.nl/energy/def/cim-smartgrid#ServiceKind"/>
+  </skos:Concept>
+</rdf:RDF>

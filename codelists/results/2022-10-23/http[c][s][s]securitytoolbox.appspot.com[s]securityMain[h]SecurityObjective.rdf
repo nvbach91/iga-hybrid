@@ -1,0 +1,132 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://securitytoolbox.appspot.com/securityMain"/>
+  <owl:ObjectProperty rdf:about="http://securitytoolbox.appspot.com/securityMain#supportsSecurityObjectives">
+    <rdfs:comment>
+Any SecurityConcept can support one or more of the Security Objectives defined
+in the SecurityObjective class
+</rdfs:comment>
+    <rdfs:label xml:lang="en">supports Security Objectives</rdfs:label>
+    <rdfs:domain rdf:resource="http://securitytoolbox.appspot.com/securityMain#SecurityConcept"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://securitytoolbox.appspot.com/securityMain#SecurityObjective">
+        <rdfs:isDefinedBy rdf:resource="http://securitytoolbox.appspot.com/securityMain"/>
+        <rdfs:label xml:lang="en">Security Objective</rdfs:label>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://securitytoolbox.appspot.com/securityMain#MessageIntegrity">
+    <rdfs:isDefinedBy rdf:resource="http://securitytoolbox.appspot.com/securityMain"/>
+    <rdfs:comment>
+Data integrity or Message integrity; data cannot be changed, deleted,
+modified, etc by unauthorized parties.
+</rdfs:comment>
+    <skos:inScheme rdf:resource="http://securitytoolbox.appspot.com/securityMain#SecurityObjective"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://securitytoolbox.appspot.com/securityMain#Authorization">
+    <rdfs:isDefinedBy rdf:resource="http://securitytoolbox.appspot.com/securityMain"/>
+    <rdfs:comment>
+Only authorized entities are allowed to access resources in an authorized
+manner.
+(Aka Access Control). If desired, user may create instance of AccessControl as
+well.
+</rdfs:comment>
+    <skos:inScheme rdf:resource="http://securitytoolbox.appspot.com/securityMain#SecurityObjective"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://securitytoolbox.appspot.com/securityMain#MessageAuthentication">
+    <rdfs:isDefinedBy rdf:resource="http://securitytoolbox.appspot.com/securityMain"/>
+    <rdfs:comment>
+Provides guarantee that message came from whoever claimed to have sent it.
+</rdfs:comment>
+    <skos:inScheme rdf:resource="http://securitytoolbox.appspot.com/securityMain#SecurityObjective"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://securitytoolbox.appspot.com/securityMain#Anonymity">
+    <rdfs:isDefinedBy rdf:resource="http://securitytoolbox.appspot.com/securityMain"/>
+    <rdfs:comment>
+(Secondary Objective) Provides anonymity
+</rdfs:comment>
+    <skos:inScheme rdf:resource="http://securitytoolbox.appspot.com/securityMain#SecurityObjective"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://securitytoolbox.appspot.com/securityMain#ReplayPrevention">
+    <rdfs:isDefinedBy rdf:resource="http://securitytoolbox.appspot.com/securityMain"/>
+    <rdfs:comment>
+(Secondary Objective) Protect against replay attacks
+</rdfs:comment>
+    <skos:inScheme rdf:resource="http://securitytoolbox.appspot.com/securityMain#SecurityObjective"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://securitytoolbox.appspot.com/securityMain#UserAuthentication">
+    <rdfs:isDefinedBy rdf:resource="http://securitytoolbox.appspot.com/securityMain"/>
+    <rdfs:comment>
+Provides assurance of the identity of a person or entity.
+</rdfs:comment>
+    <skos:inScheme rdf:resource="http://securitytoolbox.appspot.com/securityMain#SecurityObjective"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://securitytoolbox.appspot.com/securityMain#Availability">
+    <rdfs:isDefinedBy rdf:resource="http://securitytoolbox.appspot.com/securityMain"/>
+    <rdfs:comment>
+Provides guarantee that resource is available to authorized users at any
+authorized time.
+</rdfs:comment>
+    <skos:inScheme rdf:resource="http://securitytoolbox.appspot.com/securityMain#SecurityObjective"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://securitytoolbox.appspot.com/securityMain#CovertChannelPrevention">
+    <rdfs:isDefinedBy rdf:resource="http://securitytoolbox.appspot.com/securityMain"/>
+    <rdfs:comment>
+(Secondary Objective) Prevent or limit the existance of covert channels
+</rdfs:comment>
+    <skos:inScheme rdf:resource="http://securitytoolbox.appspot.com/securityMain#SecurityObjective"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://securitytoolbox.appspot.com/securityMain#TrafficHiding">
+    <rdfs:isDefinedBy rdf:resource="http://securitytoolbox.appspot.com/securityMain"/>
+    <rdfs:comment>
+(Secondary Objective) Pad traffic with bogus data to hide traffic patterns
+</rdfs:comment>
+    <skos:inScheme rdf:resource="http://securitytoolbox.appspot.com/securityMain#SecurityObjective"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://securitytoolbox.appspot.com/securityMain#Trust">
+    <rdfs:isDefinedBy rdf:resource="http://securitytoolbox.appspot.com/securityMain"/>
+    <rdfs:comment>
+(Secondary Objective) How to trust entity. Trust not only of identification,
+but statements, claims, etc.
+</rdfs:comment>
+    <skos:inScheme rdf:resource="http://securitytoolbox.appspot.com/securityMain#SecurityObjective"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://securitytoolbox.appspot.com/securityMain#Separation">
+    <rdfs:isDefinedBy rdf:resource="http://securitytoolbox.appspot.com/securityMain"/>
+    <rdfs:comment>
+(Secondary Objective)
+</rdfs:comment>
+    <skos:inScheme rdf:resource="http://securitytoolbox.appspot.com/securityMain#SecurityObjective"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://securitytoolbox.appspot.com/securityMain#KeyManagement">
+    <rdfs:isDefinedBy rdf:resource="http://securitytoolbox.appspot.com/securityMain"/>
+    <rdfs:comment>
+(SecondaryObjective) Securely manages keys for legitimate users.
+</rdfs:comment>
+    <skos:inScheme rdf:resource="http://securitytoolbox.appspot.com/securityMain#SecurityObjective"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://securitytoolbox.appspot.com/securityMain#Confidentiality">
+    <rdfs:isDefinedBy rdf:resource="http://securitytoolbox.appspot.com/securityMain"/>
+    <rdfs:comment>
+Protects against information being disclosed or revealed to unauthorized
+parties.
+</rdfs:comment>
+    <skos:inScheme rdf:resource="http://securitytoolbox.appspot.com/securityMain#SecurityObjective"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://securitytoolbox.appspot.com/securityMain#HostTrust">
+    <rdfs:isDefinedBy rdf:resource="http://securitytoolbox.appspot.com/securityMain"/>
+    <rdfs:comment>
+(Secondary Objective) How to trust host or platform. Is relevant to Common
+criteria, etc.
+</rdfs:comment>
+    <skos:inScheme rdf:resource="http://securitytoolbox.appspot.com/securityMain#SecurityObjective"/>
+  </skos:Concept>
+</rdf:RDF>

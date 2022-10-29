@@ -1,0 +1,194 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:j.0="http://purl.oclc.org/NET/ssnx/qu/qu#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#ocean_vertical_heat_diffusivity">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind>
+      <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/qu/quantity#diffusionCoefficient">
+        <skos:inScheme>
+          <skos:ConceptScheme rdf:about="http://purl.oclc.org/NET/ssnx/qu/dim#DiffusionCoefficient">
+            <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+          </skos:ConceptScheme>
+        </skos:inScheme>
+        <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+      </skos:Concept>
+    </j.0:generalQuantityKind>
+    <rdfs:label>ocean vertical heat diffusivity</rdfs:label>
+    <rdfs:comment>"Vertical heat diffusivity" means the vertical component of the diffusivity of heat due to motion which is not resolved on the grid scale of the model.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#DiffusionCoefficient"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#atmosphere_horizontal_streamfunction">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#diffusionCoefficient"/>
+    <rdfs:label>atmosphere horizontal streamfunction</rdfs:label>
+    <rdfs:comment>"Horizontal" indicates that the streamfunction applies to a horizontal velocity field on a particular vertical level.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#DiffusionCoefficient"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#ocean_vertical_momentum_diffusivity_due_to_form_drag">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#diffusionCoefficient"/>
+    <rdfs:label>ocean vertical momentum diffusivity due to form drag</rdfs:label>
+    <rdfs:comment> Diffusivity is also sometimes known as the coefficient of diffusion. Diffusion occurs as a result of a gradient in the spatial distribution of mass concentration, temperature or momentum.  The diffusivity may be very different in the vertical and horizontal directions. The construction vertical_X_diffusivity means the vertical component of thediffusivity of X due to motion which is not resolved on the grid scale of the model. "Due to form drag" refers to a vertical diffusivity resulting from a model scheme representing  mesoscale eddy-induced form drag. The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity  named by omitting the phrase. </rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#DiffusionCoefficient"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#ocean_vertical_momentum_diffusivity_due_to_background">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#diffusionCoefficient"/>
+    <rdfs:label>ocean vertical momentum diffusivity due to background</rdfs:label>
+    <rdfs:comment> Diffusivity is also sometimes known as the coefficient of diffusion. Diffusion occurs as a result of a gradient in the spatial distribution of mass concentration, temperature or momentum.  The diffusivity may be very different in the vertical and horizontal directions. The construction vertical_X_diffusivity means the vertical component of thediffusivity of X due to motion which is not resolved on the grid scale of the model. "Due to background" means caused by a time invariant imposed field which may be eitherconstant over the globe or spatially varying, depending on the ocean model used. The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity  named by omitting the phrase. </rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#DiffusionCoefficient"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#ocean_vertical_momentum_diffusivity">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#diffusionCoefficient"/>
+    <rdfs:label>ocean vertical momentum diffusivity</rdfs:label>
+    <rdfs:comment>"Vertical momentum diffusivity" means the vertical component of the diffusivity of momentum due to motion which is not resolved on the grid scale of the model. </rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#DiffusionCoefficient"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#ocean_vertical_tracer_diffusivity">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#diffusionCoefficient"/>
+    <rdfs:label>ocean vertical tracer diffusivity</rdfs:label>
+    <rdfs:comment>"Vertical tracer diffusivity" means the vertical component of the diffusivity of tracers, i.e. heat and salinity, due to motion which is not resolved on the grid scale of the model.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#DiffusionCoefficient"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#vertical_component_of_ocean_xy_tracer_diffusivity">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#diffusionCoefficient"/>
+    <rdfs:label>vertical component of ocean xy tracer diffusivity</rdfs:label>
+    <rdfs:comment>The vertical_component_of_ocean_xy_tracer_diffusivity means the vertical component of the diffusivity of tracers in the ocean due to lateral mixing. This quantity could appear in formulations of lateral diffusivity in which "lateral" does not mean "iso-level", e.g. it would not be used for isopycnal diffusivity. "Tracer diffusivity" means the diffusivity of heat and salinity due to motion which is not resolved on the grid scale of the model.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#DiffusionCoefficient"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#product_of_northward_wind_and_geopotential_height">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#diffusionCoefficient"/>
+    <rdfs:label>product of northward wind and geopotential height</rdfs:label>
+    <rdfs:comment>"product_of_X_and_Y" means X*Y. Geopotential is the sum of the specific gravitational potential energy relative to the geoid and the specific centripetal potential energy. Geopotential height is the geopotential divided by the standard acceleration due to gravity. It is numerically similar to the altitude (or geometric height) and not to the quantity with standard name height, which is relative to the surface. "Northward" indicates a vector component which is positive when directed northward (negative southward). Wind is defined as a two-dimensional (horizontal) air velocity vector, with no vertical component. (Vertical motion in the atmosphere has the standard name upward_air_velocity.)</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#DiffusionCoefficient"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#ocean_tracer_bolus_laplacian_diffusivity">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#diffusionCoefficient"/>
+    <rdfs:label>ocean tracer bolus laplacian diffusivity</rdfs:label>
+    <rdfs:comment> Diffusivity is also sometimes known as the coefficient of diffusion. Diffusion occurs as a result of a gradient in the spatial distribution of mass concentration, temperature or momentum.  The diffusivity may be very different in the vertical and horizontal directions. "Bolus diffusivity" means a lateral diffusivity. "laplacian diffusivity" means diffusivity for use with a Laplacian diffusion operator.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#DiffusionCoefficient"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#ocean_vertical_tracer_diffusivity_due_to_convection">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#diffusionCoefficient"/>
+    <rdfs:label>ocean vertical tracer diffusivity due to convection</rdfs:label>
+    <rdfs:comment>The specification of a physical process by the phrase due_to_process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. "Vertical tracer diffusivity" means the vertical component of the diffusivity of tracers, i.e. heat and salinity, due to motion which is not resolved on the grid scale of the model.  Convective mixing in the ocean is sometimes modelled as an enhanced diffusivity.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#DiffusionCoefficient"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#atmosphere_momentum_diffusivity">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#diffusionCoefficient"/>
+    <rdfs:label>atmosphere momentum diffusivity</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#DiffusionCoefficient"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#ocean_vertical_tracer_diffusivity_due_to_tides">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#diffusionCoefficient"/>
+    <rdfs:label>ocean vertical tracer diffusivity due to tides</rdfs:label>
+    <rdfs:comment> Diffusivity is also sometimes known as the coefficient of diffusion. Diffusion occurs as a result of a gradient in the spatial distribution of mass concentration, temperature or momentum.  The diffusivity may be very different in the vertical and horizontal directions. The construction vertical_X_diffusivity means the vertical component of thediffusivity of X due to motion which is not resolved on the grid scale of the model. "Due to tides" means due to all astronomical gravity changes which manifest as tides.No distinction is made between different tidal components. The specification of a physicalprocess by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity  named by omitting the phrase. </rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#DiffusionCoefficient"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#ocean_vertical_momentum_diffusivity_due_to_convection">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#diffusionCoefficient"/>
+    <rdfs:label>ocean vertical momentum diffusivity due to convection</rdfs:label>
+    <rdfs:comment>The specification of a physical process by the phrase due_to_process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. "Vertical momentum diffusivity" means the vertical component of the diffusivity of momentum due to motion which is not resolved on the grid scale of the model. Convective mixing in the ocean is somtimes modelled as an enhanced diffusivity.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#DiffusionCoefficient"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#ocean_tracer_epineutral_laplacian_diffusivity">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#diffusionCoefficient"/>
+    <rdfs:label>ocean tracer epineutral laplacian diffusivity</rdfs:label>
+    <rdfs:comment> Diffusivity is also sometimes known as the coefficient of diffusion. Diffusion occurs as a result of a gradient in the spatial distribution of mass concentration, temperature or momentum.  The diffusivity may be very different in the vertical and horizontal directions. "epineutral diffusivity" means a lateral diffusivity along a either a neutral or isopycnal density surface due to motion which is not resolved on the grid scale of an ocean model. The type of density surface is dependent on the model formulation. "laplacian diffusivity" means diffusivity for use with a Laplacian diffusion operator.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#DiffusionCoefficient"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#ocean_momentum_xy_laplacian_diffusivity">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#diffusionCoefficient"/>
+    <rdfs:label>ocean momentum xy laplacian diffusivity</rdfs:label>
+    <rdfs:comment> Diffusivity is also sometimes known as the coefficient of diffusion. Diffusion occurs as a result of a gradient in the spatial distribution of mass concentration, temperature or momentum.  The diffusivity may be very different in the vertical and horizontal directions. "xy diffusivity" means the lateral along_coordinate component of diffusivity due to motion which is not resolved on the grid scale of the model.  xy diffusivities are used in some ocean models to counteract the numerical instabilities inherent in certain implementations of rotated neutral diffusion. "laplacian diffusivity" means diffusivity for use with a Laplacian diffusion operator.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#DiffusionCoefficient"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#ocean_tracer_xy_laplacian_diffusivity">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#diffusionCoefficient"/>
+    <rdfs:label>ocean tracer xy laplacian diffusivity</rdfs:label>
+    <rdfs:comment> Diffusivity is also sometimes known as the coefficient of diffusion. Diffusion occurs as a result of a gradient in the spatial distribution of mass concentration, temperature or momentum.  The diffusivity may be very different in the vertical and horizontal directions. "xy diffusivity" means the lateral along_coordinate component of diffusivity due to motion which is not resolved on the grid scale of the model.  xy diffusivities are used in some ocean models to counteract the numerical instabilities inherent in certain implementations of rotated neutral diffusion. "laplacian diffusivity" means diffusivity for use with a Laplacian diffusion operator.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#DiffusionCoefficient"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#ocean_vertical_tracer_diffusivity_due_to_wind_mixing">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#diffusionCoefficient"/>
+    <rdfs:label>ocean vertical tracer diffusivity due to wind mixing</rdfs:label>
+    <rdfs:comment>The specification of a physical process by the phrase due_to_process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. "Vertical tracer diffusivity" means the vertical component of the diffusivity of tracers, i.e. heat and salinity, due to motion which is not resolved on the grid scale of the model.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#DiffusionCoefficient"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#ocean_vertical_diffusivity">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#diffusionCoefficient"/>
+    <rdfs:label>ocean vertical diffusivity</rdfs:label>
+    <rdfs:comment>"Vertical diffusivity" means the vertical component of diffusivity due to motion which is not resolved on the grid scale of the model.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#DiffusionCoefficient"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#product_of_eastward_wind_and_geopotential_height">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#diffusionCoefficient"/>
+    <rdfs:label>product of eastward wind and geopotential height</rdfs:label>
+    <rdfs:comment>"product_of_X_and_Y" means X*Y. Geopotential is the sum of the specific gravitational potential energy relative to the geoid and the specific centripetal potential energy. Geopotential height is the geopotential divided by the standard acceleration due to gravity. It is numerically similar to the altitude (or geometric height) and not to the quantity with standard name height, which is relative to the surface. "Eastward" indicates a vector component which is positive when directed eastward (negative westward). Wind is defined as a two-dimensional (horizontal) air velocity vector, with no vertical component. (Vertical motion in the atmosphere has the standard name upward_air_velocity.)</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#DiffusionCoefficient"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#ocean_vertical_momentum_diffusivity_due_to_tides">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#diffusionCoefficient"/>
+    <rdfs:label>ocean vertical momentum diffusivity due to tides</rdfs:label>
+    <rdfs:comment> Diffusivity is also sometimes known as the coefficient of diffusion. Diffusion occurs as a result of a gradient in the spatial distribution of mass concentration, temperature or momentum.  The diffusivity may be very different in the vertical and horizontal directions. The construction vertical_X_diffusivity means the vertical component of thediffusivity of X due to motion which is not resolved on the grid scale of the model. "Due to tides" means due to all astronomical gravity changes which manifest as tides.No distinction is made between different tidal components. The specification of a physicalprocess by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity  named by omitting the phrase. </rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#DiffusionCoefficient"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#atmosphere_heat_diffusivity">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#diffusionCoefficient"/>
+    <rdfs:label>atmosphere heat diffusivity</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#DiffusionCoefficient"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#ocean_vertical_salt_diffusivity">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#diffusionCoefficient"/>
+    <rdfs:label>ocean vertical salt diffusivity</rdfs:label>
+    <rdfs:comment>"Vertical salt diffusivity" means the vertical component of the diffusivity of salt due to motion which is not resolved on the grid scale of the model.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#DiffusionCoefficient"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#ocean_vertical_tracer_diffusivity_due_to_background">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#diffusionCoefficient"/>
+    <rdfs:label>ocean vertical tracer diffusivity due to background</rdfs:label>
+    <rdfs:comment> Diffusivity is also sometimes known as the coefficient of diffusion. Diffusion occurs as a result of a gradient in the spatial distribution of mass concentration, temperature or momentum.  The diffusivity may be very different in the vertical and horizontal directions. The construction vertical_X_diffusivity means the vertical component of thediffusivity of X due to motion which is not resolved on the grid scale of the model. "Due to background" means caused by a time invariant imposed field which may be eitherconstant over the globe or spatially varying, depending on the ocean model used. The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity  named by omitting the phrase. </rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#DiffusionCoefficient"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#ocean_isopycnal_layer_thickness_diffusivity">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#diffusionCoefficient"/>
+    <rdfs:label>ocean isopycnal layer thickness diffusivity</rdfs:label>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#DiffusionCoefficient"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#atmosphere_horizontal_velocity_potential">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+    <j.0:generalQuantityKind rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#diffusionCoefficient"/>
+    <rdfs:label>atmosphere horizontal velocity potential</rdfs:label>
+    <rdfs:comment>A velocity is a vector quantity. "Horizontal" indicates that the velocity potential applies to a horizontal velocity field on a particular vertical level.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#DiffusionCoefficient"/>
+  </skos:Concept>
+</rdf:RDF>

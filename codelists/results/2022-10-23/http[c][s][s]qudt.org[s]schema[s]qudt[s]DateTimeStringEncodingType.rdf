@@ -1,0 +1,23 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://qudt.org/schema/qudt"/>
+  <skos:Concept rdf:about="http://qudt.org/schema/qudt/ISO8601-UTCDateTime-BasicFormat">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/schema/qudt"/>
+    <rdfs:label>ISO 8601 UTC Date Time - Basic Format</rdfs:label>
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="http://qudt.org/schema/qudt/DateTimeStringEncodingType">
+        <rdfs:isDefinedBy rdf:resource="http://qudt.org/schema/qudt"/>
+        <rdfs:label>Date Time String Encoding Type</rdfs:label>
+        <rdfs:comment>Date Time encodings are logical encodings for expressing date/time quantities as strings by applying unambiguous formatting and parsing rules.</rdfs:comment>
+      </skos:ConceptScheme>
+    </skos:inScheme>
+  </skos:Concept>
+</rdf:RDF>

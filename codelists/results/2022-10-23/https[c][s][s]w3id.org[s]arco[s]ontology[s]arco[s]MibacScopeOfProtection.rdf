@@ -1,0 +1,44 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="https://w3id.org/arco/ontology/arco"/>
+  <owl:ObjectProperty rdf:about="https://w3id.org/arco/ontology/arco/hasMibacScopeOfProtection">
+    <rdfs:comment xml:lang="en">This property relates a cultural property to ist MiBAC scope of protection</rdfs:comment>
+    <rdfs:label xml:lang="en">has MiBAC scope of protection</rdfs:label>
+    <rdfs:domain rdf:resource="https://w3id.org/arco/ontology/arco/CulturalProperty"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="https://w3id.org/arco/ontology/arco/MibacScopeOfProtection">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/arco"/>
+        <rdfs:label xml:lang="en">MiBAC Scope of protection</rdfs:label>
+        <rdfs:comment xml:lang="en">This class represents the MiBAC scope of protection (historical artistic, ethoanthropological, architectural landscape, archaeological) of a cultural property.</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/arco/ArchitecturalLandscapeScope">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/arco"/>
+    <rdfs:label xml:lang="en">Architectural or Landscape</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/arco/MibacScopeOfProtection"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/arco/HistoricalArtisticScope">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/arco"/>
+    <rdfs:label xml:lang="en">Historical Artistic</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/arco/MibacScopeOfProtection"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/arco/ArchaeologicalScope">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/arco"/>
+    <rdfs:label xml:lang="en">Archeaological</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/arco/MibacScopeOfProtection"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/arco/EthnoAnthropologicalScope">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/arco"/>
+    <rdfs:label xml:lang="en">Ethno-anthropological</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/arco/MibacScopeOfProtection"/>
+  </skos:Concept>
+</rdf:RDF>

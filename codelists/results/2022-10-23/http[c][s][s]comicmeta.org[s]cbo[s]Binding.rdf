@@ -1,0 +1,48 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://comicmeta.org/cbo/"/>
+  <owl:ObjectProperty rdf:about="http://comicmeta.org/cbo/binding">
+    <rdfs:comment xml:lang="en">Describes the binding of a comic issue.</rdfs:comment>
+    <rdfs:label xml:lang="en">binding</rdfs:label>
+    <rdfs:domain rdf:resource="http://comicmeta.org/cbo/Issue"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://comicmeta.org/cbo/Binding">
+        <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+        <rdfs:label xml:lang="en">Binding</rdfs:label>
+        <rdfs:comment xml:lang="en">A binding method or material used to bind the pages of a comic.</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/Hardcover">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Binding"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/PerfectBound">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Binding"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/SewnBound">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Binding"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/Squarebound">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Binding"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/SaddleStitched">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Binding"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://comicmeta.org/vocab/Softcover">
+    <rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+    <skos:inScheme rdf:resource="http://comicmeta.org/cbo/Binding"/>
+  </skos:Concept>
+</rdf:RDF>

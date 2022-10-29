@@ -1,0 +1,48 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="https://w3id.org/arco/ontology/context-description"/>
+  <owl:ObjectProperty rdf:about="https://w3id.org/arco/ontology/context-description/hasUseType">
+    <rdfs:comment xml:lang="en">This property relates a cultural entity's use to its use type.</rdfs:comment>
+    <rdfs:label xml:lang="en">has use type</rdfs:label>
+    <rdfs:domain rdf:resource="https://w3id.org/arco/ontology/context-description/Use"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="https://w3id.org/arco/ontology/context-description/UseType">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/context-description"/>
+        <rdfs:label xml:lang="en">Use type</rdfs:label>
+        <rdfs:comment xml:lang="en">This class represents the type of use of a cultural property (current, previous, historical)</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/context-description/UseTypeUnavailable">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/context-description"/>
+    <rdfs:label xml:lang="en">Use type unavailable</rdfs:label>
+    <rdfs:comment xml:lang="en">This individual represents the lack of available data regarding the type of use of a cultural entity.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/context-description/UseType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/context-description/CurrentUse">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/context-description"/>
+    <rdfs:label xml:lang="en">Current use</rdfs:label>
+    <rdfs:comment xml:lang="en">This individual represents cultural entity current use.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/context-description/UseType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/context-description/PreviousUse">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/context-description"/>
+    <rdfs:label xml:lang="en">Previous use</rdfs:label>
+    <rdfs:comment xml:lang="en">This individual represents cultural enity's previous use.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/context-description/UseType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/context-description/HistoricalUse">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/context-description"/>
+    <rdfs:label xml:lang="en">Historical use</rdfs:label>
+    <rdfs:comment xml:lang="en">This individual represents cultural enity's historical use.</rdfs:comment>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/context-description/UseType"/>
+  </skos:Concept>
+</rdf:RDF>

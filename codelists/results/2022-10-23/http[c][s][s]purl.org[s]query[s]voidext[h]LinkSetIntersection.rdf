@@ -1,0 +1,43 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://purl.org/query/voidext"/>
+  <rdf:Property rdf:about="http://purl.org/query/voidext#intersectionType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment xml:lang="en">This property assigns the intersection type of two RDF triples in different datasets (void:Dataset). In other words, if the intersection occurs at the subject xor the object node of a link predicate.</rdfs:comment>
+    <rdfs:label xml:lang="en">intersection type</rdfs:label>
+    <rdfs:domain rdf:resource="http://purl.org/query/voidext#ComplexLinkSet"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://purl.org/query/voidext#LinkSetIntersection">
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/query/voidext"/>
+        <rdfs:label xml:lang="en">Linkset intersection</rdfs:label>
+        <rdfs:comment xml:lang="en">The possible intersection types between the RDF graph nodes in different void:Dataset(s) (i.e. either the subject or the object node of a link predicate). The instances of this class are exclusively voidext:OBJECT_OBJECT, voidext:OBJECT_SUBJECT, and voidext:SUBJECT_SUBJECT.</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </rdf:Property>
+  <skos:Concept rdf:about="http://purl.org/query/voidext#OBJECT_OBJECT">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/query/voidext"/>
+    <rdfs:label xml:lang="en">Object-object intersection</rdfs:label>
+    <rdfs:comment xml:lang="en">The intersection between two void:Dataset(s) (i.e. knowledge graphs) occurs at the object node in both datasets.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/query/voidext#LinkSetIntersection"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/query/voidext#SUBJECT_SUBJECT">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/query/voidext"/>
+    <rdfs:label xml:lang="en">Subject-subject intersection</rdfs:label>
+    <rdfs:comment xml:lang="en">The intersection between two void:Dataset(s) (i.e. knowledge graphs) occurs at the subject node in both datasets.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/query/voidext#LinkSetIntersection"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/query/voidext#SUBJECT_OBJECT">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/query/voidext"/>
+    <rdfs:label xml:lang="en">Subject-object intersection</rdfs:label>
+    <rdfs:comment xml:lang="en">The intersection between two void:Dataset(s) (i.e. knowledge graphs) occurs at the object node of one data set (graph) and the subject node of another data set (graph).</rdfs:comment>
+    <skos:inScheme rdf:resource="http://purl.org/query/voidext#LinkSetIntersection"/>
+  </skos:Concept>
+</rdf:RDF>

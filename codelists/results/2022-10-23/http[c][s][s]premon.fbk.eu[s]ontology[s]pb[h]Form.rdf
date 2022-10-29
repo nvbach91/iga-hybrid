@@ -1,0 +1,39 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="http://premon.fbk.eu/ontology/pb"/>
+  <owl:FunctionalProperty rdf:about="http://premon.fbk.eu/ontology/pb#form">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">form</rdfs:label>
+    <rdfs:domain rdf:resource="http://premon.fbk.eu/ontology/pb#Inflection"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="http://premon.fbk.eu/ontology/pb#Form">
+        <rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/pb"/>
+        <rdfs:label xml:lang="en">Form</rdfs:label>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:FunctionalProperty>
+  <skos:Concept rdf:about="http://premon.fbk.eu/ontology/pb#infinitive">
+    <rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/pb"/>
+    <skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/pb#Form"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://premon.fbk.eu/ontology/pb#participle">
+    <rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/pb"/>
+    <skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/pb#Form"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://premon.fbk.eu/ontology/pb#gerund">
+    <rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/pb"/>
+    <skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/pb#Form"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://premon.fbk.eu/ontology/pb#full">
+    <rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/pb"/>
+    <skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/pb#Form"/>
+  </skos:Concept>
+</rdf:RDF>

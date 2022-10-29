@@ -1,0 +1,39 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcmit="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/">
+  <owl:Ontology rdf:about="https://w3id.org/arco/ontology/catalogue"/>
+  <owl:ObjectProperty rdf:about="https://w3id.org/arco/ontology/catalogue/hasAdditionalFormType">
+    <rdfs:comment xml:lang="en">This property relates an additional form to its type (Stratigraphic Unit, Epigraphy, Wall Typology).</rdfs:comment>
+    <rdfs:label xml:lang="en">has additional form type</rdfs:label>
+    <rdfs:domain rdf:resource="https://w3id.org/arco/ontology/catalogue/AdditionalForm"/>
+    <rdfs:range>
+      <skos:ConceptScheme rdf:about="https://w3id.org/arco/ontology/catalogue/AdditionalFormType">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/catalogue"/>
+        <rdfs:label xml:lang="en">Additional form type</rdfs:label>
+        <rdfs:comment xml:lang="en">This class represents the additional form type (Stratigraphic Unit, Wall Typology, Epigraphy)</rdfs:comment>
+      </skos:ConceptScheme>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/catalogue/StratigraphicUnitForm">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/catalogue"/>
+    <rdfs:label xml:lang="en">Stratigraphic Unit form</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/catalogue/AdditionalFormType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/catalogue/WallTypologyForm">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/catalogue"/>
+    <rdfs:label xml:lang="en">Wall Typology form</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/catalogue/AdditionalFormType"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/arco/ontology/catalogue/EpigraphyForm">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/catalogue"/>
+    <rdfs:label xml:lang="en">Epigraphy form</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/arco/ontology/catalogue/AdditionalFormType"/>
+  </skos:Concept>
+</rdf:RDF>
