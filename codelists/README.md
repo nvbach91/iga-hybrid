@@ -99,6 +99,6 @@ SELECT DISTINCT ?ontology ?codeList ?code WHERE {
 ### Code lists graph schema + example
 - https://drive.google.com/file/d/1VtlSmfxKMfY1XMMb05Zj6zgTyTWN7pbL
 
-![image](https://user-images.githubusercontent.com/20724910/198904949-01f0edea-6137-497a-8474-9d113d29a4e3.png)
+![image](https://user-images.githubusercontent.com/20724910/198905252-3b4a023b-d009-469d-9127-f0bbc36fe73d.png)
 
 
