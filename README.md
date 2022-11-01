@@ -4,9 +4,9 @@
 This repository contains
 - [./app](./app) - the implementation of a web application that assists in browsing, analyzing and extracting code lists from RDF ontologies and vocabularies using SPAQRL queries
 - [./aggregate](./aggregate), [./cube-analysis](./cube-analysis) - the analysis results and the code to reproduce them
-- [./codelists](./codelists) - the extracted code list data and the code to reproduce it
+- [./codelists](./codelists) - the extracted code list data and the code to reproduce it, this sub-project is dependent on the results from [./aggregate](./aggregate), please make sure to visit it first
 
-## Implemented SPARQL queries
+## Implemented SPARQL queries in Code List Analyzer (./app)
 Use the web application that provides an interface for the workflow
 - https://fcp.vse.cz/iga-hybrid
 <!-- - DEV: https://nvbach91.github.io/iga-hybrid -->

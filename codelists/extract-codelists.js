@@ -97,11 +97,14 @@ const createCodeListQuery = (codeListIri, vocabIri) => `
         FILTER NOT EXISTS { ?code1 a owl:Ontology }
         
         FILTER(!ISBLANK(?code1))
+        FILTER(?codeList NOT IN (
+            <http://purl.org/semsur/RegularPaper>,
+            <http://www.w3.org/2000/10/swap/pim/contact#Person>
+        ))
+        VALUES ?class { owl:Class rdfs:Class dcterms:Agent dc:Agent }
+        FILTER NOT EXISTS { ?codeList rdfs:subClassOf* ?class }
         FILTER NOT EXISTS { ?codeList rdfs:subClassOf* rdf:Property }
         FILTER NOT EXISTS { ?codeList a rdf:Property }
-        VALUES ?class { owl:Class rdfs:Class
-                       dcterms:Agent dc:Agent }
-        FILTER NOT EXISTS { ?codeList rdfs:subClassOf* ?class }
 
         OPTIONAL { ?codeList ${labelProps} ?codeListLabel . ${filterLangs('?codeListLabel')} }
         OPTIONAL { ?codeList ${commentProps} ?codeListComment . ${filterLangs('?codeListComment')} }
