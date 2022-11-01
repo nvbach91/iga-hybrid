@@ -95,6 +95,14 @@ const createCodeListQuery = (codeListIri, vocabIri) => `
         BIND(<${codeListIri}> AS ?codeList)
         ?code1 a ?codeList .
         FILTER NOT EXISTS { ?code1 a owl:Ontology }
+        
+        FILTER(!ISBLANK(?code1))
+        FILTER NOT EXISTS { ?codeList rdfs:subClassOf* rdf:Property }
+        FILTER NOT EXISTS { ?codeList a rdf:Property }
+        VALUES ?class { owl:Class rdfs:Class
+                       dcterms:Agent dc:Agent }
+        FILTER NOT EXISTS { ?codeList rdfs:subClassOf* ?class }
+
         OPTIONAL { ?codeList ${labelProps} ?codeListLabel . ${filterLangs('?codeListLabel')} }
         OPTIONAL { ?codeList ${commentProps} ?codeListComment . ${filterLangs('?codeListComment')} }
         OPTIONAL { ?code1 ${labelProps} ?code1Label . ${filterLangs('?code1Label')} }
