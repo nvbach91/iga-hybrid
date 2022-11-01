@@ -93,7 +93,7 @@ SELECT DISTINCT ?ontology ?codeList ?code WHERE {
 }
 ```
 
-### Code lists overview data table
+### Code lists overview data table for manual analysis
 - https://github.com/nvbach91/iga-hybrid/tree/master/codelists/results
 
 ### Code lists graph schema + example
