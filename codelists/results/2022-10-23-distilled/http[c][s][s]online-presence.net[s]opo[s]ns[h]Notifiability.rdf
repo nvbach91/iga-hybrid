@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://online-presence.net/opo/ns#">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://online-presence.net/opo/ns#Notifiability">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://online-presence.net/opo/ns#AllNotificationsPass">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://online-presence.net/opo/ns#Notifiability"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://online-presence.net/opo/ns#Notifiability">
+	<rdfs:comment xml:lang="en">The OnlinePresenceComponent used to represent the attitude
+			of an Agent towards interaction with applications i.e., the
+			possibility of applications to show notifications.</rdfs:comment>
+	<rdfs:label xml:lang="en">Notifiability</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://online-presence.net/opo/ns#AllNotificationsPass">
+	<rdfs:comment xml:lang="en">Agent can receive notifications from applications</rdfs:comment>
+	<rdfs:label xml:lang="en">AllNotificationsPass</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://online-presence.net/opo/ns#Notifiability">
+	<rdfs:isDefinedBy rdf:resource="http://online-presence.net/opo/ns#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://online-presence.net/opo/ns#AllNotificationsPass">
+	<rdfs:isDefinedBy rdf:resource="http://online-presence.net/opo/ns#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://online-presence.net/opo/ns#NotificationsConstrained">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://online-presence.net/opo/ns#Notifiability"/>
+	<rdfs:comment xml:lang="en">The acceptance of notifications from applications is somehow
+			constrained (by using some rules or policies).</rdfs:comment>
+	<rdfs:label xml:lang="en">NotificationsConstrained</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://online-presence.net/opo/ns#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://online-presence.net/opo/ns#NotificationsProhibited">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://online-presence.net/opo/ns#Notifiability"/>
+	<rdfs:comment xml:lang="en">Agent cannot receive any notification form applications</rdfs:comment>
+	<rdfs:label xml:lang="en">NotificationsProhibited</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://online-presence.net/opo/ns#"/>
+</rdf:Description>
+
+</rdf:RDF>

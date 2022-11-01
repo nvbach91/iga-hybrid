@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/deliverycontext.owl">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/web.owl#PageMarkup">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/web.owl#cHTML">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/web.owl#PageMarkup"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/web.owl#PageMarkup">
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A page markup language, such as HTML or WML</rdfs:comment>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Standard Page Markup</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/web.owl#cHTML">
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Compact HTML</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/web.owl#PageMarkup">
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/web.owl#cHTML">
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/web.owl#HTML_3_2">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/web.owl#PageMarkup"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HTML 3.2</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/web.owl#HTML_4_0_1">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/web.owl#PageMarkup"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HTML 4 Strict</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/web.owl#HTML_4_0_1_Transitional">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/web.owl#PageMarkup"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HTML 4.01 Transitional</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/web.owl#i-HTML_7_0">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/web.owl#PageMarkup"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other i-Mode steps can be easily added</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/web.owl#i-XHTML_1_0">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/web.owl#PageMarkup"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Japanese i-XHTML 1.0</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/web.owl#SVG_1_0">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/web.owl#PageMarkup"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SVG 1.0</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/web.owl#SVG_1_1">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/web.owl#PageMarkup"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SVG 1.1</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/web.owl#SVG_1_1_Basic">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/web.owl#PageMarkup"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SVG 1.1 Tiny</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/web.owl#SVG_1_1_Tiny">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/web.owl#PageMarkup"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SVG 1.1</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/web.owl#SVG_1_2_Tiny">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/web.owl#PageMarkup"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SVG 1.2 Tiny</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/web.owl#WML_1_1">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/web.owl#PageMarkup"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WML 1.1</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/web.owl#XHTML_1_0">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/web.owl#PageMarkup"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XHTML 1.0</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/web.owl#XHTML_1_0_Transitional">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/web.owl#PageMarkup"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XHTML 1.0 Transitional</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/web.owl#XHTML_1_1">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/web.owl#PageMarkup"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XHTML 1.1</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/web.owl#XHTML_Basic_1_0">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/web.owl#PageMarkup"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XHTML Basic 1.0</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/web.owl#XHTML_Basic_1_1">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/web.owl#PageMarkup"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XHTML Basic 1.1</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/web.owl#XHTML_MP_1_0">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/web.owl#PageMarkup"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XHTML MP 1.0</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/web.owl#XHTML_MP_1_1">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/web.owl#PageMarkup"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XHTML MP 1.1</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/web.owl#XHTML_MP_1_2">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/web.owl#PageMarkup"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XHTML MP 1.2</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/web.owl#XHTML_MP_OpenWave_Ext">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/web.owl#PageMarkup"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OpenWave XHTML-MP Extensions</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+</rdf:Description>
+
+</rdf:RDF>

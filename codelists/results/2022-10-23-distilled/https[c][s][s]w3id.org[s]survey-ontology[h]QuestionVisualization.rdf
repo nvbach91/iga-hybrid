@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="https://www.w3id.org/survey-ontology">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/survey-ontology#QuestionVisualization">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/survey-ontology#Dropdown">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/survey-ontology#QuestionVisualization"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/survey-ontology#QuestionVisualization">
+	<rdfs:label>Question Visualization</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/survey-ontology#Dropdown">
+	<rdfs:label>Dropdown</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/survey-ontology#hasVisualization">
+	<rdfs:range rdf:resource="https://w3id.org/survey-ontology#QuestionVisualization"/>
+	<rdfs:domain rdf:resource="https://w3id.org/survey-ontology#MultipleChoiceQuestion"/>
+	<rdfs:label>has visualization</rdfs:label>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/survey-ontology#QuestionVisualization">
+	<rdfs:isDefinedBy rdf:resource="https://www.w3id.org/survey-ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/survey-ontology#Dropdown">
+	<rdfs:isDefinedBy rdf:resource="https://www.w3id.org/survey-ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/survey-ontology#Emoji">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/survey-ontology#QuestionVisualization"/>
+	<rdfs:label>Emoji</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://www.w3id.org/survey-ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/survey-ontology#Option">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/survey-ontology#QuestionVisualization"/>
+	<rdfs:label>Option</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://www.w3id.org/survey-ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/survey-ontology#Scale">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/survey-ontology#QuestionVisualization"/>
+	<rdfs:label>Scale</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://www.w3id.org/survey-ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/survey-ontology#Slider">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/survey-ontology#QuestionVisualization"/>
+	<rdfs:label>Slider</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://www.w3id.org/survey-ontology"/>
+</rdf:Description>
+
+</rdf:RDF>

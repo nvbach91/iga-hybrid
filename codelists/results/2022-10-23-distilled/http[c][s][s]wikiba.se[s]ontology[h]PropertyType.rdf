@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://wikiba.se/ontology">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://wikiba.se/ontology#PropertyType">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://wikiba.se/ontology#CommonsMedia">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://wikiba.se/ontology#PropertyType"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://wikiba.se/ontology#PropertyType">
+	<rdfs:comment>Type of a wikibase property.</rdfs:comment>
+	<rdfs:label>PropertyType</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://wikiba.se/ontology#CommonsMedia">
+	<rdfs:comment>Wikimedia Commons reference type.</rdfs:comment>
+	<rdfs:label>CommonsMedia</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://wikiba.se/ontology#PropertyType">
+	<rdfs:isDefinedBy rdf:resource="http://wikiba.se/ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://wikiba.se/ontology#CommonsMedia">
+	<rdfs:isDefinedBy rdf:resource="http://wikiba.se/ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://wikiba.se/ontology#ExternalId">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://wikiba.se/ontology#PropertyType"/>
+	<rdfs:comment>Type for referring to ID defined by external authority.</rdfs:comment>
+	<rdfs:label>WikibaseExternalId</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://wikiba.se/ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://wikiba.se/ontology#GeoShape">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://wikiba.se/ontology#PropertyType"/>
+	<rdfs:comment>Type for storing links to geoshape data.</rdfs:comment>
+	<rdfs:label>GeoShape</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://wikiba.se/ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://wikiba.se/ontology#Globecoordinate">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://wikiba.se/ontology#PropertyType"/>
+	<rdfs:comment>Coordinate type.</rdfs:comment>
+	<rdfs:label>Globecoordinate</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://wikiba.se/ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://wikiba.se/ontology#Math">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://wikiba.se/ontology#PropertyType"/>
+	<rdfs:comment>Type for mathematical expressions as supported by the Math extension.</rdfs:comment>
+	<rdfs:label>Mathematial expression</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://wikiba.se/ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://wikiba.se/ontology#Monolingualtext">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://wikiba.se/ontology#PropertyType"/>
+	<rdfs:comment>Type for text in single language.</rdfs:comment>
+	<rdfs:label>Monolingualtext</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://wikiba.se/ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://wikiba.se/ontology#Quantity">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://wikiba.se/ontology#PropertyType"/>
+	<rdfs:comment>Type for numerical quantity.</rdfs:comment>
+	<rdfs:label>Quantity</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://wikiba.se/ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://wikiba.se/ontology#String">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://wikiba.se/ontology#PropertyType"/>
+	<rdfs:comment>Basic string type.</rdfs:comment>
+	<rdfs:label>String</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://wikiba.se/ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://wikiba.se/ontology#TabularData">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://wikiba.se/ontology#PropertyType"/>
+	<rdfs:comment>Type for storing links to tabular data.</rdfs:comment>
+	<rdfs:label>TabularData</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://wikiba.se/ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://wikiba.se/ontology#Time">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://wikiba.se/ontology#PropertyType"/>
+	<rdfs:comment>Date and time value type.</rdfs:comment>
+	<rdfs:label>Time</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://wikiba.se/ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://wikiba.se/ontology#Url">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://wikiba.se/ontology#PropertyType"/>
+	<rdfs:comment>URL link type.</rdfs:comment>
+	<rdfs:label>Url</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://wikiba.se/ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://wikiba.se/ontology#WikibaseItem">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://wikiba.se/ontology#PropertyType"/>
+	<rdfs:comment>Type for referring to another Wikibase item.</rdfs:comment>
+	<rdfs:label>WikibaseItem</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://wikiba.se/ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://wikiba.se/ontology#WikibaseProperty">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://wikiba.se/ontology#PropertyType"/>
+	<rdfs:comment>Type for referring to a Wikibase property.</rdfs:comment>
+	<rdfs:label>WikibaseProperty</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://wikiba.se/ontology"/>
+</rdf:Description>
+
+</rdf:RDF>

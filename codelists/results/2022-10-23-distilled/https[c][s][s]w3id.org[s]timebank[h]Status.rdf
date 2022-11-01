@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="https://w3id.org/timebank">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/timebank#Status">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/timebank#StatusAssigned">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/timebank#Status"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/timebank#Status">
+	<rdfs:comment>The status of a request.</rdfs:comment>
+	<rdfs:label>Status</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/timebank#StatusAssigned">
+	<rdfs:comment>Indicates that a request is assigned to a helper but not yet completed.</rdfs:comment>
+	<rdfs:label>Status: Assigned</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/timebank#hasStatus">
+	<rdfs:range rdf:resource="https://w3id.org/timebank#Status"/>
+	<rdfs:domain rdf:resource="https://w3id.org/timebank#Request"/>
+	<rdfs:label>has status</rdfs:label>
+	<rdfs:comment>Every request can have at most one status assigned to it.</rdfs:comment>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/timebank#Status">
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/timebank"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/timebank#StatusAssigned">
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/timebank"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/timebank#StatusCancelled">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/timebank#Status"/>
+	<rdfs:comment>Indicates that a request is cancelled and no helper is needed anymore.</rdfs:comment>
+	<rdfs:label>Status: Cancelled</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/timebank"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/timebank#StatusClosed">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/timebank#Status"/>
+	<rdfs:comment>Indicates that a request is closed and that no helper is needed anymore.</rdfs:comment>
+	<rdfs:label>Status: Closed</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/timebank"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/timebank#StatusOpen">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/timebank#Status"/>
+	<rdfs:comment>Indicates that a request is open and no helper is assigned to it.</rdfs:comment>
+	<rdfs:label>Status: Open</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/timebank"/>
+</rdf:Description>
+
+</rdf:RDF>

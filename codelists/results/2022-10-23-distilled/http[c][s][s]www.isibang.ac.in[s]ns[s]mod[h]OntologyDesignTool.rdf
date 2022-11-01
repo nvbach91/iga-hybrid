@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://www.isibang.ac.in/ns/mod">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.isibang.ac.in/ns/mod#OntologyDesignTool">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.isibang.ac.in/ns/mod#DUET">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.isibang.ac.in/ns/mod#OntologyDesignTool"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.isibang.ac.in/ns/mod#OntologyDesignTool">
+	<rdfs:comment xml:lang="en">A tool that is used to create an ontology. Example includes Protege, OntoEdit, TopBraid, etc. </rdfs:comment>
+	<rdfs:label>Ontology Design Tool</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.isibang.ac.in/ns/mod#toolUsed">
+	<rdfs:range rdf:resource="http://www.isibang.ac.in/ns/mod#OntologyDesignTool"/>
+	<rdfs:domain rdf:resource="http://www.isibang.ac.in/ns/mod#Ontology"/>
+	<rdfs:label>tool used</rdfs:label>
+	<rdfs:comment xml:lang="en">The tool used for the creation of an ontology. </rdfs:comment>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.isibang.ac.in/ns/mod#OntologyDesignTool">
+	<rdfs:isDefinedBy rdf:resource="http://www.isibang.ac.in/ns/mod"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.isibang.ac.in/ns/mod#DUET">
+	<rdfs:isDefinedBy rdf:resource="http://www.isibang.ac.in/ns/mod"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.isibang.ac.in/ns/mod#OILEd">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.isibang.ac.in/ns/mod#OntologyDesignTool"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.isibang.ac.in/ns/mod"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.isibang.ac.in/ns/mod#Ontobroker">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.isibang.ac.in/ns/mod#OntologyDesignTool"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.isibang.ac.in/ns/mod"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.isibang.ac.in/ns/mod#OntoEdit">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.isibang.ac.in/ns/mod#OntologyDesignTool"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.isibang.ac.in/ns/mod"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.isibang.ac.in/ns/mod#OntoEditProfessional">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.isibang.ac.in/ns/mod#OntologyDesignTool"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.isibang.ac.in/ns/mod"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.isibang.ac.in/ns/mod#OntolinguaServer">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.isibang.ac.in/ns/mod#OntologyDesignTool"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.isibang.ac.in/ns/mod"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.isibang.ac.in/ns/mod#Ontosaurus">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.isibang.ac.in/ns/mod#OntologyDesignTool"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.isibang.ac.in/ns/mod"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.isibang.ac.in/ns/mod#Protege">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.isibang.ac.in/ns/mod#OntologyDesignTool"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.isibang.ac.in/ns/mod"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.isibang.ac.in/ns/mod#Topbraid">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.isibang.ac.in/ns/mod#OntologyDesignTool"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.isibang.ac.in/ns/mod"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.isibang.ac.in/ns/mod#WebODE">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.isibang.ac.in/ns/mod#OntologyDesignTool"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.isibang.ac.in/ns/mod"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.isibang.ac.in/ns/mod#WebOnto">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.isibang.ac.in/ns/mod#OntologyDesignTool"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.isibang.ac.in/ns/mod"/>
+</rdf:Description>
+
+</rdf:RDF>

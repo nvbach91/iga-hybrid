@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#IfcElectricApplianceTypeEnum">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#FRIDGE_FREEZER">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcElectricApplianceTypeEnum"/>
+	<rdfs:label>FRIDGE_FREEZER</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#predefinedType_IfcElectricAppliance">
+	<rdfs:range rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcElectricApplianceTypeEnum"/>
+	<rdfs:domain rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcElectricAppliance"/>
+	<rdfs:label>PredefinedType</rdfs:label>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#IfcElectricApplianceTypeEnum">
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#FRIDGE_FREEZER">
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#HANDDRYER">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcElectricApplianceTypeEnum"/>
+	<rdfs:label>HANDDRYER</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#KITCHENMACHINE">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcElectricApplianceTypeEnum"/>
+	<rdfs:label>KITCHENMACHINE</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#MICROWAVE">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcElectricApplianceTypeEnum"/>
+	<rdfs:label>MICROWAVE</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#NOTDEFINED">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcElectricApplianceTypeEnum"/>
+	<rdfs:label>NOTDEFINED</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#PHOTOCOPIER">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcElectricApplianceTypeEnum"/>
+	<rdfs:label>PHOTOCOPIER</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#REFRIGERATOR">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcElectricApplianceTypeEnum"/>
+	<rdfs:label>REFRIGERATOR</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#TUMBLEDRYER">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcElectricApplianceTypeEnum"/>
+	<rdfs:label>TUMBLEDRYER</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#USERDEFINED">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcElectricApplianceTypeEnum"/>
+	<rdfs:label>USERDEFINED</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#VENDINGMACHINE">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcElectricApplianceTypeEnum"/>
+	<rdfs:label>VENDINGMACHINE</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#WASHINGMACHINE">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcElectricApplianceTypeEnum"/>
+	<rdfs:label>WASHINGMACHINE</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#DISHWASHER">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcElectricApplianceTypeEnum"/>
+	<rdfs:label>DISHWASHER</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#predefinedType_IfcElectricApplianceType">
+	<rdfs:range rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcElectricApplianceTypeEnum"/>
+	<rdfs:domain rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcElectricApplianceType"/>
+	<rdfs:label>PredefinedType</rdfs:label>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#DISHWASHER">
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#ELECTRICCOOKER">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcElectricApplianceTypeEnum"/>
+	<rdfs:label>ELECTRICCOOKER</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#FREESTANDINGELECTRICHEATER">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcElectricApplianceTypeEnum"/>
+	<rdfs:label>FREESTANDINGELECTRICHEATER</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#FREESTANDINGFAN">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcElectricApplianceTypeEnum"/>
+	<rdfs:label>FREESTANDINGFAN</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#FREESTANDINGWATERCOOLER">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcElectricApplianceTypeEnum"/>
+	<rdfs:label>FREESTANDINGWATERCOOLER</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#FREESTANDINGWATERHEATER">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcElectricApplianceTypeEnum"/>
+	<rdfs:label>FREESTANDINGWATERHEATER</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#FREEZER">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcElectricApplianceTypeEnum"/>
+	<rdfs:label>FREEZER</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#predefinedType_IfcElectricAppliance">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#predefinedType_IfcElectricApplianceType">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+</rdf:RDF>

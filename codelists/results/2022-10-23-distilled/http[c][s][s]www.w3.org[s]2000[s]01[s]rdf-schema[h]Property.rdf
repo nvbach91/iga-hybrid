@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://www.data-knowledge.org/dk/">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Property">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.data-knowledge.org/dk/hasApplicationLifecycle">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+	<rdfs:comment xml:lang="en">Specifies the life cycle of an individual Application instance. The current life cycle state of the instance is referred to via the property lifecycle:state.</rdfs:comment>
+	<rdfs:label xml:lang="en">has application lifecycle</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Property">
+	<rdfs:isDefinedBy rdf:resource="http://www.data-knowledge.org/dk/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.data-knowledge.org/dk/hasApplicationLifecycle">
+	<rdfs:isDefinedBy rdf:resource="http://www.data-knowledge.org/dk/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.data-knowledge.org/dk/hasDataLifecycle">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+	<rdfs:comment xml:lang="en">Specifies the life cycle of an individual instance of a Business Object, Data Object or Data Asset. This property can be used to override the general type level life cycle definition expressed by definesLifecycleOfInstances. The current life cycle state of the instance is referred to via the property lifecycle:state</rdfs:comment>
+	<rdfs:label xml:lang="en">has data lifecycle</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.data-knowledge.org/dk/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.data-knowledge.org/dk/hasKnowledgeLifecycle">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+	<rdfs:comment xml:lang="en">May be used to define a general life cycle that applies to all classes of the model or certain classes.</rdfs:comment>
+	<rdfs:label xml:lang="en">has Knowledge Lifecycle</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.data-knowledge.org/dk/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.data-knowledge.org/dk/hasTerms">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+	<rdfs:comment xml:lang="en">Resources can have specific Terms of Use</rdfs:comment>
+	<rdfs:label xml:lang="en">has Terms of Use</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.data-knowledge.org/dk/"/>
+</rdf:Description>
+
+</rdf:RDF>

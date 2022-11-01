@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/qu/dim#Area">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#cell_area">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#Area"/>
+	<rdfs:comment>"Cell_area" is the horizontal area of a gridcell.</rdfs:comment>
+	<rdfs:label>cell area</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#area"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/qu/quantity#area">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/qu/dim#Area">
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#cell_area">
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/qu/quantity#area">
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#sea_area">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#Area"/>
+	<rdfs:comment>"X_area" means the horizontal area occupied by X within the grid cell.</rdfs:comment>
+	<rdfs:label>sea area</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#area"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#sea_ice_area">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#Area"/>
+	<rdfs:comment>"X_area" means the horizontal area occupied by X within the grid cell.</rdfs:comment>
+	<rdfs:label>sea ice area</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#area"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#sea_ice_extent">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#Area"/>
+	<rdfs:label>sea ice extent</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#area"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#square_of_geopotential_height">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#Area"/>
+	<rdfs:comment>"square_of_X" means X*X. Geopotential is the sum of the specific gravitational potential energy relative to the geoid and the specific centripetal potential energy. Geopotential height is the geopotential divided by the standard acceleration due to gravity. It is numerically similar to the altitude (or geometric height) and not to the quantity with standard name height, which is relative to the surface.</rdfs:comment>
+	<rdfs:label>square of geopotential height</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#area"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#square_of_ocean_mixed_layer_thickness_defined_by_sigma_t">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#Area"/>
+	<rdfs:comment> The ocean mixed layer is the upper part of the ocean, regarded as being well-mixed.  The base of the mixed layer defined by temperature, sigma, sigma_theta or sigma_t is the level at which the quantity indicated differs from its surface value by a certain amount.  "Thickness" means the vertical extent of a layer.  "square_of_X" means X*X. </rdfs:comment>
+	<rdfs:label>square of ocean mixed layer thickness defined by sigma t</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#area"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#square_of_sea_surface_height_above_geoid">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#Area"/>
+	<rdfs:comment> The geoid is a surface of constant geopotential with which mean sea level would coincide if the ocean were at rest. (The volume enclosed between the geoid and the sea floor equals the mean volume of water in the ocean.) In an ocean GCM the geoid is the surface of zero depth, or the rigid lid if the model uses that approximation.  "Sea surface height" is a time-varying quantity.  "square_of_X" means X*X. </rdfs:comment>
+	<rdfs:label>square of sea surface height above geoid</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#area"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/qu/quantity#area">
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#Area"/>
+</rdf:Description>
+
+</rdf:RDF>

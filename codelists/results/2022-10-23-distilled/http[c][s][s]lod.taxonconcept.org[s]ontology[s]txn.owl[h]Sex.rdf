@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#Sex">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#Sex_female">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#Sex"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#Sex">
+	<rdfs:label>Sex</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#Sex_female">
+	<rdfs:comment xml:lang="en">Female (♀) is the sex of an organism, or a part of an organism, which produces mobile ova (egg cells).</rdfs:comment>
+	<rdfs:label xml:lang="en">female</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#Sex">
+	<rdfs:isDefinedBy rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#Sex_female">
+	<rdfs:isDefinedBy rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#Sex_hermaphrodite">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#Sex"/>
+	<rdfs:comment xml:lang="en">one organism having both male and female sexual characteristics and organs; at birth an unambiguous assignment of male or female cannot be made</rdfs:comment>
+	<rdfs:label xml:lang="en">hermaphrodite</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#Sex_male">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#Sex"/>
+	<rdfs:comment xml:lang="en">Male (♂) refers to the sex of an organism, or part of an organism, which produces small mobile gametes, called spermatozoa.</rdfs:comment>
+	<rdfs:label xml:lang="en">male</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#Sex_undetermined">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#Sex"/>
+	<rdfs:label>Sex Undetermined</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#Sex_unknowable">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#Sex"/>
+	<rdfs:label>Sex Unknowable</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl"/>
+</rdf:Description>
+
+</rdf:RDF>

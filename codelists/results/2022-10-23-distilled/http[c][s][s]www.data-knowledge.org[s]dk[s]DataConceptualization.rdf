@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://www.data-knowledge.org/dk/">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.data-knowledge.org/dk/DataConceptualization">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.data-knowledge.org/dk/BusinessObjectType">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.data-knowledge.org/dk/DataConceptualization"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.data-knowledge.org/dk/DataConceptualization">
+	<rdfs:comment xml:lang="en">A Data Conceptualization represents a business concept to specify and structure data. As this is an abstract superclass only its subclasses may be used.</rdfs:comment>
+	<rdfs:label xml:lang="en">Data Conceptualization</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.data-knowledge.org/dk/BusinessObjectType">
+	<rdfs:comment xml:lang="en">Conceptual (data) entity relevant to business that represents a coherent set of information about a group of real or virtual objects</rdfs:comment>
+	<rdfs:label xml:lang="en">Business Object Type (BOT)</rdfs:label>
+	<dcterms:isPartOf rdf:resource="http://www.data-knowledge.org/dk/BusinessObjectDomain"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.data-knowledge.org/dk/BusinessObjectDomain">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.data-knowledge.org/dk/definesLifecycleOfInstances">
+	<rdfs:range rdf:resource="http://www.data-knowledge.org/dk/DataConceptualization"/>
+	<rdfs:domain rdf:resource="http://www.data-knowledge.org/dk/DataLifecycle"/>
+	<rdfs:label xml:lang="en">defines lifecycle of instances</rdfs:label>
+	<rdfs:comment xml:lang="en">Specifies the life cycle of the Business Object instances on the conceptual type level. The current life cycle state of an individual Business Object is referred to from each Business Object via the property lifecycle:state.</rdfs:comment>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.data-knowledge.org/dk/DataConceptualization">
+	<rdfs:isDefinedBy rdf:resource="http://www.data-knowledge.org/dk/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.data-knowledge.org/dk/BusinessObjectType">
+	<rdfs:isDefinedBy rdf:resource="http://www.data-knowledge.org/dk/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.data-knowledge.org/dk/BusinessObjectDomain">
+	<rdfs:isDefinedBy rdf:resource="http://www.data-knowledge.org/dk/"/>
+	<skos:inScheme rdf:resource="http://www.data-knowledge.org/dk/DataConceptualization"/>
+	<rdfs:comment xml:lang="en">Clusters of coherent Business Object Types (BOTs), either from a subject matter or management point of view</rdfs:comment>
+	<rdfs:label xml:lang="en">Business Object Domain (BOD)</rdfs:label>
+	<dcterms:hasPart rdf:resource="http://www.data-knowledge.org/dk/BusinessObjectType"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.data-knowledge.org/dk/BusinessObjectTypeAttribute">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.data-knowledge.org/dk/DataConceptualization"/>
+	<rdfs:comment xml:lang="en">Conceptually elementary piece of information as part of a Business Object Type (BOT)</rdfs:comment>
+	<rdfs:label xml:lang="en">Business Object Type Attribute (BOTA)</rdfs:label>
+	<dcterms:isPartOf rdf:resource="http://www.data-knowledge.org/dk/BusinessObjectType"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.data-knowledge.org/dk/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.data-knowledge.org/dk/BusinessObjectType">
+	<dcterms:hasPart rdf:resource="http://www.data-knowledge.org/dk/BusinessObjectTypeAttribute"/>
+</rdf:Description>
+
+</rdf:RDF>

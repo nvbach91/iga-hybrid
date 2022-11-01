@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#IfcKnotType">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#PIECEWISE_BEZIER_KNOTS">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcKnotType"/>
+	<rdfs:label>PIECEWISE_BEZIER_KNOTS</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#knotSpec_IfcBSplineCurveWithKnots">
+	<rdfs:range rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcKnotType"/>
+	<rdfs:domain rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcBSplineCurveWithKnots"/>
+	<rdfs:label>KnotSpec</rdfs:label>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#IfcKnotType">
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#PIECEWISE_BEZIER_KNOTS">
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#QUASI_UNIFORM_KNOTS">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcKnotType"/>
+	<rdfs:label>QUASI_UNIFORM_KNOTS</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#UNIFORM_KNOTS">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcKnotType"/>
+	<rdfs:label>UNIFORM_KNOTS</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#UNSPECIFIED">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcKnotType"/>
+	<rdfs:label>UNSPECIFIED</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#knotSpec_IfcBSplineCurveWithKnots">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#knotSpec_IfcBSplineSurfaceWithKnots">
+	<rdfs:range rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcKnotType"/>
+	<rdfs:domain rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcBSplineSurfaceWithKnots"/>
+	<rdfs:label>KnotSpec</rdfs:label>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+</rdf:RDF>

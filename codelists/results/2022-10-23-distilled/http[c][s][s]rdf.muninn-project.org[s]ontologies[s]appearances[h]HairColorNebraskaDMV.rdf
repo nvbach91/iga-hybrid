@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#HairColorNebraskaDMV">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#HairColorNebraskaDMVBald">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#HairColorNebraskaDMV"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#HairColorNebraskaDMV">
+	<rdfs:label xml:lang="en">NebraskaDMVHairColor</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#HairColorNebraskaDMVBald">
+	<rdfs:label xml:lang="en">Bald</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#HairColorNebraskaDMV">
+	<rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/appearances"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#HairColorNebraskaDMVBald">
+	<rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/appearances"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#HairColorNebraskaDMVBlonde">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#HairColorNebraskaDMV"/>
+	<rdfs:label xml:lang="en">Blonde</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/appearances"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#HairColorNebraskaDMVBrown">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#HairColorNebraskaDMV"/>
+	<rdfs:label xml:lang="en">Brown</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/appearances"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#HairColorNebraskaDMVGray">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#HairColorNebraskaDMV"/>
+	<rdfs:label xml:lang="en">Gray</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/appearances"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#HairColorNebraskaDMVRed">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#HairColorNebraskaDMV"/>
+	<rdfs:label xml:lang="en">Red</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/appearances"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#HairColorNebraskaDMVSandy">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#HairColorNebraskaDMV"/>
+	<rdfs:label xml:lang="en">Sandy</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/appearances"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#HairColorNebraskaDMVUnknown">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#HairColorNebraskaDMV"/>
+	<rdfs:label xml:lang="en">Unknown</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/appearances"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#HairColorNebraskaDMVWhite">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#HairColorNebraskaDMV"/>
+	<rdfs:label xml:lang="en">White</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/appearances"/>
+</rdf:Description>
+
+</rdf:RDF>

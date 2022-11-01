@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="https://w3id.org/idsa/core">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/idsa/core/ArtifactState">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/idsa/code/ANONYMIZED">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/idsa/core/ArtifactState"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/idsa/core/ArtifactState">
+	<rdfs:comment xml:lang="en">The state which an ids:Artifact may have or not.</rdfs:comment>
+	<rdfs:label xml:lang="en">Artifact State</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/idsa/code/ANONYMIZED">
+	<rdfs:comment xml:lang="en">The artifact is anonymized so the data source can not be recognized by any further user.</rdfs:comment>
+	<rdfs:label xml:lang="en">is anonymized</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/idsa/core/hasState">
+	<rdfs:range rdf:resource="https://w3id.org/idsa/core/ArtifactState"/>
+	<rdfs:domain rdf:resource="https://w3id.org/idsa/core/UsageControlObject"/>
+	<rdfs:label xml:lang="en">has state</rdfs:label>
+	<rdfs:comment xml:lang="en">The list of combined current states of the data object.</rdfs:comment>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/idsa/core/ArtifactState">
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/idsa/code/ANONYMIZED">
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/idsa/code/COMBINED">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/idsa/core/ArtifactState"/>
+	<rdfs:comment xml:lang="en">The artifact is a collection of smaller artifacts and can be split into parts when necessary.</rdfs:comment>
+	<rdfs:label xml:lang="en">is combined</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/idsa/code/ENCRYPTED">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/idsa/core/ArtifactState"/>
+	<rdfs:comment xml:lang="en">The artifact is encrypted so the data itself cannot be read by any user without having the corresponding key.</rdfs:comment>
+	<rdfs:label xml:lang="en">is encrypted</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/idsa/code/PSEUDONYMIZED">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/idsa/core/ArtifactState"/>
+	<rdfs:comment xml:lang="en">The artifact is pseudo pseudonymized.</rdfs:comment>
+	<rdfs:label xml:lang="en">is pseudonymized</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+</rdf:Description>
+
+</rdf:RDF>

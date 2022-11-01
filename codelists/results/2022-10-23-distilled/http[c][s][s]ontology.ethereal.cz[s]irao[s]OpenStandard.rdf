@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://ontology.ethereal.cz/irao">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontology.ethereal.cz/irao/OpenStandard">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontology.ethereal.cz/irao/openstandard#RDF">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://ontology.ethereal.cz/irao/OpenStandard"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontology.ethereal.cz/irao/OpenStandard">
+	<rdfs:comment xml:lang="en">A open standard is a standard used to provide guidelines for the development and operations of artifacts and systems</rdfs:comment>
+	<rdfs:label xml:lang="en">Open Standard</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontology.ethereal.cz/irao/openstandard#RDF">
+	<rdfs:label xml:lang="en">RDF</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontology.ethereal.cz/irao/hasOpenStandard">
+	<rdfs:range rdf:resource="http://ontology.ethereal.cz/irao/OpenStandard"/>
+	<rdfs:domain rdf:resource="http://ontology.ethereal.cz/irao/ResearchArtifact"/>
+	<rdfs:label xml:lang="en">has open standard</rdfs:label>
+	<rdfs:comment xml:lang="en">This property specifies the open standard used by a research artifact</rdfs:comment>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontology.ethereal.cz/irao/OpenStandard">
+	<rdfs:isDefinedBy rdf:resource="http://ontology.ethereal.cz/irao"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontology.ethereal.cz/irao/openstandard#RDF">
+	<rdfs:isDefinedBy rdf:resource="http://ontology.ethereal.cz/irao"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontology.ethereal.cz/irao/openstandard#RDFS">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://ontology.ethereal.cz/irao/OpenStandard"/>
+	<rdfs:label xml:lang="en">RDFS</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://ontology.ethereal.cz/irao"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontology.ethereal.cz/irao/openstandard#SKOS">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://ontology.ethereal.cz/irao/OpenStandard"/>
+	<rdfs:label xml:lang="en">SKOS</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://ontology.ethereal.cz/irao"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontology.ethereal.cz/irao/openstandard#SPARQL">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://ontology.ethereal.cz/irao/OpenStandard"/>
+	<rdfs:label xml:lang="en">SPARQL</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://ontology.ethereal.cz/irao"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontology.ethereal.cz/irao/openstandard#XML">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://ontology.ethereal.cz/irao/OpenStandard"/>
+	<rdfs:label xml:lang="en">XML</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://ontology.ethereal.cz/irao"/>
+</rdf:Description>
+
+</rdf:RDF>

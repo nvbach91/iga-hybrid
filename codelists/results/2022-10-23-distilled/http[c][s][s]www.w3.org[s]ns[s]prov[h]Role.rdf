@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://w3id.org/nfdi4ing/metadata4ing#">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/ns/prov#Role">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://w3id.org/nfdi4ing/metadata4ing#ContactPerson">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/ns/prov#Role"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/ns/prov#Role">
+	<rdfs:label xml:lang="en">Role</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://w3id.org/nfdi4ing/metadata4ing#ContactPerson">
+	<rdfs:label xml:lang="en">contact person</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/ns/prov#Role">
+	<rdfs:isDefinedBy rdf:resource="http://w3id.org/nfdi4ing/metadata4ing#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://w3id.org/nfdi4ing/metadata4ing#ContactPerson">
+	<rdfs:isDefinedBy rdf:resource="http://w3id.org/nfdi4ing/metadata4ing#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://w3id.org/nfdi4ing/metadata4ing#DataCollector">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/ns/prov#Role"/>
+	<rdfs:label xml:lang="en">data collector</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://w3id.org/nfdi4ing/metadata4ing#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://w3id.org/nfdi4ing/metadata4ing#DataCurator">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/ns/prov#Role"/>
+	<rdfs:label xml:lang="en">data curator</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://w3id.org/nfdi4ing/metadata4ing#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://w3id.org/nfdi4ing/metadata4ing#DataManager">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/ns/prov#Role"/>
+	<rdfs:label xml:lang="en">data manager</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://w3id.org/nfdi4ing/metadata4ing#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://w3id.org/nfdi4ing/metadata4ing#Distributor">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/ns/prov#Role"/>
+	<rdfs:label xml:lang="en">distributor</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://w3id.org/nfdi4ing/metadata4ing#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://w3id.org/nfdi4ing/metadata4ing#Editor">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/ns/prov#Role"/>
+	<rdfs:label xml:lang="en">editor</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://w3id.org/nfdi4ing/metadata4ing#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://w3id.org/nfdi4ing/metadata4ing#HostingInstitution">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/ns/prov#Role"/>
+	<rdfs:label xml:lang="en">hosting institution</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://w3id.org/nfdi4ing/metadata4ing#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://w3id.org/nfdi4ing/metadata4ing#Other">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/ns/prov#Role"/>
+	<rdfs:label xml:lang="en">other person</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://w3id.org/nfdi4ing/metadata4ing#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://w3id.org/nfdi4ing/metadata4ing#Producer">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/ns/prov#Role"/>
+	<rdfs:label xml:lang="en">producer</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://w3id.org/nfdi4ing/metadata4ing#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://w3id.org/nfdi4ing/metadata4ing#ProjectLeader">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/ns/prov#Role"/>
+	<rdfs:label xml:lang="en">project leader</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://w3id.org/nfdi4ing/metadata4ing#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://w3id.org/nfdi4ing/metadata4ing#ProjectManager">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/ns/prov#Role"/>
+	<rdfs:label xml:lang="en">project manager</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://w3id.org/nfdi4ing/metadata4ing#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://w3id.org/nfdi4ing/metadata4ing#ProjectMember">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/ns/prov#Role"/>
+	<rdfs:label xml:lang="en">project member</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://w3id.org/nfdi4ing/metadata4ing#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://w3id.org/nfdi4ing/metadata4ing#RegistrationAgency">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/ns/prov#Role"/>
+	<rdfs:label xml:lang="en">registration agency</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://w3id.org/nfdi4ing/metadata4ing#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://w3id.org/nfdi4ing/metadata4ing#RegistrationAuthority">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/ns/prov#Role"/>
+	<rdfs:label xml:lang="en">registration authority</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://w3id.org/nfdi4ing/metadata4ing#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://w3id.org/nfdi4ing/metadata4ing#RelatedPerson">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/ns/prov#Role"/>
+	<rdfs:label xml:lang="en">related person</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://w3id.org/nfdi4ing/metadata4ing#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://w3id.org/nfdi4ing/metadata4ing#Researcher">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/ns/prov#Role"/>
+	<rdfs:label xml:lang="en">researcher</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://w3id.org/nfdi4ing/metadata4ing#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://w3id.org/nfdi4ing/metadata4ing#ResearchGroup">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/ns/prov#Role"/>
+	<rdfs:label xml:lang="en">research group</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://w3id.org/nfdi4ing/metadata4ing#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://w3id.org/nfdi4ing/metadata4ing#RightsHolder">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/ns/prov#Role"/>
+	<rdfs:label xml:lang="en">rights holder</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://w3id.org/nfdi4ing/metadata4ing#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://w3id.org/nfdi4ing/metadata4ing#Sponsor">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/ns/prov#Role"/>
+	<rdfs:label xml:lang="en">sponsor</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://w3id.org/nfdi4ing/metadata4ing#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://w3id.org/nfdi4ing/metadata4ing#Supervisor">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/ns/prov#Role"/>
+	<rdfs:label xml:lang="en">supervisor</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://w3id.org/nfdi4ing/metadata4ing#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://w3id.org/nfdi4ing/metadata4ing#WorkPackageLeader">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/ns/prov#Role"/>
+	<rdfs:label xml:lang="en">work package leader</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://w3id.org/nfdi4ing/metadata4ing#"/>
+</rdf:Description>
+
+</rdf:RDF>

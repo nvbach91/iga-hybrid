@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://data.ign.fr/def/topo">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/def/topo#TypeDeVegetation">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedevegetation/Bananeraie">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeVegetation"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/def/topo#TypeDeVegetation">
+	<rdfs:label xml:lang="en">Type of vegetation </rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedevegetation/Bananeraie">
+	<rdfs:label xml:lang="en">Banana plantation</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/def/topo#TypeDeVegetation">
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedevegetation/Bananeraie">
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedevegetation/Bois">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeVegetation"/>
+	<rdfs:label xml:lang="en">Wood</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedevegetation/CanneASucre">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeVegetation"/>
+	<rdfs:label xml:lang="en">Sugarcane plantation</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedevegetation/ForetFermeeConiferes">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeVegetation"/>
+	<rdfs:label xml:lang="en">Closed softwood forest</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedevegetation/ForetFermeeFeuillus">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeVegetation"/>
+	<rdfs:label xml:lang="en">Closed hardwood forest</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedevegetation/ForetFermeeMixte">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeVegetation"/>
+	<rdfs:label xml:lang="en">Closed mixed forest</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedevegetation/ForetOuverte">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeVegetation"/>
+	<rdfs:label xml:lang="en">Open forest</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedevegetation/Haie">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeVegetation"/>
+	<rdfs:label xml:lang="en">Hedge</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedevegetation/LandeLigneuse">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeVegetation"/>
+	<rdfs:label xml:lang="en">Woody heath</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedevegetation/Mangrove">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeVegetation"/>
+	<rdfs:label xml:lang="en">Mangrove forest</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedevegetation/Peupleraie">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeVegetation"/>
+	<rdfs:label xml:lang="en">Poplar plantation</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedevegetation/Verger">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeVegetation"/>
+	<rdfs:label xml:lang="en">Orchard</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedevegetation/Vigne">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeVegetation"/>
+	<rdfs:label xml:lang="en">Vineyard</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedevegetation/ZoneArboree">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeVegetation"/>
+	<rdfs:label xml:lang="en">Wooded area</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+</rdf:RDF>

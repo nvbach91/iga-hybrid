@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#TermElement">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#baseElement">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#TermElement"/>
+	<rdfs:comment>The root form of a word or term that is used as the formal dictionary entry for the term.</rdfs:comment>
+	<rdfs:label>baseElement</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#termElement">
+	<rdfs:range rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#TermElement"/>
+	<rdfs:label>lexTermElement</rdfs:label>
+	<rdfs:comment>Any logically significant portion of a larger term or lexeme.</rdfs:comment>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#TermElement">
+	<rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#baseElement">
+	<rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#inflectionElement">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#TermElement"/>
+	<rdfs:comment>An element of language used to change the form of a word (noun, adjective) by declension, and (verbs) by conjugation.</rdfs:comment>
+	<rdfs:label>inflectionElement</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#morphologicalElement">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#TermElement"/>
+	<rdfs:comment>Unit resulting from the division of words into their smallest meaningful parts.
+Note: moved to lexeme element from being an independent element; note that this is currently an independent element in 12620</rdfs:comment>
+	<rdfs:label>morphological element</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#optionalElement">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#TermElement"/>
+	<rdfs:comment>1951: An optional part of a headword.
+1951; examples? The question arises whether these are true options or whether the options reflect synonyms or hyponyms (e.g., barrage, barrage de retenue). The question is not whether 1951 should use this markup, but rather how to map this markup in a global environment.</rdfs:comment>
+	<rdfs:label>optionalElement</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#radical">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#TermElement"/>
+	<rdfs:comment>A basic identifiable component of every CJKV character, often found on the left side of the character, that sometimes gives a rough indication of meaning and is used for collating lexical and terminological resources.</rdfs:comment>
+	<rdfs:label>radical</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#syllable">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#TermElement"/>
+	<rdfs:comment>A unit of spoken language that is next bigger than a speech sound and consists of one or more vowel sounds alone or of a syllabic consonant alone or of either with one or more consonant sounds preceding or following.</rdfs:comment>
+	<rdfs:label>syllable</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#wordElement">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#TermElement"/>
+	<rdfs:comment>Any lexeme element in a compound lexical unit that is itself a word.</rdfs:comment>
+	<rdfs:label>wordElement</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#affix">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#TermElement"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#infix">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#TermElement"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#prefix">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#TermElement"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#suffix">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#TermElement"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+</rdf:Description>
+
+</rdf:RDF>

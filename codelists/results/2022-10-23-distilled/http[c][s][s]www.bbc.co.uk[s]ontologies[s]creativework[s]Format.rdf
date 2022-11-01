@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/creativework">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/creativework/Format">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/creativework/AudioFormat">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.bbc.co.uk/ontologies/creativework/Format"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/creativework/Format">
+	<rdfs:comment xml:lang="en-gb">The primary format of the CreativeWork and it can be one of the five instances. This is needed for selecting the appropriate icon with which to overlay the preview thumbnail of the creative work.</rdfs:comment>
+	<rdfs:label xml:lang="en-gb">Format</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/creativework/AudioFormat">
+	<rdfs:comment xml:lang="en-gb">Used to represent that the primary format of a CreativeWork is Audio.</rdfs:comment>
+	<rdfs:label xml:lang="en-gb">AudioFormat</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/creativework/primaryFormat">
+	<rdfs:range rdf:resource="http://www.bbc.co.uk/ontologies/creativework/Format"/>
+	<rdfs:domain rdf:resource="http://www.bbc.co.uk/ontologies/creativework/CreativeWork"/>
+	<rdfs:label xml:lang="en-gb">primaryFormat</rdfs:label>
+	<rdfs:comment xml:lang="en-gb">Associates the Creative Work with the Primary Format instance</rdfs:comment>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/creativework/Format">
+	<rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/creativework"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/creativework/AudioFormat">
+	<rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/creativework"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/creativework/ImageFormat">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.bbc.co.uk/ontologies/creativework/Format"/>
+	<rdfs:comment xml:lang="en-gb">Used to represent that the primary format of a CreativeWork is Image</rdfs:comment>
+	<rdfs:label xml:lang="en-gb">ImageFormat</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/creativework"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/creativework/InteractiveFormat">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.bbc.co.uk/ontologies/creativework/Format"/>
+	<rdfs:comment xml:lang="en-gb">Used to represent that the primary format of a CreativeWork is Interactive</rdfs:comment>
+	<rdfs:label xml:lang="en-gb">InteractiveFormat</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/creativework"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/creativework/PictureGalleryFormat">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.bbc.co.uk/ontologies/creativework/Format"/>
+	<rdfs:comment xml:lang="en-gb">Used to represent that the primary format of a CreativeWork is of PictureGallery (this is a mid-term solution for the modelling of galleries)</rdfs:comment>
+	<rdfs:label xml:lang="en-gb">PictureGalleryFormat</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/creativework"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/creativework/TextualFormat">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.bbc.co.uk/ontologies/creativework/Format"/>
+	<rdfs:comment xml:lang="en-gb">Used to represent that the primary format of a CreativeWork is Text</rdfs:comment>
+	<rdfs:label xml:lang="en-gb">TextualFormat</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/creativework"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/creativework/VideoFormat">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.bbc.co.uk/ontologies/creativework/Format"/>
+	<rdfs:comment xml:lang="en-gb">Used to represent that the primary format of a CreativeWork is Video</rdfs:comment>
+	<rdfs:label xml:lang="en-gb">VideoFormat</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/creativework"/>
+</rdf:Description>
+
+</rdf:RDF>

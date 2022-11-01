@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://semanticturkey.uniroma2.it/ns/mdr">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://semanticturkey.uniroma2.it/ns/mdr#SparqlEndpointLimitation">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://semanticturkey.uniroma2.it/ns/mdr#noAggregation">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://semanticturkey.uniroma2.it/ns/mdr#SparqlEndpointLimitation"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://semanticturkey.uniroma2.it/ns/mdr#SparqlEndpointLimitation">
+	<rdfs:comment xml:lang="en">a limitation of some SPARQL endpoint</rdfs:comment>
+	<rdfs:label xml:lang="en">sparql endpoint limitation</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://semanticturkey.uniroma2.it/ns/mdr#noAggregation">
+	<rdfs:comment xml:lang="en">insufficient support for aggregation</rdfs:comment>
+	<rdfs:label xml:lang="en">no aggregation</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://semanticturkey.uniroma2.it/ns/mdr#sparqlEndpointLimitation">
+	<rdfs:range rdf:resource="http://semanticturkey.uniroma2.it/ns/mdr#SparqlEndpointLimitation"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/ns/sparql-service-description#Service"/>
+	<rdfs:label xml:lang="en">sparql endpoint limitation</rdfs:label>
+	<rdfs:comment xml:lang="en">relates a SPARQL endpoint to a resource describing some limitation of that endpoint</rdfs:comment>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://semanticturkey.uniroma2.it/ns/mdr#SparqlEndpointLimitation">
+	<rdfs:isDefinedBy rdf:resource="http://semanticturkey.uniroma2.it/ns/mdr"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://semanticturkey.uniroma2.it/ns/mdr#noAggregation">
+	<rdfs:isDefinedBy rdf:resource="http://semanticturkey.uniroma2.it/ns/mdr"/>
+</rdf:Description>
+
+</rdf:RDF>

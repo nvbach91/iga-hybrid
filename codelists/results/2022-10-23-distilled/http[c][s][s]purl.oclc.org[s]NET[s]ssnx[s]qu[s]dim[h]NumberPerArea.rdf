@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/qu/dim#NumberPerArea">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#atmosphere_number_content_of_aerosol_particles">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#NumberPerArea"/>
+	<rdfs:comment> "Content" indicates a quantity per unit area.  The "atmosphere content" of a quantity refers to the vertical integral from the surface to the top of the atmosphere. For the content between specified levels in the atmosphere, standard names including content_of_atmosphere_layer are used.  "Aerosol" means the suspended liquid or solid particles in air (except cloud droplets). </rdfs:comment>
+	<rdfs:label>atmosphere number content of aerosol particles</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#numberPerArea"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/qu/quantity#numberPerArea">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/qu/dim#NumberPerArea">
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#atmosphere_number_content_of_aerosol_particles">
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/qu/quantity#numberPerArea">
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#atmosphere_number_content_of_cloud_droplets">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#NumberPerArea"/>
+	<rdfs:comment> "Content" indicates a quantity per unit area.  The "atmosphere content" of a quantity refers to the vertical integral from the surface to the top of the atmosphere. For the content between specified levels in the atmosphere, standard names including content_of_atmosphere_layer are used. </rdfs:comment>
+	<rdfs:label>atmosphere number content of cloud droplets</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#numberPerArea"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#atmosphere_number_content_of_ice_crystals">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#NumberPerArea"/>
+	<rdfs:comment> "Content" indicates a quantity per unit area.  The "atmosphere content" of a quantity refers to the vertical integral from the surface to the top of the atmosphere. For the content between specified levels in the atmosphere, standard names including content_of_atmosphere_layer are used. </rdfs:comment>
+	<rdfs:label>atmosphere number content of ice crystals</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#numberPerArea"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/qu/quantity#numberPerArea">
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#NumberPerArea"/>
+</rdf:Description>
+
+</rdf:RDF>

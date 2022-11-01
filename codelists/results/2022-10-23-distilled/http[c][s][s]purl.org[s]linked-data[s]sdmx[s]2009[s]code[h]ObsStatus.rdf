@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://purl.org/linked-data/sdmx/2009/code">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linked-data/sdmx/2009/code#ObsStatus">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linked-data/sdmx/2009/code#obsStatus-A">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/linked-data/sdmx/2009/code#ObsStatus"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linked-data/sdmx/2009/code#ObsStatus">
+	<rdfs:comment xml:lang="en">This code list provides coded information about the "status" of an observation (with respect events such as the ones reflected in the codes composing the code list).</rdfs:comment>
+	<rdfs:label xml:lang="en">Observation status - codelist class</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linked-data/sdmx/2009/code#obsStatus-A">
+	<rdfs:label xml:lang="en">Normal</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linked-data/sdmx/2009/code#ObsStatus">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linked-data/sdmx/2009/code"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linked-data/sdmx/2009/code#obsStatus-A">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linked-data/sdmx/2009/code"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linked-data/sdmx/2009/code#obsStatus-B">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/linked-data/sdmx/2009/code#ObsStatus"/>
+	<rdfs:label xml:lang="en">Break</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linked-data/sdmx/2009/code"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linked-data/sdmx/2009/code#obsStatus-E">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/linked-data/sdmx/2009/code#ObsStatus"/>
+	<rdfs:label xml:lang="en">Estimated value</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linked-data/sdmx/2009/code"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linked-data/sdmx/2009/code#obsStatus-F">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/linked-data/sdmx/2009/code#ObsStatus"/>
+	<rdfs:label xml:lang="en">Forecast value</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linked-data/sdmx/2009/code"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linked-data/sdmx/2009/code#obsStatus-I">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/linked-data/sdmx/2009/code#ObsStatus"/>
+	<rdfs:label xml:lang="en">Imputed value (CCSA definition)</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linked-data/sdmx/2009/code"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linked-data/sdmx/2009/code#obsStatus-M">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/linked-data/sdmx/2009/code#ObsStatus"/>
+	<rdfs:label xml:lang="en">Missing value</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linked-data/sdmx/2009/code"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linked-data/sdmx/2009/code#obsStatus-P">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/linked-data/sdmx/2009/code#ObsStatus"/>
+	<rdfs:label xml:lang="en">Provisional value</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linked-data/sdmx/2009/code"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linked-data/sdmx/2009/code#obsStatus-S">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/linked-data/sdmx/2009/code#ObsStatus"/>
+	<rdfs:label xml:lang="en">Strike</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linked-data/sdmx/2009/code"/>
+</rdf:Description>
+
+</rdf:RDF>

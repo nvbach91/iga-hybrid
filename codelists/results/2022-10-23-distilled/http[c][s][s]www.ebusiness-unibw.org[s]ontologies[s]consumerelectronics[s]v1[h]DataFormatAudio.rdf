@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#DataFormatAudio">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#AAC-LC">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#DataFormatAudio"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#DataFormatAudio">
+	<rdfs:comment xml:lang="en">A data format is a particular way to encode information for storage in a computer file (refers to audiodata).
+
+(This description is partly based on or reuses content from the Wikipedia article "File Format" (http://en.wikipedia.org/wiki/File_format) and is licensed under the GNU Free Documentation License (http://www.gnu.org/copyleft/fdl.html).)</rdfs:comment>
+	<rdfs:label xml:lang="en">Data Format Audio</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#AAC-LC">
+	<rdfs:comment xml:lang="en">Advanced Audio Coding (AAC) is a standardized, lossy compression and encoding scheme for digital audio.
+
+(This description is partly based on or reuses content from the Wikipedia article "Advanced Audio Coding" (http://en.wikipedia.org/wiki/Advanced_Audio_Coding) and is licensed under the GNU Free Documentation License (http://www.gnu.org/copyleft/fdl.html).)</rdfs:comment>
+	<rdfs:label xml:lang="en">AAC-LC</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#DataFormatAudio">
+	<rdfs:isDefinedBy rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#AAC-LC">
+	<rdfs:isDefinedBy rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#AIFF">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#DataFormatAudio"/>
+	<rdfs:comment xml:lang="en">Audio Interchange File Format (AIFF) is an audio file format standard used for storing sound data for personal computers and other electronic audio devices.
+
+(This description is partly based on or reuses content from the Wikipedia article "Audio Interchange File Format" (http://en.wikipedia.org/wiki/Audio_Interchange_File_Format) and is licensed under the GNU Free Documentation License (http://www.gnu.org/copyleft/fdl.html).)</rdfs:comment>
+	<rdfs:label xml:lang="en">AIFF</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#ALE">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#DataFormatAudio"/>
+	<rdfs:comment xml:lang="en">Apple Lossless (also known as Apple Lossless Encoder, ALE, or Apple Lossless Audio Codec, ALAC) is an audio codec developed by Apple Inc. for lossless data compression of digital music.
+
+(This description is partly based on or reuses content from the Wikipedia article "Apple Lossless" (http://en.wikipedia.org/wiki/Apple_Lossless) and is licensed under the GNU Free Documentation License (http://www.gnu.org/copyleft/fdl.html).)</rdfs:comment>
+	<rdfs:label xml:lang="en">ALE</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#ASF">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#DataFormatAudio"/>
+	<rdfs:comment xml:lang="en">Advanced Systems Format (formerly Advanced Streaming Format, Active Streaming Format) is Microsoft's proprietary digital audio/digital video container format, especially meant for streaming media. ASF is part of the Windows Media framework.
+
+(This description is partly based on or reuses content from the Wikipedia article "Advanced Systems Format" (http://en.wikipedia.org/wiki/Advanced_Systems_Format) and is licensed under the GNU Free Documentation License (http://www.gnu.org/copyleft/fdl.html).)</rdfs:comment>
+	<rdfs:label xml:lang="en">ASF</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#DolbyDigital">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#DataFormatAudio"/>
+	<rdfs:comment xml:lang="en">The marketing name for a series of lossy audio compression technologies developed by Dolby Laboratories.
+
+(This description is partly based on or reuses content from the Wikipedia article "Dolby Digital" (http://en.wikipedia.org/wiki/Dolby_Digital) and is licensed under the GNU Free Documentation License (http://www.gnu.org/copyleft/fdl.html).)</rdfs:comment>
+	<rdfs:label xml:lang="en">DolbyDigital</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#FLAC">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#DataFormatAudio"/>
+	<rdfs:comment xml:lang="en">Free Lossless Audio Codec (FLAC) is a file format for lossless audio data compression.
+
+(This description is partly based on or reuses content from the Wikipedia article "Free Lossless Audio Codec" (http://en.wikipedia.org/wiki/Free_Lossless_Audio_Codec) and is licensed under the GNU Free Documentation License (http://www.gnu.org/copyleft/fdl.html).)</rdfs:comment>
+	<rdfs:label xml:lang="en">FLAC</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#Format5.1ch">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#DataFormatAudio"/>
+	<rdfs:comment xml:lang="en">Encompasses a range of techniques for enriching (expanding and deepening) the sound reproduction quality, of an audio source, with additional audio channels reproduced via additional, discrete speakers.</rdfs:comment>
+	<rdfs:label xml:lang="en">Format 5.1ch</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#MP3">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#DataFormatAudio"/>
+	<rdfs:comment xml:lang="en">A digital audio encoding format using a form of lossy data compression.</rdfs:comment>
+	<rdfs:label xml:lang="en">MP3</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#MP4_Audio">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#DataFormatAudio"/>
+	<rdfs:comment xml:lang="en">A collection of methods defining compression of audio digital data.</rdfs:comment>
+	<rdfs:label xml:lang="en">MP4 Audio</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#OGG">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#DataFormatAudio"/>
+	<rdfs:comment xml:lang="en">Ogg is a free, open standard container format maintained by the Xiph.Org Foundation.</rdfs:comment>
+	<rdfs:label xml:lang="en">OGG</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#WAV">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#DataFormatAudio"/>
+	<rdfs:comment xml:lang="en">WAV (or WAVE), short for Waveform audio format, is a Microsoft and IBM audio file format standard for storing an audio bitstream on PCs.
+
+(This description is partly based on or reuses content from the Wikipedia article "WAV" (http://en.wikipedia.org/wiki/WAV) and is licensed under the GNU Free Documentation License (http://www.gnu.org/copyleft/fdl.html).)</rdfs:comment>
+	<rdfs:label xml:lang="en">WAV</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#WMA">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#DataFormatAudio"/>
+	<rdfs:comment xml:lang="en">An audio data compression technology developed by Microsoft.</rdfs:comment>
+	<rdfs:label xml:lang="en">WMA</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
+</rdf:Description>
+
+</rdf:RDF>

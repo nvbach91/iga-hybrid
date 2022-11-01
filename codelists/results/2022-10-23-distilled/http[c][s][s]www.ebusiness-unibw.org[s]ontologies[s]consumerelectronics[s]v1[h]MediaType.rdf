@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#MediaType">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#Cardstock">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#MediaType"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#MediaType">
+	<rdfs:comment xml:lang="en">The type of paper a device is able to handle.</rdfs:comment>
+	<rdfs:label xml:lang="en">Mediumart</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#Cardstock">
+	<rdfs:comment xml:lang="en">A paper stock that is thicker and more durable than normal writing or printing paper, but thinner and more flexible than other forms of paperboard.
+
+(This description is partly based on or reuses content from the Wikipedia article "Cardstock" (http://en.wikipedia.org/wiki/Card_stock) and is licensed under the GNU Free Documentation License (http://www.gnu.org/copyleft/fdl.html).)</rdfs:comment>
+	<rdfs:label xml:lang="en">cardstock</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#MediaType">
+	<rdfs:isDefinedBy rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#Cardstock">
+	<rdfs:isDefinedBy rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#MediaType">
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Media type</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#Envelope">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#MediaType"/>
+	<rdfs:comment xml:lang="en">Is a packaging product, usually made of flat material such as paper or cardboard.</rdfs:comment>
+	<rdfs:label xml:lang="en">Envelope</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#Label">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#MediaType"/>
+	<rdfs:comment xml:lang="en">Media type that can be printed on one side and has a glued area on the other side.</rdfs:comment>
+	<rdfs:label xml:lang="en">Label</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#LaserPrintingPaper">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#MediaType"/>
+	<rdfs:comment xml:lang="en">Special sort of paper used in laser printers.</rdfs:comment>
+	<rdfs:label xml:lang="en">Laser printing paper</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#Photopaper">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#MediaType"/>
+	<rdfs:comment xml:lang="en">Kind of paper that is specifically designed to print high quality digital photos.</rdfs:comment>
+	<rdfs:label xml:lang="en">Photo paper</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#PlainPaper">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#MediaType"/>
+	<rdfs:comment xml:lang="en">Thin material mainly used for writing upon, printing upon or packaging.</rdfs:comment>
+	<rdfs:label xml:lang="en">Plain paper</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#Postcard">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#MediaType"/>
+	<rdfs:comment xml:lang="en">Rectangular piece of thick paper or thin cardboard intended for writing and mailing without an envelope.</rdfs:comment>
+	<rdfs:label xml:lang="en">Postcard</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#Transparency">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#MediaType"/>
+	<rdfs:comment xml:lang="en">A thin sheet of transparent flexible material, typically cellulose acetate, onto which you can print.</rdfs:comment>
+	<rdfs:label xml:lang="en">Transparency</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
+</rdf:Description>
+
+</rdf:RDF>

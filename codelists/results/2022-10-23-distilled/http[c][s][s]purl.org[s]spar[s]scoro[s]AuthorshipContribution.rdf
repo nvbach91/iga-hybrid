@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://purl.org/spar/scoro/">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/scoro/AuthorshipContribution">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/scoro/approves-final-manuscript">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/scoro/AuthorshipContribution"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/scoro/AuthorshipContribution">
+	<rdfs:comment xml:lang="en">Defines the type or nature of a contribution made with respect to the authorship of a publication such as a journal article.  Individual members of this class are used to specify particular authorship contributions.</rdfs:comment>
+	<rdfs:label xml:lang="en">authorship contribution</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/scoro/approves-final-manuscript">
+	<rdfs:comment xml:lang="en">The contribution of approving the final version of the manuscript, prior to submission for publication. </rdfs:comment>
+	<rdfs:label xml:lang="en">approves final manuscript</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/scoro/AuthorshipContribution">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/scoro/approves-final-manuscript">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/scoro/prepares-illustrations">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/scoro/AuthorshipContribution"/>
+	<rdfs:comment xml:lang="en">The contribution of selecting the data and preparing the figures and tables presenting these data for inclusion in the publication. </rdfs:comment>
+	<rdfs:label xml:lang="en">prepares illustrations</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/scoro/prepares-supplementary-information">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/scoro/AuthorshipContribution"/>
+	<rdfs:comment xml:lang="en">The contribution of preparing the supplementary information files submitted with the manuscript. </rdfs:comment>
+	<rdfs:label xml:lang="en">prepares supplementary information</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/scoro/publishes-data">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/scoro/AuthorshipContribution"/>
+	<rdfs:comment xml:lang="en">The contribution of publishing in a public database or data repository data arising from the research.  
+
+Note that this activity is distinct from that of publishing a journal article containing a selection of these data.</rdfs:comment>
+	<rdfs:label xml:lang="en">publishes data</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/scoro/revises-manuscript">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/scoro/AuthorshipContribution"/>
+	<rdfs:comment xml:lang="en">The contribution of critically reviewing and revising drafts of the manuscript of the research paper.</rdfs:comment>
+	<rdfs:label xml:lang="en">revises manuscript</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/scoro/writes-manuscript-draft">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/scoro/AuthorshipContribution"/>
+	<rdfs:comment xml:lang="en">The contribution of writing the initial draft of the manuscript of the research paper.</rdfs:comment>
+	<rdfs:label xml:lang="en">writes manuscript draft</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+</rdf:Description>
+
+</rdf:RDF>

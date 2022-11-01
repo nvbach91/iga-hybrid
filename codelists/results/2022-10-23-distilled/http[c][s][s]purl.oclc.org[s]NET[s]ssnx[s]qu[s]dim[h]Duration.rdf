@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/qu/dim#Duration">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#age_of_stratospheric_air">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#Duration"/>
+	<rdfs:comment>"Age of stratospheric air" means an estimate of the time since a parcel of stratospheric air was last in contact with the troposphere.</rdfs:comment>
+	<rdfs:label>age of stratospheric air</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#duration"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/qu/quantity#duration">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/qu/dim#Duration">
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#age_of_stratospheric_air">
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/qu/quantity#duration">
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#duration_of_sunshine">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#Duration"/>
+	<rdfs:comment>The WMO definition of sunshine is that the surface incident radiative flux from the solar beam (i.e. excluding diffuse skylight) exceeds 120 W m-2. "Duration" is the length of time for which a condition holds.</rdfs:comment>
+	<rdfs:label>duration of sunshine</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#duration"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#forecast_period">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#Duration"/>
+	<rdfs:comment>Forecast period is the time interval between the forecast reference time and the validity time. A period is an interval of time, or the time-period of an oscillation.</rdfs:comment>
+	<rdfs:label>forecast period</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#duration"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#forecast_reference_time">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#Duration"/>
+	<rdfs:comment>The forecast reference time in NWP is the "data time", the time of the analysis from which the forecast was made. It is not the time for which the forecast is valid; the standard name of time should be used for that time.</rdfs:comment>
+	<rdfs:label>forecast reference time</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#duration"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#sea_surface_swell_wave_mean_period_from_variance_spectral_density_first_frequency_moment">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#Duration"/>
+	<rdfs:comment>The swell wave directional spectrum can be written as a  five dimensional function S(t,x,y,f,theta) where t is time, x and y are horizontal coordinates (such as longitude and latitude), f is frequency and theta is direction.  S can be integrated over direction to give S1= integral(S dtheta).  Frequency moments, M(n) of S1 can then be calculated as follows: M(n) = integral(S1 f^n df), where f^n is f to the power of n.  The first wave period, T(m1), is calculated as the ratio M(0)/M(1).</rdfs:comment>
+	<rdfs:label>sea surface swell wave mean period from variance spectral density first frequency moment</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#duration"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#sea_surface_swell_wave_mean_period_from_variance_spectral_density_inverse_frequency_moment">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#Duration"/>
+	<rdfs:comment>The swell wave directional spectrum can be written as a  five dimensional function S(t,x,y,f,theta) where t is time, x and y are horizontal coordinates (such as longitude and latitude), f is frequency and theta is direction.  S can be integrated over direction to give  S1= integral(S dtheta).  Frequency moments, M(n) of S1 can then be calculated as follows: M(n) = integral(S1 f^n df), where f^n is f to the power of n.  The inverse wave period, T(m-1), is calculated as the ratio M(-1)/M(0).</rdfs:comment>
+	<rdfs:label>sea surface swell wave mean period from variance spectral density inverse frequency moment</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#duration"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#sea_surface_swell_wave_mean_period_from_variance_spectral_density_second_frequency_moment">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#Duration"/>
+	<rdfs:comment>The swell wave directional spectrum can be written as a  five dimensional function S(t,x,y,f,theta) where t is time, x and y are horizontal coordinates (such as longitude and latitude), f is frequency and theta is direction.  S can be integrated over direction to give S1= integral(S dtheta).  Frequency moments, M(n) of S1 can then be calculated as follows: M(n) = integral(S1 f^n df), where f^n is f to the power of n.  The second wave period, T(m2), is calculated as the square root of the ratio M(0)/M(2).</rdfs:comment>
+	<rdfs:label>sea surface swell wave mean period from variance spectral density second frequency moment</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#duration"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#sea_surface_swell_wave_period">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#Duration"/>
+	<rdfs:comment>A period is an interval of time, or the time-period of an oscillation. Swell waves are waves on the ocean surface.</rdfs:comment>
+	<rdfs:label>sea surface swell wave period</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#duration"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#sea_surface_swell_wave_zero_upcrossing_period">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#Duration"/>
+	<rdfs:comment>A period is an interval of time, or the time-period of an oscillation. The zero upcrossing period is defined as the time interval between consecutive occasions on which the surface height passes upward above the mean level. Swell waves are waves on the ocean surface.</rdfs:comment>
+	<rdfs:label>sea surface swell wave zero upcrossing period</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#duration"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#sea_surface_wave_mean_period_from_variance_spectral_density_first_frequency_moment">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#Duration"/>
+	<rdfs:comment>The wave directional spectrum can be written as a  five dimensional function S(t,x,y,f,theta) where t is time, x and y are horizontal coordinates (such as longitude and latitude), f is frequency and theta is direction.  S has the standard name sea_surface_wave_directional_variance_spectral_density.  S can be integrated over direction to give S1= integral(S dtheta) and this quantity has the standard name sea_surface_wave_variance_spectral_density.  Frequency moments, M(n) of S1 can then be calculated as follows: M(n) = integral(S1 f^n df), where f^n is f to the power of n.  The first wave period, T(m1)  is calculated as the ratio M(0)/M(1).</rdfs:comment>
+	<rdfs:label>sea surface wave mean period from variance spectral density first frequency moment</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#duration"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#sea_surface_wave_mean_period_from_variance_spectral_density_inverse_frequency_moment">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#Duration"/>
+	<rdfs:comment>The wave directional spectrum can be written as a  five dimensional function S(t,x,y,f,theta) where t is time, x and y are horizontal coordinates (such as longitude and latitude), f is frequency and theta is direction.  S has the standard name sea_surface_wave_directional_variance_spectral_density.  S can be integrated over direction to give S1= integral(S dtheta) and this quantity has the standard name sea_surface_wave_variance_spectral_density.  Frequency moments, M(n) of S1 can then be calculated as follows: M(n) = integral(S1 f^n df), where f^n is f to the power of n.  The inverse wave period, T(m-1), is calculated as the ratio M(-1)/M(0).</rdfs:comment>
+	<rdfs:label>sea surface wave mean period from variance spectral density inverse frequency moment</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#duration"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#sea_surface_wave_mean_period_from_variance_spectral_density_second_frequency_moment">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#Duration"/>
+	<rdfs:comment>The wave directional spectrum can be written as a  five dimensional function S(t,x,y,f,theta) where t is time, x and y are horizontal coordinates (such as longitude and latitude), f is frequency and theta is direction.  S has the standard name sea_surface_wave_directional_variance_spectral_density.  S can be integrated over direction to give S1= integral(S dtheta) and this quantity has the standard name sea_surface_wave_variance_spectral_density.  Frequency moments, M(n) of S1 can then be calculated as follows: M(n) = integral(S1 f^n df), where f^n is f to the power of n.  The second wave period, T(m2) is calculated as the square root of the ratio M(0)/M(2).</rdfs:comment>
+	<rdfs:label>sea surface wave mean period from variance spectral density second frequency moment</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#duration"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#sea_surface_wave_period_at_variance_spectral_density_maximum">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#Duration"/>
+	<rdfs:comment>A period is an interval of time, or the time-period of an oscillation.  The sea_surface_wave_period_at_variance_spectral_density_maximum, sometimes called peak wave period, is the period of the most energetic waves in the total wave spectrum at a specific location.</rdfs:comment>
+	<rdfs:label>sea surface wave period at variance spectral density maximum</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#duration"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#sea_surface_wave_zero_upcrossing_period">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#Duration"/>
+	<rdfs:comment>A period is an interval of time, or the time-period of an oscillation. The zero upcrossing period is defined as the time interval between consecutive occasions on which the surface height passes upward above the mean level.</rdfs:comment>
+	<rdfs:label>sea surface wave zero upcrossing period</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#duration"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#sea_surface_wind_wave_mean_period_from_variance_spectral_density_first_frequency_moment">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#Duration"/>
+	<rdfs:comment>The wind wave directional spectrum can be written as a  five dimensional function S(t,x,y,f,theta) where t is time, x and y are horizontal coordinates (such as longitude and latitude), f is frequency and theta is direction.  S can be integrated over direction to give S1= integral(S dtheta) .  Frequency moments, M(n) of S1 can then be calculated as follows: M(n) = integral(S1 f^n df), where f^n is f to the power of n.  The first wave period, T(m1) is calculated as the ratio M(0)/M(1).</rdfs:comment>
+	<rdfs:label>sea surface wind wave mean period from variance spectral density first frequency moment</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#duration"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#sea_surface_wind_wave_mean_period_from_variance_spectral_density_inverse_frequency_moment">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#Duration"/>
+	<rdfs:comment>The wind wave directional spectrum can be written as a  five dimensional function S(t,x,y,f,theta) where t is time, x and y are horizontal coordinates (such as longitude and latitude), f is frequency and theta is direction.  S can be integrated over direction to give S1= integral(S dtheta).  Frequency moments, M(n) of S1 can then be calculated as follows: M(n) = integral(S1 f^n df), where f^n is f to the power of n.  The inverse wave period, T(m-1), is calculated as the ratio M(-1)/M(0).</rdfs:comment>
+	<rdfs:label>sea surface wind wave mean period from variance spectral density inverse frequency moment</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#duration"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#sea_surface_wind_wave_mean_period_from_variance_spectral_density_second_frequency_moment">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#Duration"/>
+	<rdfs:comment>The wind wave directional spectrum can be written as a  five dimensional function S(t,x,y,f,theta) where t is time, x and y are horizontal coordinates (such as longitude and latitude), f is frequency and theta is direction.  S can be integrated over direction, thus S1= integral(S dtheta).  Frequency moments, M(n) of S1 can then be calculated as follows: M(n) = integral(S1 f^n df), where f^n is f to the power of n.  The second wave period, T(m2), is calculated as the square root of the ratio M(0)/M(2).</rdfs:comment>
+	<rdfs:label>sea surface wind wave mean period from variance spectral density second frequency moment</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#duration"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#sea_surface_wind_wave_period">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#Duration"/>
+	<rdfs:comment>A period is an interval of time, or the time-period of an oscillation. Wind waves are waves on the ocean surface. Wind is defined as a two-dimensional (horizontal) air velocity vector, with no vertical component. (Vertical motion in the atmosphere has the standard name upward_air_velocity.)</rdfs:comment>
+	<rdfs:label>sea surface wind wave period</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#duration"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#sea_surface_wind_wave_zero_upcrossing_period">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#Duration"/>
+	<rdfs:comment>A period is an interval of time, or the time-period of an oscillation. The zero upcrossing period is defined as the time interval between consecutive occasions on which the surface height passes upward above the mean level. Wind waves are waves on the ocean surface. Wind is defined as a two-dimensional (horizontal) air velocity vector, with no vertical component. (Vertical motion in the atmosphere has the standard name upward_air_velocity.)</rdfs:comment>
+	<rdfs:label>sea surface wind wave zero upcrossing period</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#duration"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#time">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#Duration"/>
+	<rdfs:label>time</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#duration"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/qu/quantity#duration">
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#Duration"/>
+</rdf:Description>
+
+</rdf:RDF>

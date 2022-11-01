@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#IfcHumidifierTypeEnum">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#ADIABATICULTRASONIC">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcHumidifierTypeEnum"/>
+	<rdfs:label>ADIABATICULTRASONIC</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#predefinedType_IfcHumidifierType">
+	<rdfs:range rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcHumidifierTypeEnum"/>
+	<rdfs:domain rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcHumidifierType"/>
+	<rdfs:label>PredefinedType</rdfs:label>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#IfcHumidifierTypeEnum">
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#ADIABATICULTRASONIC">
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#ADIABATICWETTEDELEMENT">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcHumidifierTypeEnum"/>
+	<rdfs:label>ADIABATICWETTEDELEMENT</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#ASSISTEDBUTANE">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcHumidifierTypeEnum"/>
+	<rdfs:label>ASSISTEDBUTANE</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#ASSISTEDELECTRIC">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcHumidifierTypeEnum"/>
+	<rdfs:label>ASSISTEDELECTRIC</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#ASSISTEDNATURALGAS">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcHumidifierTypeEnum"/>
+	<rdfs:label>ASSISTEDNATURALGAS</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#ASSISTEDPROPANE">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcHumidifierTypeEnum"/>
+	<rdfs:label>ASSISTEDPROPANE</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#ASSISTEDSTEAM">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcHumidifierTypeEnum"/>
+	<rdfs:label>ASSISTEDSTEAM</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#NOTDEFINED">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcHumidifierTypeEnum"/>
+	<rdfs:label>NOTDEFINED</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#STEAMINJECTION">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcHumidifierTypeEnum"/>
+	<rdfs:label>STEAMINJECTION</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#USERDEFINED">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcHumidifierTypeEnum"/>
+	<rdfs:label>USERDEFINED</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#ADIABATICAIRWASHER">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcHumidifierTypeEnum"/>
+	<rdfs:label>ADIABATICAIRWASHER</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#predefinedType_IfcHumidifier">
+	<rdfs:range rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcHumidifierTypeEnum"/>
+	<rdfs:domain rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcHumidifier"/>
+	<rdfs:label>PredefinedType</rdfs:label>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#ADIABATICAIRWASHER">
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#ADIABATICATOMIZING">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcHumidifierTypeEnum"/>
+	<rdfs:label>ADIABATICATOMIZING</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#ADIABATICCOMPRESSEDAIRNOZZLE">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcHumidifierTypeEnum"/>
+	<rdfs:label>ADIABATICCOMPRESSEDAIRNOZZLE</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#ADIABATICPAN">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcHumidifierTypeEnum"/>
+	<rdfs:label>ADIABATICPAN</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#ADIABATICRIGIDMEDIA">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcHumidifierTypeEnum"/>
+	<rdfs:label>ADIABATICRIGIDMEDIA</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#predefinedType_IfcHumidifier">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#predefinedType_IfcHumidifierType">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+</rdf:Description>
+
+</rdf:RDF>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://www.ontotext.com/proton/protonext">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontotext.com/proton/protonext#ArtProfession">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontotext.com/proton/protonext#Actor">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ontotext.com/proton/protonext#ArtProfession"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontotext.com/proton/protonext#ArtProfession">
+	<rdfs:comment xml:lang="en">A profession in the area of art.</rdfs:comment>
+	<rdfs:label xml:lang="en">Sportsman</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontotext.com/proton/protonext#Actor">
+	<rdfs:comment xml:lang="en">Any actor acts in a dramatic production and who works in film, television, theatre, or radio in that capacity. (Wikipedia)</rdfs:comment>
+	<rdfs:label xml:lang="en">Actor</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontotext.com/proton/protonext#ArtProfession">
+	<rdfs:isDefinedBy rdf:resource="http://www.ontotext.com/proton/protonext"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontotext.com/proton/protonext#Actor">
+	<rdfs:isDefinedBy rdf:resource="http://www.ontotext.com/proton/protonext"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontotext.com/proton/protonext#Artist">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ontotext.com/proton/protonext#ArtProfession"/>
+	<rdfs:comment xml:lang="en">Any artist a profession engaging in a broad spectrum of activities related to creating art, practicing the arts and/or demonstrating an art. (Wikipedia)</rdfs:comment>
+	<rdfs:label xml:lang="en">Artist</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ontotext.com/proton/protonext"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontotext.com/proton/protonext#Comedian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ontotext.com/proton/protonext#ArtProfession"/>
+	<rdfs:comment xml:lang="en">The profession of a comedian</rdfs:comment>
+	<rdfs:label xml:lang="en">Comedian</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ontotext.com/proton/protonext"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontotext.com/proton/protonext#ComicsCreator">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ontotext.com/proton/protonext#ArtProfession"/>
+	<rdfs:comment xml:lang="en">The profession of comics creator </rdfs:comment>
+	<rdfs:label xml:lang="en">Comics creator </rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ontotext.com/proton/protonext"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontotext.com/proton/protonext#Musician">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ontotext.com/proton/protonext#ArtProfession"/>
+	<rdfs:comment xml:lang="en">Any musician, a profession of writing, performing, or making music. (Wikipedia)</rdfs:comment>
+	<rdfs:label xml:lang="en">Musician</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ontotext.com/proton/protonext"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontotext.com/proton/protonext#Writer">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ontotext.com/proton/protonext#ArtProfession"/>
+	<rdfs:comment xml:lang="en">Any writer, a profession of producing literary content. (Wikipedia)</rdfs:comment>
+	<rdfs:label xml:lang="en">Writer</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ontotext.com/proton/protonext"/>
+</rdf:Description>
+
+</rdf:RDF>

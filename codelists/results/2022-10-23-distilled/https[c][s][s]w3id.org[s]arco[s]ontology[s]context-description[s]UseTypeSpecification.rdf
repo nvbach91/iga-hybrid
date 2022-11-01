@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="https://w3id.org/arco/ontology/context-description">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/arco/ontology/context-description/UseTypeSpecification">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/arco/ontology/context-description/BuildingUse">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/arco/ontology/context-description/UseTypeSpecification"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/arco/ontology/context-description/UseTypeSpecification">
+	<rdfs:comment xml:lang="en">This class represents the specification of the type of use of a cultural property (e.g. building, ornamental, structural, instrumental)</rdfs:comment>
+	<rdfs:label xml:lang="en">Use type specification</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/arco/ontology/context-description/BuildingUse">
+	<rdfs:comment xml:lang="en">This individual represents cultural entity  building use specifications.</rdfs:comment>
+	<rdfs:label xml:lang="en">Building use</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/arco/ontology/context-description/hasUseTypeSpecification">
+	<rdfs:range rdf:resource="https://w3id.org/arco/ontology/context-description/UseTypeSpecification"/>
+	<rdfs:domain rdf:resource="https://w3id.org/arco/ontology/context-description/Use"/>
+	<rdfs:label xml:lang="en">has use type specification</rdfs:label>
+	<rdfs:comment xml:lang="en">This property relates the use of a cultural property to the specification of the type of use.</rdfs:comment>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/arco/ontology/context-description/UseTypeSpecification">
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/context-description"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/arco/ontology/context-description/BuildingUse">
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/context-description"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/arco/ontology/context-description/EpigraphicUse">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/arco/ontology/context-description/UseTypeSpecification"/>
+	<rdfs:comment xml:lang="en">This individual represents cultural entity's epigraphic use.</rdfs:comment>
+	<rdfs:label xml:lang="en">Epigraphic</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/context-description"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/arco/ontology/context-description/InstrumentalUse">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/arco/ontology/context-description/UseTypeSpecification"/>
+	<rdfs:comment xml:lang="en">This individual represents cultural entity instrumental use specifications.</rdfs:comment>
+	<rdfs:label xml:lang="en">Instrumental</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/context-description"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/arco/ontology/context-description/OrnamentalUse">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/arco/ontology/context-description/UseTypeSpecification"/>
+	<rdfs:comment xml:lang="en">This individual represents cultural entity's ornamental use specifications.</rdfs:comment>
+	<rdfs:label xml:lang="en">Ornamental</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/context-description"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/arco/ontology/context-description/Reuse">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/arco/ontology/context-description/UseTypeSpecification"/>
+	<rdfs:comment xml:lang="en">This class represents cultural entity's reuse.</rdfs:comment>
+	<rdfs:label xml:lang="en">Reuse</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/context-description"/>
+	<rdfs:comment xml:lang="en">This class represents the reuse of a cultural property or of one of its parts.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/arco/ontology/context-description/StructuralUse">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/arco/ontology/context-description/UseTypeSpecification"/>
+	<rdfs:comment xml:lang="en">This individual represents cultural entity's structural use specifications.</rdfs:comment>
+	<rdfs:label xml:lang="en">Structural use</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/context-description"/>
+</rdf:Description>
+
+</rdf:RDF>

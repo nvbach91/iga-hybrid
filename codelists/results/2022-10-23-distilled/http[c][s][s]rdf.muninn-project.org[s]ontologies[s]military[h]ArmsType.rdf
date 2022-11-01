@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/military">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/military#ArmsType">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/military#ProtoAirForce">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/military#ArmsType"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/military#ArmsType">
+	<rdfs:label xml:lang="en">Arms Type(Military)</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/military#ProtoAirForce">
+	<rdfs:label xml:lang="en">Proto Air Force</rdfs:label>
+	<owl:disjointWith rdf:resource="http://rdf.muninn-project.org/ontologies/military#AirForceServiceBranch"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/military#AirForceServiceBranch">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/military#ArmsType">
+	<rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/military"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/military#ProtoAirForce">
+	<rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/military"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/military#AirForceServiceBranch">
+	<rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/military"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/military#ProtoAirForce">
+	<rdfs:label xml:lang="en">Proto_air_force</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/military#LightInfantry">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/military#ArmsType"/>
+	<rdfs:label xml:lang="en">Infantry</rdfs:label>
+	<owl:subClassOf rdf:resource="http://rdf.muninn-project.org/ontologies/military#Infantry"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/military#Infantry">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/military#LightInfantry">
+	<rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/military"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/military#Infantry">
+	<rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/military"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/military#LightInfantry">
+	<skos:broader rdf:resource="http://rdf.muninn-project.org/ontologies/military#Infantry"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/military#AirForceServiceBranch">
+	<skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/military#ArmsType"/>
+	<rdfs:label xml:lang="en">Air Force (Service Branch)</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/military#Armor">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/military#ArmsType"/>
+	<rdfs:label xml:lang="en">Armor</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/military"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/military#Artillery">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/military#ArmsType"/>
+	<rdfs:label xml:lang="en">Artillery</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/military"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/military#Cavalry">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/military#ArmsType"/>
+	<rdfs:label xml:lang="en">Cavalry</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/military"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/military#Infantry">
+	<skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/military#ArmsType"/>
+	<rdfs:label xml:lang="en">Infantry</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/military#NavyServiceBranch">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/military#ArmsType"/>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/military"/>
+</rdf:Description>
+
+</rdf:RDF>

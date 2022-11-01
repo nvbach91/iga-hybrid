@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#EyeColorPetrequin">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#EyeColorPetrequinBleus">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#EyeColorPetrequin"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#EyeColorPetrequin">
+	<rdfs:comment xml:lang="en">Pétrequin Eye Color Reference.</rdfs:comment>
+	<rdfs:label xml:lang="en">Pétrequin Eye Color Reference</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#EyeColorPetrequinBleus">
+	<rdfs:label xml:lang="en">Blue (Pétrequin)</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#EyeColorPetrequin">
+	<rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/appearances"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#EyeColorPetrequinBleus">
+	<rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/appearances"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#EyeColorPetrequinBruns">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#EyeColorPetrequin"/>
+	<rdfs:label xml:lang="en">Brown (Pétrequin)</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/appearances"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#EyeColorPetrequinGris">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#EyeColorPetrequin"/>
+	<rdfs:label xml:lang="en">Gray (Pétrequin)</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/appearances"/>
+	<rdfs:label xml:lang="en">Grey (Pétrequin)</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#EyeColorPetrequinNoirs">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#EyeColorPetrequin"/>
+	<rdfs:label xml:lang="en">Black (Pétrequin)</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/appearances"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#EyeColorPetrequinRoux">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#EyeColorPetrequin"/>
+	<rdfs:label xml:lang="en">Red (Pétrequin)</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/appearances"/>
+</rdf:Description>
+
+</rdf:RDF>

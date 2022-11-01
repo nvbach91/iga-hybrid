@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://purl.org/ontology/chord/">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/chord/Chord">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/chord/aug">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/ontology/chord/Chord"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/chord/Chord">
+	<rdfs:comment>Two or more notes played together.</rdfs:comment>
+	<rdfs:label>Chord</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/chord/aug">
+	<rdfs:comment>An augmented chord.</rdfs:comment>
+	<rdfs:label>aug</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/chord/base_chord">
+	<rdfs:range rdf:resource="http://purl.org/ontology/chord/Chord"/>
+	<rdfs:domain rdf:resource="http://purl.org/ontology/chord/Chord"/>
+	<rdfs:label>base_chord</rdfs:label>
+	<rdfs:comment>The chord on which this one is based. 
+			For example, a C7 chord might have chord:Cmaj as its base chord.</rdfs:comment>
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/chord/Chord">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/ontology/chord/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/chord/aug">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/ontology/chord/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/chord/dim">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/ontology/chord/Chord"/>
+	<rdfs:comment>A diminished chord.</rdfs:comment>
+	<rdfs:label>dim</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/ontology/chord/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/chord/dim7">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/ontology/chord/Chord"/>
+	<rdfs:comment>A diminished seventh chord.</rdfs:comment>
+	<rdfs:label>dim7</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/ontology/chord/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/chord/hdim7">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/ontology/chord/Chord"/>
+	<rdfs:comment>A half-diminished seventh chord.</rdfs:comment>
+	<rdfs:label>hdim7</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/ontology/chord/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/chord/maj">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/ontology/chord/Chord"/>
+	<rdfs:comment>A major chord.</rdfs:comment>
+	<rdfs:label>maj</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/ontology/chord/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/chord/maj6">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/ontology/chord/Chord"/>
+	<rdfs:comment>A major sixth chord.</rdfs:comment>
+	<rdfs:label>maj6</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/ontology/chord/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/chord/maj7">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/ontology/chord/Chord"/>
+	<rdfs:comment>A major seventh chord.</rdfs:comment>
+	<rdfs:label>maj7</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/ontology/chord/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/chord/maj9">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/ontology/chord/Chord"/>
+	<rdfs:comment>A major ninth chord.</rdfs:comment>
+	<rdfs:label>maj9</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/ontology/chord/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/chord/min">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/ontology/chord/Chord"/>
+	<rdfs:comment>A minor chord.</rdfs:comment>
+	<rdfs:label>min</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/ontology/chord/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/chord/min6">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/ontology/chord/Chord"/>
+	<rdfs:comment>A minor sixth chord.</rdfs:comment>
+	<rdfs:label>min6</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/ontology/chord/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/chord/min7">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/ontology/chord/Chord"/>
+	<rdfs:comment>A minor seventh chord.</rdfs:comment>
+	<rdfs:label>min7</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/ontology/chord/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/chord/min9">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/ontology/chord/Chord"/>
+	<rdfs:comment>A minor ninth chord.</rdfs:comment>
+	<rdfs:label>min9</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/ontology/chord/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/chord/minmaj7">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/ontology/chord/Chord"/>
+	<rdfs:comment>A minor (major 7th) chord.</rdfs:comment>
+	<rdfs:label>minmaj7</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/ontology/chord/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/chord/ninth">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/ontology/chord/Chord"/>
+	<rdfs:comment>A ninth chord.</rdfs:comment>
+	<rdfs:label>9</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/ontology/chord/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/chord/noChord">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/ontology/chord/Chord"/>
+	<rdfs:comment>Indicates that no chord is played.</rdfs:comment>
+	<rdfs:label>noChord</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/ontology/chord/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/chord/seventh">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/ontology/chord/Chord"/>
+	<rdfs:comment>A seventh chord.</rdfs:comment>
+	<rdfs:label>7</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/ontology/chord/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/chord/sus2">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/ontology/chord/Chord"/>
+	<rdfs:comment>A suspended fourth chord.</rdfs:comment>
+	<rdfs:label>sus2</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/ontology/chord/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/chord/sus4">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/ontology/chord/Chord"/>
+	<rdfs:comment>A suspended fourth chord.</rdfs:comment>
+	<rdfs:label>sus4</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/ontology/chord/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/chord/chord">
+	<rdfs:range rdf:resource="http://purl.org/ontology/chord/Chord"/>
+	<rdfs:domain rdf:resource="http://purl.org/ontology/chord/ChordEvent"/>
+	<rdfs:label>chord</rdfs:label>
+	<rdfs:comment>The chord associated with a chord event.</rdfs:comment>
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+</rdf:Description>
+
+</rdf:RDF>

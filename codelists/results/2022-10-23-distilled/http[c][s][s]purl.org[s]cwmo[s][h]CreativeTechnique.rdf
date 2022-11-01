@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://purl.org/cwmo/#">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/cwmo/#CreativeTechnique">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/cwmo/#Bodystorming">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/cwmo/#CreativeTechnique">
+	<rdfs:comment xml:lang="en">The creativre technic class is the technic applied by the ideator to generated ideas</rdfs:comment>
+	<rdfs:label xml:lang="en">Creative Technique</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/cwmo/#Bodystorming">
+	<rdfs:comment xml:lang="en">This method is a mix role play, simulating exercise to inspire new idea and spontaneous prototyping based on empathy.</rdfs:comment>
+	<rdfs:label xml:lang="en">Bodystorming</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/cwmo/#isIncompatibleWith">
+	<rdfs:range rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
+	<rdfs:domain rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
+	<rdfs:comment xml:lang="en">All creative technic are not compatible with each other. A creative technic is not compatible with another.</rdfs:comment>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/cwmo/#CreativeTechnique">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/cwmo/#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/cwmo/#Bodystorming">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/cwmo/#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/cwmo/#MindMapping">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
+	<rdfs:comment xml:lang="en">Visually organize the different elements of a complex problem in order to better understand it.</rdfs:comment>
+	<rdfs:label xml:lang="en">Mind Mapping</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/cwmo/#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/cwmo/#Personas">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
+	<rdfs:comment xml:lang="en">Personas is a consolidated descriptions of typical behaviors under the format of user profil. It permits to humanize the 'client' of the solution, to try scenarios, and ease the communication of the solution.</rdfs:comment>
+	<rdfs:label xml:lang="en">Personas</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/cwmo/#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/cwmo/#BendItShapeIt">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
+	<rdfs:label xml:lang="en">Bend It, Shape It</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/cwmo/#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/cwmo/#AffinityDiagramming">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
+	<rdfs:label xml:lang="en">Affinity Diagramming</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/cwmo/#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/cwmo/#ABTesting">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
+	<rdfs:comment xml:lang="en">Comparing two version of a same solution in order to see which one produce the statistically best results according to a defined objective.</rdfs:comment>
+	<rdfs:label xml:lang="en">A/B Testing</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/cwmo/#isIncompatibleWith">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/cwmo/#ABTesting">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/cwmo/#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/cwmo/#isRelatedTo">
+	<rdfs:range rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
+	<rdfs:domain rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
+	<rdfs:comment xml:lang="en">A creative method is related to another creative method according to the method principle or mechanism involved.</rdfs:comment>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/cwmo/#hasCTSource">
+	<rdfs:range rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
+	<rdfs:domain rdf:resource="http://purl.org/cwmo/#Idea"/>
+	<rdfs:comment xml:lang="en">An idea has been produced during the application of a creative technic.</rdfs:comment>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/cwmo/#isFollowedBy">
+	<rdfs:range rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
+	<rdfs:domain rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
+	<rdfs:comment xml:lang="en">in theory, the creative technic can be follewed by another creative technic. it means the 2 creative technic are by default related by a temporal relation.</rdfs:comment>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/cwmo/#hasCreatTechnic">
+	<rdfs:range rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
+	<rdfs:domain rdf:resource="http://purl.org/cwmo/#CreativeStrategy"/>
+	<rdfs:comment xml:lang="en">Creative Strategy is composed by one or several creative techniques</rdfs:comment>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/cwmo/#hasCTSource">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/cwmo/#support">
+	<rdfs:range rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
+	<rdfs:domain rdf:resource="http://purl.org/cwmo/#Tool"/>
+	<rdfs:comment xml:lang="en">A tool support the application of a creative technic.</rdfs:comment>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/cwmo/#isRelatedTo">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/cwmo/#support">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/cwmo/#equipe">
+	<rdfs:range rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
+	<rdfs:domain rdf:resource="http://purl.org/cwmo/#Equipment"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+</rdf:RDF>

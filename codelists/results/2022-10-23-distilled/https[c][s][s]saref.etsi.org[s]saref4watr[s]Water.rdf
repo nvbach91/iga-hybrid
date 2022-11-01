@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="https://saref.etsi.org/saref4watr/">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://saref.etsi.org/saref4watr/Water">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://saref.etsi.org/saref4watr/DrinkingWater">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://saref.etsi.org/saref4watr/Water"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://saref.etsi.org/saref4watr/Water">
+	<rdfs:comment xml:lang="en">This class is used to define a particular quantity or body of water.</rdfs:comment>
+	<rdfs:label xml:lang="en">Water</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://saref.etsi.org/saref4watr/DrinkingWater">
+	<rdfs:comment xml:lang="en">Drinking water is water that is treated to comply with drinking water standards.</rdfs:comment>
+	<rdfs:label xml:lang="en">Drinking water</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://saref.etsi.org/saref4watr/Water">
+	<rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4watr/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://saref.etsi.org/saref4watr/DrinkingWater">
+	<rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4watr/"/>
+	<rdfs:label xml:lang="en">Potable water</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://saref.etsi.org/saref4watr/RawWater">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://saref.etsi.org/saref4watr/Water"/>
+	<rdfs:comment xml:lang="en">Raw water is water found in the environment that has not been treated and does not have any of its minerals, ions, particles, bacteria, or parasites removed.</rdfs:comment>
+	<rdfs:label xml:lang="en">Raw water</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4watr/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://saref.etsi.org/saref4watr/Stormwater">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://saref.etsi.org/saref4watr/Water"/>
+	<rdfs:comment xml:lang="en">Stormwater is water that originates during precipitation events and snow/ice melt.</rdfs:comment>
+	<rdfs:label xml:lang="en">Storm water</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4watr/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://saref.etsi.org/saref4watr/Wastewater">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://saref.etsi.org/saref4watr/Water"/>
+	<rdfs:comment xml:lang="en">Wastewater is water that has been used in the home, in a business, or as part of an industrial process.</rdfs:comment>
+	<rdfs:label xml:lang="en">Waste water</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4watr/"/>
+</rdf:Description>
+
+</rdf:RDF>

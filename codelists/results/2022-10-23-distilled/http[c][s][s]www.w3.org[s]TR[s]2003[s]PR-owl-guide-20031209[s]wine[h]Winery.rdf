@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Winery">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#McGuinnesso">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Winery"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Winery">
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#McGuinnesso">
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Mountadam">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Winery"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#MountEdenVineyard">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Winery"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#PageMillWinery">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Winery"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#PeterMccoy">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Winery"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#PulignyMontrachet">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Winery"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#SantaCruzMountainVineyard">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Winery"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#SaucelitoCanyon">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Winery"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#SchlossRothermel">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Winery"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#SchlossVolrad">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Winery"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#SeanThackrey">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Winery"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Selaks">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Winery"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#SevreEtMaine">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Winery"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#StGenevieve">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Winery"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Stonleigh">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Winery"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Taylor">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Winery"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Ventana">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Winery"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#WhitehallLane">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Winery"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Bancroft">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Winery"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Beringer">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Winery"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#ChateauChevalBlanc">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Winery"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#ChateauDeMeursault">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Winery"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#ChateauDYchem">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Winery"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#ChateauLafiteRothschild">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Winery"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#ChateauMargauxWinery">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Winery"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#ChateauMorgon">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Winery"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#ClosDeLaPoussie">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Winery"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#ClosDeVougeot">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Winery"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#CongressSprings">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Winery"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Corbans">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Winery"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#CortonMontrachet">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Winery"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Cotturi">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Winery"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#DAnjou">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Winery"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Elyse">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Winery"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Forman">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Winery"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Foxen">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Winery"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#GaryFarrell">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Winery"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Handley">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Winery"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#KalinCellars">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Winery"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#KathrynKennedy">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Winery"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#LaneTanner">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Winery"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Longridge">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Winery"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Marietta">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Winery"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine"/>
+</rdf:Description>
+
+</rdf:RDF>

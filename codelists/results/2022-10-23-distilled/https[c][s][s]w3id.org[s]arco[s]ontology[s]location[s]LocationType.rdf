@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="https://w3id.org/arco/ontology/location">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/arco/ontology/location/LocationType">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/arco/ontology/location/ArchivalLocation">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/arco/ontology/location/LocationType"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/arco/ontology/location/LocationType">
+	<rdfs:comment xml:lang="en">This class represents the type of location of a cultural property.</rdfs:comment>
+	<rdfs:label xml:lang="en">Location Type</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/arco/ontology/location/ArchivalLocation">
+	<rdfs:comment xml:lang="en">This individual represents a specific type of location, that is the archival location.</rdfs:comment>
+	<rdfs:label xml:lang="en">Archival location</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/arco/ontology/location/hasLocationType">
+	<rdfs:range rdf:resource="https://w3id.org/arco/ontology/location/LocationType"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+	<rdfs:label xml:lang="en">has referred location type</rdfs:label>
+	<rdfs:comment xml:lang="en">This property links an entity (e.g. a situation in which a place plays a certain role in relation to a cultural property in a time frame, or a georeferencing, or a cadastral identity) to the role of the localization referring to it (i.e current physical location, previous location, finding location, etc.).</rdfs:comment>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/arco/ontology/location/LocationType">
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/location"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/arco/ontology/location/ArchivalLocation">
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/location"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/arco/ontology/location/CurrentPhysicalLocation">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/arco/ontology/location/LocationType"/>
+	<rdfs:comment xml:lang="en">This individual represents a specific type of localization, that is the current physical location.</rdfs:comment>
+	<rdfs:label xml:lang="en">Current Physical Location</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/location"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/arco/ontology/location/ExhibitionLocation">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/arco/ontology/location/LocationType"/>
+	<rdfs:comment xml:lang="en">This individual represents a specific type of localization, that is the exhibition location.</rdfs:comment>
+	<rdfs:label xml:lang="en">Exhibition Location</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/location"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/arco/ontology/location/FindingLocation">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/arco/ontology/location/LocationType"/>
+	<rdfs:comment xml:lang="en">This individual represents a specific type of localization, that is the finding location.</rdfs:comment>
+	<rdfs:label xml:lang="en">Finding Location</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/location"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/arco/ontology/location/HistoricalLocation">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/arco/ontology/location/LocationType"/>
+	<rdfs:comment xml:lang="en">This individual represents a specific type of localization, that is the historical location.</rdfs:comment>
+	<rdfs:label xml:lang="en">Historical Location</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/location"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/arco/ontology/location/LastLocation">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/arco/ontology/location/LocationType"/>
+	<rdfs:comment xml:lang="en">This individual represents a specific type of location, that is the place of origin or last location.</rdfs:comment>
+	<rdfs:label xml:lang="en">Place of Origin / Last Location</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/location"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/arco/ontology/location/ObservationLocation">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/arco/ontology/location/LocationType"/>
+	<rdfs:comment xml:lang="en">This individual represents a specific type of location, that is the location of observation.</rdfs:comment>
+	<rdfs:label xml:lang="en">Observation Location</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/location"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/arco/ontology/location/ProductionRealizationLocation">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/arco/ontology/location/LocationType"/>
+	<rdfs:comment xml:lang="en">This individual represents a specific type of location, that is the production or realization location.</rdfs:comment>
+	<rdfs:label xml:lang="en">Production or Realization Location</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/location"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/arco/ontology/location/ShootingLocation">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/arco/ontology/location/LocationType"/>
+	<rdfs:comment xml:lang="en">This individual represents a specific type of localization, that is the shooting location.</rdfs:comment>
+	<rdfs:label xml:lang="en">Shooting Location</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/location"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/arco/ontology/location/StorageLocation">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/arco/ontology/location/LocationType"/>
+	<rdfs:comment xml:lang="en">This individual represents a specific type of localization, that is the storage location.</rdfs:comment>
+	<rdfs:label xml:lang="en">Storage Location</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/location"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/arco/ontology/location/SubjectLocation">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/arco/ontology/location/LocationType"/>
+	<rdfs:comment xml:lang="en">This individual represents a specific type of localization, that is the subject location.</rdfs:comment>
+	<rdfs:label xml:lang="en">Subject Location</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/location"/>
+</rdf:Description>
+
+</rdf:RDF>

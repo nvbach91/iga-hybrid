@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://purl.org/onto-ocds/ocds">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/onto-ocds/ocds#ItemClassificationScheme">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/onto-ocds/ocds#ics_CPV">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/onto-ocds/ocds#ItemClassificationScheme"/>
+	<rdfs:comment xml:lang="en">The Common Procurement Vocabulary is a standard adopted by the Commission of the European Community, and consisting of a main vocabulary for defining the subject of a contract, and a supplementary vocabulary for adding further qualitative information. The main vocabulary, identified in OCDS by the code CPV, is based on a tree structure comprising codes of up to 9 digits (an 8 digit code plus a check digit) associated with a wording that describes the type of supplies, works or services forming the subject of the contract.</rdfs:comment>
+	<rdfs:label xml:lang="en">EC Common Procurement Vocabulary</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/onto-ocds/ocds#classificationScheme">
+	<rdfs:range rdf:resource="http://purl.org/onto-ocds/ocds#ItemClassificationScheme"/>
+	<rdfs:domain rdf:resource="http://purl.org/onto-ocds/ocds#Classification"/>
+	<rdfs:label xml:lang="en">Classification scheme</rdfs:label>
+	<rdfs:comment xml:lang="en">An classification should be drawn from an existing scheme or list of codes. This field is used to indicate the scheme/codelist from which the classification is drawn. For line item classifications, this value should represent an known [Item Classification Scheme](http://standard.open-contracting.org/latest/en/schema/codelists/#item-classification-scheme) wherever possible.</rdfs:comment>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/onto-ocds/ocds#ItemClassificationScheme">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/onto-ocds/ocds"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/onto-ocds/ocds#ics_CPV">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/onto-ocds/ocds"/>
+	<rdfs:label xml:lang="en">CPV</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/onto-ocds/ocds#ics_CPVS">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/onto-ocds/ocds#ItemClassificationScheme"/>
+	<rdfs:comment xml:lang="en">The Common Procurement Vocabulary is a standard adopted by the Commission of the European Community, and consisting of a main vocabulary for defining the subject of a contract, and a supplementary vocabulary for adding further qualitative information. The supplementary vocabulary, identified in OCDS by the code CPVS, is made up of an alphanumeric code with a corresponding wording allowing further details to be added regarding the specific nature or destination of the goods to be purchased.</rdfs:comment>
+	<rdfs:label xml:lang="en">EC Common Procurement Vocabulary - Supplementary Codelists</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/onto-ocds/ocds"/>
+	<rdfs:label xml:lang="en">CPVS</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/onto-ocds/ocds#ics_GSIN">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/onto-ocds/ocds#ItemClassificationScheme"/>
+	<rdfs:comment xml:lang="en">The Canadia federal government uses Goods and Services Identification Number (GSIN) codes to identify generic product descriptions for its procurement activities. The full list is published and maintained at buyandsell.gc.ca</rdfs:comment>
+	<rdfs:label xml:lang="en">Goods and Services Identification Number</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/onto-ocds/ocds"/>
+	<rdfs:label xml:lang="en">GSIN</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/onto-ocds/ocds#ics_UNSPSC">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/onto-ocds/ocds#ItemClassificationScheme"/>
+	<rdfs:comment xml:lang="en">The United Nations Standard Products and Services Code (UNSPSC) is a hierarchical convention that is used to classify all products and services. Machine readable meta-data for UNSPSC is not provided as open data: and so publishers should consider alternative classification shemes that do provide open data lookup tables wherever possible.</rdfs:comment>
+	<rdfs:label xml:lang="en">United Nations Standard Products and Services Code®</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/onto-ocds/ocds"/>
+	<rdfs:label xml:lang="en">UNSPSC</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/onto-ocds/ocds#ics_CDNCP">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/onto-ocds/ocds#ItemClassificationScheme"/>
+	<rdfs:label xml:lang="en">CDNCP</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/onto-ocds/ocds"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/onto-ocds/ocds#classificationScheme">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+</rdf:RDF>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#Negative">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#no">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#Negative"/>
+	<rdfs:comment>Value for negation.</rdfs:comment>
+	<rdfs:label>no</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#negative">
+	<rdfs:range rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#Negative"/>
+	<rdfs:label>negative</rdfs:label>
+	<rdfs:comment>denotes the negation or the absence</rdfs:comment>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#Negative">
+	<rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#no">
+	<rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#yes">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#Negative"/>
+	<rdfs:comment>Positive value</rdfs:comment>
+	<rdfs:label>yes</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+</rdf:Description>
+
+</rdf:RDF>

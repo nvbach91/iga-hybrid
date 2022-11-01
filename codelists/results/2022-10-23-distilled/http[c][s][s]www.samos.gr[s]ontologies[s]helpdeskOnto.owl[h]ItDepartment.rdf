@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://www.samos.gr/ontologies/helpdeskOnto.owl">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.samos.gr/ontologies/helpdeskOnto.owl#ItDepartment">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.samos.gr/ontologies/helpdeskOnto.owl#Samos_IT_department_at_NARA">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.samos.gr/ontologies/helpdeskOnto.owl#ItDepartment"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.samos.gr/ontologies/helpdeskOnto.owl#ItDepartment">
+	<rdfs:comment xml:lang="en">A department in the organization that is responsible for the Information Technology (IT) of the organization.</rdfs:comment>
+	<rdfs:label xml:lang="en">Information Technology (IT) department</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.samos.gr/ontologies/helpdeskOnto.owl#Samos_IT_department_at_NARA">
+	<rdfs:comment xml:lang="en">IT depertment at Samos regional unit of NARA</rdfs:comment>
+	<rdfs:label xml:lang="en">Samos IT department at NARA</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.samos.gr/ontologies/helpdeskOnto.owl#ItDepartment">
+	<rdfs:isDefinedBy rdf:resource="http://www.samos.gr/ontologies/helpdeskOnto.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.samos.gr/ontologies/helpdeskOnto.owl#Samos_IT_department_at_NARA">
+	<rdfs:isDefinedBy rdf:resource="http://www.samos.gr/ontologies/helpdeskOnto.owl"/>
+	<rdfs:comment xml:lang="en">This individual is defined for demonstration purposes only</rdfs:comment>
+</rdf:Description>
+
+</rdf:RDF>

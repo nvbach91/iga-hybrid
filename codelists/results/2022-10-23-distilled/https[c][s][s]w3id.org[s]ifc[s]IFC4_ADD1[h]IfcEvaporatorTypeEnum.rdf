@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#IfcEvaporatorTypeEnum">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#DIRECTEXPANSIONBRAZEDPLATE">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcEvaporatorTypeEnum"/>
+	<rdfs:label>DIRECTEXPANSIONBRAZEDPLATE</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#predefinedType_IfcEvaporatorType">
+	<rdfs:range rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcEvaporatorTypeEnum"/>
+	<rdfs:domain rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcEvaporatorType"/>
+	<rdfs:label>PredefinedType</rdfs:label>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#IfcEvaporatorTypeEnum">
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#DIRECTEXPANSIONBRAZEDPLATE">
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#DIRECTEXPANSIONSHELLANDTUBE">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcEvaporatorTypeEnum"/>
+	<rdfs:label>DIRECTEXPANSIONSHELLANDTUBE</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#DIRECTEXPANSIONTUBEINTUBE">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcEvaporatorTypeEnum"/>
+	<rdfs:label>DIRECTEXPANSIONTUBEINTUBE</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#FLOODEDSHELLANDTUBE">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcEvaporatorTypeEnum"/>
+	<rdfs:label>FLOODEDSHELLANDTUBE</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#NOTDEFINED">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcEvaporatorTypeEnum"/>
+	<rdfs:label>NOTDEFINED</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#SHELLANDCOIL">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcEvaporatorTypeEnum"/>
+	<rdfs:label>SHELLANDCOIL</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#USERDEFINED">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcEvaporatorTypeEnum"/>
+	<rdfs:label>USERDEFINED</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#DIRECTEXPANSION">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcEvaporatorTypeEnum"/>
+	<rdfs:label>DIRECTEXPANSION</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#predefinedType_IfcEvaporator">
+	<rdfs:range rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcEvaporatorTypeEnum"/>
+	<rdfs:domain rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcEvaporator"/>
+	<rdfs:label>PredefinedType</rdfs:label>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#DIRECTEXPANSION">
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#predefinedType_IfcEvaporator">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#predefinedType_IfcEvaporatorType">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+</rdf:Description>
+
+</rdf:RDF>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="https://saref.etsi.org/saref4envi/">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://saref.etsi.org/saref4envi/LengthUnit">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.wurvoc.org/vocabularies/om-1.8/centimetre">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://saref.etsi.org/saref4envi/LengthUnit"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://saref.etsi.org/saref4envi/LengthUnit">
+	<rdfs:comment xml:lang="en">Unit of measure for the quantity lenght.</rdfs:comment>
+	<rdfs:label xml:lang="en">Length unit</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.wurvoc.org/vocabularies/om-1.8/centimetre">
+	<rdfs:label xml:lang="en">Centimetre</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://saref.etsi.org/saref4envi/LengthUnit">
+	<rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4envi/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.wurvoc.org/vocabularies/om-1.8/centimetre">
+	<rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4envi/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.wurvoc.org/vocabularies/om-1.8/decametre">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://saref.etsi.org/saref4envi/LengthUnit"/>
+	<rdfs:label xml:lang="en">Decametre</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4envi/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.wurvoc.org/vocabularies/om-1.8/decimetre">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://saref.etsi.org/saref4envi/LengthUnit"/>
+	<rdfs:label xml:lang="en">Decimetre</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4envi/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.wurvoc.org/vocabularies/om-1.8/hectometre">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://saref.etsi.org/saref4envi/LengthUnit"/>
+	<rdfs:label xml:lang="en">Hectometre</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4envi/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.wurvoc.org/vocabularies/om-1.8/kilometre">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://saref.etsi.org/saref4envi/LengthUnit"/>
+	<rdfs:label xml:lang="en">Kilometre</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4envi/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.wurvoc.org/vocabularies/om-1.8/metre">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://saref.etsi.org/saref4envi/LengthUnit"/>
+	<rdfs:label xml:lang="en">Metre</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4envi/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.wurvoc.org/vocabularies/om-1.8/millimetre">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://saref.etsi.org/saref4envi/LengthUnit"/>
+	<rdfs:label xml:lang="en">Milimetre</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4envi/"/>
+</rdf:Description>
+
+</rdf:RDF>

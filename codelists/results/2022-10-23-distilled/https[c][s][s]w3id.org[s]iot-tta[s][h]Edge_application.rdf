@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="https://w3id.org/iot-tta/">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/iot-tta/#Edge_application">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/iot-tta/#Autonomous_vehicle">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/iot-tta/#Edge_application"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/iot-tta/#Edge_application">
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Applications based on edge computing - the term "edge" refers to any computational or network resource available between the data source and the cloud services.</rdfs:comment>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Edge_application</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/iot-tta/#Autonomous_vehicle">
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">autonomous_vehicle (Individual): an Edge application with Object property assertions (hasTechnology)</rdfs:comment>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">autonomous_vehicle</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/iot-tta/#best_Practices">
+	<rdfs:range rdf:resource="https://w3id.org/iot-tta/#Edge_application"/>
+	<rdfs:domain rdf:resource="https://w3id.org/iot-tta/#Edge_security"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">best_Practices</rdfs:label>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">best_Practices (Object property): defines the best practices for the edge security problems using Blockchain solutions</rdfs:comment>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/iot-tta/#Edge_application">
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/iot-tta/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/iot-tta/#Autonomous_vehicle">
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/iot-tta/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/iot-tta/#Cloud_gaming">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/iot-tta/#Edge_application"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cloud_gaming (Individual): an Edge application with Object property assertions (hasTechnology)</rdfs:comment>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cloud_gaming</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/iot-tta/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/iot-tta/#Predictive_maintenance">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/iot-tta/#Edge_application"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">predictive_maintenance (Individual): an Edge application with Object property assertions (hasTechnology)</rdfs:comment>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">predictive_maintenance</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/iot-tta/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/iot-tta/#Smart_grid">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/iot-tta/#Edge_application"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">smart_grid (Individual): an Edge application with Object property assertions (hasTechnology)</rdfs:comment>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">smart_grid</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/iot-tta/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/iot-tta/#Smart_home">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/iot-tta/#Edge_application"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">smart_home (Individual): an Edge application with Object property assertions (hasTechnology)</rdfs:comment>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">smart_home</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/iot-tta/"/>
+</rdf:Description>
+
+</rdf:RDF>

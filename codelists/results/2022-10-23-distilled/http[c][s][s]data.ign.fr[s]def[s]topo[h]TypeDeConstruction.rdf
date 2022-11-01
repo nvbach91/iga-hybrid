@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://data.ign.fr/def/topo">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/def/topo#TypeDeConstruction">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedeconstruction/Antenne">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeConstruction"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/def/topo#TypeDeConstruction">
+	<rdfs:label xml:lang="en">Type of structure</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedeconstruction/Antenne">
+	<rdfs:label xml:lang="en">Antenna</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/def/topo#TypeDeConstruction">
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedeconstruction/Antenne">
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedeconstruction/Barrage">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeConstruction"/>
+	<rdfs:label xml:lang="en">Dam</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedeconstruction/Cheminee">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeConstruction"/>
+	<rdfs:label xml:lang="en">Chimney</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedeconstruction/DalleDeProtection">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeConstruction"/>
+	<rdfs:label xml:lang="en">Protective wall</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedeconstruction/Ecluse">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeConstruction"/>
+	<rdfs:label xml:lang="en">Lock</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedeconstruction/Eolienne">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeConstruction"/>
+	<rdfs:label xml:lang="en">Wind pump</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedeconstruction/EscalierMonumental">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeConstruction"/>
+	<rdfs:label xml:lang="en">Monumental stairs</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedeconstruction/MurAntiBruit">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeConstruction"/>
+	<rdfs:label xml:lang="en">Sound attenuation barrier</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedeconstruction/Phare">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeConstruction"/>
+	<rdfs:label xml:lang="en">Lighthouse</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedeconstruction/Quai">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeConstruction"/>
+	<rdfs:label xml:lang="en">Wharf</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedeconstruction/Ruines">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeConstruction"/>
+	<rdfs:label xml:lang="en">Ruins</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedeconstruction/Torchere">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeConstruction"/>
+	<rdfs:label xml:lang="en">Flare tower</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedeconstruction/Transformateur">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeConstruction"/>
+	<rdfs:label xml:lang="en">Transformer</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+</rdf:RDF>

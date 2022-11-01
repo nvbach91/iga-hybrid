@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="https://w3id.org/idsa/core">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/idsa/core/IntegrityVerificationScopeGuarantee">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/idsa/code/INTEGRITY_VERIFICATION_SCOPE_KERNEL_CORE_CONTAINER">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/idsa/core/IntegrityVerificationScopeGuarantee"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/idsa/core/IntegrityVerificationScopeGuarantee">
+	<rdfs:comment xml:lang="en">Level/extent of verifying the software stack.</rdfs:comment>
+	<rdfs:label xml:lang="en">Integrity verification scope</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/idsa/code/INTEGRITY_VERIFICATION_SCOPE_KERNEL_CORE_CONTAINER">
+	<rdfs:label>Integrity Verification Scope Kernel Core Container</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/idsa/core/IntegrityVerificationScopeGuarantee">
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/idsa/code/INTEGRITY_VERIFICATION_SCOPE_KERNEL_CORE_CONTAINER">
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/idsa/code/INTEGRITY_VERIFICATION_SCOPE_KERNEL_CORE_CONTAINER_APPLICATION">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/idsa/core/IntegrityVerificationScopeGuarantee"/>
+	<rdfs:label>Integrity Verification Scope Kernel Core Container Application</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/idsa/code/INTEGRITY_VERIFICATION_SCOPE_NONE">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/idsa/core/IntegrityVerificationScopeGuarantee"/>
+	<rdfs:label>Integrity Verification Scope None</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+</rdf:Description>
+
+</rdf:RDF>

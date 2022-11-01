@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://purl.org/spar/scoro/">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/scoro/InvestigationRole">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/scoro/chief-scientist">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/scoro/InvestigationRole"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/scoro/InvestigationRole">
+	<rdfs:comment xml:lang="en">A role that an agent might hold with respect to an investigation.  Individual members of this class are used to specify particular roles.</rdfs:comment>
+	<rdfs:label xml:lang="en">investigation role</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/scoro/chief-scientist">
+	<rdfs:comment xml:lang="en">A senior scientist who takes a leadership role in an organization or group.</rdfs:comment>
+	<rdfs:label xml:lang="en">chief scientist</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/scoro/InvestigationRole">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/scoro/chief-scientist">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/scoro/co-investigator">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/scoro/InvestigationRole"/>
+	<rdfs:comment xml:lang="en">The role a person has of being a co-investigator for a research investigation.</rdfs:comment>
+	<rdfs:label xml:lang="en">co-investigator</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/scoro/collaborator">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/scoro/InvestigationRole"/>
+	<rdfs:comment xml:lang="en">The role a person, typically from another research group or institution, who collaborates with the team undertaking a research investigation.</rdfs:comment>
+	<rdfs:label xml:lang="en">collaborator</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/scoro/computer-programmer">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/scoro/InvestigationRole"/>
+	<rdfs:comment xml:lang="en">The role a person has of being someone who develops computer software.</rdfs:comment>
+	<rdfs:label xml:lang="en">computer programmer</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/scoro/consultant">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/scoro/InvestigationRole"/>
+	<rdfs:comment xml:lang="en">The role a person has of being a consultant who is providing expertise or services.</rdfs:comment>
+	<rdfs:label xml:lang="en">consultant</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/scoro/inventor">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/scoro/InvestigationRole"/>
+	<rdfs:comment xml:lang="en">The role a person has of being the inventor or some entity (for example a computer algorithm, or an experimental procedure).</rdfs:comment>
+	<rdfs:label xml:lang="en">inventor</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/scoro/postdoctoral-researcher">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/scoro/InvestigationRole"/>
+	<rdfs:comment xml:lang="en">The role a person has of being a post-doctoral researcher involved in a research investigation.</rdfs:comment>
+	<rdfs:label xml:lang="en">postdoctoral researcher</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/scoro/principal-investigator">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/scoro/InvestigationRole"/>
+	<rdfs:comment xml:lang="en">The role a person has of being the principal investigator for a research investigation.</rdfs:comment>
+	<rdfs:label xml:lang="en">principal investigator</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/scoro/project-student">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/scoro/InvestigationRole"/>
+	<rdfs:comment xml:lang="en">The role a person has of being a project student, namely someone engaged in an undergraduate research project as part of studying for an undergraduate degree at a university, whose research will be presented in an undergraduate research project report in part fulfilment of the requirements of that degree.</rdfs:comment>
+	<rdfs:label xml:lang="en">project student</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/scoro/research-assistant">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/scoro/InvestigationRole"/>
+	<rdfs:comment xml:lang="en">The role a person has of being a research assistant involved in a research investigation.</rdfs:comment>
+	<rdfs:label xml:lang="en">research assistant</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/scoro/research-student">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/scoro/InvestigationRole"/>
+	<rdfs:comment xml:lang="en">The role a person has of being a research student, namely someone engaged in research as part of studying for a higher degree at a university or research institute, whose research will be presented in a thesis in part fulfilment of the requirements of that degree.</rdfs:comment>
+	<rdfs:label xml:lang="en">research student</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/scoro/researcher">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/scoro/InvestigationRole"/>
+	<rdfs:comment xml:lang="en">The role a person has of being a researcher involved in a research investigation.</rdfs:comment>
+	<rdfs:label xml:lang="en">researcher</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/scoro/scholar">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/scoro/InvestigationRole"/>
+	<rdfs:comment xml:lang="en">The role of an academic who undertakes scholarly activities, including research investigations.  This role is particularly used to describe endeavours in the arts and humanites that are frequently undertaken without financial support from a particular funded project dedicated to these scholarly activities.</rdfs:comment>
+	<rdfs:label xml:lang="en">scholar</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/scoro/service-engineer">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/scoro/InvestigationRole"/>
+	<rdfs:comment xml:lang="en">The role held by a person who services, maintains and repairs equipment, facilities or technical infrastructure. </rdfs:comment>
+	<rdfs:label xml:lang="en">service engineer</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/scoro/technician">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/scoro/InvestigationRole"/>
+	<rdfs:comment xml:lang="en">The role a person has of being a technician, providing technical assistance in some endeavour such as a research investigation.</rdfs:comment>
+	<rdfs:label xml:lang="en">technician</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+</rdf:Description>
+
+</rdf:RDF>

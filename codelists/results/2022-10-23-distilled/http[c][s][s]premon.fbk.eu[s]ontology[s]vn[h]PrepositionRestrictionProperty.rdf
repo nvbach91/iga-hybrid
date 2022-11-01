@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://premon.fbk.eu/ontology/vn">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://premon.fbk.eu/ontology/vn#PrepositionRestrictionProperty">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://premon.fbk.eu/ontology/vn#dest_conf_prp">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#PrepositionRestrictionProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://premon.fbk.eu/ontology/vn#PrepositionRestrictionProperty">
+	<rdfs:label xml:lang="en">Preposition Selectional Restriction Property</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://premon.fbk.eu/ontology/vn#dest_conf_prp">
+	<rdfs:label>dest_conf</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://premon.fbk.eu/ontology/vn#PrepositionRestrictionProperty">
+	<rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://premon.fbk.eu/ontology/vn#dest_conf_prp">
+	<rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://premon.fbk.eu/ontology/vn#dest_dir_prp">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#PrepositionRestrictionProperty"/>
+	<rdfs:label>dest_dir</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://premon.fbk.eu/ontology/vn#dest_prp">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#PrepositionRestrictionProperty"/>
+	<rdfs:label>dest</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://premon.fbk.eu/ontology/vn#dir_prp">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#PrepositionRestrictionProperty"/>
+	<rdfs:label>dir</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://premon.fbk.eu/ontology/vn#loc_prp">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#PrepositionRestrictionProperty"/>
+	<rdfs:label>loc</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://premon.fbk.eu/ontology/vn#path_prp">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#PrepositionRestrictionProperty"/>
+	<rdfs:label>path</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://premon.fbk.eu/ontology/vn#plural_prp">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#PrepositionRestrictionProperty"/>
+	<rdfs:label>plural</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://premon.fbk.eu/ontology/vn#spatial_prp">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#PrepositionRestrictionProperty"/>
+	<rdfs:label>spatial</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://premon.fbk.eu/ontology/vn#src_prp">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#PrepositionRestrictionProperty"/>
+	<rdfs:label>src</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+</rdf:Description>
+
+</rdf:RDF>

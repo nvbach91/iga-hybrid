@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#WhiteBalance">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#AutoWhiteBalance">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#WhiteBalance"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#WhiteBalance">
+	<rdfs:comment xml:lang="en">Is the global adjustment of the intensities of the colors (typically red, green, and blue primary colors). An important goal of this adjustment is to render specific colors - particularly neutral colors - correctly; hence, the general method is sometimes called gray balance, neutral balance, or white balance.
+
+(This description is partly based on or reuses content from the Wikipedia article "White Balance" (http://en.wikipedia.org/wiki/White_Balance) and is licensed under the GNU Free Documentation License (http://www.gnu.org/copyleft/fdl.html).)</rdfs:comment>
+	<rdfs:label xml:lang="en">White balance</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#AutoWhiteBalance">
+	<rdfs:comment xml:lang="en">Ability to adapt of different adjustments of the intensities of the colors.</rdfs:comment>
+	<rdfs:label xml:lang="en">Auto white balance</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#hasWhiteBalance">
+	<rdfs:range rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#WhiteBalance"/>
+	<rdfs:label xml:lang="en">white balance</rdfs:label>
+	<rdfs:comment xml:lang="en">Defines the global adjustment of the intensities of the colors.</rdfs:comment>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#WhiteBalance">
+	<rdfs:isDefinedBy rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#AutoWhiteBalance">
+	<rdfs:isDefinedBy rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#IndoorWhiteBalance">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#WhiteBalance"/>
+	<rdfs:comment xml:lang="en">Ability to adapt of different adjustments of the intensities of the colors.</rdfs:comment>
+	<rdfs:label xml:lang="en">Indoor white balance</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#OutdoorWhiteBalance">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#WhiteBalance"/>
+	<rdfs:comment xml:lang="en">Ability to adapt of different adjustments of the intensities of the colors.</rdfs:comment>
+	<rdfs:label xml:lang="en">Outdoor white balance</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
+</rdf:Description>
+
+</rdf:RDF>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#IfcTaskTypeEnum">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#MOVE">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcTaskTypeEnum"/>
+	<rdfs:label>MOVE</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#predefinedType_IfcTaskType">
+	<rdfs:range rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcTaskTypeEnum"/>
+	<rdfs:domain rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcTaskType"/>
+	<rdfs:label>PredefinedType</rdfs:label>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#IfcTaskTypeEnum">
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#MOVE">
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#NOTDEFINED">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcTaskTypeEnum"/>
+	<rdfs:label>NOTDEFINED</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#OPERATION">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcTaskTypeEnum"/>
+	<rdfs:label>OPERATION</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#REMOVAL">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcTaskTypeEnum"/>
+	<rdfs:label>REMOVAL</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#RENOVATION">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcTaskTypeEnum"/>
+	<rdfs:label>RENOVATION</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#USERDEFINED">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcTaskTypeEnum"/>
+	<rdfs:label>USERDEFINED</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#ATTENDANCE">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcTaskTypeEnum"/>
+	<rdfs:label>ATTENDANCE</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#predefinedType_IfcTask">
+	<rdfs:range rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcTaskTypeEnum"/>
+	<rdfs:domain rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcTask"/>
+	<rdfs:label>PredefinedType</rdfs:label>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#ATTENDANCE">
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#CONSTRUCTION">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcTaskTypeEnum"/>
+	<rdfs:label>CONSTRUCTION</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#DEMOLITION">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcTaskTypeEnum"/>
+	<rdfs:label>DEMOLITION</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#DISMANTLE">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcTaskTypeEnum"/>
+	<rdfs:label>DISMANTLE</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#DISPOSAL">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcTaskTypeEnum"/>
+	<rdfs:label>DISPOSAL</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#INSTALLATION">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcTaskTypeEnum"/>
+	<rdfs:label>INSTALLATION</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#LOGISTIC">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcTaskTypeEnum"/>
+	<rdfs:label>LOGISTIC</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#MAINTENANCE">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcTaskTypeEnum"/>
+	<rdfs:label>MAINTENANCE</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/ifc/IFC4_ADD1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#predefinedType_IfcTask">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/ifc/IFC4_ADD1#predefinedType_IfcTaskType">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+</rdf:Description>
+
+</rdf:RDF>

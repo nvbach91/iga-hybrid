@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://purl.org/goodrelations/v1">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/goodrelations/v1#PaymentMethodCreditCard">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/goodrelations/v1#AmericanExpress">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/goodrelations/v1#PaymentMethodCreditCard"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/goodrelations/v1#PaymentMethodCreditCard">
+	<rdfs:comment xml:lang="en">The subclass of gr:PaymentMethod represents all variants and brands of credit or debit cards as a standardized procedure for transferring the monetary amount for a purchase. It is mostly used for specifying the types of payment accepted by a gr:Business Entity.
+
+Examples: VISA, MasterCard, or American Express.</rdfs:comment>
+	<rdfs:label xml:lang="en">Payment method credit card</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/goodrelations/v1#AmericanExpress">
+	<rdfs:comment xml:lang="en">Payment by credit or debit cards issued by the American Express network.</rdfs:comment>
+	<rdfs:label xml:lang="en">American Express (payment method)</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/goodrelations/v1#PaymentMethodCreditCard">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/goodrelations/v1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/goodrelations/v1#AmericanExpress">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/goodrelations/v1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/goodrelations/v1#DinersClub">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/goodrelations/v1#PaymentMethodCreditCard"/>
+	<rdfs:comment xml:lang="en">Payment by credit or debit cards issued by the Diner's Club network.</rdfs:comment>
+	<rdfs:label xml:lang="en">Diners Club (payment method)</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/goodrelations/v1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/goodrelations/v1#Discover">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/goodrelations/v1#PaymentMethodCreditCard"/>
+	<rdfs:comment xml:lang="en">Payment by credit or debit cards issued by the Discover network.</rdfs:comment>
+	<rdfs:label xml:lang="en">Discover (payment method)</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/goodrelations/v1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/goodrelations/v1#JCB">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/goodrelations/v1#PaymentMethodCreditCard"/>
+	<rdfs:comment xml:lang="en">Payment by credit or debit cards issued by the JCB network.</rdfs:comment>
+	<rdfs:label xml:lang="en">JCB (payment method)</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/goodrelations/v1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/goodrelations/v1#MasterCard">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/goodrelations/v1#PaymentMethodCreditCard"/>
+	<rdfs:comment xml:lang="en">Payment by credit or debit cards issued by the MasterCard network.</rdfs:comment>
+	<rdfs:label xml:lang="en">MasterCard (payment method)</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/goodrelations/v1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/goodrelations/v1#VISA">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/goodrelations/v1#PaymentMethodCreditCard"/>
+	<rdfs:comment xml:lang="en">Payment by credit or debit cards issued by the VISA network.</rdfs:comment>
+	<rdfs:label xml:lang="en">VISA (payment method)</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/goodrelations/v1"/>
+</rdf:Description>
+
+</rdf:RDF>

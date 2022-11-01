@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/deliverycontext.owl">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/hardware.owl#HardwareStatus">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/hardware.owl#HardwareStatus_OFF">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/hardware.owl#HardwareStatus"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/hardware.owl#HardwareStatus">
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This class represents the status of a hardware component</rdfs:comment>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hardware Status</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/hardware.owl#HardwareStatus_OFF">
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This status indicates that the hardware component is off</rdfs:comment>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Off</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/hardware.owl#status">
+	<rdfs:range rdf:resource="http://www.w3.org/2007/uwa/context/hardware.owl#HardwareStatus"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2007/uwa/context/hardware.owl#HardwareComponent"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Status</rdfs:label>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This property represents the status of a hardware component</rdfs:comment>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/hardware.owl#HardwareStatus">
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/hardware.owl#HardwareStatus_OFF">
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/hardware.owl#HardwareStatus_ON">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/hardware.owl#HardwareStatus"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This status indicates that the hardware component is on</rdfs:comment>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">On</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/hardware.owl#HardwareStatus_STANDBY">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/hardware.owl#HardwareStatus"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This status indicates that harware component is in standby mode</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/hardware.owl#status">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+</rdf:RDF>

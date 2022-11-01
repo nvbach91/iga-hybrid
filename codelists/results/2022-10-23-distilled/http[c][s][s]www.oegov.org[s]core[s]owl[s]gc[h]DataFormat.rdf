@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://www.oegov.org/core/owl/gc">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.oegov.org/core/owl/gc#DataFormat">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.oegov.org/core/owl/gc#UnstructuredDataFormat">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.oegov.org/core/owl/gc#DataFormat"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.oegov.org/core/owl/gc#DataFormat">
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data Format</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.oegov.org/core/owl/gc#UnstructuredDataFormat">
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unstructured Data Format</rdfs:label>
+	<subCategory xmlns="http://www.oegov.org/core/owl/gc#" rdf:resource="http://www.oegov.org/core/owl/gc#HTML-Format"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.oegov.org/core/owl/gc#HTML-Format">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.oegov.org/core/owl/gc#DataFormat">
+	<rdfs:isDefinedBy rdf:resource="http://www.oegov.org/core/owl/gc"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.oegov.org/core/owl/gc#UnstructuredDataFormat">
+	<rdfs:isDefinedBy rdf:resource="http://www.oegov.org/core/owl/gc"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.oegov.org/core/owl/gc#HTML-Format">
+	<rdfs:isDefinedBy rdf:resource="http://www.oegov.org/core/owl/gc"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.oegov.org/core/owl/gc#CSV-Format">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.oegov.org/core/owl/gc#DataFormat"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A comma separated values (CSV) file is a computer data file used for implementing the tried and true organizational tool, the Comma Separated List. The CSV file is used for the digital storage of data structured in a table of lists form. Each line in the CSV file corresponds to a row in the table. Within a line, fields are separated by commas, and each field belongs to one table column. CSV files are often used for moving tabular data between two different computer programs (like moving between a database program and a spreadsheet program).</rdfs:comment>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CVS Format</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.oegov.org/core/owl/gc"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.oegov.org/core/owl/gc#KML-Format">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.oegov.org/core/owl/gc#DataFormat"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Keyhole Markup Language (KML) is an XML-based language schema for expressing geographic annotation and visualization on existing or future Web-based, two-dimensional maps and three-dimensional Earth browsers.</rdfs:comment>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KML-Format</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.oegov.org/core/owl/gc"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.oegov.org/core/owl/gc#KMZ-Format">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.oegov.org/core/owl/gc#DataFormat"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KML files are very often distributed in KMZ files, which are zipped files with a ".KMZ" extension. When a KMZ file is unzipped, a single "doc.kml" is found along with any overlay and icon images referenced in the KML as well as any network-linked KML files.</rdfs:comment>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KMZ Format</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.oegov.org/core/owl/gc"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.oegov.org/core/owl/gc#ShapefileFormat">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.oegov.org/core/owl/gc#DataFormat"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The ESRI Shapefile or simply a shapefile is a popular geospatial vector data format for geographic information systems software. It is developed and regulated by ESRI as a (mostly) open specification for data interoperability among ESRI and other software products.[1] A "shapefile" commonly refers to a collection of files with ".shp", ".shx", ".dbf", and other extensions on a common prefix name (e.g., "lakes.*"). The actual shapefile relates specifically to files with the ".shp" extension, however this file alone is incomplete for distribution, as the other supporting files are required. Shapefiles spatially describe geometries: points, polylines, and polygons. These, for example, could represent water wells, rivers, and lakes, respectively. Each item may also have attributes that describe the items, such as the name or temperature [Wikipedia].</rdfs:comment>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Shapefile Format</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.oegov.org/core/owl/gc"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.oegov.org/core/owl/gc#XML-Format">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.oegov.org/core/owl/gc#DataFormat"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XML (Extensible Markup Language) is a general-purpose specification for creating custom markup languages. It is classified as an extensible language, because it allows the user to define the mark-up elements. XML's purpose is to aid information systems in sharing structured data, especially via the Internet, to encode documents, and to serialize data.</rdfs:comment>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XML Format</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.oegov.org/core/owl/gc"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.oegov.org/core/owl/gc#HTML-Format">
+	<skos:inScheme rdf:resource="http://www.oegov.org/core/owl/gc#DataFormat"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HTML Format</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.oegov.org/core/owl/gc#OWL-Format">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.oegov.org/core/owl/gc#DataFormat"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OWL Format</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.oegov.org/core/owl/gc"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.oegov.org/core/owl/gc#RDF-Format">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.oegov.org/core/owl/gc#DataFormat"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RDF Fomat</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.oegov.org/core/owl/gc"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.oegov.org/core/owl/gc#RSS-Format">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.oegov.org/core/owl/gc#DataFormat"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RSS Format</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.oegov.org/core/owl/gc"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.oegov.org/core/owl/gc#TextFormat">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.oegov.org/core/owl/gc#DataFormat"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Text Format</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.oegov.org/core/owl/gc"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.oegov.org/core/owl/gc#XSL-Format">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.oegov.org/core/owl/gc#DataFormat"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XSL Format</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.oegov.org/core/owl/gc"/>
+</rdf:Description>
+
+</rdf:RDF>

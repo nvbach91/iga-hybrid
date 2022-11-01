@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="https://w3id.org/arco/ontology/context-description">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/arco/ontology/context-description/DocumentationCategory">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/arco/ontology/context-description/AttachedDocumentation">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/arco/ontology/context-description/DocumentationCategory"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/arco/ontology/context-description/DocumentationCategory">
+	<rdfs:comment xml:lang="en">This class represents the category associated to a documentation (e.g. attached documentation, existing documentation).</rdfs:comment>
+	<rdfs:label xml:lang="en">Documentation category</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/arco/ontology/context-description/AttachedDocumentation">
+	<rdfs:comment xml:lang="en">This individual represents documenation definition included inside catalog.</rdfs:comment>
+	<rdfs:label xml:lang="en">Attached documentation</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/arco/ontology/context-description/DocumentationCategory">
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/context-description"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/arco/ontology/context-description/AttachedDocumentation">
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/context-description"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/arco/ontology/context-description/ExistingDocumentation">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/arco/ontology/context-description/DocumentationCategory"/>
+	<rdfs:comment xml:lang="en">This individual represents documentation definition that is only mentioned.</rdfs:comment>
+	<rdfs:label xml:lang="en">Existing documentation</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/context-description"/>
+</rdf:Description>
+
+</rdf:RDF>

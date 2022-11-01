@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlas">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlasBlondDark">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlas"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlas">
+	<rdfs:label xml:lang="en">HairColorAtlas</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlasBlondDark">
+	<rdfs:label xml:lang="en">Dark Blond (Human Hair Atlas)</rdfs:label>
+	<skos:narrower rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlasBlond"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlasBlond">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlas">
+	<rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/appearances"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlasBlondDark">
+	<rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/appearances"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlasBlond">
+	<rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/appearances"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlasBlondLight">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlas"/>
+	<rdfs:label xml:lang="en">Light Blond (Human Hair Atlas)</rdfs:label>
+	<skos:narrower rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlasBlond"/>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/appearances"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlasBlondLightMedium">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlas"/>
+	<rdfs:label xml:lang="en">Light Blond to Medium (Human Hair Atlas)</rdfs:label>
+	<skos:narrower rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlasBlond"/>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/appearances"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlasBlondMediumDark">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlas"/>
+	<rdfs:label xml:lang="en">Medium to Dark Blond (Human Hair Atlas)</rdfs:label>
+	<skos:narrower rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlasBlond"/>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/appearances"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlasDarkOpaqueBrown">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlas"/>
+	<rdfs:label xml:lang="en">Dark to Opaque Brown (Human Hair Atlas)</rdfs:label>
+	<skos:narrower rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlasBrown"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlasBrown">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlasDarkOpaqueBrown">
+	<rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/appearances"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlasBrown">
+	<rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/appearances"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlasLightBrown">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlas"/>
+	<rdfs:label xml:lang="en">Light Brown (Human Hair Atlas)</rdfs:label>
+	<skos:narrower rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlasBrown"/>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/appearances"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlasLightMediumBrown">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlas"/>
+	<rdfs:label xml:lang="en">Light to Medium Brown (Human Hair Atlas)</rdfs:label>
+	<skos:narrower rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlasBrown"/>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/appearances"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlasMediumDarkBrown">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlas"/>
+	<rdfs:label xml:lang="en">Medium to Dark Brown (Human Hair Atlas)</rdfs:label>
+	<skos:narrower rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlasBrown"/>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/appearances"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlasOpaqueBrown">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlas"/>
+	<rdfs:label xml:lang="en">Opaque Brown (Human Hair Atlas)</rdfs:label>
+	<skos:narrower rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlasBrown"/>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/appearances"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlasDarkGoldenBrown">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlas"/>
+	<rdfs:label xml:lang="en">Dark Golden Brown (Human Hair Atlas)</rdfs:label>
+	<skos:narrower rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlasGoldenBrown"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlasGoldenBrown">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlasDarkGoldenBrown">
+	<rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/appearances"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlasGoldenBrown">
+	<rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/appearances"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlasLightGoldenBrown">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlas"/>
+	<rdfs:label xml:lang="en">Light Golden Brown (Human Hair Atlas)</rdfs:label>
+	<skos:narrower rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlasGoldenBrown"/>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/appearances"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlasLightMediumGoldenBrown">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlas"/>
+	<rdfs:label xml:lang="en">Light to Medium Golden Brown (Human Hair Atlas)</rdfs:label>
+	<skos:narrower rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlasGoldenBrown"/>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/appearances"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlasMediumDarkGoldenBrown">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlas"/>
+	<rdfs:label xml:lang="en">Medium to Dark Golden Brown (Human Hair Atlas)</rdfs:label>
+	<skos:narrower rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlasGoldenBrown"/>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/appearances"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlasDarkOpaqueGrayBrown">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlas"/>
+	<rdfs:label xml:lang="en">Black, Dark Gray Brown to Opaque Gray Brown (Human Hair Atlas)</rdfs:label>
+	<skos:narrower rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlasGrayBrown"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlasGrayBrown">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlasDarkOpaqueGrayBrown">
+	<rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/appearances"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlasGrayBrown">
+	<rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/appearances"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlasLightGrayBrown">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlas"/>
+	<rdfs:label xml:lang="en">Light Gray Brown (Human Hair Atlas)</rdfs:label>
+	<skos:narrower rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlasGrayBrown"/>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/appearances"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlasLightMediumGrayBrown">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlas"/>
+	<rdfs:label xml:lang="en">Light to Medium Gray Brown (Human Hair Atlas)</rdfs:label>
+	<skos:narrower rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlasGrayBrown"/>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/appearances"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlasMediumDarkGrayBrown">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlas"/>
+	<rdfs:label xml:lang="en">Medium to Dark Gray Brown, Black (Human Hair Atlas)</rdfs:label>
+	<skos:narrower rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlasGrayBrown"/>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/appearances"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlasDarkRed">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlas"/>
+	<rdfs:label xml:lang="en">Dark Red (Human Hair Atlas)</rdfs:label>
+	<skos:narrower rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlasRed"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlasRed">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlasDarkRed">
+	<rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/appearances"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlasRed">
+	<rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/appearances"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlasLightMediumRed">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlas"/>
+	<rdfs:label xml:lang="en">Light to Medium Red (Human Hair Atlas)</rdfs:label>
+	<skos:narrower rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlasRed"/>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/appearances"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlasLightRed">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlas"/>
+	<rdfs:label xml:lang="en">Light Red (Human Hair Atlas)</rdfs:label>
+	<skos:narrower rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlasRed"/>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/appearances"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlasMediumDarkRed">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlas"/>
+	<rdfs:label xml:lang="en">Medium to Dark Red (Human Hair Atlas)</rdfs:label>
+	<skos:narrower rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlasRed"/>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/appearances"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlasDarkRedBrown">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlas"/>
+	<rdfs:label xml:lang="en">Dark Red Brown (Human Hair Atlas)</rdfs:label>
+	<skos:narrower rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlasRedBrown"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlasRedBrown">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlasDarkRedBrown">
+	<rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/appearances"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlasRedBrown">
+	<rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/appearances"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlasLightMediumRedBrown">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlas"/>
+	<rdfs:label xml:lang="en">Light to Medium Red Brown (Human Hair Atlas)</rdfs:label>
+	<skos:narrower rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlasRedBrown"/>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/appearances"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlasLightRedBrown">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlas"/>
+	<rdfs:label xml:lang="en">Light Red Brown (Human Hair Atlas)</rdfs:label>
+	<skos:narrower rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlasRedBrown"/>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/appearances"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlasMediumDarkRedBrown">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlas"/>
+	<rdfs:label xml:lang="en">Medium to Dark Red Brown (Human Hair Atlas)</rdfs:label>
+	<skos:narrower rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlasRedBrown"/>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/appearances"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlasAbsent">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlas"/>
+	<rdfs:label xml:lang="en">Gray (Human Hair Atlas)</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/appearances"/>
+	<rdfs:label xml:lang="en">White (Human Hair Atlas)</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlasBlond">
+	<skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlas"/>
+	<rdfs:label xml:lang="en">Blond (Human Hair Atlas)</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlasBrown">
+	<skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlas"/>
+	<rdfs:label xml:lang="en">Brown (Human Hair Atlas)</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlasGoldenBrown">
+	<skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlas"/>
+	<rdfs:label xml:lang="en">Golden Brown (Human Hair Atlas)</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlasGrayBrown">
+	<skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlas"/>
+	<rdfs:label xml:lang="en">Gray Brown (Human Hair Atlas)</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlasOther">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlas"/>
+	<rdfs:label xml:lang="en">Other Color(Human Hair Atlas)</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/appearances"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlasRed">
+	<skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlas"/>
+	<rdfs:label xml:lang="en">Red (Human Hair Atlas)</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlasRedBrown">
+	<skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#HairColorAtlas"/>
+	<rdfs:label xml:lang="en">Red Brown (Human Hair Atlas)</rdfs:label>
+</rdf:Description>
+
+</rdf:RDF>

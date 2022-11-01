@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Collection">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/#actionConcepts">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+	<rdfs:label xml:lang="en">Action</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Collection">
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/#actionConcepts">
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/#actions">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+	<rdfs:label xml:lang="en">Actions for Rules</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/#actionsCommon">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+	<rdfs:label xml:lang="en">Actions for Rules</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/#assetConcepts">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+	<rdfs:label xml:lang="en">Asset</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/#assetParty">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+	<rdfs:label xml:lang="en">Asset and Party</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/#assetRelations">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+	<rdfs:label xml:lang="en">Asset Relations</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/#assetRelationsCommon">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+	<rdfs:label xml:lang="en">Asset Relations</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/#conflictConcepts">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+	<rdfs:label xml:lang="en">Policy Conflict Strategy</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/#constraintLeftOperandCommon">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+	<rdfs:label xml:lang="en">Constraint Left Operands</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/#constraintLogicalOperands">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+	<rdfs:label xml:lang="en">Logical Constraint Operands</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/#constraintRelationalOperators">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+	<rdfs:label xml:lang="en">Constraint Operators</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/#constraintRightOpCommon">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+	<rdfs:label xml:lang="en">Constraint Right Operands</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/#constraints">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+	<rdfs:label xml:lang="en">Constraint</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/#deprecatedTerms">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+	<rdfs:label xml:lang="en">Deprecated Terms</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/#duties">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+	<rdfs:label xml:lang="en">Duty</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/#logicalConstraints">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+	<rdfs:label xml:lang="en">Logical Constraint</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/#partyConcepts">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+	<rdfs:label xml:lang="en">Party</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/#partyRoles">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+	<rdfs:label xml:lang="en">Party Functions</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/#partyRolesCommon">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+	<rdfs:label xml:lang="en">Party Functions</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/#permissions">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+	<rdfs:label xml:lang="en">Permission</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/#policyConcepts">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+	<rdfs:label xml:lang="en">Policy</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/#policySubClasses">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+	<rdfs:label xml:lang="en">Policy Subclasses</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/#policySubClassesCommon">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+	<rdfs:label xml:lang="en">Policy Subclasses</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/#prohibitions">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+	<rdfs:label xml:lang="en">Prohibition</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/#ruleConcepts">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+	<rdfs:label xml:lang="en">Rule</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+</rdf:Description>
+
+</rdf:RDF>

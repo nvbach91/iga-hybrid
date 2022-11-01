@@ -1,0 +1,875 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://purl.org/SemSur/">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Peter_Haase">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<isCoAuthor xmlns="http://purl.org/SemSur/" rdf:resource="http://purl.org/semsur/Peter_Haase"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/creator">
+	<rdfs:range rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:domain rdf:resource="http://swrc.ontoware.org/ontology#Publication"/>
+	<rdfs:label xml:lang="en">Creator</rdfs:label>
+	<rdfs:comment xml:lang="en">Examples of a Creator include a person, an organization, or a service.</rdfs:comment>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Peter_Haase">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Ryutaro_Ichise">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<isCoAuthor xmlns="http://purl.org/SemSur/" rdf:resource="http://purl.org/semsur/Ryutaro_Ichise"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Geert-Jan_Houben">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<isCoAuthor xmlns="http://purl.org/SemSur/" rdf:resource="http://purl.org/semsur/Geert-Jan_Houben"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Greg_Joiner">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<isCoAuthor xmlns="http://purl.org/SemSur/" rdf:resource="http://purl.org/semsur/Greg_Joiner"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Haofen_Wang">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<isCoAuthor xmlns="http://purl.org/SemSur/" rdf:resource="http://purl.org/semsur/Haofen_Wang"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Maribel_Acosta">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<dc:creator rdf:resource="http://purl.org/semsur/Julio_Castillo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Julio_Castillo">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Maribel_Acosta">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Julio_Castillo">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Hugh_C">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<isCoAuthor xmlns="http://purl.org/SemSur/" rdf:resource="http://purl.org/semsur/Hugh_C"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Abraham_Bernstein">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Akiyoshi_Matono">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Aldo_Gangemi">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Ali_Hasnain">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Andrea_Giovanni_Nuzzolese">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Andreas_Langegger">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Andreas_Schwarte">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Andrew_Y.">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Andriy_Nikolov">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Andy_Seaborne">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Arjen_P._de_Vries">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Arnab_Dutta">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Axel-Cyrille">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Axel-Cyrille_Ngonga_Ngomo">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Bac_Le">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Bastian_Quilitz">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Bernardo_Cuenca_Grau">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Carlo_Curino">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Christian_Bizer">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Christian_Meilicke">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Christopher_D._Manning">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Connor">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Cosmin_Basca">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Cosmin_Stroe">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Cristian_Pérez_de_Laborda">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Ziya_Akar">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Simon_Schenk">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Simone_Paolo_Ponzetto">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Soeren_Auer">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Sören_Auer">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Stefan_Conrad">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Steffen_Staab">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Stephan_Baier">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Steven_Lynden">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Tayfun_Gakmen_Halaas">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Tayfun_Gökmen_Halaç">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Thanassis_Tiropanis">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Tim_Finin">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Tomáš_Kliegr">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Tomas_Lampo">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Valentina_Presutti">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Victoria_Uren">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Vojtach_Svaitek">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Markus_Nentwig">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Martin_Blochl">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Martin_Gaedke">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Martin_OaConnor">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Mathias_Niepert">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Matthew_Fisher">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Matthias_Hert">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Csongor_Nyulas">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Daniel_Schwabe">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Danqi_Chen">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Denis_Krompaß">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Dimitrios-Emmanuel_Spanos">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Edna_Ruckhaus">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Emanuele_Panigati">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Enrico_Motta">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Erdem_Eser_Ekinci">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Erhard_Rahm">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Ernesto_Jimenez-Ruiz">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Flavio_Palandri_Antonelli">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Georgi_Kobilarov">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Gerald_Reif">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Giorgio_Orsi">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Hans-Peter_Kriegel">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Harald_C._Gall">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Heiko_Paulheim">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Vojtěch_Svátek">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Volker_Tresp">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/WolframWoay">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/WolframWoß">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Xin_Wang">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Xing_Niu">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Yunlong_Zhang">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Yusuke_Tanimura">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/J._Umbrich">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Jan_Hidders">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Jan_L._Top">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Jan_Zemánek">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Jennifer_Sleeman">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Julio_Castillo">
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Julius_Volz">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Jurgen_Umbrich">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Katja_Hose">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Ken_Barker">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Khai_Nguyen">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Kristian_Koltho">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Letizia_Tanca">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Ljiljana_Stojanovic">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Maksym_Korotkiy">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Marcel_Karnstedt">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Maria-Esther_Vidal">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Heiner_Stuckenschmidt">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Isabel_F._Cruz">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Isao_Kojima">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Maximilian_Nickel">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Michael_Hartung">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Michael_Hausenblas">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Michael_Schmidt">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Mike_Dean">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Nenad_Stojanovic">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Ngonga_Ngomo">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Nikolas_Mitrou">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Nur_Aini_Rakhmawati">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Oguz_Dikenelli">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Olaf_Gorlitz">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Periklis_Stavrou">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Philippe_Thiran">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Pierre-Antoine_Champin">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Quang_Trinh">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Ralf_Schenkel">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Raphael_Volz">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Reda_Alhajj">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Richard_Socher">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Samson_Tu">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Samur_Araujo">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Shu_Rong">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/creator">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/Siegfried_Handschuh">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/creator">
+	<rdfs:domain rdf:nodeID="t398513"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/elements/1.1/creator">
+	<rdfs:range rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:domain rdf:resource="http://swrc.ontoware.org/ontology#Publication"/>
+	<rdfs:label xml:lang="en">Creator</rdfs:label>
+	<rdfs:comment xml:lang="en">Examples of a Creator include a person, an organization, or a service. Typically, the name of a Creator should be used to indicate the entity.</rdfs:comment>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:domain rdf:nodeID="t390467"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/hasContributor">
+	<rdfs:range rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:domain rdf:resource="http://purl.org/semsur/EvaluationMethod"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/isCoAuthor">
+	<rdfs:range rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:domain rdf:resource="http://purl.org/dc/terms/Agent"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:domain rdf:resource="http://schema.org/Person"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+	<rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/proposedByPerson">
+	<rdfs:range rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:domain rdf:resource="http://purl.org/semsur/Approach"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://xmlns.com/foaf/0.1/knows">
+	<rdfs:range rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:domain rdf:resource="http://purl.org/dc/terms/Agent"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:domain rdf:resource="http://schema.org/Person"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
+	<rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+	<rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/creator">
+	<rdfs:comment xml:lang="en">An entity primarily responsible for making the resource.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/elements/1.1/creator">
+	<rdfs:comment xml:lang="en">An entity primarily responsible for making the resource.</rdfs:comment>
+</rdf:Description>
+
+</rdf:RDF>

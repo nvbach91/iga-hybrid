@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="https://w3id.org/idsa/core">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/idsa/core/BinaryOperator">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/idsa/code/AFTER">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/idsa/core/BinaryOperator"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/idsa/core/BinaryOperator">
+	<rdfs:comment xml:lang="en">The class of binary operators.</rdfs:comment>
+	<rdfs:label xml:lang="en">BinaryOperator</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/idsa/code/AFTER">
+	<rdfs:comment xml:lang="en">If a temporal entity T1 is after another temporal entity T2, then the beginning of T1 is after the end of T2 and the beginning of T1 is different to the ending of T2. Temporal entities can either be a xsd:dateTimeStamp or an ids:TemporalEntity.</rdfs:comment>
+	<rdfs:label xml:lang="en">after</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/idsa/core/operator">
+	<rdfs:range rdf:resource="https://w3id.org/idsa/core/BinaryOperator"/>
+	<rdfs:domain rdf:resource="https://w3id.org/idsa/core/Constraint"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/idsa/core/BinaryOperator">
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/idsa/code/AFTER">
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/idsa/code/BEFORE">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/idsa/core/BinaryOperator"/>
+	<rdfs:comment xml:lang="en">If a temporal entity T1 is before another temporal entity T2, then the ending of T1 is before the end of T2 and the ending of T1 is different to the beginning of T2. Temporal entities can either be a xsd:dateTimeStamp or an ids:TemporalEntity.</rdfs:comment>
+	<rdfs:label xml:lang="en">before</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/idsa/code/CONTAINS">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/idsa/core/BinaryOperator"/>
+	<rdfs:comment xml:lang="en">If a TemporalEntity (or xsd:dateTimeStamp) T1 contains another ids:TemporalEntity T2, then the beginning of T1 is idsc:AFTER the beginning of T2 and the ending of T1 is idsc:BEFORE the ending of T2. An Instant (or xsd:dateTimeStamp) cannot contain another Instant (or xsd:dateTimeStamp), neihter contains itself.</rdfs:comment>
+	<rdfs:label xml:lang="en">contains</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/idsa/code/COVERED_BY">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/idsa/core/BinaryOperator"/>
+	<rdfs:comment xml:lang="en">Spatial operator 'covered by' as defined by the Egenhofer Topological Relations family: An object A is covered_by another object B if both objects share common bounding and interior faces; if A has interior faces which are bounding faces of B; and if none of B's interior faces are part of A's boundary. (https://doi.org/10.1007/3-540-51295-0_148 Definition 7)</rdfs:comment>
+	<rdfs:label xml:lang="en">covered by</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/idsa/code/COVERS">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/idsa/core/BinaryOperator"/>
+	<rdfs:comment xml:lang="en">Spatial operator 'covers' as defined by the Egenhofer Topological Relations family: An object A covers another object B if both objects share common bounding and interior faces; if B has interior faces which are bounding faces of A; and if none of A's interior faces are part of B's boundary. (https://doi.org/10.1007/3-540-51295-0_148 Definition 6)</rdfs:comment>
+	<rdfs:label xml:lang="en">covers</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/idsa/code/DEFINES_AS">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/idsa/core/BinaryOperator"/>
+	<rdfs:comment xml:lang="en">Allows assignments similar to 'var x := {RightOperand}'.</rdfs:comment>
+	<rdfs:label xml:lang="en">defines as</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/idsa/code/DISJOINT">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/idsa/core/BinaryOperator"/>
+	<rdfs:comment xml:lang="en">Spatial operator 'disjoint' as defined by the Egenhofer Topological Relations family: If all four intersections among all object parts are empty, then the two objects are disjoint. (https://doi.org/10.1007/3-540-51295-0_148 Definition 1)</rdfs:comment>
+	<rdfs:label xml:lang="en">disjoint</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/idsa/code/DURATION_EQ">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/idsa/core/BinaryOperator"/>
+	<rdfs:comment xml:lang="en">If a temporal entity T1 has the same duration as another temporal entity T2, then their length or their duration is equal. Instants and xsd:dateTimeStamp Literals have always the duration 'P0Y0M0DT0H0M0S'^^xsd:duration and therefore have always the same duration.</rdfs:comment>
+	<rdfs:label xml:lang="en">has same duration</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/idsa/code/DURING">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/idsa/core/BinaryOperator"/>
+	<rdfs:comment xml:lang="en">If a TemporalEntity T1 is during another TemporalEntity T2, then the beginning of T1 is after the beginning of T2, and the end of T1 is before the end of T2.</rdfs:comment>
+	<rdfs:label xml:lang="en">during</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/idsa/code/EQ">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/idsa/core/BinaryOperator"/>
+	<rdfs:comment xml:lang="en">Arithmetic equals operator (5 = 5).</rdfs:comment>
+	<rdfs:label xml:lang="en">equals</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/idsa/code/EQUALS">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/idsa/core/BinaryOperator"/>
+	<rdfs:comment xml:lang="en">Logical equals operator (true = true).</rdfs:comment>
+	<rdfs:label xml:lang="en">equals</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/idsa/code/FINISHED_BY">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/idsa/core/BinaryOperator"/>
+	<rdfs:comment xml:lang="en">If an interval T1 is finished by another interval T2, then the beginning of T1 is before the beginning of T2, and the end of T1 is coincident with the end of T2.</rdfs:comment>
+	<rdfs:label xml:lang="en">finished by</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/idsa/code/FINISHES">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/idsa/core/BinaryOperator"/>
+	<rdfs:comment xml:lang="en">If an Interval T1 finishes another interval T2, then the beginning of T1 is after the beginning of T2, and the end of T1 is coincident with the end of T2.</rdfs:comment>
+	<rdfs:label xml:lang="en">finishes</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/idsa/code/GT">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/idsa/core/BinaryOperator"/>
+	<rdfs:comment xml:lang="en">Greater-than operator. Can be used for numeric (5 idsc:GT 2) comparisons.</rdfs:comment>
+	<rdfs:label xml:lang="en">greater than</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/idsa/code/GTEQ">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/idsa/core/BinaryOperator"/>
+	<rdfs:comment xml:lang="en">Greater-than-or-equals operator. Can be used for numeric (5 idsc:GTEQ 2) comparisons.</rdfs:comment>
+	<rdfs:label xml:lang="en">greater than or equals</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/idsa/code/HAS_MEMBERSHIP">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/idsa/core/BinaryOperator"/>
+	<rdfs:comment xml:lang="en">If a user has a specific membership required for accessing a resource. A membership includes always a role and a related organisation (see also org:). Should be used together with a RightOperand pointing to an accessible endpoint providing this information.</rdfs:comment>
+	<rdfs:label xml:lang="en">has Member</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/idsa/code/HAS_SITE">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/idsa/core/BinaryOperator"/>
+	<rdfs:comment xml:lang="en">If a user needs to be located at a certain site required for accessing a resource. A 'HAS_SITE' relation includes always a membership (role and related organisation) corresponding to the site. Should be used together with a RightOperand pointing to an accessible endpoint providing this information.</rdfs:comment>
+	<rdfs:label xml:lang="en">has site</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/idsa/code/HAS_STATE">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/idsa/core/BinaryOperator"/>
+	<rdfs:comment xml:lang="en">Operator examining if the target resource has a certain state at the moment, for instance is anonymized (idsc:ANONYMIZED).</rdfs:comment>
+	<rdfs:label xml:lang="en">has state</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/idsa/code/IN">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/idsa/core/BinaryOperator"/>
+	<rdfs:comment xml:lang="en">Element-of operator. Allowed RightOperands are RDF collections('(A B C)').</rdfs:comment>
+	<rdfs:label xml:lang="en">in</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/idsa/code/INSIDE">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/idsa/core/BinaryOperator"/>
+	<rdfs:comment xml:lang="en">Spatial operator 'inside' as defined by the Egenhofer Topological Relations family: An object A is inside of another object B if (1) A and B share interior, but not bounding faces, (2) if A has bounding faces which are interior faces of B, and (3) none of B's bounding faces coincides with any of A's interior faces. (https://doi.org/10.1007/3-540-51295-0_148 Definition 4)</rdfs:comment>
+	<rdfs:label xml:lang="en">inside</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/idsa/code/INSIDE_NETWORK">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/idsa/core/BinaryOperator"/>
+	<rdfs:comment xml:lang="en">Is satisfied if a system is inside a specified target network or network range.</rdfs:comment>
+	<rdfs:label xml:lang="en">inside network</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/idsa/code/LONGER">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/idsa/core/BinaryOperator"/>
+	<rdfs:comment xml:lang="en">If a temporal entity T1 is longer than another temporal entity T2, then the length or duration of T1 is bigger. Instants and xsd:dateTimeStamp Literals have always the duration 'P0Y0M0DT0H0M0S'^^xsd:duration and therefore have always the same duration.</rdfs:comment>
+	<rdfs:label xml:lang="en">longer</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/idsa/code/LONGER_EQ">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/idsa/core/BinaryOperator"/>
+	<rdfs:comment xml:lang="en">If temporal entity T1 is longer or equals than another temporal entity T2, then the length or duration of T1 is bigger or their length or their duration is equal. Instants and xsd:dateTimeStamp Literals have always the duration 'P0Y0M0DT0H0M0S'^^xsd:duration and therefore have always the same duration.</rdfs:comment>
+	<rdfs:label xml:lang="en">longer or equals</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/idsa/code/LT">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/idsa/core/BinaryOperator"/>
+	<rdfs:comment xml:lang="en">Less-than operator. Can be used for numeric (2 idsc:LT 5) comparisons.</rdfs:comment>
+	<rdfs:label xml:lang="en">less than</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+	<rdfs:label xml:lang="en">Lithuanian</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/idsa/code/LTEQ">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/idsa/core/BinaryOperator"/>
+	<rdfs:comment xml:lang="en">Less-than-or-equals operator. Can be used for numeric (2 idsc:LTEQ 5) comparisons.</rdfs:comment>
+	<rdfs:label xml:lang="en">less than or equals</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/idsa/code/MATCHES">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/idsa/core/BinaryOperator"/>
+	<rdfs:comment xml:lang="en">Regex operator for strings. Evaluates to true iff the regex pattern of the RightOperand matches the LeftOperand.</rdfs:comment>
+	<rdfs:label xml:lang="en">matches</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/idsa/code/MEETS">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/idsa/core/BinaryOperator"/>
+	<rdfs:comment xml:lang="en">If a TemporalEntity or (xsd:dateTimeStamp Literal) T1 meets another TemporalEntity (or xsd:dateTimeStamp Literal) T2, then the end of T1 is coincident with the beginning of T2.</rdfs:comment>
+	<rdfs:label xml:lang="en">meets</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/idsa/code/MEMBER_OF">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/idsa/core/BinaryOperator"/>
+	<rdfs:comment xml:lang="en">If a user is part of a certain organisation required for accessing a resource. Should be used together with a RightOperand pointing to an accessible endpoint providing this information.</rdfs:comment>
+	<rdfs:label xml:lang="en">memberOf</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/idsa/code/MET_BY">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/idsa/core/BinaryOperator"/>
+	<rdfs:comment xml:lang="en">If a TemporalEntity or (xsd:dateTimeStamp Literal) T1 is met by another TemporalEntity or (xsd:dateTimeStamp Literal) T2, then the beginning of T1 is coincident with the end of T2.</rdfs:comment>
+	<rdfs:label xml:lang="en">met by</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/idsa/code/NOT">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/idsa/core/BinaryOperator"/>
+	<rdfs:comment xml:lang="en">Logical difference operator (false != true).</rdfs:comment>
+	<rdfs:label xml:lang="en">not equals</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/idsa/code/OVERLAPPED_BY">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/idsa/core/BinaryOperator"/>
+	<rdfs:comment xml:lang="en">If a interval T1 is overlapped another proper interval T2, then the beginning of T1 is before the beginning of T2, the end of T1 is after the beginning of T2, and the end of T1 is before the end of T2.</rdfs:comment>
+	<rdfs:label xml:lang="en">overlapped by</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/idsa/code/OVERLAPS">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/idsa/core/BinaryOperator"/>
+	<rdfs:comment xml:lang="en">If an ids:Interval T1 overlapps another ids:Interval T2, then the beginning of T1 is after the beginning of T2, the beginning of T1 is before the end of T2, and the end of T1 is after the end of T2.</rdfs:comment>
+	<rdfs:label xml:lang="en">overlaps</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/idsa/code/SAME_AS">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/idsa/core/BinaryOperator"/>
+	<rdfs:comment xml:lang="en">Logical equals operator comparing two RDF URIs. Is true if at least one owl:sameAs relation exists.</rdfs:comment>
+	<rdfs:label xml:lang="en">is same as</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/idsa/code/SHORTER">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/idsa/core/BinaryOperator"/>
+	<rdfs:comment xml:lang="en">If a temporal entity T1 is shorter than another temporal entity T2, then the length or duration of T1 is shorter. Instants and xsd:dateTimeStamp Literals have always the duration 'P0Y0M0DT0H0M0S'^^xsd:duration and therefore have always the same duration.</rdfs:comment>
+	<rdfs:label xml:lang="en">shorter</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/idsa/code/SHORTER_EQ">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/idsa/core/BinaryOperator"/>
+	<rdfs:comment xml:lang="en">If a temporal entity T1 is shorter or equals than another temporal entity T2, then the length or duration of T1 is shorter or their length or their duration is equal. Instants and xsd:dateTimeStamp Literals have always the duration 'P0Y0M0DT0H0M0S'^^xsd:duration and therefore have always the same duration.</rdfs:comment>
+	<rdfs:label xml:lang="en">shorter or equals</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/idsa/code/SPATIAL_CONTAINS">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/idsa/core/BinaryOperator"/>
+	<rdfs:comment xml:lang="en">Spatial operator 'contains' as defined by the Egenhofer Topological Relations family: An object A contains another object B if A and B share interior but no bounding faces; if B has bounding faces which are interior faces of , and none of A's bounding faces coincides with any of B's interior faces. (https://doi.org/10.1007/3-540-51295-0_148 Definition 5)</rdfs:comment>
+	<rdfs:label xml:lang="en">contains</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/idsa/code/SPATIAL_EQUALS">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/idsa/core/BinaryOperator"/>
+	<rdfs:comment xml:lang="en">Spatial operator 'equals' as defined by the Egenhofer Topological Relations family: Two objects are equal if both intersections of bounding and interior faces are not empty while the two boundary-interior intersections are empty. (https://doi.org/10.1007/3-540-51295-0_148 Definition 3)</rdfs:comment>
+	<rdfs:label xml:lang="en">equals</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/idsa/code/SPATIAL_MEET">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/idsa/core/BinaryOperator"/>
+	<rdfs:comment xml:lang="en">Spatial operator 'meet' as defined by the Egenhofer Topological Relations family: If the intersection among the bounding faces is not empty, whereas all other 3 intersections are empty, then the two objects meet. (https://doi.org/10.1007/3-540-51295-0_148 Definition 2)</rdfs:comment>
+	<rdfs:label xml:lang="en">meet</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/idsa/code/SPATIAL_OVERLAP">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/idsa/core/BinaryOperator"/>
+	<rdfs:comment xml:lang="en">Spatial operator 'overlap' as defined by the Egenhofer Topological Relations family: Two objects overlap if they have common interior faces and the bounding faces have common parts with the opposite interior faces. (https://doi.org/10.1007/3-540-51295-0_148 Definition 8)</rdfs:comment>
+	<rdfs:label xml:lang="en">overlap</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/idsa/code/STARTED_BY">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/idsa/core/BinaryOperator"/>
+	<rdfs:comment xml:lang="en">If a TemporalEntity T1 is started by another proper interval T2, then the beginning of T1 is coincident with the beginning of T2, and the end of T1 is after the end of T2.</rdfs:comment>
+	<rdfs:label xml:lang="en">started by</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/idsa/code/STARTS">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/idsa/core/BinaryOperator"/>
+	<rdfs:comment xml:lang="en">If an interval T1 starts with a TemporalEntity T2, then the beginning of T1 is coincident with the beginning of T2, and the end of T1 is before the end of T2.</rdfs:comment>
+	<rdfs:label xml:lang="en">starts</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/idsa/code/STRING_CONTAINS">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/idsa/core/BinaryOperator"/>
+	<rdfs:comment xml:lang="en">Contains operator for strings. Evaluates to true iff the LeftOperand contains the complete RightOperand.</rdfs:comment>
+	<rdfs:label xml:lang="en">string contains</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/idsa/code/STRING_EQ">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/idsa/core/BinaryOperator"/>
+	<rdfs:comment xml:lang="en">Equals operator for strings. Evaluates to true iff all characters and their sequence is the same.</rdfs:comment>
+	<rdfs:label xml:lang="en">string equals</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/idsa/code/STRING_IS_CONTAINED">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/idsa/core/BinaryOperator"/>
+	<rdfs:comment xml:lang="en">Contained in operator for strings. Evaluates to true iff the LeftOperand is contained completely by the RightOperand.</rdfs:comment>
+	<rdfs:label xml:lang="en">string is contained in</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/idsa/code/TEMPORAL_DISJOINT">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/idsa/core/BinaryOperator"/>
+	<rdfs:comment xml:lang="en">If a TemporalEntity (or xsd:dateTimeStamp) T1 is disjoint with another ids:TemporalEntity (or xsd:dateTimeStamp) T2, then T1 is idsc:BEFORE or idsc:AFTER to T2.</rdfs:comment>
+	<rdfs:label xml:lang="en">disjoint</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/idsa/code/TEMPORAL_EQUALS">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/idsa/core/BinaryOperator"/>
+	<rdfs:comment xml:lang="en">If a TemporalEntity (or xsd:dateTimeStamp Literal) T1 is equals another TemporalEntity (or xsd:dateTimeStamp Literal) T2, then the beginning of T1 is coincident with the beginning of T2, and the end of T1 is coincident with the end of T2. The beginning and ending is the same for instances of ids:Instant (or xsd:dateTimeStamp Literal).</rdfs:comment>
+	<rdfs:label xml:lang="en">interval equals</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/idsa/core"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/idsa/core/operator">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+</rdf:RDF>

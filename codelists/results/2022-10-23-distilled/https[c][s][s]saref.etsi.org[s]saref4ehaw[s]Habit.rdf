@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="https://saref.etsi.org/saref4ehaw/">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://saref.etsi.org/saref4ehaw/Habit">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://saref.etsi.org/saref4ehaw/AlcoholDrinking">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://saref.etsi.org/saref4ehaw/Habit"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://saref.etsi.org/saref4ehaw/Habit">
+	<rdfs:comment xml:lang="en">Defined for users (that can in particular be patients) habits modelling, e.g. smoking, alcohol drinking, overeating, undereating...</rdfs:comment>
+	<rdfs:label xml:lang="en">Habit</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://saref.etsi.org/saref4ehaw/AlcoholDrinking">
+	<rdfs:comment xml:lang="en">Alcohol drinking habit (User level).</rdfs:comment>
+	<rdfs:label xml:lang="en">Alcohol drinking</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://saref.etsi.org/saref4ehaw/hasHabit">
+	<rdfs:range rdf:resource="https://saref.etsi.org/saref4ehaw/Habit"/>
+	<rdfs:domain rdf:resource="https://saref.etsi.org/saref4ehaw/User"/>
+	<rdfs:label xml:lang="en">has habit</rdfs:label>
+	<rdfs:comment xml:lang="en">The habits of a user and a patient (as sub-class of user it also inherits habit), e.g. smoking or overeating.</rdfs:comment>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://saref.etsi.org/saref4ehaw/Habit">
+	<rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4ehaw/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://saref.etsi.org/saref4ehaw/AlcoholDrinking">
+	<rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4ehaw/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://saref.etsi.org/saref4ehaw/Overeating">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://saref.etsi.org/saref4ehaw/Habit"/>
+	<rdfs:comment xml:lang="en">Overeating habit (User level).</rdfs:comment>
+	<rdfs:label xml:lang="en">Overeating</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4ehaw/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://saref.etsi.org/saref4ehaw/Smoking">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://saref.etsi.org/saref4ehaw/Habit"/>
+	<rdfs:comment xml:lang="en">Smoking habit (User level).</rdfs:comment>
+	<rdfs:label xml:lang="en">Smoking</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4ehaw/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://saref.etsi.org/saref4ehaw/Undereating">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://saref.etsi.org/saref4ehaw/Habit"/>
+	<rdfs:comment xml:lang="en">Undereating habit (User level).</rdfs:comment>
+	<rdfs:label xml:lang="en">Undereating</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4ehaw/"/>
+</rdf:Description>
+
+</rdf:RDF>

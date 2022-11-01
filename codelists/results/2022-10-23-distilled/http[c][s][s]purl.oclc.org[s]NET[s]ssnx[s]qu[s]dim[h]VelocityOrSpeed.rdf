@@ -1,0 +1,839 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/qu/dim#VelocityOrSpeed">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#platform_speed_wrt_air">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#VelocityOrSpeed"/>
+	<rdfs:comment>"wrt" means with respect to. Speed is the magnitude of velocity. Standard names for platform describe the motion and orientation of the vehicle from which observations are made e.g. aeroplane or ship. The platform speed with respect to air is often called the "air speed" of the platform.</rdfs:comment>
+	<rdfs:label>platform speed wrt air</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#speed"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/qu/quantity#speed">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/qu/dim#VelocityOrSpeed">
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#platform_speed_wrt_air">
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/qu/quantity#speed">
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#platform_speed_wrt_ground">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#VelocityOrSpeed"/>
+	<rdfs:comment>"wrt" means with respect to. Speed is the magnitude of velocity. Standard names for platform describe the motion and orientation of the vehicle from which observations are made e.g. aeroplane or ship. The platform speed with respect to ground is relative to the solid Earth beneath it i.e. the sea floor for a ship. It is often called the "ground speed" of the platform.</rdfs:comment>
+	<rdfs:label>platform speed wrt ground</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#speed"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#platform_speed_wrt_sea_water">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#VelocityOrSpeed"/>
+	<rdfs:comment>"wrt" means with respect to. Speed is the magnitude of velocity. Standard names for platform describe the motion and orientation of the vehicle from which observations are made e.g. aeroplane or ship.</rdfs:comment>
+	<rdfs:label>platform speed wrt sea water</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#speed"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#sea_ice_speed">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#VelocityOrSpeed"/>
+	<rdfs:comment>Speed is the magnitude of velocity.</rdfs:comment>
+	<rdfs:label>sea ice speed</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#speed"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#sea_water_speed">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#VelocityOrSpeed"/>
+	<rdfs:comment>Speed is the magnitude of velocity.</rdfs:comment>
+	<rdfs:label>sea water speed</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#speed"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#speed_of_sound_in_air">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#VelocityOrSpeed"/>
+	<rdfs:comment>Speed is the magnitude of velocity.</rdfs:comment>
+	<rdfs:label>speed of sound in air</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#speed"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#speed_of_sound_in_sea_water">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#VelocityOrSpeed"/>
+	<rdfs:comment>Speed is the magnitude of velocity.</rdfs:comment>
+	<rdfs:label>speed of sound in sea water</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#speed"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#wind_speed">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#VelocityOrSpeed"/>
+	<rdfs:comment>Speed is the magnitude of velocity. Wind is defined as a two-dimensional (horizontal) air velocity vector, with no vertical component. (Vertical motion in the atmosphere has the standard name upward_air_velocity.) The wind speed is the magnitude of the wind velocity.</rdfs:comment>
+	<rdfs:label>wind speed</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#speed"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#wind_speed_of_gust">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#VelocityOrSpeed"/>
+	<rdfs:comment>Speed is the magnitude of velocity. Wind is defined as a two-dimensional (horizontal) air velocity vector, with no vertical component. (Vertical motion in the atmosphere has the standard name upward_air_velocity.) The wind speed is the magnitude of the wind velocity. A gust is a sudden brief period of high wind speed. In an observed timeseries of wind speed, the gust wind speed can be indicated by a cell_methods of maximum for the time-interval. In an atmospheric model which has a parametrised calculation of gustiness, the gust wind speed may be separately diagnosed from the wind speed.</rdfs:comment>
+	<rdfs:label>wind speed of gust</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#speed"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#baroclinic_eastward_sea_water_velocity">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#VelocityOrSpeed"/>
+	<rdfs:comment>A velocity is a vector quantity. "Eastward" indicates a vector component which is positive when directed eastward (negative westward).</rdfs:comment>
+	<rdfs:label>baroclinic eastward sea water velocity</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#velocity"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/qu/quantity#velocity">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#baroclinic_eastward_sea_water_velocity">
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/qu/quantity#velocity">
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#baroclinic_northward_sea_water_velocity">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#VelocityOrSpeed"/>
+	<rdfs:comment>A velocity is a vector quantity. "Northward" indicates a vector component which is positive when directed northward (negative southward).</rdfs:comment>
+	<rdfs:label>baroclinic northward sea water velocity</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#velocity"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#barotropic_eastward_sea_water_velocity">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#VelocityOrSpeed"/>
+	<rdfs:comment>A velocity is a vector quantity. "Eastward" indicates a vector component which is positive when directed eastward (negative westward).</rdfs:comment>
+	<rdfs:label>barotropic eastward sea water velocity</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#velocity"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#barotropic_northward_sea_water_velocity">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#VelocityOrSpeed"/>
+	<rdfs:comment>A velocity is a vector quantity. "Northward" indicates a vector component which is positive when directed northward (negative southward).</rdfs:comment>
+	<rdfs:label>barotropic northward sea water velocity</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#velocity"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#barotropic_sea_water_x_velocity">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#VelocityOrSpeed"/>
+	<rdfs:comment> A velocity is a vector quantity.  "x" indicates a vector component along the grid x-axis, when this is not true longitude, positive with increasing x. </rdfs:comment>
+	<rdfs:label>barotropic sea water x velocity</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#velocity"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#barotropic_sea_water_y_velocity">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#VelocityOrSpeed"/>
+	<rdfs:comment> A velocity is a vector quantity.  "y" indicates a vector component along the grid y-axis, when this is not true latitude, positive with increasing y. </rdfs:comment>
+	<rdfs:label>barotropic sea water y velocity</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#velocity"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#bolus_eastward_sea_water_velocity">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#VelocityOrSpeed"/>
+	<rdfs:comment>Bolus velocity in an ocean model means the velocity due to a scheme representing eddy-induced effects which are not resolved on the grid scale of the model.  "Eastward" indicates a vector component which is positive when directed eastward (negative westward).</rdfs:comment>
+	<rdfs:label>bolus eastward sea water velocity</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#velocity"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#bolus_northward_sea_water_velocity">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#VelocityOrSpeed"/>
+	<rdfs:comment>Bolus velocity in an ocean model means the velocity due to a scheme representing eddy-induced effects which are not resolved on the grid scale of the model.  "Northward" indicates a vector component which is positive when directed northward (negative southward).</rdfs:comment>
+	<rdfs:label>bolus northward sea water velocity</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#velocity"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#bolus_sea_water_x_velocity">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#VelocityOrSpeed"/>
+	<rdfs:comment>A velocity is a vector quantity. "x" indicates a vector component along the grid x-axis, when this is not true longitude, positive with increasing x. Bolus velocity in an ocean model means the velocity due to a scheme representing eddy-induced effects which are not resolved on the grid scale of the model.  bolus_sea_water_x_velocity is used in some parameteris a tions of lateral diffusion in the ocean. </rdfs:comment>
+	<rdfs:label>bolus sea water x velocity</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#velocity"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#bolus_sea_water_y_velocity">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#VelocityOrSpeed"/>
+	<rdfs:comment>A velocity is a vector quantity. "y" indicates a vector component along the grid y-axis, when this is not true longitude, positive with increasing y. Bolus velocity in an ocean model means the velocity due to a scheme representing eddy-induced effects which are not resolved on the grid scale of the model. bolus_sea_water_y_velocity is used in some parameteris a tions of lateral diffusion in the ocean.</rdfs:comment>
+	<rdfs:label>bolus sea water y velocity</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#velocity"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#bolus_upward_sea_water_velocity">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#VelocityOrSpeed"/>
+	<rdfs:comment>Bolus velocity in an ocean model means the velocity due to a scheme representing eddy-induced effects which are not resolved on the grid scale of the model.  "Upward" indicates a vector component which is positive when directed upward (negative downward).</rdfs:comment>
+	<rdfs:label>bolus upward sea water velocity</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#velocity"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#eastward_sea_ice_velocity">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#VelocityOrSpeed"/>
+	<rdfs:comment>A velocity is a vector quantity. "Eastward" indicates a vector component which is positive when directed eastward (negative westward). Sea ice velocity is defined as a two-dimensional vector, with no vertical component.</rdfs:comment>
+	<rdfs:label>eastward sea ice velocity</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#velocity"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#eastward_sea_water_velocity">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#VelocityOrSpeed"/>
+	<rdfs:comment>A velocity is a vector quantity. "Eastward" indicates a vector component which is positive when directed eastward (negative westward).</rdfs:comment>
+	<rdfs:label>eastward sea water velocity</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#velocity"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#eastward_sea_water_velocity_assuming_no_tide">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#VelocityOrSpeed"/>
+	<rdfs:comment>A velocity is a vector quantity.  "Eastward" indicates a vector component which is positive when directed eastward (negative westward).  A phrase assuming_condition  indicates that the named quantity is the value which would obtain if all  aspects of the system were unaltered except for the assumption of the  circumstances specified by the condition. </rdfs:comment>
+	<rdfs:label>eastward sea water velocity assuming no tide</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#velocity"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#eastward_transformed_eulerian_mean_air_velocity">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#VelocityOrSpeed"/>
+	<rdfs:comment>"Eastward" indicates a vector component which is positive when directed eastward (negative westward).</rdfs:comment>
+	<rdfs:label>eastward transformed eulerian mean air velocity</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#velocity"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#land_ice_basal_x_velocity">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#VelocityOrSpeed"/>
+	<rdfs:comment>A velocity is a vector quantity. "x" indicates a vector component along the grid x-axis, when this is not true longitude, positive with increasing x. "Land ice" means glaciers, ice-caps and ice-sheets resting on bedrock and also includes ice-shelves.</rdfs:comment>
+	<rdfs:label>land ice basal x velocity</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#velocity"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#surface_geostrophic_sea_water_y_velocity">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#VelocityOrSpeed"/>
+	<rdfs:comment>The surface called "surface" means the lower boundary of the atmosphere.  A velocity is a vector quantity. "y" indicates a vector component along the grid y-axis, when this is not true latitude, positive with increasing y.  "Geostrophic" indicates that geostrophic balance is assumed.  surface_geostrophic_sea_water_y_velocity is the sum of a variable part, surface_geostrophic_sea_water_y_velocity_assuming_sea_level_for_geoid, and a constant part due to the stationary component of ocean circulation.</rdfs:comment>
+	<rdfs:label>surface geostrophic sea water y velocity</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#velocity"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#surface_geostrophic_sea_water_y_velocity_assuming_sea_level_for_geoid">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#VelocityOrSpeed"/>
+	<rdfs:comment>The surface called "surface" means the lower boundary of the atmosphere.  A velocity is a vector quantity. "y" indicates a vector component along the grid y-axis, when this is not true latitude, positive with increasing y.  "Geostrophic" indicates that geostrophic balance is assumed.  "sea_level" means mean sea level. The geoid is a surface of constant geopotential with which mean sea level would coincide if the ocean were at rest.  surface_geostrophic_sea_water_x_velocity_assuming_sea_level_for_geoid is the variable part of surface_geostrophic_sea_water_x_velocity.  The assumption that sea level is equal to the geoid means that the stationary component of ocean circulation is equal to zero.</rdfs:comment>
+	<rdfs:label>surface geostrophic sea water y velocity assuming sea level for geoid</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#velocity"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#surface_northward_sea_water_velocity">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#VelocityOrSpeed"/>
+	<rdfs:comment>The surface called "surface" means the lower boundary of the atmosphere. "Water" means water in all phases, including frozen i.e. ice and snow. A velocity is a vector quantity. "Northward" indicates a vector component which is positive when directed northward (negative southward).</rdfs:comment>
+	<rdfs:label>surface northward sea water velocity</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#velocity"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#upward_air_velocity">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#VelocityOrSpeed"/>
+	<rdfs:comment>A velocity is a vector quantity. "Upward" indicates a vector component which is positive when directed upward (negative downward). Upward air velocity is the vertical component of the 3D air velocity vector.</rdfs:comment>
+	<rdfs:label>upward air velocity</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#velocity"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#upward_sea_water_velocity">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#VelocityOrSpeed"/>
+	<rdfs:comment>A velocity is a vector quantity. "Upward" indicates a vector component which is positive when directed upward (negative downward).</rdfs:comment>
+	<rdfs:label>upward sea water velocity</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#velocity"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#convective_precipitation_rate">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#VelocityOrSpeed"/>
+	<rdfs:comment>"Precipitation rate" means the depth or thickness of the layer formed by precipitation per unit time.</rdfs:comment>
+	<rdfs:label>convective precipitation rate</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#velocityOrSpeed"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/qu/quantity#velocityOrSpeed">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#convective_precipitation_rate">
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/qu/quantity#velocityOrSpeed">
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#eastward_wind">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#VelocityOrSpeed"/>
+	<rdfs:comment>"Eastward" indicates a vector component which is positive when directed eastward (negative westward). Wind is defined as a two-dimensional (horizontal) air velocity vector, with no vertical component. (Vertical motion in the atmosphere has the standard name upward_air_velocity.)</rdfs:comment>
+	<rdfs:label>eastward wind</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#velocityOrSpeed"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#geostrophic_eastward_wind">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#VelocityOrSpeed"/>
+	<rdfs:comment>"Eastward" indicates a vector component which is positive when directed eastward (negative westward). Wind is defined as a two-dimensional (horizontal) air velocity vector, with no vertical component. (Vertical motion in the atmosphere has the standard name upward_air_velocity.)</rdfs:comment>
+	<rdfs:label>geostrophic eastward wind</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#velocityOrSpeed"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#geostrophic_northward_wind">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#VelocityOrSpeed"/>
+	<rdfs:comment>"Northward" indicates a vector component which is positive when directed northward (negative southward). Wind is defined as a two-dimensional (horizontal) air velocity vector, with no vertical component. (Vertical motion in the atmosphere has the standard name upward_air_velocity.)</rdfs:comment>
+	<rdfs:label>geostrophic northward wind</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#velocityOrSpeed"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#land_ice_basal_melt_rate">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#VelocityOrSpeed"/>
+	<rdfs:comment> "Land ice" means glaciers, ice-caps and ice-sheets resting on bedrock and also includes ice-shelves.  The land ice basal melt rate is the rate at which ice is lost per unit area at the base of the ice. </rdfs:comment>
+	<rdfs:label>land ice basal melt rate</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#velocityOrSpeed"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#land_ice_calving_rate">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#VelocityOrSpeed"/>
+	<rdfs:comment>"Land ice" means glaciers, ice-caps and ice-sheets resting on bedrock and also includes ice-shelves. The land ice calving rate is the rate at which ice is lost per unit area through calving into the ocean.</rdfs:comment>
+	<rdfs:label>land ice calving rate</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#velocityOrSpeed"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#land_ice_lwe_basal_melt_rate">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#VelocityOrSpeed"/>
+	<rdfs:comment>"lwe" means liquid water equivalent. "Land ice" means glaciers, ice-caps and ice-sheets resting on bedrock and also includes ice-shelves. The land ice basal melt rate is the rate at which ice is lost per unit area at the base of the ice.</rdfs:comment>
+	<rdfs:label>land ice lwe basal melt rate</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#velocityOrSpeed"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#land_ice_lwe_calving_rate">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#VelocityOrSpeed"/>
+	<rdfs:comment>"lwe" means liquid water equivalent. "Land ice" means glaciers, ice-caps and ice-sheets resting on bedrock and also includes ice-shelves. The land ice calving rate is the rate at which ice is lost per unit area through calving into the ocean.</rdfs:comment>
+	<rdfs:label>land ice lwe calving rate</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#velocityOrSpeed"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#land_ice_lwe_surface_specific_mass_balance">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#VelocityOrSpeed"/>
+	<rdfs:comment>"lwe" means liquid water equivalent. "Land ice" means glaciers, ice-caps and ice-sheets resting on bedrock and also includes ice-shelves. Specific mass balance means the net rate at which ice is added per unit area at the land ice surface.</rdfs:comment>
+	<rdfs:label>land ice lwe surface specific mass balance</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#velocityOrSpeed"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#land_ice_surface_specific_mass_balance">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#VelocityOrSpeed"/>
+	<rdfs:comment>"Land ice" means glaciers, ice-caps and ice-sheets resting on bedrock and also includes ice-shelves. Specific mass balance means the net rate at which ice is added per unit area at the land ice surface.</rdfs:comment>
+	<rdfs:label>land ice surface specific mass balance</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#velocityOrSpeed"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#lwe_convective_precipitation_rate">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#VelocityOrSpeed"/>
+	<rdfs:comment>"lwe" means liquid water equivalent.</rdfs:comment>
+	<rdfs:label>lwe convective precipitation rate</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#velocityOrSpeed"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#lwe_convective_snowfall_rate">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#VelocityOrSpeed"/>
+	<rdfs:comment>"lwe" means liquid water equivalent.</rdfs:comment>
+	<rdfs:label>lwe convective snowfall rate</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#velocityOrSpeed"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#lwe_large_scale_precipitation_rate">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#VelocityOrSpeed"/>
+	<rdfs:comment>"lwe" means liquid water equivalent.</rdfs:comment>
+	<rdfs:label>lwe large scale precipitation rate</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#velocityOrSpeed"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#lwe_large_scale_snowfall_rate">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#VelocityOrSpeed"/>
+	<rdfs:comment>"lwe" means liquid water equivalent.</rdfs:comment>
+	<rdfs:label>lwe large scale snowfall rate</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#velocityOrSpeed"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#lwe_precipitation_rate">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#VelocityOrSpeed"/>
+	<rdfs:comment>"lwe" means liquid water equivalent.</rdfs:comment>
+	<rdfs:label>lwe precipitation rate</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#velocityOrSpeed"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#lwe_snowfall_rate">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#VelocityOrSpeed"/>
+	<rdfs:comment>"lwe" means liquid water equivalent.</rdfs:comment>
+	<rdfs:label>lwe snowfall rate</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#velocityOrSpeed"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#lwe_water_evaporation_rate">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#VelocityOrSpeed"/>
+	<rdfs:comment>"lwe" means liquid water equivalent. "Water" means water in all phases. Evaporation is the conversion of liquid or solid into vapor. (The conversion of solid alone into vapor is called "sublimation".)</rdfs:comment>
+	<rdfs:label>lwe water evaporation rate</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#velocityOrSpeed"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#northward_wind">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#VelocityOrSpeed"/>
+	<rdfs:comment>"Northward" indicates a vector component which is positive when directed northward (negative southward). Wind is defined as a two-dimensional (horizontal) air velocity vector, with no vertical component. (Vertical motion in the atmosphere has the standard name upward_air_velocity.)</rdfs:comment>
+	<rdfs:label>northward wind</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#velocityOrSpeed"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#convective_rainfall_rate">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#VelocityOrSpeed"/>
+	<rdfs:label>convective rainfall rate</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#velocityOrSpeed"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#large_scale_rainfall_rate">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#VelocityOrSpeed"/>
+	<rdfs:label>large scale rainfall rate</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#velocityOrSpeed"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#land_ice_basal_y_velocity">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#VelocityOrSpeed"/>
+	<rdfs:comment>A velocity is a vector quantity. "y" indicates a vector component along the grid y-axis, when this is not true latitude, positive with increasing y. "Land ice" means glaciers, ice-caps and ice-sheets resting on bedrock and also includes ice-shelves.</rdfs:comment>
+	<rdfs:label>land ice basal y velocity</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#velocity"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#land_ice_vertical_mean_x_velocity">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#VelocityOrSpeed"/>
+	<rdfs:comment>A velocity is a vector quantity. "x" indicates a vector component along the grid x-axis, when this is not true longitude, positive with increasing x. "Land ice" means glaciers, ice-caps and ice-sheets resting on bedrock and also includes ice-shelves. The vertical mean land ice velocity is the average from the bedrock to the surface of the ice.</rdfs:comment>
+	<rdfs:label>land ice vertical mean x velocity</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#velocity"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#land_ice_vertical_mean_y_velocity">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#VelocityOrSpeed"/>
+	<rdfs:comment>A velocity is a vector quantity. "y" indicates a vector component along the grid y-axis, when this is not true latitude, positive with increasing y. "Land ice" means glaciers, ice-caps and ice-sheets resting on bedrock and also includes ice-shelves. The vertical mean land ice velocity is the average from the bedrock to the surface of the ice.</rdfs:comment>
+	<rdfs:label>land ice vertical mean y velocity</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#velocity"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#land_ice_x_velocity">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#VelocityOrSpeed"/>
+	<rdfs:comment>A velocity is a vector quantity. "x" indicates a vector component along the grid x-axis, when this is not true longitude, positive with increasing x. "Land ice" means glaciers, ice-caps and ice-sheets resting on bedrock and also includes ice-shelves.</rdfs:comment>
+	<rdfs:label>land ice x velocity</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#velocity"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#land_ice_y_velocity">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#VelocityOrSpeed"/>
+	<rdfs:comment>A velocity is a vector quantity. "y" indicates a vector component along the grid y-axis, when this is not true latitude, positive with increasing y. "Land ice" means glaciers, ice-caps and ice-sheets resting on bedrock and also includes ice-shelves.</rdfs:comment>
+	<rdfs:label>land ice y velocity</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#velocity"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#northward_sea_ice_velocity">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#VelocityOrSpeed"/>
+	<rdfs:comment>A velocity is a vector quantity. "Northward" indicates a vector component which is positive when directed northward (negative southward). Sea ice velocity is defined as a two-dimensional vector, with no vertical component.</rdfs:comment>
+	<rdfs:label>northward sea ice velocity</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#velocity"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#northward_sea_water_velocity">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#VelocityOrSpeed"/>
+	<rdfs:comment>A velocity is a vector quantity. "Northward" indicates a vector component which is positive when directed northward (negative southward).</rdfs:comment>
+	<rdfs:label>northward sea water velocity</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#velocity"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#northward_sea_water_velocity_assuming_no_tide">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#VelocityOrSpeed"/>
+	<rdfs:comment>A velocity is a vector quantity.  "Northward" indicates a vector component which is positive when directed northward (negative southward).  A phrase assuming_condition  indicates that the named quantity is the value which would obtain if all  aspects of the system were unaltered except for the assumption of the  circumstances specified by the condition. </rdfs:comment>
+	<rdfs:label>northward sea water velocity assuming no tide</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#velocity"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#northward_transformed_eulerian_mean_air_velocity">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#VelocityOrSpeed"/>
+	<rdfs:comment>"Northward" indicates a vector component which is positive when directed northward (negative southward).</rdfs:comment>
+	<rdfs:label>northward transformed eulerian mean air velocity</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#velocity"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#product_of_eastward_sea_water_velocity_and_salinity">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#VelocityOrSpeed"/>
+	<rdfs:comment>"product_of_X_and_Y" means X*Y. A velocity is a vector quantity. "Eastward" indicates a vector component which is positive when directed eastward (negative westward). The unit of salinity is PSU, which is dimensionless. The units attribute should be given as 1e-3 or 0.001 i.e. parts per thousand if salinity is in PSU.</rdfs:comment>
+	<rdfs:label>product of eastward sea water velocity and salinity</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#velocity"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#product_of_northward_sea_water_velocity_and_salinity">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#VelocityOrSpeed"/>
+	<rdfs:comment>"product_of_X_and_Y" means X*Y. A velocity is a vector quantity. "Northward" indicates a vector component which is positive when directed northward (negative southward). The unit of salinity is PSU, which is dimensionless. The units attribute should be given as 1e-3 or 0.001 i.e. parts per thousand if salinity is in PSU.</rdfs:comment>
+	<rdfs:label>product of northward sea water velocity and salinity</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#velocity"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#product_of_upward_air_velocity_and_specific_humidity">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#VelocityOrSpeed"/>
+	<rdfs:comment>"product_of_X_and_Y" means X*Y. "specific" means per unit mass. A velocity is a vector quantity. "Upward" indicates a vector component which is positive when directed upward (negative downward). Specific humidity is the mass fraction of water vapor in (moist) air. Upward air velocity is the vertical component of the 3D air velocity vector.</rdfs:comment>
+	<rdfs:label>product of upward air velocity and specific humidity</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#velocity"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#radial_sea_water_velocity_away_from_instrument">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#VelocityOrSpeed"/>
+	<rdfs:comment>A velocity is a vector quantity.  Radial velocity away from instrument means the component of the velocity along the line of sight of the instrument where positive implies movement away from the instrument (i.e. outward). The "instrument" (examples are radar and lidar) is the device used to make an observation.</rdfs:comment>
+	<rdfs:label>radial sea water velocity away from instrument</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#velocity"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#radial_velocity_of_scatterers_away_from_instrument">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#VelocityOrSpeed"/>
+	<rdfs:comment>A velocity is a vector quantity. "Radial velocity away from instrument" means the component of the velocity of the scatterers along the line of sight of the instrument where positive implies movement away from the instrument (i.e. outward). The "instrument" (examples are radar and lidar) is the device used to make the observation, and the "scatterers" are what causes the transmitted signal to be returned to the instrument (examples are aerosols, hydrometeors and refractive index irregularities), of whatever kind the instrument detects.</rdfs:comment>
+	<rdfs:label>radial velocity of scatterers away from instrument</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#velocity"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#sea_ice_x_velocity">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#VelocityOrSpeed"/>
+	<rdfs:comment>A velocity is a vector quantity. "x" indicates a vector component along the grid x-axis, when this is not true longitude, positive with increasing x.</rdfs:comment>
+	<rdfs:label>sea ice x velocity</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#velocity"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#sea_ice_y_velocity">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#VelocityOrSpeed"/>
+	<rdfs:comment>A velocity is a vector quantity. "y" indicates a vector component along the grid y-axis, when this is not true latitude, positive with increasing y.</rdfs:comment>
+	<rdfs:label>sea ice y velocity</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#velocity"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#sea_water_x_velocity">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#VelocityOrSpeed"/>
+	<rdfs:comment>A velocity is a vector quantity. "x" indicates a vector component along the grid x-axis, when this is not true longitude, positive with increasing x.</rdfs:comment>
+	<rdfs:label>sea water x velocity</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#velocity"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#sea_water_y_velocity">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#VelocityOrSpeed"/>
+	<rdfs:comment>A velocity is a vector quantity. "y" indicates a vector component along the grid y-axis, when this is not true latitude, positive with increasing y.</rdfs:comment>
+	<rdfs:label>sea water y velocity</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#velocity"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#surface_eastward_sea_water_velocity">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#VelocityOrSpeed"/>
+	<rdfs:comment>The surface called "surface" means the lower boundary of the atmosphere. "Water" means water in all phases, including frozen i.e. ice and snow. A velocity is a vector quantity. "Eastward" indicates a vector component which is positive when directed eastward (negative westward).</rdfs:comment>
+	<rdfs:label>surface eastward sea water velocity</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#velocity"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#surface_geostrophic_eastward_sea_water_velocity">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#VelocityOrSpeed"/>
+	<rdfs:comment>The surface called "surface" means the lower boundary of the atmosphere. A velocity is a vector quantity. "Eastward" indicates a vector component which is positive when directed eastward (negative westward). "Geostrophic" indicates that geostrophic balance is assumed. "Water" means water in all phases. surface_geostrophic_eastward_sea_water_velocity is the sum of a variable part, surface_geostrophic_eastward_sea_water_velocity_assuming_sea_level_for_geoid, and a constant part due to the stationary component of ocean circulation.</rdfs:comment>
+	<rdfs:label>surface geostrophic eastward sea water velocity</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#velocity"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#surface_geostrophic_eastward_sea_water_velocity_assuming_sea_level_for_geoid">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#VelocityOrSpeed"/>
+	<rdfs:comment>The surface called "surface" means the lower boundary of the atmosphere. A velocity is a vector quantity. "Eastward" indicates a vector component which is positive when directed eastward (negative westward). "Geostrophic" indicates that geostrophic balance is assumed. "Water" means water in all phases. "sea_level" means mean sea level. The geoid is a surface of constant geopotential with which mean sea level would coincide if the ocean were at rest. surface_geostrophic_eastward_sea_water_velocity_assuming_sea_level_for_geoid is the variable part of surface_geostrophic_eastward_sea_water_velocity. The assumption that sea level is equal to the geoid means that the stationary component of ocean circulation is equal to zero.</rdfs:comment>
+	<rdfs:label>surface geostrophic eastward sea water velocity assuming sea level for geoid</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#velocity"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#surface_geostrophic_northward_sea_water_velocity">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#VelocityOrSpeed"/>
+	<rdfs:comment>The surface called "surface" means the lower boundary of the atmosphere. A velocity is a vector quantity. "Northward" indicates a vector component which is positive when directed northward (negative southward). "Geostrophic" indicates that geostrophic balance is assumed. "Water" means water in all phases. surface_geostrophic_northward_sea_water_velocity is the sum of a variable part, surface_geostrophic_northward_sea_water_velocity_assuming_sea_level_for_geoid, and a constant part due to the stationary component of ocean circulation.</rdfs:comment>
+	<rdfs:label>surface geostrophic northward sea water velocity</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#velocity"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#surface_geostrophic_northward_sea_water_velocity_assuming_sea_level_for_geoid">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#VelocityOrSpeed"/>
+	<rdfs:comment>The surface called "surface" means the lower boundary of the atmosphere. A velocity is a vector quantity. "Northward" indicates a vector component which is positive when directed northward (negative southward). "Geostrophic" indicates that geostrophic balance is assumed. "Water" means water in all phases. "sea_level" means mean sea level. The geoid is a surface of constant geopotential with which mean sea level would coincide if the ocean were at rest. surface_geostrophic_northward_sea_water_velocity_assuming_sea_level_for_geoid is the variable part of surface_geostrophic_northward_sea_water_velocity. The assumption that sea level is equal to the geoid means that the stationary component of ocean circulation is equal to zero.</rdfs:comment>
+	<rdfs:label>surface geostrophic northward sea water velocity assuming sea level for geoid</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#velocity"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#surface_geostrophic_sea_water_x_velocity">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#VelocityOrSpeed"/>
+	<rdfs:comment>The surface called "surface" means the lower boundary of the atmosphere.  A velocity is a vector quantity. "x" indicates a vector component along the grid x-axis, when this is not true longitude, positive with increasing x.  "Geostrophic" indicates that geostrophic balance is assumed.  surface_geostrophic_sea_water_x_velocity is the sum of a variable part, surface_geostrophic_sea_water_x_velocity_assuming_sea_level_for_geoid, and a constant part due to the stationary component of ocean circulation.</rdfs:comment>
+	<rdfs:label>surface geostrophic sea water x velocity</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#velocity"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#surface_geostrophic_sea_water_x_velocity_assuming_sea_level_for_geoid">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#VelocityOrSpeed"/>
+	<rdfs:comment>The surface called "surface" means the lower boundary of the atmosphere.  A velocity is a vector quantity. "x" indicates a vector component along the grid x-axis, when this is not true longitude, positive with increasing x.  "Geostrophic" indicates that geostrophic balance is assumed.  "sea_level" means mean sea level. The geoid is a surface of constant geopotential with which mean sea level would coincide if the ocean were at rest.  surface_geostrophic_sea_water_x_velocity_assuming_sea_level_for_geoid is the variable part of surface_geostrophic_sea_water_x_velocity.  The assumption that sea level is equal to the geoid means that the stationary component of ocean circulation is equal to zero.</rdfs:comment>
+	<rdfs:label>surface geostrophic sea water x velocity assuming sea level for geoid</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#velocity"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#product_of_eastward_wind_and_specific_humidity">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#VelocityOrSpeed"/>
+	<rdfs:comment>"product_of_X_and_Y" means X*Y. "specific" means per unit mass. "Eastward" indicates a vector component which is positive when directed eastward (negative westward). Specific humidity is the mass fraction of water vapor in (moist) air. Wind is defined as a two-dimensional (horizontal) air velocity vector, with no vertical component. (Vertical motion in the atmosphere has the standard name upward_air_velocity.)</rdfs:comment>
+	<rdfs:label>product of eastward wind and specific humidity</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#velocityOrSpeed"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#product_of_northward_wind_and_specific_humidity">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#VelocityOrSpeed"/>
+	<rdfs:comment>"product_of_X_and_Y" means X*Y. "specific" means per unit mass. "Northward" indicates a vector component which is positive when directed northward (negative southward). Specific humidity is the mass fraction of water vapor in (moist) air. Wind is defined as a two-dimensional (horizontal) air velocity vector, with no vertical component. (Vertical motion in the atmosphere has the standard name upward_air_velocity.)</rdfs:comment>
+	<rdfs:label>product of northward wind and specific humidity</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#velocityOrSpeed"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#rainfall_rate">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#VelocityOrSpeed"/>
+	<rdfs:label>rainfall rate</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#velocityOrSpeed"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#soil_hydraulic_conductivity_at_saturation">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#VelocityOrSpeed"/>
+	<rdfs:comment>Hydraulic conductivity is the constant k in Darcy's Law q=-k grad h for fluid flow q (volume transport per unit area i.e. velocity) through a porous medium, where h is the hydraulic head (pressure expressed as an equivalent depth of water).</rdfs:comment>
+	<rdfs:label>soil hydraulic conductivity at saturation</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#velocityOrSpeed"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_bedrock_altitude">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#VelocityOrSpeed"/>
+	<rdfs:comment>"tendency_of_X" means derivative of X with respect to time. Altitude is the (geometric) height above the geoid, which is the reference geopotential surface. The geoid is similar to mean sea level. "Bedrock" is the solid Earth surface beneath land ice or ocean water.</rdfs:comment>
+	<rdfs:label>tendency of bedrock altitude</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#velocityOrSpeed"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_land_ice_thickness">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#VelocityOrSpeed"/>
+	<rdfs:comment>"tendency_of_X" means derivative of X with respect to time. "Land ice" means glaciers, ice-caps and ice-sheets resting on bedrock and also includes ice-shelves.  "Thickness" means the vertical extent of a layer..</rdfs:comment>
+	<rdfs:label>tendency of land ice thickness</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#velocityOrSpeed"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_sea_ice_thickness_due_to_dynamics">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#VelocityOrSpeed"/>
+	<rdfs:comment>"tendency_of_X" means derivative of X with respect to time.  "Sea ice dynamics" refers to the motion of sea ice.</rdfs:comment>
+	<rdfs:label>tendency of sea ice thickness due to dynamics</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#velocityOrSpeed"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_sea_ice_thickness_due_to_thermodynamics">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#VelocityOrSpeed"/>
+	<rdfs:comment>The specification of a physical process by the phrase due_to_process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. "tendency_of_X" means derivative of X with respect to time.</rdfs:comment>
+	<rdfs:label>tendency of sea ice thickness due to thermodynamics</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#velocityOrSpeed"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#x_wind">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#VelocityOrSpeed"/>
+	<rdfs:comment>"x" indicates a vector component along the grid x-axis, when this is not true longitude, positive with increasing x. Wind is defined as a two-dimensional (horizontal) air velocity vector, with no vertical component. (Vertical motion in the atmosphere has the standard name upward_air_velocity.)</rdfs:comment>
+	<rdfs:label>x wind</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#velocityOrSpeed"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#y_wind">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#VelocityOrSpeed"/>
+	<rdfs:comment>"y" indicates a vector component along the grid y-axis, when this is not true latitude, positive with increasing y. Wind is defined as a two-dimensional (horizontal) air velocity vector, with no vertical component. (Vertical motion in the atmosphere has the standard name upward_air_velocity.)</rdfs:comment>
+	<rdfs:label>y wind</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#velocityOrSpeed"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/qu/quantity#speed">
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#VelocityOrSpeed"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/qu/quantity#velocity">
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#VelocityOrSpeed"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/qu/quantity#velocityOrSpeed">
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#VelocityOrSpeed"/>
+</rdf:Description>
+
+</rdf:RDF>

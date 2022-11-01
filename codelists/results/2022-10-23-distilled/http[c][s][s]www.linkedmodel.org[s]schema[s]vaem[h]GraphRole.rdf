@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://www.linkedmodel.org/schema/vaem">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.linkedmodel.org/schema/vaem#GraphRole">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.linkedmodel.org/schema/vaem#VocabularyGraph">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.linkedmodel.org/schema/vaem#GraphRole"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.linkedmodel.org/schema/vaem#GraphRole">
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GraphRole is used to characterize how a graph of resources participates in an ontology set.  For example, a graph can be a schema, vocabulary, dataset, script, or ruleset</rdfs:comment>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Graph role</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.linkedmodel.org/schema/vaem#VocabularyGraph">
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An RDF/OWL Graph that is a controlled set of instances.</rdfs:comment>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vocabulary graph</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.linkedmodel.org/schema/vaem#hasGraphRole">
+	<rdfs:range rdf:resource="http://www.linkedmodel.org/schema/vaem#GraphRole"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has graph role</rdfs:label>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The property "lms:hasGraphRole" is used to characterize how a resource participates in an ontology set.  The property is used to specify the role that a graph plays, for example, an ontology graph can be a schema, vocabulary, dataset, script, or ruleset</rdfs:comment>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.linkedmodel.org/schema/vaem#GraphRole">
+	<rdfs:isDefinedBy rdf:resource="http://www.linkedmodel.org/schema/vaem"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.linkedmodel.org/schema/vaem#VocabularyGraph">
+	<rdfs:isDefinedBy rdf:resource="http://www.linkedmodel.org/schema/vaem"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.linkedmodel.org/schema/vaem#CollectionGraph">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.linkedmodel.org/schema/vaem#GraphRole"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A "vaem:CollectionGraph" is a graph that aggregates other graphs using "owl:imports" statements</rdfs:comment>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Collection graph</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.linkedmodel.org/schema/vaem"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.linkedmodel.org/schema/vaem#ConstraintsGraph">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.linkedmodel.org/schema/vaem#GraphRole"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A "vaem:ConstraintsGraph" is a graph that holds SPIN constraints</rdfs:comment>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Constraints graph</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.linkedmodel.org/schema/vaem"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.linkedmodel.org/schema/vaem#CurationGraph">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.linkedmodel.org/schema/vaem#GraphRole"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A "vaem:CurationGraph" is a graph to hold metadata that is needed to describe, govern and provision another graph. A curation graph will likely use VOAG and VAEM for this purpose. The property "vaem:curationGraph" is used to link to the graph (or graphs) being curated</rdfs:comment>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Curation graph</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.linkedmodel.org/schema/vaem"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.linkedmodel.org/schema/vaem#LinkSetGraph">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.linkedmodel.org/schema/vaem#GraphRole"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A "vaem:LinkSetGraph" is a graph that holds statements that specify links between resources</rdfs:comment>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Link Set graph</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.linkedmodel.org/schema/vaem"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.linkedmodel.org/schema/vaem#MappingGraph">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.linkedmodel.org/schema/vaem#GraphRole"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A graph that specifies a transformation of a graph into another graph or graphs. Invariably this is a SPINMap graph using SPARQL Rules (SPIN) to express the transforms.</rdfs:comment>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mapping graph</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.linkedmodel.org/schema/vaem"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.linkedmodel.org/schema/vaem#SchemaGraph">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.linkedmodel.org/schema/vaem#GraphRole"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Schema graph</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.linkedmodel.org/schema/vaem"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.linkedmodel.org/schema/vaem#ControllersGraph">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.linkedmodel.org/schema/vaem#GraphRole"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Controllers graph</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.linkedmodel.org/schema/vaem"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.linkedmodel.org/schema/vaem#DataGraph">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.linkedmodel.org/schema/vaem#GraphRole"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data graph</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.linkedmodel.org/schema/vaem"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.linkedmodel.org/schema/vaem#DocumentationGraph">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.linkedmodel.org/schema/vaem#GraphRole"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Documentation graph</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.linkedmodel.org/schema/vaem"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.linkedmodel.org/schema/vaem#FunctionsGraph">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.linkedmodel.org/schema/vaem#GraphRole"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Functions graph</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.linkedmodel.org/schema/vaem"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.linkedmodel.org/schema/vaem#ProxyGraph">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.linkedmodel.org/schema/vaem#GraphRole"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Proxy graph</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.linkedmodel.org/schema/vaem"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.linkedmodel.org/schema/vaem#RulesGraph">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.linkedmodel.org/schema/vaem#GraphRole"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rules Graph</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.linkedmodel.org/schema/vaem"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.linkedmodel.org/schema/vaem#ScriptGraph">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.linkedmodel.org/schema/vaem#GraphRole"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Script graph</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.linkedmodel.org/schema/vaem"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.linkedmodel.org/schema/vaem#TransformsGraph">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.linkedmodel.org/schema/vaem#GraphRole"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transforms graph</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.linkedmodel.org/schema/vaem"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.linkedmodel.org/schema/vaem#ViewGraph">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.linkedmodel.org/schema/vaem#GraphRole"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">View graph</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.linkedmodel.org/schema/vaem"/>
+</rdf:Description>
+
+</rdf:RDF>

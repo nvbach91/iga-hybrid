@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/FixedPoint">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/_1084.62OnTheCelsiusScale">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/FixedPoint"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/FixedPoint">
+	<rdfs:label xml:lang="en">fixed point</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/_1084.62OnTheCelsiusScale">
+	<rdfs:label xml:lang="en">1084.62 on the Celsius scale</rdfs:label>
+	<hasPoint xmlns="http://www.ontology-of-units-of-measure.org/resource/om-2/" rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/_1357.77OnTheKelvinScale"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/_1357.77OnTheKelvinScale">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/FixedPoint">
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/_1084.62OnTheCelsiusScale">
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/_1357.77OnTheKelvinScale">
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/_29.7646OnTheCelsiusScale">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/FixedPoint"/>
+	<rdfs:label xml:lang="en">29.7646 on the Celsius scale</rdfs:label>
+	<hasPoint xmlns="http://www.ontology-of-units-of-measure.org/resource/om-2/" rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/_302.9146OnTheKelvinScale"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/_302.9146OnTheKelvinScale">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/_29.7646OnTheCelsiusScale">
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/_302.9146OnTheKelvinScale">
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/_-270.15To-268.15OnTheCelsiusScale">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/FixedPoint"/>
+	<rdfs:comment xml:lang="en">One of the fixed points defining the Celsius scale</rdfs:comment>
+	<rdfs:label xml:lang="en">-270.15 to -268.15 on the Celsius scale</rdfs:label>
+	<hasPoint xmlns="http://www.ontology-of-units-of-measure.org/resource/om-2/" rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/_3To5OnTheKelvinScale"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/_3To5OnTheKelvinScale">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/_-270.15To-268.15OnTheCelsiusScale">
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/_3To5OnTheKelvinScale">
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/_-38.8344OnTheCelsiusScale">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/FixedPoint"/>
+	<rdfs:label xml:lang="en">-38.8344 on the Celsius scale</rdfs:label>
+	<hasPoint xmlns="http://www.ontology-of-units-of-measure.org/resource/om-2/" rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/_234.3156OnTheKelvinScale"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/_234.3156OnTheKelvinScale">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/_-38.8344OnTheCelsiusScale">
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/_234.3156OnTheKelvinScale">
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/_-248.5939OnTheCelsiusScale">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/FixedPoint"/>
+	<rdfs:label xml:lang="en">-248.5939 on the Celsius scale</rdfs:label>
+	<hasPoint xmlns="http://www.ontology-of-units-of-measure.org/resource/om-2/" rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/_24.5561OnTheKelvinScale"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/_24.5561OnTheKelvinScale">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/_-248.5939OnTheCelsiusScale">
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/_24.5561OnTheKelvinScale">
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/_0.01OnTheCelsiusScale">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/FixedPoint"/>
+	<rdfs:label xml:lang="en">0.01 on the Celsius scale</rdfs:label>
+	<hasPoint xmlns="http://www.ontology-of-units-of-measure.org/resource/om-2/" rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/_273.16OnTheKelvinScale"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/_273.16OnTheKelvinScale">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/_0.01OnTheCelsiusScale">
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/_273.16OnTheKelvinScale">
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/_156.5985OnTheCelsiusScale">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/FixedPoint"/>
+	<rdfs:label xml:lang="en">156.5985 on the Celsius scale</rdfs:label>
+	<hasPoint xmlns="http://www.ontology-of-units-of-measure.org/resource/om-2/" rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/_429.7485OnTheKelvinScale"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/_429.7485OnTheKelvinScale">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/_156.5985OnTheCelsiusScale">
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/_429.7485OnTheKelvinScale">
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/_231.928OnTheCelsiusScale">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/FixedPoint"/>
+	<rdfs:label xml:lang="en">231.928 on the Celsius scale</rdfs:label>
+	<hasPoint xmlns="http://www.ontology-of-units-of-measure.org/resource/om-2/" rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/_505.078OnTheKelvinScale"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/_505.078OnTheKelvinScale">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/_231.928OnTheCelsiusScale">
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/_505.078OnTheKelvinScale">
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/_961.78OnTheCelsiusScale">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/FixedPoint"/>
+	<rdfs:label xml:lang="en">961.78 on the Celsius scale</rdfs:label>
+	<hasPoint xmlns="http://www.ontology-of-units-of-measure.org/resource/om-2/" rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/_1234.93OnTheKelvinScale"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/_1234.93OnTheKelvinScale">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/_961.78OnTheCelsiusScale">
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/_1234.93OnTheKelvinScale">
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/_-259.3467OnTheCelsiusScale">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/FixedPoint"/>
+	<rdfs:label xml:lang="en">-259.3467 on the Celsius scale</rdfs:label>
+	<hasPoint xmlns="http://www.ontology-of-units-of-measure.org/resource/om-2/" rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/_13.8033OnTheKelvinScale"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/_13.8033OnTheKelvinScale">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/_-259.3467OnTheCelsiusScale">
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/_13.8033OnTheKelvinScale">
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/_1064.18OnTheCelsiusScale">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/FixedPoint"/>
+	<rdfs:label xml:lang="en">1064.18 on the Celsius scale</rdfs:label>
+	<hasPoint xmlns="http://www.ontology-of-units-of-measure.org/resource/om-2/" rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/_1337.33OnTheKelvinScale"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/_1337.33OnTheKelvinScale">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/_1064.18OnTheCelsiusScale">
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/_1337.33OnTheKelvinScale">
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/_419.527OnTheCelsiusScale">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/FixedPoint"/>
+	<rdfs:label xml:lang="en">419.527 on the Celsius scale</rdfs:label>
+	<hasPoint xmlns="http://www.ontology-of-units-of-measure.org/resource/om-2/" rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/_692.677OnTheKelvinScale"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/_692.677OnTheKelvinScale">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/_419.527OnTheCelsiusScale">
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/_692.677OnTheKelvinScale">
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/_-189.3442OnTheCelsiusScale">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/FixedPoint"/>
+	<rdfs:label xml:lang="en">-189.3442 on the Celsius scale</rdfs:label>
+	<hasPoint xmlns="http://www.ontology-of-units-of-measure.org/resource/om-2/" rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/_83.8058OnTheKelvinScale"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/_83.8058OnTheKelvinScale">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/_-189.3442OnTheCelsiusScale">
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/_83.8058OnTheKelvinScale">
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/_660.323OnTheCelsiusScale">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/FixedPoint"/>
+	<rdfs:label xml:lang="en">660.323 on the Celsius scale</rdfs:label>
+	<hasPoint xmlns="http://www.ontology-of-units-of-measure.org/resource/om-2/" rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/_933.473OnTheKelvinScale"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/_933.473OnTheKelvinScale">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/_660.323OnTheCelsiusScale">
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/_933.473OnTheKelvinScale">
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/approximately-256.15OnTheCelsiusScale">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/FixedPoint"/>
+	<rdfs:label xml:lang="en">~-256.15 on the Celsius scale</rdfs:label>
+	<hasPoint xmlns="http://www.ontology-of-units-of-measure.org/resource/om-2/" rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/approximately17OnTheKelvinScale"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/approximately17OnTheKelvinScale">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/approximately-256.15OnTheCelsiusScale">
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/approximately17OnTheKelvinScale">
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/approximately-252.85OnTheCelsiusScale">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/FixedPoint"/>
+	<rdfs:label xml:lang="en">~-252.85 on the Celsius scale</rdfs:label>
+	<hasPoint xmlns="http://www.ontology-of-units-of-measure.org/resource/om-2/" rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/approximately203OnTheKelvinScale"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/approximately203OnTheKelvinScale">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/approximately-252.85OnTheCelsiusScale">
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/approximately203OnTheKelvinScale">
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/_-218.7916OnTheCelsiusScale">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/FixedPoint"/>
+	<rdfs:label xml:lang="en">-218.7916 on the Celsius scale</rdfs:label>
+	<hasPoint xmlns="http://www.ontology-of-units-of-measure.org/resource/om-2/" rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/_54.3584OnTheKelvinScale"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/_54.3584OnTheKelvinScale">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/_-218.7916OnTheCelsiusScale">
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/_54.3584OnTheKelvinScale">
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/_1234.93OnTheKelvinScale">
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/FixedPoint"/>
+	<rdfs:label xml:lang="en">1234.93 on the Kelvin scale</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/_13.8033OnTheKelvinScale">
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/FixedPoint"/>
+	<rdfs:label xml:lang="en">13.8033 on the Kelvin scale</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/_1337.33OnTheKelvinScale">
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/FixedPoint"/>
+	<rdfs:label xml:lang="en">1337.33 on the Kelvin scale</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/_1357.77OnTheKelvinScale">
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/FixedPoint"/>
+	<rdfs:label xml:lang="en">1357.77 on the Kelvin scale</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/_234.3156OnTheKelvinScale">
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/FixedPoint"/>
+	<rdfs:label xml:lang="en">234.3156 on the Kelvin scale</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/_24.5561OnTheKelvinScale">
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/FixedPoint"/>
+	<rdfs:label xml:lang="en">24.5561 on the Kelvin scale</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/_273.16OnTheKelvinScale">
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/FixedPoint"/>
+	<rdfs:label xml:lang="en">273.16 on the Kelvin scale</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/_302.9146OnTheKelvinScale">
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/FixedPoint"/>
+	<rdfs:label xml:lang="en">302.9146 on the Kelvin scale</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/_3To5OnTheKelvinScale">
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/FixedPoint"/>
+	<rdfs:label xml:lang="en">3 to 5 on the Kelvin scale</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/_429.7485OnTheKelvinScale">
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/FixedPoint"/>
+	<rdfs:label xml:lang="en">429.7485 on the Kelvin scale</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/_505.078OnTheKelvinScale">
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/FixedPoint"/>
+	<rdfs:label xml:lang="en">505.078 on the Kelvin scale</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/_54.3584OnTheKelvinScale">
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/FixedPoint"/>
+	<rdfs:label xml:lang="en">54.3584 on the Kelvin scale</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/_692.677OnTheKelvinScale">
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/FixedPoint"/>
+	<rdfs:label xml:lang="en">692.677 on the Kelvin scale</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/_83.8058OnTheKelvinScale">
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/FixedPoint"/>
+	<rdfs:label xml:lang="en">83.8058 on the Kelvin scale</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/_933.473OnTheKelvinScale">
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/FixedPoint"/>
+	<rdfs:label xml:lang="en">933.473 on the Kelvin scale</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/approximately17OnTheKelvinScale">
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/FixedPoint"/>
+	<rdfs:label xml:lang="en">~17 on the Kelvin scale</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/approximately203OnTheKelvinScale">
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/FixedPoint"/>
+	<rdfs:label xml:lang="en">~20.3 on the Kelvin scale</rdfs:label>
+</rdf:Description>
+
+</rdf:RDF>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#EthnicityUKICCode">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#EthnicityUKICCodeIC0">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#EthnicityUKICCode"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#EthnicityUKICCode">
+	<rdfs:comment xml:lang="en">Simple F/M coding of Gender types.</rdfs:comment>
+	<rdfs:label xml:lang="en">UK IC-Codes</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#EthnicityUKICCodeIC0">
+	<rdfs:label xml:lang="en">Origin unknown</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#EthnicityUKICCode">
+	<rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/appearances"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#EthnicityUKICCodeIC0">
+	<rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/appearances"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#EthnicityUKICCodeIC1">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#EthnicityUKICCode"/>
+	<rdfs:label xml:lang="en">White person, northern European type</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/appearances"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#EthnicityUKICCodeIC2">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#EthnicityUKICCode"/>
+	<rdfs:label xml:lang="en">Mediterranean European/Hispanic</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/appearances"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#EthnicityUKICCodeIC3">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#EthnicityUKICCode"/>
+	<rdfs:label xml:lang="en">African/Afro-Caribbean person</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/appearances"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#EthnicityUKICCodeIC4">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#EthnicityUKICCode"/>
+	<rdfs:label xml:lang="en">Indian, Pakistani, Nepalese, Maldivian, Sri Lankan, Bangladeshi, or any other (South) Asian person</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/appearances"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#EthnicityUKICCodeIC5">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#EthnicityUKICCode"/>
+	<rdfs:label xml:lang="en">Chinese, Japanese, or South-East Asian person</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/appearances"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#EthnicityUKICCodeIC6">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#EthnicityUKICCode"/>
+	<rdfs:label xml:lang="en">Arab person</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/appearances"/>
+</rdf:Description>
+
+</rdf:RDF>

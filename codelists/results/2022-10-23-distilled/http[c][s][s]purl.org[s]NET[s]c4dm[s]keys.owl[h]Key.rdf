@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://purl.org/NET/c4dm/keys.owl">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/NET/c4dm/keys.owl#Key">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/NET/c4dm/keys.owl#AFlatMajor">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/NET/c4dm/keys.owl#Key"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/NET/c4dm/keys.owl#Key">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/NET/c4dm/keys.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/NET/c4dm/keys.owl#AFlatMajor">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/NET/c4dm/keys.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/NET/c4dm/keys.owl#AFlatMinor">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/NET/c4dm/keys.owl#Key"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/NET/c4dm/keys.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/NET/c4dm/keys.owl#AMajor">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/NET/c4dm/keys.owl#Key"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/NET/c4dm/keys.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/NET/c4dm/keys.owl#AMinor">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/NET/c4dm/keys.owl#Key"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/NET/c4dm/keys.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/NET/c4dm/keys.owl#ASharpMinor">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/NET/c4dm/keys.owl#Key"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/NET/c4dm/keys.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/NET/c4dm/keys.owl#BFlatMajor">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/NET/c4dm/keys.owl#Key"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/NET/c4dm/keys.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/NET/c4dm/keys.owl#BFlatMinor">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/NET/c4dm/keys.owl#Key"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/NET/c4dm/keys.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/NET/c4dm/keys.owl#BMajor">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/NET/c4dm/keys.owl#Key"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/NET/c4dm/keys.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/NET/c4dm/keys.owl#BMinor">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/NET/c4dm/keys.owl#Key"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/NET/c4dm/keys.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/NET/c4dm/keys.owl#CFlatMajor">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/NET/c4dm/keys.owl#Key"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/NET/c4dm/keys.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/NET/c4dm/keys.owl#CMajor">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/NET/c4dm/keys.owl#Key"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/NET/c4dm/keys.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/NET/c4dm/keys.owl#CMinor">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/NET/c4dm/keys.owl#Key"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/NET/c4dm/keys.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/NET/c4dm/keys.owl#CSharpMajor">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/NET/c4dm/keys.owl#Key"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/NET/c4dm/keys.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/NET/c4dm/keys.owl#CSharpMinor">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/NET/c4dm/keys.owl#Key"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/NET/c4dm/keys.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/NET/c4dm/keys.owl#DFlatMajor">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/NET/c4dm/keys.owl#Key"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/NET/c4dm/keys.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/NET/c4dm/keys.owl#DMajor">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/NET/c4dm/keys.owl#Key"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/NET/c4dm/keys.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/NET/c4dm/keys.owl#DMinor">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/NET/c4dm/keys.owl#Key"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/NET/c4dm/keys.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/NET/c4dm/keys.owl#DSharpMinor">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/NET/c4dm/keys.owl#Key"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/NET/c4dm/keys.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/NET/c4dm/keys.owl#EFlatMajor">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/NET/c4dm/keys.owl#Key"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/NET/c4dm/keys.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/NET/c4dm/keys.owl#EFlatMinor">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/NET/c4dm/keys.owl#Key"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/NET/c4dm/keys.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/NET/c4dm/keys.owl#EMajor">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/NET/c4dm/keys.owl#Key"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/NET/c4dm/keys.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/NET/c4dm/keys.owl#EMinor">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/NET/c4dm/keys.owl#Key"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/NET/c4dm/keys.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/NET/c4dm/keys.owl#FMajor">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/NET/c4dm/keys.owl#Key"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/NET/c4dm/keys.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/NET/c4dm/keys.owl#FMinor">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/NET/c4dm/keys.owl#Key"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/NET/c4dm/keys.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/NET/c4dm/keys.owl#FSharpMajor">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/NET/c4dm/keys.owl#Key"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/NET/c4dm/keys.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/NET/c4dm/keys.owl#FSharpMinor">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/NET/c4dm/keys.owl#Key"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/NET/c4dm/keys.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/NET/c4dm/keys.owl#GFlatMajor">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/NET/c4dm/keys.owl#Key"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/NET/c4dm/keys.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/NET/c4dm/keys.owl#GMajor">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/NET/c4dm/keys.owl#Key"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/NET/c4dm/keys.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/NET/c4dm/keys.owl#GMinor">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/NET/c4dm/keys.owl#Key"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/NET/c4dm/keys.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/NET/c4dm/keys.owl#GSharpMinor">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/NET/c4dm/keys.owl#Key"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/NET/c4dm/keys.owl"/>
+</rdf:Description>
+
+</rdf:RDF>

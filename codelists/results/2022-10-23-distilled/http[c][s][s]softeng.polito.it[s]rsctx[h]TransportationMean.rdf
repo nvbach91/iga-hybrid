@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://softeng.polito.it/rsctx">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://softeng.polito.it/rsctx#TransportationMean">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://softeng.polito.it/rsctx#Bike">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://softeng.polito.it/rsctx#TransportationMean"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://softeng.polito.it/rsctx#TransportationMean">
+	<rdfs:comment xml:lang="en">It represents the transportation mean the user is using or is going to use (e.g. to reach a restaurant or to visit a city), such as car, bike, public transport or none (he is going on foot).</rdfs:comment>
+	<rdfs:label xml:lang="en">Transportation Mean</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://softeng.polito.it/rsctx#Bike">
+	<rdfs:label xml:lang="en">Bicycle</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://softeng.polito.it/rsctx#transportationMean">
+	<rdfs:range rdf:resource="http://softeng.polito.it/rsctx#TransportationMean"/>
+	<rdfs:domain rdf:resource="http://ns.inria.fr/prissma/v2#Environment"/>
+	<rdfs:label xml:lang="en">transportation mean</rdfs:label>
+	<rdfs:comment xml:lang="en">It indicates which TransportationMean the user is using or is going to use.</rdfs:comment>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://softeng.polito.it/rsctx#TransportationMean">
+	<rdfs:isDefinedBy rdf:resource="http://softeng.polito.it/rsctx"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://softeng.polito.it/rsctx#Bike">
+	<rdfs:isDefinedBy rdf:resource="http://softeng.polito.it/rsctx"/>
+	<rdfs:label xml:lang="en">Bike</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://softeng.polito.it/rsctx#Car">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://softeng.polito.it/rsctx#TransportationMean"/>
+	<rdfs:label xml:lang="en">Car</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://softeng.polito.it/rsctx"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://softeng.polito.it/rsctx#NoTrasportationMean">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://softeng.polito.it/rsctx#TransportationMean"/>
+	<rdfs:label xml:lang="en">No transportation mean</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://softeng.polito.it/rsctx"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://softeng.polito.it/rsctx#PublicTransport">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://softeng.polito.it/rsctx#TransportationMean"/>
+	<rdfs:label xml:lang="en">Public Transport</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://softeng.polito.it/rsctx"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://softeng.polito.it/rsctx#Taxi">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://softeng.polito.it/rsctx#TransportationMean"/>
+	<rdfs:label xml:lang="en">Taxi</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://softeng.polito.it/rsctx"/>
+</rdf:Description>
+
+</rdf:RDF>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://semanticturkey.uniroma2.it/ns/mdr">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://semanticturkey.uniroma2.it/ns/mdr#DereferenciationSystem">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://semanticturkey.uniroma2.it/ns/mdr#noDereferenciation">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://semanticturkey.uniroma2.it/ns/mdr#DereferenciationSystem"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://semanticturkey.uniroma2.it/ns/mdr#DereferenciationSystem">
+	<rdfs:comment xml:lang="en">a method to dereference the identifiers defined by some dataset</rdfs:comment>
+	<rdfs:label xml:lang="en">dereferenciation system</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://semanticturkey.uniroma2.it/ns/mdr#noDereferenciation">
+	<rdfs:comment xml:lang="en">missing support for any dereferenciation method</rdfs:comment>
+	<rdfs:label xml:lang="en">no dereferenciation</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://semanticturkey.uniroma2.it/ns/mdr#dereferenciationSystem">
+	<rdfs:range rdf:resource="http://semanticturkey.uniroma2.it/ns/mdr#DereferenciationSystem"/>
+	<rdfs:domain rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+	<rdfs:label xml:lang="en">dereferenciation system</rdfs:label>
+	<rdfs:comment xml:lang="en">relates a void:Dataset to a resource describing a method to dereference the identifiers defined by that dataset. Currently only two instances: :standardDereferenciation and :noDereferenciation are available, however this will be extended soon to account for versioning and other URI-transformation needs</rdfs:comment>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://semanticturkey.uniroma2.it/ns/mdr#DereferenciationSystem">
+	<rdfs:isDefinedBy rdf:resource="http://semanticturkey.uniroma2.it/ns/mdr"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://semanticturkey.uniroma2.it/ns/mdr#noDereferenciation">
+	<rdfs:isDefinedBy rdf:resource="http://semanticturkey.uniroma2.it/ns/mdr"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://semanticturkey.uniroma2.it/ns/mdr#standardDereferenciation">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://semanticturkey.uniroma2.it/ns/mdr#DereferenciationSystem"/>
+	<rdfs:comment xml:lang="en">the method to dereference identifiers by means of HTTP resolution</rdfs:comment>
+	<rdfs:label xml:lang="en">standard dereferenciation</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://semanticturkey.uniroma2.it/ns/mdr"/>
+</rdf:Description>
+
+</rdf:RDF>

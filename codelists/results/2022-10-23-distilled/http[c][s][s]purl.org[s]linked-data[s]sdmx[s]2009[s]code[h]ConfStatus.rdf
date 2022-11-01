@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://purl.org/linked-data/sdmx/2009/code">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linked-data/sdmx/2009/code#ConfStatus">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linked-data/sdmx/2009/code#confStatus-C">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/linked-data/sdmx/2009/code#ConfStatus"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linked-data/sdmx/2009/code#ConfStatus">
+	<rdfs:comment xml:lang="en">this code list provides coded information about the sensitivity and confidentiality status of the data.</rdfs:comment>
+	<rdfs:label xml:lang="en">code list for Confidentiality Status (CONF_STATUS) - codelist class</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linked-data/sdmx/2009/code#confStatus-C">
+	<rdfs:label xml:lang="en">Confidential statistical information</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linked-data/sdmx/2009/code#ConfStatus">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linked-data/sdmx/2009/code"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linked-data/sdmx/2009/code#confStatus-C">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linked-data/sdmx/2009/code"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linked-data/sdmx/2009/code#confStatus-D">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/linked-data/sdmx/2009/code#ConfStatus"/>
+	<rdfs:label xml:lang="en">Secondary confidentiality set by the sender, not for publication</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linked-data/sdmx/2009/code"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linked-data/sdmx/2009/code#confStatus-F">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/linked-data/sdmx/2009/code#ConfStatus"/>
+	<rdfs:label xml:lang="en">Free</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linked-data/sdmx/2009/code"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linked-data/sdmx/2009/code#confStatus-N">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/linked-data/sdmx/2009/code#ConfStatus"/>
+	<rdfs:label xml:lang="en">Not for publication, restricted for internal use only</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linked-data/sdmx/2009/code"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linked-data/sdmx/2009/code#confStatus-S">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/linked-data/sdmx/2009/code#ConfStatus"/>
+	<rdfs:label xml:lang="en">Secondary confidentiality set and managed by the receiver, not for publication</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linked-data/sdmx/2009/code"/>
+</rdf:Description>
+
+</rdf:RDF>

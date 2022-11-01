@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/ApplicationArea">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/astronomyAndAstrophysics">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/ApplicationArea"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/ApplicationArea">
+	<rdfs:comment xml:lang="en">An application area groups quantities and units of measure for application areas such as scientific disciplines (e.g., thermodynamics, mechanics).</rdfs:comment>
+	<rdfs:label xml:lang="en">application area</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/astronomyAndAstrophysics">
+	<rdfs:label xml:lang="en">astronomy and astrophysics</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/ApplicationArea">
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/astronomyAndAstrophysics">
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/chemicalPhysics">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/ApplicationArea"/>
+	<rdfs:label xml:lang="en">chemical physics</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/chemistry">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/ApplicationArea"/>
+	<rdfs:label xml:lang="en">chemistry</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/commonApplicationArea">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/ApplicationArea"/>
+	<rdfs:label xml:lang="en">common application area</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/cosmology">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/ApplicationArea"/>
+	<rdfs:label xml:lang="en">cosmology</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/economics">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/ApplicationArea"/>
+	<rdfs:label xml:lang="en">economics</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/electromagnetism">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/ApplicationArea"/>
+	<rdfs:label xml:lang="en">electromagnetism</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/fluidMechanics">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/ApplicationArea"/>
+	<rdfs:label xml:lang="en">fluid mechanics</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/fluidMechanicsDimensionlessNumbers">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/ApplicationArea"/>
+	<rdfs:label xml:lang="en">fluid mechanics dimensionless numbers</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/geometry">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/ApplicationArea"/>
+	<rdfs:label xml:lang="en">geometry</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/informationTechnology">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/ApplicationArea"/>
+	<rdfs:label xml:lang="en">information technology</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/mechanics">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/ApplicationArea"/>
+	<rdfs:label xml:lang="en">mechanics</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/photometry">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/ApplicationArea"/>
+	<rdfs:label xml:lang="en">photometry</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/radiometryAndRadiobiology">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/ApplicationArea"/>
+	<rdfs:label xml:lang="en">radiometry and radiobiology</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/shipping">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/ApplicationArea"/>
+	<rdfs:label xml:lang="en">shipping</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/thermodynamics">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/ApplicationArea"/>
+	<rdfs:label xml:lang="en">thermodynamics</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/typography">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/ApplicationArea"/>
+	<rdfs:label xml:lang="en">typography</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+</rdf:RDF>

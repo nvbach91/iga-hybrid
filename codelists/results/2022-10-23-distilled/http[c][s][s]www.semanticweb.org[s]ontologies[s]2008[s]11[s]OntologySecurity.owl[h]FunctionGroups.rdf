@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2008/11/OntologySecurity.owl">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2008/11/OntologySecurity.owl#FunctionGroups">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2008/11/OntologySecurity.owl#AutoInvocationFunctionGroup">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.semanticweb.org/ontologies/2008/11/OntologySecurity.owl#FunctionGroups"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2008/11/OntologySecurity.owl#FunctionGroups">
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A set of sensitive functions under a named group that can get authorization.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2008/11/OntologySecurity.owl#AutoInvocationFunctionGroup">
+	<rdfs:comment>Permissions related to automatically starting a MIDlet, for example by Push Registration.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2008/11/OntologySecurity.owl#FunctionGroups">
+	<rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ontologies/2008/11/OntologySecurity.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2008/11/OntologySecurity.owl#AutoInvocationFunctionGroup">
+	<rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ontologies/2008/11/OntologySecurity.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2008/11/OntologySecurity.owl#MessagingFunctionsGroup">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.semanticweb.org/ontologies/2008/11/OntologySecurity.owl#FunctionGroups"/>
+	<rdfs:comment>Set of permissions related to sending or receiving messages like SMS</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ontologies/2008/11/OntologySecurity.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2008/11/OntologySecurity.owl#ReadUserDataFunctionGroup">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.semanticweb.org/ontologies/2008/11/OntologySecurity.owl#FunctionGroups"/>
+	<rdfs:comment>Read User Data: Set of permissions to read user’s data like phone book or calendar entries</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ontologies/2008/11/OntologySecurity.owl"/>
+</rdf:Description>
+
+</rdf:RDF>

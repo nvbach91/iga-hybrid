@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://w3id.org/vcb/fel#">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://w3id.org/vcb/fel#ReferenceClass">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://w3id.org/vcb/fel#AnaphoricReference">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://w3id.org/vcb/fel#ReferenceClass"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://w3id.org/vcb/fel#ReferenceClass">
+	<rdfs:comment xml:lang="en">This meta-class gathers classes that divide annotations based on how the mention references its entity. Examples of types of reference include Anaphoric, Direct, Descriptive, Metaphoric, Metonymic and Related.</rdfs:comment>
+	<rdfs:label xml:lang="en">Reference Class</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://w3id.org/vcb/fel#AnaphoricReference">
+	<rdfs:comment xml:lang="en">This class gathers mentions that are pro-forms referring to an antecedent or postcedent in the text. For instance, in the sentence 'His son was widfely regarded ...' the mention 'His' may be an anaphoric reference to wiki:Joe_Jackson_(manager). (Note that noun phrases such as 'His son' referring to wiki:Michael_Jackson' should rather be marked as descriptive references.)</rdfs:comment>
+	<rdfs:label xml:lang="en">Anaphoric Reference</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://w3id.org/vcb/fel#ReferenceClass">
+	<rdfs:isDefinedBy rdf:resource="http://w3id.org/vcb/fel#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://w3id.org/vcb/fel#AnaphoricReference">
+	<rdfs:isDefinedBy rdf:resource="http://w3id.org/vcb/fel#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://w3id.org/vcb/fel#DescriptiveReference">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://w3id.org/vcb/fel#ReferenceClass"/>
+	<rdfs:comment xml:lang="en">This class gathers mentions based on describing the entities they refer to. For instance, the mention 'the capital of Peru' refers descriptively to wiki:Lima, or in the sentence 'Michael Jackson and his father', the mention 'his father' refers to wiki:Joe_Jackson_(manager). Note that simple proforms ('he', 'her', etc.) should rather be marked as anaphoric reference.</rdfs:comment>
+	<rdfs:label xml:lang="en">Desciptive Reference</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://w3id.org/vcb/fel#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://w3id.org/vcb/fel#DirectReference">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://w3id.org/vcb/fel#ReferenceClass"/>
+	<rdfs:comment xml:lang="en">This class gathers mentions with references based on the direct, literal meaning of the words and names. For instance, the reference 'Michael Jackson' referring to wiki:Michael_Jackson, or the reference 'talent manager' referring to wiki:Talent_manager, are considered direct references</rdfs:comment>
+	<rdfs:label xml:lang="en">Direct Reference</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://w3id.org/vcb/fel#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://w3id.org/vcb/fel#MetaphoricReference">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://w3id.org/vcb/fel#ReferenceClass"/>
+	<rdfs:comment xml:lang="en">This class gathers mentions that make reference based on a figurative rather than literal meaning of the words. For example, in the phrase 'the King of Pop', the mention 'King' can be considered a metaphoric reference to wiki:King; in the sentence 'they added spice to their rfelationship', the mention 'spice' (wiki:Spice) is again a metaphoric reference.</rdfs:comment>
+	<rdfs:label xml:lang="en">Metaphoric Reference</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://w3id.org/vcb/fel#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://w3id.org/vcb/fel#MetonymicReference">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://w3id.org/vcb/fel#ReferenceClass"/>
+	<rdfs:comment xml:lang="en">This class gathers mentions that refer to something specific by reference to a broader related entity (often, but not always, countries). For example, in the phrase 'Russia announced today', the mention 'Russia' is a metonymic reference to wiki:Government_of_Russia; in the phrase 'Poland won 3-2 on penalties', 'Poland' may be a metonymic reference to wiki:Poland_national_football_team, etc.</rdfs:comment>
+	<rdfs:label xml:lang="en">Metonymic Reference</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://w3id.org/vcb/fel#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://w3id.org/vcb/fel#RelatedReference">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://w3id.org/vcb/fel#ReferenceClass"/>
+	<rdfs:comment xml:lang="en">This class gathers mentions that refer to something for which there is (only) something closely related in the knowledgebase. For instance, in the phrase 'The Russian daily RBK', the mention 'daily' refers to a daily newpaper, but in Wikipedia we only have wiki:Newspaper, so 'daily' can be seen as a reference to the closely related wiki:Newspaper. (Such references are sometimes reflected, for example, with redirects in Wikipedia, or pointers to a subsection of an entity's article.)</rdfs:comment>
+	<rdfs:label xml:lang="en">Related Reference</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://w3id.org/vcb/fel#"/>
+</rdf:Description>
+
+</rdf:RDF>

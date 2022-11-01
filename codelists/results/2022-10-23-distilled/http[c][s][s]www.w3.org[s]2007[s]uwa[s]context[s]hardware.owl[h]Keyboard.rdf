@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/deliverycontext.owl">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/hardware.owl#Keyboard">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/hardware.owl#InputDevice_NUMERIC_KEYPAD">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/hardware.owl#Keyboard"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/hardware.owl#Keyboard">
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This class represents a keyboard in a device</rdfs:comment>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Keyboard</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/hardware.owl#InputDevice_NUMERIC_KEYPAD">
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A keyboard with only numeric input</rdfs:comment>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Numeric Keypad</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/hardware.owl#Keyboard">
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/hardware.owl#InputDevice_NUMERIC_KEYPAD">
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/hardware.owl#InputDevice_PHONE_KEYPAD">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/hardware.owl#Keyboard"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A phone-style keypad where multiple symbols are available through multiple presses of a limited number of keys</rdfs:comment>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phone Keypad</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/hardware.owl#InputDevice_QWERTY_KEYBOARD">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/hardware.owl#Keyboard"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Represents a full alphanumeric keyboard</rdfs:comment>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Qwerty Keyboard</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+</rdf:Description>
+
+</rdf:RDF>

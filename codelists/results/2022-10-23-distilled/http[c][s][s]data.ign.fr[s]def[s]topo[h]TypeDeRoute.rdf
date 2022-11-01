@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://data.ign.fr/def/topo">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/def/topo#TypeDeRoute">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typederoute/Autoroute">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeRoute"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/def/topo#TypeDeRoute">
+	<rdfs:label xml:lang="en">Type of road</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typederoute/Autoroute">
+	<rdfs:label xml:lang="en">Motorway</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/def/topo#TypeDeRoute">
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typederoute/Autoroute">
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typederoute/BacAuto">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeRoute"/>
+	<rdfs:label xml:lang="en">Car ferry</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typederoute/BacPieton">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeRoute"/>
+	<rdfs:label xml:lang="en">Passenger ferry</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typederoute/Bretelle">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeRoute"/>
+	<rdfs:label xml:lang="en">Ramp</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typederoute/Chemin">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeRoute"/>
+	<rdfs:label xml:lang="en">Dirt road</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typederoute/Escalier">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeRoute"/>
+	<rdfs:label xml:lang="en">Stair way street</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typederoute/PisteCyclable">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeRoute"/>
+	<rdfs:label xml:lang="en">Bicycle path</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typederoute/QuasiAutoroute">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeRoute"/>
+	<rdfs:label xml:lang="en">Non-classified motorway</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typederoute/RouteADeuxChaussees">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeRoute"/>
+	<rdfs:label xml:lang="en">Dual carriageway road</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typederoute/RouteAUneChaussee">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeRoute"/>
+	<rdfs:label xml:lang="en">Single carriageway road</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typederoute/RouteDepartementale">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeRoute"/>
+	<rdfs:label xml:lang="en">Secondary road</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typederoute/RouteEmpierree">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeRoute"/>
+	<rdfs:label xml:lang="en">Gravel road</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typederoute/RouteNationale">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeRoute"/>
+	<rdfs:label xml:lang="en">Main road</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typederoute/Sentier">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeRoute"/>
+	<rdfs:label xml:lang="en">Footpath</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+</rdf:RDF>

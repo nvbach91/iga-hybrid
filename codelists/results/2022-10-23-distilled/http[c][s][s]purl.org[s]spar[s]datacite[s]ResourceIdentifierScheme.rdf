@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://purl.org/spar/datacite">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/datacite/ResourceIdentifierScheme">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/datacite/ark">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/datacite/ResourceIdentifierScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/datacite/ResourceIdentifierScheme">
+	<rdfs:comment xml:lang="en">The identifier scheme used to identify a resource.  Individual schemes are defines as members of this class.  For DataCite, the only permitted identifier scheme for the primary resource identifier is the Digital Object Identifier.</rdfs:comment>
+	<rdfs:label xml:lang="en">resource identifier scheme</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/datacite/ark">
+	<rdfs:comment xml:lang="en">Archival Resource Key.</rdfs:comment>
+	<rdfs:label xml:lang="en">ark</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/datacite/ResourceIdentifierScheme">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/datacite/ark">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/datacite/arxiv">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/datacite/ResourceIdentifierScheme"/>
+	<rdfs:comment xml:lang="en">Identifier for ArXiv (http://arxiv.org/), a open access repository of preprints, having the format arXiv:1207.2147.</rdfs:comment>
+	<rdfs:label xml:lang="en">arxiv</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/datacite/doi">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/datacite/ResourceIdentifierScheme"/>
+	<rdfs:comment xml:lang="en">Digital Object Identier.</rdfs:comment>
+	<rdfs:label xml:lang="en">doi</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/datacite/ean13">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/datacite/ResourceIdentifierScheme"/>
+	<rdfs:comment xml:lang="en">International Article Number</rdfs:comment>
+	<rdfs:label xml:lang="en">ean13</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/datacite/eissn">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/datacite/ResourceIdentifierScheme"/>
+	<rdfs:comment xml:lang="en">Electronic International Standard Serial Number</rdfs:comment>
+	<rdfs:label xml:lang="en">eissn</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/datacite/handle">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/datacite/ResourceIdentifierScheme"/>
+	<rdfs:comment xml:lang="en">The Handle system</rdfs:comment>
+	<rdfs:label xml:lang="en">handle</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/datacite/infouri">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/datacite/ResourceIdentifierScheme"/>
+	<rdfs:comment xml:lang="en">Info URI scheme</rdfs:comment>
+	<rdfs:label xml:lang="en">infouri</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/datacite/isbn">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/datacite/ResourceIdentifierScheme"/>
+	<rdfs:comment xml:lang="en">International Standard Book Number</rdfs:comment>
+	<rdfs:label xml:lang="en">isbn</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/datacite/issn">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/datacite/ResourceIdentifierScheme"/>
+	<rdfs:comment xml:lang="en">International Standard Serial Number</rdfs:comment>
+	<rdfs:label xml:lang="en">issn</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/datacite/issn-l">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/datacite/ResourceIdentifierScheme"/>
+	<rdfs:comment xml:lang="en">Linking International Standard Serial Number</rdfs:comment>
+	<rdfs:label xml:lang="en">issn-l</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/datacite/istc">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/datacite/ResourceIdentifierScheme"/>
+	<rdfs:comment xml:lang="en">International Standard Text Code</rdfs:comment>
+	<rdfs:label xml:lang="en">istc</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/datacite/local-resource-identifier-scheme">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/datacite/ResourceIdentifierScheme"/>
+	<rdfs:comment xml:lang="en">A resource identifier scheme that provides local resource identifiers that are unique in their local environment and understood by the person submitting the metadata.</rdfs:comment>
+	<rdfs:label xml:lang="en">local resource identifier scheme</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/datacite/lsid">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/datacite/ResourceIdentifierScheme"/>
+	<rdfs:comment xml:lang="en">Life Science Identifier</rdfs:comment>
+	<rdfs:label xml:lang="en">lsid</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/datacite/nihmsid">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/datacite/ResourceIdentifierScheme"/>
+	<rdfs:comment xml:lang="en">NIH Manuscript Submission Identifier</rdfs:comment>
+	<rdfs:label xml:lang="en">nihmsid</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/datacite/pii">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/datacite/ResourceIdentifierScheme"/>
+	<rdfs:comment xml:lang="en">Pulisher Item Identifier scheme.</rdfs:comment>
+	<rdfs:label xml:lang="en">pii</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/datacite/pmcid">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/datacite/ResourceIdentifierScheme"/>
+	<rdfs:comment xml:lang="en">PubMed Central Identifier</rdfs:comment>
+	<rdfs:label xml:lang="en">pmcid</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/datacite/pmid">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/datacite/ResourceIdentifierScheme"/>
+	<rdfs:comment xml:lang="en">PubMed Identifier</rdfs:comment>
+	<rdfs:label xml:lang="en">pmid</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/datacite/purl">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/datacite/ResourceIdentifierScheme"/>
+	<rdfs:comment xml:lang="en">Persistent Uniform Resource Locator</rdfs:comment>
+	<rdfs:label xml:lang="en">purl</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/datacite/sici">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/datacite/ResourceIdentifierScheme"/>
+	<rdfs:comment xml:lang="en">Serial Item and Contribution Identifier</rdfs:comment>
+	<rdfs:label xml:lang="en">sici</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/datacite/upc">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/datacite/ResourceIdentifierScheme"/>
+	<rdfs:comment xml:lang="en">Universal Product Code</rdfs:comment>
+	<rdfs:label xml:lang="en">upc</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/datacite/uri">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/datacite/ResourceIdentifierScheme"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Uniform Resource Identifier</rdfs:comment>
+	<rdfs:label xml:lang="en">uri</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/datacite/url">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/datacite/ResourceIdentifierScheme"/>
+	<rdfs:comment xml:lang="en">Uniform Resource Locator.</rdfs:comment>
+	<rdfs:label xml:lang="en">url</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/datacite/urn">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/datacite/ResourceIdentifierScheme"/>
+	<rdfs:comment xml:lang="en">Uniform Resource Name.</rdfs:comment>
+	<rdfs:label xml:lang="en">urn</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite"/>
+</rdf:Description>
+
+</rdf:RDF>

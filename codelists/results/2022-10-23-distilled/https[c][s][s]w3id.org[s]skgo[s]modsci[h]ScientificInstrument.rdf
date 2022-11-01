@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="https://w3id.org/skgo/modsci#">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/skgo/modsci#ScientificInstrument">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/skgo/modsci#Oscilloscope">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrument"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/skgo/modsci#ScientificInstrument">
+	<rdfs:comment xml:lang="en">A scientific instrument is, broadly speaking, a device or tool used for scientific purposes, including the study of both natural phenomena and theoretical research.</rdfs:comment>
+	<rdfs:label>Scientific Instrument</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/skgo/modsci#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/skgo/modsci#Oscilloscope">
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/skgo/modsci#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/skgo/modsci#ScientificInstrument">
+	<rdfs:label xml:lang="en">Instrument</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/skgo/modsci#Phonograph">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrument"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/skgo/modsci#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/skgo/modsci#Seismometer">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrument"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/skgo/modsci#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/skgo/modsci#Spectrogram">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrument"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/skgo/modsci#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/skgo/modsci#Spectrometer">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrument"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/skgo/modsci#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/skgo/modsci#Telescope">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrument"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/skgo/modsci#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/skgo/modsci#Theodolite">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrument"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/skgo/modsci#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/skgo/modsci#Thermocouple">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrument"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/skgo/modsci#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/skgo/modsci#Thermometer">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrument"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/skgo/modsci#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/skgo/modsci#Voltmeter">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrument"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/skgo/modsci#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/skgo/modsci#Accelerometer">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrument"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/skgo/modsci#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/skgo/modsci#Accumulator">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrument"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/skgo/modsci#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/skgo/modsci#Ammeter">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrument"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/skgo/modsci#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/skgo/modsci#Anemometer">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrument"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/skgo/modsci#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/skgo/modsci#Barometer">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrument"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/skgo/modsci#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/skgo/modsci#Caliper">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrument"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/skgo/modsci#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/skgo/modsci#Calorimeter">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrument"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/skgo/modsci#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/skgo/modsci#DNA_Sequencer">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrument"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/skgo/modsci#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/skgo/modsci#Dynamo">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrument"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/skgo/modsci#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/skgo/modsci#Dynamometer">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrument"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/skgo/modsci#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/skgo/modsci#Electrometer">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrument"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/skgo/modsci#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/skgo/modsci#Electroscope">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrument"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/skgo/modsci#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/skgo/modsci#Ellipsometer">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrument"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/skgo/modsci#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/skgo/modsci#Eudiometer">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrument"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/skgo/modsci#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/skgo/modsci#Galvanometer">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrument"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/skgo/modsci#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/skgo/modsci#Gravitometer">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrument"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/skgo/modsci#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/skgo/modsci#Hydrometer">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrument"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/skgo/modsci#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/skgo/modsci#Inclinometer">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrument"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/skgo/modsci#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/skgo/modsci#Interferometer">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrument"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/skgo/modsci#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/skgo/modsci#Magnetograph">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrument"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/skgo/modsci#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/skgo/modsci#Magnetometer">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrument"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/skgo/modsci#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/skgo/modsci#Manometer">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrument"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/skgo/modsci#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/skgo/modsci#Micrometer">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrument"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/skgo/modsci#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/skgo/modsci#Microscope">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrument"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/skgo/modsci#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/skgo/modsci#Ohmmeter">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrument"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/skgo/modsci#"/>
+</rdf:Description>
+
+</rdf:RDF>

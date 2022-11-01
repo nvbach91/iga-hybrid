@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/MonthOfYear">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/April">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://reference.data.gov.uk/def/intervals/MonthOfYear"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/MonthOfYear">
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A class for the months of a calendar year. A month of year is a recurring interval of about 12th of a year that re-occurs annually.</rdfs:comment>
+	<rdfs:label xml:lang="en">month of year</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/April">
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The month of April</rdfs:comment>
+	<rdfs:label xml:lang="en">April</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/monthOfYear">
+	<rdfs:range rdf:resource="http://reference.data.gov.uk/def/intervals/MonthOfYear"/>
+	<rdfs:domain rdf:nodeID="t157057"/>
+	<rdfs:label xml:lang="en">month of year</rdfs:label>
+	<rdfs:comment xml:lang="en">The month of the year in which a contained instant or interval (of duration one month or less) occurs.</rdfs:comment>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/MonthOfYear">
+	<rdfs:isDefinedBy rdf:resource="http://reference.data.gov.uk/def/intervals"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/April">
+	<rdfs:isDefinedBy rdf:resource="http://reference.data.gov.uk/def/intervals"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/August">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://reference.data.gov.uk/def/intervals/MonthOfYear"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The month of August</rdfs:comment>
+	<rdfs:label xml:lang="en">August</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://reference.data.gov.uk/def/intervals"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/December">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://reference.data.gov.uk/def/intervals/MonthOfYear"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The month of December</rdfs:comment>
+	<rdfs:label xml:lang="en">December</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://reference.data.gov.uk/def/intervals"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/February">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://reference.data.gov.uk/def/intervals/MonthOfYear"/>
+	<rdfs:comment xml:lang="en">The month of February</rdfs:comment>
+	<rdfs:label xml:lang="en">February</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://reference.data.gov.uk/def/intervals"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/January">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://reference.data.gov.uk/def/intervals/MonthOfYear"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The month of January</rdfs:comment>
+	<rdfs:label xml:lang="en">January</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://reference.data.gov.uk/def/intervals"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/July">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://reference.data.gov.uk/def/intervals/MonthOfYear"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The month of July</rdfs:comment>
+	<rdfs:label xml:lang="en">July</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://reference.data.gov.uk/def/intervals"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/June">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://reference.data.gov.uk/def/intervals/MonthOfYear"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The month of June</rdfs:comment>
+	<rdfs:label xml:lang="en">June</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://reference.data.gov.uk/def/intervals"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/March">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://reference.data.gov.uk/def/intervals/MonthOfYear"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The month of March</rdfs:comment>
+	<rdfs:label xml:lang="en">March</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://reference.data.gov.uk/def/intervals"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/May">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://reference.data.gov.uk/def/intervals/MonthOfYear"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The month of May</rdfs:comment>
+	<rdfs:label xml:lang="en">May</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://reference.data.gov.uk/def/intervals"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/November">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://reference.data.gov.uk/def/intervals/MonthOfYear"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The month of Novermber</rdfs:comment>
+	<rdfs:label xml:lang="en">November</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://reference.data.gov.uk/def/intervals"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/October">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://reference.data.gov.uk/def/intervals/MonthOfYear"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The month of October</rdfs:comment>
+	<rdfs:label xml:lang="en">October</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://reference.data.gov.uk/def/intervals"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/September">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://reference.data.gov.uk/def/intervals/MonthOfYear"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The month of September</rdfs:comment>
+	<rdfs:label xml:lang="en">September</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://reference.data.gov.uk/def/intervals"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/June">
+	<rdfs:label xml:lang="en">January</rdfs:label>
+</rdf:Description>
+
+</rdf:RDF>

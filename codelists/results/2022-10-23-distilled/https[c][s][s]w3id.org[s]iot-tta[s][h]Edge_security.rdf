@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="https://w3id.org/iot-tta/">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/iot-tta/#Edge_security">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/iot-tta/#Computational_cost">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/iot-tta/#Edge_security"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/iot-tta/#Edge_security">
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The edge security must consider criteria based on memory size, computational cost, transmission speed, etc. Blockchain may offer security solutions.</rdfs:comment>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Edge_security</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/iot-tta/#Computational_cost">
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">computational_cost (Individual): of Edge security type with Object property assertions (has_SecuritySolution, best_Practices)</rdfs:comment>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">computational_cost</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/iot-tta/#Edge_security">
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/iot-tta/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/iot-tta/#Computational_cost">
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/iot-tta/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/iot-tta/#Transmission_speed">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/iot-tta/#Edge_security"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">transmission_speed (Individual): of Edge security type with Object property assertions (has_SecuritySolution, best_Practices)</rdfs:comment>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">transmission_speed</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/iot-tta/"/>
+</rdf:Description>
+
+</rdf:RDF>

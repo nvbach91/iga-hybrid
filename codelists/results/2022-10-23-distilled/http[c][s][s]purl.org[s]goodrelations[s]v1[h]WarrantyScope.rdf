@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://purl.org/goodrelations/v1">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/goodrelations/v1#WarrantyScope">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/goodrelations/v1#Labor-BringIn">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/goodrelations/v1#WarrantyScope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/goodrelations/v1#WarrantyScope">
+	<rdfs:comment xml:lang="en">The warranty scope represents types of services that will be provided free of charge by the vendor or manufacturer in the case of a defect (e.g. labor and parts, just parts), as part of the warranty included in an gr:Offering. The actual services may be provided by the gr:BusinessEntity making the offering, by the manufacturer of the product, or by a third party. 
+
+Examples: Parts and Labor, Parts</rdfs:comment>
+	<rdfs:label xml:lang="en">Warranty scope</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/goodrelations/v1#Labor-BringIn">
+	<rdfs:comment xml:lang="en">In case of a defect or malfunction, the buying party has the right to transport the good to a service location determined by the the selling gr:BusinessEntity and will be charged only for parts and materials needed to fix the problem. Labor will be covered by the selling business entity or one of its partnering business entities.
+
+Note: This is just a rough classification for filtering offers. It is up to the buying party to check the exact scope and terms and conditions of the gr:WarrantyPromise.</rdfs:comment>
+	<rdfs:label xml:lang="en">Labor / bring-in (warranty scope)</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/goodrelations/v1#hasWarrantyScope">
+	<rdfs:range rdf:resource="http://purl.org/goodrelations/v1#WarrantyScope"/>
+	<rdfs:domain rdf:resource="http://purl.org/goodrelations/v1#WarrantyPromise"/>
+	<rdfs:label xml:lang="en">has warranty scope (0..1)</rdfs:label>
+	<rdfs:comment xml:lang="en">This states the gr:WarrantyScope of a given gr:WarrantyPromise.</rdfs:comment>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/goodrelations/v1#WarrantyScope">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/goodrelations/v1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/goodrelations/v1#Labor-BringIn">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/goodrelations/v1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/goodrelations/v1#PartsAndLabor-BringIn">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/goodrelations/v1#WarrantyScope"/>
+	<rdfs:comment xml:lang="en">In case of a defect or malfunction, the buying party has the right to transport the good to a service location determined by the the selling gr:BusinessEntity and will not be be charged for labor, parts, and materials needed to fix the problem. All those costs will be covered by the selling business entity or one of its partnering business entities.
+
+Note: This is just a rough classification for filtering offers. It is up to the buying party to check the exact scope and terms and conditions of the gr:WarrantyPromise.</rdfs:comment>
+	<rdfs:label xml:lang="en">Parts and labor / bring-in (warranty scope)</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/goodrelations/v1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/goodrelations/v1#PartsAndLabor-PickUp">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/goodrelations/v1#WarrantyScope"/>
+	<rdfs:comment xml:lang="en">In case of a defect or malfunction, the buying party has the right to request from the selling gr:Business Entity to pick-up the good from its current location to a suitable service location, where the functionality of the good will be restored. All transportation, labor, parts, and materials needed to fix the problem will be covered by the selling business entity or one of its partnering business entities.
+  
+Note: This is just a rough classification for filtering offers. It is up to the buying party to check the exact scope and terms and conditions of the gr:WarrantyPromise.</rdfs:comment>
+	<rdfs:label xml:lang="en">Parts and labor / pick up (warranty scope)</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/goodrelations/v1"/>
+</rdf:Description>
+
+</rdf:RDF>

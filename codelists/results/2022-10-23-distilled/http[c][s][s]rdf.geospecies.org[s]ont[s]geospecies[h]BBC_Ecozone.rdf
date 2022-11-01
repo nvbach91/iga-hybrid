@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies#BBC_Ecozone">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies#BBC_Ecozone_Afrotropics">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#BBC_Ecozone"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies#BBC_Ecozone">
+	<rdfs:comment>From BBC Nature Project: "Ecozones are a method of dividing up the Earth's surface. Each ecozone is a large area that contains a number of habitats, which are linked by the evolutionary history of the animals and plants within them. For instance one ecozone is Australasia, because its marsupials evolved in isolation to mammals in the rest of the world."</rdfs:comment>
+	<rdfs:label>BBC_Ecozone</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies#BBC_Ecozone_Afrotropics">
+	<rdfs:label>Afrotropics</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies#hasBBC_Ecozone">
+	<rdfs:range rdf:resource="http://rdf.geospecies.org/ont/geospecies#BBC_Ecozone"/>
+	<rdfs:domain rdf:resource="http://rdf.geospecies.org/ont/geospecies#Location"/>
+	<rdfs:label>hasBBC_Ecozone</rdfs:label>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies#BBC_Ecozone">
+	<rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies#BBC_Ecozone_Afrotropics">
+	<rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies#BBC_Ecozone_Antarctica">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#BBC_Ecozone"/>
+	<rdfs:label>Antarctica</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies#BBC_Ecozone_Australasia">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#BBC_Ecozone"/>
+	<rdfs:label>Australasia</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies#BBC_Ecozone_Indo-Malay">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#BBC_Ecozone"/>
+	<rdfs:label>Indo-Malay</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies#BBC_Ecozone_Nearctic">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#BBC_Ecozone"/>
+	<rdfs:label>Nearctic</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies#BBC_Ecozone_Neotropical">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#BBC_Ecozone"/>
+	<rdfs:label>Neotropical</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies#BBC_Ecozone_Oceania">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#BBC_Ecozone"/>
+	<rdfs:label>Oceania</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies#BBC_Ecozone_Palaearctic">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#BBC_Ecozone"/>
+	<rdfs:label>Palaearctic</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+</rdf:Description>
+
+</rdf:RDF>

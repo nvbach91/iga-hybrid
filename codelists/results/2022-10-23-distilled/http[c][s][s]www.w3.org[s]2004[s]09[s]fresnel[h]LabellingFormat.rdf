@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://www.w3.org/2004/09/fresnel">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/09/fresnel#LabellingFormat">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/09/fresnel#none">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2004/09/fresnel#LabellingFormat"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/09/fresnel#LabellingFormat">
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Abstract superclass of all labelling formats.</rdfs:comment>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Labelling Format</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/09/fresnel#none">
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Do not show any label for the property.</rdfs:comment>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">none</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/09/fresnel#LabellingFormat">
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/09/fresnel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/09/fresnel#none">
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/09/fresnel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/09/fresnel#show">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2004/09/fresnel#LabellingFormat"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Show the RDFS Label of the property. This is the default and doesn't have to be declared.</rdfs:comment>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Show Label</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/09/fresnel"/>
+</rdf:Description>
+
+</rdf:RDF>

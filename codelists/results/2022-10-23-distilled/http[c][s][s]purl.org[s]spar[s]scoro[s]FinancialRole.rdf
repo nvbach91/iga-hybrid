@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://purl.org/spar/scoro/">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/scoro/FinancialRole">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/scoro/accountant">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/scoro/FinancialRole"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/scoro/FinancialRole">
+	<rdfs:comment xml:lang="en">A role that an agent might hold with respect to academic and project finance.  Individual members of this class are used to specify particular roles.</rdfs:comment>
+	<rdfs:label xml:lang="en">financial role</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/scoro/accountant">
+	<rdfs:comment xml:lang="en">The role held by a person whose job is to manage financial accounts, for example the accounts of an organization, or of a particular funded project or activity of that organization.</rdfs:comment>
+	<rdfs:label xml:lang="en">accountant</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/scoro/FinancialRole">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/scoro/accountant">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/scoro/auditor">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/scoro/FinancialRole"/>
+	<rdfs:comment xml:lang="en">The role held by a person who conducts a formal audit of financial accounts.</rdfs:comment>
+	<rdfs:label xml:lang="en">auditor</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/scoro/claimant">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/scoro/FinancialRole"/>
+	<rdfs:comment xml:lang="en">The role held by a person making a financial claim, for example for refund of travel expenses from a project grant.</rdfs:comment>
+	<rdfs:label xml:lang="en">claimant</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/scoro/contractor">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/scoro/FinancialRole"/>
+	<rdfs:comment xml:lang="en">The role held by an agent who enters into a contract to undertake specified work or to supply specified services in return for payment.</rdfs:comment>
+	<rdfs:label xml:lang="en">contractor</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/scoro/financial-controller">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/scoro/FinancialRole"/>
+	<rdfs:comment xml:lang="en">The role held by an agent of controlling the finances, for example the finances of an organization, a building project or a research project.  This role extends to the control of or the authorisation of expenditure from a budget, and may be undertaken by a computational agent.</rdfs:comment>
+	<rdfs:label xml:lang="en">financial controller</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/scoro/funder">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/scoro/FinancialRole"/>
+	<rdfs:comment xml:lang="en">The role held by an agent of providing funds, for example for a research project.</rdfs:comment>
+	<rdfs:label xml:lang="en">funder</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/scoro/funding-recipient">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/scoro/FinancialRole"/>
+	<rdfs:comment xml:lang="en">The role held by an agent who is the official recipient of funding, for example the university of which a funded research project leader is a member.</rdfs:comment>
+	<rdfs:label xml:lang="en">funding recipient</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/scoro/owner">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/scoro/FinancialRole"/>
+	<rdfs:comment xml:lang="en">The role held by an agent who is the owner of something with actual or potential financial value, for example a building, a piece of equipment, the copyright of a document, or the intellectual property rights relating to an idea or discovery.</rdfs:comment>
+	<rdfs:label xml:lang="en">owner</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/scoro/purchaser">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/scoro/FinancialRole"/>
+	<rdfs:comment xml:lang="en">The role held by an agent of making purchases of goods or services, the cost of which is typically charged to a particular academic budget, for example a project manager placing an order to purchase equipment funded from a research grant.</rdfs:comment>
+	<rdfs:label xml:lang="en">purchaser</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/scoro/sponsor">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/scoro/FinancialRole"/>
+	<rdfs:comment xml:lang="en">The role held by an agent that provides funds or support for something such as a project or activity, often in return for access to the exploitable commercial potential associated with that project or activity, for example through advertising.
+
+[Note: there are also several other non-financial meaning of 'sponsor'.]</rdfs:comment>
+	<rdfs:label xml:lang="en">sponsor</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/scoro/sub-contractor">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/scoro/FinancialRole"/>
+	<rdfs:comment xml:lang="en">The role held by an agent who enters into a contract to take over part of another contractor's obligation to undertake specified work or supply specified services in return for payment.</rdfs:comment>
+	<rdfs:label xml:lang="en">sub-contractor</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/scoro/supplier">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/scoro/FinancialRole"/>
+	<rdfs:comment xml:lang="en">The role held by an agent of providing goods or services in exchange for payment.</rdfs:comment>
+	<rdfs:label xml:lang="en">supplier</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+</rdf:Description>
+
+</rdf:RDF>

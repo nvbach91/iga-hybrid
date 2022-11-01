@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/military">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/military#MilitaryAppointment">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/military#1AIFRankRegimentalSergeantMajor">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/military#MilitaryAppointment"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/military#MilitaryAppointment">
+	<rdfs:label xml:lang="en">Appointment (Military)</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/military#1AIFRankRegimentalSergeantMajor">
+	<rdfs:label xml:lang="en">Regimental Sergeant Major (1st AIF)</rdfs:label>
+	<owl:subClassOf rdf:resource="http://rdf.muninn-project.org/ontologies/military#Rank_Regimental_sergeant_major"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/military#Rank_Regimental_sergeant_major">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/military#MilitaryAppointment">
+	<rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/military"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/military#1AIFRankRegimentalSergeantMajor">
+	<rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/military"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/military#Rank_Regimental_sergeant_major">
+	<rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/military"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/military#1AIFRankCompanySergeantMajor">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/military#MilitaryAppointment"/>
+	<rdfs:label xml:lang="en">Company Sergeant Major (1st AIF)</rdfs:label>
+	<owl:subClassOf rdf:resource="http://rdf.muninn-project.org/ontologies/military#RankCompanySergeantMajor"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/military#RankCompanySergeantMajor">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/military#1AIFRankCompanySergeantMajor">
+	<rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/military"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/military#RankCompanySergeantMajor">
+	<rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/military"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/military#1AIFRank2ndCorporal">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/military#MilitaryAppointment"/>
+	<rdfs:label xml:lang="en">2nd Corporal (1st AIF)</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/military"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/military#1AIFRank2ndLieutenant">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/military#MilitaryAppointment"/>
+	<rdfs:label xml:lang="en">2nd Lieutenant (1st AIF)</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/military"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/military#1AIFRankCompanyQuartermasterSergeant">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/military#MilitaryAppointment"/>
+	<rdfs:label xml:lang="en">Company Quartermaster Sergeant (1st AIF)</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/military"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/military#1AIFRankEngineer">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/military#MilitaryAppointment"/>
+	<rdfs:label xml:lang="en">Engineer (1st AIF)</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/military"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/military#1AIFRankLanceCorporal">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/military#MilitaryAppointment"/>
+	<rdfs:label xml:lang="en">Lance Corporal (1st AIF)</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/military"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/military#1AIFRankLanceSergeant">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/military#MilitaryAppointment"/>
+	<rdfs:label xml:lang="en">Lance Sergeant (1st AIF)</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/military"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/military#1AIFRankSergeantMajor">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/military#MilitaryAppointment"/>
+	<rdfs:label xml:lang="en">Sergeant Major (1st AIF)</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/military"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/military#1AIFRankStaffSergeant">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/military#MilitaryAppointment"/>
+	<rdfs:label xml:lang="en">Staff Sergeant (1st AIF)</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/military"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/military#Rank_Battery_sergeant_major">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/military#MilitaryAppointment"/>
+	<rdfs:label xml:lang="en">Battery Sergeant Major</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/military"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/military#Rank_Garrison_Sergeant_Major_England">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/military#MilitaryAppointment"/>
+	<rdfs:label xml:lang="en">Garrison Sergeant Major (England)</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/military"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/military#Rank_Regimental_sergeant_major">
+	<skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/military#MilitaryAppointment"/>
+	<rdfs:label xml:lang="en">Regimental sergeant major</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/military#RankCompanySergeantMajor">
+	<skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/military#MilitaryAppointment"/>
+	<rdfs:label xml:lang="en">Company Sergeant Major</rdfs:label>
+</rdf:Description>
+
+</rdf:RDF>

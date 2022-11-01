@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://comicmeta.org/cbo/">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://comicmeta.org/cbo/Grade">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://comicmeta.org/vocab/0.5">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://comicmeta.org/cbo/Grade"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://comicmeta.org/cbo/Grade">
+	<rdfs:comment xml:lang="en">A grade assigned to a comic item that represents a summary of its condition.</rdfs:comment>
+	<rdfs:label xml:lang="en">Grade</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://comicmeta.org/cbo/grade">
+	<rdfs:range rdf:resource="http://comicmeta.org/cbo/Grade"/>
+	<rdfs:domain rdf:resource="http://comicmeta.org/cbo/Copy"/>
+	<rdfs:label xml:lang="en">grade</rdfs:label>
+	<rdfs:comment xml:lang="en">Describes the grade assigned to a comic item by a guarantor.</rdfs:comment>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://comicmeta.org/cbo/Grade">
+	<rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://comicmeta.org/vocab/0.5">
+	<rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://comicmeta.org/vocab/1.0">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://comicmeta.org/cbo/Grade"/>
+	<rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://comicmeta.org/vocab/1.5">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://comicmeta.org/cbo/Grade"/>
+	<rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://comicmeta.org/vocab/1.8">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://comicmeta.org/cbo/Grade"/>
+	<rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://comicmeta.org/vocab/10.0">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://comicmeta.org/cbo/Grade"/>
+	<rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://comicmeta.org/vocab/2.0">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://comicmeta.org/cbo/Grade"/>
+	<rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://comicmeta.org/vocab/2.5">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://comicmeta.org/cbo/Grade"/>
+	<rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://comicmeta.org/vocab/3.0">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://comicmeta.org/cbo/Grade"/>
+	<rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://comicmeta.org/vocab/3.5">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://comicmeta.org/cbo/Grade"/>
+	<rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://comicmeta.org/vocab/4.0">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://comicmeta.org/cbo/Grade"/>
+	<rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://comicmeta.org/vocab/4.5">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://comicmeta.org/cbo/Grade"/>
+	<rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://comicmeta.org/vocab/5.0">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://comicmeta.org/cbo/Grade"/>
+	<rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://comicmeta.org/vocab/5.5">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://comicmeta.org/cbo/Grade"/>
+	<rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://comicmeta.org/vocab/6.0">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://comicmeta.org/cbo/Grade"/>
+	<rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://comicmeta.org/vocab/6.5">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://comicmeta.org/cbo/Grade"/>
+	<rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://comicmeta.org/vocab/7.0">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://comicmeta.org/cbo/Grade"/>
+	<rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://comicmeta.org/vocab/7.5">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://comicmeta.org/cbo/Grade"/>
+	<rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://comicmeta.org/vocab/8.0">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://comicmeta.org/cbo/Grade"/>
+	<rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://comicmeta.org/vocab/8.5">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://comicmeta.org/cbo/Grade"/>
+	<rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://comicmeta.org/vocab/9.0">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://comicmeta.org/cbo/Grade"/>
+	<rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://comicmeta.org/vocab/9.2">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://comicmeta.org/cbo/Grade"/>
+	<rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://comicmeta.org/vocab/9.4">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://comicmeta.org/cbo/Grade"/>
+	<rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://comicmeta.org/vocab/9.6">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://comicmeta.org/cbo/Grade"/>
+	<rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://comicmeta.org/vocab/9.8">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://comicmeta.org/cbo/Grade"/>
+	<rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://comicmeta.org/vocab/9.9">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://comicmeta.org/cbo/Grade"/>
+	<rdfs:isDefinedBy rdf:resource="http://comicmeta.org/cbo/"/>
+</rdf:Description>
+
+</rdf:RDF>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#VerbPOS">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#copula">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#VerbPOS"/>
+	<rdfs:comment>Special word that combines the subject of a sentence and its description.</rdfs:comment>
+	<rdfs:label>copula</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#VerbPOS">
+	<rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#copula">
+	<rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#deficientVerb">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#VerbPOS"/>
+	<rdfs:comment>verb lacking certain morphosyntactic properties</rdfs:comment>
+	<rdfs:label>deficient verb</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#lightVerb">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#VerbPOS"/>
+	<rdfs:comment>verb participating in a complex predication that has little semantic content of its own.</rdfs:comment>
+	<rdfs:label>light verb</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#mainVerb">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#VerbPOS"/>
+	<rdfs:comment>Main verb in contrast to a modal or an auxiliary.</rdfs:comment>
+	<rdfs:label>main verb</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#modal">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#VerbPOS"/>
+	<rdfs:comment>Verb form that is usually used with another verb to express ideas such as possibilities, permission, or intention.</rdfs:comment>
+	<rdfs:label>modal</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#plainVerb">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#VerbPOS"/>
+	<rdfs:comment>verb which has its own semantics</rdfs:comment>
+	<rdfs:label>plain verb</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#verb">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#VerbPOS"/>
+	<rdfs:comment>Element which, singly or in combination with other verbs is used as the minimal predicate of a sentence, co-occurring with a subject. If the predicate contains other elements (e.g. object, complement), then it is the verb which more than any other is the unit which influences the choice and extent of these elements.</rdfs:comment>
+	<rdfs:label>verb</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo"/>
+</rdf:Description>
+
+</rdf:RDF>

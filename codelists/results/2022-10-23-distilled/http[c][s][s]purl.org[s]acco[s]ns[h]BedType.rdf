@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://purl.org/acco/ns">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/acco/ns#BedType">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/acco/ns#CaliforniaKing">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/acco/ns#BedType"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/acco/ns#BedType">
+	<rdfs:comment xml:lang="en">A type of bed. This is used for indicating the bed or beds available in an accommodation. Use DBpedia URIs whenever possible.</rdfs:comment>
+	<rdfs:label xml:lang="en">Bed Type</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/acco/ns#CaliforniaKing">
+	<rdfs:comment xml:lang="en">A California King or King Long bed. The actual dimension may vary by country, see http://en.wikipedia.org/wiki/Bed_size.</rdfs:comment>
+	<rdfs:label xml:lang="en">California King or King Long bed (acco:BedType)</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/acco/ns#typeOfBed">
+	<rdfs:range rdf:resource="http://purl.org/acco/ns#BedType"/>
+	<rdfs:domain rdf:resource="http://purl.org/acco/ns#BedDetails"/>
+	<rdfs:label xml:lang="en">type of bed (1..1)</rdfs:label>
+	<rdfs:comment xml:lang="en">The type of bed to which the acco:BedDetail node refers, i.e. the type of bed available in the quantity indicated by acco:quantity.</rdfs:comment>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/acco/ns#BedType">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/acco/ns"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/acco/ns#CaliforniaKing">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/acco/ns"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/acco/ns#Double">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/acco/ns#BedType"/>
+	<rdfs:comment xml:lang="en">A double bed. The actual dimension may vary by country, see http://en.wikipedia.org/wiki/Bed_size.</rdfs:comment>
+	<rdfs:label xml:lang="en">Double or full bed (acco:BedType)</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/acco/ns"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/acco/ns#King">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/acco/ns#BedType"/>
+	<rdfs:comment xml:lang="en">An King or Super King bed. The actual dimension may vary by country, see http://en.wikipedia.org/wiki/Bed_size.</rdfs:comment>
+	<rdfs:label xml:lang="en">King or Super King bed (acco:BedType)</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/acco/ns"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/acco/ns#OlympicQueen">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/acco/ns#BedType"/>
+	<rdfs:comment xml:lang="en">An Olympic Queen bed. The actual dimension may vary by country, see http://en.wikipedia.org/wiki/Bed_size.</rdfs:comment>
+	<rdfs:label xml:lang="en">Olympic Queen bed (acco:BedType)</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/acco/ns"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/acco/ns#Queen">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/acco/ns#BedType"/>
+	<rdfs:comment xml:lang="en">A Queen King (UK/Ire.) or Wide Double (Japan) bed. The actual dimension may vary by country, see http://en.wikipedia.org/wiki/Bed_size.</rdfs:comment>
+	<rdfs:label xml:lang="en">Queen King or Wide Double bed (acco:BedType)</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/acco/ns"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/acco/ns#Single">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/acco/ns#BedType"/>
+	<rdfs:comment xml:lang="en">A single bed. The actual dimension may vary by country, see http://en.wikipedia.org/wiki/Bed_size.</rdfs:comment>
+	<rdfs:label xml:lang="en">Single or twin bed (acco:BedType)</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/acco/ns"/>
+</rdf:Description>
+
+</rdf:RDF>

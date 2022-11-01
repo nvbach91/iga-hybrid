@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://purl.org/cwmo/#">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/cwmo/#TechniqueFunction">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/cwmo/#Exploration">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/cwmo/#TechniqueFunction"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/cwmo/#TechniqueFunction">
+	<rdfs:comment xml:lang="en">Technique Function class define the primary purpose of a creative technique.</rdfs:comment>
+	<rdfs:label xml:lang="en">Technique Function</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/cwmo/#Exploration">
+	<rdfs:comment xml:lang="en">The exploration class is a creativ technic which has the porpose to explore the problem, to redefine the scope or the focus of the problem, or to collect further information</rdfs:comment>
+	<rdfs:label xml:lang="en">Exploration</rdfs:label>
+	<rdfs:seeAlso rdf:resource="http://purl.org/cwmo/#Evaluation"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/cwmo/#Evaluation">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/cwmo/#hasFunction">
+	<rdfs:range rdf:resource="http://purl.org/cwmo/#TechniqueFunction"/>
+	<rdfs:domain rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
+	<rdfs:comment xml:lang="en">A creative method produce different results which can be classified according to these typology: exploration, generation, and/or evaluation.</rdfs:comment>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/cwmo/#TechniqueFunction">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/cwmo/#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/cwmo/#Exploration">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/cwmo/#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/cwmo/#Evaluation">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/cwmo/#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/cwmo/#Generation">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/cwmo/#TechniqueFunction"/>
+	<rdfs:comment xml:lang="en">The Generation class is a creative technic which has the purpose to generate ideas.</rdfs:comment>
+	<rdfs:label xml:lang="en">Generation</rdfs:label>
+	<rdfs:seeAlso rdf:resource="http://purl.org/cwmo/#Evaluation"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/cwmo/#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/cwmo/#Evaluation">
+	<skos:inScheme rdf:resource="http://purl.org/cwmo/#TechniqueFunction"/>
+	<rdfs:comment xml:lang="en">The evluation class is a creative technic which has the purpose to evaluate/sort/contextualise the ideas.</rdfs:comment>
+	<rdfs:label xml:lang="en">Evaluation</rdfs:label>
+	<rdfs:seeAlso rdf:resource="http://purl.org/cwmo/#Exploration"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/cwmo/#Generation">
+	<rdfs:seeAlso rdf:resource="http://purl.org/cwmo/#Exploration"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/cwmo/#Evaluation">
+	<rdfs:seeAlso rdf:resource="http://purl.org/cwmo/#Generation"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/cwmo/#Exploration">
+	<rdfs:seeAlso rdf:resource="http://purl.org/cwmo/#Generation"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/cwmo/#hasFunction">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+</rdf:RDF>

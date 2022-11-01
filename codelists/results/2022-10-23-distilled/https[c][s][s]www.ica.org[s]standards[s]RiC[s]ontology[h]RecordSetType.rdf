@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#RecordSetType">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Collection">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSetType"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#RecordSetType">
+	<rdfs:comment xml:lang="en">A broad categorization of the type of Record Set.</rdfs:comment>
+	<rdfs:label xml:lang="en">Record Set Type</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Collection">
+	<rdfs:label xml:lang="en">collection</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#hasRecordSetType">
+	<rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSetType"/>
+	<rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
+	<rdfs:label xml:lang="en">has record set type</rdfs:label>
+	<rdfs:comment xml:lang="en">Connects a Record Set to a Record Set Type that categorizes
+            it.</rdfs:comment>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#RecordSetType">
+	<rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Collection">
+	<rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#File">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSetType"/>
+	<rdfs:label xml:lang="en">file</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Fonds">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSetType"/>
+	<rdfs:label xml:lang="en">fonds</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Series">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSetType"/>
+	<rdfs:label xml:lang="en">series</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+</rdf:Description>
+
+</rdf:RDF>

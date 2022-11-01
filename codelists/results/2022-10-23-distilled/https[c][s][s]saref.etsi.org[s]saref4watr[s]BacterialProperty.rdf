@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="https://saref.etsi.org/saref4watr/">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://saref.etsi.org/saref4watr/BacterialProperty">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://saref.etsi.org/saref4watr/ClostridiumPerfringens">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://saref.etsi.org/saref4watr/BacterialProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://saref.etsi.org/saref4watr/BacterialProperty">
+	<rdfs:comment xml:lang="en">A bacterial property is a property of water that is related to bacteria.</rdfs:comment>
+	<rdfs:label xml:lang="en">Bacterial property</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://saref.etsi.org/saref4watr/ClostridiumPerfringens">
+	<rdfs:comment xml:lang="en">Property of the water indicating its concentration of clostridium perfringens.</rdfs:comment>
+	<rdfs:label xml:lang="en">Clostridium perfringens</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://saref.etsi.org/saref4watr/BacterialProperty">
+	<rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4watr/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://saref.etsi.org/saref4watr/ClostridiumPerfringens">
+	<rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4watr/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://saref.etsi.org/saref4watr/ColiformBacteria">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://saref.etsi.org/saref4watr/BacterialProperty"/>
+	<rdfs:comment xml:lang="en">Property of the water indicating its concentration of coliform bacteria.</rdfs:comment>
+	<rdfs:label xml:lang="en">Coliform bacteria</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4watr/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://saref.etsi.org/saref4watr/ColonyCount22C">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://saref.etsi.org/saref4watr/BacterialProperty"/>
+	<rdfs:comment xml:lang="en">Property of the water indicating its colony count at 22 ºC.</rdfs:comment>
+	<rdfs:label xml:lang="en">Colony count at 22 °C</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4watr/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://saref.etsi.org/saref4watr/ColonyCount37C">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://saref.etsi.org/saref4watr/BacterialProperty"/>
+	<rdfs:comment xml:lang="en">Property of the water indicating its colony count at 37 ºC.</rdfs:comment>
+	<rdfs:label xml:lang="en">Colony count at 37 °C</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4watr/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://saref.etsi.org/saref4watr/Enterococci">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://saref.etsi.org/saref4watr/BacterialProperty"/>
+	<rdfs:comment xml:lang="en">Property of the water indicating its concentration of enterococci.</rdfs:comment>
+	<rdfs:label xml:lang="en">Enterococci</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4watr/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://saref.etsi.org/saref4watr/EscherichiaColi">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://saref.etsi.org/saref4watr/BacterialProperty"/>
+	<rdfs:comment xml:lang="en">Property of the water indicating its concentration of escherichia coli.</rdfs:comment>
+	<rdfs:label xml:lang="en">E. coli</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4watr/"/>
+	<rdfs:label xml:lang="en">Escherichia coli</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://saref.etsi.org/saref4watr/PseudomonasAeruginosa">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://saref.etsi.org/saref4watr/BacterialProperty"/>
+	<rdfs:comment xml:lang="en">Property of the water indicating its concentration of pseudomonas aeruginosa.</rdfs:comment>
+	<rdfs:label xml:lang="en">Pseudomonas aeruginosa</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4watr/"/>
+</rdf:Description>
+
+</rdf:RDF>

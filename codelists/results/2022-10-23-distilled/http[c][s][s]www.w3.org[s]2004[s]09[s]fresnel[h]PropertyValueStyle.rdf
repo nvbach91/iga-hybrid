@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://www.w3.org/2004/09/fresnel">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/09/fresnel#PropertyValueStyle">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/09/fresnel#externalLink">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2004/09/fresnel#PropertyValueStyle"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/09/fresnel#PropertyValueStyle">
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Abstract superclass of all property value display styles.</rdfs:comment>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Property value display style</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/09/fresnel#externalLink">
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Show the property value as a dereferenceable URL.</rdfs:comment>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">External Link</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/09/fresnel#value">
+	<rdfs:range rdf:resource="http://www.w3.org/2004/09/fresnel#PropertyValueStyle"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2004/09/fresnel#Format"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">property value</rdfs:label>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Specifies how a property value is displayed (only works in conjunction with propertyFormatDomain).</rdfs:comment>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/09/fresnel#PropertyValueStyle">
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/09/fresnel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/09/fresnel#externalLink">
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/09/fresnel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/09/fresnel#image">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2004/09/fresnel#PropertyValueStyle"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Show the property value as an image, such as PNG or JPEG .</rdfs:comment>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Image</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/09/fresnel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/09/fresnel#replacedResource">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2004/09/fresnel#PropertyValueStyle"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any kind of retrievable resource like an image, audio or video that should be displayed as property value.  The browser should try retrieve the resource and show it instead of the property value URI.  The browser has to negotiate an appropriate media type with the server using HTTP content negotiation.</rdfs:comment>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Replaced Resource</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/09/fresnel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/09/fresnel#uri">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2004/09/fresnel#PropertyValueStyle"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Show the property value as an URI.</rdfs:comment>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">URI</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/09/fresnel"/>
+</rdf:Description>
+
+</rdf:RDF>

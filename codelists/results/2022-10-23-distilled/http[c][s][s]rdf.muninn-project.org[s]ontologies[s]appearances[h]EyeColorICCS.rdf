@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#EyeColorICCS">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#EyeColorICCS1">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#EyeColorICCS"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#EyeColorICCS">
+	<rdfs:comment xml:lang="en">Iris Color Classification System</rdfs:comment>
+	<rdfs:label xml:lang="en">Iris Color Classification System</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#EyeColorICCS1">
+	<rdfs:label xml:lang="en">Blue with Brown Specks (ICCS #1)</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#EyeColorICCS">
+	<rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/appearances"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#EyeColorICCS1">
+	<rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/appearances"/>
+	<rdfs:label xml:lang="en">Blue with Yellow Specks (ICCS #1)</rdfs:label>
+	<rdfs:label xml:lang="en">Gray with Brown Specks (ICCS #1)</rdfs:label>
+	<rdfs:label xml:lang="en">Gray with Yellow Specks (ICCS #1)</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#EyeColorICCS2">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#EyeColorICCS"/>
+	<rdfs:label xml:lang="en">Blue with Brown Specks (ICCS #2)</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/appearances"/>
+	<rdfs:label xml:lang="en">Blue with Yellow Specks (ICCS #2)</rdfs:label>
+	<rdfs:label xml:lang="en">Gray with Brown Specks (ICCS #2)</rdfs:label>
+	<rdfs:label xml:lang="en">Gray with Yellow Specks (ICCS #2)</rdfs:label>
+	<rdfs:label xml:lang="en">Green with Brown Specks (ICCS #2)</rdfs:label>
+	<rdfs:label xml:lang="en">Green with Yellow Specks (ICCS #2)</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#EyeColorICCS3">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#EyeColorICCS"/>
+	<rdfs:label xml:lang="en">Green with Brown Specks (ICCS #3)</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/appearances"/>
+	<rdfs:label xml:lang="en">Green with Yellow Specks (ICCS #3)</rdfs:label>
+	<rdfs:label xml:lang="en">Light Brown with Brown Specks (ICCS #3)</rdfs:label>
+	<rdfs:label xml:lang="en">Light Brown with Yellow Specks (ICCS #3)</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#EyeColorICCS4">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#EyeColorICCS"/>
+	<rdfs:label xml:lang="en">Brown (ICCS #4)</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/appearances"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.muninn-project.org/ontologies/appearances#EyeColorICCS5">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#EyeColorICCS"/>
+	<rdfs:label xml:lang="en">Brown (ICCS #5)</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.muninn-project.org/ontologies/appearances"/>
+</rdf:Description>
+
+</rdf:RDF>

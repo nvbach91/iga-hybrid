@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="https://w3id.org/iot-tta/">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/iot-tta/#Computer_cluster">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/iot-tta/#Cluster1">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/iot-tta/#Computer_cluster"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/iot-tta/#Computer_cluster">
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A computer cluster is a set of computers that work together as a single system. Computer clusters have each node set to perform the same task, controlled and scheduled by software.</rdfs:comment>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Computer_cluster</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/iot-tta/#Cluster1">
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cluster1 (Individual): a Computer cluster</rdfs:comment>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cluster1</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/iot-tta/#isApplied">
+	<rdfs:range rdf:resource="https://w3id.org/iot-tta/#Computer_cluster"/>
+	<rdfs:domain rdf:resource="https://w3id.org/iot-tta/#Tool"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">isApplied</rdfs:label>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">isApplied (Object property): a tool used for computer clusters</rdfs:comment>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/iot-tta/#Computer_cluster">
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/iot-tta/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/iot-tta/#Cluster1">
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/iot-tta/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/iot-tta/#Cluster2">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/iot-tta/#Computer_cluster"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cluster2 (Individual): a Computer cluster</rdfs:comment>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cluster2</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/iot-tta/"/>
+</rdf:Description>
+
+</rdf:RDF>

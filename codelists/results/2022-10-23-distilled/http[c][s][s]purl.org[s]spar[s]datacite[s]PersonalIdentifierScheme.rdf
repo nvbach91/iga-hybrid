@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://purl.org/spar/datacite">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/datacite/PersonalIdentifierScheme">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/datacite/dia">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/datacite/PersonalIdentifierScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/datacite/PersonalIdentifierScheme">
+	<rdfs:comment xml:lang="en">The identifier scheme used to identify a person.  Individual schemes are defines as members of this class.</rdfs:comment>
+	<rdfs:label xml:lang="en">personal identifier scheme</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/datacite/dia">
+	<rdfs:comment xml:lang="en">The Digital Author Identification system assigns a unique number to all authors in the Netherlands research system.</rdfs:comment>
+	<rdfs:label xml:lang="en">dia</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/datacite/PersonalIdentifierScheme">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/datacite/dia">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/datacite/isni">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/datacite/PersonalIdentifierScheme"/>
+	<rdfs:comment xml:lang="en">International Standard Name Identifier scheme.</rdfs:comment>
+	<rdfs:label xml:lang="en">isni</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/datacite/jst">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/datacite/PersonalIdentifierScheme"/>
+	<rdfs:comment xml:lang="en">Japanese Science and Technology Agency identifier scheme</rdfs:comment>
+	<rdfs:label xml:lang="en">jst</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/datacite/local-personal-identifier-scheme">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/datacite/PersonalIdentifierScheme"/>
+	<rdfs:comment xml:lang="en">A personal identifier scheme that provides local personal identifiers that are unique in their local environment and understood by the person submitting the metadata.</rdfs:comment>
+	<rdfs:label xml:lang="en">local personal identifier scheme</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/datacite/national_insurance_number">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/datacite/PersonalIdentifierScheme"/>
+	<rdfs:comment xml:lang="en">United Kingdom National Insurance Number scheme.</rdfs:comment>
+	<rdfs:label xml:lang="en">national insurance number</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/datacite/openid">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/datacite/PersonalIdentifierScheme"/>
+	<rdfs:comment xml:lang="en">OpenID is an open standard that describes how users can be authenticated in a decentralized manner, eliminating the need for centralized registration services. </rdfs:comment>
+	<rdfs:label xml:lang="en">openid</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/datacite/orcid">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/datacite/PersonalIdentifierScheme"/>
+	<rdfs:comment xml:lang="en">Open Researcher and Contributor Identifier.</rdfs:comment>
+	<rdfs:label xml:lang="en">orcid</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/datacite/researcherid">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/datacite/PersonalIdentifierScheme"/>
+	<rdfs:comment xml:lang="en">ResearcherID is an identifying system for scientific authors created and owned by Thomson Reuters.</rdfs:comment>
+	<rdfs:label xml:lang="en">researcherid</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/datacite/social-security-number">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/datacite/PersonalIdentifierScheme"/>
+	<rdfs:comment xml:lang="en">United States of America social security number scheme</rdfs:comment>
+	<rdfs:label xml:lang="en">social security number</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/datacite/viaf">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/datacite/PersonalIdentifierScheme"/>
+	<rdfs:comment xml:lang="en">The Virtual International Authority File is an international authority file created by amalagamating the national authority files of several national libraries and operated by the Online Computer Library Center (OCLC).  It contains information about many topics including personal names.</rdfs:comment>
+	<rdfs:label xml:lang="en">viaf</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/datacite/nii">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/datacite/PersonalIdentifierScheme"/>
+	<rdfs:label xml:lang="en">National Individual Identifier scheme</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite"/>
+	<rdfs:label xml:lang="en">nii</rdfs:label>
+</rdf:Description>
+
+</rdf:RDF>

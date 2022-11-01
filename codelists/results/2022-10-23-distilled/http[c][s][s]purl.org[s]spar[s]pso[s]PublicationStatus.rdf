@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://purl.org/spar/pso">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/pso/PublicationStatus">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/pso/rejected-for-publication">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/pso/PublicationStatus"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/pso/PublicationStatus">
+	<rdfs:comment xml:lang="en">A state or condition that a document may have that relates to the publication of such document.</rdfs:comment>
+	<rdfs:label xml:lang="en">publishing status</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/pso/rejected-for-publication">
+	<rdfs:comment xml:lang="en">The status of material (for example a document or a dataset) after it has been rejected for publication by a publisher or data repository.</rdfs:comment>
+	<rdfs:label xml:lang="en">rejected for publication</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/pso/PublicationStatus">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pso"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/pso/rejected-for-publication">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pso"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/pso/republished">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/pso/PublicationStatus"/>
+	<rdfs:comment xml:lang="en">The status of a publication (for example a book) that has been republished in a different edition or in translation, or of a work (for example a journal article or a poem) that is republished as part of a collection or an anthology, or of material (for example a figure from an existing publication) that is republished as part of a quite different publication.  Where the publisher of the new work is different from the original publisher, such republication typically includes an acknowledgement of the source and copyright of the original material, and is undertaken after obtaining permission of the original copyright holder.</rdfs:comment>
+	<rdfs:label xml:lang="en">republished</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pso"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/pso/restricted-access">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/pso/PublicationStatus"/>
+	<rdfs:comment xml:lang="en">The status of a work (typically a scholarly paper or a dataset) to which access is restricted.  For example, confidential information to which access is made available only to those who have been approved by the owner or copyright holder of the asset after personal application, or to those with appropriate security clearance, or to those within a partnership.</rdfs:comment>
+	<rdfs:label xml:lang="en">restricted access</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pso"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/pso/retracted-from-publication">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/pso/PublicationStatus"/>
+	<rdfs:comment xml:lang="en">The status of a publication that has been subsequently retracted by the publisher, for example because it was subsequently found to contain erroneous or fraudulent information.</rdfs:comment>
+	<rdfs:label xml:lang="en">retracted from publication</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pso"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/pso/revised">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/pso/PublicationStatus"/>
+	<rdfs:comment xml:lang="en">The status of s work (for example a document or a dataset) that has been altered or improved, typically by the original author.</rdfs:comment>
+	<rdfs:label xml:lang="en">revised</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pso"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/pso/submitted">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/pso/PublicationStatus"/>
+	<rdfs:comment xml:lang="en">The status of a work (for example a document or a dataset) that has been submitted for publication by the author to a publisher or a data repository, prior to its being accepted or rejected.</rdfs:comment>
+	<rdfs:label xml:lang="en">submitted</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pso"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/pso/subscription-access">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/pso/PublicationStatus"/>
+	<rdfs:comment xml:lang="en">The status of a published work, typically an article in a journal issue, that is not available to read without payment of an article access fee or a journal subscription fee for that publication.</rdfs:comment>
+	<rdfs:label xml:lang="en">subscription access</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pso"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/pso/under-review">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/pso/PublicationStatus"/>
+	<rdfs:comment xml:lang="en">The status of a document that has been received from the author(s) by an editor or a publisher for potential publication, and then has been sent to independent reviewers for their comments as to its suitability for publication, prior to receipt of such reviews.</rdfs:comment>
+	<rdfs:label xml:lang="en">under review</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pso"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/pso/unpublished">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/pso/PublicationStatus"/>
+	<rdfs:comment xml:lang="en">The status of a work (for example a document or a dataset) that has not been published by the author, a publisher or a data repository.</rdfs:comment>
+	<rdfs:label xml:lang="en">unpublished</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pso"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/pso/version-of-record">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/pso/PublicationStatus"/>
+	<rdfs:comment xml:lang="en">The final version of a document that has been formally published as a peer-reviewed journal article, citable via a permanent identifier, and forming an abiding component of the scholarly record.</rdfs:comment>
+	<rdfs:label xml:lang="en">version of record</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pso"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/pso/withdrawn-from-submission">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/pso/PublicationStatus"/>
+	<rdfs:comment xml:lang="en">The status of a work (for example a pre-publication document or dataset) that has been voluntarily withdrawn by the author, having previously been submitted for publication, perhaps because the revisions requested by the peer-reviewers were considered impossible to achieve, or because the author wishes to submit it for publication elsewhere.</rdfs:comment>
+	<rdfs:label xml:lang="en">withdrawn from submission</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pso"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/pso/proof">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/pso/PublicationStatus"/>
+	<rdfs:comment xml:lang="en">The status of a pre-publication document late in the publication process, once it has been accepted for publication by a publisher, after the inclusion of any author corrections required by the editor following peer-review, following copy editing and formatting to bring the manuscript into the house style, and prior to final checking by the editor, proof-reader and author to detect and eliminate any errors prior to publication.</rdfs:comment>
+	<rdfs:label xml:lang="en">proof</rdfs:label>
+	<rdfs:seeAlso rdf:resource="http://purl.org/spar/pso/corrected"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/pso/corrected">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/pso/proof">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pso"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/pso/corrected">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pso"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/pso/reviewed">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/pso/PublicationStatus"/>
+	<rdfs:comment xml:lang="en">The status of a published work, for example a book or a journal article, that has been subjected to a written review giving critical analysis of its content, scope and quality.  [See also pso:peer-reviewed.]</rdfs:comment>
+	<rdfs:label xml:lang="en">reviewed</rdfs:label>
+	<rdfs:seeAlso rdf:resource="http://purl.org/spar/pso/peer-reviewed"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/pso/peer-reviewed">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/pso/reviewed">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pso"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/pso/peer-reviewed">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pso"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/pso/PublicationStatus"/>
+	<rdfs:comment xml:lang="en">The status of a work, typically a scholarly journal article, that has been peer reviewed, i.e. subjected to review by two or more independent reviewers (also know as referees) who are academic peers of the author(s), and judged by them to be of sufficient quality to merit publication, usually after further revision by the author to incorporate the reviewers' suggested modifications and improvements.</rdfs:comment>
+	<rdfs:label xml:lang="en">peer reviewed</rdfs:label>
+	<rdfs:seeAlso rdf:resource="http://purl.org/spar/pso/reviewed"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/pso/accepted-for-publication">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/pso/PublicationStatus"/>
+	<rdfs:comment xml:lang="en">The status of a work (for example a document or a dataset) once it has been accepted for publication by a publisher or data repository.</rdfs:comment>
+	<rdfs:label xml:lang="en">accepted for publication</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pso"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/pso/anonymized">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/pso/PublicationStatus"/>
+	<rdfs:comment xml:lang="en">The status of a document or dataset that has been subjected to anonymization, so that individual persons, for example the authors and/or people that are the subjects described in the document or dataset, cannot be identified.</rdfs:comment>
+	<rdfs:label xml:lang="en">anonymized</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pso"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/pso/archived">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/pso/PublicationStatus"/>
+	<rdfs:comment xml:lang="en">The status of a work (for example a document or a dataset) that has been saved for long-term preservation in a physical or electronic archive.</rdfs:comment>
+	<rdfs:label xml:lang="en">archived</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pso"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/pso/catalogued">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/pso/PublicationStatus"/>
+	<rdfs:comment xml:lang="en">The status of a work (for example a document or a dataset) concerning which metadata has been stored in a physical or electronic catalogue.</rdfs:comment>
+	<rdfs:label xml:lang="en">catalogued</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pso"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/pso/closed-access">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/pso/PublicationStatus"/>
+	<rdfs:comment xml:lang="en">The status of a work (typically a private or secret paper or a confidential dataset) that is typically held unpublished in a 'dark' archive whose existence is unknown by the wider world, and that is only available to the owner or copyright holder of the asset.</rdfs:comment>
+	<rdfs:label xml:lang="en">closed access</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pso"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/pso/confidential">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/pso/PublicationStatus"/>
+	<rdfs:comment xml:lang="en">The status of a document containing information that must be kept confidential.</rdfs:comment>
+	<rdfs:label xml:lang="en">confidential</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pso"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/pso/copy-edited">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/pso/PublicationStatus"/>
+	<rdfs:comment xml:lang="en">The status of a document that has been subjected to copy editing, i.e. alterations to the text undertaken by someone other than the author that are designed to improve the formatting, style and accuracy of text, or to bring the text into the house style of the publisher (e.g. Americanization of British spelling), but that are not designed to alter the substance or meaning of the text.</rdfs:comment>
+	<rdfs:label xml:lang="en">copy-edited</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pso"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/pso/corrected">
+	<skos:inScheme rdf:resource="http://purl.org/spar/pso/PublicationStatus"/>
+	<rdfs:comment xml:lang="en">The status of a work (for example a document or a dataset) in which errors, that may have introduced by the author, by a publisher, or by some automated process, have been corrected.</rdfs:comment>
+	<rdfs:label xml:lang="en">corrected</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/pso/draft">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/pso/PublicationStatus"/>
+	<rdfs:comment xml:lang="en">The status of a work (for example a document or a dataset) prior to completion and publication.</rdfs:comment>
+	<rdfs:label xml:lang="en">draft</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pso"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/pso/embargoed">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/pso/PublicationStatus"/>
+	<rdfs:comment xml:lang="en">The status of a work that is subjected to an embargo, which means that the work cannot be published, or in the case of a press release that it cannot be reported on, until a particular date known as the embargo date.  For open-access journal articles, an embargoed article is one in which availability of the open-access version of the article is delayed by the publisher for a substantial embargo period, typically of six or twelve months, after subscription-access availability of the published work.  
+
+</rdfs:comment>
+	<rdfs:label xml:lang="en">embargoed</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pso"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/pso/enhanced">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/pso/PublicationStatus"/>
+	<rdfs:comment xml:lang="en">The status of a work (for example a document or a dataset) that has been updated or enhanced, for example by the provision of additional or supplementary material.</rdfs:comment>
+	<rdfs:label xml:lang="en">enhanced</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pso"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/pso/final-draft">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/pso/PublicationStatus"/>
+	<rdfs:comment xml:lang="en">The status of a pre-publication work (for example a document or a dataset) when in the authors' opinion it has been brought to a stage of development that renders it suitable for publication.</rdfs:comment>
+	<rdfs:label xml:lang="en">final draft</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pso"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/pso/gold-open-access">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/pso/PublicationStatus"/>
+	<rdfs:comment xml:lang="en">The status of a published work, typically a journal article, made available by the publisher on the publisher's own web site for third parties to read without payment of access or subscription fees.  Gold open access has the benefit that the article is findable where you expect it to be, but licensing restrictions may limit the possibilities for downloading, text mining, modification, re-publication or re-use of the published work.  Gold open-access publication typically involves payment by the author or his/her institution to the publisher of an article processing charge (aka an author publishing charge).  [See also: pso:open-access, pso:gratis-open-access, pso:libre-open-access, pso:green-open-access, pso:embargoed and pso:subscription-access.]</rdfs:comment>
+	<rdfs:label xml:lang="en">gold open access</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pso"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/pso/gratis-open-access">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/pso/PublicationStatus"/>
+	<rdfs:comment xml:lang="en">The status of a published work which is free to read on-line, in contrast to subscription-access works, but to which licensing restrictions apply, limiting the possibilities for downloading, text mining, modification, re-publication or re-use of the published work.  The term Gratis Open Access thus signifies absence of a price barrier to view.  While both imply ‘free’ (a potentially ambiguous word), Gratis Open Access equates to ‘free as in beer’ while Libre Open Access (q.v.) equates to ‘free as in speech’.  Gratis Open Access is thus a necessary but not a sufficient condition for true Libre Open Access.   Many ‘open access’ publications by commercial scholarly publishers are only Gratis Open Access, while almost all publications by ‘pure’ Open Access scholarly publishers are Libre Open Access. [See also: pso:open-access, pso:libre-open-access, pso:gold-open-access, pso:green-open-access, pso:embargoed and pso:subscription-access.]</rdfs:comment>
+	<rdfs:label xml:lang="en">gratis open access</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pso"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/pso/green-open-access">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/pso/PublicationStatus"/>
+	<rdfs:comment xml:lang="en">The status of a published work made available by the author, by self-archiving a version of the work for free and open public use in their institutional repository, in a central repository, or elsewhere, in parallel with publication of a subscription-access Version of Record of the work by a publisher.  The green open-access version of the work may be a preprint (the version of the article as first submitted for publication) or a postprint (the pre-publication version of the article after incorporation of authors’ responses to peer reviewers’ comments).  Its availability may have an embargo restriction imposed by the publisher of the subscription-access version of the work, that prevents the green open-access version from being freely available until some substantial time after publication of the subscription-access journal issue containing that article.  A green open-access work should be accompanied by a license explicitly defining usage rights, for example a Creative Commons Attribution License.  [See also: pso:open-access, pso:gratis-open-access, pso:libre-open-access, pso:gold-open-access, pso:embargoed and pso:subscription-access.]</rdfs:comment>
+	<rdfs:label xml:lang="en">green open access</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pso"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/pso/in-press">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/pso/PublicationStatus"/>
+	<rdfs:comment xml:lang="en">The status of a document after it has been accepted for publication and prior to its formal publication in print.  (Note that for many journal articles that are published electronically, this status rarely exists, since there is commonly no delay between acceptance and publication.)</rdfs:comment>
+	<rdfs:label xml:lang="en">in press</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pso"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/pso/initial-draft">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/pso/PublicationStatus"/>
+	<rdfs:comment xml:lang="en">The status of a pre-publication work (for example a document or a dataset) when in its initial stage of development.</rdfs:comment>
+	<rdfs:label xml:lang="en">initial draft</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pso"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/pso/intermediate-draft">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/pso/PublicationStatus"/>
+	<rdfs:comment xml:lang="en">The status of a pre-publication work (for example a document or a dataset) part-way through its development.</rdfs:comment>
+	<rdfs:label xml:lang="en">intermediate draft</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pso"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/pso/libre-open-access">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/pso/PublicationStatus"/>
+	<rdfs:comment xml:lang="en">The status of a published work which is both free to read on-line, and to which additional usage rights apply, for example the right to text mine, make derivative works, re-use and re-publish the published work, such rights frequently being defined by application of an explicit license such as a Creative Commons license.  [See also: pso:open-access, pso:gratis-open-access, pso:gold-open-access, pso:green-open-access, pso:embargoed and pso:subscription-access.]</rdfs:comment>
+	<rdfs:label xml:lang="en">libre open access</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pso"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/pso/non-confidential">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/pso/PublicationStatus"/>
+	<rdfs:comment xml:lang="en">The status of a document containing information that may be shared publicly.</rdfs:comment>
+	<rdfs:label xml:lang="en">non-confidential</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pso"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/pso/open-access">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/pso/PublicationStatus"/>
+	<rdfs:comment xml:lang="en">The status of a published work (typically a scholarly publication or a dataset) that is freely available via the Internet for third parties to read without payment of access or subscription fees, and (in the case of a work published under a full open-access license) that is freely available to download and reuse for any purposes including commercial ones, including modification of the original work, its integration with other material, and its re-publication, subject typically to a requirement that the original authors and the source of the original work are acknowledged in compliance with scholarly citation norms. [See also: pso:gratis-open-access, pso:libre-open-access, pso:gold-open-access, pso:green-open-access, pso:embargoed and pso:subscription-access.]</rdfs:comment>
+	<rdfs:label xml:lang="en">open access</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pso"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/pso/published">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/pso/PublicationStatus"/>
+	<rdfs:comment xml:lang="en">The status of material (for example a document or a dataset) that has been published, i.e. made available for people to access, read or use, either freely or for a purchase price or an access fee.</rdfs:comment>
+	<rdfs:label xml:lang="en">published</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pso"/>
+</rdf:Description>
+
+</rdf:RDF>

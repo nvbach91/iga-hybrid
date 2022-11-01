@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://purl.org/SemSur/">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/open_source">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://swrc.ontoware.org/ontology#carriedOutBy">
+	<rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+	<rdfs:domain rdf:resource="http://swrc.ontoware.org/ontology#Project"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/open_source">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://swrc.ontoware.org/ontology#carriedOutBy">
+	<rdfs:domain rdf:nodeID="t401197"/>
+	<rdfs:domain rdf:nodeID="t401198"/>
+	<rdfs:domain rdf:nodeID="t401199"/>
+	<rdfs:domain rdf:nodeID="t401200"/>
+	<rdfs:domain rdf:nodeID="t401201"/>
+	<rdfs:domain rdf:nodeID="t401202"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://swrc.ontoware.org/ontology#member">
+	<rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+	<rdfs:domain rdf:resource="http://purl.org/dc/terms/Agent"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:domain rdf:resource="http://schema.org/Person"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
+	<rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+	<rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+</rdf:Description>
+
+</rdf:RDF>

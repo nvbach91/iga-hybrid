@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/RatioScale">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/RankineScale">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/RatioScale"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/RatioScale">
+	<rdfs:label xml:lang="en">ratio scale</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/RankineScale">
+	<rdfs:label xml:lang="en">Rankine scale</rdfs:label>
+	<hasScale xmlns="http://www.ontology-of-units-of-measure.org/resource/om-2/" rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/KelvinScale"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/KelvinScale">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/RatioScale">
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/RankineScale">
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/KelvinScale">
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/RatioScale"/>
+	<rdfs:label xml:lang="en">Kelvin scale</rdfs:label>
+</rdf:Description>
+
+</rdf:RDF>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#Accessory">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#AC_Cable">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#Accessory"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#Accessory">
+	<rdfs:comment xml:lang="en">A subordinate or supplementary item; an adjunct.</rdfs:comment>
+	<rdfs:label xml:lang="en">Accessory</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#AC_Cable">
+	<rdfs:comment xml:lang="en">A net transfer of energy over a complete cycle of the alternating current waveform.</rdfs:comment>
+	<rdfs:label xml:lang="en">AC cable</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#hasAccessory">
+	<rdfs:range rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#Accessory"/>
+	<rdfs:label xml:lang="en">accessory</rdfs:label>
+	<rdfs:comment xml:lang="en">Defines subordinate or supplementary items.</rdfs:comment>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#Accessory">
+	<rdfs:isDefinedBy rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#AC_Cable">
+	<rdfs:isDefinedBy rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#AV_Cable">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#Accessory"/>
+	<rdfs:comment xml:lang="en">A cable to carry video and audio signals from a device, to a tv; in digital or analog format.</rdfs:comment>
+	<rdfs:label xml:lang="en">AV cable</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#DC_Cable">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#Accessory"/>
+	<rdfs:comment xml:lang="en">The mean amplitude of a waveform.</rdfs:comment>
+	<rdfs:label xml:lang="en">DC cable</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#Headphones">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#Accessory"/>
+	<rdfs:comment xml:lang="en">A pair of small loudspeakers, or less commonly a single speaker, with a way of holding them close to a user's ears and a means of connecting them to a signal source such as an audio amplifier, radio or CD player.</rdfs:comment>
+	<rdfs:label xml:lang="en">Headphones</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#IR_Remote">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#Accessory"/>
+	<rdfs:comment xml:lang="en">Remote control with a electromagnetic radiation whose wavelength is longer than that of visible light (400-700 nm), but shorter than that of terahertz radiation (3-300 µm) and microwaves (~30,000 µm). Infrared radiation spans roughly three orders of magnitude (750 nm and 1000 µm)</rdfs:comment>
+	<rdfs:label xml:lang="en">IR remote control</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#USB_Cable">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#Accessory"/>
+	<rdfs:comment xml:lang="en">A serial bus standard to connect devices to a host computer.</rdfs:comment>
+	<rdfs:label xml:lang="en">USB cable</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#VideoComponent_Cable">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#Accessory"/>
+	<rdfs:comment xml:lang="en">A video signal that has been split into two or more components.</rdfs:comment>
+	<rdfs:label xml:lang="en">Video component cable</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
+</rdf:Description>
+
+</rdf:RDF>

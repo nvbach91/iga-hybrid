@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="https://www.gleif.org/ontology/L2/">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.gleif.org/ontology/L2/RelationshipValidationDocumentsKind">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.gleif.org/ontology/L2/RelationshipValidationDocumentsKindAccountsFiling">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://www.gleif.org/ontology/L2/RelationshipValidationDocumentsKind"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.gleif.org/ontology/L2/RelationshipValidationDocumentsKind">
+	<rdfs:label>relationship validation documents kind</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.gleif.org/ontology/L2/RelationshipValidationDocumentsKindAccountsFiling">
+	<rdfs:label>accounts filing</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.gleif.org/ontology/L2/hasValidationDocuments">
+	<rdfs:range rdf:resource="https://www.gleif.org/ontology/L2/RelationshipValidationDocumentsKind"/>
+	<rdfs:domain rdf:resource="https://www.gleif.org/ontology/L2/LegalEntityRelationshipRecord"/>
+	<rdfs:label>has validation documents</rdfs:label>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.gleif.org/ontology/L2/RelationshipValidationDocumentsKind">
+	<rdfs:isDefinedBy rdf:resource="https://www.gleif.org/ontology/L2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.gleif.org/ontology/L2/RelationshipValidationDocumentsKindAccountsFiling">
+	<rdfs:isDefinedBy rdf:resource="https://www.gleif.org/ontology/L2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.gleif.org/ontology/L2/RelationshipValidationDocumentsKindContracts">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://www.gleif.org/ontology/L2/RelationshipValidationDocumentsKind"/>
+	<rdfs:label>contracts</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://www.gleif.org/ontology/L2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.gleif.org/ontology/L2/RelationshipValidationDocumentsKindOtherOfficialDocuments">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://www.gleif.org/ontology/L2/RelationshipValidationDocumentsKind"/>
+	<rdfs:label>other official documents</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://www.gleif.org/ontology/L2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.gleif.org/ontology/L2/RelationshipValidationDocumentsKindRegulatoryFiling">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://www.gleif.org/ontology/L2/RelationshipValidationDocumentsKind"/>
+	<rdfs:label>regulatory filing</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://www.gleif.org/ontology/L2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.gleif.org/ontology/L2/RelationshipValidationDocumentsKindSupportingDocuments">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://www.gleif.org/ontology/L2/RelationshipValidationDocumentsKind"/>
+	<rdfs:label>supporting documents</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://www.gleif.org/ontology/L2/"/>
+</rdf:Description>
+
+</rdf:RDF>

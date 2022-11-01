@@ -1,0 +1,985 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_middle_atmosphere_moles_of_molecular_hydrogen">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment>"tendency_of_X" means derivative of X with respect to time.  "middle_atmosphere_moles_of_X" means the total number of moles of X contained in the troposphere and stratosphere, i.e, summed over that part of the atmospheric column and over the entire globe.  The chemical formula of molecular hydrogen is H2.</rdfs:comment>
+	<rdfs:label>tendency of middle atmosphere moles of molecular hydrogen</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux">
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_middle_atmosphere_moles_of_molecular_hydrogen">
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux">
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_troposphere_moles_of_carbon_monoxide">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment>"tendency_of_X" means derivative of X with respect to time.  "troposphere_moles_of_X" means the total number of moles of X contained in the troposphere, i.e, summed over that part of the atmospheric column and over the entire globe.  The chemical formula of carbon monoxide is CO.</rdfs:comment>
+	<rdfs:label>tendency of troposphere moles of carbon monoxide</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_troposphere_moles_of_hcc140a">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment>"tendency_of_X" means derivative of X with respect to time.  "troposphere_moles_of_X" means the total number of moles of X contained in the troposphere, i.e, summed over that part of the atmospheric column and over the entire globe.  The chemical formula of HCC140a is CH3CCl3.  The IUPAC name for HCC140a is 1,1,1-trichloroethane.</rdfs:comment>
+	<rdfs:label>tendency of troposphere moles of hcc140a</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_troposphere_moles_of_hcfc22">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment>"tendency_of_X" means derivative of X with respect to time.  "troposphere_moles_of_X" means the total number of moles of X contained in the troposphere, i.e, summed over that part of the atmospheric column and over the entire globe.  The chemical formula of HCFC22 is CHClF2.  The IUPAC name for HCFC 22 is chloro-difluoro-methane.</rdfs:comment>
+	<rdfs:label>tendency of troposphere moles of hcfc22</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_moles_of_acetic_acid">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment> "tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. The chemical formula for acetic_acid is CH3COOH. The IUPAC name for acetic acid is ethanoic acid.</rdfs:comment>
+	<rdfs:label>tendency of atmosphere moles of acetic acid</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_moles_of_aceto_nitrile">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment> "tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. The chemical formula for aceto-nitrile is CH3CN. The IUPAC name for aceto-nitrile is ethanenitrile.</rdfs:comment>
+	<rdfs:label>tendency of atmosphere moles of aceto nitrile</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_moles_of_alpha_hexachlorocyclohexane">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment> "tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. The chemical formula for alpha_hexachlorocyclohexane is C6H6Cl6.</rdfs:comment>
+	<rdfs:label>tendency of atmosphere moles of alpha hexachlorocyclohexane</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_moles_of_alpha_pinene">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment> "tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. The chemical formula for alpha_pinene is C10H16. The IUPAC name for alpha-pinene is (1S,5S)-2,6,6-trimethylbicyclo[3.1.1]hept-2-ene.</rdfs:comment>
+	<rdfs:label>tendency of atmosphere moles of alpha pinene</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_moles_of_ammonia">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment> "tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. The chemical formula for ammonia is NH3.</rdfs:comment>
+	<rdfs:label>tendency of atmosphere moles of ammonia</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_moles_of_anthropogenic_nmvoc_expressed_as_carbon">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment> "tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. "nmvoc" means non methane volatile organic compounds. "Anthropogenic" means influenced, caused, or created by human activity.
+ The phrase 'expressed_as' is used in the construction A_expressed_as_B, where B is a chemical constituent of A. It means that the quantity indicated by the standard name is calculated solely with respect to the B contained in A, neglecting all other chemical constituents of A.</rdfs:comment>
+	<rdfs:label>tendency of atmosphere moles of anthropogenic nmvoc expressed as carbon</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_moles_of_atomic_bromine">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment> "tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. The chemical symbol for atomic bromine is Br.</rdfs:comment>
+	<rdfs:label>tendency of atmosphere moles of atomic bromine</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_moles_of_atomic_chlorine">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment> "tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. The chemical symbol for atomic chlorine is Cl.</rdfs:comment>
+	<rdfs:label>tendency of atmosphere moles of atomic chlorine</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_moles_of_atomic_nitrogen">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment> "tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. The chemical symbol for atomic nitrogen is N.</rdfs:comment>
+	<rdfs:label>tendency of atmosphere moles of atomic nitrogen</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_moles_of_benzene">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment> "tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. The chemical formula for benzene is C6H6.  Benzene is the simplest aromatic hydrocarbon and has a ring structure consisting of six carbon atoms joined by alternating single and double chemical bonds. Each carbon atom is additionally bonded to one hydrogen atom. There are standard names that refer to aromatic_compounds as a group, as well as those for individual species.</rdfs:comment>
+	<rdfs:label>tendency of atmosphere moles of benzene</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_moles_of_beta_pinene">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment> "tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. The chemical formula for beta_pinene is C10H16.  The IUPAC name for beta-pinene is (1S,5S)-6,6-dimethyl-2-methylenebicyclo[3.1.1]heptane.</rdfs:comment>
+	<rdfs:label>tendency of atmosphere moles of beta pinene</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_moles_of_biogenic_nmvoc_expressed_as_carbon">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment> "tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. "nmvoc" means non methane volatile organic compounds. "Biogenic" means influenced, caused, or created by natural processes.
+ The phrase 'expressed_as' is used in the construction A_expressed_as_B, where B is a chemical constituent of A. It means that the quantity indicated by the standard name is calculated solely with respect to the B contained in A, neglecting all other chemical constituents of A.</rdfs:comment>
+	<rdfs:label>tendency of atmosphere moles of biogenic nmvoc expressed as carbon</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_moles_of_bromine_chloride">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment> "tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. The chemical formula for bromine chloride is BrCl.</rdfs:comment>
+	<rdfs:label>tendency of atmosphere moles of bromine chloride</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_moles_of_bromine_monoxide">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment> "tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. The chemical formula for bromine monoxide is BrO.</rdfs:comment>
+	<rdfs:label>tendency of atmosphere moles of bromine monoxide</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_moles_of_bromine_nitrate">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment> "tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. The chemical formula for bromine nitrate is BrONO2.</rdfs:comment>
+	<rdfs:label>tendency of atmosphere moles of bromine nitrate</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_moles_of_brox_expressed_as_bromine">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment> "tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. "Brox"  describes a family of chemical species consisting of inorganic bromine compounds with the exception of  hydrogen bromide (HBr) and bromine nitrate (BrONO2). "Brox" is the term used in standard names for all species belonging to the family that are represented within a given model. The list of individual species that are included in a quantity with a group chemical standard name can vary between models.  Where possible, the data variable should be accompanied by a complete description of the species represented, for example, by using a comment attribute. "Inorganic bromine", sometimes referred to as Bry, describes a family of chemical species which result from the degradation of source gases containing bromine (halons, methyl bromide, VSLS) and natural inorganic bromine sources such as volcanoes, seasalt and other aerosols.  Standard names that use the term "inorganic_bromine" are used for quantities that contain all inorganic bromine species including HCl and ClONO2. The phrase 'expressed_as' is used in the construction A_expressed_as_B, where B is a chemical constituent of A. It means that the quantity indicated by the standard name is calculated solely with respect to the B contained in A, neglecting all other chemical constituents of A.</rdfs:comment>
+	<rdfs:label>tendency of atmosphere moles of brox expressed as bromine</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_moles_of_butane">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment> "tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. The chemical formula for butane is C4H10. Butane is a member of the group of hydrocarbons known as alkanes.  There are standard names for the alkane group as well as for some of the individual species.</rdfs:comment>
+	<rdfs:label>tendency of atmosphere moles of butane</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_moles_of_carbon_dioxide">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment> "tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. The chemical formula for carbon dioxide is CO2.</rdfs:comment>
+	<rdfs:label>tendency of atmosphere moles of carbon dioxide</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_moles_of_carbon_monoxide">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment>"tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere,i.e. summed over the atmospheric column and over the entire globe. The chemical formula ofcarbon monoxide is CO.</rdfs:comment>
+	<rdfs:label>tendency of atmosphere moles of carbon monoxide</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_moles_of_carbon_tetrachloride">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment>"tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere,i.e. summed over the atmospheric column and over the entire globe. The chemical formula ofcarbon tetrachloride is CCl4.</rdfs:comment>
+	<rdfs:label>tendency of atmosphere moles of carbon tetrachloride</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_moles_of_cfc11">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment>"tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere,i.e. summed over the atmospheric column and over the entire globe. The chemical formula ofCFC11 is CFCl3. The IUPAC name fof CFC11 is trichloro-fluoro-methane.</rdfs:comment>
+	<rdfs:label>tendency of atmosphere moles of cfc11</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_moles_of_cfc113">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment>"tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. Thechemical formula of CFC113 is CCl2FCClF2. The IUPAC name for CFC113 is 1,1,2-trichloro-1,2,2-trifluoro-ethane.</rdfs:comment>
+	<rdfs:label>tendency of atmosphere moles of cfc113</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_moles_of_cfc113a">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment> "tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. The chemical formula of CFC113a CCl3CF3.  The IUPAC name for CFC113a is 1,1,1-trichloro-2,2,2-trifluoro-ethane.</rdfs:comment>
+	<rdfs:label>tendency of atmosphere moles of cfc113a</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_moles_of_cfc114">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment>"tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere,i.e. summed over the atmospheric column and over the entire globe. The chemical formula ofCFC114 is CClF2CClF2. The IUPAC name for CFC114 is 1,2-dichloro-1,1,2,2-tetrafluoro-ethane.</rdfs:comment>
+	<rdfs:label>tendency of atmosphere moles of cfc114</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_moles_of_cfc115">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment>"tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. Thechemical formula of CFC115 is CClF2CF3. The IUPAC name for CFC115 is 1-chloro-1,1,2,2,2-pentafluoro-ethane.</rdfs:comment>
+	<rdfs:label>tendency of atmosphere moles of cfc115</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_moles_of_cfc12">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment>"tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. Thechemical formula for CFC12 is CF2Cl2.  The IUPAC name for CFC12 is dichloro-difluoro-methane.</rdfs:comment>
+	<rdfs:label>tendency of atmosphere moles of cfc12</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_moles_of_chlorine_dioxide">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment> "tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. The chemical formula for chlorine dioxide is OClO.</rdfs:comment>
+	<rdfs:label>tendency of atmosphere moles of chlorine dioxide</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_moles_of_chlorine_monoxide">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment> "tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. The chemical formula for chlorine monoxide is ClO.</rdfs:comment>
+	<rdfs:label>tendency of atmosphere moles of chlorine monoxide</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_moles_of_chlorine_nitrate">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment> "tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. The chemical formula for chlorine nitrate is ClONO2.</rdfs:comment>
+	<rdfs:label>tendency of atmosphere moles of chlorine nitrate</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_moles_of_clox_expressed_as_chlorine">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment> "tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. "Clox" describes a family of chemical species consisting of inorganic chlorine compounds with the exception of  hydrogen chloride (HCl) and chlorine nitrate (ClONO2). "Clox" is the term used in standard names for all species belonging to the family that are represented within a given model. The list of individual species that are included in a quantity with a group chemical standard name can vary between models.  Where possible, the data variable should be accompanied by a complete description of the species represented, for example, by using a comment attribute. "Inorganic chlorine", sometimes referred to as Cly, describes a family of chemical species which result from the degradation of source gases containing chlorine (CFCs, HCFCs, VSLS) and natural inorganic chlorine sources such as seasalt and other aerosols.   Standard names that use the term "inorganic_chlorine" are used for quantities that contain all inorganic chlorine species including HCl and ClONO2. The phrase 'expressed_as' is used in the construction A_expressed_as_B, where B is a chemical constituent of A. It means that the quantity indicated by the standard name is calculated solely with respect to the B contained in A, neglecting all other chemical constituents of A.</rdfs:comment>
+	<rdfs:label>tendency of atmosphere moles of clox expressed as chlorine</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_moles_of_dichlorine_peroxide">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment> "tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. The chemical formula for dichlorine peroxide is Cl2O2.</rdfs:comment>
+	<rdfs:label>tendency of atmosphere moles of dichlorine peroxide</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_moles_of_dimethyl_sulfide">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment> "tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. The chemical formula for dimethyl sulfide is (CH3)2S.  Dimethyl sulfide is sometimes referred to as DMS.</rdfs:comment>
+	<rdfs:label>tendency of atmosphere moles of dimethyl sulfide</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_moles_of_dinitrogen_pentoxide">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment> "tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. The chemical formula for dinitrogen pentoxide is N2O5.</rdfs:comment>
+	<rdfs:label>tendency of atmosphere moles of dinitrogen pentoxide</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_moles_of_ethane">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment> "tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. The chemical formula for ethane is C2H6. Ethane is a member of the group of hydrocarbons known as alkanes.  There are standard names for the alkane group as well as for some of the individual species.</rdfs:comment>
+	<rdfs:label>tendency of atmosphere moles of ethane</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_moles_of_ethanol">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment> "tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. The chemical formula for ethanol is C2H5OH.</rdfs:comment>
+	<rdfs:label>tendency of atmosphere moles of ethanol</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_moles_of_ethene">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment> "tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. The chemical formula for ethene is C2H4. Ethene is a member of the group of hydrocarbons known as alkenes.  There are standard names for the alkene group as well as for some of the individual species.</rdfs:comment>
+	<rdfs:label>tendency of atmosphere moles of ethene</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_moles_of_ethyne">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment> "tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. The chemical formula for ethyne is HC2H.  Ethyne is the IUPAC name for this species, which is also commonly known as acetylene.</rdfs:comment>
+	<rdfs:label>tendency of atmosphere moles of ethyne</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_moles_of_formaldehyde">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment> "tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. The chemical formula for formaldehyde is CH2O. The IUPAC name for formaldehyde is methanal.</rdfs:comment>
+	<rdfs:label>tendency of atmosphere moles of formaldehyde</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_moles_of_formic_acid">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment> "tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. The chemical formula for formic acid is HCOOH.  The IUPAC name for formic acid is methanoic acid.</rdfs:comment>
+	<rdfs:label>tendency of atmosphere moles of formic acid</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_moles_of_gaseous_divalent_mercury">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment> "tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. "Divalent mercury" means all compounds in which the mercury has two binding sites to other ion(s) in a salt or to other atom(s) in a molecule.</rdfs:comment>
+	<rdfs:label>tendency of atmosphere moles of gaseous divalent mercury</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_moles_of_gaseous_elemental_mercury">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment> "tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. The chemical symbol for mercury is Hg.</rdfs:comment>
+	<rdfs:label>tendency of atmosphere moles of gaseous elemental mercury</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_moles_of_halon1202">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment> "tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. The chemical formula for halon1202 is CBr2F2. The IUPAC name for halon1202 is dibromo-difluoro-methane.</rdfs:comment>
+	<rdfs:label>tendency of atmosphere moles of halon1202</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_moles_of_halon1211">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment> "tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. The chemical formula for halon1211 is CBrClF2. The IUPAC name for halon1211 is bromo-chloro-difluoro-methane.</rdfs:comment>
+	<rdfs:label>tendency of atmosphere moles of halon1211</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_moles_of_halon1301">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment> "tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. The chemical formula for halon1301 is CBrF3. The IUPAC name for halon1301 is bromo-trifluoro-methane.</rdfs:comment>
+	<rdfs:label>tendency of atmosphere moles of halon1301</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_moles_of_halon2402">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment> "tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. The chemical formula for halo2402 is C2Br2F4. The IUPAC name for halon2402 is 1,2-dibromo-1,1,2,2-tetrafluoro-ethane.</rdfs:comment>
+	<rdfs:label>tendency of atmosphere moles of halon2402</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_moles_of_hcc140a">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment> "tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. The chemical formula for hcc140a is CH3CCl3. The IUPAC name for hcc140a is 1,1,1-trichloro-ethane.</rdfs:comment>
+	<rdfs:label>tendency of atmosphere moles of hcc140a</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_moles_of_hcfc141b">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment> "tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. The chemical formula for HCFC141b is CH3CCl2F. The IUPAC name for HCFC141b is 1,1-dichloro-1-fluoroethane.</rdfs:comment>
+	<rdfs:label>tendency of atmosphere moles of hcfc141b</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_moles_of_hcfc142b">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment> "tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. The chemical formula for HCFC142b is CH3CClF2. The IUPAC name for HCFC142b is 1-chloro-1,1-difluoroethane.</rdfs:comment>
+	<rdfs:label>tendency of atmosphere moles of hcfc142b</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_moles_of_hcfc22">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment> "tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. The chemical formula for HCFC22 is CHClF2.  The IUPAC name for HCFC22 is chloro-difluoro-methane.</rdfs:comment>
+	<rdfs:label>tendency of atmosphere moles of hcfc22</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_moles_of_hexachlorobiphenyl">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment> "tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. The chemical formula for hexachlorobiphenyl is C12H4Cl6.  This structure of this species consists of two linked benzene rings, each of which is additionally bonded to three chlorine atoms.</rdfs:comment>
+	<rdfs:label>tendency of atmosphere moles of hexachlorobiphenyl</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_moles_of_hox_expressed_as_hydrogen">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment> "tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. "HOx" means a combination of two radical species containing hydrogen and oxygen: OH and HO2. The phrase 'expressed_as' is used in the construction A_expressed_as_B, where B is a chemical constituent of A. It means that the quantity indicated by the standard name is calculated solely with respect to the B contained in A, neglecting all other chemical constituents of A.</rdfs:comment>
+	<rdfs:label>tendency of atmosphere moles of hox expressed as hydrogen</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_moles_of_hydrogen_bromide">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment> "tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. The chemical formula for hydrogen bromide is HBr.</rdfs:comment>
+	<rdfs:label>tendency of atmosphere moles of hydrogen bromide</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_moles_of_hydrogen_chloride">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment> "tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. The chemical formula for hydrogen chloride is HCl.</rdfs:comment>
+	<rdfs:label>tendency of atmosphere moles of hydrogen chloride</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_moles_of_hydrogen_cyanide">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment> "tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. The chemical formula for hydrogen cyanide is HCN.</rdfs:comment>
+	<rdfs:label>tendency of atmosphere moles of hydrogen cyanide</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_moles_of_hydrogen_peroxide">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment> "tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. The chemical formula for hydrogen peroxide is H2O2.</rdfs:comment>
+	<rdfs:label>tendency of atmosphere moles of hydrogen peroxide</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_moles_of_hydroperoxyl_radical">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment> "tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. The chemical formula for the hydroperoxyl radical is HO2. In chemistry, a 'radical' is a highly reactive, and therefore shortlived, species.</rdfs:comment>
+	<rdfs:label>tendency of atmosphere moles of hydroperoxyl radical</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_moles_of_hydroxyl_radical">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment> "tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. The chemical formula for the hydroxyl radical is OH. In chemistry, a 'radical' is a highly reactive, and therefore shortlived, species.</rdfs:comment>
+	<rdfs:label>tendency of atmosphere moles of hydroxyl radical</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_moles_of_hypobromous_acid">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment> "tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. The chemical formula for hypobromous acid is HOBr.</rdfs:comment>
+	<rdfs:label>tendency of atmosphere moles of hypobromous acid</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_moles_of_hypochlorous_acid">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment> "tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. The chemical formula for hypochlorous acid is HOCl.</rdfs:comment>
+	<rdfs:label>tendency of atmosphere moles of hypochlorous acid</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_moles_of_inorganic_bromine">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment> "tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. "Inorganic bromine", sometimes referred to as Bry, describes a family of chemical species which result from the degradation of source gases containing bromine (halons, methyl bromide, VSLS) and natural inorganic bromine sources such as volcanoes, seasalt and other aerosols. "Inorganic bromine" is the term used in standard names for all species belonging to the family that are represented within a given model. The list of individual species that are included in a quantity having a group chemical standard name can vary between models.  Where possible, the data variable should be accompanied by a complete description of the species represented, for example, by using a comment attribute. Standard names that use the term "brox" are used for quantities that contain all inorganic bromine species except HBr and BrONO2.</rdfs:comment>
+	<rdfs:label>tendency of atmosphere moles of inorganic bromine</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_moles_of_inorganic_chlorine">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment> "tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. "Inorganic chlorine", sometimes referred to as Cly, describes a family of chemical species which result from the degradation of source gases containing chlorine (CFCs, HCFCs, VSLS) and natural inorganic chlorine sources such as seasalt and other aerosols. "Inorganic chlorine" is the term used in standard names for all species belonging to the family that are represented within a given model. The list of individual species that are included in a quantity having a group chemical standard name can vary between models.  Where possible, the data variable should be accompanied by a complete description of the species represented, for example, by using a comment attribute. Standard names that use the term "clox" are used for quantities that contain all inorganic chlorine species except HCl and ClONO2.</rdfs:comment>
+	<rdfs:label>tendency of atmosphere moles of inorganic chlorine</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_moles_of_isoprene">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment> "tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. The chemical formula for isoprene is CH2=C(CH3)CH=CH2. The IUPAC name for isoprene is 2-methyl-buta-1,3-diene. Isoprene is a member of the group of hydrocarbons known as terpenes.  There are standard names for the terpene group as well as for some of the individual species.</rdfs:comment>
+	<rdfs:label>tendency of atmosphere moles of isoprene</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_moles_of_limonene">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment> "tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. The chemical formula for limonene is C10H16. The IUPAC name for limonene is 1-methyl-4-prop-1-en-2-yl-cyclohexene. Limonene is a member of the group of hydrocarbons known as terpenes.  There are standard names for the terpene group as well as for some of the individual species.</rdfs:comment>
+	<rdfs:label>tendency of atmosphere moles of limonene</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_moles_of_methane">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment>"tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere,i.e. summed over the atmospheric column and over the entire globe. The chemical formula for methane is CH4. Methane is a member of the group of hydrocarbons known as alkanes.  Thereare standard names for the alkane group as well as for some of the individual species.</rdfs:comment>
+	<rdfs:label>tendency of atmosphere moles of methane</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_moles_of_methanol">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment> "tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. The chemical formula for methanol is CH3OH.</rdfs:comment>
+	<rdfs:label>tendency of atmosphere moles of methanol</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_moles_of_methyl_bromide">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment>"tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere,i.e. summed over the atmospheric column and over the entire globe. The chemical formula for methyl bromide is CH3Br. The IUPAC name for methyl bromide is bromomethane.</rdfs:comment>
+	<rdfs:label>tendency of atmosphere moles of methyl bromide</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_moles_of_methyl_chloride">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment>"tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X contained in the entire atmosphere, i.e, summed over the atmospheric column and over the entire globe.  The chemical formula of methyl chloride is CH3Cl. The IUPAC name for methyl chloride is chloromethane.</rdfs:comment>
+	<rdfs:label>tendency of atmosphere moles of methyl chloride</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_moles_of_methyl_hydroperoxide">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment> "tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. The chemical formula for methyl hydroperoxide is CH3OOH.</rdfs:comment>
+	<rdfs:label>tendency of atmosphere moles of methyl hydroperoxide</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_moles_of_methyl_peroxy_radical">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment> "tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. The chemical formula for methyl_peroxy_radical is CH3O2. In chemistry, a 'radical' is a highly reactive, and therefore shortlived, species.</rdfs:comment>
+	<rdfs:label>tendency of atmosphere moles of methyl peroxy radical</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_moles_of_molecular_hydrogen">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment>"tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X contained in the entire atmosphere, i.e, summed over the atmospheric column and over the entire globe.  The chemical formula of molecular hydrogen is H2.</rdfs:comment>
+	<rdfs:label>tendency of atmosphere moles of molecular hydrogen</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_moles_of_nitrate_radical">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment> "tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. The chemical formula for nitrate is NO3. In chemistry, a 'radical' is a highly reactive, and therefore shortlived, species.</rdfs:comment>
+	<rdfs:label>tendency of atmosphere moles of nitrate radical</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_troposphere_moles_of_methane">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment>"tendency_of_X" means derivative of X with respect to time.  "troposphere_moles_of_X" means the total number of moles of X contained in the troposphere, i.e, summed over that part of the atmospheric column and over the entire globe.  The chemical formula of methane is CH4. Methane is a member of the group of hydrocarbons known as alkanes.  There are standard names for the alkane group as well as for some of the individual species.</rdfs:comment>
+	<rdfs:label>tendency of troposphere moles of methane</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_troposphere_moles_of_methyl_bromide">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment>"tendency_of_X" means derivative of X with respect to time.  "troposphere_moles_of_X" means the total number of moles of X contained in the troposphere, i.e, summed over that part of the atmospheric column and over the entire globe.  The chemical formula of methyl bromide is CH3Br. The IUPAC name for methyl bromide is bromomethane.</rdfs:comment>
+	<rdfs:label>tendency of troposphere moles of methyl bromide</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_troposphere_moles_of_methyl_chloride">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment>"tendency_of_X" means derivative of X with respect to time.  "troposphere_moles_of_X" means the total number of moles of X contained in the troposphere, i.e, summed over that part of the atmospheric column and over the entire globe.  The chemical formula of methyl chloride is CH3Cl. The IUPAC name for methyl chloride is chloromethane.</rdfs:comment>
+	<rdfs:label>tendency of troposphere moles of methyl chloride</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_troposphere_moles_of_molecular_hydrogen">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment>"tendency_of_X" means derivative of X with respect to time.  "troposphere_moles_of_X" means the total number of moles of X contained in the troposphere, i.e, summed over that part of the atmospheric column and over the entire globe.  The chemical formula of molecular hydrogen is H2.</rdfs:comment>
+	<rdfs:label>tendency of troposphere moles of molecular hydrogen</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux">
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_moles_of_nitric_acid">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment> "tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. The chemical formula for nitric acid is HNO3.</rdfs:comment>
+	<rdfs:label>tendency of atmosphere moles of nitric acid</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_moles_of_nitric_acid_trihydrate_ambient_aerosol">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment> "Aerosol" means the suspended liquid or solid particles in air (except cloud droplets).  "Ambient aerosol" is aerosol that has taken up ambient water through hygroscopic growth. The extent of hygroscopic growth depends on the relative humidity and the composition of the aerosol. "tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. The chemical formula for nitric acid is HNO3. Nitric acid trihydrate, sometimes referred to as NAT, is a stable crystalline substance consisting of three molecules of water to one molecule of nitric acid.</rdfs:comment>
+	<rdfs:label>tendency of atmosphere moles of nitric acid trihydrate ambient aerosol</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_moles_of_nitrogen_dioxide">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment> "tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. The chemical formula for nitrogen dioxide is NO2.</rdfs:comment>
+	<rdfs:label>tendency of atmosphere moles of nitrogen dioxide</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_moles_of_nitrogen_monoxide">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment> "tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. The chemical formula for nitrogen monoxide is NO.</rdfs:comment>
+	<rdfs:label>tendency of atmosphere moles of nitrogen monoxide</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_moles_of_nitrous_acid">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment> "tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. The chemical formula for nitrous acid is HNO2.</rdfs:comment>
+	<rdfs:label>tendency of atmosphere moles of nitrous acid</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_moles_of_nitrous_oxide">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment>"tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X contained in the entire atmosphere, i.e, summed over the atmospheric column and over the entire globe.  The chemical formula of nitrous oxide is N2O.</rdfs:comment>
+	<rdfs:label>tendency of atmosphere moles of nitrous oxide</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_moles_of_nmvoc_expressed_as_carbon">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment> "tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. "nmvoc" means non methane volatile organic compounds. The phrase 'expressed_as' is used in the construction A_expressed_as_B, where B is a chemical constituent of A. It means that the quantity indicated by the standard name is calculated solely with respect to the B contained in A, neglecting all other chemical constituents of A.</rdfs:comment>
+	<rdfs:label>tendency of atmosphere moles of nmvoc expressed as carbon</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_moles_of_nox_expressed_as_nitrogen">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment> "tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. "Nox" means a combination of two radical species containing nitrogen and oxygen: NO+NO2. The phrase 'expressed_as' is used in the construction A_expressed_as_B, where B is a chemical constituent of A. It means that the quantity indicated by the standard name is calculated solely with respect to the B contained in A, neglecting all other chemical constituents of A.</rdfs:comment>
+	<rdfs:label>tendency of atmosphere moles of nox expressed as nitrogen</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_moles_of_noy_expressed_as_nitrogen">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment> "tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. "Noy" describes a family of chemical species. The family usually includes atomic nitrogen (N), nitrogen monoxide (NO), nitrogen dioxide (NO2), dinitrogen pentoxide (N2O5), nitric acid (HNO3), peroxynitric acid (HNO4), bromine nitrate (BrONO2) , chlorine nitrate (ClONO2) and organic nitrates (most notably peroxyacetyl nitrate, sometimes referred to as PAN, (CH3COO2NO2)). The list of individual species that are included in a quantity having a group chemical standard name can vary between models.  Where possible, the data variable should be accompanied by a complete description of the species represented, for example, by using a comment attribute. The phrase 'expressed_as' is used in the construction A_expressed_as_B, where B is a chemical constituent of A. It means that the quantity indicated by the standard name is calculated solely with respect to the B contained in A, neglecting all other chemical constituents of A.</rdfs:comment>
+	<rdfs:label>tendency of atmosphere moles of noy expressed as nitrogen</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_moles_of_ozone">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment> "tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. The chemical formula for ozone is O3.</rdfs:comment>
+	<rdfs:label>tendency of atmosphere moles of ozone</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_moles_of_peroxyacetyl_nitrate">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment> "tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. The chemical formula for peroxyacetyl nitrate, sometimes referred to as PAN, is CH3COO2NO2.  The IUPAC name for peroxyacetyl_nitrate is nitroethaneperoxoate.</rdfs:comment>
+	<rdfs:label>tendency of atmosphere moles of peroxyacetyl nitrate</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_moles_of_peroxynitric_acid">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment> "tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. The chemical formula for peroxynitric acid, sometimes referred to as PNA, is HO2NO2.</rdfs:comment>
+	<rdfs:label>tendency of atmosphere moles of peroxynitric acid</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_moles_of_propane">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment> "tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. The chemical formula for propane is C3H8. Propane is a member of the group of hydrocarbons known as alkanes.  There are standard names for the alkane group as well as for some of the individual species.</rdfs:comment>
+	<rdfs:label>tendency of atmosphere moles of propane</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_moles_of_propene">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment> "tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. The chemical formula for propene is C3H6. Propene is a member of the group of hydrocarbons known as alkenes.  There are standard names for the alkene group as well as for some of the individual species.</rdfs:comment>
+	<rdfs:label>tendency of atmosphere moles of propene</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_moles_of_radon">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment> "tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. The chemical symbol for radon is Rn.</rdfs:comment>
+	<rdfs:label>tendency of atmosphere moles of radon</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_moles_of_sulfate_dry_aerosol">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment> "Aerosol" means the suspended liquid or solid particles in air (except cloud droplets).  Aerosol takes up ambient water (a process known as hygroscopic growth) depending on the relative humidity and the composition of the aerosol. "Dry aerosol" means aerosol without water. "tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. The chemical formula for the sulfate anion is SO4(2-).</rdfs:comment>
+	<rdfs:label>tendency of atmosphere moles of sulfate dry aerosol</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_moles_of_sulfur_dioxide">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment> "tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. The chemical formula for sulfur dioxide is SO2.</rdfs:comment>
+	<rdfs:label>tendency of atmosphere moles of sulfur dioxide</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_moles_of_toluene">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment> "tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. The chemical formula for toluene is C6H5CH3.  Toluene has the same structure as benzene, except that one of the hydrogen atoms is replaced by a methyl group.  The systematic name for toluene is methylbenzene.</rdfs:comment>
+	<rdfs:label>tendency of atmosphere moles of toluene</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_moles_of_water_vapor">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment> "tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe.</rdfs:comment>
+	<rdfs:label>tendency of atmosphere moles of water vapor</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_atmosphere_moles_of_xylene">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment> "tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. The chemical formula for xylene is C6H4C2H6. In chemistry, xylene is a generic term for a group of three isomers of dimethylbenzene. The IUPAC names for the isomers are 1,2-dimethylbenzene, 1,3-dimethylbenzene and 1,4-dimethylbenzene. Xylene is an aromatic hydrocarbon. There are standard names that refer to aromatic_compounds as a group, as well as those for individual species.</rdfs:comment>
+	<rdfs:label>tendency of atmosphere moles of xylene</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_middle_atmosphere_moles_of_carbon_monoxide">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment>"tendency_of_X" means derivative of X with respect to time.  "middle_atmosphere_moles_of_X" means the total number of moles of X contained in the troposphere and stratosphere, i.e, summed over that part of the atmospheric column and over the entire globe.  The chemical formula of carbon monoxide is CO.</rdfs:comment>
+	<rdfs:label>tendency of middle atmosphere moles of carbon monoxide</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_middle_atmosphere_moles_of_hcc140a">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment>"tendency_of_X" means derivative of X with respect to time.  "middle_atmosphere_moles_of_X" means the total number of moles of X contained in the troposphere and stratosphere, i.e, summed over that part of the atmospheric column and over the entire globe.  The chemical formula of HCC140a is CH3CCl3.  The IUPAC name for HCC 140a is 1,1,1-trichloroethane.</rdfs:comment>
+	<rdfs:label>tendency of middle atmosphere moles of hcc140a</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_middle_atmosphere_moles_of_methane">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment>"tendency_of_X" means derivative of X with respect to time.  "middle_atmosphere_moles_of_X" means the total number of moles of X contained in the troposphere and stratosphere, i.e, summed over that part of the atmospheric column and over the entire globe.  The chemical formula of methane is CH4.</rdfs:comment>
+	<rdfs:label>tendency of middle atmosphere moles of methane</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_middle_atmosphere_moles_of_methyl_bromide">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment>"tendency_of_X" means derivative of X with respect to time.  "middle_atmosphere_moles_of_X" means the total number of moles of X contained in the troposphere and stratosphere, i.e, summed over that part of the atmospheric column and over the entire globe.  The chemical formula of methyl bromide is CH3Br.</rdfs:comment>
+	<rdfs:label>tendency of middle atmosphere moles of methyl bromide</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#tendency_of_middle_atmosphere_moles_of_methyl_chloride">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MolarFlux"/>
+	<rdfs:comment>"tendency_of_X" means derivative of X with respect to time.  "middle_atmosphere_moles_of_X" means the total number of moles of X contained in the troposphere and stratosphere, i.e, summed over that part of the atmospheric column and over the entire globe.  The chemical formula of methyl chloride is CH3Cl.</rdfs:comment>
+	<rdfs:label>tendency of middle atmosphere moles of methyl chloride</rdfs:label>
+	<generalQuantityKind xmlns="http://purl.oclc.org/NET/ssnx/qu/qu#" rdf:resource="http://purl.oclc.org/NET/ssnx/qu/quantity#molarFlux"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
+</rdf:Description>
+
+</rdf:RDF>

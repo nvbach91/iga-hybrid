@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://purl.org/olia/ubyCat.owl">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/olia/ubyCat.owl#SyntacticCategory">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/olia/ubyCat.owl#adjectivePhrase">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/olia/ubyCat.owl#SyntacticCategory"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/olia/ubyCat.owl#SyntacticCategory">
+	<rdfs:label>syntacticCategory</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/olia/ubyCat.owl#adjectivePhrase">
+	<rdfs:label>adjectivePhrase</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/olia/ubyCat.owl#hasSyntacticCategory">
+	<rdfs:range rdf:resource="http://purl.org/olia/ubyCat.owl#SyntacticCategory"/>
+	<rdfs:label>syntacticCategory</rdfs:label>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/olia/ubyCat.owl#SyntacticCategory">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/olia/ubyCat.owl#adjectivePhrase">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/olia/ubyCat.owl#adjectivePhrase_nounPhrase">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/olia/ubyCat.owl#SyntacticCategory"/>
+	<rdfs:label>adjectivePhrase_nounPhrase</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/olia/ubyCat.owl#adverbPhrase">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/olia/ubyCat.owl#SyntacticCategory"/>
+	<rdfs:label>adverbPhrase</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/olia/ubyCat.owl#declarativeClause">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/olia/ubyCat.owl#SyntacticCategory"/>
+	<rdfs:label>declarativeClause</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/olia/ubyCat.owl#expletive">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/olia/ubyCat.owl#SyntacticCategory"/>
+	<rdfs:label>expletive</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/olia/ubyCat.owl#nounPhrase">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/olia/ubyCat.owl#SyntacticCategory"/>
+	<rdfs:label>nounPhrase</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/olia/ubyCat.owl#prepositionalPhrase">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/olia/ubyCat.owl#SyntacticCategory"/>
+	<rdfs:label>prepositionalPhrase</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/olia/ubyCat.owl#reflexive">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/olia/ubyCat.owl#SyntacticCategory"/>
+	<rdfs:label>reflexive</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/olia/ubyCat.owl#subordinateClause">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/olia/ubyCat.owl#SyntacticCategory"/>
+	<rdfs:label>subordinateClause</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/olia/ubyCat.owl#verbPhrase">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/olia/ubyCat.owl#SyntacticCategory"/>
+	<rdfs:label>verbPhrase</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+</rdf:Description>
+
+</rdf:RDF>

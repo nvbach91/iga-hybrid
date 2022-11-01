@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://w3id.org/vcb/fel#">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://w3id.org/vcb/fel#PartOfSpeechClass">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://w3id.org/vcb/fel#AdjectivePoS">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://w3id.org/vcb/fel#PartOfSpeechClass"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://w3id.org/vcb/fel#PartOfSpeechClass">
+	<rdfs:comment xml:lang="en">This meta-class gathers classes that divide annotations according to the part-of-speech of their mention.</rdfs:comment>
+	<rdfs:label xml:lang="en">Part Of Speech Class</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://w3id.org/vcb/fel#AdjectivePoS">
+	<rdfs:comment>This class gathers all the adjective mentions. For instance, the mention 'red' in the phrase 'red car' can be linked to wiki:Red; other examples include 'French', 'Democratic', 'his', etc.</rdfs:comment>
+	<rdfs:label xml:lang="en">Adjective</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://w3id.org/vcb/fel#PartOfSpeechClass">
+	<rdfs:isDefinedBy rdf:resource="http://w3id.org/vcb/fel#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://w3id.org/vcb/fel#AdjectivePoS">
+	<rdfs:isDefinedBy rdf:resource="http://w3id.org/vcb/fel#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://w3id.org/vcb/fel#AdverbPoS">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://w3id.org/vcb/fel#PartOfSpeechClass"/>
+	<rdfs:comment>This class gathers all the Adverb mentions. For instance, 'comercially' could be associated to wiki:Commerce</rdfs:comment>
+	<rdfs:label xml:lang="en">Adverb</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://w3id.org/vcb/fel#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://w3id.org/vcb/fel#NounPhrasePoS">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://w3id.org/vcb/fel#PartOfSpeechClass"/>
+	<rdfs:comment>This class gathers all the noun-phrase mentions. It is further divided into singular and plural noun-phrase mentions.</rdfs:comment>
+	<rdfs:label xml:lang="en">Noun Phrase PoS</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://w3id.org/vcb/fel#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://w3id.org/vcb/fel#PluralNounPhrasePoS">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://w3id.org/vcb/fel#PartOfSpeechClass"/>
+	<rdfs:comment xml:lang="en">This class gathers all the plural noun-phrase mentions. For instance, 'political parties' may refer to wiki:Political_party.</rdfs:comment>
+	<rdfs:label xml:lang="en">Plural Noun Phrase PoS</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://w3id.org/vcb/fel#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://w3id.org/vcb/fel#SingularNounPhrasePoS">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://w3id.org/vcb/fel#PartOfSpeechClass"/>
+	<rdfs:comment xml:lang="en">This class gathers all the singular noun-phrase mentions, including 'documentary', 'Germany', etc.</rdfs:comment>
+	<rdfs:label xml:lang="en">Singular Noun Phrase PoS</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://w3id.org/vcb/fel#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://w3id.org/vcb/fel#VerbPoS">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://w3id.org/vcb/fel#PartOfSpeechClass"/>
+	<rdfs:comment xml:lang="en">This class gathers all the verb mentions. For instance the verb mention 'assassinated' may link to wiki:Assassination.</rdfs:comment>
+	<rdfs:label xml:lang="en">Verb PoS</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://w3id.org/vcb/fel#"/>
+</rdf:Description>
+
+</rdf:RDF>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://rhizomik.net/ontologies/copyrightonto.owl">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rhizomik.net/ontologies/copyrightonto.owl#Aim">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rhizomik.net/ontologies/copyrightonto.owl#education">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rhizomik.net/ontologies/copyrightonto.owl#Aim"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rhizomik.net/ontologies/copyrightonto.owl#Aim">
+	<rdfs:comment xml:lang="en">The motivation of an action.</rdfs:comment>
+	<rdfs:label xml:lang="en">Aim</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rhizomik.net/ontologies/copyrightonto.owl#education">
+	<rdfs:label xml:lang="en">education</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rhizomik.net/ontologies/copyrightonto.owl#Aim">
+	<rdfs:isDefinedBy rdf:resource="http://rhizomik.net/ontologies/copyrightonto.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rhizomik.net/ontologies/copyrightonto.owl#education">
+	<rdfs:isDefinedBy rdf:resource="http://rhizomik.net/ontologies/copyrightonto.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rhizomik.net/ontologies/copyrightonto.owl#information">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rhizomik.net/ontologies/copyrightonto.owl#Aim"/>
+	<rdfs:label xml:lang="en">information</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rhizomik.net/ontologies/copyrightonto.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rhizomik.net/ontologies/copyrightonto.owl#legal">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rhizomik.net/ontologies/copyrightonto.owl#Aim"/>
+	<rdfs:label xml:lang="en">legal</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rhizomik.net/ontologies/copyrightonto.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rhizomik.net/ontologies/copyrightonto.owl#non-commercial">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rhizomik.net/ontologies/copyrightonto.owl#Aim"/>
+	<rdfs:label xml:lang="en">non-commercial</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rhizomik.net/ontologies/copyrightonto.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rhizomik.net/ontologies/copyrightonto.owl#parody">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rhizomik.net/ontologies/copyrightonto.owl#Aim"/>
+	<rdfs:label xml:lang="en">parody</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rhizomik.net/ontologies/copyrightonto.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rhizomik.net/ontologies/copyrightonto.owl#private">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rhizomik.net/ontologies/copyrightonto.owl#Aim"/>
+	<rdfs:label xml:lang="en">private</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rhizomik.net/ontologies/copyrightonto.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rhizomik.net/ontologies/copyrightonto.owl#research">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rhizomik.net/ontologies/copyrightonto.owl#Aim"/>
+	<rdfs:label xml:lang="en">research</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rhizomik.net/ontologies/copyrightonto.owl"/>
+</rdf:Description>
+
+</rdf:RDF>

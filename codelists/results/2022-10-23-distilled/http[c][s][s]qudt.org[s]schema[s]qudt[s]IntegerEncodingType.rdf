@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://qudt.org/schema/qudt">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://qudt.org/schema/qudt/IntegerEncodingType">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://qudt.org/schema/qudt/LongUnsignedIntegerEncoding">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://qudt.org/schema/qudt/IntegerEncodingType"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://qudt.org/schema/qudt/IntegerEncodingType">
+	<rdfs:comment>The encoding scheme for integer types</rdfs:comment>
+	<rdfs:label>Integer Encoding</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://qudt.org/schema/qudt/LongUnsignedIntegerEncoding">
+	<rdfs:label>Long Unsigned Integer Encoding</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://qudt.org/schema/qudt/IntegerEncodingType">
+	<rdfs:isDefinedBy rdf:resource="http://qudt.org/schema/qudt"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://qudt.org/schema/qudt/LongUnsignedIntegerEncoding">
+	<rdfs:isDefinedBy rdf:resource="http://qudt.org/schema/qudt"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://qudt.org/schema/qudt/ShortSignedIntegerEncoding">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://qudt.org/schema/qudt/IntegerEncodingType"/>
+	<rdfs:label>Short Signed Integer Encoding</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://qudt.org/schema/qudt"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://qudt.org/schema/qudt/ShortUnsignedIntegerEncoding">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://qudt.org/schema/qudt/IntegerEncodingType"/>
+	<rdfs:label>Short Unsigned Integer Encoding</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://qudt.org/schema/qudt"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://qudt.org/schema/qudt/SignedIntegerEncoding">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://qudt.org/schema/qudt/IntegerEncodingType"/>
+	<rdfs:label>Signed Integer Encoding</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://qudt.org/schema/qudt"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://qudt.org/schema/qudt/UnsignedIntegerEncoding">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://qudt.org/schema/qudt/IntegerEncodingType"/>
+	<rdfs:label>Unsigned Integer Encoding</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://qudt.org/schema/qudt"/>
+</rdf:Description>
+
+</rdf:RDF>

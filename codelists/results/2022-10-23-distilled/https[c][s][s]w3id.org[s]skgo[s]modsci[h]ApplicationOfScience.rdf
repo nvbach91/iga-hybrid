@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="https://w3id.org/skgo/modsci#">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/skgo/modsci#ApplicationOfScience">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/skgo/modsci#Biochip">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/skgo/modsci#ApplicationOfScience"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/skgo/modsci#ApplicationOfScience">
+	<rdfs:comment>An application of science is any use of scientific knowledge for a specific purpose, whether to do more science; to design a product, process, or medical treatment; to develop a new technology; or to predict the impacts of human actions.</rdfs:comment>
+	<rdfs:label>Application of science</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/skgo/modsci#hasApplication">
+	<rdfs:range rdf:resource="https://w3id.org/skgo/modsci#ApplicationOfScience"/>
+	<rdfs:domain rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/skgo/modsci#ApplicationOfScience">
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/skgo/modsci#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/skgo/modsci#Biochip">
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/skgo/modsci#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/skgo/modsci#Biosensors">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/skgo/modsci#ApplicationOfScience"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/skgo/modsci#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/skgo/modsci#PsychiatricDrugs">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/skgo/modsci#ApplicationOfScience"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/skgo/modsci#"/>
+</rdf:Description>
+
+</rdf:RDF>

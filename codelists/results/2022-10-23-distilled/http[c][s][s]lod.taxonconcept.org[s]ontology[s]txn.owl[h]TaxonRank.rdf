@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#TaxonRank">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#RankSuperkingdom">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#TaxonRank"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#TaxonRank">
+	<rdfs:label>TaxonRank</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#RankSuperkingdom">
+	<rdfs:label>Rank Superkingdom</rdfs:label>
+	<skos:broader rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#RankSubdomain"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#RankSubdomain">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#TaxonRank">
+	<rdfs:isDefinedBy rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#RankSuperkingdom">
+	<rdfs:isDefinedBy rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#RankSubdomain">
+	<rdfs:isDefinedBy rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#RankFamily">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#TaxonRank"/>
+	<rdfs:label>Rank Family</rdfs:label>
+	<skos:narrower rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#RankSubfamily"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#RankSubfamily">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#RankFamily">
+	<rdfs:isDefinedBy rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#RankSubfamily">
+	<rdfs:isDefinedBy rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#RankDivision">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#TaxonRank"/>
+	<rdfs:label>Rank Division</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#RankSubdivision">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#TaxonRank"/>
+	<rdfs:label>Rank Subdivision</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#RankSuperdivision">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#TaxonRank"/>
+	<rdfs:label>Rank Superdivision</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#RankSubkingdom">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#TaxonRank"/>
+	<rdfs:label>Rank Subkingdom</rdfs:label>
+	<skos:narrower rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#RankInfrakingdom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#RankInfrakingdom">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#RankSubkingdom">
+	<rdfs:isDefinedBy rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#RankInfrakingdom">
+	<rdfs:isDefinedBy rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#RankSuperphylum">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#TaxonRank"/>
+	<rdfs:label>Rank Superphylum</rdfs:label>
+	<skos:broader rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#RankInfrakingdom"/>
+	<rdfs:isDefinedBy rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#RankParvorder">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#TaxonRank"/>
+	<rdfs:label>Rank Parvorder</rdfs:label>
+	<skos:broader rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#RankInfraorder"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#RankInfraorder">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#RankParvorder">
+	<rdfs:isDefinedBy rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#RankInfraorder">
+	<rdfs:isDefinedBy rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#RankSuborder">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#TaxonRank"/>
+	<rdfs:label>Rank Suborder</rdfs:label>
+	<skos:narrower rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#RankInfraorder"/>
+	<rdfs:isDefinedBy rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#RankSubkingdom">
+	<skos:broader rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#RankKingdom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#RankKingdom">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdfs:isDefinedBy rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#RankSuperkingdom">
+	<skos:narrower rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#RankKingdom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#RankSuborder">
+	<skos:broader rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#RankOrder"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#RankOrder">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdfs:isDefinedBy rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#RankSubclass">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#TaxonRank"/>
+	<rdfs:label>Rank Subclass</rdfs:label>
+	<skos:broader rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#RankClass"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#RankClass">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#RankSubclass">
+	<rdfs:isDefinedBy rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#RankClass">
+	<rdfs:isDefinedBy rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#RankSuperclass">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#TaxonRank"/>
+	<rdfs:label>Rank Superclass</rdfs:label>
+	<skos:narrower rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#RankClass"/>
+	<rdfs:isDefinedBy rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#RankSubdomain">
+	<skos:inScheme rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#TaxonRank"/>
+	<rdfs:label>Rank Subdomain</rdfs:label>
+	<skos:broader rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#RankDomain"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#RankDomain">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdfs:isDefinedBy rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#RankSubfamily">
+	<skos:inScheme rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#TaxonRank"/>
+	<rdfs:label>Rank Subfamily</rdfs:label>
+	<skos:broader rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#RankFamily"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#RankSuperfamily">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#TaxonRank"/>
+	<rdfs:label>Rank Superfamily</rdfs:label>
+	<skos:narrower rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#RankFamily"/>
+	<rdfs:isDefinedBy rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#RankSubgenus">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#TaxonRank"/>
+	<rdfs:label>Rank Subgenus</rdfs:label>
+	<skos:broader rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#RankGenus"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#RankGenus">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#RankSubgenus">
+	<rdfs:isDefinedBy rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#RankGenus">
+	<rdfs:isDefinedBy rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#RankTribe">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#TaxonRank"/>
+	<rdfs:label>Rank Tribe</rdfs:label>
+	<skos:narrower rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#RankGenus"/>
+	<rdfs:isDefinedBy rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#RankSubclass">
+	<skos:narrower rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#RankInfraclass"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#RankInfraclass">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdfs:isDefinedBy rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#RankSuperorder">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#TaxonRank"/>
+	<rdfs:label>Rank Superorder</rdfs:label>
+	<skos:broader rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#RankInfraclass"/>
+	<rdfs:isDefinedBy rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#RankTribe">
+	<skos:broader rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#RankSubfamily"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#RankGenus">
+	<skos:inScheme rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#TaxonRank"/>
+	<rdfs:label>Rank Genus</rdfs:label>
+	<skos:narrower rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#RankSubgenus"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#RankSpecies">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#TaxonRank"/>
+	<rdfs:label>Rank Species</rdfs:label>
+	<skos:broader rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#RankSubgenus"/>
+	<rdfs:isDefinedBy rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#RankInfrakingdom">
+	<skos:inScheme rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#TaxonRank"/>
+	<rdfs:label>Rank Infrakingdom</rdfs:label>
+	<skos:broader rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#RankSubkingdom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#RankKingdom">
+	<skos:inScheme rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#TaxonRank"/>
+	<rdfs:label>Rank Kingdom</rdfs:label>
+	<skos:narrower rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#RankSubkingdom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#RankInfraorder">
+	<skos:inScheme rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#TaxonRank"/>
+	<rdfs:label>Rank Infraorder</rdfs:label>
+	<skos:broader rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#RankSuborder"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#RankOrder">
+	<skos:inScheme rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#TaxonRank"/>
+	<rdfs:label>Rank Order</rdfs:label>
+	<skos:narrower rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#RankSuborder"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#RankSpecies">
+	<skos:narrower rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#RankSubpecies"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#RankSubpecies">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdfs:isDefinedBy rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#RankPhylum">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#TaxonRank"/>
+	<rdfs:label>Rank Phylum</rdfs:label>
+	<skos:narrower rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#RankSubphylum"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#RankSubphylum">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#RankPhylum">
+	<rdfs:isDefinedBy rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#RankSubphylum">
+	<rdfs:isDefinedBy rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#RankSuperclass">
+	<skos:broader rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#RankSubphylum"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#RankClass">
+	<skos:inScheme rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#TaxonRank"/>
+	<rdfs:label>Rank Class</rdfs:label>
+	<skos:broader rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#RankSuperclass"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#RankSubphylum">
+	<skos:inScheme rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#TaxonRank"/>
+	<rdfs:label>Rank Subphylum</rdfs:label>
+	<skos:narrower rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#RankSuperclass"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#RankFamily">
+	<skos:broader rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#RankSuperfamily"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#RankParvorder">
+	<skos:narrower rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#RankSuperfamily"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#RankKingdom">
+	<skos:broader rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#RankSuperkingdom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#RankSubdomain">
+	<skos:narrower rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#RankSuperkingdom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#RankInfraclass">
+	<skos:inScheme rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#TaxonRank"/>
+	<rdfs:label>Rank Infraclass</rdfs:label>
+	<skos:narrower rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#RankSuperorder"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#RankOrder">
+	<skos:broader rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#RankSuperorder"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#RankInfrakingdom">
+	<skos:narrower rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#RankSuperphylum"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#RankPhylum">
+	<skos:broader rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#RankSuperphylum"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#RankGenus">
+	<skos:broader rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#RankTribe"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#RankSubfamily">
+	<skos:narrower rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#RankTribe"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#RankSuperorder">
+	<skos:narrower rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#RankOrder"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#RankInfraorder">
+	<skos:narrower rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#RankParvorder"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#RankSuperfamily">
+	<skos:broader rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#RankParvorder"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#RankSubphylum">
+	<skos:broader rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#RankPhylum"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#RankSuperphylum">
+	<skos:narrower rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#RankPhylum"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#RankSubgenus">
+	<skos:narrower rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#RankSpecies"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#RankSubpecies">
+	<skos:inScheme rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#TaxonRank"/>
+	<rdfs:label>Rank Subpecies</rdfs:label>
+	<skos:broader rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#RankSpecies"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#RankSubspecificAggregate">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#TaxonRank"/>
+	<rdfs:label>Rank SubspecificAggregate</rdfs:label>
+	<skos:broader rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#RankSpecies"/>
+	<rdfs:isDefinedBy rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#RankVariety">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#TaxonRank"/>
+	<rdfs:label>Rank Variety</rdfs:label>
+	<skos:broader rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#RankSpecies"/>
+	<rdfs:isDefinedBy rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#RankClass">
+	<skos:narrower rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#RankSubclass"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#RankInfraclass">
+	<skos:broader rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#RankSubclass"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#RankDomain">
+	<skos:inScheme rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#TaxonRank"/>
+	<rdfs:label>Rank Domain</rdfs:label>
+	<skos:narrower rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#RankSubdomain"/>
+</rdf:Description>
+
+</rdf:RDF>

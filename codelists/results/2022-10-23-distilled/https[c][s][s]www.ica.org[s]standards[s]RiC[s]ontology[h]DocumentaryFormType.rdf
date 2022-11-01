@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType">
+	<rdfs:comment xml:lang="en">Categorization of the document with respect to its extrinsic and
+            intrinsic elements that together communicate its content, administrative and documentary
+            context, and authority</rdfs:comment>
+	<rdfs:label xml:lang="en">Documentary Form Type</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord">
+	<rdfs:label xml:lang="en">Authority record</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#hasDocumentaryFormType">
+	<rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+	<rdfs:domain rdf:nodeID="t423686"/>
+	<rdfs:label xml:lang="en">has documentary form type</rdfs:label>
+	<rdfs:comment xml:lang="en">Connects a Record or Record Part to its Documentary Form
+            Type.</rdfs:comment>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType">
+	<rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord">
+	<rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#FindingAid">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+	<rdfs:label xml:lang="en">Finding aid</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#hasOrHadAllMembersWithDocumentaryFormType">
+	<rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+	<rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
+	<rdfs:label xml:lang="en">has of had all members with documentary form type</rdfs:label>
+	<rdfs:comment xml:lang="en">Connects a Record Set and a Documentary Form Type that
+            categorizes all the Records or Record Parts that are or were included in the Record
+            Set.</rdfs:comment>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#hasOrHadSomeMemberswithDocumentaryFormType">
+	<rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+	<rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
+	<rdfs:label xml:lang="en">has or had some members with documentary form type</rdfs:label>
+	<rdfs:comment xml:lang="en">Connects a Record Set and a Documentary Form Type that
+            categorizes some of the Records or Record Parts that are or were included in the Record
+            Set.</rdfs:comment>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+</rdf:RDF>

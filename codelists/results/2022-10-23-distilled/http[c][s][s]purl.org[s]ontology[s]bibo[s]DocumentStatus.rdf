@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://vivoweb.org/ontology/core">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/DocumentStatus">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/accepted">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/ontology/bibo/DocumentStatus"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/DocumentStatus">
+	<rdfs:comment xml:lang="en">The status of the publication of a document.</rdfs:comment>
+	<rdfs:label>Document Status</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/accepted">
+	<rdfs:label>accepted</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/status">
+	<rdfs:range rdf:resource="http://purl.org/ontology/bibo/DocumentStatus"/>
+	<rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<rdfs:label>status</rdfs:label>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/DocumentStatus">
+	<rdfs:isDefinedBy rdf:resource="http://vivoweb.org/ontology/core"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/accepted">
+	<rdfs:isDefinedBy rdf:resource="http://vivoweb.org/ontology/core"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/draft">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/ontology/bibo/DocumentStatus"/>
+	<rdfs:label>draft</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://vivoweb.org/ontology/core"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/peerReviewed">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/ontology/bibo/DocumentStatus"/>
+	<rdfs:label>peer reviewed</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://vivoweb.org/ontology/core"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/published">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/ontology/bibo/DocumentStatus"/>
+	<rdfs:label>published</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://vivoweb.org/ontology/core"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/rejected">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/ontology/bibo/DocumentStatus"/>
+	<rdfs:label>rejected</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://vivoweb.org/ontology/core"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/unpublished">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/ontology/bibo/DocumentStatus"/>
+	<rdfs:label>unpublished</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://vivoweb.org/ontology/core"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vivoweb.org/ontology/core#inPress">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/ontology/bibo/DocumentStatus"/>
+	<rdfs:label>in press</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://vivoweb.org/ontology/core"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vivoweb.org/ontology/core#invited">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/ontology/bibo/DocumentStatus"/>
+	<rdfs:label>invited</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://vivoweb.org/ontology/core"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vivoweb.org/ontology/core#submitted">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/ontology/bibo/DocumentStatus"/>
+	<rdfs:label>submitted</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://vivoweb.org/ontology/core"/>
+</rdf:Description>
+
+</rdf:RDF>

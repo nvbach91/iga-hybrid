@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://rdfs.co/bevon/">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdfs.co/bevon/BeverageCan">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdfs.co/bevon/container/330mlBeverageCan">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdfs.co/bevon/BeverageCan"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdfs.co/bevon/BeverageCan">
+	<rdfs:comment xml:lang="en">
+    Beverage cans are made of aluminium (75% of worldwide production) or
+    tin-plated steel (25% worldwide production).
+    </rdfs:comment>
+	<rdfs:label xml:lang="en">Beverage Can</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdfs.co/bevon/container/330mlBeverageCan">
+	<rdfs:label xml:lang="en">330ml Beverage Can</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdfs.co/bevon/BeverageCan">
+	<rdfs:isDefinedBy rdf:resource="http://rdfs.co/bevon/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdfs.co/bevon/container/330mlBeverageCan">
+	<rdfs:isDefinedBy rdf:resource="http://rdfs.co/bevon/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdfs.co/bevon/container/355mlBeverageCan">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdfs.co/bevon/BeverageCan"/>
+	<rdfs:label xml:lang="en">355ml Beverage Can</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdfs.co/bevon/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdfs.co/bevon/container/440mlBeverageCan">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdfs.co/bevon/BeverageCan"/>
+	<rdfs:label xml:lang="en">440ml Beverage Can</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdfs.co/bevon/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdfs.co/bevon/container/500mlBeverageCan">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdfs.co/bevon/BeverageCan"/>
+	<rdfs:label xml:lang="en">500ml Beverage Can</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdfs.co/bevon/"/>
+</rdf:Description>
+
+</rdf:RDF>

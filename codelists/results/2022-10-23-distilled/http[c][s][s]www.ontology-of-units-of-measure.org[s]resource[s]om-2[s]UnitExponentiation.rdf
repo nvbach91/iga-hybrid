@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/UnitExponentiation">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/second-AngleSquared">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/UnitExponentiation"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/UnitExponentiation">
+	<rdfs:label xml:lang="en">unit exponentiation</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/second-AngleSquared">
+	<rdfs:label xml:lang="en">second (angle) squared</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/UnitExponentiation">
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/second-AngleSquared">
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/second-TimeSquared">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/UnitExponentiation"/>
+	<rdfs:label xml:lang="en">second squared</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/second-TimeToThePower-2">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/UnitExponentiation"/>
+	<rdfs:label xml:lang="en">second to the power -2</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/cubicMetre">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/UnitExponentiation"/>
+	<rdfs:comment xml:lang="en">Cubic metre is a unit of volume defined as the volume of a cube whose sides measure exactly one metre.</rdfs:comment>
+	<rdfs:label xml:lang="en">cubic metre</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/reciprocalMetre">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/UnitExponentiation"/>
+	<rdfs:comment xml:lang="en">Reciprocal metre is a unit of wavenumber defined as 1 divided by metre.</rdfs:comment>
+	<rdfs:label xml:lang="en">reciprocal metre</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/squareMetre">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/UnitExponentiation"/>
+	<rdfs:comment xml:lang="en">Square metre is a unit of area defined as the area of a square whose sides measure exactly one metre.</rdfs:comment>
+	<rdfs:label xml:lang="en">square metre</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/cubicKiloparsec">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/UnitExponentiation"/>
+	<rdfs:label xml:lang="en">cubic kiloparsec</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/cubicParsec">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/UnitExponentiation"/>
+	<rdfs:label xml:lang="en">cubic parsec</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/degreeSquared">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/UnitExponentiation"/>
+	<rdfs:label xml:lang="en">degree squared</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/reciprocalAtmosphere-Standard">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/UnitExponentiation"/>
+	<rdfs:label xml:lang="en">reciprocal atmosphere (standard)</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/reciprocalCubicCentimetre">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/UnitExponentiation"/>
+	<rdfs:label xml:lang="en">reciprocal cubic centimetre</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/reciprocalCubicMetre">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/UnitExponentiation"/>
+	<rdfs:label xml:lang="en">reciprocal cubic metre</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/reciprocalCubicParsec">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/UnitExponentiation"/>
+	<rdfs:label xml:lang="en">reciprocal cubic parsec</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/reciprocalDay">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/UnitExponentiation"/>
+	<rdfs:label xml:lang="en">reciprocal day</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/reciprocalDegreeCelsius">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/UnitExponentiation"/>
+	<rdfs:label xml:lang="en">reciprocal degree Celsius</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/reciprocalDegreeCelsiusDay">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/UnitExponentiation"/>
+	<rdfs:label xml:lang="en">reciprocal degree Celsius day</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/reciprocalGram">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/UnitExponentiation"/>
+	<rdfs:label xml:lang="en">reciprocal gram</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/reciprocalHenry">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/UnitExponentiation"/>
+	<rdfs:label xml:lang="en">reciprocal henry</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/reciprocalHour">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/UnitExponentiation"/>
+	<rdfs:label xml:lang="en">reciprocal hour</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/reciprocalKelvin">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/UnitExponentiation"/>
+	<rdfs:label xml:lang="en">reciprocal kelvin</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/reciprocalMinute-Time">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/UnitExponentiation"/>
+	<rdfs:label xml:lang="en">reciprocal minute</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/reciprocalPartsPerMillionPerYear">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/UnitExponentiation"/>
+	<rdfs:label xml:lang="en">reciprocal parts per million</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/reciprocalPascalSecond-Time">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/UnitExponentiation"/>
+	<rdfs:label xml:lang="en">reciprocal pascal second</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/reciprocalSecond-Time">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/UnitExponentiation"/>
+	<rdfs:label xml:lang="en">reciprocal second</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/reciprocalSquareCentimetre">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/UnitExponentiation"/>
+	<rdfs:label xml:lang="en">reciprocal square centimetre</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/reciprocalSquareMetre">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/UnitExponentiation"/>
+	<rdfs:label xml:lang="en">reciprocal square metre</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/reciprocalWatt">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/UnitExponentiation"/>
+	<rdfs:label xml:lang="en">reciprocal watt</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/reciprocalYear">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/UnitExponentiation"/>
+	<rdfs:label xml:lang="en">reciprocal year</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+</rdf:RDF>

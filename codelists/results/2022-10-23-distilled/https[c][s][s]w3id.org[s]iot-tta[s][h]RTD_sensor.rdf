@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="https://w3id.org/iot-tta/">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/iot-tta/#RTD_sensor">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/iot-tta/#RTD3">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/iot-tta/#RTD_sensor"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/iot-tta/#RTD_sensor">
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RTD sensors of an industrial oven.</rdfs:comment>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RTD_sensor</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/iot-tta/#RTD3">
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rtdSensor3 (Individual): an RTD_sensor with Object property assertions (heat), Data property assertions (provideHeat, hasAccuracy)</rdfs:comment>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rtdSensor3</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/iot-tta/#RTD_sensor">
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/iot-tta/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/iot-tta/#RTD3">
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/iot-tta/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/iot-tta/#RTD4">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/iot-tta/#RTD_sensor"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rtdSensor4 (Individual): an RTD_sensor with Object property assertions (heat), Data property assertions (provideHeat, hasAccuracy)</rdfs:comment>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rtdSensor4</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/iot-tta/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/iot-tta/#RTD5">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/iot-tta/#RTD_sensor"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rtdSensor5 (Individual): an RTD_sensor with Object property assertions (heat)</rdfs:comment>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rtdSensor5</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/iot-tta/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/iot-tta/#RTDsensor1">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/iot-tta/#RTD_sensor"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rtdSensor1 (Individual): an RTD_sensor with Object property assertions (heat), Data property assertions (provideHeat, hasAccuracy)</rdfs:comment>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rtdSensor1</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/iot-tta/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/iot-tta/#RTDsensor2">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/iot-tta/#RTD_sensor"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rtdSensor2 (Individual): an RTD_sensor with Object property assertions (heat), Data property assertions (provideHeat, hasAccuracy)</rdfs:comment>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rtdSensor2</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/iot-tta/"/>
+</rdf:Description>
+
+</rdf:RDF>

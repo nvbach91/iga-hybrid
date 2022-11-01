@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="https://vocab.eccenca.com/pubsub/">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://vocab.eccenca.com/pubsub/SubscriptionState">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://vocab.eccenca.com/pubsub/SUBSCRIPTION_ACTIVE">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://vocab.eccenca.com/pubsub/SubscriptionState"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://vocab.eccenca.com/pubsub/SubscriptionState">
+	<rdfs:comment xml:lang="en">A state of a subscription.</rdfs:comment>
+	<rdfs:label xml:lang="en">subscription state</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://vocab.eccenca.com/pubsub/SUBSCRIPTION_ACTIVE">
+	<rdfs:comment xml:lang="en">Indicates that a subscription is valided and verified.</rdfs:comment>
+	<rdfs:label xml:lang="en">active</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://vocab.eccenca.com/pubsub/state">
+	<rdfs:range rdf:resource="https://vocab.eccenca.com/pubsub/SubscriptionState"/>
+	<rdfs:domain rdf:resource="https://vocab.eccenca.com/pubsub/Subscription"/>
+	<rdfs:label xml:lang="en">has subscription state</rdfs:label>
+	<rdfs:comment xml:lang="en">The state of a subscription.</rdfs:comment>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://vocab.eccenca.com/pubsub/SubscriptionState">
+	<rdfs:isDefinedBy rdf:resource="https://vocab.eccenca.com/pubsub/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://vocab.eccenca.com/pubsub/SUBSCRIPTION_ACTIVE">
+	<rdfs:isDefinedBy rdf:resource="https://vocab.eccenca.com/pubsub/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://vocab.eccenca.com/pubsub/SUBSCRIPTION_CANCELED">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://vocab.eccenca.com/pubsub/SubscriptionState"/>
+	<rdfs:comment xml:lang="en">Indicates that a susbcription was canceled by the subscriber.</rdfs:comment>
+	<rdfs:label xml:lang="en">canceled</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://vocab.eccenca.com/pubsub/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://vocab.eccenca.com/pubsub/SUBSCRIPTION_DENIED">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://vocab.eccenca.com/pubsub/SubscriptionState"/>
+	<rdfs:comment xml:lang="en">Indicates that a subscription was denied by a publisher.</rdfs:comment>
+	<rdfs:label xml:lang="en">denied</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://vocab.eccenca.com/pubsub/"/>
+</rdf:Description>
+
+</rdf:RDF>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://xmlns.com/foaf/0.1/">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Class">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Document">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:comment>A document.</rdfs:comment>
+	<rdfs:label>Document</rdfs:label>
+	<owl:disjointWith rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Class">
+	<rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Document">
+	<rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization">
+	<rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:comment>A person.</rdfs:comment>
+	<rdfs:label>Person</rdfs:label>
+	<owl:disjointWith rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+	<rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization">
+	<skos:inScheme rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:comment>An organization.</rdfs:comment>
+	<rdfs:label>Organization</rdfs:label>
+	<owl:disjointWith rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Project">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:comment>A project (a collective endeavour of some kind).</rdfs:comment>
+	<rdfs:label>Project</rdfs:label>
+	<owl:disjointWith rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Document">
+	<owl:disjointWith rdf:resource="http://xmlns.com/foaf/0.1/Project"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person">
+	<owl:disjointWith rdf:resource="http://xmlns.com/foaf/0.1/Project"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Group">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:comment>A class of Agents.</rdfs:comment>
+	<rdfs:label>Group</rdfs:label>
+	<rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Agent">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Group">
+	<rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Agent">
+	<rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization">
+	<rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person">
+	<rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Image">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:comment>An image.</rdfs:comment>
+	<rdfs:label>Image</rdfs:label>
+	<rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
+	<rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization">
+	<owl:disjointWith rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://xmlns.com/foaf/0.1/PersonalProfileDocument">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:comment>A personal profile RDF document.</rdfs:comment>
+	<rdfs:label>PersonalProfileDocument</rdfs:label>
+	<rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
+	<rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Project">
+	<owl:disjointWith rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://xmlns.com/foaf/0.1/OnlineChatAccount">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:comment>An online chat account.</rdfs:comment>
+	<rdfs:label>Online Chat Account</rdfs:label>
+	<rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/OnlineAccount"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://xmlns.com/foaf/0.1/OnlineAccount">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://xmlns.com/foaf/0.1/OnlineChatAccount">
+	<rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://xmlns.com/foaf/0.1/OnlineAccount">
+	<rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://xmlns.com/foaf/0.1/OnlineEcommerceAccount">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:comment>An online e-commerce account.</rdfs:comment>
+	<rdfs:label>Online E-commerce Account</rdfs:label>
+	<rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/OnlineAccount"/>
+	<rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://xmlns.com/foaf/0.1/OnlineGamingAccount">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:comment>An online gaming account.</rdfs:comment>
+	<rdfs:label>Online Gaming Account</rdfs:label>
+	<rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/OnlineAccount"/>
+	<rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Agent">
+	<skos:inScheme rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:comment>An agent (eg. person, group, software or physical artifact).</rdfs:comment>
+	<rdfs:label>Agent</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://xmlns.com/foaf/0.1/LabelProperty">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:comment>A foaf:LabelProperty is any RDF property with texual values that serve as labels.</rdfs:comment>
+	<rdfs:label>Label Property</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://xmlns.com/foaf/0.1/OnlineAccount">
+	<skos:inScheme rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:comment>An online account.</rdfs:comment>
+	<rdfs:label>Online Account</rdfs:label>
+</rdf:Description>
+
+</rdf:RDF>

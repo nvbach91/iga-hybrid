@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="https://www.gleif.org/ontology/L1/">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.gleif.org/ontology/L1/ValidationSourceKind">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.gleif.org/ontology/L1/ValidationSourceKindEntitySuppliedOnly">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://www.gleif.org/ontology/L1/ValidationSourceKind"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.gleif.org/ontology/L1/ValidationSourceKind">
+	<rdfs:label>LEI validation source kind</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.gleif.org/ontology/L1/ValidationSourceKindEntitySuppliedOnly">
+	<rdfs:label>entity supplied only</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.gleif.org/ontology/L1/hasValidationSources">
+	<rdfs:range rdf:resource="https://www.gleif.org/ontology/L1/ValidationSourceKind"/>
+	<rdfs:label>has validation sources</rdfs:label>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.gleif.org/ontology/L1/ValidationSourceKind">
+	<rdfs:isDefinedBy rdf:resource="https://www.gleif.org/ontology/L1/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.gleif.org/ontology/L1/ValidationSourceKindEntitySuppliedOnly">
+	<rdfs:isDefinedBy rdf:resource="https://www.gleif.org/ontology/L1/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.gleif.org/ontology/L1/ValidationSourceKindFullyCorroborated">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://www.gleif.org/ontology/L1/ValidationSourceKind"/>
+	<rdfs:label>fully corroborated</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://www.gleif.org/ontology/L1/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.gleif.org/ontology/L1/ValidationSourceKindPartiallyCorroborated">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://www.gleif.org/ontology/L1/ValidationSourceKind"/>
+	<rdfs:label>partially corroborated</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://www.gleif.org/ontology/L1/"/>
+</rdf:Description>
+
+</rdf:RDF>

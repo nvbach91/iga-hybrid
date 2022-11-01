@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Region">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#BeaujolaisRegion">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Region"/>
+	<locatedIn xmlns="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#" rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#FrenchRegion"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#FrenchRegion">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#adjacentRegion">
+	<rdfs:range rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Region"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Region"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Region">
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#BeaujolaisRegion">
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#FrenchRegion">
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#BordeauxRegion">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Region"/>
+	<locatedIn xmlns="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#" rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#FrenchRegion"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#BourgogneRegion">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Region"/>
+	<locatedIn xmlns="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#" rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#FrenchRegion"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#LoireRegion">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Region"/>
+	<locatedIn xmlns="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#" rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#FrenchRegion"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#SancerreRegion">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Region"/>
+	<locatedIn xmlns="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#" rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#LoireRegion"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#ToursRegion">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Region"/>
+	<locatedIn xmlns="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#" rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#LoireRegion"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#MargauxRegion">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Region"/>
+	<locatedIn xmlns="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#" rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#MedocRegion"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#MedocRegion">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#MargauxRegion">
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#MedocRegion">
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#PauillacRegion">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Region"/>
+	<locatedIn xmlns="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#" rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#MedocRegion"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#ChiantiRegion">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Region"/>
+	<locatedIn xmlns="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#" rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#ItalianRegion"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#ItalianRegion">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#ChiantiRegion">
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#ItalianRegion">
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#AnjouRegion">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Region"/>
+	<locatedIn xmlns="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#" rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#LoireRegion"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#MuscadetRegion">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Region"/>
+	<locatedIn xmlns="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#" rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#LoireRegion"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#SouthAustraliaRegion">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Region"/>
+	<locatedIn xmlns="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#" rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#AustralianRegion"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#AustralianRegion">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#SouthAustraliaRegion">
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#AustralianRegion">
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#MedocRegion">
+	<skos:inScheme rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Region"/>
+	<locatedIn xmlns="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#" rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#BordeauxRegion"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#MendocinoRegion">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Region"/>
+	<adjacentRegion xmlns="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#" rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#SonomaRegion"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#SonomaRegion">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#MendocinoRegion">
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#SonomaRegion">
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#CentralTexasRegion">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Region"/>
+	<locatedIn xmlns="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#" rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#TexasRegion"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#TexasRegion">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#CentralTexasRegion">
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#TexasRegion">
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#CaliforniaRegion">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Region"/>
+	<locatedIn xmlns="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#" rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#USRegion"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#USRegion">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#CaliforniaRegion">
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#USRegion">
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#TexasRegion">
+	<skos:inScheme rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Region"/>
+	<locatedIn xmlns="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#" rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#USRegion"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#AustralianRegion">
+	<skos:inScheme rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Region"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#FrenchRegion">
+	<skos:inScheme rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Region"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#GermanyRegion">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Region"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#ItalianRegion">
+	<skos:inScheme rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Region"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#NewZealandRegion">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Region"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#PortugalRegion">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Region"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#USRegion">
+	<skos:inScheme rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Region"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#SauterneRegion">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Region"/>
+	<locatedIn xmlns="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#" rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#BordeauxRegion"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#locatedIn">
+	<rdfs:range rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Region"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#SauterneRegion">
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#adjacentRegion">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#StEmilionRegion">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Region"/>
+	<locatedIn xmlns="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#" rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#BordeauxRegion"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#CotesDOrRegion">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Region"/>
+	<locatedIn xmlns="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#" rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#BourgogneRegion"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#MeursaultRegion">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Region"/>
+	<locatedIn xmlns="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#" rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#BourgogneRegion"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#ArroyoGrandeRegion">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Region"/>
+	<locatedIn xmlns="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#" rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#CaliforniaRegion"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#CentralCoastRegion">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Region"/>
+	<locatedIn xmlns="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#" rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#CaliforniaRegion"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#EdnaValleyRegion">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Region"/>
+	<locatedIn xmlns="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#" rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#CaliforniaRegion"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#MendocinoRegion">
+	<locatedIn xmlns="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#" rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#CaliforniaRegion"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#NapaRegion">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Region"/>
+	<locatedIn xmlns="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#" rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#CaliforniaRegion"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#SantaBarbaraRegion">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Region"/>
+	<locatedIn xmlns="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#" rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#CaliforniaRegion"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#SantaCruzMountainsRegion">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Region"/>
+	<locatedIn xmlns="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#" rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#CaliforniaRegion"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#SonomaRegion">
+	<skos:inScheme rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Region"/>
+	<locatedIn xmlns="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#" rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#CaliforniaRegion"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#AlsaceRegion">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Region"/>
+	<locatedIn xmlns="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#" rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#FrenchRegion"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#locatedIn">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+</rdf:Description>
+
+</rdf:RDF>

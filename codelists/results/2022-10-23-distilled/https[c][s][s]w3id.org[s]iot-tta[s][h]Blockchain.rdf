@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="https://w3id.org/iot-tta/">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/iot-tta/#Blockchain">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/iot-tta/#Blockchain_algorithm">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/iot-tta/#Blockchain"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/iot-tta/#Blockchain">
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Blockchain is a promising technology for securing IoT data over a network. Blockchain has distributed capabilities for processing transactions and tracking assets in a business network.</rdfs:comment>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Blockchain</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/iot-tta/#Blockchain_algorithm">
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blockchain_algorithm (Individual): of Blockchain type with Object property assertions (hasProblem)</rdfs:comment>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blockchain_algorithm</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/iot-tta/#Blockchain">
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/iot-tta/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/iot-tta/#Blockchain_algorithm">
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/iot-tta/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/iot-tta/#Data_stream_continue">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/iot-tta/#Blockchain"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">data_stream_continue (Individual): of Blockchain type with Object property assertions (hasProblem)</rdfs:comment>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">data_stream_continue</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/iot-tta/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/iot-tta/#Smart_contracts">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/iot-tta/#Blockchain"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">smart_contracts (Individual): of Blockchain type with Object property assertions (hasSecurity)</rdfs:comment>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">smart_contracts</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/iot-tta/"/>
+</rdf:Description>
+
+</rdf:RDF>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://lod.nl.go.kr/ontology/">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.nl.go.kr/ontology/PublicationStatusType">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.nl.go.kr/resource/pst_c">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://lod.nl.go.kr/ontology/PublicationStatusType"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.nl.go.kr/ontology/PublicationStatusType">
+	<rdfs:label xml:lang="en">Publication status type</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.nl.go.kr/resource/pst_c">
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">c</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.nl.go.kr/ontology/typeOfPublicationStatus">
+	<rdfs:range rdf:resource="http://lod.nl.go.kr/ontology/PublicationStatusType"/>
+	<rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Collection"/>
+	<rdfs:label xml:lang="en">type of publication status</rdfs:label>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.nl.go.kr/ontology/PublicationStatusType">
+	<rdfs:isDefinedBy rdf:resource="http://lod.nl.go.kr/ontology/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.nl.go.kr/resource/pst_c">
+	<rdfs:isDefinedBy rdf:resource="http://lod.nl.go.kr/ontology/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.nl.go.kr/resource/pst_d">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://lod.nl.go.kr/ontology/PublicationStatusType"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">d</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://lod.nl.go.kr/ontology/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.nl.go.kr/resource/pst_s">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://lod.nl.go.kr/ontology/PublicationStatusType"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">s</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://lod.nl.go.kr/ontology/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.nl.go.kr/resource/pst_u">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://lod.nl.go.kr/ontology/PublicationStatusType"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">u</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://lod.nl.go.kr/ontology/"/>
+</rdf:Description>
+
+</rdf:RDF>

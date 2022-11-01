@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://ns.cerise-project.nl/energy/def/cim-smartgrid">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ns.cerise-project.nl/energy/def/cim-smartgrid#AmiBillingReadyKind">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ns.cerise-project.nl/energy/def/cim-smartgrid#AmiBillingReadyKind.amiCapable">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://ns.cerise-project.nl/energy/def/cim-smartgrid#AmiBillingReadyKind"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ns.cerise-project.nl/energy/def/cim-smartgrid#AmiBillingReadyKind">
+	<rdfs:comment>Lifecycle states of the metering installation at a usage point with respect to readiness for billing via advanced metering infrastructure reads.</rdfs:comment>
+	<rdfs:label>AmiBillingReadyKind</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ns.cerise-project.nl/energy/def/cim-smartgrid#AmiBillingReadyKind.amiCapable">
+	<rdfs:comment>Usage point is equipped with an AMI capable meter that is not yet currently equipped with a communications module.</rdfs:comment>
+	<rdfs:label>amiCapable</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ns.cerise-project.nl/energy/def/cim-smartgrid#AmiBillingReadyKind">
+	<rdfs:isDefinedBy rdf:resource="http://ns.cerise-project.nl/energy/def/cim-smartgrid"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ns.cerise-project.nl/energy/def/cim-smartgrid#AmiBillingReadyKind.amiCapable">
+	<rdfs:isDefinedBy rdf:resource="http://ns.cerise-project.nl/energy/def/cim-smartgrid"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ns.cerise-project.nl/energy/def/cim-smartgrid#AmiBillingReadyKind.amiDisabled">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://ns.cerise-project.nl/energy/def/cim-smartgrid#AmiBillingReadyKind"/>
+	<rdfs:comment>Usage point is equipped with an AMI capable meter; however, the AMI functionality has been disabled or is not being used.</rdfs:comment>
+	<rdfs:label>amiDisabled</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://ns.cerise-project.nl/energy/def/cim-smartgrid"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ns.cerise-project.nl/energy/def/cim-smartgrid#AmiBillingReadyKind.billingApproved">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://ns.cerise-project.nl/energy/def/cim-smartgrid#AmiBillingReadyKind"/>
+	<rdfs:comment>Usage point is equipped with an operating AMI capable meter and accuracy has been certified for billing purposes.</rdfs:comment>
+	<rdfs:label>billingApproved</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://ns.cerise-project.nl/energy/def/cim-smartgrid"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ns.cerise-project.nl/energy/def/cim-smartgrid#AmiBillingReadyKind.enabled">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://ns.cerise-project.nl/energy/def/cim-smartgrid#AmiBillingReadyKind"/>
+	<rdfs:comment>Usage point is equipped with an AMI capable meter having communications capability.</rdfs:comment>
+	<rdfs:label>enabled</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://ns.cerise-project.nl/energy/def/cim-smartgrid"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ns.cerise-project.nl/energy/def/cim-smartgrid#AmiBillingReadyKind.nonAmi">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://ns.cerise-project.nl/energy/def/cim-smartgrid#AmiBillingReadyKind"/>
+	<rdfs:comment>Usage point is equipped with a non AMI capable meter.</rdfs:comment>
+	<rdfs:label>nonAmi</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://ns.cerise-project.nl/energy/def/cim-smartgrid"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ns.cerise-project.nl/energy/def/cim-smartgrid#AmiBillingReadyKind.nonMetered">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://ns.cerise-project.nl/energy/def/cim-smartgrid#AmiBillingReadyKind"/>
+	<rdfs:comment>Usage point is not currently equipped with a meter.</rdfs:comment>
+	<rdfs:label>nonMetered</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://ns.cerise-project.nl/energy/def/cim-smartgrid"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ns.cerise-project.nl/energy/def/cim-smartgrid#AmiBillingReadyKind.operable">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://ns.cerise-project.nl/energy/def/cim-smartgrid#AmiBillingReadyKind"/>
+	<rdfs:comment>Usage point is equipped with an AMI capable meter that is functioning and communicating with the AMI network.</rdfs:comment>
+	<rdfs:label>operable</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://ns.cerise-project.nl/energy/def/cim-smartgrid"/>
+</rdf:Description>
+
+</rdf:RDF>

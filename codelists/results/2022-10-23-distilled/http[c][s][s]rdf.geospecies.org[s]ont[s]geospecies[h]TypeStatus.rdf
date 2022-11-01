@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies#TypeStatus">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies#TypeStatus_hapantotype">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#TypeStatus"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies#TypeStatus">
+	<rdfs:label>TypeStatus</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies#TypeStatus_hapantotype">
+	<rdfs:label>TypeStatus_hapantotype</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies#hasTypeStatus">
+	<rdfs:range rdf:resource="http://rdf.geospecies.org/ont/geospecies#TypeStatus"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+	<rdfs:label>hasTypeStatus</rdfs:label>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies#TypeStatus">
+	<rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies#TypeStatus_hapantotype">
+	<rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies#TypeStatus_holotype">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#TypeStatus"/>
+	<rdfs:label>TypeStatus_holotype</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies#TypeStatus_lectotype">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#TypeStatus"/>
+	<rdfs:label>TypeStatus_lectotype</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies#TypeStatus_neotype">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#TypeStatus"/>
+	<rdfs:label>TypeStatus_neotype</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies#TypeStatus_paralectotype">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#TypeStatus"/>
+	<rdfs:label>TypeStatus_paralectotype</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies#TypeStatus_paratype">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#TypeStatus"/>
+	<rdfs:label>TypeStatus_paratype</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies#TypeStatus_syntype">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#TypeStatus"/>
+	<rdfs:label>TypeStatus_syntype</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies#TypeStatus_varitype">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#TypeStatus"/>
+	<rdfs:label>TypeStatus_varitype</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+</rdf:Description>
+
+</rdf:RDF>

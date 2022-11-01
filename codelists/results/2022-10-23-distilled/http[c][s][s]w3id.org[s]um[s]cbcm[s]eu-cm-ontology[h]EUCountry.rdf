@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#EUCountry">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#malta">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#EUCountry"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#EUCountry">
+	<rdfs:comment xml:lang="en">A country which forms part of the European Union. The European Union is a conglomeration of European countries whose governance structures agree to abide with common political and economic criteria to improve efficiency of goods and services trading as well as movement and migration of inhabitants between these countries</rdfs:comment>
+	<rdfs:label>EU country</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#malta">
+	<rdfs:label xml:lang="en">Malta</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#EUCountry">
+	<rdfs:isDefinedBy rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#malta">
+	<rdfs:isDefinedBy rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology"/>
+	<rdfs:label xml:lang="en">Melita</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#netherlands">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#EUCountry"/>
+	<rdfs:label xml:lang="en">Holland</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology"/>
+	<rdfs:label xml:lang="en">Netherlands</rdfs:label>
+	<rdfs:label xml:lang="en">The Netherlands</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#poland">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#EUCountry"/>
+	<rdfs:label xml:lang="en">Poland</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology"/>
+	<rdfs:label xml:lang="en">Republic of Poland</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#portugal">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#EUCountry"/>
+	<rdfs:label xml:lang="en">Portugal</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology"/>
+	<rdfs:label xml:lang="en">Portuguese Republic</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#romania">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#EUCountry"/>
+	<rdfs:label xml:lang="en">Romania</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#slovakia">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#EUCountry"/>
+	<rdfs:label xml:lang="en">Slovak Republic</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology"/>
+	<rdfs:label xml:lang="en">Slovakia</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#spain">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#EUCountry"/>
+	<rdfs:isDefinedBy rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#sweden">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#EUCountry"/>
+	<rdfs:isDefinedBy rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#unitedkingdom">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#EUCountry"/>
+	<rdfs:isDefinedBy rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#slovenia">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#EUCountry"/>
+	<rdfs:isDefinedBy rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#austria">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#EUCountry"/>
+	<rdfs:label xml:lang="en">Austria</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#belgium">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#EUCountry"/>
+	<rdfs:label xml:lang="en">Belgium</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#bulgaria">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#EUCountry"/>
+	<rdfs:label xml:lang="en">Bulgaria</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#croatia">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#EUCountry"/>
+	<rdfs:label xml:lang="en">Croatia</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#cyprus">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#EUCountry"/>
+	<rdfs:label xml:lang="en">Cyprus</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#czechia">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#EUCountry"/>
+	<rdfs:label xml:lang="en">Czech Republic</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology"/>
+	<rdfs:label xml:lang="en">Czechia</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#denmark">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#EUCountry"/>
+	<rdfs:label xml:lang="en">Denmark</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology"/>
+	<rdfs:label xml:lang="en">Kingdom of Denmark</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#estonia">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#EUCountry"/>
+	<rdfs:label xml:lang="en">Estonia</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#finland">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#EUCountry"/>
+	<rdfs:label xml:lang="en">Finland</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#france">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#EUCountry"/>
+	<rdfs:label xml:lang="en">France</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology"/>
+	<rdfs:label xml:lang="en">French Republic</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#germany">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#EUCountry"/>
+	<rdfs:label xml:lang="en">Germany</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#greece">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#EUCountry"/>
+	<rdfs:label xml:lang="en">Greece</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#hungary">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#EUCountry"/>
+	<rdfs:label xml:lang="en">Hungary</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#ireland">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#EUCountry"/>
+	<rdfs:label xml:lang="en">Ireland</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#italy">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#EUCountry"/>
+	<rdfs:label xml:lang="en">Italian Republic</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology"/>
+	<rdfs:label xml:lang="en">Italy</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#latvia">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#EUCountry"/>
+	<rdfs:label xml:lang="en">Latvia</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology"/>
+	<rdfs:label xml:lang="en">Republic of Latvia</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#lithuania">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#EUCountry"/>
+	<rdfs:label xml:lang="en">Lithuania</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology"/>
+	<rdfs:label xml:lang="en">Republic of Lithuania</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#luxembourg">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#EUCountry"/>
+	<rdfs:label xml:lang="en">Grand Duchy of Luxembourg</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology"/>
+	<rdfs:label xml:lang="en">Luxembourg</rdfs:label>
+</rdf:Description>
+
+</rdf:RDF>

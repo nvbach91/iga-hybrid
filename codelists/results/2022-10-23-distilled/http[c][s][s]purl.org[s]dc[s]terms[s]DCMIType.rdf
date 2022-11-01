@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://www.ics.forth.gr/isl/VoIDWarehouse/VoID_Extension_Schema.owl">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/DCMIType">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/dcmitype/MovingImage">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/dc/terms/DCMIType"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/DCMIType">
+	<rdfs:comment>The DCMI Type Vocabulary provides a general, cross-domain list of
+	    approved terms that may be used as values for the Resource Type
+	    element to identify the genre of a resource.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/dcmitype/MovingImage">
+	<rdfs:comment xml:lang="en-us">A series of visual representations that,
+        when shown in succession, impart an impression
+        of motion.  Examples of moving images are:
+        animations, movies, television programs,
+        videos, zoetropes, or visual output from
+        a simulation.</rdfs:comment>
+	<rdfs:label xml:lang="en-us">Moving Image</rdfs:label>
+	<rdfs:subClassOf rdf:resource="http://purl.org/dc/dcmitype/Image"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/dcmitype/Image">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/DCMIType">
+	<rdfs:isDefinedBy rdf:resource="http://www.ics.forth.gr/isl/VoIDWarehouse/VoID_Extension_Schema.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/dcmitype/MovingImage">
+	<rdfs:isDefinedBy rdf:resource="http://www.ics.forth.gr/isl/VoIDWarehouse/VoID_Extension_Schema.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/dcmitype/Image">
+	<rdfs:isDefinedBy rdf:resource="http://www.ics.forth.gr/isl/VoIDWarehouse/VoID_Extension_Schema.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/dcmitype/StillImage">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/dc/terms/DCMIType"/>
+	<rdfs:comment xml:lang="en-us">A static visual representation. Examples of
+        still images are: paintings, drawings, graphic designs,
+        plans and maps.</rdfs:comment>
+	<rdfs:label xml:lang="en-us">Still Image</rdfs:label>
+	<rdfs:subClassOf rdf:resource="http://purl.org/dc/dcmitype/Image"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.ics.forth.gr/isl/VoIDWarehouse/VoID_Extension_Schema.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/dcmitype/Software">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/dc/terms/DCMIType"/>
+	<rdfs:comment xml:lang="en-us">Software is a computer program in source or 
+		compiled form which may be available for installation 
+		non-transiently on another machine. For software which 
+		exists only to create an interactive environment, use 
+		interactive instead.</rdfs:comment>
+	<rdfs:label xml:lang="en-us">Software</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ics.forth.gr/isl/VoIDWarehouse/VoID_Extension_Schema.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/dcmitype/Text">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/dc/terms/DCMIType"/>
+	<rdfs:comment xml:lang="en-us">A text is a resource whose content is primarily 
+		words for reading. For example - books, letters, 
+		dissertations, poems, newspapers, articles, 
+		archives of mailing lists. Note that facsimiles 
+		or images of texts are still of the genre text.</rdfs:comment>
+	<rdfs:label xml:lang="en-us">Text</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ics.forth.gr/isl/VoIDWarehouse/VoID_Extension_Schema.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/dcmitype/Collection">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/dc/terms/DCMIType"/>
+	<rdfs:comment xml:lang="en-us">A collection is an aggregation of items. The term 
+		collection means that the resource is described as a 
+		group; its parts may be separately described and navigated.</rdfs:comment>
+	<rdfs:label xml:lang="en-us">Collection</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ics.forth.gr/isl/VoIDWarehouse/VoID_Extension_Schema.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/dcmitype/Dataset">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/dc/terms/DCMIType"/>
+	<rdfs:comment xml:lang="en-us">A dataset is information encoded in a defined structure 
+		(for example, lists, tables, and databases), intended to 
+		be useful for direct machine processing.</rdfs:comment>
+	<rdfs:label xml:lang="en-us">Dataset</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ics.forth.gr/isl/VoIDWarehouse/VoID_Extension_Schema.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/dcmitype/Event">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/dc/terms/DCMIType"/>
+	<rdfs:comment xml:lang="en-us">An event is a non-persistent, time-based occurrence. 
+		Metadata for an event provides descriptive
+		information that is the basis for discovery of the
+		purpose, location, duration, responsible agents, and
+		links to related events and resources.  The resource
+		of type event may not be retrievable if the described
+		instantiation has expired or is yet to occur.
+		Examples - exhibition, web-cast, conference,
+		workshop, open-day, performance, battle, trial,
+		wedding, tea-party, conflagration.</rdfs:comment>
+	<rdfs:label xml:lang="en-us">Event</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ics.forth.gr/isl/VoIDWarehouse/VoID_Extension_Schema.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/dcmitype/Image">
+	<skos:inScheme rdf:resource="http://purl.org/dc/terms/DCMIType"/>
+	<rdfs:comment xml:lang="en-us">An image is a primarily symbolic visual representation 
+		other than text. For example - images and photographs of 
+		physical objects, paintings, prints, drawings, other 
+		images and graphics, animations and moving pictures, 
+		film, diagrams, maps, musical notation. Note that image 
+		may include both electronic and physical representations.</rdfs:comment>
+	<rdfs:label xml:lang="en-us">Image</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/dcmitype/InteractiveResource">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/dc/terms/DCMIType"/>
+	<rdfs:comment xml:lang="en-us">An interactive resource is a resource which requires 
+		interaction from the user to be understood, executed, 
+		or experienced. For example - forms on web pages, applets, 
+		multimedia learning objects, chat services, virtual 
+		reality.</rdfs:comment>
+	<rdfs:label xml:lang="en-us">Interactive Resource</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ics.forth.gr/isl/VoIDWarehouse/VoID_Extension_Schema.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/dcmitype/PhysicalObject">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/dc/terms/DCMIType"/>
+	<rdfs:comment xml:lang="en-us">An inanimate, three-dimensional object or substance.  
+		For example -- a computer, the great pyramid, a 
+		sculpture.  Note that digital representations 
+		of, or surrogates for, these things should use Image, 
+		Text or one of the other types.</rdfs:comment>
+	<rdfs:label xml:lang="en-us">Physical Object</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ics.forth.gr/isl/VoIDWarehouse/VoID_Extension_Schema.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/dcmitype/Service">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/dc/terms/DCMIType"/>
+	<rdfs:comment xml:lang="en-us">A service is a system that provides one or more 
+		functions of value to the end-user. Examples include: 
+		a photocopying service, a banking service, an 
+		authentication service, interlibrary loans, a Z39.50 
+		or Web server.</rdfs:comment>
+	<rdfs:label xml:lang="en-us">Service</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ics.forth.gr/isl/VoIDWarehouse/VoID_Extension_Schema.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/dcmitype/Sound">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/dc/terms/DCMIType"/>
+	<rdfs:comment xml:lang="en-us">A sound is a resource whose content is primarily 
+		intended to be rendered as audio. For example - a 
+		music playback file format, an audio compact disc, 
+		and recorded speech or sounds.</rdfs:comment>
+	<rdfs:label xml:lang="en-us">Sound</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ics.forth.gr/isl/VoIDWarehouse/VoID_Extension_Schema.owl"/>
+</rdf:Description>
+
+</rdf:RDF>

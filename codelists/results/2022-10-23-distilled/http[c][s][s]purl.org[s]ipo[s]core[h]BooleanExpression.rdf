@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://purl.org/ipo/core">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ipo/core#BooleanExpression">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ipo/core#false">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/ipo/core#BooleanExpression"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ipo/core#BooleanExpression">
+	<rdfs:comment xml:lang="en">A logical expression whose value is true or false, aiming to validate a Transition between two Steps, or serve with a pre-condition for the execution of a Action or serve as a post-condition to validate the execution of an Action.
+This class has a description of the expression and two possible values: true or false. For these values, two instances are designed to be reused.</rdfs:comment>
+	<rdfs:label xml:lang="en">BooleanExpression</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ipo/core#hasGuardCondition">
+	<rdfs:range rdf:resource="http://purl.org/ipo/core#BooleanExpression"/>
+	<rdfs:domain rdf:resource="http://purl.org/ipo/core#Transition"/>
+	<rdfs:label xml:lang="en">hasGuardCondition</rdfs:label>
+	<rdfs:comment xml:lang="en">Indicates a BooleanExpression for that a Transition occurs.
+For example, a Transition can have as guardCondition that the Step of origin be executed 10 times. So while this Step does is not executes 10 times, will not be started the Step of destination. This example illustrates a repeating structure within the workflow.</rdfs:comment>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ipo/core#BooleanExpression">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/ipo/core"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ipo/core#false">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/ipo/core"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ipo/core#true">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/ipo/core#BooleanExpression"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/ipo/core"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ipo/core#hasGuardCondition">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ipo/core#hasPostCondition">
+	<rdfs:range rdf:resource="http://purl.org/ipo/core#BooleanExpression"/>
+	<rdfs:domain rdf:resource="http://purl.org/ipo/core#Action"/>
+	<rdfs:label xml:lang="en">hasPostCondition</rdfs:label>
+	<rdfs:comment xml:lang="en">Indicates a postcondition (effect) will be reached after executing the Action.</rdfs:comment>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ipo/core#hasPreCondition">
+	<rdfs:range rdf:resource="http://purl.org/ipo/core#BooleanExpression"/>
+	<rdfs:domain rdf:resource="http://purl.org/ipo/core#Action"/>
+	<rdfs:label xml:lang="en">hasPreCondition</rdfs:label>
+	<rdfs:comment xml:lang="en">Indicates a precondition for the Action be executed.
+
+A precondition may represent a prerequisite for execution of the Action, without which it is not guaranteed correct execution.</rdfs:comment>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+</rdf:RDF>

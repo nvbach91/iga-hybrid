@@ -1,0 +1,779 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="https://w3id.org/squap/">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/Comfort">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQuality"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality">
+	<rdfs:comment>The software quality characteristic meant as softwarea quality.</rdfs:comment>
+	<rdfs:label>Software quality</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/Comfort">
+	<rdfs:label>Comfort</rdfs:label>
+	<specializes xmlns="https://w3id.org/squap/" rdf:resource="https://w3id.org/squap/SoftwareQuality/SatisfactionInUse"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/SatisfactionInUse">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality">
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/Comfort">
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/SatisfactionInUse">
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/Comfort">
+	<rdfs:subClassOf rdf:resource="https://w3id.org/squap/SoftwareQuality/SatisfactionInUse"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/Likability">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQuality"/>
+	<rdfs:label>Likability</rdfs:label>
+	<specializes xmlns="https://w3id.org/squap/" rdf:resource="https://w3id.org/squap/SoftwareQuality/SatisfactionInUse"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+	<rdfs:subClassOf rdf:resource="https://w3id.org/squap/SoftwareQuality/SatisfactionInUse"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/Pleasure">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQuality"/>
+	<rdfs:label>Pleasure</rdfs:label>
+	<specializes xmlns="https://w3id.org/squap/" rdf:resource="https://w3id.org/squap/SoftwareQuality/SatisfactionInUse"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+	<rdfs:subClassOf rdf:resource="https://w3id.org/squap/SoftwareQuality/SatisfactionInUse"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/Trust">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQuality"/>
+	<rdfs:label>Trust</rdfs:label>
+	<specializes xmlns="https://w3id.org/squap/" rdf:resource="https://w3id.org/squap/SoftwareQuality/SatisfactionInUse"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+	<rdfs:subClassOf rdf:resource="https://w3id.org/squap/SoftwareQuality/SatisfactionInUse"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/Accountability">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQuality"/>
+	<rdfs:label>Accountability</rdfs:label>
+	<specializes xmlns="https://w3id.org/squap/" rdf:resource="https://w3id.org/squap/SoftwareQuality/Security"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/Security">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/Accountability">
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/Security">
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/Accountability">
+	<rdfs:subClassOf rdf:resource="https://w3id.org/squap/SoftwareQuality/Security"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/Authenticity">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQuality"/>
+	<rdfs:label>Authenticity</rdfs:label>
+	<specializes xmlns="https://w3id.org/squap/" rdf:resource="https://w3id.org/squap/SoftwareQuality/Security"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+	<rdfs:subClassOf rdf:resource="https://w3id.org/squap/SoftwareQuality/Security"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/Confidentiality">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQuality"/>
+	<rdfs:label>Confidentiality</rdfs:label>
+	<specializes xmlns="https://w3id.org/squap/" rdf:resource="https://w3id.org/squap/SoftwareQuality/Security"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+	<rdfs:subClassOf rdf:resource="https://w3id.org/squap/SoftwareQuality/Security"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/Integrity">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQuality"/>
+	<rdfs:label>Integrity</rdfs:label>
+	<specializes xmlns="https://w3id.org/squap/" rdf:resource="https://w3id.org/squap/SoftwareQuality/Security"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+	<rdfs:subClassOf rdf:resource="https://w3id.org/squap/SoftwareQuality/Security"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/Non-repudiation">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQuality"/>
+	<rdfs:label>Non-repudiation</rdfs:label>
+	<specializes xmlns="https://w3id.org/squap/" rdf:resource="https://w3id.org/squap/SoftwareQuality/Security"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+	<rdfs:subClassOf rdf:resource="https://w3id.org/squap/SoftwareQuality/Security"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/SecurityCompliance">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQuality"/>
+	<rdfs:label>Security compliance</rdfs:label>
+	<specializes xmlns="https://w3id.org/squap/" rdf:resource="https://w3id.org/squap/SoftwareQuality/Security"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+	<rdfs:subClassOf rdf:resource="https://w3id.org/squap/SoftwareQuality/Security"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/Compatibility">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQuality"/>
+	<rdfs:label>Compatibility</rdfs:label>
+	<specializes xmlns="https://w3id.org/squap/" rdf:resource="https://w3id.org/squap/SoftwareQuality/SoftwareProductQuality"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/SoftwareProductQuality">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/Compatibility">
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/SoftwareProductQuality">
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/Compatibility">
+	<rdfs:subClassOf rdf:resource="https://w3id.org/squap/SoftwareQuality/SoftwareProductQuality"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/FunctionalSuitability">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQuality"/>
+	<rdfs:label>Functional suitability</rdfs:label>
+	<specializes xmlns="https://w3id.org/squap/" rdf:resource="https://w3id.org/squap/SoftwareQuality/SoftwareProductQuality"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+	<rdfs:subClassOf rdf:resource="https://w3id.org/squap/SoftwareQuality/SoftwareProductQuality"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/Operability">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQuality"/>
+	<rdfs:label>Operability</rdfs:label>
+	<specializes xmlns="https://w3id.org/squap/" rdf:resource="https://w3id.org/squap/SoftwareQuality/SoftwareProductQuality"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/FunctionalCorrectness">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQuality"/>
+	<rdfs:label>Functional correctness</rdfs:label>
+	<rdfs:subClassOf rdf:resource="https://w3id.org/squap/SoftwareQuality/FunctionalSuitability"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/FlexibilityInUse">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQuality"/>
+	<rdfs:label>Flexibility in use</rdfs:label>
+	<specializes xmlns="https://w3id.org/squap/" rdf:resource="https://w3id.org/squap/SoftwareQuality/QualityInUse"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/QualityInUse">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/FlexibilityInUse">
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/QualityInUse">
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/FlexibilityInUse">
+	<rdfs:subClassOf rdf:resource="https://w3id.org/squap/SoftwareQuality/QualityInUse"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/Analysability">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQuality"/>
+	<rdfs:label>Analysability</rdfs:label>
+	<specializes xmlns="https://w3id.org/squap/" rdf:resource="https://w3id.org/squap/SoftwareQuality/Compatibility"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+	<rdfs:subClassOf rdf:resource="https://w3id.org/squap/SoftwareQuality/Compatibility"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/Changeability">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQuality"/>
+	<rdfs:label>Changeability</rdfs:label>
+	<specializes xmlns="https://w3id.org/squap/" rdf:resource="https://w3id.org/squap/SoftwareQuality/Compatibility"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+	<rdfs:subClassOf rdf:resource="https://w3id.org/squap/SoftwareQuality/Compatibility"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/Co-existence">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQuality"/>
+	<rdfs:label>Co-existence</rdfs:label>
+	<specializes xmlns="https://w3id.org/squap/" rdf:resource="https://w3id.org/squap/SoftwareQuality/Compatibility"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+	<rdfs:subClassOf rdf:resource="https://w3id.org/squap/SoftwareQuality/Compatibility"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/CompatibilityCompliance">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQuality"/>
+	<rdfs:label>Compatibility compliance</rdfs:label>
+	<specializes xmlns="https://w3id.org/squap/" rdf:resource="https://w3id.org/squap/SoftwareQuality/Compatibility"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+	<rdfs:subClassOf rdf:resource="https://w3id.org/squap/SoftwareQuality/Compatibility"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/Interoperability">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQuality"/>
+	<rdfs:label>Interoperability</rdfs:label>
+	<specializes xmlns="https://w3id.org/squap/" rdf:resource="https://w3id.org/squap/SoftwareQuality/Compatibility"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+	<rdfs:subClassOf rdf:resource="https://w3id.org/squap/SoftwareQuality/Compatibility"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/Maintainability">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQuality"/>
+	<rdfs:label>Maintainability</rdfs:label>
+	<specializes xmlns="https://w3id.org/squap/" rdf:resource="https://w3id.org/squap/SoftwareQuality/Compatibility"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+	<rdfs:subClassOf rdf:resource="https://w3id.org/squap/SoftwareQuality/Compatibility"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/MaintainabilityCompliance">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQuality"/>
+	<rdfs:label>Maintainability compliance</rdfs:label>
+	<specializes xmlns="https://w3id.org/squap/" rdf:resource="https://w3id.org/squap/SoftwareQuality/Compatibility"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+	<rdfs:subClassOf rdf:resource="https://w3id.org/squap/SoftwareQuality/Compatibility"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/ModificationStability">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQuality"/>
+	<rdfs:label>Modification stability</rdfs:label>
+	<specializes xmlns="https://w3id.org/squap/" rdf:resource="https://w3id.org/squap/SoftwareQuality/Compatibility"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+	<rdfs:subClassOf rdf:resource="https://w3id.org/squap/SoftwareQuality/Compatibility"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/Modularity">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQuality"/>
+	<rdfs:label>Modularity</rdfs:label>
+	<specializes xmlns="https://w3id.org/squap/" rdf:resource="https://w3id.org/squap/SoftwareQuality/Compatibility"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+	<rdfs:subClassOf rdf:resource="https://w3id.org/squap/SoftwareQuality/Compatibility"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/Replaceability">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQuality"/>
+	<rdfs:label>Replaceability</rdfs:label>
+	<specializes xmlns="https://w3id.org/squap/" rdf:resource="https://w3id.org/squap/SoftwareQuality/Compatibility"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+	<rdfs:subClassOf rdf:resource="https://w3id.org/squap/SoftwareQuality/Compatibility"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/Reusability">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQuality"/>
+	<rdfs:label>Reusability</rdfs:label>
+	<specializes xmlns="https://w3id.org/squap/" rdf:resource="https://w3id.org/squap/SoftwareQuality/Compatibility"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+	<rdfs:subClassOf rdf:resource="https://w3id.org/squap/SoftwareQuality/Compatibility"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/UsabilityInUseCompliance">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQuality"/>
+	<rdfs:label>Usability in use compliance</rdfs:label>
+	<rdfs:subClassOf rdf:resource="https://w3id.org/squap/SoftwareQuality/UsabilityInUse"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/UsabilityInUse">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/UsabilityInUseCompliance">
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/UsabilityInUse">
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/Safety">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQuality"/>
+	<rdfs:label>Safety</rdfs:label>
+	<specializes xmlns="https://w3id.org/squap/" rdf:resource="https://w3id.org/squap/SoftwareQuality/QualityInUse"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+	<rdfs:subClassOf rdf:resource="https://w3id.org/squap/SoftwareQuality/QualityInUse"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/UsabilityInUse">
+	<skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQuality"/>
+	<rdfs:label>Usability in use</rdfs:label>
+	<specializes xmlns="https://w3id.org/squap/" rdf:resource="https://w3id.org/squap/SoftwareQuality/QualityInUse"/>
+	<rdfs:subClassOf rdf:resource="https://w3id.org/squap/SoftwareQuality/QualityInUse"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/Availability">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQuality"/>
+	<rdfs:label>Availability</rdfs:label>
+	<specializes xmlns="https://w3id.org/squap/" rdf:resource="https://w3id.org/squap/SoftwareQuality/Reliability"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/Reliability">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/Availability">
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/Reliability">
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/Availability">
+	<rdfs:subClassOf rdf:resource="https://w3id.org/squap/SoftwareQuality/Reliability"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/FaultTolerance">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQuality"/>
+	<rdfs:label>Fault tolerance</rdfs:label>
+	<specializes xmlns="https://w3id.org/squap/" rdf:resource="https://w3id.org/squap/SoftwareQuality/Reliability"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+	<rdfs:subClassOf rdf:resource="https://w3id.org/squap/SoftwareQuality/Reliability"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/Maturity">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQuality"/>
+	<rdfs:label>Maturity</rdfs:label>
+	<specializes xmlns="https://w3id.org/squap/" rdf:resource="https://w3id.org/squap/SoftwareQuality/Reliability"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+	<rdfs:subClassOf rdf:resource="https://w3id.org/squap/SoftwareQuality/Reliability"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/Recoverability">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQuality"/>
+	<rdfs:label>Recoverability</rdfs:label>
+	<specializes xmlns="https://w3id.org/squap/" rdf:resource="https://w3id.org/squap/SoftwareQuality/Reliability"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+	<rdfs:subClassOf rdf:resource="https://w3id.org/squap/SoftwareQuality/Reliability"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/ReliabilityCompliance">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQuality"/>
+	<rdfs:label>Reliability compliance</rdfs:label>
+	<specializes xmlns="https://w3id.org/squap/" rdf:resource="https://w3id.org/squap/SoftwareQuality/Reliability"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+	<rdfs:subClassOf rdf:resource="https://w3id.org/squap/SoftwareQuality/Reliability"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/CommercialDamageInUse">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQuality"/>
+	<rdfs:label>Commercial damage in use</rdfs:label>
+	<specializes xmlns="https://w3id.org/squap/" rdf:resource="https://w3id.org/squap/SoftwareQuality/Safety"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+	<rdfs:subClassOf rdf:resource="https://w3id.org/squap/SoftwareQuality/Safety"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/EnvironmentalHarmInUse">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQuality"/>
+	<rdfs:label>Environmental harm in use</rdfs:label>
+	<specializes xmlns="https://w3id.org/squap/" rdf:resource="https://w3id.org/squap/SoftwareQuality/Safety"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+	<rdfs:subClassOf rdf:resource="https://w3id.org/squap/SoftwareQuality/Safety"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/OperatorHealthAndSafety">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQuality"/>
+	<rdfs:label>Operator health and safety</rdfs:label>
+	<specializes xmlns="https://w3id.org/squap/" rdf:resource="https://w3id.org/squap/SoftwareQuality/Safety"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+	<rdfs:subClassOf rdf:resource="https://w3id.org/squap/SoftwareQuality/Safety"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/PublicHealthAndSafety">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQuality"/>
+	<rdfs:label>Public health and safety</rdfs:label>
+	<specializes xmlns="https://w3id.org/squap/" rdf:resource="https://w3id.org/squap/SoftwareQuality/Safety"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+	<rdfs:subClassOf rdf:resource="https://w3id.org/squap/SoftwareQuality/Safety"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/SafetyCompliance">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQuality"/>
+	<rdfs:label>Safety compliance</rdfs:label>
+	<specializes xmlns="https://w3id.org/squap/" rdf:resource="https://w3id.org/squap/SoftwareQuality/Safety"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+	<rdfs:subClassOf rdf:resource="https://w3id.org/squap/SoftwareQuality/Safety"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/Testability">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQuality"/>
+	<rdfs:label>Testability</rdfs:label>
+	<specializes xmlns="https://w3id.org/squap/" rdf:resource="https://w3id.org/squap/SoftwareQuality/Compatibility"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+	<rdfs:subClassOf rdf:resource="https://w3id.org/squap/SoftwareQuality/Compatibility"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/Modifiability">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQuality"/>
+	<rdfs:label>Modifiability</rdfs:label>
+	<specializes xmlns="https://w3id.org/squap/" rdf:resource="https://w3id.org/squap/SoftwareQuality/Maintainability"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+	<rdfs:subClassOf rdf:resource="https://w3id.org/squap/SoftwareQuality/Maintainability"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/AppropriatenessRecognisability">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQuality"/>
+	<rdfs:label>Appropriateness recognisability</rdfs:label>
+	<specializes xmlns="https://w3id.org/squap/" rdf:resource="https://w3id.org/squap/SoftwareQuality/Operability"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+	<rdfs:subClassOf rdf:resource="https://w3id.org/squap/SoftwareQuality/Operability"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/Attractiveness">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQuality"/>
+	<rdfs:label>Attractiveness</rdfs:label>
+	<specializes xmlns="https://w3id.org/squap/" rdf:resource="https://w3id.org/squap/SoftwareQuality/Operability"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+	<rdfs:subClassOf rdf:resource="https://w3id.org/squap/SoftwareQuality/Operability"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/EaseOfUse">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQuality"/>
+	<rdfs:label>Ease of use</rdfs:label>
+	<specializes xmlns="https://w3id.org/squap/" rdf:resource="https://w3id.org/squap/SoftwareQuality/Operability"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+	<rdfs:subClassOf rdf:resource="https://w3id.org/squap/SoftwareQuality/Operability"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/Helpfulness">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQuality"/>
+	<rdfs:label>Helpfulness</rdfs:label>
+	<specializes xmlns="https://w3id.org/squap/" rdf:resource="https://w3id.org/squap/SoftwareQuality/Operability"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+	<rdfs:subClassOf rdf:resource="https://w3id.org/squap/SoftwareQuality/Operability"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/Learnability">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQuality"/>
+	<rdfs:label>Learnability</rdfs:label>
+	<specializes xmlns="https://w3id.org/squap/" rdf:resource="https://w3id.org/squap/SoftwareQuality/Operability"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+	<rdfs:subClassOf rdf:resource="https://w3id.org/squap/SoftwareQuality/Operability"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/OperabilityCompliance">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQuality"/>
+	<rdfs:label>Operability compliance</rdfs:label>
+	<specializes xmlns="https://w3id.org/squap/" rdf:resource="https://w3id.org/squap/SoftwareQuality/Operability"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+	<rdfs:subClassOf rdf:resource="https://w3id.org/squap/SoftwareQuality/Operability"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/TechnicalAccessibility">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQuality"/>
+	<rdfs:label>Technical accessibility</rdfs:label>
+	<specializes xmlns="https://w3id.org/squap/" rdf:resource="https://w3id.org/squap/SoftwareQuality/Operability"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+	<rdfs:subClassOf rdf:resource="https://w3id.org/squap/SoftwareQuality/Operability"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/EffectivenessInUse">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQuality"/>
+	<rdfs:label>Effectiveness in use</rdfs:label>
+	<specializes xmlns="https://w3id.org/squap/" rdf:resource="https://w3id.org/squap/SoftwareQuality/UsabilityInUse"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+	<rdfs:subClassOf rdf:resource="https://w3id.org/squap/SoftwareQuality/UsabilityInUse"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/EfficiencyInUse">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQuality"/>
+	<rdfs:label>Efficiency in use</rdfs:label>
+	<specializes xmlns="https://w3id.org/squap/" rdf:resource="https://w3id.org/squap/SoftwareQuality/UsabilityInUse"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+	<rdfs:subClassOf rdf:resource="https://w3id.org/squap/SoftwareQuality/UsabilityInUse"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/SatisfactionInUse">
+	<skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQuality"/>
+	<rdfs:label>Satisfaction in use</rdfs:label>
+	<specializes xmlns="https://w3id.org/squap/" rdf:resource="https://w3id.org/squap/SoftwareQuality/UsabilityInUse"/>
+	<rdfs:subClassOf rdf:resource="https://w3id.org/squap/SoftwareQuality/UsabilityInUse"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/UsabilityInUseCompliance">
+	<specializes xmlns="https://w3id.org/squap/" rdf:resource="https://w3id.org/squap/SoftwareQuality/UsabilityInUse"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/AccessibilityInUse">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQuality"/>
+	<rdfs:label>Accessibility in use</rdfs:label>
+	<specializes xmlns="https://w3id.org/squap/" rdf:resource="https://w3id.org/squap/SoftwareQuality/FlexibilityInUse"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+	<rdfs:subClassOf rdf:resource="https://w3id.org/squap/SoftwareQuality/FlexibilityInUse"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/ContextConformityInUse">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQuality"/>
+	<rdfs:label>Context conformity in use</rdfs:label>
+	<specializes xmlns="https://w3id.org/squap/" rdf:resource="https://w3id.org/squap/SoftwareQuality/FlexibilityInUse"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+	<rdfs:subClassOf rdf:resource="https://w3id.org/squap/SoftwareQuality/FlexibilityInUse"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/ContextExtendibilityInUse">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQuality"/>
+	<rdfs:label>Context extendibility in use</rdfs:label>
+	<specializes xmlns="https://w3id.org/squap/" rdf:resource="https://w3id.org/squap/SoftwareQuality/FlexibilityInUse"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+	<rdfs:subClassOf rdf:resource="https://w3id.org/squap/SoftwareQuality/FlexibilityInUse"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/FlexibilityInUse">
+	<specializes xmlns="https://w3id.org/squap/" rdf:resource="https://w3id.org/squap/SoftwareQuality/FlexibilityInUse"/>
+	<rdfs:subClassOf rdf:resource="https://w3id.org/squap/SoftwareQuality/FlexibilityInUse"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/FlexibilityInUseCompliance">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQuality"/>
+	<rdfs:label>Flexibility in use compliance</rdfs:label>
+	<specializes xmlns="https://w3id.org/squap/" rdf:resource="https://w3id.org/squap/SoftwareQuality/FlexibilityInUse"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+	<rdfs:subClassOf rdf:resource="https://w3id.org/squap/SoftwareQuality/FlexibilityInUse"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/Accuracy">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQuality"/>
+	<rdfs:label>Accuracy</rdfs:label>
+	<specializes xmlns="https://w3id.org/squap/" rdf:resource="https://w3id.org/squap/SoftwareQuality/FunctionalSuitability"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+	<rdfs:subClassOf rdf:resource="https://w3id.org/squap/SoftwareQuality/FunctionalSuitability"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/Appropriateness">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQuality"/>
+	<rdfs:label>Appropriateness</rdfs:label>
+	<specializes xmlns="https://w3id.org/squap/" rdf:resource="https://w3id.org/squap/SoftwareQuality/FunctionalSuitability"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+	<rdfs:subClassOf rdf:resource="https://w3id.org/squap/SoftwareQuality/FunctionalSuitability"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/PerformanceEfficiencyCompliance">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQuality"/>
+	<rdfs:label>Performance efficiency compliance</rdfs:label>
+	<specializes xmlns="https://w3id.org/squap/" rdf:resource="https://w3id.org/squap/SoftwareQuality/PerformanceEfficiency"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/PerformanceEfficiency">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/PerformanceEfficiencyCompliance">
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/PerformanceEfficiency">
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/PerformanceEfficiencyCompliance">
+	<rdfs:subClassOf rdf:resource="https://w3id.org/squap/SoftwareQuality/PerformanceEfficiency"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/ResourceUtilization">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQuality"/>
+	<rdfs:label>Resource utilization</rdfs:label>
+	<specializes xmlns="https://w3id.org/squap/" rdf:resource="https://w3id.org/squap/SoftwareQuality/PerformanceEfficiency"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+	<rdfs:subClassOf rdf:resource="https://w3id.org/squap/SoftwareQuality/PerformanceEfficiency"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/TimeBehaviour">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQuality"/>
+	<rdfs:label>Time behaviour</rdfs:label>
+	<specializes xmlns="https://w3id.org/squap/" rdf:resource="https://w3id.org/squap/SoftwareQuality/PerformanceEfficiency"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+	<rdfs:subClassOf rdf:resource="https://w3id.org/squap/SoftwareQuality/PerformanceEfficiency"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/FunctionalAppropriateness">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQuality"/>
+	<rdfs:label>Functional appropriateness</rdfs:label>
+	<specializes xmlns="https://w3id.org/squap/" rdf:resource="https://w3id.org/squap/SoftwareQuality/FunctionalSuitability"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+	<rdfs:subClassOf rdf:resource="https://w3id.org/squap/SoftwareQuality/FunctionalSuitability"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/FunctionalCompleteness">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQuality"/>
+	<rdfs:label>Functional completeness</rdfs:label>
+	<specializes xmlns="https://w3id.org/squap/" rdf:resource="https://w3id.org/squap/SoftwareQuality/FunctionalSuitability"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+	<rdfs:subClassOf rdf:resource="https://w3id.org/squap/SoftwareQuality/FunctionalSuitability"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/FunctionalCorrectness">
+	<specializes xmlns="https://w3id.org/squap/" rdf:resource="https://w3id.org/squap/SoftwareQuality/FunctionalSuitability"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/Operability">
+	<rdfs:subClassOf rdf:resource="https://w3id.org/squap/SoftwareQuality/SoftwareProductQuality"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/PerformanceEfficiency">
+	<skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQuality"/>
+	<rdfs:label>Performance efficiency</rdfs:label>
+	<specializes xmlns="https://w3id.org/squap/" rdf:resource="https://w3id.org/squap/SoftwareQuality/SoftwareProductQuality"/>
+	<rdfs:subClassOf rdf:resource="https://w3id.org/squap/SoftwareQuality/SoftwareProductQuality"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/Reliability">
+	<skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQuality"/>
+	<rdfs:label>Reliability</rdfs:label>
+	<specializes xmlns="https://w3id.org/squap/" rdf:resource="https://w3id.org/squap/SoftwareQuality/SoftwareProductQuality"/>
+	<rdfs:subClassOf rdf:resource="https://w3id.org/squap/SoftwareQuality/SoftwareProductQuality"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/Security">
+	<skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQuality"/>
+	<rdfs:label>Security</rdfs:label>
+	<specializes xmlns="https://w3id.org/squap/" rdf:resource="https://w3id.org/squap/SoftwareQuality/SoftwareProductQuality"/>
+	<rdfs:subClassOf rdf:resource="https://w3id.org/squap/SoftwareQuality/SoftwareProductQuality"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/Transferability">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQuality"/>
+	<rdfs:label>Transferability</rdfs:label>
+	<specializes xmlns="https://w3id.org/squap/" rdf:resource="https://w3id.org/squap/SoftwareQuality/SoftwareProductQuality"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+	<rdfs:subClassOf rdf:resource="https://w3id.org/squap/SoftwareQuality/SoftwareProductQuality"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/Adaptability">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQuality"/>
+	<rdfs:label>Adaptability</rdfs:label>
+	<specializes xmlns="https://w3id.org/squap/" rdf:resource="https://w3id.org/squap/SoftwareQuality/Transferability"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+	<rdfs:subClassOf rdf:resource="https://w3id.org/squap/SoftwareQuality/Transferability"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/Installability">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQuality"/>
+	<rdfs:label>Installability</rdfs:label>
+	<specializes xmlns="https://w3id.org/squap/" rdf:resource="https://w3id.org/squap/SoftwareQuality/Transferability"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+	<rdfs:subClassOf rdf:resource="https://w3id.org/squap/SoftwareQuality/Transferability"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/Portability">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQuality"/>
+	<rdfs:label>Portability</rdfs:label>
+	<specializes xmlns="https://w3id.org/squap/" rdf:resource="https://w3id.org/squap/SoftwareQuality/Transferability"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+	<rdfs:subClassOf rdf:resource="https://w3id.org/squap/SoftwareQuality/Transferability"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/TransferabilityCompliance">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQuality"/>
+	<rdfs:label>Transferability compliance</rdfs:label>
+	<specializes xmlns="https://w3id.org/squap/" rdf:resource="https://w3id.org/squap/SoftwareQuality/Transferability"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+	<rdfs:subClassOf rdf:resource="https://w3id.org/squap/SoftwareQuality/Transferability"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/QualityInUse">
+	<skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQuality"/>
+	<rdfs:label>Quality in use</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/SoftwareQuality/SoftwareProductQuality">
+	<skos:inScheme rdf:resource="https://w3id.org/squap/SoftwareQuality"/>
+	<rdfs:label>Software product quality</rdfs:label>
+</rdf:Description>
+
+</rdf:RDF>

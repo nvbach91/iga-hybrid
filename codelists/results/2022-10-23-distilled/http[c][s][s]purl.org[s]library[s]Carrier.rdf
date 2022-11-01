@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://purl.org/library/">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/library/Carrier">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/library/BlurayDisk">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/library/Carrier"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/library/Carrier">
+	<rdfs:comment xml:lang="en">This class contains a controlled list of "carriers" that can be used to contain a schema:CreativeWork.</rdfs:comment>
+	<rdfs:label xml:lang="en">Carrier</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/library/BlurayDisk">
+	<rdfs:label xml:lang="en">Bluray Disk</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/library/hasCarrier">
+	<rdfs:range rdf:resource="http://purl.org/library/Carrier"/>
+	<rdfs:domain rdf:resource="http://schema.org/CreativeWork"/>
+	<rdfs:label xml:lang="en">has carrier</rdfs:label>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/library/Carrier">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/library/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/library/BlurayDisk">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/library/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/library/CassetteTape">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/library/Carrier"/>
+	<rdfs:label xml:lang="en">Cassette Tape</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/library/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/library/CD">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/library/Carrier"/>
+	<rdfs:label xml:lang="en">Compact Disk</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/library/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/library/DVD">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/library/Carrier"/>
+	<rdfs:label xml:lang="en">DVD</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/library/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/library/FilmReel">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/library/Carrier"/>
+	<rdfs:label xml:lang="en">Film Reel</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/library/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/library/LP">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/library/Carrier"/>
+	<rdfs:label xml:lang="en">LP</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/library/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/library/Microform">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/library/Carrier"/>
+	<rdfs:label xml:lang="en">Microform</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/library/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/library/VHSTape">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/library/Carrier"/>
+	<rdfs:label xml:lang="en">VHS Tape</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/library/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/library/Volume">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/library/Carrier"/>
+	<rdfs:label xml:lang="en">Volume</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/library/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/library/WWW">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/library/Carrier"/>
+	<rdfs:label xml:lang="en">World Wide Web</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/library/"/>
+</rdf:Description>
+
+</rdf:RDF>

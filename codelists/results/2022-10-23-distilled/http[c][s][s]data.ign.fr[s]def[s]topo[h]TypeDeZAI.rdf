@@ -1,0 +1,1062 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://data.ign.fr/def/topo">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/def/topo#TypeDeZAI">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/ParcDeLoisirs">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/def/topo#TypeDeZAI">
+	<rdfs:label xml:lang="en">Type of Area Of Interest (AOI)</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/ParcDeLoisirs">
+	<rdfs:label xml:lang="en">Leisure park</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAICultureLoisirs"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/PAICultureLoisirs">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/def/topo#TypeDeZAI">
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/ParcDeLoisirs">
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/PAICultureLoisirs">
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/ParcDesExpositions">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Fairground</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAICultureLoisirs"/>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/ParcZoologique">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Zoological park</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAICultureLoisirs"/>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Arbre">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Tree</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIEspaceNaturel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/PAIEspaceNaturel">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Arbre">
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/PAIEspaceNaturel">
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/LieuDitNonHabite">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Non inhabited local placename</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIEspaceNaturel"/>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Parc">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Park</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIEspaceNaturel"/>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/PareFeu">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Fire-break</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIEspaceNaturel"/>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/PointDeVue">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Viewpoint</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIEspaceNaturel"/>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedepointdeau/StationDePompage">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Pumping station</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIGestionEaux"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/PAIGestionEaux">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedepointdeau/StationDePompage">
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/PAIGestionEaux">
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedefranchissement/Cascade">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Waterfall</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIHydrographie"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/PAIHydrographie">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedefranchissement/Cascade">
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/PAIHydrographie">
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Amer">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Seamark</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIHydrographie"/>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Baie">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Bay</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIHydrographie"/>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Banc">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Bank</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIHydrographie"/>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Canal">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Channel</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIHydrographie"/>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Embouchure">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Mouth</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIHydrographie"/>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/EspaceMaritime">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Maritime feature</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIHydrographie"/>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Glacier">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Glacier</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIHydrographie"/>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Lac">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Lake</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIHydrographie"/>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Marais">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Marsh</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIHydrographie"/>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Pecherie">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Aquaculture area</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIHydrographie"/>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Perte">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Loss</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIHydrographie"/>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/PointDEau">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Waterhole</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIHydrographie"/>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedebatiment/BatimentCommercial">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Commercial building or area</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIIndustrielCommercial"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/PAIIndustrielCommercial">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedebatiment/BatimentCommercial">
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/PAIIndustrielCommercial">
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedebatiment/BatimentIndustriel">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Industrial building or area</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIIndustrielCommercial"/>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Aquaculture">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Aquaculture facilities</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIIndustrielCommercial"/>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedetransportcable/Telepherique">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Aerial ropeway</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAITransport"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/PAITransport">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedetransportcable/Telepherique">
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/PAITransport">
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Aerodrome">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Aerodrome</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAITransport"/>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/AeroportInternational">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">International airport</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAITransport"/>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/AeroportQuelconque">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Airport</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAITransport"/>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/AireDeRepos">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Rest area</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAITransport"/>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/AireDeService">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Service area</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAITransport"/>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Barrage">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Barrage</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAITransport"/>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/BarriereDePeage">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Toll-gate</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAITransport"/>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Carrefour">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Crossroads</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAITransport"/>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Chemin">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Trail</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAITransport"/>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Echangeur">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Interchange</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAITransport"/>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/GareFretUniquement">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Goods station</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAITransport"/>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/GareRoutiere">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Bus station</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAITransport"/>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/GareVoyageursEtFret">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Passengers and goods station</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAITransport"/>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/GareVoyageursUniquement">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Passengers station</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAITransport"/>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/InfrastructureRoutiere">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Road transport infrastructure</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAITransport"/>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Parking">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Car park</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAITransport"/>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Port">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Harbor</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAITransport"/>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedebatiment/Chateau">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Castle</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIZoneHabitation"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/PAIZoneHabitation">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedebatiment/Chateau">
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/PAIZoneHabitation">
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Grange">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Barn</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIZoneHabitation"/>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/LieuDitHabite">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Inhabited local placename</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIZoneHabitation"/>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Moulin">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Mill</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIZoneHabitation"/>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/EtablissementHospitalier">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Healthcare facility</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAISante"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/PAISante">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/EtablissementHospitalier">
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/PAISante">
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/EtablissementThermal">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Health resort</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAISante"/>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Hopital">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Hospital</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAISante"/>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/CentraleElectrique">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Power station</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIIndustrielCommercial"/>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/HarasNational">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Ranch</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIIndustrielCommercial"/>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/MaraisSalants">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Salt evaporator</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIIndustrielCommercial"/>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Marche">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Market</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIIndustrielCommercial"/>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Mine">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Mine</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIIndustrielCommercial"/>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Croix">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Cross</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIReligieux"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/PAIReligieux">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Croix">
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/PAIReligieux">
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/CulteCatholiqueOuOrthodoxe">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Catholic or orthodox building</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIReligieux"/>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/CulteDivers">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Other religious building</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIReligieux"/>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/CulteIslamique">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Moslem religious building</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIReligieux"/>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/CulteIsraelite">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Jewish religious building</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIReligieux"/>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/CulteProtestant">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Protestant building</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIReligieux"/>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Borne">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Marker</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIAdministratifOuMilitaire"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/PAIAdministratifOuMilitaire">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Borne">
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/PAIAdministratifOuMilitaire">
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/BureauDePoste">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Post office</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIAdministratifOuMilitaire"/>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/CaserneDePompiers">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Fire station</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIAdministratifOuMilitaire"/>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/EnceinteMilitaire">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Military Area</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIAdministratifOuMilitaire"/>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/EtablissementPenitenciaire">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Penitentiary</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIAdministratifOuMilitaire"/>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Gendarmerie">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Gendarmerie</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIAdministratifOuMilitaire"/>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/HotelDeDepartement">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Departmental administration building</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIAdministratifOuMilitaire"/>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/HotelDeRegion">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Regional administration building</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIAdministratifOuMilitaire"/>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/MaisonForestiere">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Forest house</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIAdministratifOuMilitaire"/>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/OuvrageMilitaire">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Defence work</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIAdministratifOuMilitaire"/>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/PalaisDeJustice">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Law-courts</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIAdministratifOuMilitaire"/>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Golf">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Golf course</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAISport"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/PAISport">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Golf">
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/PAISport">
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Hippodrome">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Racecourse</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAISport"/>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Piscine">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Swimming-pool</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAISport"/>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/EnseignementPrimaire">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Nursery or elementary school</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIScienceEnseignement"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/PAIScienceEnseignement">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/EnseignementPrimaire">
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/PAIScienceEnseignement">
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/EnseignementSecondaire">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Secondary education school</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIScienceEnseignement"/>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/EnseignementSuperieur">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Postsecondary education school</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIScienceEnseignement"/>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/PAISport">
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Sports POI</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/PAITransport">
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Transport POI</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/PAIZoneHabitation">
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Dwellings zone POI</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/PAIAdministratifOuMilitaire">
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Administrative or military POI</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/PAICultureLoisirs">
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Culture or leasure POI</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/PAIEspaceNaturel">
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Natural POI</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/PAIGestionEaux">
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Water treatment POI</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/PAIHydrographie">
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Hydrographic POI</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/PAIIndustrielCommercial">
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Industrial or commercial POI</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/PAIOrographie">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Relief POI</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/PAIReligieux">
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Religious POI</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/PAISante">
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Healthcare POI</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/PAIScienceEnseignement">
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Science or education POI</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Tombeau">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Tomb</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIReligieux"/>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Science">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Scientific or technological center</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIScienceEnseignement"/>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Stade">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Stadium</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAISport"/>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/RondPoint">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Roundabout</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAITransport"/>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/StationDeMetro">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Underground station</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAITransport"/>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/VoieFerree">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Railway line</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAITransport"/>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Quartier">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">District</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIZoneHabitation"/>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/PosteDePolice">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Police post</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIAdministratifOuMilitaire"/>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/PrefectureDeRegion">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Regional prefecture</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIAdministratifOuMilitaire"/>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Refuge">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Shelter</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAICultureLoisirs"/>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Vestiges">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Archeological ruins</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAICultureLoisirs"/>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/VillageDeVacances">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Holiday village</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAICultureLoisirs"/>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/UsineDeTraitementDesEaux">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Water treatment plant</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIGestionEaux"/>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Riviere">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">River</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIHydrographie"/>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Usine">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Factory</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIIndustrielCommercial"/>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/ZoneIndustrielle">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Industrial area</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAIIndustrielCommercial"/>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Camping">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Camping grounds</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAICultureLoisirs"/>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Construction">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Named building</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAICultureLoisirs"/>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Digue">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Dike</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAICultureLoisirs"/>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Dolmen">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Dolmen</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAICultureLoisirs"/>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/EspacePublic">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Named public area</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAICultureLoisirs"/>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/HabitationTroglodytique">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Cliff dwelling</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAICultureLoisirs"/>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/MaisonDuParc">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Park center</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAICultureLoisirs"/>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Menhir">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Menhir</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAICultureLoisirs"/>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typedezai/Musee">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeZAI"/>
+	<rdfs:label xml:lang="en">Museum</rdfs:label>
+	<skos:broader rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/PAICultureLoisirs"/>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+</rdf:RDF>

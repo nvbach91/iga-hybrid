@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://www.aktors.org/ontology/portal">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.aktors.org/ontology/portal#Research-Area">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.aktors.org/ontology/portal#Incidental-KA">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.aktors.org/ontology/portal#Research-Area"/>
+	<sub-area-of xmlns="http://www.aktors.org/ontology/portal#" rdf:resource="http://www.aktors.org/ontology/portal#Knowledge-Acquisition"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.aktors.org/ontology/portal#Knowledge-Acquisition">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.aktors.org/ontology/portal#has-research-interest">
+	<rdfs:range rdf:resource="http://www.aktors.org/ontology/portal#Research-Area"/>
+	<rdfs:domain rdf:nodeID="t150184"/>
+	<rdfs:comment>People and in general even organizations and organization units may have research interests.  This relation shoudl be used to specify them</rdfs:comment>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.aktors.org/ontology/portal#Research-Area">
+	<rdfs:isDefinedBy rdf:resource="http://www.aktors.org/ontology/portal"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.aktors.org/ontology/portal#Incidental-KA">
+	<rdfs:isDefinedBy rdf:resource="http://www.aktors.org/ontology/portal"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.aktors.org/ontology/portal#Knowledge-Acquisition">
+	<rdfs:isDefinedBy rdf:resource="http://www.aktors.org/ontology/portal"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.aktors.org/ontology/portal#Software-Visualization">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.aktors.org/ontology/portal#Research-Area"/>
+	<sub-area-of xmlns="http://www.aktors.org/ontology/portal#" rdf:resource="http://www.aktors.org/ontology/portal#Human-Computer-Interaction"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.aktors.org/ontology/portal#Human-Computer-Interaction">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.aktors.org/ontology/portal#Software-Visualization">
+	<rdfs:isDefinedBy rdf:resource="http://www.aktors.org/ontology/portal"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.aktors.org/ontology/portal#Human-Computer-Interaction">
+	<rdfs:isDefinedBy rdf:resource="http://www.aktors.org/ontology/portal"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.aktors.org/ontology/portal#Adaptive-Hypermedia">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.aktors.org/ontology/portal#Research-Area"/>
+	<sub-area-of xmlns="http://www.aktors.org/ontology/portal#" rdf:resource="http://www.aktors.org/ontology/portal#Hypermedia"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.aktors.org/ontology/portal#Hypermedia">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.aktors.org/ontology/portal#Adaptive-Hypermedia">
+	<rdfs:isDefinedBy rdf:resource="http://www.aktors.org/ontology/portal"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.aktors.org/ontology/portal#Hypermedia">
+	<rdfs:isDefinedBy rdf:resource="http://www.aktors.org/ontology/portal"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.aktors.org/ontology/portal#Collaborative-Hypermedia">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.aktors.org/ontology/portal#Research-Area"/>
+	<sub-area-of xmlns="http://www.aktors.org/ontology/portal#" rdf:resource="http://www.aktors.org/ontology/portal#Hypermedia"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.aktors.org/ontology/portal"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.aktors.org/ontology/portal#Dynamic-Linking">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.aktors.org/ontology/portal#Research-Area"/>
+	<sub-area-of xmlns="http://www.aktors.org/ontology/portal#" rdf:resource="http://www.aktors.org/ontology/portal#Hypermedia"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.aktors.org/ontology/portal"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.aktors.org/ontology/portal#Semantic-Web-Area">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.aktors.org/ontology/portal#Research-Area"/>
+	<sub-area-of xmlns="http://www.aktors.org/ontology/portal#" rdf:resource="http://www.aktors.org/ontology/portal#Web-Research-Area"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.aktors.org/ontology/portal#Web-Research-Area">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.aktors.org/ontology/portal#Semantic-Web-Area">
+	<rdfs:isDefinedBy rdf:resource="http://www.aktors.org/ontology/portal"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.aktors.org/ontology/portal#Web-Research-Area">
+	<rdfs:isDefinedBy rdf:resource="http://www.aktors.org/ontology/portal"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.aktors.org/ontology/portal#Knowledge-Acquisition">
+	<skos:inScheme rdf:resource="http://www.aktors.org/ontology/portal#Research-Area"/>
+	<sub-area-of xmlns="http://www.aktors.org/ontology/portal#" rdf:resource="http://www.aktors.org/ontology/portal#Knowledge-Management"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.aktors.org/ontology/portal#Knowledge-Management">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.aktors.org/ontology/portal"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.aktors.org/ontology/portal#Knowledge-Lifecycle">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.aktors.org/ontology/portal#Research-Area"/>
+	<sub-area-of xmlns="http://www.aktors.org/ontology/portal#" rdf:resource="http://www.aktors.org/ontology/portal#Knowledge-Management"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.aktors.org/ontology/portal"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.aktors.org/ontology/portal#Knowledge-Maintenance">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.aktors.org/ontology/portal#Research-Area"/>
+	<sub-area-of xmlns="http://www.aktors.org/ontology/portal#" rdf:resource="http://www.aktors.org/ontology/portal#Knowledge-Management"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.aktors.org/ontology/portal"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.aktors.org/ontology/portal#Knowledge-Modelling">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.aktors.org/ontology/portal#Research-Area"/>
+	<sub-area-of xmlns="http://www.aktors.org/ontology/portal#" rdf:resource="http://www.aktors.org/ontology/portal#Knowledge-Management"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.aktors.org/ontology/portal"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.aktors.org/ontology/portal#Knowledge-Publishing">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.aktors.org/ontology/portal#Research-Area"/>
+	<sub-area-of xmlns="http://www.aktors.org/ontology/portal#" rdf:resource="http://www.aktors.org/ontology/portal#Knowledge-Management"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.aktors.org/ontology/portal"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.aktors.org/ontology/portal#Knowledge-Retrieval">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.aktors.org/ontology/portal#Research-Area"/>
+	<sub-area-of xmlns="http://www.aktors.org/ontology/portal#" rdf:resource="http://www.aktors.org/ontology/portal#Knowledge-Management"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.aktors.org/ontology/portal"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.aktors.org/ontology/portal#Knowledge-Reuse">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.aktors.org/ontology/portal#Research-Area"/>
+	<sub-area-of xmlns="http://www.aktors.org/ontology/portal#" rdf:resource="http://www.aktors.org/ontology/portal#Knowledge-Management"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.aktors.org/ontology/portal"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.aktors.org/ontology/portal#Ontologies">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.aktors.org/ontology/portal#Research-Area"/>
+	<sub-area-of xmlns="http://www.aktors.org/ontology/portal#" rdf:resource="http://www.aktors.org/ontology/portal#Knowledge-Modelling"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.aktors.org/ontology/portal"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.aktors.org/ontology/portal#Problem-Solving-Methods">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.aktors.org/ontology/portal#Research-Area"/>
+	<sub-area-of xmlns="http://www.aktors.org/ontology/portal#" rdf:resource="http://www.aktors.org/ontology/portal#Knowledge-Modelling"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.aktors.org/ontology/portal"/>
+	<sub-area-of xmlns="http://www.aktors.org/ontology/portal#" rdf:resource="http://www.aktors.org/ontology/portal#Knowledge-Reuse"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.aktors.org/ontology/portal#Information-Extraction">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.aktors.org/ontology/portal#Research-Area"/>
+	<sub-area-of xmlns="http://www.aktors.org/ontology/portal#" rdf:resource="http://www.aktors.org/ontology/portal#Language-Engineering"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.aktors.org/ontology/portal#Language-Engineering">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.aktors.org/ontology/portal#Information-Extraction">
+	<rdfs:isDefinedBy rdf:resource="http://www.aktors.org/ontology/portal"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.aktors.org/ontology/portal#Language-Engineering">
+	<rdfs:isDefinedBy rdf:resource="http://www.aktors.org/ontology/portal"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.aktors.org/ontology/portal#Organizational-Learning">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.aktors.org/ontology/portal#Research-Area"/>
+	<sub-area-of xmlns="http://www.aktors.org/ontology/portal#" rdf:resource="http://www.aktors.org/ontology/portal#Learning-Research-Area"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.aktors.org/ontology/portal#Learning-Research-Area">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.aktors.org/ontology/portal#Organizational-Learning">
+	<rdfs:isDefinedBy rdf:resource="http://www.aktors.org/ontology/portal"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.aktors.org/ontology/portal#Learning-Research-Area">
+	<rdfs:isDefinedBy rdf:resource="http://www.aktors.org/ontology/portal"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.aktors.org/ontology/portal#Human-Computer-Interaction">
+	<skos:inScheme rdf:resource="http://www.aktors.org/ontology/portal#Research-Area"/>
+	<sub-area-of xmlns="http://www.aktors.org/ontology/portal#" rdf:resource="http://www.aktors.org/ontology/portal#Computing-Research-Area"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.aktors.org/ontology/portal#Computing-Research-Area">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.aktors.org/ontology/portal"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.aktors.org/ontology/portal#Telepresence-Research-Area">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.aktors.org/ontology/portal#Research-Area"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.aktors.org/ontology/portal"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.aktors.org/ontology/portal#Web-Research-Area">
+	<skos:inScheme rdf:resource="http://www.aktors.org/ontology/portal#Research-Area"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.aktors.org/ontology/portal#Agent-Based-Computing">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.aktors.org/ontology/portal#Research-Area"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.aktors.org/ontology/portal"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.aktors.org/ontology/portal#Artificial-Intelligence-Research-Area">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.aktors.org/ontology/portal#Research-Area"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.aktors.org/ontology/portal"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.aktors.org/ontology/portal#Cognitive-Modelling-Research-Area">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.aktors.org/ontology/portal#Research-Area"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.aktors.org/ontology/portal"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.aktors.org/ontology/portal#Computing-Research-Area">
+	<skos:inScheme rdf:resource="http://www.aktors.org/ontology/portal#Research-Area"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.aktors.org/ontology/portal#E-Commerce-Research-Area">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.aktors.org/ontology/portal#Research-Area"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.aktors.org/ontology/portal"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.aktors.org/ontology/portal#Hypermedia">
+	<skos:inScheme rdf:resource="http://www.aktors.org/ontology/portal#Research-Area"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.aktors.org/ontology/portal#Information-Retrieval">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.aktors.org/ontology/portal#Research-Area"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.aktors.org/ontology/portal"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.aktors.org/ontology/portal#Knowledge-Management">
+	<skos:inScheme rdf:resource="http://www.aktors.org/ontology/portal#Research-Area"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.aktors.org/ontology/portal#Language-Engineering">
+	<skos:inScheme rdf:resource="http://www.aktors.org/ontology/portal#Research-Area"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.aktors.org/ontology/portal#Learning-Research-Area">
+	<skos:inScheme rdf:resource="http://www.aktors.org/ontology/portal#Research-Area"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.aktors.org/ontology/portal#Multimedia-Research-Area">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.aktors.org/ontology/portal#Research-Area"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.aktors.org/ontology/portal"/>
+</rdf:Description>
+
+</rdf:RDF>

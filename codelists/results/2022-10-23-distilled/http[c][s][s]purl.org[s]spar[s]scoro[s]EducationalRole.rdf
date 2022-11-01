@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://purl.org/spar/scoro/">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/scoro/EducationalRole">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/scoro/faculty-member">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/scoro/EducationalRole"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/scoro/EducationalRole">
+	<rdfs:comment xml:lang="en">A role that an agent might hold with respect to an educational organization or activity.  Individual members of this class are used to specify particular educational roles.</rdfs:comment>
+	<rdfs:label xml:lang="en">educational role</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/scoro/faculty-member">
+	<rdfs:comment xml:lang="en">The role of an academic employed to undertake research and teaching within a university department, school or institute.</rdfs:comment>
+	<rdfs:label xml:lang="en">faculty member</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/scoro/EducationalRole">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/scoro/faculty-member">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/scoro/postgraduate-student">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/scoro/EducationalRole"/>
+	<rdfs:comment xml:lang="en">The role of a person registerd for a graduate (masters or doctoral) degree at a university.</rdfs:comment>
+	<rdfs:label xml:lang="en">postgraduate student</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/scoro/supervisor">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/scoro/EducationalRole"/>
+	<rdfs:comment xml:lang="en">The role of a person who supervises the research activities of a student during that student's research project undertaken as part of a degree course at a university.</rdfs:comment>
+	<rdfs:label xml:lang="en">supervisor</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/scoro/undergraduate-student">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/scoro/EducationalRole"/>
+	<rdfs:comment xml:lang="en">The role of a person registerd for an undergraduate degree at a university.</rdfs:comment>
+	<rdfs:label xml:lang="en">undergraduate student</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+</rdf:Description>
+
+</rdf:RDF>

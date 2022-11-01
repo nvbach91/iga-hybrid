@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="https://bmake.th-brandenburg.de/spv">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://bmake.th-brandenburg.de/spv#ResearchMethod">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://bmake.th-brandenburg.de/spv#ResMethActionResearch">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://bmake.th-brandenburg.de/spv#ResearchMethod"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://bmake.th-brandenburg.de/spv#ResearchMethod">
+	<rdfs:comment xml:lang="en">Research method applied in an analyzed scientific paper taken from a list of all relevant research methods used in Information Systems.</rdfs:comment>
+	<rdfs:label xml:lang="en">Research Method</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://bmake.th-brandenburg.de/spv#ResMethActionResearch">
+	<rdfs:comment xml:lang="en">Solving a practice problem by a mixed group of scientists and practical experts. Several cycles of analysis, action and evaluation steps, each with a low level of structured instruments such as group discussions or planning games, are conducted.</rdfs:comment>
+	<rdfs:label xml:lang="en">Action Research (Wilde/Hess)</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://bmake.th-brandenburg.de/spv#ResearchMethod">
+	<rdfs:isDefinedBy rdf:resource="https://bmake.th-brandenburg.de/spv"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://bmake.th-brandenburg.de/spv#ResMethActionResearch">
+	<rdfs:isDefinedBy rdf:resource="https://bmake.th-brandenburg.de/spv"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://bmake.th-brandenburg.de/spv#ResMethArgumentDedAnalysis">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://bmake.th-brandenburg.de/spv#ResearchMethod"/>
+	<rdfs:comment xml:lang="en">Pure-language logical-deductive inferencing (as, for example, in philosophy)</rdfs:comment>
+	<rdfs:label xml:lang="en">Argumentative Deductive Analysis (Wilde/Hess)</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://bmake.th-brandenburg.de/spv"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://bmake.th-brandenburg.de/spv#ResMethCaseStudy">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://bmake.th-brandenburg.de/spv#ResearchMethod"/>
+	<rdfs:comment xml:lang="en">The case study usually examines complex, difficult-to-distinguish phenomena in their natural context. It represents a special form of the qualitative-empirical methodology, which is investigated intensively by a few feature-bearers. It is either the objective examination of theses (behavioral approach) or the interpretation of behavioral patterns as the phenotypes of the realities constructed by the subjects (construction-oriented access).</rdfs:comment>
+	<rdfs:label xml:lang="en">Case Study (Wilde/Hess)</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://bmake.th-brandenburg.de/spv"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://bmake.th-brandenburg.de/spv#ResMethConceptualDedAnalysis">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://bmake.th-brandenburg.de/spv#ResearchMethod"/>
+	<rdfs:comment xml:lang="en">Logic-deductive inferencing using semiformal models</rdfs:comment>
+	<rdfs:label xml:lang="en">Conceptual Deductive Analysis (Wilde/Hess)</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://bmake.th-brandenburg.de/spv"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://bmake.th-brandenburg.de/spv#ResMethDesignScience">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://bmake.th-brandenburg.de/spv#ResearchMethod"/>
+	<rdfs:comment xml:lang="en">Design Science is an outcome-based information technology research methodology, which offers specific guidelines for evaluation and iteration within research projects.</rdfs:comment>
+	<rdfs:label xml:lang="en">Design Science (Hevner)</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://bmake.th-brandenburg.de/spv"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://bmake.th-brandenburg.de/spv#ResMethEthnography">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://bmake.th-brandenburg.de/spv#ResearchMethod"/>
+	<rdfs:comment xml:lang="en">Ethnography would like to generate insights through participatory observation. The difference to the case study lies in the very high extent in which the researcher is integrated into the investigated social environment. There is a very small objective distance.</rdfs:comment>
+	<rdfs:label xml:lang="en">Ethnography (Wilde/Hess)</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://bmake.th-brandenburg.de/spv"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://bmake.th-brandenburg.de/spv#ResMethFieldExperiment">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://bmake.th-brandenburg.de/spv#ResearchMethod"/>
+	<rdfs:comment xml:lang="en">The field experiment investigates causal relationships in a controlled environment by manipulating an experimental variable in a repeatable manner and measuring the effect of manipulation. The object to be investigated is examined in its natural environment (in the 'field'), whereby the possibilities of environmental control are significantly influenced.</rdfs:comment>
+	<rdfs:label xml:lang="en">Field Experiment (Wilde/Hess)</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://bmake.th-brandenburg.de/spv"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://bmake.th-brandenburg.de/spv#ResMethFormalDedAnalysis">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://bmake.th-brandenburg.de/spv#ResearchMethod"/>
+	<rdfs:comment xml:lang="en">Logic-deductive inferencing using mathematical-formal models</rdfs:comment>
+	<rdfs:label xml:lang="en">Formal Deductive Analysis (Wilde/Hess)</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://bmake.th-brandenburg.de/spv"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://bmake.th-brandenburg.de/spv#ResMethGroundedTheory">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://bmake.th-brandenburg.de/spv#ResearchMethod"/>
+	<rdfs:comment xml:lang="en">The Grounded Theory aims at the inductive acquisition of new theories by intensive observation of the object of investigation in the field. The various procedures for coding and evaluating the predominantly qualitative data are precisely specified.</rdfs:comment>
+	<rdfs:label xml:lang="en">Grounded Theory (Wilde/Hess)</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://bmake.th-brandenburg.de/spv"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://bmake.th-brandenburg.de/spv#ResMethLabExperiment">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://bmake.th-brandenburg.de/spv#ResearchMethod"/>
+	<rdfs:comment xml:lang="en">The laboratory experiment investigates causal relationships in a controlled environment by manipulating an experimental variable in a repetitive manner and measuring the effect of manipulation. The object to be investigated is examined in an artificial environment (in the 'laboratory'), whereby the possibilities of environmental control are significantly influenced.</rdfs:comment>
+	<rdfs:label xml:lang="en">Laboratory Experiment (Wilde/Hess)</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://bmake.th-brandenburg.de/spv"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://bmake.th-brandenburg.de/spv#ResMethLiteratureAnalysis">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://bmake.th-brandenburg.de/spv#ResearchMethod"/>
+	<rdfs:comment xml:lang="en">A literature review is a written document that presents a logically argued case founded on a comprehensive understanding of the current state of knowledge about a topic of study. This case establishes a convincing thesis to answer the study’s question.</rdfs:comment>
+	<rdfs:label xml:lang="en">Literature Analysis (Machi/McEvoy)</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://bmake.th-brandenburg.de/spv"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://bmake.th-brandenburg.de/spv#ResMethPrototyping">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://bmake.th-brandenburg.de/spv#ResearchMethod"/>
+	<rdfs:comment xml:lang="en">A preliminary version of an application system is developed and evaluated. Both steps can generate new insights.</rdfs:comment>
+	<rdfs:label xml:lang="en">Prototyping (Wilde/Hess)</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://bmake.th-brandenburg.de/spv"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://bmake.th-brandenburg.de/spv#ResMethQualitativeResearch">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://bmake.th-brandenburg.de/spv#ResearchMethod"/>
+	<rdfs:comment xml:lang="en">This method integrates survey techniques such as questionnaires, interviews, Delphi method, content analyzes, etc. into an aggregate. It comprises a one-time survey over several individuals, which is subsequently coded and evaluated qualitatively. The result is a cross-section profile characteristic for the sample participants, which usually allows conclusions to be drawn on the total population.</rdfs:comment>
+	<rdfs:label xml:lang="en">Qualitative Research (Wilde/Hess)</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://bmake.th-brandenburg.de/spv"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://bmake.th-brandenburg.de/spv#ResMethQuantitativeResearch">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://bmake.th-brandenburg.de/spv#ResearchMethod"/>
+	<rdfs:comment xml:lang="en">This method integrates survey techniques such as questionnaires, interviews, Delphi method, content analyzes, etc. into an aggregate. It comprises a one-time survey over several individuals, which is subsequently coded and evaluated quantatively. The result is a cross-section profile characteristic for the sample participants, which usually allows conclusions to be drawn on the total population.</rdfs:comment>
+	<rdfs:label xml:lang="en">Quantitative Research (Wilde/Hess)</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://bmake.th-brandenburg.de/spv"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://bmake.th-brandenburg.de/spv#ResMethReferenceModeling">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://bmake.th-brandenburg.de/spv#ResearchMethod"/>
+	<rdfs:comment xml:lang="en">The reference modeling produces inductively (out of observations) or deductively (eg from theories or models) mostly simplified and optimized projections (ideal concepts) of systems, in order to deepen existing knowledge and generate design templates from this.</rdfs:comment>
+	<rdfs:label xml:lang="en">Reference Modeling (Wilde/Hess)</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://bmake.th-brandenburg.de/spv"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://bmake.th-brandenburg.de/spv#ResMethSimulation">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://bmake.th-brandenburg.de/spv#ResearchMethod"/>
+	<rdfs:comment xml:lang="en">The simulation models the behavior of the system to be investigated formally and compares environmental conditions with certain assignments of the model parameters. Both the model construction and the observation of the endogenous model parameters allow to gain insights.</rdfs:comment>
+	<rdfs:label xml:lang="en">Simulation (Wilde/Hess)</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://bmake.th-brandenburg.de/spv"/>
+</rdf:Description>
+
+</rdf:RDF>

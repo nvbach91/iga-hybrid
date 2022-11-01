@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/GramPerPrefixedLitre">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/gramPerAttolitre">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/GramPerPrefixedLitre"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/GramPerPrefixedLitre">
+	<rdfs:label xml:lang="en">gram per prefixed litre</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/gramPerAttolitre">
+	<rdfs:comment xml:lang="en">Gram per attolitre is a unit of density defined as gram divided by attolitre.</rdfs:comment>
+	<rdfs:label xml:lang="en">gram per attolitre</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/GramPerPrefixedLitre">
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/gramPerAttolitre">
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/gramPerCentilitre">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/GramPerPrefixedLitre"/>
+	<rdfs:comment xml:lang="en">Gram per centilitre is a unit of density defined as gram divided by centilitre.</rdfs:comment>
+	<rdfs:label xml:lang="en">gram per centilitre</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/gramPerDecalitre">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/GramPerPrefixedLitre"/>
+	<rdfs:comment xml:lang="en">Gram per decalitre is a unit of density defined as gram divided by decalitre.</rdfs:comment>
+	<rdfs:label xml:lang="en">gram per decalitre</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/gramPerDecilitre">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/GramPerPrefixedLitre"/>
+	<rdfs:comment xml:lang="en">Gram per decilitre is a unit of density defined as gram divided by decilitre.</rdfs:comment>
+	<rdfs:label xml:lang="en">gram per decilitre</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/gramPerExalitre">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/GramPerPrefixedLitre"/>
+	<rdfs:comment xml:lang="en">Gram per exalitre is a unit of density defined as gram divided by exalitre.</rdfs:comment>
+	<rdfs:label xml:lang="en">gram per exalitre</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/gramPerFemtolitre">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/GramPerPrefixedLitre"/>
+	<rdfs:comment xml:lang="en">Gram per femtolitre is a unit of density defined as gram divided by femtolitre.</rdfs:comment>
+	<rdfs:label xml:lang="en">gram per femtolitre</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/gramPerGigalitre">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/GramPerPrefixedLitre"/>
+	<rdfs:comment xml:lang="en">Gram per gigalitre is a unit of density defined as gram divided by gigalitre.</rdfs:comment>
+	<rdfs:label xml:lang="en">gram per gigalitre</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/gramPerHectolitre">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/GramPerPrefixedLitre"/>
+	<rdfs:comment xml:lang="en">Gram per hectolitre is a unit of density defined as gram divided by hectolitre.</rdfs:comment>
+	<rdfs:label xml:lang="en">gram per hectolitre</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/gramPerKilolitre">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/GramPerPrefixedLitre"/>
+	<rdfs:comment xml:lang="en">Gram per kilolitre is a unit of density defined as gram divided by kilolitre.</rdfs:comment>
+	<rdfs:label xml:lang="en">gram per kilolitre</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/gramPerMegalitre">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/GramPerPrefixedLitre"/>
+	<rdfs:comment xml:lang="en">Gram per megalitre is a unit of density defined as gram divided by megalitre.</rdfs:comment>
+	<rdfs:label xml:lang="en">gram per megalitre</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/gramPerMicrolitre">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/GramPerPrefixedLitre"/>
+	<rdfs:comment xml:lang="en">Gram per microlitre is a unit of density defined as gram divided by microlitre.</rdfs:comment>
+	<rdfs:label xml:lang="en">gram per microlitre</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/gramPerMillilitre">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/GramPerPrefixedLitre"/>
+	<rdfs:comment xml:lang="en">Gram per millilitre is a unit of density defined as gram divided by millilitre.</rdfs:comment>
+	<rdfs:label xml:lang="en">gram per millilitre</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/gramPerNanolitre">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/GramPerPrefixedLitre"/>
+	<rdfs:comment xml:lang="en">Gram per nanolitre is a unit of density defined as gram divided by nanolitre.</rdfs:comment>
+	<rdfs:label xml:lang="en">gram per nanolitre</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/gramPerPetalitre">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/GramPerPrefixedLitre"/>
+	<rdfs:comment xml:lang="en">Gram per petalitre is a unit of density defined as gram divided by petalitre.</rdfs:comment>
+	<rdfs:label xml:lang="en">gram per petalitre</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/gramPerPicolitre">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/GramPerPrefixedLitre"/>
+	<rdfs:comment xml:lang="en">Gram per picolitre is a unit of density defined as gram divided by picolitre.</rdfs:comment>
+	<rdfs:label xml:lang="en">gram per picolitre</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/gramPerTeralitre">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/GramPerPrefixedLitre"/>
+	<rdfs:comment xml:lang="en">Gram per teralitre is a unit of density defined as gram divided by teralitre.</rdfs:comment>
+	<rdfs:label xml:lang="en">gram per teralitre</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/gramPerYoctolitre">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/GramPerPrefixedLitre"/>
+	<rdfs:comment xml:lang="en">Gram per yoctolitre is a unit of density defined as gram divided by yoctolitre.</rdfs:comment>
+	<rdfs:label xml:lang="en">gram per yoctolitre</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/gramPerYottalitre">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/GramPerPrefixedLitre"/>
+	<rdfs:comment xml:lang="en">Gram per yottalitre is a unit of density defined as gram divided by yottalitre.</rdfs:comment>
+	<rdfs:label xml:lang="en">gram per yottalitre</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/gramPerZeptolitre">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/GramPerPrefixedLitre"/>
+	<rdfs:comment xml:lang="en">Gram per zeptolitre is a unit of density defined as gram divided by zeptolitre.</rdfs:comment>
+	<rdfs:label xml:lang="en">gram per zeptolitre</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/gramPerZettalitre">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/GramPerPrefixedLitre"/>
+	<rdfs:comment xml:lang="en">Gram per zettalitre is a unit of density defined as gram divided by zettalitre.</rdfs:comment>
+	<rdfs:label xml:lang="en">gram per zettalitre</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+</rdf:Description>
+
+</rdf:RDF>

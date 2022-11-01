@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="https://www.gleif.org/ontology/ReportingException/">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.gleif.org/ontology/ReportingException/ExceptionReasonKind">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.gleif.org/ontology/ReportingException/ExceptionReasonKindBindingLegalCommitments">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://www.gleif.org/ontology/ReportingException/ExceptionReasonKind"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.gleif.org/ontology/ReportingException/ExceptionReasonKind">
+	<rdfs:label>exception reason</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.gleif.org/ontology/ReportingException/ExceptionReasonKindBindingLegalCommitments">
+	<rdfs:label>binding legal commitments</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.gleif.org/ontology/ReportingException/hasExceptionReason">
+	<rdfs:range rdf:resource="https://www.gleif.org/ontology/ReportingException/ExceptionReasonKind"/>
+	<rdfs:domain rdf:resource="https://www.gleif.org/ontology/ReportingException/ReportingException"/>
+	<rdfs:label>has exception reason</rdfs:label>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.gleif.org/ontology/ReportingException/ExceptionReasonKind">
+	<rdfs:isDefinedBy rdf:resource="https://www.gleif.org/ontology/ReportingException/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.gleif.org/ontology/ReportingException/ExceptionReasonKindBindingLegalCommitments">
+	<rdfs:isDefinedBy rdf:resource="https://www.gleif.org/ontology/ReportingException/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.gleif.org/ontology/ReportingException/ExceptionReasonKindConsentNotObtained">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://www.gleif.org/ontology/ReportingException/ExceptionReasonKind"/>
+	<rdfs:label>consent not obtained</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://www.gleif.org/ontology/ReportingException/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.gleif.org/ontology/ReportingException/ExceptionReasonKindDetrimentNotExcluded">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://www.gleif.org/ontology/ReportingException/ExceptionReasonKind"/>
+	<rdfs:label>detriment not excluded</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://www.gleif.org/ontology/ReportingException/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.gleif.org/ontology/ReportingException/ExceptionReasonKindDisclosureDetrimental">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://www.gleif.org/ontology/ReportingException/ExceptionReasonKind"/>
+	<rdfs:label>disclosure detrimental</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://www.gleif.org/ontology/ReportingException/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.gleif.org/ontology/ReportingException/ExceptionReasonKindLegalObstacles">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://www.gleif.org/ontology/ReportingException/ExceptionReasonKind"/>
+	<rdfs:label>legal obstacles</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://www.gleif.org/ontology/ReportingException/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.gleif.org/ontology/ReportingException/ExceptionReasonKindNaturalPersons">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://www.gleif.org/ontology/ReportingException/ExceptionReasonKind"/>
+	<rdfs:label>natural persons</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://www.gleif.org/ontology/ReportingException/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.gleif.org/ontology/ReportingException/ExceptionReasonKindNoKnownPerson">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://www.gleif.org/ontology/ReportingException/ExceptionReasonKind"/>
+	<rdfs:label>no known person</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://www.gleif.org/ontology/ReportingException/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.gleif.org/ontology/ReportingException/ExceptionReasonKindNoLEI">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://www.gleif.org/ontology/ReportingException/ExceptionReasonKind"/>
+	<rdfs:label>no LEI</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://www.gleif.org/ontology/ReportingException/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.gleif.org/ontology/ReportingException/ExceptionReasonKindNonConsolidating">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://www.gleif.org/ontology/ReportingException/ExceptionReasonKind"/>
+	<rdfs:label>non consolidating</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://www.gleif.org/ontology/ReportingException/"/>
+</rdf:Description>
+
+</rdf:RDF>

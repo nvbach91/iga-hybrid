@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="https://saref.etsi.org/saref4watr/">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://saref.etsi.org/saref4watr/AcceptabilityProperty">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://saref.etsi.org/saref4watr/Colour">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://saref.etsi.org/saref4watr/AcceptabilityProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://saref.etsi.org/saref4watr/AcceptabilityProperty">
+	<rdfs:comment xml:lang="en">An acceptability property is a property of water that is related to its acceptability.</rdfs:comment>
+	<rdfs:label xml:lang="en">Acceptability property</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://saref.etsi.org/saref4watr/Colour">
+	<rdfs:comment xml:lang="en">Property of the water indicating its colour.</rdfs:comment>
+	<rdfs:label xml:lang="en">Colour</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://saref.etsi.org/saref4watr/AcceptabilityProperty">
+	<rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4watr/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://saref.etsi.org/saref4watr/Colour">
+	<rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4watr/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://saref.etsi.org/saref4watr/Conductivity">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://saref.etsi.org/saref4watr/AcceptabilityProperty"/>
+	<rdfs:comment xml:lang="en">Property of the water indicating its conductivity.</rdfs:comment>
+	<rdfs:label xml:lang="en">Conductivity</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4watr/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://saref.etsi.org/saref4watr/Hardness">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://saref.etsi.org/saref4watr/AcceptabilityProperty"/>
+	<rdfs:comment xml:lang="en">Property of the water indicating its hardness.</rdfs:comment>
+	<rdfs:label xml:lang="en">Hardness</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4watr/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://saref.etsi.org/saref4watr/HydrogenIonConcentration">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://saref.etsi.org/saref4watr/AcceptabilityProperty"/>
+	<rdfs:comment xml:lang="en">Property of the water indicating its hydrogen ion concentration.</rdfs:comment>
+	<rdfs:label xml:lang="en">pH</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4watr/"/>
+	<rdfs:label xml:lang="en">Hydrogen ion concentration</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://saref.etsi.org/saref4watr/Odour">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://saref.etsi.org/saref4watr/AcceptabilityProperty"/>
+	<rdfs:comment xml:lang="en">Property of the water indicating its odour.</rdfs:comment>
+	<rdfs:label xml:lang="en">Odour</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4watr/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://saref.etsi.org/saref4watr/Oxidisability">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://saref.etsi.org/saref4watr/AcceptabilityProperty"/>
+	<rdfs:comment xml:lang="en">Property of the water indicating its oxidisability.</rdfs:comment>
+	<rdfs:label xml:lang="en">Oxidisability</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4watr/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://saref.etsi.org/saref4watr/Taste">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://saref.etsi.org/saref4watr/AcceptabilityProperty"/>
+	<rdfs:comment xml:lang="en">Property of the water indicating its taste.</rdfs:comment>
+	<rdfs:label xml:lang="en">Taste</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4watr/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://saref.etsi.org/saref4watr/Temperature">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://saref.etsi.org/saref4watr/AcceptabilityProperty"/>
+	<rdfs:comment xml:lang="en">Property of the water indicating its temperature.</rdfs:comment>
+	<rdfs:label xml:lang="en">Temperature</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4watr/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://saref.etsi.org/saref4watr/TotalDissolvedSolids">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://saref.etsi.org/saref4watr/AcceptabilityProperty"/>
+	<rdfs:comment xml:lang="en">Property of the water indicating the dissolved combined content of all inorganic and organic substances present in a sample of water.</rdfs:comment>
+	<rdfs:label xml:lang="en">Total dissolved solids</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4watr/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://saref.etsi.org/saref4watr/TotalIndicativeDose">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://saref.etsi.org/saref4watr/AcceptabilityProperty"/>
+	<rdfs:comment xml:lang="en">Property of the water indicating its total indicative dose.</rdfs:comment>
+	<rdfs:label xml:lang="en">Total indicative dose</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4watr/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://saref.etsi.org/saref4watr/TotalSuspendedSolids">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://saref.etsi.org/saref4watr/AcceptabilityProperty"/>
+	<rdfs:comment xml:lang="en">Property of the water indicating the dry-weight of suspended particles, that are not dissolved, in a sample of water.</rdfs:comment>
+	<rdfs:label xml:lang="en">Total suspended solids</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4watr/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://saref.etsi.org/saref4watr/Turbidity">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://saref.etsi.org/saref4watr/AcceptabilityProperty"/>
+	<rdfs:comment xml:lang="en">Property of the water indicating its turbidity.</rdfs:comment>
+	<rdfs:label xml:lang="en">Turbidity</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4watr/"/>
+</rdf:Description>
+
+</rdf:RDF>

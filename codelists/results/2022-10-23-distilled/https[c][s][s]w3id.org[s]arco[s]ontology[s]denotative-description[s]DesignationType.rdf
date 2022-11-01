@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="https://w3id.org/arco/ontology/denotative-description">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/arco/ontology/denotative-description/DesignationType">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/arco/ontology/denotative-description/AssignedDesignation">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/arco/ontology/denotative-description/DesignationType"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/arco/ontology/denotative-description/DesignationType">
+	<rdfs:comment xml:lang="en">This class represents a cultural property's denomination or dedication type, or its title (i.e. other language, current, attributed, dialectal).</rdfs:comment>
+	<rdfs:label xml:lang="en">Designation Type</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/arco/ontology/denotative-description/AssignedDesignation">
+	<rdfs:comment xml:lang="en">This individual represents an attributed denomination.</rdfs:comment>
+	<rdfs:label xml:lang="en">Assigned designation</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/arco/ontology/denotative-description/hasDesignationType">
+	<rdfs:range rdf:resource="https://w3id.org/arco/ontology/denotative-description/DesignationType"/>
+	<rdfs:domain rdf:resource="https://w3id.org/arco/ontology/denotative-description/DesignationInTime"/>
+	<rdfs:label xml:lang="en">has designation type</rdfs:label>
+	<rdfs:comment xml:lang="en">This property relates a cultural entity designation to its type.</rdfs:comment>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/arco/ontology/denotative-description/DesignationType">
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/denotative-description"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/arco/ontology/denotative-description/AssignedDesignation">
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/denotative-description"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/arco/ontology/denotative-description/CurrentDesignation">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/arco/ontology/denotative-description/DesignationType"/>
+	<rdfs:comment xml:lang="en">This individual represents the current designation.</rdfs:comment>
+	<rdfs:label xml:lang="en">Current designation</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/denotative-description"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/arco/ontology/denotative-description/CustomaryDesignation">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/arco/ontology/denotative-description/DesignationType"/>
+	<rdfs:comment xml:lang="en">This individual represents the usual designation.</rdfs:comment>
+	<rdfs:label xml:lang="en">Customary designation</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/denotative-description"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/arco/ontology/denotative-description/DialectalDesignation">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/arco/ontology/denotative-description/DesignationType"/>
+	<rdfs:comment xml:lang="en">This individual represents the dialect designation.</rdfs:comment>
+	<rdfs:label xml:lang="en">Dialectal designation</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/denotative-description"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/arco/ontology/denotative-description/HistoricalDesignation">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/arco/ontology/denotative-description/DesignationType"/>
+	<rdfs:comment xml:lang="en">This individual represents a historical designation.</rdfs:comment>
+	<rdfs:label xml:lang="en">Historical designation</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/denotative-description"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/arco/ontology/denotative-description/IdiomaticDesignation">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/arco/ontology/denotative-description/DesignationType"/>
+	<rdfs:comment xml:lang="en">This individual represents an idiomatic designation.</rdfs:comment>
+	<rdfs:label xml:lang="en">Idiomatic designation</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/denotative-description"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/arco/ontology/denotative-description/LocalDesignation">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/arco/ontology/denotative-description/DesignationType"/>
+	<rdfs:comment xml:lang="en">This individual represents an local designation.</rdfs:comment>
+	<rdfs:label xml:lang="en">Local designation</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/denotative-description"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/arco/ontology/denotative-description/OriginalDesignation">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/arco/ontology/denotative-description/DesignationType"/>
+	<rdfs:comment xml:lang="en">This individual represents original designation.</rdfs:comment>
+	<rdfs:label xml:lang="en">Original designation</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/denotative-description"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/arco/ontology/denotative-description/OtherLanguageDesignation">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/arco/ontology/denotative-description/DesignationType"/>
+	<rdfs:comment xml:lang="en">This individual represents a designation in other language.</rdfs:comment>
+	<rdfs:label xml:lang="en">Other language designation</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/denotative-description"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/arco/ontology/denotative-description/SlangDesignation">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/arco/ontology/denotative-description/DesignationType"/>
+	<rdfs:comment xml:lang="en">This individual represents a slang designation.</rdfs:comment>
+	<rdfs:label xml:lang="en">Slang designation</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/denotative-description"/>
+</rdf:Description>
+
+</rdf:RDF>

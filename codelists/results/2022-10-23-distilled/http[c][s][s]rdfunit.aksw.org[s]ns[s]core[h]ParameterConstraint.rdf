@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://rdfunit.aksw.org/ns/core#">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdfunit.aksw.org/ns/core#ParameterConstraint">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdfunit.aksw.org/ns/core#Class">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdfunit.aksw.org/ns/core#ParameterConstraint"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdfunit.aksw.org/ns/core#ParameterConstraint">
+	<rdfs:label xml:lang="en">ParameterConstraint</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdfunit.aksw.org/ns/core#Class">
+	<rdfs:comment xml:lang="en">The parameter is restricted to a Class.</rdfs:comment>
+	<rdfs:label xml:lang="en">Class</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdfunit.aksw.org/ns/core#parameterConstraint">
+	<rdfs:range rdf:resource="http://rdfunit.aksw.org/ns/core#ParameterConstraint"/>
+	<rdfs:domain rdf:resource="http://rdfunit.aksw.org/ns/core#Parameter"/>
+	<rdfs:label xml:lang="en">parameterConstraint</rdfs:label>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdfunit.aksw.org/ns/core#ParameterConstraint">
+	<rdfs:isDefinedBy rdf:resource="http://rdfunit.aksw.org/ns/core#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdfunit.aksw.org/ns/core#Class">
+	<rdfs:isDefinedBy rdf:resource="http://rdfunit.aksw.org/ns/core#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdfunit.aksw.org/ns/core#None">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdfunit.aksw.org/ns/core#ParameterConstraint"/>
+	<rdfs:comment xml:lang="en">The parameter can be anything, even a free variable (?var)</rdfs:comment>
+	<rdfs:label xml:lang="en">None</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdfunit.aksw.org/ns/core#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdfunit.aksw.org/ns/core#Operator">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdfunit.aksw.org/ns/core#ParameterConstraint"/>
+	<rdfs:comment xml:lang="en">The parameter can be an operator.</rdfs:comment>
+	<rdfs:label xml:lang="en">Operator</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdfunit.aksw.org/ns/core#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdfunit.aksw.org/ns/core#Property">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdfunit.aksw.org/ns/core#ParameterConstraint"/>
+	<rdfs:comment xml:lang="en">The parameter is restricted to a property.</rdfs:comment>
+	<rdfs:label xml:lang="en">Property</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdfunit.aksw.org/ns/core#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdfunit.aksw.org/ns/core#Resource">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdfunit.aksw.org/ns/core#ParameterConstraint"/>
+	<rdfs:comment xml:lang="en">The pattern can be a resource.</rdfs:comment>
+	<rdfs:label xml:lang="en">Resource</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdfunit.aksw.org/ns/core#"/>
+</rdf:Description>
+
+</rdf:RDF>

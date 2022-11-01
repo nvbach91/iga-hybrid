@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/deliverycontext.owl">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/network.owl#NetworkTechnology">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/network.owl#NetworkType_AMPS">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/network.owl#NetworkTechnology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/network.owl#NetworkTechnology">
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This class represents different network technologies</rdfs:comment>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Network Technology</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/network.owl#NetworkType_AMPS">
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Advanced Mobile Phone System</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/network.owl#networkTechnology">
+	<rdfs:range rdf:resource="http://www.w3.org/2007/uwa/context/network.owl#NetworkTechnology"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2007/uwa/context/network.owl#NetworkMode"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Network Technology</rdfs:label>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This property holds a network technology</rdfs:comment>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/network.owl#NetworkTechnology">
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/network.owl#NetworkType_AMPS">
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/network.owl#NetworkType_ANSI-136">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/network.owl#NetworkTechnology"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ANSI-136</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/network.owl#NetworkType_CDMA2000_1xRTT">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/network.owl#NetworkTechnology"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CDMA 2000 1xRTT</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/network.owl#NetworkType_GSM">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/network.owl#NetworkTechnology"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Global System for Mobile Communications</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/network.owl#NetworkType_iDEN">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/network.owl#NetworkTechnology"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Integrated Digital Enhanced Network</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/network.owl#NetworkType_IEEE_802.11a">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/network.owl#NetworkTechnology"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WiFi 802.11a</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/network.owl#NetworkType_IEEE_802.11b">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/network.owl#NetworkTechnology"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WiFi 802.11b</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/network.owl#NetworkType_IEEE_802.11g">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/network.owl#NetworkTechnology"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wi-Fi 802.11g</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/network.owl#NetworkType_IS-95">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/network.owl#NetworkTechnology"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-95</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/network.owl#NetworkType_Mobitex">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/network.owl#NetworkTechnology"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MobiTex Network</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/network.owl#NetworkType_PDC">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/network.owl#NetworkTechnology"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Personal Digital Cellular</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/network.owl#NetworkType_PHS">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/network.owl#NetworkTechnology"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Personal Handy-phone System</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/network.owl#NetworkType_TD-SCDMA">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/network.owl#NetworkTechnology"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chinese standard</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/network.owl#NetworkType_TETRA">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/network.owl#NetworkTechnology"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TErrestrial Trunked RAdio</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/network.owl#NetworkType_UMTS_W-CDMA">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/network.owl#NetworkTechnology"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UMTS with W-CDMA air interface</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/network.owl#NetworkType_CDMA2000_EVDO">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/network.owl#NetworkTechnology"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/network.owl#NetworkType_CDMA2000_EVDV">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/network.owl#NetworkTechnology"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/network.owl#networkTechnology">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+</rdf:RDF>

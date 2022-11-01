@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://purl.org/linked-data/sdmx/2009/code">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linked-data/sdmx/2009/code#TimeFormat">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linked-data/sdmx/2009/code#timeFormat-102">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/linked-data/sdmx/2009/code#TimeFormat"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linked-data/sdmx/2009/code#TimeFormat">
+	<rdfs:comment xml:lang="en">These codes (based on the ISO 8601 standard) indicate the type of time references used in the data. The numeric codes below (203, 102,...,702) are used only in the SDMX-EDI messages; and the alphanumeric codes (P1D...PT1M) only in the SDMX-ML messages.</rdfs:comment>
+	<rdfs:label xml:lang="en">Code list for the Time Format as written in the SDMX-EDI and SDMX-ML messages - codelist class</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linked-data/sdmx/2009/code#timeFormat-102">
+	<rdfs:label xml:lang="en">CCYYMMDD</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linked-data/sdmx/2009/code#TimeFormat">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linked-data/sdmx/2009/code"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linked-data/sdmx/2009/code#timeFormat-102">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linked-data/sdmx/2009/code"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linked-data/sdmx/2009/code#timeFormat-203">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/linked-data/sdmx/2009/code#TimeFormat"/>
+	<rdfs:label xml:lang="en">CCYYMMDDhhmm</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linked-data/sdmx/2009/code"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linked-data/sdmx/2009/code#timeFormat-602">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/linked-data/sdmx/2009/code#TimeFormat"/>
+	<rdfs:label xml:lang="en">CCYY</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linked-data/sdmx/2009/code"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linked-data/sdmx/2009/code#timeFormat-604">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/linked-data/sdmx/2009/code#TimeFormat"/>
+	<rdfs:label xml:lang="en">CCYYS</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linked-data/sdmx/2009/code"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linked-data/sdmx/2009/code#timeFormat-608">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/linked-data/sdmx/2009/code#TimeFormat"/>
+	<rdfs:label xml:lang="en">CCYYQ</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linked-data/sdmx/2009/code"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linked-data/sdmx/2009/code#timeFormat-610">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/linked-data/sdmx/2009/code#TimeFormat"/>
+	<rdfs:label xml:lang="en">CCYYMM</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linked-data/sdmx/2009/code"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linked-data/sdmx/2009/code#timeFormat-616">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/linked-data/sdmx/2009/code#TimeFormat"/>
+	<rdfs:label xml:lang="en">CCYYWW</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linked-data/sdmx/2009/code"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linked-data/sdmx/2009/code#timeFormat-702">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/linked-data/sdmx/2009/code#TimeFormat"/>
+	<rdfs:label xml:lang="en">CCYYCCYY</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linked-data/sdmx/2009/code"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linked-data/sdmx/2009/code#timeFormat-704">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/linked-data/sdmx/2009/code#TimeFormat"/>
+	<rdfs:label xml:lang="en">CCYYSCCYYS</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linked-data/sdmx/2009/code"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linked-data/sdmx/2009/code#timeFormat-708">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/linked-data/sdmx/2009/code#TimeFormat"/>
+	<rdfs:label xml:lang="en">CCYYQCCYYQ</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linked-data/sdmx/2009/code"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linked-data/sdmx/2009/code#timeFormat-710">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/linked-data/sdmx/2009/code#TimeFormat"/>
+	<rdfs:label xml:lang="en">CCYYMMCCYYMM</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linked-data/sdmx/2009/code"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linked-data/sdmx/2009/code#timeFormat-711">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/linked-data/sdmx/2009/code#TimeFormat"/>
+	<rdfs:label xml:lang="en">CCYYMMDDCCYYMMDD</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linked-data/sdmx/2009/code"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linked-data/sdmx/2009/code#timeFormat-716">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/linked-data/sdmx/2009/code#TimeFormat"/>
+	<rdfs:label xml:lang="en">CCYYWWCCYYWW</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linked-data/sdmx/2009/code"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linked-data/sdmx/2009/code#timeFormat-719">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/linked-data/sdmx/2009/code#TimeFormat"/>
+	<rdfs:label xml:lang="en">CCYYMMDDhhmmmCCYYMMDDhhmmm</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linked-data/sdmx/2009/code"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linked-data/sdmx/2009/code#timeFormat-P1D">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/linked-data/sdmx/2009/code#TimeFormat"/>
+	<rdfs:label xml:lang="en">Daily (or Business)</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linked-data/sdmx/2009/code"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linked-data/sdmx/2009/code#timeFormat-P1M">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/linked-data/sdmx/2009/code#TimeFormat"/>
+	<rdfs:label xml:lang="en">Monthly</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linked-data/sdmx/2009/code"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linked-data/sdmx/2009/code#timeFormat-P1Y">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/linked-data/sdmx/2009/code#TimeFormat"/>
+	<rdfs:label xml:lang="en">Annual</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linked-data/sdmx/2009/code"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linked-data/sdmx/2009/code#timeFormat-P3M">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/linked-data/sdmx/2009/code#TimeFormat"/>
+	<rdfs:label xml:lang="en">Quarterly</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linked-data/sdmx/2009/code"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linked-data/sdmx/2009/code#timeFormat-P6M">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/linked-data/sdmx/2009/code#TimeFormat"/>
+	<rdfs:label xml:lang="en">Half-yearly</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linked-data/sdmx/2009/code"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linked-data/sdmx/2009/code#timeFormat-P7D">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/linked-data/sdmx/2009/code#TimeFormat"/>
+	<rdfs:label xml:lang="en">Weekly</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linked-data/sdmx/2009/code"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linked-data/sdmx/2009/code#timeFormat-PT1M">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/linked-data/sdmx/2009/code#TimeFormat"/>
+	<rdfs:label xml:lang="en">Minutely</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linked-data/sdmx/2009/code"/>
+</rdf:Description>
+
+</rdf:RDF>

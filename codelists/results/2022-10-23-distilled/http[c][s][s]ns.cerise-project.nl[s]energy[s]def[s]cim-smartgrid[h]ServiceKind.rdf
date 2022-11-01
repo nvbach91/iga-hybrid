@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://ns.cerise-project.nl/energy/def/cim-smartgrid">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ns.cerise-project.nl/energy/def/cim-smartgrid#ServiceKind">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ns.cerise-project.nl/energy/def/cim-smartgrid#ServiceKind.electricity">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://ns.cerise-project.nl/energy/def/cim-smartgrid#ServiceKind"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ns.cerise-project.nl/energy/def/cim-smartgrid#ServiceKind">
+	<rdfs:comment>Kind of service.</rdfs:comment>
+	<rdfs:label>ServiceKind</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ns.cerise-project.nl/energy/def/cim-smartgrid#ServiceKind.electricity">
+	<rdfs:comment>Electricity service.</rdfs:comment>
+	<rdfs:label>electricity</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ns.cerise-project.nl/energy/def/cim-smartgrid#ServiceKind">
+	<rdfs:isDefinedBy rdf:resource="http://ns.cerise-project.nl/energy/def/cim-smartgrid"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ns.cerise-project.nl/energy/def/cim-smartgrid#ServiceKind.electricity">
+	<rdfs:isDefinedBy rdf:resource="http://ns.cerise-project.nl/energy/def/cim-smartgrid"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ns.cerise-project.nl/energy/def/cim-smartgrid#ServiceKind.gas">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://ns.cerise-project.nl/energy/def/cim-smartgrid#ServiceKind"/>
+	<rdfs:comment>Gas service.</rdfs:comment>
+	<rdfs:label>gas</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://ns.cerise-project.nl/energy/def/cim-smartgrid"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ns.cerise-project.nl/energy/def/cim-smartgrid#ServiceKind.heat">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://ns.cerise-project.nl/energy/def/cim-smartgrid#ServiceKind"/>
+	<rdfs:comment>Heat service.</rdfs:comment>
+	<rdfs:label>heat</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://ns.cerise-project.nl/energy/def/cim-smartgrid"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ns.cerise-project.nl/energy/def/cim-smartgrid#ServiceKind.internet">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://ns.cerise-project.nl/energy/def/cim-smartgrid#ServiceKind"/>
+	<rdfs:comment>Internet service.</rdfs:comment>
+	<rdfs:label>internet</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://ns.cerise-project.nl/energy/def/cim-smartgrid"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ns.cerise-project.nl/energy/def/cim-smartgrid#ServiceKind.other">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://ns.cerise-project.nl/energy/def/cim-smartgrid#ServiceKind"/>
+	<rdfs:comment>Other kind of service.</rdfs:comment>
+	<rdfs:label>other</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://ns.cerise-project.nl/energy/def/cim-smartgrid"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ns.cerise-project.nl/energy/def/cim-smartgrid#ServiceKind.rates">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://ns.cerise-project.nl/energy/def/cim-smartgrid#ServiceKind"/>
+	<rdfs:comment>Rates (e.g. tax, charge, toll, duty, tariff, etc.) service.</rdfs:comment>
+	<rdfs:label>rates</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://ns.cerise-project.nl/energy/def/cim-smartgrid"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ns.cerise-project.nl/energy/def/cim-smartgrid#ServiceKind.refuse">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://ns.cerise-project.nl/energy/def/cim-smartgrid#ServiceKind"/>
+	<rdfs:comment>Refuse (waster) service.</rdfs:comment>
+	<rdfs:label>refuse</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://ns.cerise-project.nl/energy/def/cim-smartgrid"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ns.cerise-project.nl/energy/def/cim-smartgrid#ServiceKind.sewerage">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://ns.cerise-project.nl/energy/def/cim-smartgrid#ServiceKind"/>
+	<rdfs:comment>Sewerage service.</rdfs:comment>
+	<rdfs:label>sewerage</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://ns.cerise-project.nl/energy/def/cim-smartgrid"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ns.cerise-project.nl/energy/def/cim-smartgrid#ServiceKind.time">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://ns.cerise-project.nl/energy/def/cim-smartgrid#ServiceKind"/>
+	<rdfs:comment>Time service.</rdfs:comment>
+	<rdfs:label>time</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://ns.cerise-project.nl/energy/def/cim-smartgrid"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ns.cerise-project.nl/energy/def/cim-smartgrid#ServiceKind.tvLicence">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://ns.cerise-project.nl/energy/def/cim-smartgrid#ServiceKind"/>
+	<rdfs:comment>TV license service.</rdfs:comment>
+	<rdfs:label>tvLicence</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://ns.cerise-project.nl/energy/def/cim-smartgrid"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ns.cerise-project.nl/energy/def/cim-smartgrid#ServiceKind.water">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://ns.cerise-project.nl/energy/def/cim-smartgrid#ServiceKind"/>
+	<rdfs:comment>Water service.</rdfs:comment>
+	<rdfs:label>water</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://ns.cerise-project.nl/energy/def/cim-smartgrid"/>
+</rdf:Description>
+
+</rdf:RDF>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="https://www.w3.org/2019/wot/td">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.w3.org/2019/wot/td#OperationType">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.w3.org/2019/wot/td#invokeAction">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://www.w3.org/2019/wot/td#OperationType"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.w3.org/2019/wot/td#OperationType">
+	<rdfs:comment xml:lang="en">Enumeration of well-known operation types necessary to implement the WoT interaction model</rdfs:comment>
+	<rdfs:label>OperationType</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.w3.org/2019/wot/td#invokeAction">
+	<rdfs:comment xml:lang="en">Operation type of forms used to read a property value</rdfs:comment>
+	<rdfs:label>invokeAction</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.w3.org/2019/wot/td#OperationType">
+	<rdfs:isDefinedBy rdf:resource="https://www.w3.org/2019/wot/td"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.w3.org/2019/wot/td#invokeAction">
+	<rdfs:isDefinedBy rdf:resource="https://www.w3.org/2019/wot/td"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.w3.org/2019/wot/td#observeProperty">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://www.w3.org/2019/wot/td#OperationType"/>
+	<rdfs:comment xml:lang="en">Operation type of forms used to read a property value</rdfs:comment>
+	<rdfs:label>observeProperty</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://www.w3.org/2019/wot/td"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.w3.org/2019/wot/td#readAllProperties">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://www.w3.org/2019/wot/td#OperationType"/>
+	<rdfs:comment xml:lang="en">Operation type of forms used to read a property value</rdfs:comment>
+	<rdfs:label>readAllProperties</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://www.w3.org/2019/wot/td"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.w3.org/2019/wot/td#readMultipleProperties">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://www.w3.org/2019/wot/td#OperationType"/>
+	<rdfs:comment xml:lang="en">Operation type of forms used to read a property value</rdfs:comment>
+	<rdfs:label>readMultipleProperties</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://www.w3.org/2019/wot/td"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.w3.org/2019/wot/td#readProperty">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://www.w3.org/2019/wot/td#OperationType"/>
+	<rdfs:comment xml:lang="en">Operation type of forms used to read a property value</rdfs:comment>
+	<rdfs:label>readProperty</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://www.w3.org/2019/wot/td"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.w3.org/2019/wot/td#subscribeEvent">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://www.w3.org/2019/wot/td#OperationType"/>
+	<rdfs:comment xml:lang="en">Operation type of forms used to read a property value</rdfs:comment>
+	<rdfs:label>subscribeEvent</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://www.w3.org/2019/wot/td"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.w3.org/2019/wot/td#unobserveProperty">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://www.w3.org/2019/wot/td#OperationType"/>
+	<rdfs:comment xml:lang="en">Operation type of forms used to read a property value</rdfs:comment>
+	<rdfs:label>unobserveProperty</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://www.w3.org/2019/wot/td"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.w3.org/2019/wot/td#unsubscribeEvent">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://www.w3.org/2019/wot/td#OperationType"/>
+	<rdfs:comment xml:lang="en">Operation type of forms used to read a property value</rdfs:comment>
+	<rdfs:label>unsubscribeEvent</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://www.w3.org/2019/wot/td"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.w3.org/2019/wot/td#writeAllProperties">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://www.w3.org/2019/wot/td#OperationType"/>
+	<rdfs:comment xml:lang="en">Operation type of forms used to read a property value</rdfs:comment>
+	<rdfs:label>writeAllProperties</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://www.w3.org/2019/wot/td"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.w3.org/2019/wot/td#writeMultipleProperties">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://www.w3.org/2019/wot/td#OperationType"/>
+	<rdfs:comment xml:lang="en">Operation type of forms used to read a property value</rdfs:comment>
+	<rdfs:label>writeMultipleProperties</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://www.w3.org/2019/wot/td"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.w3.org/2019/wot/td#writeProperty">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://www.w3.org/2019/wot/td#OperationType"/>
+	<rdfs:comment xml:lang="en">Operation type of forms used to read a property value</rdfs:comment>
+	<rdfs:label>writeProperty</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://www.w3.org/2019/wot/td"/>
+</rdf:Description>
+
+</rdf:RDF>

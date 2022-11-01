@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://ontology.ethereal.cz/irao">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontology.ethereal.cz/irao/RepositoryType">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontology.ethereal.cz/irao/repositorytype#KnowledgeBase">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://ontology.ethereal.cz/irao/RepositoryType"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontology.ethereal.cz/irao/RepositoryType">
+	<rdfs:comment xml:lang="en">A repository type can be a knowledge base, knowledge graph, version control hosting, etc.</rdfs:comment>
+	<rdfs:label xml:lang="en">Repository Type</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontology.ethereal.cz/irao/repositorytype#KnowledgeBase">
+	<rdfs:label xml:lang="en">Knowledge base</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontology.ethereal.cz/irao/hasRepositoryType">
+	<rdfs:range rdf:resource="http://ontology.ethereal.cz/irao/RepositoryType"/>
+	<rdfs:domain rdf:resource="http://ontology.ethereal.cz/irao/Repository"/>
+	<rdfs:label xml:lang="en">has repository type</rdfs:label>
+	<rdfs:comment xml:lang="en">This property specifies the repository type of a research artifact repository</rdfs:comment>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontology.ethereal.cz/irao/RepositoryType">
+	<rdfs:isDefinedBy rdf:resource="http://ontology.ethereal.cz/irao"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontology.ethereal.cz/irao/repositorytype#KnowledgeBase">
+	<rdfs:isDefinedBy rdf:resource="http://ontology.ethereal.cz/irao"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontology.ethereal.cz/irao/repositorytype#VersionControlHosting">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://ontology.ethereal.cz/irao/RepositoryType"/>
+	<rdfs:label xml:lang="en">Version control hosting</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://ontology.ethereal.cz/irao"/>
+</rdf:Description>
+
+</rdf:RDF>

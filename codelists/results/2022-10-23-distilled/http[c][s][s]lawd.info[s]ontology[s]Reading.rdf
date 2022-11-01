@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://lawd.info/ontology/">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lawd.info/ontology/Reading">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lawd.info/ontology/correction">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://lawd.info/ontology/Reading"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lawd.info/ontology/Reading">
+	<rdfs:comment xml:lang="en">(Experimental) The superclass for members of the readingScheme concept scheme. A Reading is a word, phrase, or larger chunk of text from a witness (or any observation of variance concerning the text, such as an omission or interpolation).</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lawd.info/ontology/correction">
+	<skos:broader rdf:resource="http://lawd.info/ontology/intervention"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lawd.info/ontology/intervention">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lawd.info/ontology/readingType">
+	<rdfs:range rdf:resource="http://lawd.info/ontology/Reading"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lawd.info/ontology/Reading">
+	<rdfs:isDefinedBy rdf:resource="http://lawd.info/ontology/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lawd.info/ontology/correction">
+	<rdfs:isDefinedBy rdf:resource="http://lawd.info/ontology/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lawd.info/ontology/intervention">
+	<rdfs:isDefinedBy rdf:resource="http://lawd.info/ontology/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lawd.info/ontology/deletion">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://lawd.info/ontology/Reading"/>
+	<skos:broader rdf:resource="http://lawd.info/ontology/intervention"/>
+	<rdfs:isDefinedBy rdf:resource="http://lawd.info/ontology/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lawd.info/ontology/addition">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://lawd.info/ontology/Reading"/>
+	<skos:broader rdf:resource="http://lawd.info/ontology/variant"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lawd.info/ontology/variant">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lawd.info/ontology/addition">
+	<rdfs:isDefinedBy rdf:resource="http://lawd.info/ontology/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lawd.info/ontology/variant">
+	<rdfs:isDefinedBy rdf:resource="http://lawd.info/ontology/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lawd.info/ontology/interpolation">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://lawd.info/ontology/Reading"/>
+	<skos:broader rdf:resource="http://lawd.info/ontology/variant"/>
+	<rdfs:isDefinedBy rdf:resource="http://lawd.info/ontology/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lawd.info/ontology/intervention">
+	<skos:inScheme rdf:resource="http://lawd.info/ontology/Reading"/>
+	<skos:broader rdf:resource="http://lawd.info/ontology/variant"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lawd.info/ontology/omission">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://lawd.info/ontology/Reading"/>
+	<skos:broader rdf:resource="http://lawd.info/ontology/variant"/>
+	<rdfs:isDefinedBy rdf:resource="http://lawd.info/ontology/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lawd.info/ontology/transposition">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://lawd.info/ontology/Reading"/>
+	<skos:broader rdf:resource="http://lawd.info/ontology/variant"/>
+	<rdfs:isDefinedBy rdf:resource="http://lawd.info/ontology/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lawd.info/ontology/agreement">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://lawd.info/ontology/Reading"/>
+	<rdfs:isDefinedBy rdf:resource="http://lawd.info/ontology/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lawd.info/ontology/conjecture">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://lawd.info/ontology/Reading"/>
+	<rdfs:isDefinedBy rdf:resource="http://lawd.info/ontology/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lawd.info/ontology/uncertainReading">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://lawd.info/ontology/Reading"/>
+	<rdfs:isDefinedBy rdf:resource="http://lawd.info/ontology/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lawd.info/ontology/variant">
+	<skos:inScheme rdf:resource="http://lawd.info/ontology/Reading"/>
+</rdf:Description>
+
+</rdf:RDF>

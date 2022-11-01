@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://purl.org/SemSur/">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/SurveyPaper">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/A_Survey_of_Current_Link_Discovery_Frameworks">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/semsur/SurveyPaper"/>
+	<rdfs:comment>Links build the backbone of the Linked Data Cloud. With the steady growth in size of datasets comes an increased need for end users to know which frameworks to use for deriving links between datasets. In this survey, we comparatively evaluate current Link Discovery tools and frameworks. For this purpose, we outline general requirements and derive a generic architecture of Link Discovery frameworks. Based on this generic architecture, we study and compare the features of state-of the-art linking frameworks. We also analyze reported performance evaluations for the different frameworks. Finally, we derive insights pertaining to possible future developments in the domain of Link Discovery.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/SurveyPaper">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/semsur/A_Survey_of_Current_Link_Discovery_Frameworks">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/SemSur/_A_Survey_of_Approaches_and_Evaluation_Methods">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/semsur/SurveyPaper"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/SemSur/Bringing_Relational_Databases_into_the_Semantic_Web:_A_Survey">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/semsur/SurveyPaper"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/SemSur/Querying_over_Federated_SPARQL_Endpoints_—A_State_of_the_Art_Survey">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/semsur/SurveyPaper"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/SemSur/"/>
+</rdf:Description>
+
+</rdf:RDF>

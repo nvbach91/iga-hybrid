@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="https://bmake.th-brandenburg.de/spv">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://schema.org/Organization">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.wikidata.org/entity/Q1391182">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://schema.org/Organization"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://schema.org/Organization">
+	<rdfs:comment xml:lang="en">Here used for two objectives: (i) to denote the affiliations of authors and other person and (ii) to indicate publishers and conference organizers.</rdfs:comment>
+	<rdfs:label xml:lang="en">Organization</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.wikidata.org/entity/Q1391182">
+	<rdfs:label xml:lang="en">BUAS - Brandenburg University of Applied Sciences</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://schema.org/affiliation">
+	<rdfs:range rdf:resource="https://schema.org/Organization"/>
+	<rdfs:domain rdf:resource="https://schema.org/Person"/>
+	<rdfs:label xml:lang="en">affiliation</rdfs:label>
+	<rdfs:comment xml:lang="en">Is used to indicate the affiliation of a person to an organization.</rdfs:comment>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://schema.org/Organization">
+	<rdfs:isDefinedBy rdf:resource="https://bmake.th-brandenburg.de/spv"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.wikidata.org/entity/Q1391182">
+	<rdfs:isDefinedBy rdf:resource="https://bmake.th-brandenburg.de/spv"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://schema.org/publisher">
+	<rdfs:range rdf:resource="https://schema.org/Organization"/>
+	<rdfs:domain rdf:resource="https://schema.org/CreativeWork"/>
+	<rdfs:label xml:lang="en">publisher</rdfs:label>
+	<rdfs:comment xml:lang="en">Is used to indicate a publishing organization of a scientific paper or conference proceedings.</rdfs:comment>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+</rdf:RDF>

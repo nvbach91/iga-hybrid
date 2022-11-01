@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://purl.org/spar/scoro/">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/scoro/ExperimentalContribution">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/scoro/builds-and-or-maintains-instruments">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/scoro/ExperimentalContribution"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/scoro/ExperimentalContribution">
+	<rdfs:comment xml:lang="en">Defines the type or nature of a practical or experimental contribution made to the research.  Individual members of this class are used to specify particular contributions.</rdfs:comment>
+	<rdfs:label xml:lang="en">experimental contribution</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/scoro/builds-and-or-maintains-instruments">
+	<rdfs:comment xml:lang="en">The contribution of building instruments, equipment or scientific apparatus and/or maintaining the same in a workable condition for use in experiments.</rdfs:comment>
+	<rdfs:label xml:lang="en">builds and/or maintains instruments</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/scoro/ExperimentalContribution">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/scoro/builds-and-or-maintains-instruments">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/scoro/collects-data">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/scoro/ExperimentalContribution"/>
+	<rdfs:comment xml:lang="en">The contribution of making experimental observations and collecting data, for example using a telescope, a microscope or an analytical instrument.</rdfs:comment>
+	<rdfs:label xml:lang="en">collects data</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/scoro/creates-novel-organisms-or-cells">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/scoro/ExperimentalContribution"/>
+	<rdfs:comment xml:lang="en">The contribution of creating novel organisms (e.g. mouse mutants) or cells (e.g. tranformed cell lines), either for use in the research, or as a research output of use to others.</rdfs:comment>
+	<rdfs:label xml:lang="en">creates novel organisms or cells</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/scoro/creates-novel-reagents">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/scoro/ExperimentalContribution"/>
+	<rdfs:comment xml:lang="en">The contribution of creating novel physical or chemical compounds, or molecular biology constructs, either for use in the research, or as a research output of use to others.</rdfs:comment>
+	<rdfs:label xml:lang="en">creates novel reagents</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/scoro/creates-software">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/scoro/ExperimentalContribution"/>
+	<rdfs:comment xml:lang="en">The contribution of creating computer software, including software for experimental control, analytical tools, mathematical model and computational simulations for use in the research, or of creating an IT service (e.g. a bioinformatics database or Web service) of use to others.  </rdfs:comment>
+	<rdfs:label xml:lang="en">creates software</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/scoro/develops-methodology">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/scoro/ExperimentalContribution"/>
+	<rdfs:comment xml:lang="en">The contribution of developing experimental methodology that enables research.</rdfs:comment>
+	<rdfs:label xml:lang="en">develops methodology</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/scoro/maintains-IT-Infrastructure">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/scoro/ExperimentalContribution"/>
+	<rdfs:comment xml:lang="en">The contribution of maintaining the IT infrastructure required for the research.</rdfs:comment>
+	<rdfs:label xml:lang="en">maintains IT infrastructure</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/scoro/maintains-organisms-or-cells">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/scoro/ExperimentalContribution"/>
+	<rdfs:comment xml:lang="en">The contribution of maintaining multicellular organisms (plants, animals or fungi) or cell cultures used as experimental subjects, and of breeding these where appropriate.  
+
+[Note that there may be occasions when it is inappropriate to acknowledge such contributions, for fear of personal reprisals on the individuals involved from animal rights activists].</rdfs:comment>
+	<rdfs:label xml:lang="en">maintains organisms or cell cultures</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/scoro/maintains-research-facility">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/scoro/ExperimentalContribution"/>
+	<rdfs:comment xml:lang="en">The contribution of managing and operating a research facility, for example a confocal microscopy facility.</rdfs:comment>
+	<rdfs:label xml:lang="en">maintains research facility</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/scoro/obtains-and-or-prepares-specimens">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/scoro/ExperimentalContribution"/>
+	<rdfs:comment xml:lang="en">The contribution of obtaining and/or preparing specimens in a manner requiring research expertise or skill, for example collecting and preparing fossils, or preparing electron microscope specimens for examination.  </rdfs:comment>
+	<rdfs:label xml:lang="en">obtains and/or prepared specimens</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/scoro/performs-experiments">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/scoro/ExperimentalContribution"/>
+	<rdfs:comment xml:lang="en">The contribution of performing experiments.</rdfs:comment>
+	<rdfs:label xml:lang="en">performs experiments</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/scoro/processes-data">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/scoro/ExperimentalContribution"/>
+	<rdfs:comment xml:lang="en">The contribution of processing, cleaning, assembling, condensing or refining the data.</rdfs:comment>
+	<rdfs:label xml:lang="en">processs data</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/scoro/provides-exising-data">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/scoro/ExperimentalContribution"/>
+	<rdfs:comment xml:lang="en">The contribution of providing pre-existing data for re-use in the research.</rdfs:comment>
+	<rdfs:label xml:lang="en">provides existing data</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/scoro/provides-patients">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/scoro/ExperimentalContribution"/>
+	<rdfs:comment xml:lang="en">The contribution of providing access to medical or veterinary patients, to make possible the research.</rdfs:comment>
+	<rdfs:label xml:lang="en">provides patients</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/scoro/provides-reagents-specimens-or-materials">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/scoro/ExperimentalContribution"/>
+	<rdfs:comment xml:lang="en">The contribution of providing reagents, specimens or materials, including living organisms and cells, for example those not readily obtainable from commercial sources, to make possible the research.</rdfs:comment>
+	<rdfs:label xml:lang="en">provides reagents, specimens or materials</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/scoro/provides-service">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/scoro/ExperimentalContribution"/>
+	<rdfs:comment xml:lang="en">The contribution of providing a research service, for example a DNA sequencing service or a custom peptide synthesis service.</rdfs:comment>
+	<rdfs:label xml:lang="en">provided service</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/scoro/provides-software">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/scoro/ExperimentalContribution"/>
+	<rdfs:comment xml:lang="en">The contribution of providing software to facilitate the research, while not actively participating in the work.</rdfs:comment>
+	<rdfs:label xml:lang="en">provides software</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/scoro/provides-technical-support">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/scoro/ExperimentalContribution"/>
+	<rdfs:comment xml:lang="en">The contribution of providing technical support that facilitates research.</rdfs:comment>
+	<rdfs:label xml:lang="en">provides technical support</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/scoro/provides-tools-equipment-or-facilities">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/scoro/ExperimentalContribution"/>
+	<rdfs:comment xml:lang="en">The contribution of providing tools, equipment or facilities for the research, while not actively participating in the work.</rdfs:comment>
+	<rdfs:label xml:lang="en">provides tools, equipment or facilities</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+</rdf:Description>
+
+</rdf:RDF>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://purl.uniprot.org/core/">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.uniprot.org/core/Organelle">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.uniprot.org/core/Apicoplast">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.uniprot.org/core/Organelle"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.uniprot.org/core/Organelle">
+	<rdfs:label>Organelle</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.uniprot.org/core/Apicoplast">
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Apicoplast</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.uniprot.org/core/Organelle">
+	<rdfs:isDefinedBy rdf:resource="http://purl.uniprot.org/core/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.uniprot.org/core/Apicoplast">
+	<rdfs:isDefinedBy rdf:resource="http://purl.uniprot.org/core/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.uniprot.org/core/Chloroplast">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.uniprot.org/core/Organelle"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chloroplast</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.uniprot.org/core/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.uniprot.org/core/Cyanelle">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.uniprot.org/core/Organelle"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cyanelle</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.uniprot.org/core/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.uniprot.org/core/Hydrogenosome">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.uniprot.org/core/Organelle"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hydrogenosome</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.uniprot.org/core/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.uniprot.org/core/Mitochondrion">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.uniprot.org/core/Organelle"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mitochondion</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.uniprot.org/core/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.uniprot.org/core/Non-photosynthetic_plastid">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.uniprot.org/core/Organelle"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Non-photosyntethic plastid</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.uniprot.org/core/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.uniprot.org/core/Nucleomorph">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.uniprot.org/core/Organelle"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nuleomorph</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.uniprot.org/core/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.uniprot.org/core/Organellar_chromatophore">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.uniprot.org/core/Organelle"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Organellar chromatophore</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.uniprot.org/core/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.uniprot.org/core/Plastid">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.uniprot.org/core/Organelle"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Plastid</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.uniprot.org/core/"/>
+</rdf:Description>
+
+</rdf:RDF>

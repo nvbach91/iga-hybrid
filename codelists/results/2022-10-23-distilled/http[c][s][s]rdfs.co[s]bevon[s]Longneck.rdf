@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://rdfs.co/bevon/">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdfs.co/bevon/Longneck">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdfs.co/bevon/container/330mlLongneck">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdfs.co/bevon/Longneck"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdfs.co/bevon/Longneck">
+	<rdfs:comment xml:lang="en">
+    It is known as the standard longneck bottle or industry standard bottle
+    (ISB). The ISB longnecks have a uniform capacity, height, weight and
+    diameter and can be reused on average 16 times. The long neck offers a long
+    cushion of air to absorb the pressure of carbonation to reduce the risk of
+    exploding. The longneck also provides a handle for drinking directly from
+    the bottle without transferring body heat to the beer from one's hand.
+    </rdfs:comment>
+	<rdfs:label xml:lang="en">Longneck</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdfs.co/bevon/container/330mlLongneck">
+	<rdfs:label xml:lang="en">330ml Longneck Bottle</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdfs.co/bevon/Longneck">
+	<rdfs:isDefinedBy rdf:resource="http://rdfs.co/bevon/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdfs.co/bevon/container/330mlLongneck">
+	<rdfs:isDefinedBy rdf:resource="http://rdfs.co/bevon/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdfs.co/bevon/container/500mlLongneck">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdfs.co/bevon/Longneck"/>
+	<rdfs:label xml:lang="en">500ml Longneck Bottle</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdfs.co/bevon/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdfs.co/bevon/container/640mlLongneck">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdfs.co/bevon/Longneck"/>
+	<rdfs:label xml:lang="en">640ml Longneck Bottle</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdfs.co/bevon/"/>
+</rdf:Description>
+
+</rdf:RDF>

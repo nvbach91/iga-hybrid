@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://dataid.dbpedia.org/ns/core#">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dataid.dbpedia.org/ns/core#EntitledAction">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dataid.dbpedia.org/ns/core#DeleteContent">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://dataid.dbpedia.org/ns/core#EntitledAction"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dataid.dbpedia.org/ns/core#EntitledAction">
+	<rdfs:comment xml:lang="en">AgentRoles provide access and modification rights to an agent. Entitled actions should comprise actions pertaining to access/modification restrictions.</rdfs:comment>
+	<rdfs:label xml:lang="en">Entitled action</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dataid.dbpedia.org/ns/core#DeleteContent">
+	<rdfs:comment xml:lang="en">Entitled action to delete some content of an entity.</rdfs:comment>
+	<rdfs:label xml:lang="en">delete content right</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dataid.dbpedia.org/ns/core#EntitledAction">
+	<rdfs:isDefinedBy rdf:resource="http://dataid.dbpedia.org/ns/core#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dataid.dbpedia.org/ns/core#DeleteContent">
+	<rdfs:isDefinedBy rdf:resource="http://dataid.dbpedia.org/ns/core#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dataid.dbpedia.org/ns/core#ModifyAccessLevel">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://dataid.dbpedia.org/ns/core#EntitledAction"/>
+	<rdfs:comment xml:lang="en">Entitled action to modify access level of an entity.</rdfs:comment>
+	<rdfs:label xml:lang="en">modify entity access level</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://dataid.dbpedia.org/ns/core#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dataid.dbpedia.org/ns/core#ModifyAgentRoles">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://dataid.dbpedia.org/ns/core#EntitledAction"/>
+	<rdfs:comment xml:lang="en">Entitled action to modify the role of agents on certain entities.</rdfs:comment>
+	<rdfs:label xml:lang="en">modify agent roles</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://dataid.dbpedia.org/ns/core#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dataid.dbpedia.org/ns/core#ModifyAuthorizedAgents">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://dataid.dbpedia.org/ns/core#EntitledAction"/>
+	<rdfs:comment xml:lang="en">Entitled action to modify which agents are authorized on certain entities.</rdfs:comment>
+	<rdfs:label xml:lang="en">modify authorized agents</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://dataid.dbpedia.org/ns/core#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dataid.dbpedia.org/ns/core#ModifyContent">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://dataid.dbpedia.org/ns/core#EntitledAction"/>
+	<rdfs:comment xml:lang="en">Entitled action to modify the content of an entity.</rdfs:comment>
+	<rdfs:label xml:lang="en">modify content right</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://dataid.dbpedia.org/ns/core#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dataid.dbpedia.org/ns/core#ReadContent">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://dataid.dbpedia.org/ns/core#EntitledAction"/>
+	<rdfs:comment xml:lang="en">Entitled action to read the content of an entity.</rdfs:comment>
+	<rdfs:label xml:lang="en">read content right</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://dataid.dbpedia.org/ns/core#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dataid.dbpedia.org/ns/core#ReadDataId">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://dataid.dbpedia.org/ns/core#EntitledAction"/>
+	<rdfs:comment xml:lang="en">Entitled action to read the DataID dataset metadata</rdfs:comment>
+	<rdfs:label xml:lang="en">read DataID right</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://dataid.dbpedia.org/ns/core#"/>
+</rdf:Description>
+
+</rdf:RDF>

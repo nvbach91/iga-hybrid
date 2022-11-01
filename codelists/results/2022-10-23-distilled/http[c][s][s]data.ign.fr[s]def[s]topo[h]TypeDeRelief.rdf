@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://data.ign.fr/def/topo">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/def/topo#TypeDeRelief">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typederelief/Cap">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeRelief"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/def/topo#TypeDeRelief">
+	<rdfs:label xml:lang="en">Type of relief feature</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typederelief/Cap">
+	<rdfs:label xml:lang="en">Cape</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/def/topo#TypeDeRelief">
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typederelief/Cap">
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typederelief/Carriere">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeRelief"/>
+	<rdfs:label xml:lang="en">Quarry</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typederelief/Cirque">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeRelief"/>
+	<rdfs:label xml:lang="en">Cirque</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typederelief/Col">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeRelief"/>
+	<rdfs:label xml:lang="en">Mountain pass</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typederelief/Crete">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeRelief"/>
+	<rdfs:label xml:lang="en">Crest</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typederelief/Depression">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeRelief"/>
+	<rdfs:label xml:lang="en">Depression</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typederelief/Dune">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeRelief"/>
+	<rdfs:label xml:lang="en">Dune</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typederelief/Escarpement">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeRelief"/>
+	<rdfs:label xml:lang="en">Escarpment</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typederelief/Gorge">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeRelief"/>
+	<rdfs:label xml:lang="en">Gorge</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typederelief/Grotte">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeRelief"/>
+	<rdfs:label xml:lang="en">Cave</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typederelief/Ile">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeRelief"/>
+	<rdfs:label xml:lang="en">Island</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typederelief/Isthme">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeRelief"/>
+	<rdfs:label xml:lang="en">Isthmus</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typederelief/Levee">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeRelief"/>
+	<rdfs:label xml:lang="en">Levee</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typederelief/Montagne">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeRelief"/>
+	<rdfs:label xml:lang="en">Mountain</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typederelief/MurDeSoutenement">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeRelief"/>
+	<rdfs:label xml:lang="en">Retaining wall</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typederelief/Pic">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeRelief"/>
+	<rdfs:label xml:lang="en">Peak</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typederelief/Plage">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeRelief"/>
+	<rdfs:label xml:lang="en">Beach</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typederelief/Plaine">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeRelief"/>
+	<rdfs:label xml:lang="en">Plain</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typederelief/Recif">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeRelief"/>
+	<rdfs:label xml:lang="en">Reef</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typederelief/Rochers">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeRelief"/>
+	<rdfs:label xml:lang="en">Rocks</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typederelief/Sommet">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeRelief"/>
+	<rdfs:label xml:lang="en">Summit</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typederelief/Talus">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeRelief"/>
+	<rdfs:label xml:lang="en">Slope</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typederelief/Vallee">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeRelief"/>
+	<rdfs:label xml:lang="en">Valley</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typederelief/Versant">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeRelief"/>
+	<rdfs:label xml:lang="en">Slope</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ign.fr/id/codes/topo/typederelief/Volcan">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://data.ign.fr/def/topo#TypeDeRelief"/>
+	<rdfs:label xml:lang="en">Volcano</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://data.ign.fr/def/topo"/>
+</rdf:Description>
+
+</rdf:RDF>

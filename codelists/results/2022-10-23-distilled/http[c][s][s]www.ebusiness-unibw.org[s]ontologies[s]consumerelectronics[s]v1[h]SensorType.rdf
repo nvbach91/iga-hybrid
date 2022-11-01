@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#SensorType">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#CMOS">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#SensorType"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#SensorType">
+	<rdfs:comment xml:lang="en">Type of device that measures a physical quantity and converts it into a signal which can be read by an observer or by an instrument.
+
+(This description is partly based on or reuses content from the Wikipedia article "Sensor" (http://en.wikipedia.org/wiki/Sensor) and is licensed under the GNU Free Documentation License (http://www.gnu.org/copyleft/fdl.html).)</rdfs:comment>
+	<rdfs:label xml:lang="en">Sensor type</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#CMOS">
+	<rdfs:comment xml:lang="en">Complementary metal-oxide-semiconductor (CMOS) (pronounced "see-moss", IPA: /ˈsiːmɒs/), is a major class of integrated circuits. CMOS technology is used in microprocessors, microcontrollers, static RAM, and other digital logic circuits. CMOS technology is also used for a wide variety of analog circuits such as image sensors, data converters, and highly integrated transceivers for many types of communication. Frank Wanlass successfully patented CMOS in 1967 (US Patent 3,356,858).
+
+(This description is partly based on or reuses content from the Wikipedia article "CMOS" (http://en.wikipedia.org/wiki/CMOS) and is licensed under the GNU Free Documentation License (http://www.gnu.org/copyleft/fdl.html).)</rdfs:comment>
+	<rdfs:label xml:lang="en">CMOS</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#hasSensorType">
+	<rdfs:range rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#SensorType"/>
+	<rdfs:label xml:lang="en">sensor type</rdfs:label>
+	<rdfs:comment xml:lang="en">Defines type of device that measures a physical quantity and converts it into a signal which can be read by an observer or by an instrument.</rdfs:comment>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#SensorType">
+	<rdfs:isDefinedBy rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#CMOS">
+	<rdfs:isDefinedBy rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#SensorType_3CCD">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1#SensorType"/>
+	<rdfs:comment xml:lang="en">3CCD is a term used to describe an imaging system employed by some still cameras, video cameras, telecine and camcorders.
+
+(This description is partly based on or reuses content from the Wikipedia article "Three-CCD" (http://en.wikipedia.org/wiki/Three-CCD) and is licensed under the GNU Free Documentation License (http://www.gnu.org/copyleft/fdl.html).)</rdfs:comment>
+	<rdfs:label xml:lang="en">Three-CCD</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.ebusiness-unibw.org/ontologies/consumerelectronics/v1"/>
+</rdf:Description>
+
+</rdf:RDF>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies#Nativeness">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies#nativeness_introduced">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#Nativeness"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies#Nativeness">
+	<rdfs:label>Nativeness</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies#nativeness_introduced">
+	<rdfs:comment>The organism arrived in the region via an anthropogenic mechanism or mechanisms</rdfs:comment>
+	<rdfs:label>Introduced</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies#Nativeness">
+	<rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies#nativeness_introduced">
+	<rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies#nativeness_invasive">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#Nativeness"/>
+	<rdfs:comment>The organism is having a deleterious impact on another organism, multiple organisms or the ecosystem as a whole</rdfs:comment>
+	<rdfs:label>Invasive</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies#nativeness_managed">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#Nativeness"/>
+	<rdfs:comment>The organism maintains its presence through intentional cultivation or husbandry</rdfs:comment>
+	<rdfs:label>Managed</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies#nativeness_native">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#Nativeness"/>
+	<rdfs:comment>The organism either evolved in this region or arrived by non-anthropogenic means</rdfs:comment>
+	<rdfs:label>Native</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies#nativeness_naturalised">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#Nativeness"/>
+	<rdfs:comment>The organism reproduces naturally and forms part of the local ecology</rdfs:comment>
+	<rdfs:label>Naturalised</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+</rdf:Description>
+
+</rdf:RDF>

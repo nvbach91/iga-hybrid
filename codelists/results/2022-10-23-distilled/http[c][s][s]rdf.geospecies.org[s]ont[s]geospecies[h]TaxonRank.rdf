@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies#TaxonRank">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies#TaxonRank_class">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#TaxonRank"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies#TaxonRank">
+	<rdfs:label>TaxonRank</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies#TaxonRank_class">
+	<rdfs:label>class</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies#TaxonRank">
+	<rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies#TaxonRank_class">
+	<rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies#TaxonRank_cultivar">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#TaxonRank"/>
+	<rdfs:label>TaxonRank_cultivar</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies#TaxonRank_cultivarGroup">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#TaxonRank"/>
+	<rdfs:label>TaxonRank_cultivarGroup</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies#TaxonRank_domain">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#TaxonRank"/>
+	<rdfs:label>domain</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies#TaxonRank_family">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#TaxonRank"/>
+	<rdfs:label>TaxonRank_family</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies#TaxonRank_form">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#TaxonRank"/>
+	<rdfs:label>TaxonRank_form</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies#TaxonRank_genus">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#TaxonRank"/>
+	<rdfs:label>TaxonRank_genus</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies#TaxonRank_infraorder">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#TaxonRank"/>
+	<rdfs:label>TaxonRank_infraorder</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies#TaxonRank_kingdom">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#TaxonRank"/>
+	<rdfs:label>kingdom</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies#TaxonRank_order">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#TaxonRank"/>
+	<rdfs:label>TaxonRank_order</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies#TaxonRank_phylum">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#TaxonRank"/>
+	<rdfs:label>phylum</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies#TaxonRank_section">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#TaxonRank"/>
+	<rdfs:label>TaxonRank_section</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies#TaxonRank_species">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#TaxonRank"/>
+	<rdfs:label>TaxonRank_species</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies#TaxonRank_speciesAggregate">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#TaxonRank"/>
+	<rdfs:label>TaxonRank_speciesAggregate</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies#TaxonRank_subclass">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#TaxonRank"/>
+	<rdfs:label>subclass</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies#TaxonRank_subfamily">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#TaxonRank"/>
+	<rdfs:label>TaxonRank_subfamily</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies#TaxonRank_subform">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#TaxonRank"/>
+	<rdfs:label>TaxonRank_subform</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies#TaxonRank_subgenus">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#TaxonRank"/>
+	<rdfs:label>TaxonRank_subgenus</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies#TaxonRank_subkingdom">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#TaxonRank"/>
+	<rdfs:label>subkingdom</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies#TaxonRank_suborder">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#TaxonRank"/>
+	<rdfs:label>TaxonRank_suborder</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies#TaxonRank_subphylum">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#TaxonRank"/>
+	<rdfs:label>subphylum</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies#TaxonRank_subsection">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#TaxonRank"/>
+	<rdfs:label>TaxonRank_subsection</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies#TaxonRank_subspecies">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#TaxonRank"/>
+	<rdfs:label>TaxonRank_subspecies</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies#TaxonRank_subspecificAggregate">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#TaxonRank"/>
+	<rdfs:label>TaxonRank_subspecificAggregate</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies#TaxonRank_subtribe">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#TaxonRank"/>
+	<rdfs:label>TaxonRank_subtribe</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies#TaxonRank_subvariety">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#TaxonRank"/>
+	<rdfs:label>TaxonRank_subvariety</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies#TaxonRank_superclass">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#TaxonRank"/>
+	<rdfs:label>superclass</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies#TaxonRank_superfamily">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#TaxonRank"/>
+	<rdfs:label>TaxonRank_superfamily</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies#TaxonRank_superorder">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#TaxonRank"/>
+	<rdfs:label>TaxonRank_superorder</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies#TaxonRank_tribe">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#TaxonRank"/>
+	<rdfs:label>TaxonRank_tribe</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies#TaxonRank_variety">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#TaxonRank"/>
+	<rdfs:label>TaxonRank_variety</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+</rdf:Description>
+
+</rdf:RDF>

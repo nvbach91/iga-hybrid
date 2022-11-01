@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://umbel.org/umbel">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://umbel.org/umbel#Qualifier">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://umbel.org/umbel#AutomaticInspectedSMatch">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://umbel.org/umbel#Qualifier"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://umbel.org/umbel#Qualifier">
+	<rdfs:label xml:lang="en">qualifier</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://umbel.org/umbel#AutomaticInspectedSMatch">
+	<rdfs:label xml:lang="en">Automatic - Inspected S-Match</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://umbel.org/umbel#Qualifier">
+	<rdfs:isDefinedBy rdf:resource="http://umbel.org/umbel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://umbel.org/umbel#AutomaticInspectedSMatch">
+	<rdfs:isDefinedBy rdf:resource="http://umbel.org/umbel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://umbel.org/umbel#AutomaticInspectedSV">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://umbel.org/umbel#Qualifier"/>
+	<rdfs:label xml:lang="en">Automatic - Inspected SV</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://umbel.org/umbel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://umbel.org/umbel#AutomaticNotSpecified">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://umbel.org/umbel#Qualifier"/>
+	<rdfs:label xml:lang="en">Automatic - Not Specified</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://umbel.org/umbel"/>
+	<rdfs:label xml:lang="en">Mapping based on automatic scoring of concepts using a script or technique not otherwise specified.</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://umbel.org/umbel#ExternalDBOntologyMapping">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://umbel.org/umbel#Qualifier"/>
+	<rdfs:label xml:lang="en">External - DBOntology Mapping</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://umbel.org/umbel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://umbel.org/umbel#ExternalGeoNamesMapping">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://umbel.org/umbel#Qualifier"/>
+	<rdfs:label xml:lang="en">External - GeoNames Mapping</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://umbel.org/umbel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://umbel.org/umbel#ExternalOpenCycMapping">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://umbel.org/umbel#Qualifier"/>
+	<rdfs:label xml:lang="en">External - OpenCyc Mapping</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://umbel.org/umbel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://umbel.org/umbel#HeuristicListOfBasis">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://umbel.org/umbel#Qualifier"/>
+	<rdfs:label xml:lang="en">Heuristic - ListOf Basis</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://umbel.org/umbel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://umbel.org/umbel#HeuristicNotSpecified">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://umbel.org/umbel#Qualifier"/>
+	<rdfs:label xml:lang="en">Heuristic - Not Specified</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://umbel.org/umbel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://umbel.org/umbel#ManualNearlyEquivalent">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://umbel.org/umbel#Qualifier"/>
+	<rdfs:label xml:lang="en">Manual - Nearly Equivalent</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://umbel.org/umbel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://umbel.org/umbel#ManualSimilarSense">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://umbel.org/umbel#Qualifier"/>
+	<rdfs:label xml:lang="en">Manual - Similar Sense</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://umbel.org/umbel"/>
+</rdf:Description>
+
+</rdf:RDF>

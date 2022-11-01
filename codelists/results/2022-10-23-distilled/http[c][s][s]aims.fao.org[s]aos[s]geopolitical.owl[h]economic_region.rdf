@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://aims.fao.org/aos/geopolitical.owl">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://aims.fao.org/aos/geopolitical.owl#economic_region">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://aims.fao.org/aos/geopolitical.owl#CAN">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://aims.fao.org/aos/geopolitical.owl#economic_region"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://aims.fao.org/aos/geopolitical.owl#economic_region">
+	<rdfs:isDefinedBy rdf:resource="http://aims.fao.org/aos/geopolitical.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://aims.fao.org/aos/geopolitical.owl#CAN">
+	<rdfs:isDefinedBy rdf:resource="http://aims.fao.org/aos/geopolitical.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://aims.fao.org/aos/geopolitical.owl#CARIFORUM">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://aims.fao.org/aos/geopolitical.owl#economic_region"/>
+	<rdfs:isDefinedBy rdf:resource="http://aims.fao.org/aos/geopolitical.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://aims.fao.org/aos/geopolitical.owl#CCASG">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://aims.fao.org/aos/geopolitical.owl#economic_region"/>
+	<rdfs:isDefinedBy rdf:resource="http://aims.fao.org/aos/geopolitical.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://aims.fao.org/aos/geopolitical.owl#CEEAC">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://aims.fao.org/aos/geopolitical.owl#economic_region"/>
+	<rdfs:isDefinedBy rdf:resource="http://aims.fao.org/aos/geopolitical.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://aims.fao.org/aos/geopolitical.owl#CEMAC">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://aims.fao.org/aos/geopolitical.owl#economic_region"/>
+	<rdfs:isDefinedBy rdf:resource="http://aims.fao.org/aos/geopolitical.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://aims.fao.org/aos/geopolitical.owl#ECO">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://aims.fao.org/aos/geopolitical.owl#economic_region"/>
+	<rdfs:isDefinedBy rdf:resource="http://aims.fao.org/aos/geopolitical.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://aims.fao.org/aos/geopolitical.owl#EU">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://aims.fao.org/aos/geopolitical.owl#economic_region"/>
+	<rdfs:isDefinedBy rdf:resource="http://aims.fao.org/aos/geopolitical.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://aims.fao.org/aos/geopolitical.owl#CARICOM_1985">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://aims.fao.org/aos/geopolitical.owl#economic_region"/>
+	<isPredecessorOf xmlns="http://aims.fao.org/aos/geopolitical.owl#" rdf:resource="http://aims.fao.org/aos/geopolitical.owl#CARICOM"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://aims.fao.org/aos/geopolitical.owl#CARICOM">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://aims.fao.org/aos/geopolitical.owl#CARICOM_1985">
+	<rdfs:isDefinedBy rdf:resource="http://aims.fao.org/aos/geopolitical.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://aims.fao.org/aos/geopolitical.owl#CARICOM">
+	<rdfs:isDefinedBy rdf:resource="http://aims.fao.org/aos/geopolitical.owl"/>
+	<skos:inScheme rdf:resource="http://aims.fao.org/aos/geopolitical.owl#economic_region"/>
+	<isSuccessorOf xmlns="http://aims.fao.org/aos/geopolitical.owl#" rdf:resource="http://aims.fao.org/aos/geopolitical.owl#CARICOM_1985"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://aims.fao.org/aos/geopolitical.owl#CEN_SAD_1998">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://aims.fao.org/aos/geopolitical.owl#economic_region"/>
+	<isPredecessorOf xmlns="http://aims.fao.org/aos/geopolitical.owl#" rdf:resource="http://aims.fao.org/aos/geopolitical.owl#CEN_SAD"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://aims.fao.org/aos/geopolitical.owl#CEN_SAD">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://aims.fao.org/aos/geopolitical.owl#CEN_SAD_1998">
+	<rdfs:isDefinedBy rdf:resource="http://aims.fao.org/aos/geopolitical.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://aims.fao.org/aos/geopolitical.owl#CEN_SAD">
+	<rdfs:isDefinedBy rdf:resource="http://aims.fao.org/aos/geopolitical.owl"/>
+	<skos:inScheme rdf:resource="http://aims.fao.org/aos/geopolitical.owl#economic_region"/>
+	<isSuccessorOf xmlns="http://aims.fao.org/aos/geopolitical.owl#" rdf:resource="http://aims.fao.org/aos/geopolitical.owl#CEN_SAD_1998"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://aims.fao.org/aos/geopolitical.owl#COMESA_1994">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://aims.fao.org/aos/geopolitical.owl#economic_region"/>
+	<isPredecessorOf xmlns="http://aims.fao.org/aos/geopolitical.owl#" rdf:resource="http://aims.fao.org/aos/geopolitical.owl#COMESA"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://aims.fao.org/aos/geopolitical.owl#COMESA">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://aims.fao.org/aos/geopolitical.owl#COMESA_1994">
+	<rdfs:isDefinedBy rdf:resource="http://aims.fao.org/aos/geopolitical.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://aims.fao.org/aos/geopolitical.owl#COMESA">
+	<rdfs:isDefinedBy rdf:resource="http://aims.fao.org/aos/geopolitical.owl"/>
+	<skos:inScheme rdf:resource="http://aims.fao.org/aos/geopolitical.owl#economic_region"/>
+	<isSuccessorOf xmlns="http://aims.fao.org/aos/geopolitical.owl#" rdf:resource="http://aims.fao.org/aos/geopolitical.owl#COMESA_1994"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://aims.fao.org/aos/geopolitical.owl#PTA">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://aims.fao.org/aos/geopolitical.owl#economic_region"/>
+	<isPredecessorOf xmlns="http://aims.fao.org/aos/geopolitical.owl#" rdf:resource="http://aims.fao.org/aos/geopolitical.owl#COMESA_1994"/>
+	<rdfs:isDefinedBy rdf:resource="http://aims.fao.org/aos/geopolitical.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://aims.fao.org/aos/geopolitical.owl#ECOWAS_1985">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://aims.fao.org/aos/geopolitical.owl#economic_region"/>
+	<isPredecessorOf xmlns="http://aims.fao.org/aos/geopolitical.owl#" rdf:resource="http://aims.fao.org/aos/geopolitical.owl#ECOWAS"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://aims.fao.org/aos/geopolitical.owl#ECOWAS">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://aims.fao.org/aos/geopolitical.owl#ECOWAS_1985">
+	<rdfs:isDefinedBy rdf:resource="http://aims.fao.org/aos/geopolitical.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://aims.fao.org/aos/geopolitical.owl#ECOWAS">
+	<rdfs:isDefinedBy rdf:resource="http://aims.fao.org/aos/geopolitical.owl"/>
+	<skos:inScheme rdf:resource="http://aims.fao.org/aos/geopolitical.owl#economic_region"/>
+	<isSuccessorOf xmlns="http://aims.fao.org/aos/geopolitical.owl#" rdf:resource="http://aims.fao.org/aos/geopolitical.owl#ECOWAS_1985"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://aims.fao.org/aos/geopolitical.owl#IGADD">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://aims.fao.org/aos/geopolitical.owl#economic_region"/>
+	<isPredecessorOf xmlns="http://aims.fao.org/aos/geopolitical.owl#" rdf:resource="http://aims.fao.org/aos/geopolitical.owl#IGAD"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://aims.fao.org/aos/geopolitical.owl#IGAD">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://aims.fao.org/aos/geopolitical.owl#IGADD">
+	<rdfs:isDefinedBy rdf:resource="http://aims.fao.org/aos/geopolitical.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://aims.fao.org/aos/geopolitical.owl#IGAD">
+	<rdfs:isDefinedBy rdf:resource="http://aims.fao.org/aos/geopolitical.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://aims.fao.org/aos/geopolitical.owl#ECOWAS">
+	<isSuccessorOf xmlns="http://aims.fao.org/aos/geopolitical.owl#" rdf:resource="http://aims.fao.org/aos/geopolitical.owl#IGADD"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://aims.fao.org/aos/geopolitical.owl#IGAD">
+	<skos:inScheme rdf:resource="http://aims.fao.org/aos/geopolitical.owl#economic_region"/>
+	<isSuccessorOf xmlns="http://aims.fao.org/aos/geopolitical.owl#" rdf:resource="http://aims.fao.org/aos/geopolitical.owl#IGADD"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://aims.fao.org/aos/geopolitical.owl#MERCOSUR_1991">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://aims.fao.org/aos/geopolitical.owl#economic_region"/>
+	<isPredecessorOf xmlns="http://aims.fao.org/aos/geopolitical.owl#" rdf:resource="http://aims.fao.org/aos/geopolitical.owl#MERCOSUR"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://aims.fao.org/aos/geopolitical.owl#MERCOSUR">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://aims.fao.org/aos/geopolitical.owl#MERCOSUR_1991">
+	<rdfs:isDefinedBy rdf:resource="http://aims.fao.org/aos/geopolitical.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://aims.fao.org/aos/geopolitical.owl#MERCOSUR">
+	<rdfs:isDefinedBy rdf:resource="http://aims.fao.org/aos/geopolitical.owl"/>
+	<skos:inScheme rdf:resource="http://aims.fao.org/aos/geopolitical.owl#economic_region"/>
+	<isSuccessorOf xmlns="http://aims.fao.org/aos/geopolitical.owl#" rdf:resource="http://aims.fao.org/aos/geopolitical.owl#MERCOSUR_1991"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://aims.fao.org/aos/geopolitical.owl#PIF_1985">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://aims.fao.org/aos/geopolitical.owl#economic_region"/>
+	<isPredecessorOf xmlns="http://aims.fao.org/aos/geopolitical.owl#" rdf:resource="http://aims.fao.org/aos/geopolitical.owl#PIF"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://aims.fao.org/aos/geopolitical.owl#PIF">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://aims.fao.org/aos/geopolitical.owl#PIF_1985">
+	<rdfs:isDefinedBy rdf:resource="http://aims.fao.org/aos/geopolitical.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://aims.fao.org/aos/geopolitical.owl#PIF">
+	<rdfs:isDefinedBy rdf:resource="http://aims.fao.org/aos/geopolitical.owl"/>
+	<skos:inScheme rdf:resource="http://aims.fao.org/aos/geopolitical.owl#economic_region"/>
+	<isSuccessorOf xmlns="http://aims.fao.org/aos/geopolitical.owl#" rdf:resource="http://aims.fao.org/aos/geopolitical.owl#PIF_1985"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://aims.fao.org/aos/geopolitical.owl#COMESA">
+	<isSuccessorOf xmlns="http://aims.fao.org/aos/geopolitical.owl#" rdf:resource="http://aims.fao.org/aos/geopolitical.owl#PTA"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://aims.fao.org/aos/geopolitical.owl#COMESA_1994">
+	<isSuccessorOf xmlns="http://aims.fao.org/aos/geopolitical.owl#" rdf:resource="http://aims.fao.org/aos/geopolitical.owl#PTA"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://aims.fao.org/aos/geopolitical.owl#SAARC_1985">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://aims.fao.org/aos/geopolitical.owl#economic_region"/>
+	<isPredecessorOf xmlns="http://aims.fao.org/aos/geopolitical.owl#" rdf:resource="http://aims.fao.org/aos/geopolitical.owl#SAARC"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://aims.fao.org/aos/geopolitical.owl#SAARC">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://aims.fao.org/aos/geopolitical.owl#SAARC_1985">
+	<rdfs:isDefinedBy rdf:resource="http://aims.fao.org/aos/geopolitical.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://aims.fao.org/aos/geopolitical.owl#SAARC">
+	<rdfs:isDefinedBy rdf:resource="http://aims.fao.org/aos/geopolitical.owl"/>
+	<skos:inScheme rdf:resource="http://aims.fao.org/aos/geopolitical.owl#economic_region"/>
+	<isSuccessorOf xmlns="http://aims.fao.org/aos/geopolitical.owl#" rdf:resource="http://aims.fao.org/aos/geopolitical.owl#SAARC_1985"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://aims.fao.org/aos/geopolitical.owl#SADC">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://aims.fao.org/aos/geopolitical.owl#economic_region"/>
+	<rdfs:isDefinedBy rdf:resource="http://aims.fao.org/aos/geopolitical.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://aims.fao.org/aos/geopolitical.owl#UEMOA">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://aims.fao.org/aos/geopolitical.owl#economic_region"/>
+	<rdfs:isDefinedBy rdf:resource="http://aims.fao.org/aos/geopolitical.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://aims.fao.org/aos/geopolitical.owl#AMU">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://aims.fao.org/aos/geopolitical.owl#economic_region"/>
+	<rdfs:isDefinedBy rdf:resource="http://aims.fao.org/aos/geopolitical.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://aims.fao.org/aos/geopolitical.owl#CAC">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://aims.fao.org/aos/geopolitical.owl#economic_region"/>
+	<rdfs:isDefinedBy rdf:resource="http://aims.fao.org/aos/geopolitical.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://aims.fao.org/aos/geopolitical.owl#CAEU">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://aims.fao.org/aos/geopolitical.owl#economic_region"/>
+	<rdfs:isDefinedBy rdf:resource="http://aims.fao.org/aos/geopolitical.owl"/>
+</rdf:Description>
+
+</rdf:RDF>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://purl.org/spar/datacite">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/datacite/DescriptionType">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/datacite/abstract">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/datacite/DescriptionType"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/datacite/DescriptionType">
+	<rdfs:comment xml:lang="en">This class permits classification of the type of description given to a resource described by the DataCite Metadata schema.  Individual members of the class conform to the four values allowed in the DataCite controlled list, namely Abstract, SeriesInformation, TableOfContent, and Other.</rdfs:comment>
+	<rdfs:label xml:lang="en">description type</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/datacite/abstract">
+	<rdfs:comment xml:lang="en">A brief summary of a textual work, appearing at the beginning of the work and designed to act as the point-of-entry that will help the reader quickly to obtain an overview of the work's contents.</rdfs:comment>
+	<rdfs:label xml:lang="en">abstract</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/datacite/DescriptionType">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/datacite/abstract">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/datacite/other">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/datacite/DescriptionType"/>
+	<rdfs:comment xml:lang="en">A catch-all description type required by the DataCite Metadata Schema to characterize description types that are not abstracts, series information or tables of content.</rdfs:comment>
+	<rdfs:label xml:lang="en">other</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/datacite/series-information">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/datacite/DescriptionType"/>
+	<rdfs:comment xml:lang="en">Used to charactierize a description of a resource that is part of a series.</rdfs:comment>
+	<rdfs:label xml:lang="en">series information</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/spar/datacite/table-of-content">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/spar/datacite/DescriptionType"/>
+	<rdfs:comment xml:lang="en">A table of content giving information about the content of a resource, appearing before the body text.  Where the resource is a journal or magazine issue, the table of content lists the constituent items contained in that issue, typically by title, authors and first page number.</rdfs:comment>
+	<rdfs:label xml:lang="en">table of content</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite"/>
+</rdf:Description>
+
+</rdf:RDF>

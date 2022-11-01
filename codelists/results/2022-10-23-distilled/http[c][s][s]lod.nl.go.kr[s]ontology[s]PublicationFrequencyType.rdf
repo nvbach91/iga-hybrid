@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://lod.nl.go.kr/ontology/">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.nl.go.kr/ontology/PublicationFrequencyType">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.nl.go.kr/resource/pft__">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://lod.nl.go.kr/ontology/PublicationFrequencyType"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.nl.go.kr/ontology/PublicationFrequencyType">
+	<rdfs:label xml:lang="en">Publication frequency type</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.nl.go.kr/resource/pft__">
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">_</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.nl.go.kr/ontology/typeOfPublicationFrequency">
+	<rdfs:range rdf:resource="http://lod.nl.go.kr/ontology/PublicationFrequencyType"/>
+	<rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Collection"/>
+	<rdfs:label xml:lang="en">type of publication frequency</rdfs:label>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.nl.go.kr/ontology/PublicationFrequencyType">
+	<rdfs:isDefinedBy rdf:resource="http://lod.nl.go.kr/ontology/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.nl.go.kr/resource/pft__">
+	<rdfs:isDefinedBy rdf:resource="http://lod.nl.go.kr/ontology/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.nl.go.kr/resource/pft_a">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://lod.nl.go.kr/ontology/PublicationFrequencyType"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://lod.nl.go.kr/ontology/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.nl.go.kr/resource/pft_b">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://lod.nl.go.kr/ontology/PublicationFrequencyType"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">b</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://lod.nl.go.kr/ontology/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.nl.go.kr/resource/pft_c">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://lod.nl.go.kr/ontology/PublicationFrequencyType"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">c</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://lod.nl.go.kr/ontology/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.nl.go.kr/resource/pft_d">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://lod.nl.go.kr/ontology/PublicationFrequencyType"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">d</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://lod.nl.go.kr/ontology/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.nl.go.kr/resource/pft_e">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://lod.nl.go.kr/ontology/PublicationFrequencyType"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">e</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://lod.nl.go.kr/ontology/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.nl.go.kr/resource/pft_f">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://lod.nl.go.kr/ontology/PublicationFrequencyType"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">f</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://lod.nl.go.kr/ontology/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.nl.go.kr/resource/pft_g">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://lod.nl.go.kr/ontology/PublicationFrequencyType"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">g</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://lod.nl.go.kr/ontology/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.nl.go.kr/resource/pft_h">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://lod.nl.go.kr/ontology/PublicationFrequencyType"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">h</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://lod.nl.go.kr/ontology/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.nl.go.kr/resource/pft_i">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://lod.nl.go.kr/ontology/PublicationFrequencyType"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">i</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://lod.nl.go.kr/ontology/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.nl.go.kr/resource/pft_irregular">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://lod.nl.go.kr/ontology/PublicationFrequencyType"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> </rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://lod.nl.go.kr/ontology/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.nl.go.kr/resource/pft_j">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://lod.nl.go.kr/ontology/PublicationFrequencyType"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">j</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://lod.nl.go.kr/ontology/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.nl.go.kr/resource/pft_k">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://lod.nl.go.kr/ontology/PublicationFrequencyType"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">k</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://lod.nl.go.kr/ontology/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.nl.go.kr/resource/pft_m">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://lod.nl.go.kr/ontology/PublicationFrequencyType"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">m</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://lod.nl.go.kr/ontology/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.nl.go.kr/resource/pft_q">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://lod.nl.go.kr/ontology/PublicationFrequencyType"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">q</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://lod.nl.go.kr/ontology/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.nl.go.kr/resource/pft_s">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://lod.nl.go.kr/ontology/PublicationFrequencyType"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">s</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://lod.nl.go.kr/ontology/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.nl.go.kr/resource/pft_t">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://lod.nl.go.kr/ontology/PublicationFrequencyType"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">t</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://lod.nl.go.kr/ontology/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.nl.go.kr/resource/pft_u">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://lod.nl.go.kr/ontology/PublicationFrequencyType"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">u</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://lod.nl.go.kr/ontology/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.nl.go.kr/resource/pft_w">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://lod.nl.go.kr/ontology/PublicationFrequencyType"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">w</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://lod.nl.go.kr/ontology/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.nl.go.kr/resource/pft_z">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://lod.nl.go.kr/ontology/PublicationFrequencyType"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">z</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://lod.nl.go.kr/ontology/"/>
+</rdf:Description>
+
+</rdf:RDF>

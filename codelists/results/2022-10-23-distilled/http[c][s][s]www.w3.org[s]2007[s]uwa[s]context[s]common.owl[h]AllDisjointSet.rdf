@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/deliverycontext.owl">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/common.owl#AllDisjointSet">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/deliverycontext.owl#globalDisjoints">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/common.owl#AllDisjointSet"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/common.owl#AllDisjointSet">
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This is an utility class for representing groups of classes that are pairwise disjoint, following the approach specified by the OWL Abstract Syntax. This class has been created as a workaround to the absence in OWL 1 of an specific construct for establishing class disjointness between groups of classes</rdfs:comment>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">All Disjoint Set</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/deliverycontext.owl#globalDisjoints">
+	<disjointSet xmlns="http://www.w3.org/2007/uwa/context/common.owl#" rdf:resource="http://www.w3.org/2007/uwa/context/hardware.owl#Sibling_Disjoint"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/hardware.owl#Sibling_Disjoint">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/common.owl#disjointSet">
+	<rdfs:range rdf:resource="http://www.w3.org/2007/uwa/context/common.owl#AllDisjointSet"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2007/uwa/context/common.owl#AllDisjointSet"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disjoint Set</rdfs:label>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This property is aimed at linking groups of disjoint classes between them</rdfs:comment>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/common.owl#AllDisjointSet">
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/deliverycontext.owl#globalDisjoints">
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/hardware.owl#Sibling_Disjoint">
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/hardware.owl#Sibling_Disjoint2">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/common.owl#AllDisjointSet"/>
+	<disjointSet xmlns="http://www.w3.org/2007/uwa/context/common.owl#" rdf:resource="http://www.w3.org/2007/uwa/context/hardware.owl#Sibling_Disjoint"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/deliverycontext.owl#Disjoint2">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/common.owl#AllDisjointSet"/>
+	<disjointSet xmlns="http://www.w3.org/2007/uwa/context/common.owl#" rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl#Sibling_Disjoint"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/deliverycontext.owl#Sibling_Disjoint">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/deliverycontext.owl#Disjoint2">
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/deliverycontext.owl#Sibling_Disjoint">
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/deliverycontext.owl#Disjoint3">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/common.owl#AllDisjointSet"/>
+	<disjointSet xmlns="http://www.w3.org/2007/uwa/context/common.owl#" rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl#Sibling_Disjoint"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/deliverycontext.owl#Disjoint4">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/common.owl#AllDisjointSet"/>
+	<disjointSet xmlns="http://www.w3.org/2007/uwa/context/common.owl#" rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl#Sibling_Disjoint"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/deliverycontext.owl#Disjoint5">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/common.owl#AllDisjointSet"/>
+	<disjointSet xmlns="http://www.w3.org/2007/uwa/context/common.owl#" rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl#Sibling_Disjoint"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/deliverycontext.owl#globalDisjoints">
+	<disjointSet xmlns="http://www.w3.org/2007/uwa/context/common.owl#" rdf:resource="http://www.w3.org/2007/uwa/context/java.owl#Sibling_Disjoint"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/java.owl#Sibling_Disjoint">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/java.owl#AllSibling_Disjoint">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/common.owl#AllDisjointSet"/>
+	<disjointSet xmlns="http://www.w3.org/2007/uwa/context/common.owl#" rdf:resource="http://www.w3.org/2007/uwa/context/java.owl#Sibling_Disjoint"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+	<disjointSet xmlns="http://www.w3.org/2007/uwa/context/common.owl#" rdf:resource="http://www.w3.org/2007/uwa/context/java.owl#Sibling_Disjoint2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/java.owl#Sibling_Disjoint2">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/deliverycontext.owl#globalDisjoints">
+	<disjointSet xmlns="http://www.w3.org/2007/uwa/context/common.owl#" rdf:resource="http://www.w3.org/2007/uwa/context/location.owl#AllSibling_Disjoint"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/location.owl#AllSibling_Disjoint">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/deliverycontext.owl#globalDisjoints">
+	<disjointSet xmlns="http://www.w3.org/2007/uwa/context/common.owl#" rdf:resource="http://www.w3.org/2007/uwa/context/network.owl#Sibling_Disjoint"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/network.owl#Sibling_Disjoint">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/network.owl#SiblingDisjoint_2">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/common.owl#AllDisjointSet"/>
+	<disjointSet xmlns="http://www.w3.org/2007/uwa/context/common.owl#" rdf:resource="http://www.w3.org/2007/uwa/context/network.owl#Sibling_Disjoint"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/deliverycontext.owl#globalDisjoints">
+	<disjointSet xmlns="http://www.w3.org/2007/uwa/context/common.owl#" rdf:resource="http://www.w3.org/2007/uwa/context/software.owl#Sibling_Disjoint1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/software.owl#Sibling_Disjoint1">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/software.owl#SiblingDisjoint4">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/common.owl#AllDisjointSet"/>
+	<disjointSet xmlns="http://www.w3.org/2007/uwa/context/common.owl#" rdf:resource="http://www.w3.org/2007/uwa/context/software.owl#Sibling_Disjoint1"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+	<disjointSet xmlns="http://www.w3.org/2007/uwa/context/common.owl#" rdf:resource="http://www.w3.org/2007/uwa/context/software.owl#Sibling_Disjoint3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/software.owl#Sibling_Disjoint3">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/deliverycontext.owl#globalDisjoints">
+	<disjointSet xmlns="http://www.w3.org/2007/uwa/context/common.owl#" rdf:resource="http://www.w3.org/2007/uwa/context/software.owl#SiblingDisjoint2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/software.owl#SiblingDisjoint2">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/software.owl#SiblingDisjoint4">
+	<disjointSet xmlns="http://www.w3.org/2007/uwa/context/common.owl#" rdf:resource="http://www.w3.org/2007/uwa/context/software.owl#SiblingDisjoint2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/deliverycontext.owl#globalDisjoints">
+	<disjointSet xmlns="http://www.w3.org/2007/uwa/context/common.owl#" rdf:resource="http://www.w3.org/2007/uwa/context/web.owl#Sibling_Disjoint1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/web.owl#Sibling_Disjoint1">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/web.owl#SiblingDisjoint2">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/common.owl#AllDisjointSet"/>
+	<disjointSet xmlns="http://www.w3.org/2007/uwa/context/common.owl#" rdf:resource="http://www.w3.org/2007/uwa/context/web.owl#Sibling_Disjoint1"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/web.owl#SiblingDisjoint3">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/common.owl#AllDisjointSet"/>
+	<disjointSet xmlns="http://www.w3.org/2007/uwa/context/common.owl#" rdf:resource="http://www.w3.org/2007/uwa/context/web.owl#Sibling_Disjoint1"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/common.owl#Sibling_Disjoint">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/common.owl#AllDisjointSet"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Common Sibling</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/deliverycontext.owl#Top_Disjoint">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/common.owl#AllDisjointSet"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Global Disjoint</rdfs:comment>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Top Level  Disjoint Group</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/web.owl#Sibling_Disjoint1">
+	<skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/common.owl#AllDisjointSet"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Web Entities Disjoint Group</rdfs:comment>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Web Entities Disjoint Group</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/deliverycontext.owl#Sibling_Disjoint">
+	<skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/common.owl#AllDisjointSet"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Main Disjoint Group</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/java.owl#Sibling_Disjoint">
+	<skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/common.owl#AllDisjointSet"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Java Disjoint</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/software.owl#Program_Disjoint">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/common.owl#AllDisjointSet"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/software.owl#Sibling_Disjoint1">
+	<skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/common.owl#AllDisjointSet"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/software.owl#Sibling_Disjoint3">
+	<skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/common.owl#AllDisjointSet"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/software.owl#SiblingDisjoint2">
+	<skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/common.owl#AllDisjointSet"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/deliverycontext.owl#AllDisjointSet_16">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/common.owl#AllDisjointSet"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/deliverycontext.owl#AllDisjointSet_17">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/common.owl#AllDisjointSet"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/deliverycontext.owl#AllDisjointSet_19">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/common.owl#AllDisjointSet"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/deliverycontext.owl#Aspects_Disjoint">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/common.owl#AllDisjointSet"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/deliverycontext.owl#Associated_Disjoint">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/common.owl#AllDisjointSet"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/hardware.owl#Sibling_Disjoint">
+	<skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/common.owl#AllDisjointSet"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/java.owl#Sibling_Disjoint2">
+	<skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/common.owl#AllDisjointSet"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/location.owl#AllSibling_Disjoint">
+	<skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/common.owl#AllDisjointSet"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/location.owl#LocMeth_Disjoint1">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/common.owl#AllDisjointSet"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/location.owl#LocMeth_Disjoint2">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/common.owl#AllDisjointSet"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/network.owl#Networks_Disjoint">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/common.owl#AllDisjointSet"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/network.owl#Proxies_Disjoint">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/common.owl#AllDisjointSet"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/network.owl#Sibling_Disjoint">
+	<skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/common.owl#AllDisjointSet"/>
+</rdf:Description>
+
+</rdf:RDF>

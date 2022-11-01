@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://purl.org/olia/ubyCat.owl">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/olia/ubyCat.owl#Determiner">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/olia/ubyCat.owl#indefinite">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/olia/ubyCat.owl#Determiner"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/olia/ubyCat.owl#Determiner">
+	<rdfs:comment>In UBY-LMF, determiner is an attribute of the LMF class SyntacticArgument. For noun phrase arguments, this attribute encodes specific constraints on the determiner to be used (possessive or indefinite).
+
+Example given in VerbNet (possessive): They allow our smoking.
+Example from VerbNet (indefinite): an indefinite determiner is required for the noun phrase complement of "echo" as in 
+There echoed voices through the hall. (verb class sound_existence-47.4)</rdfs:comment>
+	<rdfs:label>determiner</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/olia/ubyCat.owl#indefinite">
+	<rdfs:label>indefinite</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/olia/ubyCat.owl#hasDeterminer">
+	<rdfs:range rdf:resource="http://purl.org/olia/ubyCat.owl#Determiner"/>
+	<rdfs:label>determiner</rdfs:label>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/olia/ubyCat.owl#Determiner">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/olia/ubyCat.owl#indefinite">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/olia/ubyCat.owl#possessive">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/olia/ubyCat.owl#Determiner"/>
+	<rdfs:label>possessive</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+</rdf:Description>
+
+</rdf:RDF>

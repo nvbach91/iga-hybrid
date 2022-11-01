@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="https://saref.etsi.org/saref4watr/">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://saref.etsi.org/saref4watr/EnvironmentalProperty">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://saref.etsi.org/saref4watr/AtmosphericPressure">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://saref.etsi.org/saref4watr/EnvironmentalProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://saref.etsi.org/saref4watr/EnvironmentalProperty">
+	<rdfs:comment xml:lang="en">Class to group those properties related to the environment.</rdfs:comment>
+	<rdfs:label xml:lang="en">Environmental property</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://saref.etsi.org/saref4watr/AtmosphericPressure">
+	<rdfs:comment xml:lang="en">Property of the environment indicating the atmospheric pressure.</rdfs:comment>
+	<rdfs:label xml:lang="en">Atmospheric pressure</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://saref.etsi.org/saref4watr/EnvironmentalProperty">
+	<rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4watr/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://saref.etsi.org/saref4watr/AtmosphericPressure">
+	<rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4watr/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://saref.etsi.org/saref4watr/ExternalTemperature">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://saref.etsi.org/saref4watr/EnvironmentalProperty"/>
+	<rdfs:comment xml:lang="en">Property of the environment indicating the temperature.</rdfs:comment>
+	<rdfs:label xml:lang="en">External temperature</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4watr/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://saref.etsi.org/saref4watr/Humidity">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://saref.etsi.org/saref4watr/EnvironmentalProperty"/>
+	<rdfs:comment xml:lang="en">Property of the environment indicating the humidity.</rdfs:comment>
+	<rdfs:label xml:lang="en">Humidity</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4watr/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://saref.etsi.org/saref4watr/Precipitation">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://saref.etsi.org/saref4watr/EnvironmentalProperty"/>
+	<rdfs:comment xml:lang="en">Property of the environment indicating the precipitation.</rdfs:comment>
+	<rdfs:label xml:lang="en">Precipitation</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4watr/"/>
+</rdf:Description>
+
+</rdf:RDF>

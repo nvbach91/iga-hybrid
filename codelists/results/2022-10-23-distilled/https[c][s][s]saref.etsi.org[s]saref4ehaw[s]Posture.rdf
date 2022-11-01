@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="https://saref.etsi.org/saref4ehaw/">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://saref.etsi.org/saref4ehaw/Posture">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://saref.etsi.org/saref4ehaw/Exercising">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://saref.etsi.org/saref4ehaw/Posture"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://saref.etsi.org/saref4ehaw/Posture">
+	<rdfs:comment xml:lang="en">The posture of a health actor (mainly a patient or a user), e.g. exercising, lying, running, sitting, walking...</rdfs:comment>
+	<rdfs:label xml:lang="en">Posture</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://saref.etsi.org/saref4ehaw/Exercising">
+	<rdfs:comment xml:lang="en">Posture of user doing exercises.</rdfs:comment>
+	<rdfs:label xml:lang="en">Exercising</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://saref.etsi.org/saref4ehaw/hasPosture">
+	<rdfs:range rdf:resource="https://saref.etsi.org/saref4ehaw/Posture"/>
+	<rdfs:domain rdf:resource="https://saref.etsi.org/saref4ehaw/User"/>
+	<rdfs:label xml:lang="en">has posture</rdfs:label>
+	<rdfs:comment xml:lang="en">The posture of a user and a patient (as sub-class of user it also inherits habit), e.g. exercising, lying, running, sitting, walking...</rdfs:comment>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://saref.etsi.org/saref4ehaw/Posture">
+	<rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4ehaw/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://saref.etsi.org/saref4ehaw/Exercising">
+	<rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4ehaw/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://saref.etsi.org/saref4ehaw/Lying">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://saref.etsi.org/saref4ehaw/Posture"/>
+	<rdfs:comment xml:lang="en">Posture of a lying user.</rdfs:comment>
+	<rdfs:label xml:lang="en">Lying</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4ehaw/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://saref.etsi.org/saref4ehaw/Running">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://saref.etsi.org/saref4ehaw/Posture"/>
+	<rdfs:comment xml:lang="en">Posture of a running user.</rdfs:comment>
+	<rdfs:label xml:lang="en">Running</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4ehaw/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://saref.etsi.org/saref4ehaw/Sitting">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://saref.etsi.org/saref4ehaw/Posture"/>
+	<rdfs:comment xml:lang="en">Posture of a sitting user.</rdfs:comment>
+	<rdfs:label xml:lang="en">Sitting</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4ehaw/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://saref.etsi.org/saref4ehaw/Walking">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://saref.etsi.org/saref4ehaw/Posture"/>
+	<rdfs:comment xml:lang="en">Posture of a walking user.</rdfs:comment>
+	<rdfs:label xml:lang="en">Walking</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4ehaw/"/>
+</rdf:Description>
+
+</rdf:RDF>

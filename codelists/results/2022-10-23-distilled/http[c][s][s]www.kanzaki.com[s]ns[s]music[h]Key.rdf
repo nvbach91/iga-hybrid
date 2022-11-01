@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://www.kanzaki.com/ns/music">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.kanzaki.com/ns/music#Key">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.kanzaki.com/ns/music#g-moll">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.kanzaki.com/ns/music#Key"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.kanzaki.com/ns/music#Key">
+	<rdfs:comment>A key of a musical work (e.g. C-dur, b-moll)</rdfs:comment>
+	<rdfs:label>Key</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.kanzaki.com/ns/music#g-moll">
+	<rdfs:comment>Minor key based on G, whose key signature has 2 flats.</rdfs:comment>
+	<rdfs:label>g moll</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.kanzaki.com/ns/music#key">
+	<rdfs:range rdf:resource="http://www.kanzaki.com/ns/music#Key"/>
+	<rdfs:domain rdf:resource="http://www.kanzaki.com/ns/music#Musical_Work"/>
+	<rdfs:label>Key</rdfs:label>
+	<rdfs:comment>The subject musical work or its movement has a key, such as C major, d minor, etc.</rdfs:comment>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.kanzaki.com/ns/music#Key">
+	<rdfs:isDefinedBy rdf:resource="http://www.kanzaki.com/ns/music"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.kanzaki.com/ns/music#g-moll">
+	<rdfs:isDefinedBy rdf:resource="http://www.kanzaki.com/ns/music"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.kanzaki.com/ns/music#Ges-dur">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.kanzaki.com/ns/music#Key"/>
+	<rdfs:comment>Major key based on G flat, whose key signature has 6 flats.</rdfs:comment>
+	<rdfs:label>Ges dur</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.kanzaki.com/ns/music"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.kanzaki.com/ns/music#gis-moll">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.kanzaki.com/ns/music#Key"/>
+	<rdfs:comment>Minor key based on G sharp, whose key signature has 5 sharps.</rdfs:comment>
+	<rdfs:label>gis moll</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.kanzaki.com/ns/music"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.kanzaki.com/ns/music#H-dur">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.kanzaki.com/ns/music#Key"/>
+	<rdfs:comment>Major key based on B, whose key signature has 5 sharps.</rdfs:comment>
+	<rdfs:label>H dur</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.kanzaki.com/ns/music"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.kanzaki.com/ns/music#h-moll">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.kanzaki.com/ns/music#Key"/>
+	<rdfs:comment>Minor key based on B, whose key signature has 2 sharps.</rdfs:comment>
+	<rdfs:label>h moll</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.kanzaki.com/ns/music"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.kanzaki.com/ns/music#A-dur">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.kanzaki.com/ns/music#Key"/>
+	<rdfs:comment>Major key based on A, whose key signature has 3 sharps.</rdfs:comment>
+	<rdfs:label>A dur</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.kanzaki.com/ns/music"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.kanzaki.com/ns/music#a-moll">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.kanzaki.com/ns/music#Key"/>
+	<rdfs:comment></rdfs:comment>
+	<rdfs:label>a moll</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.kanzaki.com/ns/music"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.kanzaki.com/ns/music#ais-moll">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.kanzaki.com/ns/music#Key"/>
+	<rdfs:comment>Minor key based on A sharp, whose key signature has 7 sharps.</rdfs:comment>
+	<rdfs:label>ais moll</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.kanzaki.com/ns/music"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.kanzaki.com/ns/music#As-dur">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.kanzaki.com/ns/music#Key"/>
+	<rdfs:comment>Major key based on A flat, whose key signature has 4 flats.</rdfs:comment>
+	<rdfs:label>As dur</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.kanzaki.com/ns/music"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.kanzaki.com/ns/music#as-moll">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.kanzaki.com/ns/music#Key"/>
+	<rdfs:comment>Minor key based on A flat, whose key signature has 7 flats.</rdfs:comment>
+	<rdfs:label>as moll</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.kanzaki.com/ns/music"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.kanzaki.com/ns/music#B-dur">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.kanzaki.com/ns/music#Key"/>
+	<rdfs:comment>Major key based on B flat, whose key signature has 2 flats.</rdfs:comment>
+	<rdfs:label>B dur</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.kanzaki.com/ns/music"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.kanzaki.com/ns/music#b-moll">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.kanzaki.com/ns/music#Key"/>
+	<rdfs:comment>Minor key based on B flat, whose key signature has 5 flats.</rdfs:comment>
+	<rdfs:label>b moll</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.kanzaki.com/ns/music"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.kanzaki.com/ns/music#C-dur">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.kanzaki.com/ns/music#Key"/>
+	<rdfs:comment>Major key based on C, whose key signature has no sharp or flat.</rdfs:comment>
+	<rdfs:label>C dur</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.kanzaki.com/ns/music"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.kanzaki.com/ns/music#c-moll">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.kanzaki.com/ns/music#Key"/>
+	<rdfs:comment>Minor key based on C, whose key signature has 3 flats.</rdfs:comment>
+	<rdfs:label>c moll</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.kanzaki.com/ns/music"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.kanzaki.com/ns/music#Ces-dur">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.kanzaki.com/ns/music#Key"/>
+	<rdfs:comment>Major key based on C flat, whose key signature has 7 flats.</rdfs:comment>
+	<rdfs:label>Ces dur</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.kanzaki.com/ns/music"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.kanzaki.com/ns/music#Cis-dur">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.kanzaki.com/ns/music#Key"/>
+	<rdfs:comment>Major key based on C sharp, whose key signature has 7 sharps.</rdfs:comment>
+	<rdfs:label>Cis dur</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.kanzaki.com/ns/music"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.kanzaki.com/ns/music#cis-moll">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.kanzaki.com/ns/music#Key"/>
+	<rdfs:comment>Minor key based on C sharp, whose key signature has 4 sharps.</rdfs:comment>
+	<rdfs:label>cis moll</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.kanzaki.com/ns/music"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.kanzaki.com/ns/music#D-dur">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.kanzaki.com/ns/music#Key"/>
+	<rdfs:comment>Major key based on D, whose key signature has 2 sharps.</rdfs:comment>
+	<rdfs:label>D dur</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.kanzaki.com/ns/music"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.kanzaki.com/ns/music#d-moll">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.kanzaki.com/ns/music#Key"/>
+	<rdfs:comment>Minor key based on D, whose key signature has 1 flat.</rdfs:comment>
+	<rdfs:label>d moll</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.kanzaki.com/ns/music"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.kanzaki.com/ns/music#Des-dur">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.kanzaki.com/ns/music#Key"/>
+	<rdfs:comment>Major key based on D flat, whose key signature has 5 flats.</rdfs:comment>
+	<rdfs:label>Des dur</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.kanzaki.com/ns/music"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.kanzaki.com/ns/music#dis-moll">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.kanzaki.com/ns/music#Key"/>
+	<rdfs:comment>Minor key based on D sharp, whose key signature has 6 sharps.</rdfs:comment>
+	<rdfs:label>dis moll</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.kanzaki.com/ns/music"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.kanzaki.com/ns/music#E-dur">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.kanzaki.com/ns/music#Key"/>
+	<rdfs:comment>Major key based on E, whose key signature has 4 sharps.</rdfs:comment>
+	<rdfs:label>E dur</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.kanzaki.com/ns/music"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.kanzaki.com/ns/music#e-moll">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.kanzaki.com/ns/music#Key"/>
+	<rdfs:comment>Minor key based on E, whose key signature has 1 sharp.</rdfs:comment>
+	<rdfs:label>e moll</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.kanzaki.com/ns/music"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.kanzaki.com/ns/music#Es-dur">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.kanzaki.com/ns/music#Key"/>
+	<rdfs:comment>Major key based on E flat, whose key signature has 3 flats.</rdfs:comment>
+	<rdfs:label>Es dur</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.kanzaki.com/ns/music"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.kanzaki.com/ns/music#es-moll">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.kanzaki.com/ns/music#Key"/>
+	<rdfs:comment>Minor key based on E flat, whose key signature has 6 flats.</rdfs:comment>
+	<rdfs:label>es moll</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.kanzaki.com/ns/music"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.kanzaki.com/ns/music#F-dur">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.kanzaki.com/ns/music#Key"/>
+	<rdfs:comment>Major key based on F, whose key signature has 1 flat.</rdfs:comment>
+	<rdfs:label>F dur</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.kanzaki.com/ns/music"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.kanzaki.com/ns/music#f-moll">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.kanzaki.com/ns/music#Key"/>
+	<rdfs:comment>Minor key based on F, whose key signature has 4 flats.</rdfs:comment>
+	<rdfs:label>f moll</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.kanzaki.com/ns/music"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.kanzaki.com/ns/music#Fis-dur">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.kanzaki.com/ns/music#Key"/>
+	<rdfs:comment>Major key based on F sharp, whose key signature has 6 sharps.</rdfs:comment>
+	<rdfs:label>Fis dur</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.kanzaki.com/ns/music"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.kanzaki.com/ns/music#fis-moll">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.kanzaki.com/ns/music#Key"/>
+	<rdfs:comment>Minor key based on F sharp, whose key signature has 3 sharps.</rdfs:comment>
+	<rdfs:label>fis moll</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.kanzaki.com/ns/music"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.kanzaki.com/ns/music#G-dur">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.kanzaki.com/ns/music#Key"/>
+	<rdfs:comment>Major key based on G, whose key signature has 1 sharp.</rdfs:comment>
+	<rdfs:label>G dur</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.kanzaki.com/ns/music"/>
+</rdf:Description>
+
+</rdf:RDF>

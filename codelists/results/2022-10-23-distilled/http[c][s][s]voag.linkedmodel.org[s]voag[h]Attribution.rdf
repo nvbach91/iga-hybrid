@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://voag.linkedmodel.org/schema/voag">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://voag.linkedmodel.org/voag#Attribution">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://voag.linkedmodel.org/voag#NoAttributionSpecified">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://voag.linkedmodel.org/voag#Attribution"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://voag.linkedmodel.org/voag#Attribution">
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The name, url and other details of an attribution.</rdfs:comment>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Attributed Source</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://voag.linkedmodel.org/voag#NoAttributionSpecified">
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">No attribution specified</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://voag.linkedmodel.org/voag#Attribution">
+	<rdfs:isDefinedBy rdf:resource="http://voag.linkedmodel.org/schema/voag"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://voag.linkedmodel.org/voag#NoAttributionSpecified">
+	<rdfs:isDefinedBy rdf:resource="http://voag.linkedmodel.org/schema/voag"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://voag.linkedmodel.org/voag#Attribution">
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An 'Attribution' specifies how credit should be given when citing the creators of a piece of work. Attribution must use the specified attribution text and optionally use logos that are provided in the attribution details below., with the names of points of contact.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://voag.linkedmodel.org/voag#TopQuadrantAttribution">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://voag.linkedmodel.org/voag#Attribution"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TopQuadrant attribution</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://voag.linkedmodel.org/schema/voag"/>
+</rdf:Description>
+
+</rdf:RDF>

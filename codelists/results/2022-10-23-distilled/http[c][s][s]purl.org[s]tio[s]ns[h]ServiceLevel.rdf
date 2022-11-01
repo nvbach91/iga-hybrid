@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://purl.org/tio/ns#">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/tio/ns#ServiceLevel">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/tio/ns#FirstClass">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/tio/ns#ServiceLevel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/tio/ns#ServiceLevel">
+	<rdfs:comment xml:lang="en">The class of qualitative values indicating a service level oder fare class (e.g. Business Class).</rdfs:comment>
+	<rdfs:label xml:lang="en">ServiceLevel (gr:QualitativeValue)</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/tio/ns#FirstClass">
+	<rdfs:comment xml:lang="en">First class as a service level / fare class for transportation by aircraft
+
+Note: The exact character of a particular fare class may vary by carrier or country. 
+You can create individual instances of tio:ServiceLevel for a particular fare class for a particular airline.</rdfs:comment>
+	<rdfs:label xml:lang="en">FirstClass (tio:ServiceLevel)</rdfs:label>
+	<greater xmlns="http://purl.org/goodrelations/v1#" rdf:resource="http://purl.org/tio/ns#BusinessClass"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/tio/ns#BusinessClass">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/tio/ns#availableServiceLevel">
+	<rdfs:range rdf:resource="http://purl.org/tio/ns#ServiceLevel"/>
+	<rdfs:domain rdf:resource="http://purl.org/tio/ns#TransportationService"/>
+	<rdfs:label xml:lang="en">availableServiceLevel (0..*)</rdfs:label>
+	<rdfs:comment xml:lang="en">This indicates the service level(s) or fare class(es) available for the particular tio:TransportationService.</rdfs:comment>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/tio/ns#ServiceLevel">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/tio/ns#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/tio/ns#FirstClass">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/tio/ns#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/tio/ns#BusinessClass">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/tio/ns#"/>
+	<skos:inScheme rdf:resource="http://purl.org/tio/ns#ServiceLevel"/>
+	<rdfs:comment xml:lang="en">Business class as a service level / fare class for transportation by aircraft
+
+Note: The exact character of a particular fare class may vary by carrier or country. 
+You can create individual instances of tio:ServiceLevel for a particular fare class for a particular airline.</rdfs:comment>
+	<rdfs:label xml:lang="en">BusinessClass (tio:ServiceLevel)</rdfs:label>
+	<greater xmlns="http://purl.org/goodrelations/v1#" rdf:resource="http://purl.org/tio/ns#Economy"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/tio/ns#Economy">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/tio/ns#"/>
+	<skos:inScheme rdf:resource="http://purl.org/tio/ns#ServiceLevel"/>
+	<rdfs:comment xml:lang="en">Economy class as a service level / fare class for transportation by aircraft
+
+Note: The exact character of a particular fare class may vary by carrier or country. 
+You can create individual instances of tio:ServiceLevel for a particular fare class for a particular airline.</rdfs:comment>
+	<rdfs:label xml:lang="en">Economy (tio:ServiceLevel)</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/tio/ns#eligibleServiceLevel">
+	<rdfs:range rdf:resource="http://purl.org/tio/ns#ServiceLevel"/>
+	<rdfs:domain rdf:resource="http://purl.org/tio/ns#ScopeOfAccess"/>
+	<rdfs:label xml:lang="en">eligibleServiceLevel (0..*)</rdfs:label>
+	<rdfs:comment xml:lang="en">This indicates the service level(s) or fare class(es) to which the tio:Ticket entitles.</rdfs:comment>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+</rdf:RDF>

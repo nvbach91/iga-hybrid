@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://premon.fbk.eu/ontology/vn">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://premon.fbk.eu/ontology/vn#SyntacticRestrictionProperty">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://premon.fbk.eu/ontology/vn#ac_ing_syrp">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#SyntacticRestrictionProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://premon.fbk.eu/ontology/vn#SyntacticRestrictionProperty">
+	<rdfs:label>Syntactic Restriction Property</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://premon.fbk.eu/ontology/vn#ac_ing_syrp">
+	<rdfs:label>ac_ing</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://premon.fbk.eu/ontology/vn#SyntacticRestrictionProperty">
+	<rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://premon.fbk.eu/ontology/vn#ac_ing_syrp">
+	<rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://premon.fbk.eu/ontology/vn#ac_to_inf_syrp">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#SyntacticRestrictionProperty"/>
+	<rdfs:label>ac_to_inf</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://premon.fbk.eu/ontology/vn#acc_ing_syrp">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#SyntacticRestrictionProperty"/>
+	<rdfs:label>acc_ing</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://premon.fbk.eu/ontology/vn#adv_loc_syrp">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#SyntacticRestrictionProperty"/>
+	<rdfs:label>adv_loc</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://premon.fbk.eu/ontology/vn#be_sc_ing_syrp">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#SyntacticRestrictionProperty"/>
+	<rdfs:label>be_sc_ing</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://premon.fbk.eu/ontology/vn#body_part_syrp">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#SyntacticRestrictionProperty"/>
+	<rdfs:label>body_part</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://premon.fbk.eu/ontology/vn#definite_syrp">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#SyntacticRestrictionProperty"/>
+	<rdfs:label>definite</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://premon.fbk.eu/ontology/vn#for_comp_syrp">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#SyntacticRestrictionProperty"/>
+	<rdfs:label>for_comp</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://premon.fbk.eu/ontology/vn#genitive_syrp">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#SyntacticRestrictionProperty"/>
+	<rdfs:label>genitive</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://premon.fbk.eu/ontology/vn#how_extract_syrp">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#SyntacticRestrictionProperty"/>
+	<rdfs:label>how_extract</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://premon.fbk.eu/ontology/vn#np_ing_syrp">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#SyntacticRestrictionProperty"/>
+	<rdfs:label>np_ing</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://premon.fbk.eu/ontology/vn#np_omit_ing_syrp">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#SyntacticRestrictionProperty"/>
+	<rdfs:label>np_omit_ing</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://premon.fbk.eu/ontology/vn#np_p_ing_syrp">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#SyntacticRestrictionProperty"/>
+	<rdfs:label>np_p_ing</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://premon.fbk.eu/ontology/vn#np_ppart_syrp">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#SyntacticRestrictionProperty"/>
+	<rdfs:label>np_ppart</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://premon.fbk.eu/ontology/vn#np_to_inf_syrp">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#SyntacticRestrictionProperty"/>
+	<rdfs:label>np_to_inf</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://premon.fbk.eu/ontology/vn#np_tobe_syrp">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#SyntacticRestrictionProperty"/>
+	<rdfs:label>np_tobe</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://premon.fbk.eu/ontology/vn#oc_bare_inf_syrp">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#SyntacticRestrictionProperty"/>
+	<rdfs:label>oc_bare_inf</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://premon.fbk.eu/ontology/vn#oc_ing_syrp">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#SyntacticRestrictionProperty"/>
+	<rdfs:label>oc_ing</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://premon.fbk.eu/ontology/vn#oc_to_inf_syrp">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#SyntacticRestrictionProperty"/>
+	<rdfs:label>oc_to_inf</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://premon.fbk.eu/ontology/vn#plural_syrp">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#SyntacticRestrictionProperty"/>
+	<rdfs:label>plural</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://premon.fbk.eu/ontology/vn#pos_ing">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#SyntacticRestrictionProperty"/>
+	<rdfs:label>pos_ing</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://premon.fbk.eu/ontology/vn#poss_ing_syrp">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#SyntacticRestrictionProperty"/>
+	<rdfs:label>poss_ing</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://premon.fbk.eu/ontology/vn#quotation_syrp">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#SyntacticRestrictionProperty"/>
+	<rdfs:label>quotation</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://premon.fbk.eu/ontology/vn#refl_syrp">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#SyntacticRestrictionProperty"/>
+	<rdfs:label>refl</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://premon.fbk.eu/ontology/vn#rs_to_inf_syrp">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#SyntacticRestrictionProperty"/>
+	<rdfs:label>rs_to_inf</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://premon.fbk.eu/ontology/vn#sc_ing_syrp">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#SyntacticRestrictionProperty"/>
+	<rdfs:label>sc_ing</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://premon.fbk.eu/ontology/vn#sc_to_inf_syrp">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#SyntacticRestrictionProperty"/>
+	<rdfs:label>sc_to_inf</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://premon.fbk.eu/ontology/vn#sentential_syrp">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#SyntacticRestrictionProperty"/>
+	<rdfs:label>sentential</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://premon.fbk.eu/ontology/vn#small_clause_syrp">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#SyntacticRestrictionProperty"/>
+	<rdfs:label>small_clause</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://premon.fbk.eu/ontology/vn#tensed_that_syrp">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#SyntacticRestrictionProperty"/>
+	<rdfs:label>tensed_that</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://premon.fbk.eu/ontology/vn#that_comp_syrp">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#SyntacticRestrictionProperty"/>
+	<rdfs:label>that_comp</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://premon.fbk.eu/ontology/vn#to_be_syrp">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#SyntacticRestrictionProperty"/>
+	<rdfs:label>to_be</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://premon.fbk.eu/ontology/vn#to_inf_rs_syrp">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#SyntacticRestrictionProperty"/>
+	<rdfs:label>to_inf_rs</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://premon.fbk.eu/ontology/vn#vc_to_inf_syrp">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#SyntacticRestrictionProperty"/>
+	<rdfs:label>vc_to_inf</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://premon.fbk.eu/ontology/vn#wh_comp_syrp">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#SyntacticRestrictionProperty"/>
+	<rdfs:label>wh_comp</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://premon.fbk.eu/ontology/vn#wh_extract_syrp">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#SyntacticRestrictionProperty"/>
+	<rdfs:label>wh_extract</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://premon.fbk.eu/ontology/vn#wh_inf_syrp">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#SyntacticRestrictionProperty"/>
+	<rdfs:label>wh_inf</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://premon.fbk.eu/ontology/vn#wh_ing_syrp">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#SyntacticRestrictionProperty"/>
+	<rdfs:label>wh_ing</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://premon.fbk.eu/ontology/vn#what_extract_syrp">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#SyntacticRestrictionProperty"/>
+	<rdfs:label>what_extract</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://premon.fbk.eu/ontology/vn#what_inf_syrp">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#SyntacticRestrictionProperty"/>
+	<rdfs:label>what_inf</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://premon.fbk.eu/ontology/vn#wheth_inf_syrp">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://premon.fbk.eu/ontology/vn#SyntacticRestrictionProperty"/>
+	<rdfs:label>wheth_inf</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://premon.fbk.eu/ontology/vn"/>
+</rdf:Description>
+
+</rdf:RDF>

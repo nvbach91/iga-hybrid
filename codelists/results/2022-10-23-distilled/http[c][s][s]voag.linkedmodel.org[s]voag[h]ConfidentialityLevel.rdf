@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://voag.linkedmodel.org/schema/voag">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://voag.linkedmodel.org/voag#ConfidentialityLevel">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://voag.linkedmodel.org/voag#CL_None">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://voag.linkedmodel.org/voag#ConfidentialityLevel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://voag.linkedmodel.org/voag#ConfidentialityLevel">
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Confidentiality level</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://voag.linkedmodel.org/voag#CL_None">
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://voag.linkedmodel.org/voag#ConfidentialityLevel">
+	<rdfs:isDefinedBy rdf:resource="http://voag.linkedmodel.org/schema/voag"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://voag.linkedmodel.org/voag#CL_None">
+	<rdfs:isDefinedBy rdf:resource="http://voag.linkedmodel.org/schema/voag"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://voag.linkedmodel.org/voag#CL_Restricted">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://voag.linkedmodel.org/voag#ConfidentialityLevel"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Restricted</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://voag.linkedmodel.org/schema/voag"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://voag.linkedmodel.org/voag#CL_Secret">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://voag.linkedmodel.org/voag#ConfidentialityLevel"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Secret</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://voag.linkedmodel.org/schema/voag"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://voag.linkedmodel.org/voag#CL_SensitiveButUnclassified">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://voag.linkedmodel.org/voag#ConfidentialityLevel"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sensitive but Unclassified</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://voag.linkedmodel.org/schema/voag"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://voag.linkedmodel.org/voag#CL_TopSecret">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://voag.linkedmodel.org/voag#ConfidentialityLevel"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Top secret</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://voag.linkedmodel.org/schema/voag"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://voag.linkedmodel.org/voag#CL_Unclassified">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://voag.linkedmodel.org/voag#ConfidentialityLevel"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unclassified</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://voag.linkedmodel.org/schema/voag"/>
+</rdf:Description>
+
+</rdf:RDF>

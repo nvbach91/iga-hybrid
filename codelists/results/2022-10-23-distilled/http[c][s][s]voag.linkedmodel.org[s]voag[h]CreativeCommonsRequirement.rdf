@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://voag.linkedmodel.org/schema/voag">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://voag.linkedmodel.org/voag#CreativeCommonsRequirement">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://voag.linkedmodel.org/voag#CCR_Attribution">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://voag.linkedmodel.org/voag#CreativeCommonsRequirement"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://voag.linkedmodel.org/voag#CreativeCommonsRequirement">
+	<rdfs:comment xml:lang="en-us">an action that may or may not be requested of you</rdfs:comment>
+	<rdfs:label xml:lang="en-us">Requirement</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://voag.linkedmodel.org/voag#CCR_Attribution">
+	<rdfs:label xml:lang="en-us">Creative Commons Attribution</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://voag.linkedmodel.org/voag#requires">
+	<rdfs:range rdf:resource="http://voag.linkedmodel.org/voag#CreativeCommonsRequirement"/>
+	<rdfs:domain rdf:resource="http://voag.linkedmodel.org/voag#LicenseModel"/>
+	<rdfs:label xml:lang="en-us">requires</rdfs:label>
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://voag.linkedmodel.org/voag#CreativeCommonsRequirement">
+	<rdfs:isDefinedBy rdf:resource="http://voag.linkedmodel.org/schema/voag"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://voag.linkedmodel.org/voag#CCR_Attribution">
+	<rdfs:isDefinedBy rdf:resource="http://voag.linkedmodel.org/schema/voag"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://voag.linkedmodel.org/voag#CCR_Copyleft">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://voag.linkedmodel.org/voag#CreativeCommonsRequirement"/>
+	<rdfs:label xml:lang="en-us">Creative Commons Copyleft</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://voag.linkedmodel.org/schema/voag"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://voag.linkedmodel.org/voag#CCR_LesserCopyleft">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://voag.linkedmodel.org/voag#CreativeCommonsRequirement"/>
+	<rdfs:label xml:lang="en-us">Creative Commons Lesser Copyleft</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://voag.linkedmodel.org/schema/voag"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://voag.linkedmodel.org/voag#CCR_Notice">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://voag.linkedmodel.org/voag#CreativeCommonsRequirement"/>
+	<rdfs:label xml:lang="en-us">Creative Commons Notice</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://voag.linkedmodel.org/schema/voag"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://voag.linkedmodel.org/voag#CCR_ShareAlike">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://voag.linkedmodel.org/voag#CreativeCommonsRequirement"/>
+	<rdfs:label xml:lang="en-us">Creative Commons Share Alike</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://voag.linkedmodel.org/schema/voag"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://voag.linkedmodel.org/voag#CCR_SourceCode">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://voag.linkedmodel.org/voag#CreativeCommonsRequirement"/>
+	<rdfs:label xml:lang="en-us">Creative Commons Source Code</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://voag.linkedmodel.org/schema/voag"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://voag.linkedmodel.org/voag#requires">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">requires</rdfs:label>
+</rdf:Description>
+
+</rdf:RDF>

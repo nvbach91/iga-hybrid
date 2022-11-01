@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://vocab.org/transit/terms/">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.org/transit/terms/AccessArrangement">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.org/transit/terms/coordinated">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://vocab.org/transit/terms/AccessArrangement"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.org/transit/terms/AccessArrangement">
+	<rdfs:comment xml:lang="en">A type of arrangement for picking up or dropping off passengers from a service stop.</rdfs:comment>
+	<rdfs:label xml:lang="en">Access Arrangement</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.org/transit/terms/coordinated">
+	<rdfs:comment xml:lang="en">The particular form of access must be coordinated with the driver.</rdfs:comment>
+	<rdfs:label xml:lang="en">Coordinated</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.org/transit/terms/dropoff">
+	<rdfs:range rdf:resource="http://vocab.org/transit/terms/AccessArrangement"/>
+	<rdfs:domain rdf:resource="http://vocab.org/transit/terms/ServiceStop"/>
+	<rdfs:label xml:lang="en">Drop Off</rdfs:label>
+	<rdfs:comment xml:lang="en">The arrangement required for passengers to be dropped off at this service stop.</rdfs:comment>
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.org/transit/terms/AccessArrangement">
+	<rdfs:isDefinedBy rdf:resource="http://vocab.org/transit/terms/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.org/transit/terms/coordinated">
+	<rdfs:isDefinedBy rdf:resource="http://vocab.org/transit/terms/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.org/transit/terms/disallowed">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://vocab.org/transit/terms/AccessArrangement"/>
+	<rdfs:comment xml:lang="en">The particular form of access is unavailable.</rdfs:comment>
+	<rdfs:label xml:lang="en">Disallowed</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://vocab.org/transit/terms/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.org/transit/terms/prearranged">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://vocab.org/transit/terms/AccessArrangement"/>
+	<rdfs:comment xml:lang="en">The particular form of access must be pre-arranged with the transit agency.</rdfs:comment>
+	<rdfs:label xml:lang="en">Pre-arranged</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://vocab.org/transit/terms/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.org/transit/terms/standard">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://vocab.org/transit/terms/AccessArrangement"/>
+	<rdfs:comment xml:lang="en">The particular form of access has no special arrangement.</rdfs:comment>
+	<rdfs:label xml:lang="en">Standard</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://vocab.org/transit/terms/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.org/transit/terms/dropoff">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.org/transit/terms/pickup">
+	<rdfs:range rdf:resource="http://vocab.org/transit/terms/AccessArrangement"/>
+	<rdfs:domain rdf:resource="http://vocab.org/transit/terms/ServiceStop"/>
+	<rdfs:label xml:lang="en">Pick Up</rdfs:label>
+	<rdfs:comment xml:lang="en">The arrangement required for passengers to be picked up at this service stop.</rdfs:comment>
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+</rdf:RDF>

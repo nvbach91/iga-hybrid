@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://purl.org/olia/ubyCat.owl">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/olia/ubyCat.owl#VerbForm">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/olia/ubyCat.owl#bareInfinitive">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/olia/ubyCat.owl#VerbForm"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/olia/ubyCat.owl#VerbForm">
+	<rdfs:comment>Specifies the verb form to be used in a verb phrase complement.</rdfs:comment>
+	<rdfs:label>verbForm</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/olia/ubyCat.owl#bareInfinitive">
+	<rdfs:label>bareInfinitive</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/olia/ubyCat.owl#hasVerbForm">
+	<rdfs:range rdf:resource="http://purl.org/olia/ubyCat.owl#VerbForm"/>
+	<rdfs:label>verbForm</rdfs:label>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/olia/ubyCat.owl#VerbForm">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/olia/ubyCat.owl#bareInfinitive">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/olia/ubyCat.owl#ingForm">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/olia/ubyCat.owl#VerbForm"/>
+	<rdfs:label>ingForm</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/olia/ubyCat.owl#participle">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/olia/ubyCat.owl#VerbForm"/>
+	<rdfs:label>participle</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/olia/ubyCat.owl#toInfinitive">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/olia/ubyCat.owl#VerbForm"/>
+	<rdfs:label>toInfinitive</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/olia/ubyCat.owl"/>
+</rdf:Description>
+
+</rdf:RDF>

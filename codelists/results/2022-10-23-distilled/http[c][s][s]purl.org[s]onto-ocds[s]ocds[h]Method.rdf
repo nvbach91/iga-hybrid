@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://purl.org/onto-ocds/ocds">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/onto-ocds/ocds#Method">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/onto-ocds/ocds#methodLimited">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/onto-ocds/ocds#Method"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/onto-ocds/ocds#Method">
+	<rdfs:comment xml:lang="en">The method codelist is based upon the GPA Definitions provided here.</rdfs:comment>
+	<rdfs:label xml:lang="en">Codelist Method</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/onto-ocds/ocds#methodLimited">
+	<rdfs:comment xml:lang="en">Limited tendering means a procurement method whereby the procuring entity contacts a supplier or suppliers of its choice.</rdfs:comment>
+	<rdfs:label xml:lang="en">Limited</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/onto-ocds/ocds#procurementMethod">
+	<rdfs:range rdf:resource="http://purl.org/onto-ocds/ocds#Method"/>
+	<rdfs:domain rdf:resource="http://purl.org/onto-ocds/ocds#Tender"/>
+	<rdfs:label xml:lang="en">Procurement method</rdfs:label>
+	<rdfs:comment xml:lang="en">Specify tendering method against the [method codelist](http://standard.open-contracting.org/latest/en/schema/codelists/#method) as per [GPA definitions](http://www.wto.org/english/docs_e/legal_e/rev-gpr-94_01_e.htm) of Open, Selective, Limited</rdfs:comment>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/onto-ocds/ocds#Method">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/onto-ocds/ocds"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/onto-ocds/ocds#methodLimited">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/onto-ocds/ocds"/>
+	<rdfs:label xml:lang="en">limited</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/onto-ocds/ocds#methodOpen">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/onto-ocds/ocds#Method"/>
+	<rdfs:comment xml:lang="en">Open tendering means a procurement method whereby all interested suppliers may submit a tender.</rdfs:comment>
+	<rdfs:label xml:lang="en">Open</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/onto-ocds/ocds"/>
+	<rdfs:label xml:lang="en">open</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/onto-ocds/ocds#methodSelective">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/onto-ocds/ocds#Method"/>
+	<rdfs:comment xml:lang="en">Selective tendering means a procurement method whereby only qualified suppliers are invited by the procuring entity to submit a tender.</rdfs:comment>
+	<rdfs:label xml:lang="en">Selective</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/onto-ocds/ocds"/>
+	<rdfs:label xml:lang="en">selective</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/onto-ocds/ocds#procurementMethod">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+</rdf:RDF>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://online-presence.net/opo/ns#">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://online-presence.net/opo/ns#Findability">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://online-presence.net/opo/ns#ConstrainedFindability">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://online-presence.net/opo/ns#Findability"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://online-presence.net/opo/ns#Findability">
+	<rdfs:comment xml:lang="en">The OnlinePresenceComponent used to represent the
+			possibility to find contact details of an Agent in a public
+			listing</rdfs:comment>
+	<rdfs:label xml:lang="en">Findability</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://online-presence.net/opo/ns#ConstrainedFindability">
+	<rdfs:comment xml:lang="en">The Agent's contact details cannot be found by anyone on
+			the Web, but the findability is controled by some
+			rules/policies.</rdfs:comment>
+	<rdfs:label xml:lang="en">ConstrainedFindability</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://online-presence.net/opo/ns#Findability">
+	<rdfs:isDefinedBy rdf:resource="http://online-presence.net/opo/ns#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://online-presence.net/opo/ns#ConstrainedFindability">
+	<rdfs:isDefinedBy rdf:resource="http://online-presence.net/opo/ns#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://online-presence.net/opo/ns#PubliclyFindable">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://online-presence.net/opo/ns#Findability"/>
+	<rdfs:comment xml:lang="en">The Agent's contact details canbe found by anyone on the
+			Web</rdfs:comment>
+	<rdfs:label xml:lang="en">PubliclyFindable</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://online-presence.net/opo/ns#"/>
+</rdf:Description>
+
+</rdf:RDF>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies#USDA_Growth_Habit">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies#USDA_Growth_Habit_Forb_Herb">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#USDA_Growth_Habit"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies#USDA_Growth_Habit">
+	<rdfs:label>USDA_Growth_Habit</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies#USDA_Growth_Habit_Forb_Herb">
+	<rdfs:comment>Applies to vascular plants only. Federal Geographic Data Committee (FGDC) definition includes graminoids, forbs, and ferns.</rdfs:comment>
+	<rdfs:label>USDA_Growth_Habit_Forb_Herb</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies#has_USDA_Growth_Habit">
+	<rdfs:range rdf:resource="http://rdf.geospecies.org/ont/geospecies#USDA_Growth_Habit"/>
+	<rdfs:domain rdf:resource="http://rdf.geospecies.org/ont/geospecies#SpeciesConcept"/>
+	<rdfs:label>has_USDA_Growth_Habit</rdfs:label>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies#USDA_Growth_Habit">
+	<rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies#USDA_Growth_Habit_Forb_Herb">
+	<rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+	<rdfs:comment>Vascular plant without significant woody tissue above or at the ground. Forbs and herbs may be annual, biennial, or perennial but always lack significant thickening by secondary woody growth and have perennating buds borne at or below the ground surface. In PLANTS, graminoids are excluded but ferns, horsetails, lycopods, and whisk-ferns are included.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies#USDA_Growth_Habit_Graminoid">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#USDA_Growth_Habit"/>
+	<rdfs:comment>Applies to vascular plants only. An herb in the FGDC classification.</rdfs:comment>
+	<rdfs:label>USDA_Growth_Habit_Graminoid</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+	<rdfs:comment>Grass or grass-like plant, including grasses (Poaceae), sedges (Cyperaceae), rushes (Juncaceae), arrow-grasses (Juncaginaceae), and quillworts (Isoetes).</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies#USDA_Growth_Habit_Liana">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#USDA_Growth_Habit"/>
+	<rdfs:comment>Applies to vascular plants only. In PLANTS, mutually exclusive with VI (Vine). A shrub in the FGDC classification.</rdfs:comment>
+	<rdfs:label>USDA_Growth_Habit_Liana</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+	<rdfs:comment>Climbing plant found in tropical forests with long, woody rope-like stems of anomalous anatomical structure.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies#USDA_Growth_Habit_Lichenous">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#USDA_Growth_Habit"/>
+	<rdfs:comment>Applies to lichens only, which are not true plants.</rdfs:comment>
+	<rdfs:label>USDA_Growth_Habit_Lichenous</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+	<rdfs:comment>Organism generally recognized as a single "plant" that consists of a fungus and an alga or cyanobacterium living in symbiotic association. Often attached to solid objects such as rocks or living or dead wood rather than soil.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies#USDA_Growth_Habit_Nonvascular">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#USDA_Growth_Habit"/>
+	<rdfs:comment>Applies to non-vascular plants only; in PLANTS system this is groups HN (Hornworts), LV (Liverworts), and MS (Mosses).</rdfs:comment>
+	<rdfs:label>USDA_Growth_Habit_Nonvascular</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+	<rdfs:comment>Nonvascular, terrestrial green plant, including mosses, hornworts, and liverworts. Always herbaceous, often attached to solid objects such as rocks or living or dead wood rather than soil.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies#USDA_Growth_Habit_Shrub">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#USDA_Growth_Habit"/>
+	<rdfs:comment>Applies to vascular plants only.</rdfs:comment>
+	<rdfs:label>USDA_Growth_Habit_Shrub</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+	<rdfs:comment>Perennial, multi-stemmed woody plant that is usually less than 4 to 5 meters (13 to 16 feet) in height. Shrubs typically have several stems arising from or near the ground, but may be taller than 5 meters or single-stemmed under certain environmental conditions.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies#USDA_Growth_Habit_Subshrub">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#USDA_Growth_Habit"/>
+	<rdfs:comment>Applies to vascular plants only. A dwarf-shrub in the FGDC classification.</rdfs:comment>
+	<rdfs:label>USDA_Growth_Habit_Subshrub</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+	<rdfs:comment>Low-growing shrub usually under 0.5 m (1.5 feet) tall, never exceeding 1 meter (3 feet) tall at maturity.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies#USDA_Growth_Habit_Tree">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#USDA_Growth_Habit"/>
+	<rdfs:comment>Applies to vascular plants only.</rdfs:comment>
+	<rdfs:label>USDA_Growth_Habit_Tree</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+	<rdfs:comment>Perennial, woody plant with a single stem (trunk), normally greater than 4 to 5 meters (13 to 16 feet) in height; under certain environmental conditions, some tree species may develop a multi-stemmed or short growth form (less than 4 meters or 13 feet in height).</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies#USDA_Growth_Habit_Vine">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#USDA_Growth_Habit"/>
+	<rdfs:comment>Applies to vascular plants only. In PLANTS, mutually exclusive with LI (Liana). FGDC classification considers woody vines to be shrubs and herbaceous vines to be herbs.</rdfs:comment>
+	<rdfs:label>USDA_Growth_Habit_Vine</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+	<rdfs:comment>Twining/climbing plant with relatively long stems, can be woody or herbaceous</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdf.geospecies.org/ont/geospecies#USDA_Growth_Habit_Unknown">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://rdf.geospecies.org/ont/geospecies#USDA_Growth_Habit"/>
+	<rdfs:comment>Growth form is unknown.</rdfs:comment>
+	<rdfs:label>USDA_Growth_Habit_Unknown</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://rdf.geospecies.org/ont/geospecies"/>
+</rdf:Description>
+
+</rdf:RDF>

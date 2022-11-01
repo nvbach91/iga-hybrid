@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://purl.org/linked-data/sdmx/2009/code">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linked-data/sdmx/2009/code#Freq">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linked-data/sdmx/2009/code#freq-A">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/linked-data/sdmx/2009/code#Freq"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linked-data/sdmx/2009/code#Freq">
+	<rdfs:comment xml:lang="en">It provides a list of values indicating the "frequency" of the data (e.g. monthly) and, thus, indirectly, also implying the type of "time reference" that could be used for identifying the data with respect time.</rdfs:comment>
+	<rdfs:label xml:lang="en">Code list for Frequency (FREQ) - codelist class</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linked-data/sdmx/2009/code#freq-A">
+	<rdfs:label xml:lang="en">Annual</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linked-data/sdmx/2009/code#Freq">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linked-data/sdmx/2009/code"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linked-data/sdmx/2009/code#freq-A">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linked-data/sdmx/2009/code"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linked-data/sdmx/2009/code#freq-B">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/linked-data/sdmx/2009/code#Freq"/>
+	<rdfs:label xml:lang="en">Daily - business week</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linked-data/sdmx/2009/code"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linked-data/sdmx/2009/code#freq-D">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/linked-data/sdmx/2009/code#Freq"/>
+	<rdfs:label xml:lang="en">Daily</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linked-data/sdmx/2009/code"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linked-data/sdmx/2009/code#freq-M">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/linked-data/sdmx/2009/code#Freq"/>
+	<rdfs:label xml:lang="en">Monthly</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linked-data/sdmx/2009/code"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linked-data/sdmx/2009/code#freq-N">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/linked-data/sdmx/2009/code#Freq"/>
+	<rdfs:label xml:lang="en">Minutely</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linked-data/sdmx/2009/code"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linked-data/sdmx/2009/code#freq-Q">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/linked-data/sdmx/2009/code#Freq"/>
+	<rdfs:label xml:lang="en">Quarterly</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linked-data/sdmx/2009/code"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linked-data/sdmx/2009/code#freq-S">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/linked-data/sdmx/2009/code#Freq"/>
+	<rdfs:label xml:lang="en">Half Yearly, semester</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linked-data/sdmx/2009/code"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linked-data/sdmx/2009/code#freq-W">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.org/linked-data/sdmx/2009/code#Freq"/>
+	<rdfs:label xml:lang="en">Weekly</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linked-data/sdmx/2009/code"/>
+</rdf:Description>
+
+</rdf:RDF>

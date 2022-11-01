@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/LeftOperand">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/absoluteSpatialPosition">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/LeftOperand"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/LeftOperand">
+	<rdfs:label xml:lang="en">Left Operand</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/absoluteSpatialPosition">
+	<rdfs:label xml:lang="en">Absolute Spatial Asset Position</rdfs:label>
+	<skos:broaderTransitive rdf:resource="http://www.w3.org/ns/odrl/2/absolutePosition"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/absolutePosition">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/leftOperand">
+	<rdfs:range rdf:resource="http://www.w3.org/ns/odrl/2/LeftOperand"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/ns/odrl/2/Constraint"/>
+	<rdfs:label xml:lang="en">Has Left Operand</rdfs:label>
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/LeftOperand">
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/absoluteSpatialPosition">
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/absolutePosition">
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/absoluteTemporalPosition">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/LeftOperand"/>
+	<rdfs:label xml:lang="en">Absolute Temporal Asset Position</rdfs:label>
+	<skos:broaderTransitive rdf:resource="http://www.w3.org/ns/odrl/2/absolutePosition"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/systemDevice">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/LeftOperand"/>
+	<rdfs:label xml:lang="en">System Device</rdfs:label>
+	<skos:exactMatch rdf:resource="http://www.w3.org/ns/odrl/2/device"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/device">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/systemDevice">
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/device">
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/relativeSpatialPosition">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/LeftOperand"/>
+	<rdfs:label xml:lang="en">Relative Spatial Asset Position</rdfs:label>
+	<skos:broaderTransitive rdf:resource="http://www.w3.org/ns/odrl/2/relativePosition"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/relativePosition">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/relativeSpatialPosition">
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/relativePosition">
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/relativeTemporalPosition">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/LeftOperand"/>
+	<rdfs:label xml:lang="en">Relative Temporal Asset Position</rdfs:label>
+	<skos:broaderTransitive rdf:resource="http://www.w3.org/ns/odrl/2/relativePosition"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/spatialCoordinates">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/LeftOperand"/>
+	<rdfs:label xml:lang="en">Geospatial Coordinates</rdfs:label>
+	<skos:broaderTransitive rdf:resource="http://www.w3.org/ns/odrl/2/spatial"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/spatial">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/spatialCoordinates">
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/spatial">
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/systemDevice">
+	<skos:exactMatch rdf:resource="http://www.w3.org/ns/odrl/2/system"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/system">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/device">
+	<skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/LeftOperand"/>
+	<rdfs:label xml:lang="en">Device</rdfs:label>
+	<skos:exactMatch rdf:resource="http://www.w3.org/ns/odrl/2/systemDevice"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/system">
+	<skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/LeftOperand"/>
+	<rdfs:label xml:lang="en">System</rdfs:label>
+	<skos:exactMatch rdf:resource="http://www.w3.org/ns/odrl/2/systemDevice"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/absolutePosition">
+	<skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/LeftOperand"/>
+	<rdfs:label xml:lang="en">Absolute Asset Position</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/absoluteSize">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/LeftOperand"/>
+	<rdfs:label xml:lang="en">Absolute Asset Size</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/count">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/LeftOperand"/>
+	<rdfs:label xml:lang="en">Count</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/dateTime">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/LeftOperand"/>
+	<rdfs:label xml:lang="en">Datetime</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/delayPeriod">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/LeftOperand"/>
+	<rdfs:label xml:lang="en">Delay Period</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/deliveryChannel">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/LeftOperand"/>
+	<rdfs:label xml:lang="en">Delivery Channel</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/elapsedTime">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/LeftOperand"/>
+	<rdfs:label xml:lang="en">Elapsed Time</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/event">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/LeftOperand"/>
+	<rdfs:label xml:lang="en">Event</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/fileFormat">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/LeftOperand"/>
+	<rdfs:label xml:lang="en">File Format</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/industry">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/LeftOperand"/>
+	<rdfs:label xml:lang="en">Industry Context</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/language">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/LeftOperand"/>
+	<rdfs:label xml:lang="en">Language</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/media">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/LeftOperand"/>
+	<rdfs:label xml:lang="en">Media Context</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/meteredTime">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/LeftOperand"/>
+	<rdfs:label xml:lang="en">Metered Time</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/payAmount">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/LeftOperand"/>
+	<rdfs:label xml:lang="en">Payment Amount</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/percentage">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/LeftOperand"/>
+	<rdfs:label xml:lang="en">Asset Percentage</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/product">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/LeftOperand"/>
+	<rdfs:label xml:lang="en">Product Context</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/purpose">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/LeftOperand"/>
+	<rdfs:label xml:lang="en">Purpose</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/recipient">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/LeftOperand"/>
+	<rdfs:label xml:lang="en">Recipient</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/relativePosition">
+	<skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/LeftOperand"/>
+	<rdfs:label xml:lang="en">Relative Asset Position</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/relativeSize">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/LeftOperand"/>
+	<rdfs:label xml:lang="en">Relative Asset Size</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/resolution">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/LeftOperand"/>
+	<rdfs:label xml:lang="en">Rendition Resolution</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/spatial">
+	<skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/LeftOperand"/>
+	<rdfs:label xml:lang="en">Geospatial Named Area</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/timeInterval">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/LeftOperand"/>
+	<rdfs:label xml:lang="en">Recurring Time Interval</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/unitOfCount">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/LeftOperand"/>
+	<rdfs:label xml:lang="en">Unit Of Count</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/version">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/LeftOperand"/>
+	<rdfs:label xml:lang="en">Version</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/virtualLocation">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/ns/odrl/2/LeftOperand"/>
+	<rdfs:label xml:lang="en">Virtual IT Communication Location</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/leftOperand">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+</rdf:RDF>

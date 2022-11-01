@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://www.isibang.ac.in/ns/mod">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.isibang.ac.in/ns/mod#KnowledgeRepresentationFormalism">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.isibang.ac.in/ns/mod#DescriptionLogics">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.isibang.ac.in/ns/mod#KnowledgeRepresentationFormalism"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.isibang.ac.in/ns/mod#KnowledgeRepresentationFormalism">
+	<rdfs:comment xml:lang="en">A representation formalism that is followed to describe knowledge in an ontology. Example includes description logics, first order logic, etc. </rdfs:comment>
+	<rdfs:label>Knowledge Representation Formalism</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.isibang.ac.in/ns/mod#DescriptionLogics">
+	<rdfs:label xml:lang="en">Description Logics</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.isibang.ac.in/ns/mod#knowledgeRepresentationFormalism">
+	<rdfs:range rdf:resource="http://www.isibang.ac.in/ns/mod#KnowledgeRepresentationFormalism"/>
+	<rdfs:domain rdf:resource="http://www.isibang.ac.in/ns/mod#Ontology"/>
+	<rdfs:label xml:lang="en">knowledge representation formalism</rdfs:label>
+	<rdfs:comment xml:lang="en">A knowledge representation formalism (e.g., description logics, first order logic) followed to create an ontology. </rdfs:comment>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.isibang.ac.in/ns/mod#KnowledgeRepresentationFormalism">
+	<rdfs:isDefinedBy rdf:resource="http://www.isibang.ac.in/ns/mod"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.isibang.ac.in/ns/mod#DescriptionLogics">
+	<rdfs:isDefinedBy rdf:resource="http://www.isibang.ac.in/ns/mod"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.isibang.ac.in/ns/mod#FirstOrderLogic">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.isibang.ac.in/ns/mod#KnowledgeRepresentationFormalism"/>
+	<rdfs:label xml:lang="en">First Order Logic </rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.isibang.ac.in/ns/mod"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.isibang.ac.in/ns/mod#PropositionalLogics">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.isibang.ac.in/ns/mod#KnowledgeRepresentationFormalism"/>
+	<rdfs:label xml:lang="en">Propositional Logic </rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://www.isibang.ac.in/ns/mod"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.isibang.ac.in/ns/mod#Frame">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.isibang.ac.in/ns/mod#KnowledgeRepresentationFormalism"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.isibang.ac.in/ns/mod"/>
+</rdf:Description>
+
+</rdf:RDF>

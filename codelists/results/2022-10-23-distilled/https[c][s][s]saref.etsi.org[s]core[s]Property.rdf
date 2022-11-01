@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="https://saref.etsi.org/saref4agri/">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://saref.etsi.org/core/Property">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://saref.etsi.org/saref4agri/IrrigationWater">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://saref.etsi.org/core/Property"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://saref.etsi.org/core/Property">
+	<rdfs:comment xml:lang="en">An aspect of an entity that can be observable by a sensor.</rdfs:comment>
+	<rdfs:label xml:lang="en">Property</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://saref.etsi.org/saref4agri/IrrigationWater">
+	<rdfs:comment xml:lang="en">The amount of water falling in the soil by irrigation methods.</rdfs:comment>
+	<rdfs:label xml:lang="en">Irrigation water</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://saref.etsi.org/core/Property">
+	<rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4agri/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://saref.etsi.org/saref4agri/IrrigationWater">
+	<rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4agri/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://saref.etsi.org/core/Property">
+	<rdfs:comment xml:lang="en">Anything that can be sensed, measured or controlled in households, common public buildings or offices. We propose here a list of properties that are relevant for the purpose of SAREF, but this list can be extended.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://saref.etsi.org/saref4agri/PlantGrowthStage">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://saref.etsi.org/core/Property"/>
+	<rdfs:comment xml:lang="en">The level or stage of growth of the plant.</rdfs:comment>
+	<rdfs:label xml:lang="en">Plant growth stage</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4agri/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://saref.etsi.org/saref4agri/Precipitation">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://saref.etsi.org/core/Property"/>
+	<rdfs:comment xml:lang="en">The amount of water falling in the soil by natural process (e.g. rain).</rdfs:comment>
+	<rdfs:label xml:lang="en">Precipitation</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4agri/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://saref.etsi.org/saref4agri/SoilMoisture">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://saref.etsi.org/core/Property"/>
+	<rdfs:comment xml:lang="en">The amount of water or humidity contained in the soil.</rdfs:comment>
+	<rdfs:label xml:lang="en">Soil moisture</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4agri/"/>
+</rdf:Description>
+
+</rdf:RDF>

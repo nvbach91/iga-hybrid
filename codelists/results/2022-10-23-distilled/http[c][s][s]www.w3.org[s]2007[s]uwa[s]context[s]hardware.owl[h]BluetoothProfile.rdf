@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/deliverycontext.owl">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/hardware.owl#BluetoothProfile">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/hardware.owl#BluetoothProfile_dialup">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/hardware.owl#BluetoothProfile"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/hardware.owl#BluetoothProfile">
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This class describes a specific Bluetooth profile used to support a particular user scenario</rdfs:comment>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bluetooth Profile</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/hardware.owl#BluetoothProfile_dialup">
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Bluetooth profile that defines how devices provide modem services.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/hardware.owl#supportedBluetoothProfiles">
+	<rdfs:range rdf:resource="http://www.w3.org/2007/uwa/context/hardware.owl#BluetoothProfile"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2007/uwa/context/hardware.owl#BluetoothHardware"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Supported Bluetooth Profiles</rdfs:label>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This property defines the Bluetooth profiles supported by the device</rdfs:comment>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/hardware.owl#BluetoothProfile">
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/hardware.owl#BluetoothProfile_dialup">
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/hardware.owl#BluetoothProfile_fileTransfer">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/hardware.owl#BluetoothProfile"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Bluetooth profile that defines how devices perform file transfer.</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/hardware.owl#BluetoothProfile_genericAccess">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/hardware.owl#BluetoothProfile"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Bluetooth profile that defines the basic level of function that all devices must implement.</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/hardware.owl#BluetoothProfile_genericObjExch">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/hardware.owl#BluetoothProfile"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Bluetooth profile that defines how the Infra Red Data Association's OBEX object exchange protocol is used to allow devices to exchange objects.</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/hardware.owl#BluetoothProfile_headSet">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/hardware.owl#BluetoothProfile"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Bluetooth profile that defines how headsets communicate with devices.</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/hardware.owl#BluetoothProfile_objectPush">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/hardware.owl#BluetoothProfile"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Bluetooth profile that defines how predefined standard objects, such as virtual business cards, are pushed to another device.</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2007/uwa/context/hardware.owl#BluetoothProfile_serialPort">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2007/uwa/context/hardware.owl#BluetoothProfile"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Bluetooth profile that defines how devices provide serial port emulation for communication.</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2007/uwa/context/deliverycontext.owl"/>
+</rdf:Description>
+
+</rdf:RDF>

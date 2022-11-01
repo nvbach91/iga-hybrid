@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl#Network">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl#UMTS">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl#Network"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl#Network">
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Defines general term for telecommunication network.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl#UMTS">
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Universal Mobile Telecommunications System (UMTS) is one of the third-generation (3G) cell phone technologies.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl#referesToNetwork">
+	<rdfs:range rdf:resource="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl#Network"/>
+	<rdfs:domain rdf:resource="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl#NetworkBearerService"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Defines network which supports bearer.</rdfs:comment>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl#Network">
+	<rdfs:isDefinedBy rdf:resource="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl#UMTS">
+	<rdfs:isDefinedBy rdf:resource="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl#GSM">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl#Network"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Global System for Mobile communications is the most popular standard for mobile phones in the world. GSM is a cellular network, which means that mobile phones connect to it by searching for cells in the immediate vicinity.</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl#IS-95">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl#Network"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Interim Standard 95 (IS-95), is the first CDMA-based digital cellular standard pioneered by Qualcomm. CDMA or "code division multiple access" is a digital radio system that transmits streams of bits (PN Sequences).</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl#WLAN">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl#Network"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Defines wireless LAN network type.</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://www.tele.pw.edu.pl/~sims-onto/ConnectivityType.owl"/>
+</rdf:Description>
+
+</rdf:RDF>

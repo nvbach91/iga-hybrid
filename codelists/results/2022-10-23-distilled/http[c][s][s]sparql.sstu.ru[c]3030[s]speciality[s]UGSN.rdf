@@ -1,0 +1,1101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/UGSN">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/3/ugsn/47.00.00">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/UGSN">
+	<rdfs:comment xml:lang="en">UGSN - Enlarged group of specialties and areas of training are combined together specialties and areas of training related to a broad subject area. It has the code and name.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/3/ugsn/47.00.00">
+	<rdfs:label>Философия этика и религиоведение</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/isPartOfUGSN">
+	<rdfs:range rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:domain rdf:resource="http://sparql.sstu.ru:3030/speciality/Speciality"/>
+	<rdfs:comment>свойство, показывающее, что определенная специальность входит в определенную УГСН. Доменом является специальность, диапазоном – УГСН, а также оно является обратным свойству «УГСНСостоитИз».</rdfs:comment>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/UGSN">
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/3/ugsn/47.00.00">
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/UGSN">
+	<rdfs:comment>УГСН – Укрупненные группы специальностей и направлений подготовки объединяют совокупности специальностей и направлений подготовки, относящихся к какой-либо широкой предметной области. Имеет код и название.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/3/ugsn/47.00.00">
+	<rdfs:label>Философия, этика и
+религиоведение</rdfs:label>
+	<rdfs:label>Философия, этика и религиоведение</rdfs:label>
+	<rdfs:label>Философия. этика и религиоведение</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/3/ugsn/48.00.00">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>Теология</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/3/ugsn/49.00.00">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>Физическая
+культура и спорт</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+	<rdfs:label>Физическая культура и спорт</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/3/ugsn/50.00.00">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>
+Искусствознание</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+	<rdfs:label>Искусствознание</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/3/ugsn/51.00.00">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>
+Культуроведение и социалькультурные проекты</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+	<rdfs:label>
+Культуроведение и социокультурные проекты</rdfs:label>
+	<rdfs:label>Культуроведение и
+социокультурные
+проекты</rdfs:label>
+	<rdfs:label>Культуроведение и социокультурные проекты</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/3/ugsn/52.00.00">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>Сценические искусства и литературное творчество</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+	<rdfs:label>Сценические искусства и литературное творчество (3)</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/3/ugsn/53.00.00">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>
+Музыкальное искусство</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+	<rdfs:label>Музыкальное искусство</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/3/ugsn/54.00.00">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>
+Изобразительное и прикладные виды искусств</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+	<rdfs:label>
+Изобразительные и прикладные виды искусств</rdfs:label>
+	<rdfs:label>Изобразительное и прикладные виды искусств</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/3/ugsn/56.00.00">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>Военное управление</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/3/ugsn/72.00.00">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>Фотоника, приборостроение, оптические и биотехнические системы и технологии</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists%2F1%2Fugsn%2F30000+">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>уманитарные науки</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists%2F2%2Fugsn%2F30000+">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>уманитарные науки</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/1/ugsn/010000">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>Физико- математические науки</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/1/ugsn/020000">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>естественные науки</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+	<rdfs:label>Естественные науки</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/1/ugsn/030000">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>Гуманитарные науки</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/1/ugsn/040000">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>Социальные науки</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/1/ugsn/050000">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>Образование и педагогика</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/1/ugsn/060000">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>Здравоохранение</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/1/ugsn/070000">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>Культура и искусство</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/1/ugsn/080000">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>Экономика и управление</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/1/ugsn/090000">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>Информационная безопасность</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/1/ugsn/100000">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>Сфера обслуживания</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/1/ugsn/110000">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>Сельское и рыбное хозяйство</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/1/ugsn/120000">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>Геодезия и землеустройство</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/1/ugsn/130000">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>Геология, разведка и разработка полезных ископаемых</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/1/ugsn/200000">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>Приборостроение и ото техника</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/1/ugsn/210000">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>Электронная техника, радиотехника и связь</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/1/ugsn/220000">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>Автоматика и управление</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/1/ugsn/230000">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>Информатика и вычислительная техника</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/1/ugsn/240000">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>Химическая и биотехнологии</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/1/ugsn/250000">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>Воспроизводство и переработка лесных ресурсов</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/1/ugsn/260000">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>Технология продовольственных продуктов и потребительских товаров</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/1/ugsn/270000">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>Архитектура и строительство</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/1/ugsn/280000">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>Безопасность жизнедеятельности, природообустройств о и защита окружающей среды</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/1/ugsn/30000+">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>Гуманитарные науки</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/2/ugsn/010000">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>Физико- математические науки</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/2/ugsn/020000">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>Естественные науки</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/2/ugsn/030000">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>Гуманитарные науки</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/3/ugsn/43.0.00">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>Сервис и туризм</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/3/ugsn/43.00.00">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>Сервис и туризм</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/3/ugsn/44.00.00">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>
+Образование и педагогические науки</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+	<rdfs:label>Образование и
+педагогические
+науки</rdfs:label>
+	<rdfs:label>Образование и педагогические науки</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/3/ugsn/45.00.00">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>
+Языкознание              и литературоведение</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+	<rdfs:label>
+Языкознание и литературоведение</rdfs:label>
+	<rdfs:label>Языкознание и
+литературоведение</rdfs:label>
+	<rdfs:label>Языкознание и литературоведение</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/3/ugsn/46.00.00">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>История    и археология</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+	<rdfs:label>История и
+археология</rdfs:label>
+	<rdfs:label>История и археология</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/1/ugsn/140000">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>Энергетика, энергетическое машиностроение и электротехника</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+	<rdfs:label>Энергетика, энергетическое машиностроение и электроэнергетика</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/1/ugsn/150000">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>Металлургия, машиностроение и материалообработка</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+	<rdfs:label>Металлургия, машиностроение и материалообработка(2)</rdfs:label>
+	<rdfs:label>Металлургия, машиностроение и, материалообработка</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/1/ugsn/160000">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>Авиационная  и ракетно- космическая техника</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+	<rdfs:label>Авиационная  и ракетно-космическая техника</rdfs:label>
+	<rdfs:label>Авиационная и ракетно-   космическая техника</rdfs:label>
+	<rdfs:label>Авиационная и ракетно- космическая техника</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/1/ugsn/180000">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>Морская техника</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/1/ugsn/190000">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>Транспортные средства</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/1/ugsn/200000">
+	<rdfs:label>Приборостроение и оптотехника</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/2/ugsn/140000">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>Энергетика, энергетическое машиностроение и электротехника</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/2/ugsn/150000">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>Металлургия, машиностроение и материалообработка</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+	<rdfs:label>Металлургия,машиностроение и материалообработка</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/2/ugsn/160000">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>Авиационная и ракетно- космическая техника</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/2/ugsn/180000">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>Морская техника</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/2/ugsn/190000">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>Транспортные средства</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/2/ugsn/200000">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>Приборостроение и оптотехника</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/2/ugsn/210000">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>Электронная техника, радиотехника и связь</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/2/ugsn/220000">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>Автоматика  и управление</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+	<rdfs:label>Автоматика и управление</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/2/ugsn/230000">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>Информатика и вычислительная техника</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/2/ugsn/240000">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>Химическая и биотехнологии</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+	<rdfs:label>Химическая и биотехнологии (1)</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/2/ugsn/250000">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>Воспроизводство и переработка лесных ресурсов</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/2/ugsn/260000">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>Конструирование продовольственных продуктов и потребительских товаров</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+	<rdfs:label>Технология продовольственных продуктов и потребительских   товаров</rdfs:label>
+	<rdfs:label>Технология продовольственных продуктов и потребительских товаров</rdfs:label>
+	<rdfs:label>Технология продовольственных продуктов потребительских товаров</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/2/ugsn/270000">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>Архитектура и строительство</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/2/ugsn/280000">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>Безопасность жизнедеятельности, природообустройств о и защита окружающей среды</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+	<rdfs:label>Безопасность жизнедеятельности, природообустройство и защита окружающей среды</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/2/ugsn/30000+">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>Гуманитарные науки</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/3/ugsn/01.00.00">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>Математика и
+механика</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+	<rdfs:label>Математика и механика</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/3/ugsn/02.00.00">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>Компьютерные и
+информационные
+науки</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+	<rdfs:label>Компьютерные и информационные науки</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/3/ugsn/03.00.00">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>Физика и
+астрономия</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+	<rdfs:label>Физика и астрономия</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/3/ugsn/04.00.00">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>Химия</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/3/ugsn/05.00.00">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>Науки      о Земле</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+	<rdfs:label>Науки о земле</rdfs:label>
+	<rdfs:label>Науки о Земле</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/3/ugsn/06.00.00">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>
+Биологические науки</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+	<rdfs:label>Биологические
+науки</rdfs:label>
+	<rdfs:label>Биологические науки</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/3/ugsn/07.00.00">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>Архитектура</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/3/ugsn/08.00.00">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>Техника и
+технологии
+строительства</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+	<rdfs:label>Техника и технологии строительства</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/3/ugsn/09.00.00">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>
+Информатика и вычислительная техника</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+	<rdfs:label>Информатика и
+вычислительная
+техника</rdfs:label>
+	<rdfs:label>Информатика и вычислительная техника</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/3/ugsn/10.00.00">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>
+Информационная безопасность</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+	<rdfs:label>Информационная
+безопасность</rdfs:label>
+	<rdfs:label>Информационная безопасность</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/3/ugsn/11.00.00">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>
+Электроника, радиотехника и системы</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+	<rdfs:label>
+Электроника, радиотехника и системы связи</rdfs:label>
+	<rdfs:label>Электроника,
+радиотехника и
+системы связи</rdfs:label>
+	<rdfs:label>Электроника, радиотехника и системы связи</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/3/ugsn/12.00.00">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>Фотоника,
+приборостроение,
+оптические и
+биотехнические
+Системы и
+технологии</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+	<rdfs:label>Фотоника, приборостроение, оптические и биотехнические системы и технологии</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/3/ugsn/13.00.00">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>Электро- и
+теплоэнергетика</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/3/ugsn/19.00.00">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>
+Промышленная экология и биотехнология</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+	<rdfs:label>Промышленная
+экология и
+биотехнологии</rdfs:label>
+	<rdfs:label>Промышленная экология и биотехнологии</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/3/ugsn/20.00.00">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>
+Техносферная безопасность и природообустройств</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+	<rdfs:label>
+Техносферная безопасность и природообустройств о</rdfs:label>
+	<rdfs:label>Техносферная
+безопасность и
+природообустройство</rdfs:label>
+	<rdfs:label>Техносферная безопасность и природообустройство</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/3/ugsn/21.00.00">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>Прикладная
+геология, горное
+дело, нефтегазовое
+дело и геодезия</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+	<rdfs:label>Прикладная геология, горное дело, нефтегазовое дело и геодезия</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/3/ugsn/22.00.00">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>Технологии
+материалов</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+	<rdfs:label>Технологии материалов</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/3/ugsn/23.00.00">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>Техника и
+технологии
+наземного
+транспорта</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+	<rdfs:label>Техника и технологии наземного транспорта</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/3/ugsn/27.00.00">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>Управление  в технических системах</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+	<rdfs:label>Управление в
+технических
+системах</rdfs:label>
+	<rdfs:label>Управление в технических системах</rdfs:label>
+	<rdfs:label>Управление в технических системах (1)</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/3/ugsn/28.00.00">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>
+Нанотехнологии и наноматериалы</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+	<rdfs:label>Нанотехнологии и
+наноматериалы</rdfs:label>
+	<rdfs:label>Нанотехнологии и наноматериалы</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/3/ugsn/29.00.00">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>Технологии легкой
+промышленности</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+	<rdfs:label>Технологии легкой промышленности</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/3/ugsn/30.00.00">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>Фундаментальная
+медицина</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+	<rdfs:label>Фундаментальная медицина</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/3/ugsn/31.00.00">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>Клиническая
+медицина</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+	<rdfs:label>Клиническая медицина</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/isPartOfUGSN">
+	<rdfs:comment xml:lang="en">Перевести
+Properties of showing that a particular specialty (Speciality) included in certain UGSN (UGSN). Domain is a specialty (Speciality), range - UGSN (UGSN), and it is the inverse of the property «UGSNConsistsOf».</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/3/ugsn/42.00.00">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>Средства массовой информации              и информационно- библиотечное дело</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+	<rdfs:label>Средства массовой информации и библиотечное дело</rdfs:label>
+	<rdfs:label>Средства массовой информации и информационно- библиотечное дело</rdfs:label>
+	<rdfs:label>Средства массовой информации и информационно-библиотечное дело</rdfs:label>
+	<rdfs:label>Средства массовойинформации и информационно- библиотечное дело</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/2/ugsn/040000">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>Социальные науки</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/2/ugsn/050000">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>Образование и педагогика</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+	<rdfs:label>Образование и педагогика (1)</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/2/ugsn/060000">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>Здравоохранение</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/2/ugsn/070000">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>Культура и искусство</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/2/ugsn/080000">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>Экономика и управление</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/2/ugsn/090000">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>Информационная безопасность</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/2/ugsn/100000">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>Сфера обслуживания</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/2/ugsn/110000">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>Сельское и рыбное хозяйство</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/2/ugsn/111000">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>Сельское и рыбное хозяйство</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/2/ugsn/120000">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>Геодезия и землеустройство</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/2/ugsn/130000">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>Геология, разведка и разработка полезных ископаемых</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/3/ugsn/16.00.00">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>Физико-технические науки и технологии</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/3/ugsn/17.00.00">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>Оружие и системы вооружения</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/3/ugsn/18.00.00">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>Химические
+технологии</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+	<rdfs:label>Химические технологии</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/3/ugsn/19.00.00">
+	<rdfs:label>
+Промышленная экология и биотехнологии</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/3/ugsn/24.00.00">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>
+Авиационная и ракетно-космическая техника</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+	<rdfs:label>Авиационная и
+ракетно-
+космическая
+техника</rdfs:label>
+	<rdfs:label>Авиационная и ракетно- космическая техника</rdfs:label>
+	<rdfs:label>Авиационная и ракетно-космическая техника</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/3/ugsn/25.00.00">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>
+Аэронавигация и эксплуатация авиационной и ракетно-космической техники</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+	<rdfs:label>
+Аэронавигация и эксплуатация авиационном и ракетно-космической техники</rdfs:label>
+	<rdfs:label> Аэронавигация и эксплуатация авиационной и ракетно-космической техники</rdfs:label>
+	<rdfs:label>Аэронавигация и
+эксплуатация
+авиационной и
+ракетно-
+космической
+техники</rdfs:label>
+	<rdfs:label>Аэронавигация и эксплуатация авиационной и ракетно-космической техники</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/3/ugsn/26.00.00">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>Техника и
+технологии
+кораблестроения и
+водного транспорта</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+	<rdfs:label>Техника и технологии кораблестроения и водного транспорта</rdfs:label>
+	<rdfs:label>Техника и технология кораблестроения и водного транспорта</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/3/ugsn/32.00.00">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>Науки о здоровье и
+профилактическая
+медицина</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+	<rdfs:label>Науки о здоровье и профилактическая медицина</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/3/ugsn/33.00.00">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>Фармация</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/3/ugsn/34.00.00">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>Сестринское дело</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/3/ugsn/35.00.00">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>Сельское, лесное и
+рыбное хозяйство</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+	<rdfs:label>Сельское, лесное и рыбное хозяйство</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/3/ugsn/36.0.00">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>Ветеринария и зоотехния</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/3/ugsn/36.00.00">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>Ветеринария и
+зоотехния</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/3/ugsn/13.00.00">
+	<rdfs:label>Электро- и теплоэнергетика</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/3/ugsn/14.00.00">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>Ядерная энергетика
+и технологии</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+	<rdfs:label>Ядерная энергетика и технологии</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/3/ugsn/15.00.00">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>
+Машиностроение</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+	<rdfs:label>Машиностроение</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/3/ugsn/16.00.00">
+	<rdfs:label>Физико- технические науки и технологии</rdfs:label>
+	<rdfs:label>Физико-технические
+науки и технологии</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/3/ugsn/38.00.00">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>Экономика  и управление</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+	<rdfs:label>Экономика и
+управление</rdfs:label>
+	<rdfs:label>Экономика и управление</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/3/ugsn/39.00.00">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>Социология и
+социальная работа</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+	<rdfs:label>Социология и социальная работа</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/3/ugsn/40.00.00">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>
+Юриспруденция</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+	<rdfs:label>Юриспруденция</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/3/ugsn/41.00.00">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>
+Политические науки и регионоведение</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+	<rdfs:label>1
+Политические науки и регионоведение</rdfs:label>
+	<rdfs:label>Политические науки
+и регионоведение</rdfs:label>
+	<rdfs:label>Политические науки и регионоведение</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/3/ugsn/42.00.00">
+	<rdfs:label>Средства массовой
+информации и
+информационно-
+библиотечное дело</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/3/ugsn/36.00.00">
+	<rdfs:label>Ветеринария и зоотехния</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/lists/3/ugsn/37.00.00">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:label>
+Психологические науки</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.sstu.ru:3030/speciality/"/>
+	<rdfs:label>Психологические
+науки</rdfs:label>
+	<rdfs:label>Психологические науки</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.sstu.ru:3030/speciality/listConsistsOf">
+	<rdfs:range rdf:resource="http://sparql.sstu.ru:3030/speciality/UGSN"/>
+	<rdfs:domain rdf:resource="http://sparql.sstu.ru:3030/speciality/TheList"/>
+	<rdfs:comment>свойство, показывающее, что у определенного перечня есть составные части (УГСН). Доменом является перечень, диапазоном – УГСН, а также оно является обратным свойству «входитВПеречень».</rdfs:comment>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:comment xml:lang="en">Properties of showing that a specific list (TheList) has components (UGSN). Domain is a list of (TheList), range - UGSN (UGSN), and it is the inverse of the property «isPartOfList».</rdfs:comment>
+</rdf:Description>
+
+</rdf:RDF>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="https://w3id.org/squap/">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/ArchitecturalAlignment">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/ArchitecturalAlignment/Stakeholder">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/squap/ArchitecturalAlignment"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/ArchitecturalAlignment">
+	<rdfs:comment>The software quality characteristic meant as architectural alignment.</rdfs:comment>
+	<rdfs:label>Architectural alignment</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/ArchitecturalAlignment/Stakeholder">
+	<rdfs:label>Stakeholder</rdfs:label>
+	<rdfs:subClassOf rdf:resource="https://w3id.org/squap/ArchitecturalAlignment/SubjectiveCharacteristic"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/ArchitecturalAlignment/SubjectiveCharacteristic">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/ArchitecturalAlignment">
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/ArchitecturalAlignment/Stakeholder">
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/ArchitecturalAlignment/SubjectiveCharacteristic">
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/ArchitecturalAlignment/ObjectiveCharacteristic">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/squap/ArchitecturalAlignment"/>
+	<rdfs:label>Objective characteristic</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/ArchitecturalAlignment/SubjectiveCharacteristic">
+	<skos:inScheme rdf:resource="https://w3id.org/squap/ArchitecturalAlignment"/>
+	<rdfs:label>Subjective characteristic</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/ArchitecturalAlignment/ArchitectureFramework">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/squap/ArchitecturalAlignment"/>
+	<rdfs:label>Architecture framework</rdfs:label>
+	<specializes xmlns="https://w3id.org/squap/" rdf:resource="https://w3id.org/squap/ArchitecturalAlignment/ObjectiveCharacteristic"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+	<rdfs:subClassOf rdf:resource="https://w3id.org/squap/ArchitecturalAlignment/ObjectiveCharacteristic"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/ArchitecturalAlignment/ArchitectureModel">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/squap/ArchitecturalAlignment"/>
+	<rdfs:label>Architecture model</rdfs:label>
+	<specializes xmlns="https://w3id.org/squap/" rdf:resource="https://w3id.org/squap/ArchitecturalAlignment/ObjectiveCharacteristic"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+	<rdfs:subClassOf rdf:resource="https://w3id.org/squap/ArchitecturalAlignment/ObjectiveCharacteristic"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/ArchitecturalAlignment/ArchitectureRational">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/squap/ArchitecturalAlignment"/>
+	<rdfs:label>Architecture rational</rdfs:label>
+	<specializes xmlns="https://w3id.org/squap/" rdf:resource="https://w3id.org/squap/ArchitecturalAlignment/ObjectiveCharacteristic"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+	<rdfs:subClassOf rdf:resource="https://w3id.org/squap/ArchitecturalAlignment/ObjectiveCharacteristic"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/ArchitecturalAlignment/ArchitectureView">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/squap/ArchitecturalAlignment"/>
+	<rdfs:label>Architecture view</rdfs:label>
+	<specializes xmlns="https://w3id.org/squap/" rdf:resource="https://w3id.org/squap/ArchitecturalAlignment/ObjectiveCharacteristic"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+	<rdfs:subClassOf rdf:resource="https://w3id.org/squap/ArchitecturalAlignment/ObjectiveCharacteristic"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/ArchitecturalAlignment/Correspondence">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/squap/ArchitecturalAlignment"/>
+	<rdfs:label>Correspondence</rdfs:label>
+	<specializes xmlns="https://w3id.org/squap/" rdf:resource="https://w3id.org/squap/ArchitecturalAlignment/ObjectiveCharacteristic"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+	<rdfs:subClassOf rdf:resource="https://w3id.org/squap/ArchitecturalAlignment/ObjectiveCharacteristic"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/ArchitecturalAlignment/CorrespondenceRules">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/squap/ArchitecturalAlignment"/>
+	<rdfs:label>Correspondence rules</rdfs:label>
+	<specializes xmlns="https://w3id.org/squap/" rdf:resource="https://w3id.org/squap/ArchitecturalAlignment/ObjectiveCharacteristic"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+	<rdfs:subClassOf rdf:resource="https://w3id.org/squap/ArchitecturalAlignment/ObjectiveCharacteristic"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/ArchitecturalAlignment/ModelKind">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/squap/ArchitecturalAlignment"/>
+	<rdfs:label>Model kind</rdfs:label>
+	<specializes xmlns="https://w3id.org/squap/" rdf:resource="https://w3id.org/squap/ArchitecturalAlignment/ObjectiveCharacteristic"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+	<rdfs:subClassOf rdf:resource="https://w3id.org/squap/ArchitecturalAlignment/ObjectiveCharacteristic"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/ArchitecturalAlignment/System-of-Interest">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/squap/ArchitecturalAlignment"/>
+	<rdfs:label>System-of-Interest</rdfs:label>
+	<specializes xmlns="https://w3id.org/squap/" rdf:resource="https://w3id.org/squap/ArchitecturalAlignment/ObjectiveCharacteristic"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+	<rdfs:subClassOf rdf:resource="https://w3id.org/squap/ArchitecturalAlignment/ObjectiveCharacteristic"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/ArchitecturalAlignment/ArchitectureDescription">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/squap/ArchitecturalAlignment"/>
+	<rdfs:label>Architecture description</rdfs:label>
+	<specializes xmlns="https://w3id.org/squap/" rdf:resource="https://w3id.org/squap/ArchitecturalAlignment/SubjectiveCharacteristic"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+	<rdfs:subClassOf rdf:resource="https://w3id.org/squap/ArchitecturalAlignment/SubjectiveCharacteristic"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/ArchitecturalAlignment/ArchitectureViewpoint">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/squap/ArchitecturalAlignment"/>
+	<rdfs:label>Architecture viewpoint</rdfs:label>
+	<specializes xmlns="https://w3id.org/squap/" rdf:resource="https://w3id.org/squap/ArchitecturalAlignment/SubjectiveCharacteristic"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+	<rdfs:subClassOf rdf:resource="https://w3id.org/squap/ArchitecturalAlignment/SubjectiveCharacteristic"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/ArchitecturalAlignment/Concern">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/squap/ArchitecturalAlignment"/>
+	<rdfs:label>Concern</rdfs:label>
+	<specializes xmlns="https://w3id.org/squap/" rdf:resource="https://w3id.org/squap/ArchitecturalAlignment/SubjectiveCharacteristic"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+	<rdfs:subClassOf rdf:resource="https://w3id.org/squap/ArchitecturalAlignment/SubjectiveCharacteristic"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/ArchitecturalAlignment/Environment">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/squap/ArchitecturalAlignment"/>
+	<rdfs:label>Environment</rdfs:label>
+	<specializes xmlns="https://w3id.org/squap/" rdf:resource="https://w3id.org/squap/ArchitecturalAlignment/SubjectiveCharacteristic"/>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/squap/"/>
+	<rdfs:subClassOf rdf:resource="https://w3id.org/squap/ArchitecturalAlignment/SubjectiveCharacteristic"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/squap/ArchitecturalAlignment/Stakeholder">
+	<specializes xmlns="https://w3id.org/squap/" rdf:resource="https://w3id.org/squap/ArchitecturalAlignment/SubjectiveCharacteristic"/>
+</rdf:Description>
+
+</rdf:RDF>

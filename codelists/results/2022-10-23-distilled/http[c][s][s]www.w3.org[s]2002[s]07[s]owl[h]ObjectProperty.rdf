@@ -1,0 +1,591 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2002/07/owl#ObjectProperty">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/prefix">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/linguistics/gold/morphologicalRelation"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/morphologicalRelation">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2002/07/owl#ObjectProperty">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linguistics/gold"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/prefix">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linguistics/gold"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/morphologicalRelation">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linguistics/gold"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/suffix">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/linguistics/gold/morphologicalRelation"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linguistics/gold"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/indirectObject">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/linguistics/gold/object"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/object">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/indirectObject">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linguistics/gold"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/object">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linguistics/gold"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/directObject">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/linguistics/gold/object"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linguistics/gold"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/precedes">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/linguistics/gold/orderingRelation"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/orderingRelation">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/precedes">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linguistics/gold"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/orderingRelation">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linguistics/gold"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/acousticRealization">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/linguistics/gold/realization"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/realization">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/acousticRealization">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linguistics/gold"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/realization">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linguistics/gold"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/signedRealization">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/linguistics/gold/realization"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linguistics/gold"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/writtenRealization">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/linguistics/gold/realization"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linguistics/gold"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/agent">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/linguistics/gold/semanticRole"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/semanticRole">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/agent">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linguistics/gold"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/semanticRole">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linguistics/gold"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/patient">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/linguistics/gold/semanticRole"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linguistics/gold"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/goal">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/linguistics/gold/semanticRole"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linguistics/gold"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/argument">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/linguistics/gold/syntacticRole"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/syntacticRole">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/argument">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linguistics/gold"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/syntacticRole">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linguistics/gold"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/predicate">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/linguistics/gold/syntacticRole"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linguistics/gold"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/literalTranslation">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/linguistics/gold/translation"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/translation">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/literalTranslation">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linguistics/gold"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/translation">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linguistics/gold"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/freeTranslation">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/linguistics/gold/translation"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linguistics/gold"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/hasForm">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linguistics/gold"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/hasGrammar">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linguistics/gold"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/hasMeaning">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linguistics/gold"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/hasProperty">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linguistics/gold"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/hasTerm">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linguistics/gold"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/inflectedForm">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linguistics/gold"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/inLanguage">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linguistics/gold"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/labels">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linguistics/gold"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/lexicalRelation">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linguistics/gold"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/morphologicalRelation">
+	<skos:inScheme rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/mutuallyIntelligible">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linguistics/gold"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/names">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linguistics/gold"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/nucleus">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linguistics/gold"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/onset">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linguistics/gold"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/orderingRelation">
+	<skos:inScheme rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/parentVariety">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linguistics/gold"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/realization">
+	<skos:inScheme rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/rhyme">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linguistics/gold"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/semanticRole">
+	<skos:inScheme rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/syntacticRole">
+	<skos:inScheme rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/translation">
+	<skos:inScheme rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.linguistics-ontology.org/bibliography/bibliography.owl#hasCitation">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linguistics/gold"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.linguistics-ontology.org/bibliography/bibliography.owl#hasEntry">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linguistics/gold"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/agrees">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linguistics/gold"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/allomorph">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linguistics/gold"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/allophone">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linguistics/gold"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/ancestorVariety">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linguistics/gold"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/coda">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linguistics/gold"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/constituents">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linguistics/gold"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/dataStructureRelation">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linguistics/gold"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/derivedForm">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linguistics/gold"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/entailedBy">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linguistics/gold"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/entails">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linguistics/gold"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/feature">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linguistics/gold"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/geneticallyRelated">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linguistics/gold"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/hasConstituent">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linguistics/gold"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/hasMorphologicalConstituent">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/linguistics/gold/hasConstituent"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linguistics/gold"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/hasSyntacticConstituent">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/linguistics/gold/hasConstituent"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linguistics/gold"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/object">
+	<skos:inScheme rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/linguistics/gold/argument"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/subject">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/linguistics/gold/argument"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linguistics/gold"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/hasConstraint">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/linguistics/gold/dataStructureRelation"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linguistics/gold"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/hasFeature">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/linguistics/gold/dataStructureRelation"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linguistics/gold"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/hasGlosses">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/linguistics/gold/dataStructureRelation"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linguistics/gold"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/hasLexicalItem">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/linguistics/gold/dataStructureRelation"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linguistics/gold"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/hasLexicalUnit">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/linguistics/gold/dataStructureRelation"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linguistics/gold"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/hasSourceLine">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/linguistics/gold/dataStructureRelation"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linguistics/gold"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/hasSpecification">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/linguistics/gold/dataStructureRelation"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linguistics/gold"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/hasComplexValue">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/linguistics/gold/dataStructureRelation"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linguistics/gold"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/hasTranslationLine">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/linguistics/gold/dataStructureRelation"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linguistics/gold"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/hasType">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/linguistics/gold/dataStructureRelation"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linguistics/gold"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/adjunct">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/linguistics/gold/hasSyntacticConstituent"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linguistics/gold"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/complement">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/linguistics/gold/hasSyntacticConstituent"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linguistics/gold"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/head">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/linguistics/gold/hasSyntacticConstituent"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linguistics/gold"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/specifier">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/linguistics/gold/hasSyntacticConstituent"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linguistics/gold"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/follows">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/linguistics/gold/orderingRelation"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linguistics/gold"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/hypernym">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/linguistics/gold/lexicalRelation"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linguistics/gold"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/meronym">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/linguistics/gold/lexicalRelation"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linguistics/gold"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/synonym">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/linguistics/gold/lexicalRelation"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linguistics/gold"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/antonym">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/linguistics/gold/lexicalRelation"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linguistics/gold"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/infixedIn">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/linguistics/gold/morphologicalRelation"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linguistics/gold"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/linguistics/gold/circumscribes">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/linguistics/gold/morphologicalRelation"/>
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/linguistics/gold"/>
+</rdf:Description>
+
+</rdf:RDF>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/DurationDescriptions">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/one-day">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://reference.data.gov.uk/def/intervals/DurationDescriptions"/>
+	<rdfs:comment>A duration of one day, typically 24 hours)</rdfs:comment>
+	<rdfs:label xml:lang="en">1 day</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/DurationDescriptions">
+	<rdfs:isDefinedBy rdf:resource="http://reference.data.gov.uk/def/intervals"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/one-day">
+	<rdfs:isDefinedBy rdf:resource="http://reference.data.gov.uk/def/intervals"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/one-half">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://reference.data.gov.uk/def/intervals/DurationDescriptions"/>
+	<rdfs:comment>A duration of one half year, typically 6 months</rdfs:comment>
+	<rdfs:label>1 half of a year</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://reference.data.gov.uk/def/intervals"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/one-hour">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://reference.data.gov.uk/def/intervals/DurationDescriptions"/>
+	<rdfs:comment>A duration of one hour</rdfs:comment>
+	<rdfs:label>1 hour</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://reference.data.gov.uk/def/intervals"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/one-minute">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://reference.data.gov.uk/def/intervals/DurationDescriptions"/>
+	<rdfs:comment>A duration of 1 minute</rdfs:comment>
+	<rdfs:label>1 minute</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://reference.data.gov.uk/def/intervals"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/one-month">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://reference.data.gov.uk/def/intervals/DurationDescriptions"/>
+	<rdfs:comment>A duration of one month</rdfs:comment>
+	<rdfs:label>1 month</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://reference.data.gov.uk/def/intervals"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/one-quarter">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://reference.data.gov.uk/def/intervals/DurationDescriptions"/>
+	<rdfs:comment xml:lang="en">A duration of one quarter, typically 3 months.</rdfs:comment>
+	<rdfs:label>1 quarter of a year</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://reference.data.gov.uk/def/intervals"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/one-second">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://reference.data.gov.uk/def/intervals/DurationDescriptions"/>
+	<rdfs:comment>A duration of one second</rdfs:comment>
+	<rdfs:label>1 second</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://reference.data.gov.uk/def/intervals"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/one-week">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://reference.data.gov.uk/def/intervals/DurationDescriptions"/>
+	<rdfs:comment>A duration of one week</rdfs:comment>
+	<rdfs:label>1 week</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://reference.data.gov.uk/def/intervals"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/one-year">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://reference.data.gov.uk/def/intervals/DurationDescriptions"/>
+	<rdfs:comment>A duration of one year</rdfs:comment>
+	<rdfs:label>1 year</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://reference.data.gov.uk/def/intervals"/>
+</rdf:Description>
+
+</rdf:RDF>

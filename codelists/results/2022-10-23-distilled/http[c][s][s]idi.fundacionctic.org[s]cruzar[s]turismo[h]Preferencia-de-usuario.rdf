@@ -1,0 +1,1102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Preferencia-de-usuario">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Conocer-expo">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Preferencia-de-usuario"/>
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-barroco"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-barroco">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#not-desire-towards">
+	<rdfs:range rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Preferencia-de-usuario"/>
+	<rdfs:domain rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Perfil-de-turista"/>
+	<rdfs:label xml:lang="en">No tiene preferencia</rdfs:label>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Preferencia-de-usuario">
+	<rdfs:isDefinedBy rdf:resource="http://idi.fundacionctic.org/cruzar/turismo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Conocer-expo">
+	<rdfs:isDefinedBy rdf:resource="http://idi.fundacionctic.org/cruzar/turismo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-barroco">
+	<rdfs:isDefinedBy rdf:resource="http://idi.fundacionctic.org/cruzar/turismo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Conocer-zaragoza-verde">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Preferencia-de-usuario"/>
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-barroco"/>
+	<rdfs:isDefinedBy rdf:resource="http://idi.fundacionctic.org/cruzar/turismo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Curiosear-por-calles">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Preferencia-de-usuario"/>
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-barroco"/>
+	<rdfs:isDefinedBy rdf:resource="http://idi.fundacionctic.org/cruzar/turismo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ir-de-compras">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Preferencia-de-usuario"/>
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-barroco"/>
+	<rdfs:isDefinedBy rdf:resource="http://idi.fundacionctic.org/cruzar/turismo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Pasear">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Preferencia-de-usuario"/>
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-barroco"/>
+	<rdfs:isDefinedBy rdf:resource="http://idi.fundacionctic.org/cruzar/turismo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Salir-de-marcha">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Preferencia-de-usuario"/>
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-barroco"/>
+	<rdfs:isDefinedBy rdf:resource="http://idi.fundacionctic.org/cruzar/turismo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-arquitectura">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Preferencia-de-usuario"/>
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-barroco"/>
+	<rdfs:isDefinedBy rdf:resource="http://idi.fundacionctic.org/cruzar/turismo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-arte">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Preferencia-de-usuario"/>
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-barroco"/>
+	<rdfs:isDefinedBy rdf:resource="http://idi.fundacionctic.org/cruzar/turismo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-contemporaneo">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Preferencia-de-usuario"/>
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-barroco"/>
+	<rdfs:isDefinedBy rdf:resource="http://idi.fundacionctic.org/cruzar/turismo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-gotico">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Preferencia-de-usuario"/>
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-barroco"/>
+	<rdfs:isDefinedBy rdf:resource="http://idi.fundacionctic.org/cruzar/turismo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-modernista">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Preferencia-de-usuario"/>
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-barroco"/>
+	<rdfs:isDefinedBy rdf:resource="http://idi.fundacionctic.org/cruzar/turismo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-mudejar">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Preferencia-de-usuario"/>
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-barroco"/>
+	<rdfs:isDefinedBy rdf:resource="http://idi.fundacionctic.org/cruzar/turismo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-neoclasico">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Preferencia-de-usuario"/>
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-barroco"/>
+	<rdfs:isDefinedBy rdf:resource="http://idi.fundacionctic.org/cruzar/turismo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-renacentista">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Preferencia-de-usuario"/>
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-barroco"/>
+	<rdfs:isDefinedBy rdf:resource="http://idi.fundacionctic.org/cruzar/turismo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-romano">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Preferencia-de-usuario"/>
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-barroco"/>
+	<rdfs:isDefinedBy rdf:resource="http://idi.fundacionctic.org/cruzar/turismo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Conocer-expo">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-contemporaneo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Conocer-zaragoza-verde">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-contemporaneo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Curiosear-por-calles">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-contemporaneo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ir-de-compras">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-contemporaneo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Pasear">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-contemporaneo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Salir-de-marcha">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-contemporaneo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-arquitectura">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-contemporaneo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-arte">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-contemporaneo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-barroco">
+	<skos:inScheme rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Preferencia-de-usuario"/>
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-contemporaneo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-gotico">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-contemporaneo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-modernista">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-contemporaneo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-mudejar">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-contemporaneo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-neoclasico">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-contemporaneo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-renacentista">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-contemporaneo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-romano">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-contemporaneo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Conocer-expo">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-gotico"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Conocer-zaragoza-verde">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-gotico"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Curiosear-por-calles">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-gotico"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ir-de-compras">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-gotico"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Pasear">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-gotico"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Salir-de-marcha">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-gotico"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-arquitectura">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-gotico"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-arte">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-gotico"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-barroco">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-gotico"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-contemporaneo">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-gotico"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-modernista">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-gotico"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-mudejar">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-gotico"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-neoclasico">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-gotico"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-renacentista">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-gotico"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-romano">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-gotico"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Conocer-expo">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-modernista"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Conocer-zaragoza-verde">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-modernista"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Curiosear-por-calles">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-modernista"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ir-de-compras">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-modernista"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Pasear">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-modernista"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-gotico">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Pasear"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-modernista">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Pasear"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-mudejar">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Pasear"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-neoclasico">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Pasear"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-renacentista">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Pasear"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-romano">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Pasear"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Conocer-expo">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Salir-de-marcha"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Conocer-zaragoza-verde">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Salir-de-marcha"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Curiosear-por-calles">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Salir-de-marcha"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ir-de-compras">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Salir-de-marcha"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Pasear">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Salir-de-marcha"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-arquitectura">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Salir-de-marcha"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-arte">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Salir-de-marcha"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-barroco">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Salir-de-marcha"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-contemporaneo">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Salir-de-marcha"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-gotico">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Salir-de-marcha"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-modernista">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Salir-de-marcha"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-mudejar">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Salir-de-marcha"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-neoclasico">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Salir-de-marcha"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-renacentista">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Salir-de-marcha"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-romano">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Salir-de-marcha"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Conocer-expo">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-arquitectura"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Conocer-zaragoza-verde">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-arquitectura"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Curiosear-por-calles">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-arquitectura"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ir-de-compras">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-arquitectura"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Pasear">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-arquitectura"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Salir-de-marcha">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-arquitectura"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-arte">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-arquitectura"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-barroco">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-arquitectura"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-contemporaneo">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-arquitectura"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-gotico">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-arquitectura"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-modernista">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-arquitectura"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-mudejar">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-arquitectura"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-neoclasico">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-arquitectura"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-renacentista">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-arquitectura"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-romano">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-arquitectura"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Conocer-expo">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-arte"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Conocer-zaragoza-verde">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-arte"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Curiosear-por-calles">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-arte"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ir-de-compras">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-arte"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Pasear">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-arte"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Salir-de-marcha">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-arte"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-arquitectura">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-arte"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-barroco">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-arte"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-contemporaneo">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-arte"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-gotico">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-arte"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-modernista">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-arte"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-mudejar">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-arte"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-neoclasico">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-arte"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-renacentista">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-arte"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-gotico">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Conocer-zaragoza-verde"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-modernista">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Conocer-zaragoza-verde"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-mudejar">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Conocer-zaragoza-verde"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-neoclasico">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Conocer-zaragoza-verde"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-renacentista">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Conocer-zaragoza-verde"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-romano">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Conocer-zaragoza-verde"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Conocer-expo">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Curiosear-por-calles"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Conocer-zaragoza-verde">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Curiosear-por-calles"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ir-de-compras">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Curiosear-por-calles"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Pasear">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Curiosear-por-calles"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Salir-de-marcha">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Curiosear-por-calles"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-arquitectura">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Curiosear-por-calles"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-arte">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Curiosear-por-calles"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-barroco">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Curiosear-por-calles"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-contemporaneo">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Curiosear-por-calles"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-gotico">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Curiosear-por-calles"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-modernista">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Curiosear-por-calles"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-mudejar">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Curiosear-por-calles"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-neoclasico">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Curiosear-por-calles"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-renacentista">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Curiosear-por-calles"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-romano">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Curiosear-por-calles"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Conocer-expo">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ir-de-compras"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Conocer-zaragoza-verde">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ir-de-compras"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Curiosear-por-calles">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ir-de-compras"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Pasear">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ir-de-compras"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Conocer-expo">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-neoclasico"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Conocer-zaragoza-verde">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-neoclasico"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Curiosear-por-calles">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-neoclasico"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ir-de-compras">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-neoclasico"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Pasear">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-neoclasico"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Salir-de-marcha">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-neoclasico"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-arquitectura">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-neoclasico"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-arte">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-neoclasico"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-barroco">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-neoclasico"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-contemporaneo">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-neoclasico"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-gotico">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-neoclasico"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-modernista">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-neoclasico"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-mudejar">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-neoclasico"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-renacentista">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-neoclasico"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-romano">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-neoclasico"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Conocer-expo">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-renacentista"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Conocer-zaragoza-verde">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-renacentista"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Curiosear-por-calles">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-renacentista"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ir-de-compras">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-renacentista"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Pasear">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-renacentista"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Salir-de-marcha">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-renacentista"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-arquitectura">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-renacentista"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-arte">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-renacentista"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-barroco">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Pasear"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-contemporaneo">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Pasear"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ir-de-compras">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Conocer-expo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.loa-cnr.it/ontologies/ExtendedDnS#desire-towards">
+	<rdfs:range rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Preferencia-de-usuario"/>
+	<rdfs:domain rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Perfil-de-turista"/>
+	<rdfs:label xml:lang="en">Tiene interés</rdfs:label>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Pasear">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Conocer-expo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Salir-de-marcha">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Conocer-expo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-arquitectura">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Conocer-expo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-arte">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Conocer-expo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-barroco">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Conocer-expo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-contemporaneo">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Conocer-expo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-gotico">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Conocer-expo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-modernista">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Conocer-expo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-mudejar">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Conocer-expo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-neoclasico">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Conocer-expo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-renacentista">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Conocer-expo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-romano">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Conocer-expo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Conocer-expo">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Conocer-zaragoza-verde"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Curiosear-por-calles">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Conocer-zaragoza-verde"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ir-de-compras">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Conocer-zaragoza-verde"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Pasear">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Conocer-zaragoza-verde"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Salir-de-marcha">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Conocer-zaragoza-verde"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-arquitectura">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Conocer-zaragoza-verde"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-arte">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Conocer-zaragoza-verde"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-barroco">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Conocer-zaragoza-verde"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-contemporaneo">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Conocer-zaragoza-verde"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Salir-de-marcha">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-modernista"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-arquitectura">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-modernista"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-arte">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-modernista"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-barroco">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-modernista"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-contemporaneo">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-modernista"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-gotico">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-modernista"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-mudejar">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-modernista"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-neoclasico">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-modernista"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-renacentista">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-modernista"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-romano">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-modernista"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Conocer-expo">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-mudejar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Conocer-zaragoza-verde">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-mudejar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Curiosear-por-calles">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-mudejar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ir-de-compras">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-mudejar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Pasear">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-mudejar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Salir-de-marcha">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-mudejar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-arquitectura">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-mudejar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-arte">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-mudejar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-barroco">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-mudejar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-contemporaneo">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-mudejar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-gotico">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-mudejar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-modernista">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-mudejar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-neoclasico">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-mudejar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-renacentista">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-mudejar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-romano">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-mudejar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Salir-de-marcha">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ir-de-compras"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-arquitectura">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ir-de-compras"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-arte">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ir-de-compras"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-barroco">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ir-de-compras"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-contemporaneo">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ir-de-compras"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-gotico">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ir-de-compras"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-modernista">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ir-de-compras"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-mudejar">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ir-de-compras"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-neoclasico">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ir-de-compras"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-renacentista">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ir-de-compras"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-romano">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ir-de-compras"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Conocer-expo">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Pasear"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Conocer-zaragoza-verde">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Pasear"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Curiosear-por-calles">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Pasear"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ir-de-compras">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Pasear"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Salir-de-marcha">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Pasear"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-arquitectura">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Pasear"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-arte">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Pasear"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-barroco">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-renacentista"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-contemporaneo">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-renacentista"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-gotico">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-renacentista"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-modernista">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-renacentista"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-mudejar">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-renacentista"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-neoclasico">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-renacentista"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-romano">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-renacentista"/>
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-arte"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Conocer-zaragoza-verde">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Conocer-expo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Curiosear-por-calles">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Conocer-expo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Conocer-expo">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-romano"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Conocer-zaragoza-verde">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-romano"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Curiosear-por-calles">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-romano"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ir-de-compras">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-romano"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Pasear">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-romano"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Salir-de-marcha">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-romano"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-arquitectura">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-romano"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-arte">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-romano"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-barroco">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-romano"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-contemporaneo">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-romano"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-gotico">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-romano"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-modernista">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-romano"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-mudejar">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-romano"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-neoclasico">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-romano"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-renacentista">
+	<owl:differentFrom rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Ver-estilo-romano"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-edificio-historico">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Preferencia-de-usuario"/>
+	<rdfs:isDefinedBy rdf:resource="http://idi.fundacionctic.org/cruzar/turismo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-edificio-religioso">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Preferencia-de-usuario"/>
+	<rdfs:isDefinedBy rdf:resource="http://idi.fundacionctic.org/cruzar/turismo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-escultura">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Preferencia-de-usuario"/>
+	<rdfs:isDefinedBy rdf:resource="http://idi.fundacionctic.org/cruzar/turismo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-fortaleza">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Preferencia-de-usuario"/>
+	<rdfs:isDefinedBy rdf:resource="http://idi.fundacionctic.org/cruzar/turismo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-museo">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Preferencia-de-usuario"/>
+	<rdfs:isDefinedBy rdf:resource="http://idi.fundacionctic.org/cruzar/turismo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-palacio">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Preferencia-de-usuario"/>
+	<rdfs:isDefinedBy rdf:resource="http://idi.fundacionctic.org/cruzar/turismo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idi.fundacionctic.org/cruzar/turismo#Ver-zona-verde">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://idi.fundacionctic.org/cruzar/turismo#Preferencia-de-usuario"/>
+	<rdfs:isDefinedBy rdf:resource="http://idi.fundacionctic.org/cruzar/turismo"/>
+</rdf:Description>
+
+</rdf:RDF>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="https://w3id.org/iot-tta/">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/iot-tta/#Blockchain_solution">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/iot-tta/#Secure_key_management">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/iot-tta/#Blockchain_solution"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/iot-tta/#Blockchain_solution">
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Solutions for Blockchain problems - improving data privacy, reducing latency in sending data, and adjusting the deficiencies of the edge implementation</rdfs:comment>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Blockchain_solution</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/iot-tta/#Secure_key_management">
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">secure_key_management (Individual): a Blockchain solution</rdfs:comment>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">secure_key_management</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/iot-tta/#hasSecurity_problem">
+	<rdfs:range rdf:resource="https://w3id.org/iot-tta/#Blockchain_solution"/>
+	<rdfs:domain rdf:resource="https://w3id.org/iot-tta/#Blockchain"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hasSecurity_problem</rdfs:label>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hasSecurity_problem (Object property): security problems in Blockchain technology</rdfs:comment>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/iot-tta/#Blockchain_solution">
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/iot-tta/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/iot-tta/#Secure_key_management">
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/iot-tta/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/iot-tta/#Synchronization_in_throughput">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/iot-tta/#Blockchain_solution"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">synchronization_in_throughput (Individual): a Blockchain solution</rdfs:comment>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">synchronization_in_throughput</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/iot-tta/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/iot-tta/#Access_control">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/iot-tta/#Blockchain_solution"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">access_control (Individual): a Blockchain solution</rdfs:comment>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">access_control</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/iot-tta/#hasSolution">
+	<rdfs:range rdf:resource="https://w3id.org/iot-tta/#Blockchain_solution"/>
+	<rdfs:domain rdf:resource="https://w3id.org/iot-tta/#Blockchain_problem"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hasSolution</rdfs:label>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hasSolution (Object property): solutions for Blockchain problems</rdfs:comment>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/iot-tta/#Access_control">
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/iot-tta/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/iot-tta/#Correct_Edge_implementation">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/iot-tta/#Blockchain_solution"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">correct_Edge_implementation (Individual): a Blockchain solution</rdfs:comment>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">correct_Edge_implementation</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/iot-tta/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/iot-tta/#Data_protection">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/iot-tta/#Blockchain_solution"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">data_protection (Individual): a Blockchain solution with Object property assertions (hasSolution)</rdfs:comment>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">data_protection</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/iot-tta/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/iot-tta/#Distributed_authentication">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/iot-tta/#Blockchain_solution"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">distributed_authentication (Individual): a Blockchain solution</rdfs:comment>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">distributed_authentication</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/iot-tta/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/iot-tta/#Improve_central_algorithm">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/iot-tta/#Blockchain_solution"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">improve_central_algorithm (Individual): a Blockchain solution</rdfs:comment>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">improve_central_algorithm</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/iot-tta/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/iot-tta/#Integrity_assurance">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/iot-tta/#Blockchain_solution"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">integrity_assurance (Individual): a Blockchain solution</rdfs:comment>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">integrity_assurance</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/iot-tta/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/iot-tta/#Reducing_latency_in_sending_data">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://w3id.org/iot-tta/#Blockchain_solution"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reducing_latency_in_sending_data (Individual): a Blockchain solution</rdfs:comment>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reducing_latency_in_sending_data</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/iot-tta/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/iot-tta/#DevelopEdgeSecurity">
+	<rdfs:range rdf:resource="https://w3id.org/iot-tta/#Blockchain_solution"/>
+	<rdfs:domain rdf:resource="https://w3id.org/iot-tta/#Edge_application"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">developEdgeSecurity</rdfs:label>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">developEdgeSecurity (Object property): develops solutions for edge applications using Blockchain capabilities</rdfs:comment>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/iot-tta/#has_SecuritySolution">
+	<rdfs:range rdf:resource="https://w3id.org/iot-tta/#Blockchain_solution"/>
+	<rdfs:domain rdf:resource="https://w3id.org/iot-tta/#Edge_security"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_SecuritySolution</rdfs:label>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_SecuritySolution (Object property): defines the best practices based on Blockchain solutions for edge security problems</rdfs:comment>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+</rdf:RDF>

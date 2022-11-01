@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="https://w3id.org/cocoon/v1.0">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://qudt.org/schema/qudt#DerivedUnit">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/cocoon/v1.0#GB">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://qudt.org/schema/qudt#DerivedUnit"/>
+	<rdfs:comment xml:lang="en">Gigabyte (GB): There are 1024MB in one gigabyte.</rdfs:comment>
+	<rdfs:label xml:lang="en">Gigabyte</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://qudt.org/schema/qudt#DerivedUnit">
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/cocoon/v1.0"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/cocoon/v1.0#GB">
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/cocoon/v1.0"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/cocoon/v1.0#GBPerMonth">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://qudt.org/schema/qudt#DerivedUnit"/>
+	<rdfs:comment xml:lang="en">Often describe 1 GB per Month usage.</rdfs:comment>
+	<rdfs:label xml:lang="en">Gigabyte per Month</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/cocoon/v1.0"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/cocoon/v1.0#IOPs">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://qudt.org/schema/qudt#DerivedUnit"/>
+	<rdfs:comment xml:lang="en">Azure Managed Disks provide different input/output operations per sec (IOPs)</rdfs:comment>
+	<rdfs:label xml:lang="en">Input/output operations per sec</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/cocoon/v1.0"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/cocoon/v1.0#MBPerSec">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://qudt.org/schema/qudt#DerivedUnit"/>
+	<rdfs:comment xml:lang="en">Azure Managed Disks throughput caps per disk.</rdfs:comment>
+	<rdfs:label xml:lang="en">MB/second</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/cocoon/v1.0"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/cocoon/v1.0#TB">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://qudt.org/schema/qudt#DerivedUnit"/>
+	<rdfs:comment xml:lang="en">Terabyte is more precisely defined as 1,024 gigabytes (GB)</rdfs:comment>
+	<rdfs:label xml:lang="en">Terabyte</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="https://w3id.org/cocoon/v1.0"/>
+</rdf:Description>
+
+</rdf:RDF>

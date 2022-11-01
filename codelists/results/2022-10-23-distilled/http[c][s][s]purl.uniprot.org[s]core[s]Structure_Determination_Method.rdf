@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://purl.uniprot.org/core/">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.uniprot.org/core/Structure_Determination_Method">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.uniprot.org/core/Electron_Microscopy">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.uniprot.org/core/Structure_Determination_Method"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.uniprot.org/core/Structure_Determination_Method">
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An experimental method for determining the 3D structure of a protein.</rdfs:comment>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Structure Determination</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.uniprot.org/core/Electron_Microscopy">
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The electron microscope is a microscope that can magnify very small details with high resolving power due to the use of electrons rather than light to scatter off material, magnifying at levels up to 500,000 times.</rdfs:comment>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electron Microscopy</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.uniprot.org/core/Structure_Determination_Method">
+	<rdfs:isDefinedBy rdf:resource="http://purl.uniprot.org/core/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.uniprot.org/core/Electron_Microscopy">
+	<rdfs:isDefinedBy rdf:resource="http://purl.uniprot.org/core/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.uniprot.org/core/Infrared_Spectroscopy">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.uniprot.org/core/Structure_Determination_Method"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A type of spectroscopy that uses the Infrared portion of the electromagnetic spectrum.</rdfs:comment>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Infrared Spectroscopy</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.uniprot.org/core/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.uniprot.org/core/X-Ray_Crystallography">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.uniprot.org/core/Structure_Determination_Method"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A technique in crystallography in which the pattern produced by the diffraction of x-rays through the closely spaced lattice of atoms in a crystal is recorded and then analyzed to reveal the nature of that lattice.</rdfs:comment>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">X-Ray Crystallography</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.uniprot.org/core/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.uniprot.org/core/Fiber_Diffraction">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.uniprot.org/core/Structure_Determination_Method"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fiber Diffraction</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.uniprot.org/core/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.uniprot.org/core/Neutron_Diffraction">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.uniprot.org/core/Structure_Determination_Method"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Neutron Diffraction</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.uniprot.org/core/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.uniprot.org/core/NMR_Spectroscopy">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.uniprot.org/core/Structure_Determination_Method"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NMR Spectroscopy</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.uniprot.org/core/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.uniprot.org/core/Prediction">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://purl.uniprot.org/core/Structure_Determination_Method"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Prediction</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://purl.uniprot.org/core/"/>
+</rdf:Description>
+
+</rdf:RDF>

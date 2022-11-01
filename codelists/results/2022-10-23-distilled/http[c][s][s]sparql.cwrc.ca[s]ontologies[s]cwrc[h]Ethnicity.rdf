@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://sparql.cwrc.ca/ontologies/cwrc">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#Ethnicity">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#blackEthnicity">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Ethnicity"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#Ethnicity">
+	<rdfs:label xml:lang="en">ethnicity</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#blackEthnicity">
+	<rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+	<rdfs:label xml:lang="en">black</rdfs:label>
+	<skos:related rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#african-AmericanEthnicity"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#african-AmericanEthnicity">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#hasEthnicitySelfDefined">
+	<rdfs:range rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Ethnicity"/>
+	<rdfs:label xml:lang="en">has ethnicity (self defined)</rdfs:label>
+	<rdfs:comment xml:lang="en">Deprecated in favour of instance &lt;a href="#hasEthnicitySelfReported" title="#hasEthnicitySelfReported"&gt;has ethnic identity (self-reported)&lt;/a&gt;.</rdfs:comment>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#Ethnicity">
+	<rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#blackEthnicity">
+	<rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#african-AmericanEthnicity">
+	<rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+	<skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Ethnicity"/>
+	<rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+	<rdfs:label xml:lang="en">African-American</rdfs:label>
+	<skos:related rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#africanEthnicity"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#africanEthnicity">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#blackEthnicity">
+	<skos:related rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#africanEthnicity"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#anglo-IrishEthnicity">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Ethnicity"/>
+	<rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+	<rdfs:label xml:lang="en">Anglo-Irish</rdfs:label>
+	<skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#europeanEthnicity"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#europeanEthnicity">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#anglo-IrishEthnicity">
+	<rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#europeanEthnicity">
+	<rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#anglo-NormanEthnicity">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Ethnicity"/>
+	<rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+	<rdfs:label xml:lang="en">Anglo-Norman</rdfs:label>
+	<skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#europeanEthnicity"/>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#celticEthnicity">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Ethnicity"/>
+	<rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+	<rdfs:label xml:lang="en">Celtic</rdfs:label>
+	<skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#europeanEthnicity"/>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#englishEthnicity">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Ethnicity"/>
+	<rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+	<rdfs:label xml:lang="en">English</rdfs:label>
+	<skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#europeanEthnicity"/>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#irishEthnicity">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Ethnicity"/>
+	<rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+	<rdfs:label xml:lang="en">Irish</rdfs:label>
+	<skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#europeanEthnicity"/>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#scottishEthnicity">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Ethnicity"/>
+	<rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+	<rdfs:label xml:lang="en">Scottish</rdfs:label>
+	<skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#europeanEthnicity"/>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#thracianEthnicity">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Ethnicity"/>
+	<rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+	<rdfs:label xml:lang="en">Thracian</rdfs:label>
+	<skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#europeanEthnicity"/>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#wendishEthnicity">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Ethnicity"/>
+	<rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+	<rdfs:label xml:lang="en">Wendish</rdfs:label>
+	<skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#europeanEthnicity"/>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#whiteEthnicity">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Ethnicity"/>
+	<rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+	<rdfs:label xml:lang="en">white</rdfs:label>
+	<skos:related rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#europeanEthnicity"/>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#ashkenaziJewishEthnicity">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Ethnicity"/>
+	<rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+	<rdfs:label xml:lang="en">Ashkenazi Jewish</rdfs:label>
+	<skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#jewishEthnicity"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#jewishEthnicity">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#ashkenaziJewishEthnicity">
+	<rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#jewishEthnicity">
+	<rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#sephardicJewishEthnicity">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Ethnicity"/>
+	<rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+	<rdfs:label xml:lang="en">Sephardic Jewish</rdfs:label>
+	<skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#jewishEthnicity"/>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#gaelEthnicity">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Ethnicity"/>
+	<rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+	<rdfs:label xml:lang="en">Gael</rdfs:label>
+	<skos:broaderTransitive rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#scottishEthnicity"/>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#africanEthnicity">
+	<skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Ethnicity"/>
+	<rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+	<rdfs:label xml:lang="en">African</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#arabEthnicity">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Ethnicity"/>
+	<rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+	<rdfs:label xml:lang="en">Arab</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#bengaliEthnicity">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Ethnicity"/>
+	<rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+	<rdfs:label xml:lang="en">Bengali</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#chineseEthnicity">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Ethnicity"/>
+	<rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+	<rdfs:label xml:lang="en">Chinese</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#creoleEthnicity">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Ethnicity"/>
+	<rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+	<rdfs:label xml:lang="en">Creole</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#europeanEthnicity">
+	<skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Ethnicity"/>
+	<rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+	<rdfs:label xml:lang="en">European</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#igboEthnicity">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Ethnicity"/>
+	<rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+	<rdfs:label xml:lang="en">Igbo</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#indigenousPeoplesOfAmericasEthnicity">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Ethnicity"/>
+	<rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+	<rdfs:label xml:lang="en">Indigenous (of the Americas)</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#jamaicanEthnicity">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Ethnicity"/>
+	<rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+	<rdfs:label xml:lang="en">Jamaican</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#jewishEthnicity">
+	<skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Ethnicity"/>
+	<rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+	<rdfs:label xml:lang="en">Jewish</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#parsiEthnicity">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Ethnicity"/>
+	<rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+	<rdfs:label xml:lang="en">Parsi</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#punjabiEthnicity">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Ethnicity"/>
+	<rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+	<rdfs:label xml:lang="en">Punjabi</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#romaniEthnicity">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Ethnicity"/>
+	<rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+	<rdfs:label xml:lang="en">Romani</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#slavEthnicity">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Ethnicity"/>
+	<rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+	<rdfs:label xml:lang="en">Slav</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#westIndianEthnicity">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Ethnicity"/>
+	<rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+	<rdfs:label xml:lang="en">West Indian</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#hasEthnicity">
+	<rdfs:range rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Ethnicity"/>
+	<rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<rdfs:label xml:lang="en">has ethnic identity</rdfs:label>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#hasEthnicityReported">
+	<rdfs:range rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Ethnicity"/>
+	<rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<rdfs:label xml:lang="en">has ethnic identity (reported)</rdfs:label>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#hasEthnicitySelfReported">
+	<rdfs:range rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Ethnicity"/>
+	<rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<rdfs:label xml:lang="en">has ethnic identity (self-reported)</rdfs:label>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+</rdf:RDF>

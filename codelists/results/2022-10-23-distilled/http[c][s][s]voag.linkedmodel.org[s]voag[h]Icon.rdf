@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcmit="http://purl.org/dc/dcmitype/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:hint="http://www.bigdata.com/queryHints#"
+	xmlns:bd="http://www.bigdata.com/rdf#"
+	xmlns:bds="http://www.bigdata.com/rdf/search#">
+
+<rdf:Description rdf:about="http://voag.linkedmodel.org/schema/voag">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://voag.linkedmodel.org/voag#Icon">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://voag.linkedmodel.org/voag#RDFIcon-32X35">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://voag.linkedmodel.org/voag#Icon"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://voag.linkedmodel.org/voag#Icon">
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Icon</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://voag.linkedmodel.org/voag#RDFIcon-32X35">
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RDF Icon 32 X 35</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://voag.linkedmodel.org/voag#Icon">
+	<rdfs:isDefinedBy rdf:resource="http://voag.linkedmodel.org/schema/voag"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://voag.linkedmodel.org/voag#RDFIcon-32X35">
+	<rdfs:isDefinedBy rdf:resource="http://voag.linkedmodel.org/schema/voag"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://voag.linkedmodel.org/voag#SPARQLIcon-80X15">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://voag.linkedmodel.org/voag#Icon"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SPARQL ICON 80 X 15</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://voag.linkedmodel.org/schema/voag"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://voag.linkedmodel.org/voag#TurtleIcon-32bX35">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://voag.linkedmodel.org/voag#Icon"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Turtle Icon 32 X 35</rdfs:label>
+	<rdfs:isDefinedBy rdf:resource="http://voag.linkedmodel.org/schema/voag"/>
+</rdf:Description>
+
+</rdf:RDF>
